@@ -1,0 +1,96 @@
+﻿@dead_culture = "gfx/interface/icons/culture_innovations/ai_innovation_dead_culture.dds"
+@nomadic = "gfx/interface/icons/culture_innovations/ai_innovation_native_nomadic.dds"
+@dremora = "gfx/interface/icons/culture_innovations/ai_innovation_dremora.dds"
+#EK TODO: Change modifiers to more relevant ones like Vassal Stance Opinion, chance of having a Stance and so on...
+
+## Special - not native from anywhere, nomadic
+# Can bypass some of the non-nativity penalty, but can be very easily displaced too
+
+### Special innovations
+# They aren't really innovations to be researched, but more about the general state of your culture
+innovation_dead_culture = {
+	skill = diplomacy
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @dead_culture
+	
+	can_progress = { always = no }
+
+	potential = {
+		NOT = {
+			has_innovation = innovation_daedric_race
+		}	
+	}
+	
+	custom = no_county_culture_conversion
+	custom = culture_cannot_be_educated
+	custom = culture_can_be_revived
+}
+
+# Similar to Dead Culture and Pariah Folk, given to Dremora
+innovation_daedric_race = {
+	skill = diplomacy
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @dremora
+	
+	potential = {
+		has_cultural_pillar = heritage_dremora
+	}
+	
+	custom = no_county_culture_conversion
+	custom = culture_cannot_be_educated
+	custom = innovation_cannot_be_removed
+	custom = innovation_daedric_race_innovations
+	custom = innovation_daedric_race_persecution
+	custom = innovation_daedric_race_revocation
+
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+# For when we want a culture to be extra dead, unrevivable by regular means
+innovation_extinct_race = {
+	skill = diplomacy
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @dead_culture
+
+	potential = {
+		OR = { #let's here list all cultures that start with the innovation at game start
+			this = culture:falmer
+			this = culture:amz_vtharden
+			this = culture:amz_kagren
+			this = culture:amz_vtholften
+			this = culture:galen #Galenics are dead-dead proto-bretons
+		}	
+	}
+
+	can_progress = { 
+		culture_is_alive = no
+	}	
+
+	custom = no_county_culture_conversion
+	custom = culture_cannot_be_educated
+	custom = culture_cannot_be_revived
+
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+# To represent cultures that don't have a set homeland, ie aren't "native" anywhere or are offmap
+innovation_migratory_culture = {
+	skill = diplomacy
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	can_progress = {
+		always = no
+	}
+	icon = @nomadic
+
+	parameters = {
+		culture_is_migratory = yes
+	}
+
+	flag = nativity_innovation
+}

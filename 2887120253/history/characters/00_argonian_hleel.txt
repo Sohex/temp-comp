@@ -1,0 +1,666 @@
+﻿### Hleel
+
+tzel_keshu_100 = {
+	#name = "Holds-The-Place"
+	name = "Kuseem"
+	dynasty = dyn_tzel_keshu
+	religion = hist
+	culture = hleel
+	
+	trait = education_martial_3
+	trait = adventurer
+	trait = content
+	trait = diligent
+	trait = humble
+	trait = former_slave
+	disallow_random_traits = yes
+	
+	3330.1.1 = { birth = yes }
+	3359.5.1 = { give_nickname = nick_the_liberator }	
+	3420.1.1 = { death = yes }
+}
+
+##Su-Zahleel Dynasty/Tribe (dyn_su_zahleel)
+
+#House Su-Zahleel (dyn_su_zahleel)
+suzahleel_99 = {
+	name = "Amusei"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	trait = education_stewardship_4
+	trait = scarred
+	trait = craven
+	trait = diligent
+	trait = compassionate
+
+	3302.1.1 = { birth = yes }
+	3350.1.1 = { death = { death_reason = death_execution killer = melur_101 } }
+}
+suzahleel_99_wife = {
+	name = "Kasa"
+	religion = hist
+    culture = hleel
+	female = yes
+
+	trait = education_stewardship_4
+	trait = scarred
+	trait = brave
+	trait = lazy
+	trait = forgiving
+
+	3302.1.1 = { birth = yes }
+	3350.1.1 = { death = { death_reason = death_execution killer = melur_101 } }
+}
+suzahleel_100 = {
+	name = "Brand_Shei" #Chieftain of Ten-Maur-Wolk near Stormhold. Renegade slave from Stormhold
+	dna = suzahleel_1000_dna_entry
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	father = suzahleel_99
+	mother = suzahleel_99_wife
+
+	trait = education_martial_2
+	trait = peasant_leader
+	trait = former_slave
+	trait = scarred
+	trait = impatient
+	trait = wrathful
+	trait = arbitrary
+	stewardship = 2
+
+	3323.1.1 = { birth = yes }
+	3350.1.1 = { set_relation_rival = { reason = rival_historical target = character:melur_100 } }
+	# 3351.1.1 = { give_nickname = nick_the_fury }
+	3358.1.1 = {
+		add_pressed_claim = title:c_stormhold
+	}
+	#Stormhold Dres launch offensive
+	3373.1.1 = { death = { death_reason = death_battle killer = melur_100 } }
+}
+suzahleel_100b = {
+	name = "Yokul" #Chieftain of Alten Corimont and Tormont near Stormhold. Renegade slave from Stormhold
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	father = suzahleel_99
+	mother = suzahleel_99_wife
+
+	trait = education_stewardship_4
+	trait = scarred
+	trait = compassionate
+	trait = brave
+	trait = honest
+	trait = former_slave
+
+	3325.1.1 = { birth = yes }
+	#His brother bankrolled the foundation Yokul's city-state
+	3358.1.1 = { set_relation_friend = { reason = friend_generic_history target = character:suzahleel_100 } } 
+	3379.1.1 = { death = { death_reason = death_battle killer = melur_100 } }
+}
+suzahleel_100c = {
+	name = "Haxara" #Renegade slave from Stormhold, married the chieftain of the up and coming Toteik tribe
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	father = suzahleel_99
+	mother = suzahleel_99_wife
+
+	trait = education_stewardship_3
+	trait = scarred
+	trait = ambitious
+	trait = diligent
+	trait = arbitrary
+	trait = former_slave
+
+	3335.1.1 = { birth = yes }
+	3358.1.1 = { 
+		add_spouse = toteikhleel_100
+		set_relation_soulmate = character:toteikhleel_100 
+	}
+	3401.1.1 = { death = { death_reason = death_battle killer = melur_101 } }
+}
+suzahleel_101 = { #Good commander, manages to hold out against Dres for a long time
+	name = "Beem_Ja"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	trait = education_martial_3
+	trait = wrathful
+	trait = arrogant
+	trait = brave
+	trait = former_slave
+
+	father = suzahleel_100
+
+	3341.1.1 = { birth = yes }
+	3381.1.1 = { death = { death_reason = death_battle killer = melur_100 } }
+}
+suzahleel_101b = {
+	name = "Usha"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	trait = education_intrigue_3
+	trait = impatient
+	trait = stubborn
+	trait = brave
+	trait = former_slave
+
+	trait = lifestyle_blademaster
+
+	father = suzahleel_100
+
+	3343.1.1 = { birth = yes }
+	3375.1.1 = { death = { death_reason = death_battle killer = melur_100 } }
+}
+suzahleel_102 = { 
+	name = "Gih_Ja"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	father = suzahleel_101
+
+	3362.1.1 = { birth = yes }
+	3421.1.1 = { death = yes }
+}
+suzahleel_103 = {
+	name = "Voneesh"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	mother = suzahleel_102
+
+	3394.1.1 =  { birth = yes }
+	3458.1.1 = { death = yes }
+}
+#Second branch, children of Yokul
+suzahleel1_101 = {
+	name = "Brand_Shei"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	father = suzahleel_100b
+
+	3357.1.1 = { birth = yes }
+	3426.1.1 = { death = yes }
+}
+suzahleel1_102 = {
+	name = "Jeed_Ei"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	father = suzahleel1_101
+
+	3379.1.1 = { birth = yes }
+	3432.1.1 = { death = { death_reason = death_battle } } #Dres skirmish
+}
+suzahleel1_103 = {
+	name = "Dreekius"
+	dynasty = dyn_su_zahleel 
+	religion = hist
+    culture = hleel
+
+	mother = suzahleel1_102
+
+	3408.1.1 = { birth = yes }
+	3474.1.1 = { death = yes }
+}
+
+##Vos-Eihleel Dynasty/Tribe (dyn_voseihleel)
+
+#House Vos-Eihleel (dyn_voseihleel)
+voseihleel_99 = {
+	name = "El_Lurasha"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	trait = shy
+	trait = brave
+	trait = gluttonous
+
+	3306.1.1 = { birth = yes }
+    3353.1.1 = { death = { death_reason = death_natural_causes } }
+}
+
+voseihleel_100 = {
+	name = "Ereel_Lei"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	mother = voseihleel_99
+
+	trait = content
+	trait = generous
+	trait = callous
+	trait = education_martial_2
+	trait = twin
+
+	3330.1.1 = { birth = yes }
+    3398.1.1 = { death = { death_reason = death_old_age } }
+}
+
+voseihleel_100b = {
+	name = "Seen_Rei"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	mother = voseihleel_99
+
+	trait = calm
+	trait = arbitrary
+	trait = compassionate
+	trait = education_diplomacy_2
+	trait = twin
+
+	3330.1.1 = { birth = yes }
+    3388.1.1 = { death = { death_reason = death_old_age } }
+}
+
+voseihleel_100c = {
+	name = "Ocheeva"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	mother = voseihleel_99
+
+	trait = vengeful
+	trait = temperate
+	trait = cynical
+	trait = education_learning_2
+
+	3336.1.1 = { birth = yes }
+    3391.1.1 = { death = { death_reason = death_old_age } }
+}
+
+#Branch starting from 100c
+voseihleel1_101 = {
+	name = "Teinaava"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+
+	trait = pensive
+
+	mother = voseihleel_100c
+
+	3358.1.1 = { birth = yes }
+	3379.1.1 = { add_spouse = toteikhleel_101b }
+    3423.1.1 = { death = { death_reason = death_old_age } }
+}
+voseihleel1_101b = {
+	name = "Beela"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	trait = charming
+
+	mother = voseihleel_100c
+
+	3359.1.1 = { birth = yes }
+    3423.1.1 = { death = { death_reason = death_old_age } }
+}
+
+voseihleel1_102 = {
+	name = "Meen_Sa"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+	female = yes
+
+	father = voseihleel1_101
+	mother = toteikhleel_101b
+
+	3384.1.1 = { birth = yes }
+	3444.1.1 = { death = yes }
+}
+
+voseihleel1_103 = {
+	name = "Bar_Neeus"
+	dynasty = dyn_voseihleel 
+	religion = hist
+    culture = hleel
+
+	mother = voseihleel1_102
+
+	3414.1.1 = { birth = yes }
+	3473.1.1 = { death = yes }
+}
+
+##Toteikhleel Dynasty/Tribe (dyn_toteikhleel)
+
+#House Toteikhleel (dyn_toteikhleel)
+toteikhleel_100 = {
+    name = "Madesi" #Chieftain of the Toteik Tribe, rebelled against Thorn and united the tribes against the city
+    dynasty = dyn_toteikhleel
+    religion = hist
+    culture = hleel
+
+	disallow_random_traits = yes
+	trait = trusting
+	trait = brave
+	trait = gregarious
+	trait = shrewd
+	trait = physique_good_3
+	trait = education_martial_4
+	trait = former_slave
+	
+    3332.1.1 = { birth = yes }
+    3350.7.16 = { 
+		set_relation_rival = { reason = rival_historical target = character:drethan_100 }
+		set_relation_rival = { reason = rival_historical target = character:othral_100 }
+	}
+	3366.1.1 = {
+		add_pressed_claim = title:d_thorn #He will be back
+		add_pressed_claim = title:c_thorn
+		add_pressed_claim = title:d_branchmont #Gotta have a new home for his people 
+		set_relation_rival = { reason = rival_historical target = character:voseihleel_100 } #He has settled ancestral Vos-Eihleel land
+	}
+    3401.1.1 = { death = { death_reason = death_natural_causes } }
+}
+toteikhleel_101 = {
+    name = "Nakuma" #Chieftain of the Toteik Tribe
+    dynasty = dyn_toteikhleel
+    religion = hist
+    culture = hleel
+	female = yes
+
+	father = toteikhleel_100
+	mother = suzahleel_100c
+
+	trait = pensive
+	trait = physique_good_2
+	disallow_random_traits = yes
+	
+    3358.1.1 = { birth = yes }
+	3369.1.1 = {
+		trait = diligent
+	}
+    3374.1.1 = {
+		remove_trait = pensive
+		trait = calm
+		trait = gregarious
+		trait = education_stewardship_3
+	}
+    3415.1.1 = { death = { death_reason = death_murder_known killer = toteikhleel_101b } }
+}
+toteikhleel_101b = { #Betrays her siblings, allies with voseihleel
+    name = "Onasha"
+    dynasty = dyn_toteikhleel
+    religion = hist
+    culture = hleel
+	female = yes
+
+	father = toteikhleel_100
+	mother = suzahleel_100c
+
+	trait = charming
+	disallow_random_traits = yes
+	
+    3359.1.1 = { birth = yes }
+	3369.1.1 = {
+		trait = wrathful
+	}
+	3375.1.1 = {
+		remove_trait = charming
+		trait = patient
+		trait = deceitful
+		trait = shrewd
+		trait = education_intrigue_2
+	}
+    3422.1.1 = { death = { death_reason = death_natural_causes } }
+}
+toteikhleel_101c = {
+    name = "Veezara"
+    dynasty = dyn_toteikhleel
+    religion = hist
+    culture = hleel
+	female = yes
+
+	father = toteikhleel_100
+	mother = suzahleel_100c
+
+	trait = rowdy
+	disallow_random_traits = yes
+	
+    3360.1.1 = { birth = yes }
+	3369.1.1 = {
+		trait = wrathful
+	}
+    3376.1.1 = {
+		remove_trait = rowdy
+		trait = patient
+		trait = compassionate
+		trait = education_martial_2
+	}
+    3419.1.1 = { death = { death_reason = death_battle } }
+}
+
+##Xulmeleel Dynasty/Tribe (dyn_xulmeleel) "Mer-Slayer"
+
+#House Xulmeleel (dyn_xulmeleel)
+xulmeleel_100 = {
+    name = "Huleeya" #Chieftain of the Xulmeleel Tribe, regularly raids into Tearmarsh
+    dynasty = dyn_xulmeleel
+    religion = hist
+    culture = hleel
+
+	disallow_random_traits = yes
+	trait = sadistic
+	trait = wrathful
+	trait = humble
+	trait = reaver
+	trait = holy_warrior
+	trait = intellect_good_3
+	trait = education_martial_4
+	trait = former_slave
+	
+    3339.1.1 = { birth = yes }
+    3350.1.1 = { 
+		set_relation_rival = { reason = rival_historical target = character:drethan_100 }
+		set_relation_rival = { reason = rival_historical target = character:othral_100 }
+		add_pressed_claim = title:c_ordurin
+		add_pressed_claim = title:c_adanhu
+		add_pressed_claim = title:c_sotha_sil
+	}
+    3365.6.18 = { death = { death_reason = death_battle killer = drethan_100 } }
+}
+
+xulmeleel_101 = {
+	name = "Nush"
+	dynasty = dyn_xulmeleel
+    religion = hist
+    culture = hleel
+	female = yes
+
+	trait = wild_oat
+
+	3361.1.1 = { birth = yes }
+	#3365 - father dies, Madesi takes her in
+	3369.1.1 = { employer = toteikhleel_100 }
+	3417.1.1 = { death = yes }
+}
+
+#Chuna
+chuna_100 = {
+    name = "Beekatan"
+    dynasty = dyn_chuna
+    religion = hist
+    culture = hleel
+    female = yes
+
+    3329.1.1 = { birth = yes }
+    3387.1.1 = { death = yes }
+}
+
+
+#Heita-Meen, vicecanon of Stormhold in eso. Vicecanon title sucks, but argonian leader of Stormhold is good for bookmark diversity
+#History ToDo: give dynasty
+stormhold_eso = {
+	name = "Heita_Meen"
+	culture = hleel
+	religion = hist
+	female = yes
+
+	trait = ambitious
+	trait = vengeful
+	trait = zealous
+	trait = education_martial_2
+	trait = education_martial_prowess_3
+	trait = former_slave #Was slave in Thorn
+
+	3471.1.1 = { birth = yes }
+	3530.1.1 = { death = yes } #Placeholder - maybe killed by Dres after EP falls apart?
+}
+
+volunis_1 = { #Collaborationist Governor of Argonian slave community in Silent Marsh
+	name = "Stands_and_Watches"
+	culture = hleel
+	religion = tribunal_temple #Collaborationist
+
+	trait = craven
+	trait = greedy
+	trait = content
+	trait = education_stewardship_2
+	trait = loyal
+	trait = sign_thief
+
+	3309.12.3 = { birth = yes }	
+	3359.1.1 = {
+		employer = beroth_100
+	}
+	3380.5.19 = { death = yes }
+}
+
+kaal_mota_1 = { #Former slave, fighting a hopeless rebellion against Indorils
+	name = "Junal_Lei"
+	dynasty = dyn_kaalmota
+	culture = hleel
+	religion = hist
+
+	trait = ambitious
+	trait = just
+	trait = compassionate
+	trait = education_martial_prowess_2
+	trait = rough_terrain_expert
+	trait = peasant_leader
+	trait = former_slave
+
+	3309.1.1 = { birth = yes }
+	3362.12.3 = { death = { death_reason = death_battle } }
+}
+
+sun_in_shadow_mother = {
+	name = "Beekatan"
+	religion = hist
+	culture = hleel
+	female = yes
+
+	3455.1.1 = { birth = yes }
+	3489.1.1 = { death = { death_reason = death_accident } }
+}
+
+sun_in_shadow = { #Sun-in-Shadow, Telvanni argonian
+	name = "Sun_in_Shadow" #Lore
+	religion = hist
+	culture = hleel
+	female = yes
+
+	mother = sun_in_shadow_mother
+
+	trait = ambitious
+	trait = greedy
+	trait = cynical
+	trait = arcana_good_1
+	trait = education_magic_3
+	trait = education_intrigue_3
+
+	3475.1.1 = { birth = yes }
+	3491.1.1 = { 
+		employer = minthri_gothren
+		religion = tribunal_temple
+		culture = chi_addun
+		effect = {
+			add_character_flag = race_argonian
+		}
+	}
+	3505.1.1 = { trait = former_slave }
+	3600.1.1 = { death = yes } #Placeholder
+}
+
+## Unlanded lowborns
+
+argonian_unlanded_0001 = {
+	name = "Jeer_Maht"
+	culture = hleel
+	religion = hist
+
+	trait = albino
+	trait = lifestyle_blademaster
+	trait = education_martial_2
+	trait = zealous
+	trait = wrathful
+	trait = paranoid
+
+	3341.1.1 = { birth = yes }
+	3425.1.1 = { death = yes }
+}
+
+argonian_unlanded_0002 = {
+	name = "Lutapeeth"
+	culture = hleel
+	religion = hist
+	female = yes
+
+	trait = lifestyle_herbalist
+	trait = pilgrim
+	trait = education_learning_2
+
+
+	3340.1.1 = { birth = yes }
+	3418.1.1 = { death = yes }
+}
+
+argonian_unlanded_0017 = {
+	name = "Xal_Nur"
+	culture = hleel
+	religion = amberhist
+
+	trait = sign_lover
+	trait = wrathful
+	trait = stubborn
+	trait = trusting
+	trait = amber_blessed_3
+	trait = argonian_behemoth_3
+	trait = lunatic_1
+
+	prowess = 5
+
+	3338.02.01 = { birth = yes }
+	3358.1.1 = { employer = xitxaht_100 }
+	3410.1.1 = { death = yes }
+}

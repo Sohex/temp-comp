@@ -1,0 +1,85 @@
+﻿knight_nedic_headhunter_trophy_effect = {
+    if = {
+        limit = {
+            AND = {
+                culture = { has_cultural_parameter = battlefield_headhunters }
+                scope:victim_knight = {
+                    OR = {
+                        prowess > 12 # Trophy from a skilled opponent
+                        highest_held_title_tier >= tier_duchy # A notable opponent
+                    }
+                }
+            }
+        }
+        random = {
+            chance = 75
+            save_scope_as = owner
+            create_artifact = {
+                name = artifact_headhunter_trophy_of_the_enemy_name
+                description = artifact_headhunter_trophy_of_the_enemy_description
+                visuals = human_skull
+                type = miscellaneous
+                modifier = head_trophy_default_modifier
+                save_scope_as = newly_created_artifact
+            }
+            if = {
+                limit = {
+                    scope:victim_knight = {
+                        OR = {
+                            highest_held_title_tier = tier_duchy
+                            is_acclaimed = yes
+                        }
+                    }
+                }
+                hidden_effect = {
+                    scope:newly_created_artifact = {
+                        add_artifact_modifier = head_trophy_duke_modifier
+                        remove_artifact_modifier = head_trophy_default_modifier
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    scope:victim_knight = {
+                        highest_held_title_tier = tier_kingdom
+                    }
+                }
+                hidden_effect = {
+                    scope:newly_created_artifact = {
+                        add_artifact_modifier = head_trophy_king_modifier
+                        remove_artifact_modifier = head_trophy_default_modifier
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    scope:victim_knight = {
+                        highest_held_title_tier = tier_empire
+                    }
+                }
+                hidden_effect = {
+                    scope:newly_created_artifact = {
+                        add_artifact_modifier = head_trophy_emperor_modifier
+                        remove_artifact_modifier = head_trophy_default_modifier
+                    }
+                }
+            }
+
+            scope:newly_created_artifact = {
+                save_scope_as = this_artifact
+                set_variable = { name = ek_head_trophy_artifact value = yes }
+            }
+            scope:victim_knight = {
+                save_scope_as = old_owner
+            }
+            hidden_effect = {
+                send_interface_toast = {	
+                    title = artifact.0012.t
+                    left_icon = scope:this_artifact
+                    right_icon = scope:old_owner
+                    custom_tooltip = artifact.0012.tooltip
+                }
+            }
+        }
+    }
+}

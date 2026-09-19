@@ -1,0 +1,49 @@
+﻿### EK NOTE: These are the events reported to be orphaned. Meaning nothing in the game called for them. I have put them all here for 2 purposes. 1) to supressed the errors-from-orphanhood and 2) so the team could come here and process through the list. These events either should be incorporated into the mod or completely removed. Feel free to comment on the status of any of these events. And a final note: Every now and then this file should be emptied and reupdated - He9
+on_placeholder_pulse = {
+    trigger = {
+        always = no
+        has_variable = arcana
+        has_variable = had_bandit_uprising_story_cycle
+        has_variable = block_infidelity_flag
+        has_variable = saviors_hide
+        has_variable = skull_corruption
+        has_variable = volendrung
+        has_variable = scourge
+        has_variable = wabbajack
+        has_variable = staff
+        has_variable = goblinized
+        has_variable = dremorized
+        has_variable = artificial_lifespan_5
+        has_variable = staff_everscamp
+        has_variable = auriels_bow
+    } 
+    random_events = {
+        1 = ek_test_event.1
+        1 = ek_test_event.2
+        1 = ek_test_event.3
+        1 = ek_lifestyles.0004
+        1 = praxis.0001
+        1 = tribal.1006
+        1 = debug.0010
+        1 = debug_portraits.1
+        1 = trait_specific_ongoing.3006
+        1 = ek_test_event.5
+        1 = ek_test_event.6
+        1 = ek_test_event.61
+    }
+    effect = {
+        add_character_modifier = cat_revenge_modifier
+        add_character_modifier = cat_survived_modifier
+        add_character_modifier = lover_keepsake_hair_modifier
+        add_character_modifier = lover_keepsake_clothes_male_modifier
+        add_character_modifier = lover_keepsake_clothes_female_modifier
+        add_character_modifier = lover_keepsake_shell_modifier
+        #add_character_modifier = modifier_ritual_bound_armory TODO: re-enable when PDX makes the effect actually work
+        set_variable = everscamp_decoded
+        set_variable = test
+        set_variable = stress_threshold_option_vampire
+        set_variable = stress_threshold_option_lycan
+    }
+}
+
+

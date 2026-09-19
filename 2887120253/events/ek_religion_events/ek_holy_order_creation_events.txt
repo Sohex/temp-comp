@@ -1,0 +1,133 @@
+﻿namespace = ek_holy_orders
+
+ek_holy_orders.1 = {
+	scope = none
+	hidden = yes
+	
+	trigger = {
+		game_start_date >= 3360.1.1
+	}	
+	
+	immediate = {
+		title:c_bethrimo = { save_scope_as = county }
+		if = {
+			limit = { exists = title:e_tribunal_temple.holder }
+			title:e_tribunal_temple.holder = { save_temporary_scope_as = sponsor }
+		}
+		else = {
+			scope:county.holder = { save_temporary_scope_as = sponsor }
+		}
+		
+		if = {
+			limit = { 
+				exists = character:indoril_99b1
+				character:indoril_99b1 =  { is_alive = yes } 
+			}
+			character:indoril_99b1 = { save_scope_as = leader }
+		}
+		if = {
+			limit = {
+				current_date >= 3441.1.1
+				exists = character:sedroth1_991
+				character:sedroth1_991 =  { is_alive = yes } 
+			}
+			character:sedroth1_991 = { save_scope_as = leader }
+		}
+		
+		scope:leader = {
+			create_historical_holy_order_effect = { SPONSOR = scope:sponsor COUNTY = scope:county ORDER = d_ordinator_order_of_war }
+			historical_lease_out_effect = { COUNTY = title:c_drakehold ORDER = scope:new_holy_order }
+		}
+	}
+}
+
+ek_holy_orders.2 = {
+	scope = none
+	hidden = yes
+	
+	trigger = {
+		game_start_date >= 3360.1.1
+	}	
+	
+	immediate = {
+		title:c_dasek_moor = { save_scope_as = county }
+		if = {
+			limit = { exists = title:k_kvatch.holder }
+			title:k_kvatch.holder = { save_temporary_scope_as = sponsor }
+		}
+		else = {
+			scope:county.holder = { save_temporary_scope_as = sponsor }
+		}
+		if = {
+			limit = { 
+				exists = character:merula_cavor
+				character:merula_cavor = { is_alive = yes } 
+			}
+			character:merula_cavor = { save_scope_as = leader }
+		}
+		if = {
+			limit = { 
+				exists = character:ancrus_102d
+				character:ancrus_102d = { is_alive = yes } 
+			}
+			character:ancrus_102d = { save_scope_as = leader }
+		}
+
+		scope:leader = {
+			create_historical_holy_order_effect = { SPONSOR = scope:sponsor COUNTY = scope:county ORDER = d_order_of_the_hour }
+			historical_lease_out_effect = { COUNTY = title:c_dasek_moor ORDER = scope:new_holy_order }
+		}
+	}
+}
+ek_holy_orders.3 = {
+	scope = none
+	hidden = yes
+
+	trigger = {
+		game_start_date >= 3360.1.1
+		game_start_date < 3492.1.1 #EK TODO: maybe change, though dead Pride of Alkosh by Kamal works too
+	}	
+
+	immediate = {
+		title:c_pridehome = { save_scope_as = county }
+		if = {
+			limit = { exists = title:e_elsweyr.holder }
+			title:e_elsweyr.holder = { save_temporary_scope_as = sponsor }
+		}
+		else = {
+			scope:county.holder = { save_temporary_scope_as = sponsor }
+		}
+		if = {
+			limit = { 
+				exists = character:pridehome_001
+				character:pridehome_001 = { is_alive = yes } 
+			}
+			character:pridehome_001 = { save_scope_as = leader }
+			# and add their heir to their court
+			limit = { 
+				exists = character:pridehome_002
+				character:pridehome_002 = { is_alive = yes } 
+			}
+			character:pridehome_002 = { save_scope_as = leader_heir }
+		}
+		else_if = {
+			limit = { 
+				exists = character:pridehome_002
+				character:pridehome_002 = { is_alive = yes } 
+			}
+			character:pridehome_002 = { save_scope_as = leader }
+			# and add their heir to their court
+			limit = { 
+				exists = character:pridehome_003
+				character:pridehome_003 = { is_alive = yes } 
+			}
+			character:pridehome_003 = { save_scope_as = leader_heir }
+		}
+
+		scope:leader = {
+			create_historical_holy_order_effect = { SPONSOR = scope:sponsor COUNTY = scope:county ORDER = d_pride_of_alkosh }
+			historical_lease_out_effect = { COUNTY = title:c_pridehome ORDER = scope:new_holy_order }
+			add_courtier = scope:leader_heir # make sure their heir stays in Pridehome. can't use employer = in history due to them techincally not being landed yet since the order is formed dynamically by this effect
+		}
+	}
+}

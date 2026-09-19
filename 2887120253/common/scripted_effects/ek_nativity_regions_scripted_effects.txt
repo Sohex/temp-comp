@@ -1,0 +1,119 @@
+﻿save_culture_in_global_list = {
+	$CULTURE$ = { save_scope_as = culture_to_save }
+	add_to_global_variable_list = {
+		name = culture_list
+		target = scope:culture_to_save
+	}
+}
+
+set_culture_native_to = {
+	$CULTURE$ = {
+		add_to_variable_list = {
+			name = nativity_regions
+			target = geographical_region:custom_nativity_$REGION$
+		}
+		# remove migratory from them upon becoming native somewhere
+		if = {
+			limit = {
+				has_innovation = innovation_migratory_culture
+			}
+			remove_innovation = innovation_migratory_culture
+		}
+		# Special case for BM
+		if = { # If we're no longer native to BM, remmove this innovation
+			limit = { 
+				NOR = {
+					is_native_to = { CULTURE = $CULTURE$ REGION = middle_argonia }
+					is_native_to = { CULTURE = $CULTURE$ REGION = onkobra }
+					is_native_to = { CULTURE = $CULTURE$ REGION = benthic_yobesh }
+					is_native_to = { CULTURE = $CULTURE$ REGION = padomaic_marshes }
+					is_native_to = { CULTURE = $CULTURE$ REGION = eastern_topal }
+				}
+				has_innovation = innovation_black_marsh_natives
+			}
+			remove_innovation = innovation_black_marsh_natives
+		}
+		if = { # If we're native to BM, assign this innovation
+			limit = {
+				OR = {
+					is_native_to = { CULTURE = $CULTURE$ REGION = middle_argonia }
+					is_native_to = { CULTURE = $CULTURE$ REGION = onkobra }
+					is_native_to = { CULTURE = $CULTURE$ REGION = benthic_yobesh }
+					is_native_to = { CULTURE = $CULTURE$ REGION = padomaic_marshes }
+					is_native_to = { CULTURE = $CULTURE$ REGION = eastern_topal }
+				}
+				NOT = { has_innovation = innovation_black_marsh_natives }
+			}
+			add_innovation = innovation_black_marsh_natives
+		}
+	}
+}
+
+create_local_culture_decision_scripted_effects = {
+	random_culture_global = {
+		limit = {
+			has_same_culture_heritage = root.culture
+			is_native_to = { CULTURE = this REGION = $REGION$ }
+			NOT = { culture_is_alive = yes }
+		}
+		
+		save_scope_as = new_culture
+	}
+	
+	# The culture is revived!
+	scope:new_culture = { 
+		culture_become_alive_effect = yes
+		set_language_from = root.culture
+		custom_tooltip = create_local_culture_innovations_tooltip
+		hidden_effect = {
+			get_all_innovations_from = root.culture
+		}
+	}
+	
+	### Capital in $REGION$, personally convert culture
+	if = {
+		limit = { capital_province = { geographical_region = custom_nativity_$REGION$ } }
+		hidden_effect = {
+			every_courtier = {
+				limit = {
+					has_culture = root.culture
+					dynasty = root.dynasty
+				}
+				set_culture = scope:new_culture
+			}
+			capital_county = { set_county_culture = scope:new_culture }
+		}
+		set_culture = scope:new_culture
+		add_character_flag = converted_culture_this_lifetime
+	}
+	
+	### Most of the titles held within the region should convert
+	hidden_effect = {
+		random_held_title = {
+			limit = {
+				tier = tier_county
+				culture = {
+					has_same_culture_heritage = root.culture
+				} 
+				title_province = { geographical_region = custom_nativity_$REGION$ }
+			}
+			set_county_culture = scope:new_culture
+		}
+		every_held_title = {
+			limit = {
+				tier = tier_county
+				culture = {
+					has_same_culture_heritage = root.culture
+				}
+				NOT = { culture = scope:new_culture }
+				title_province = { geographical_region = custom_nativity_$REGION$ }
+			}
+			random = {
+				chance = 60
+				set_county_culture = scope:new_culture
+			}
+		}
+	}
+	
+	trigger_event = ek_culture_creation_decision.0001
+}

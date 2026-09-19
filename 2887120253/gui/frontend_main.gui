@@ -1,0 +1,1723 @@
+# EK MainMenu Tweak
+#EK NOTE: I (Theyn) purposefully kept the old main menu vs the newer one. I'm the one that maintains it too.
+widget = {
+	name = "mainmenu_panel_bottom"
+	parentanchor = center
+	size = { 100% 100% }
+
+	state = {
+		name = _show
+		using = Animation_FadeIn_Standard
+		start_sound = {
+			soundeffect = "event:/SFX/UI/Frontend/sfx_ui_frontend_window_show"
+		}
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Standard
+		start_sound = {
+			soundeffect = "event:/SFX/UI/Frontend/sfx_ui_frontend_window_hide"
+		}
+	}
+
+	widget = {
+		parentanchor = center
+		size = { 1920 1080 }
+		scale = "[ScaleToFitElementInside('(int32)1920', '(int32)1080')]"
+
+		state = {
+			name = "main_menu_continue"
+			duration = 0.6
+			delay = 1
+			using = Animation_Curve_Default
+
+			alpha = 0
+		}
+
+		icon = {
+			parentanchor = center
+			size = { 100% 100% }
+			texture = "gfx/interface/illustrations/main_menu/frontend_whitegold.dds" #EK EDIT
+
+			modify_texture = {
+				name = "fade"
+				texture = "gfx/interface/component_masks/mask_fade_horizontal.dds"
+				blend_mode = alphamultiply
+				translate_uv = { 1 0 }
+				alpha = 0
+			}
+
+			state = {
+				name = "main_menu_continue"
+				duration = 1
+				bezier = { 0.5 0 1 0.5 }
+
+				modify_texture = {
+					name = "fade"
+					translate_uv = { -1 0 }
+					alpha = 1
+				}
+			}
+		}
+	}
+
+	widget = {
+		parentanchor = center
+		size = { 1920 1080 }
+		scale = "[ScaleToFitElementInside('(int32)1920', '(int32)1080')]"
+			#position = "[Select_CVector2f( FrontEndMainView.ShouldShowChallengeCharacter, '(CVector2f)-250,0', '(CVector2f)0,0' )]"
+
+		icon = {
+			name = "left_panel"
+			parentanchor = left|vcenter
+			position = { 225 -50 }
+			scale = 0.8
+			#alpha = 0
+
+			state = {
+				name = a
+				next = b
+				trigger_on_create = yes
+				position = { 200 -100 }
+				alpha = 0
+			}
+
+			state = {
+				name = b
+				position = { 200 -50 }
+				duration = 0.5
+				alpha = 1
+				delay = 0.5
+
+				using = Animation_Curve_Default
+				#on_finish = "[PdxGuiTriggerAllAnimations('shimmer')]"
+				on_finish = "[PdxGuiWidget.FindChild('ek_logo').TriggerAnimation('shimmer')]"
+			}
+
+			background = {
+				texture = "gfx/interface/tiles/generic_dark_rectangle.dds"
+				spriteType = Corneredtiled
+				spriteborder = { 2 2 }
+				margin_left = 15
+				margin_right = 15
+				margin_top = -88
+				margin_bottom = 80
+				alpha = 0.75
+
+				using = Mask_Rough_Edges
+			}
+
+			icon = {
+				parentanchor = top|hcenter
+				name = "tile_frame_top"
+				texture = "gfx/interface/frontend/frontend_menu_top.dds"
+				size = { 442 40 }
+				position = { 0 60 }
+				scale = 1.2
+			}
+
+			icon = {
+				parentanchor = bottom|hcenter
+				name = "tile_frame_bottom"
+				texture = "gfx/interface/frontend/frontend_menu_bottom.dds"
+				#size = { 442 54 }
+				position = { 0 110 }
+				scale = 1.2
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_mask.dds"
+				blend_mode = mask
+			}
+
+			modify_texture = {
+				name = "glow_main"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_glow.dds"
+				blend_mode = colordodge
+				alpha = 0
+				translate_uv = { 0.29 -0.5 }
+			}
+
+			modify_texture = {
+				name = "glow_continue"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.14 }
+				alpha = 1
+			}
+
+			modify_texture = {
+				name = "glow_new"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.07 }
+				alpha = 0
+			}
+
+			modify_texture = {
+				name = "glow_load"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.14 }
+				alpha = 0
+			}
+
+			modify_texture = {
+				name = "glow_host"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.28 }
+				alpha = 0
+			}
+
+			modify_texture = {
+				name = "glow_join"
+				texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+				blend_mode = colordodge
+				translate_uv = { 0 -0.31 }
+				alpha = 0
+			}
+
+			# modify_texture = {
+			# 	name = "glow_exit"
+			# 	texture = "gfx/interface/frontend/frontend_main_menu_bg_button_glow.dds"
+			# 	blend_mode = colordodge
+			# 	translate_uv = { 0 -0.41 }
+			# 	alpha = 0
+			# }
+
+			@duration_button_enter = 0.1
+			@duration_button_leave = 0.5
+
+			# Continue
+			state = {
+				name = "main_menu_glow_continue_enter"
+				duration = 0.05
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_continue"
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_continue_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_continue"
+					alpha = 0
+				}
+			}
+
+			# New
+			state = {
+				name = "main_menu_glow_new_enter"
+				duration = @duration_button_enter
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_new"
+					translate_uv = { 0 -0.07 }
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_new_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_new"
+					translate_uv = { 0 -0.07 }
+					alpha = 0
+				}
+			}
+
+			# Load
+			state = {
+				name = "main_menu_glow_load_enter"
+				duration = @duration_button_enter
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_load"
+					translate_uv = { 0 -0.14 }
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_load_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_load"
+					translate_uv = { 0 -0.14 }
+					alpha = 0
+				}
+			}
+
+			# Load
+			state = {
+				name = "main_menu_glow_host_enter"
+				duration = @duration_button_enter
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_host"
+					translate_uv = { 0 -0.28 }
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_host_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_host"
+					translate_uv = { 0 -0.28 }
+					alpha = 0
+				}
+			}
+
+			# Load
+			state = {
+				name = "main_menu_glow_join_enter"
+				duration = @duration_button_enter
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_join"
+					translate_uv = { 0 -0.31 }
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_join_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_join"
+					translate_uv = { 0 -0.31 }
+					alpha = 0
+				}
+			}
+
+			# Exit
+			state = {
+				name = "main_menu_glow_exit_enter"
+				duration = 0.05
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_continue"
+					translate_uv = { 0 -0.41 }
+					alpha = 1
+				}
+			}
+
+			state = {
+				name = "main_menu_glow_exit_leave"
+				duration = @duration_button_leave
+				using = Animation_Curve_Default
+
+				modify_texture = {
+					name = "glow_continue"
+					translate_uv = { 0 -0.41 }
+					alpha = 0
+				}
+			}
+
+			#EK DISABLED: this looks really bad for us for some reason
+			# Appear bounce animation
+			# state = {
+			# 	name = a
+			# 	next = b
+			# 	duration = 1
+			# 	trigger_on_create = yes
+			# 	position_y = -700
+			# }
+
+			# state = {
+			# 	name = b
+			# 	next = c
+			# 	duration = 0.4
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -35
+			# 	alpha = 1
+			# }
+
+			# state = {
+			# 	name = c
+			# 	next = d
+			# 	duration = 0.1
+			# 	bezier = { 0 0.5 0.5 1 }
+
+			# 	position_y = -50
+			# }
+
+			# state = {
+			# 	name = d
+			# 	next = e
+			# 	duration = 0.1
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -30
+			# }
+
+			# state = {
+			# 	name = e
+			# 	next = f
+			# 	duration = 0.05
+			# 	bezier = { 0 0.5 0.5 1 }
+
+			# 	position_y = -40
+			# }
+
+			# state = {
+			# 	name = f
+			# 	next = "glow_1"
+			# 	duration = 0.05
+			# 	bezier = { 0.5 0 1 0.5 }
+
+			# 	position_y = -35
+			# }
+
+			# Main Glow Animation
+			# state = {
+			# 	name = "glow_1"
+			# 	next = "glow_2"
+
+			# 	modify_texture = {
+			# 		name = "glow_main"
+			# 		alpha = 0
+			# 		translate_uv = { 0.29 -0.5 }
+			# 	}
+
+			# }
+
+			state = {
+				name = "glow_1"
+				next = "glow_3"
+				duration = 0.3
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0
+					translate_uv = { 0.25 -0.22 }
+				}
+			}
+
+			state = {
+				name = "glow_3"
+				next = "glow_4"
+				duration = 0.5
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0.4
+					translate_uv = { 0.19 -0.03 }
+				}
+			}
+
+			state = {
+				name = "glow_4"
+				next = "glow_5"
+				duration = 0.25
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0.8
+					translate_uv = { 0.1 0.1 }
+				}
+			}
+
+			state = {
+				name = "glow_5"
+				next = "glow_6"
+				duration = 0.25
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0.5
+					translate_uv = { 0.03 0.19 }
+				}
+			}
+
+			state = {
+				name = "glow_6"
+				next = "glow_7"
+				duration = 0.3
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0.2
+					translate_uv = { -0.15 0.25 }
+				}
+			}
+
+			state = {
+				name = "glow_7"
+				duration = 0.4
+
+				modify_texture = {
+					name = "glow_main"
+					alpha = 0
+					translate_uv = { -0.3 0.29 }
+				}
+			}
+
+			# Continue Game
+			state = {
+				name = "main_menu_continue"
+				duration = 0.4
+				bezier = { 0.5 0 1 0.5 }
+				delay = 0.4
+				alpha = 0
+
+				position_x = -100
+			}
+
+			vbox = {
+				spacing = 25
+				datacontext = "[FrontEndMainView.AccessLoadView]"
+				set_parent_size_to_minimum = yes
+				#EK EDIT: EK Main Logo
+				icon = {
+					name = "ek_logo"
+					texture = "gfx/interface/frontend/main_logo.dds"
+					size = { 500 250 }
+
+					modify_texture = {
+						name = "shimmer"
+						texture = "gfx/interface/component_effects/effect_shimmer.dds"
+						blend_mode = colordodge
+						translate_uv = { 1 -0.4 }
+						alpha = 0.6
+					}
+
+					state = {
+						name = shimmer
+						next = pause
+						duration = 2
+
+						bezier = { 0 0.9 1 0.4 }
+
+						modify_texture = {
+							name = "shimmer"
+							translate_uv = { -1 -0.4 }
+							alpha = 0.6
+						}
+					}
+
+					state = {
+						name = "pause"
+						next = shimmer
+						duration = 0
+						delay = 5
+
+						modify_texture = {
+							name = "shimmer"
+							translate_uv = { 1 -0.4 }
+							alpha = 0.6
+						}
+					}
+				}
+
+					vbox = {
+						spacing = 5
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							margin_left = 5
+							text = "SINGLE_PLAYER"
+							default_format = "#weak;italic;glow_color:{0.1,0.1,0.1,1}"
+						}
+
+						vbox = {
+							button_frontend = {
+								name = "continue_button_disabled"
+								visible = "[Not(FrontEndLoadView.CanDoContinue)]"
+								enabled = no
+
+								text = "CONTINUE"
+								default_format = "#weak"
+								fontsize = 22
+								tooltip = FRONTEND_NO_CONTINUE_TT
+
+							}
+
+							button_frontend = {
+								name = "continue_button"
+								datacontext = "[FrontEndLoadView.GetContinueSave]"
+								visible = "[FrontEndLoadView.CanDoContinue]"
+								enabled = "[Not( SaveGameItem.HasMissingDLCs )]"
+								onclick = "[FrontEndLoadView.OnContinue]"
+								clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+								shortcut = confirm
+								shortcut = confirm_2
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptAllAnimations('main_menu_glow_exit_leave')]"
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_continue_leave','main_menu_glow_continue_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_continue_enter','main_menu_glow_continue_leave')]"
+								}
+
+								# Triggered from code, don't re-name.
+								state = {
+									name = "main_menu_continue"
+									delay = 1.5
+									on_finish = "[FrontEndLoadView.PostContinueFade]"
+								}
+
+								state = {
+									name = _mouse_release
+									on_start = "[FrontEndLoadView.PreContinueSaveCheck]"
+								}
+
+								text = "CONTINUE"
+								fontsize = 22
+								tooltip = FRONTEND_CONTINUE_TT
+
+								hbox = {
+									parentanchor = right|vcenter
+									alwaystransparent = yes
+									margin_right = 10
+
+									ironman_save_icon = {
+										visible = "[SaveGameItem.IsIronmanSave]"
+										tooltip = "LOAD_IRONMAN_TOOLTIP"
+									}
+
+									invalid_save_icon = {
+										visible = "[SaveGameItem.HasMissingDLCs]"
+										tooltip = "[SaveGameItem.GetMissingDLCInfo]"
+									}
+
+									# Because of game rules
+									achievements_disabled_icon = {
+										visible = "[SaveGameItem.HasAchievementBlockingGameRules]"
+										tooltip = "[SaveGameItem.GetAchievementBlockingGameRulesInfo]"
+									}
+
+									# because of other reasons (tag switching, console, multiplayer, modified checksum)
+									achievements_disabled_icon = {
+										visible = "[And( Not(SaveGameItem.HasAchievementBlockingGameRules), Not(SaveGameItem.CanGetAchievements) )]"
+										tooltip = "ACHIEVEMENTS_DISABLED_SAVEGAME"
+									}
+
+									expand = {
+										alwaystransparent = yes
+									}
+
+									widget = {
+										size = { 64 64 }
+
+										coa_realm_shadow = {
+											texture = "[SaveGameItem.GetPlayerGovernment.GetRealmFrameShadow('(int32)62')]"
+											frame = "[SaveGameItem.GetPlayerTier]"
+											framesize = { 64 64 }
+											size = { 64 64 }
+										}
+
+										coat_of_arms_icon = {
+											name = "realm_flag"
+											parentanchor = center
+											alwaystransparent = yes
+
+											size = { 64 64 }
+											coat_of_arms_slot = "[SaveGameItem.GetCoatOfArms.GetSlot('(int32)124','(int32)124')]"
+											coat_of_arms = "[SaveGameItem.GetCoatOfArms.GetTexture('(int32)124','(int32)124')]"
+											coat_of_arms_mask = "[SaveGameItem.GetPlayerGovernment.GetRealmMask]"
+											coat_of_arms_offset = "[SaveGameItem.GetPlayerGovernment.GetRealmMaskOffset]"
+											coat_of_arms_scale = "[SaveGameItem.GetPlayerGovernment.GetRealmMaskScale]"
+
+											coa_realm_overlay  = {
+												texture = "[SaveGameItem.GetPlayerGovernment.GetRealmFrame('(int32)62')]"
+												frame = "[SaveGameItem.GetPlayerTier]"
+												framesize = { 64 64 }
+												size = { 64 64 }
+											}
+
+											coa_realm_topframe  = {
+												texture = "gfx/interface/coat_of_arms/topframe_62.dds"
+												frame = "[SaveGameItem.GetPlayerTier]"
+												framesize = { 64 64 }
+												position = { 0 -8 }
+												size = { 64 64 }
+											}
+										}
+									}
+								}
+							}
+						}
+
+						button_frontend = {
+							name = "new_game_button"
+							text = "NEW_GAME"
+							tooltip = "NEW_GAME"
+							fontsize = 20
+							onclick = "[FrontEndMainView.OnNewGame]"
+							shortcut = menu_1
+
+							state = {
+								name = _mouse_hierarchy_enter
+								on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_new_leave','main_menu_glow_new_enter')]"
+							}
+
+							state = {
+								name = _mouse_hierarchy_leave
+								on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_new_enter','main_menu_glow_new_leave')]"
+							}
+						}
+
+
+						vbox = {
+							button_frontend = {
+								name = "load_game_button_disabled"
+								visible = "[Not(FrontEndLoadView.CanDoContinue)]"
+								enabled = no
+
+								text = "LOAD"
+								default_format = "#weak"
+								fontsize = 20
+								tooltip = FRONTEND_NO_CONTINUE_TT
+
+							}
+
+							button_frontend = {
+								name = "load_game_button"
+								visible = "[FrontEndLoadView.CanDoContinue]"
+								text = "LOAD"
+								tooltip  ="LOAD"
+								fontsize = 20
+								onclick = "[FrontEndMainView.OnLoad]"
+								shortcut = menu_2
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_load_leave','main_menu_glow_load_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_load_enter','main_menu_glow_load_leave')]"
+								}
+							}
+						}
+					}
+
+					vbox = {
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							margin_left = 5
+							text = "MULTI_PLAYER"
+							default_format = "#weak;italic;glow_color:{0.1,0.1,0.1,1}"
+						}
+
+						spacer = {
+							size = { 5 5 }
+						}
+
+						vbox = {
+							visible = "[And( StatusIsLoggedIn, Not( StatusIsUserNameEmpty ) )]"
+							spacing = 5
+
+							button_frontend = {
+								name = "host_button"
+								text = "HOST_GAME"
+								fontsize = 20
+								onclick = "[FrontEndMainView.OnHost]"
+								onclick = "[RefreshIllustration]"
+								enabled = "[JominiIsMultiplayerAccessible]"
+								tooltip = "[JominiGetMultiplayerAccessibleString]"
+								shortcut = menu_3
+
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_host_leave','main_menu_glow_host_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_host_enter','main_menu_glow_host_leave')]"
+								}
+							}
+
+							button_frontend = {
+								name = "join_button"
+								text = "FRONTEND_JOIN_MULTIPLAYER"
+								fontsize = 22
+								onclick = "[FrontEndMainView.OnMultiPlayer]"
+								onclick = "[RefreshIllustration]"
+								enabled = "[JominiIsMultiplayerAccessible]"
+								tooltip = "[JominiGetMultiplayerAccessibleString]"
+								shortcut = menu_4
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_join_leave','main_menu_glow_join_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_join_enter','main_menu_glow_join_leave')]"
+								}
+							}
+						}
+
+						vbox = {
+							visible = "[Or( Not( StatusIsLoggedIn ), StatusIsUserNameEmpty )]"
+							spacing = 5
+
+							button_frontend = {
+								name = "host_button"
+								text = "HOST_GAME"
+								default_format = "#weak"
+								fontsize = 22
+								onclick = "[FrontEndMainView.OnLogin]"
+								tooltip = "[JominiGetMultiplayerAccessibleString]"
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_host_leave','main_menu_glow_host_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_host_enter','main_menu_glow_host_leave')]"
+								}
+
+								icon_online_offline = {
+									parentanchor = right|vcenter
+									position = { -15 0 }
+									frame = 2
+								}
+							}
+
+							button_frontend = {
+								name = "join_button"
+								text = "FRONTEND_JOIN_MULTIPLAYER"
+								default_format = "#weak"
+								fontsize = 22
+								onclick = "[FrontEndMainView.OnLogin]"
+								tooltip = "[JominiGetMultiplayerAccessibleString]"
+
+								state = {
+									name = _mouse_hierarchy_enter
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_join_leave','main_menu_glow_join_enter')]"
+								}
+
+								state = {
+									name = _mouse_hierarchy_leave
+									on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_join_enter','main_menu_glow_join_leave')]"
+								}
+
+								icon_online_offline = {
+									parentanchor = right|vcenter
+									position = { -15 0 }
+									frame = 2
+								}
+							}
+						}
+					}
+
+
+					button_frontend = {
+						name = "exit_game_button"
+						visible = yes
+						text = "EXIT_TO_DESKTOP"
+						fontsize = 22
+						onclick = "[FrontEndMainView.OnQuit]"
+
+						state = {
+							name = _mouse_hierarchy_enter
+							on_start = "[PdxGuiInterruptAllAnimations('main_menu_glow_continue_leave')]"
+							on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_exit_leave','main_menu_glow_exit_enter')]"
+						}
+
+						state = {
+							name = _mouse_hierarchy_leave
+							on_start = "[PdxGuiInterruptThenTriggerAllAnimations('main_menu_glow_exit_enter','main_menu_glow_exit_leave')]"
+						}
+					}
+
+				expand = {}
+
+				hbox = {
+					name = "bottom_panel"
+					# layoutpolicy_horizontal = expanding
+					spacing = 55
+
+					sdk_login_accountwidget = {
+						blockoverride "properties"
+						{
+							onclick = "[FrontEndMainView.OnLogin]"
+						}
+
+						text_multi = {
+							parentanchor = hcenter
+							position = { 0 50 }
+							max_width = 100
+							autoresize = yes
+							text = "PARADOX_ACCOUNT"
+							default_format = "#low"
+							align = center
+						}
+					}
+
+					button_settings = {
+						name = "settings"
+						onclick = "[FrontEndMainView.OnSettings]"
+						shortcut = "menu_10"
+
+						text_multi = {
+							parentanchor = hcenter
+							position = { 0 50 }
+							max_width = 100
+							autoresize = yes
+							text = "SETTINGS"
+							default_format = "#low"
+							align = center
+						}
+					}
+
+					button_achievements = {
+						name = "achievements"
+						onclick = "[OpenAchievements]"
+						enabled = "[AreAchievementsAvailable]"
+						tooltip = "[GetAchievementsAvailableString]"
+
+						text_multi = {
+							parentanchor = hcenter
+							position = { 0 50 }
+							max_width = 100
+							autoresize = yes
+							text = "ACHIEVEMENTS"
+							default_format = "#low"
+							align = center
+						}
+					}
+
+					button_encyclopedia = {
+						onclick = "[ToggleEncyclopedia]"
+
+						text_multi = {
+							parentanchor = hcenter
+							position = { 0 50 }
+							max_width = 100
+							autoresize = yes
+							text = "HEADING_ENCYCLOPEDIA"
+							default_format = "#low"
+							align = center
+						}
+					}
+
+					button_credits = {
+						onclick = "[FrontEndMainView.OnCredits]"
+
+						text_multi = {
+							parentanchor = hcenter
+							position = { 0 50 }
+							max_width = 100
+							autoresize = yes
+							text = "CREDITS"
+							default_format = "#low"
+							align = center
+						}
+					}
+				}
+			}
+
+			### Subscription Button
+
+			# widget = {
+			# 	size = { 372 64 }
+			# 	parentanchor = bottom|hcenter
+			# 	position = { 2 -15 }
+			# 	visible = "[FrontEndMainView.IsSteamAvailable]"
+
+			# 	button_normal = {
+			# 		onclick = "[PdxGuiTriggerAllAnimations('start_game_audio')]"
+			# 		onclick = "[FrontEndMainView.OnSubscription]"
+
+			# 		gfxtype = framedbuttongfx
+			# 		effectname = "NoHighlight"
+			# 		upframe = 1
+			# 		downframe = 2
+			# 		overframe = 1
+			# 		disableframe = 1
+
+			# 		size = { 100% 100% }
+			# 		texture = "gfx/interface/component_decoration/subscribe_button.dds"
+
+			# 		modify_texture = {
+			# 			texture = "gfx/interface/buttons/button_fancy_overlay.dds"
+			# 			blend_mode = overlay
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "glow"
+			# 			texture = "gfx/interface/buttons/button_fancy_glow.dds"
+			# 			blend_mode = colordodge
+			# 			alpha = 0
+
+			# 			spriteborder = { 20 0 }
+			# 			spritetype = corneredStretched
+			# 		}
+
+			# 		modify_texture = {
+			# 			texture = "gfx/interface/component_masks/mask_center_shimmer.dds"
+			# 			blend_mode = mask
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 			rotate_uv = 0
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_2"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 			rotate_uv = 0
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_3"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 		}
+
+			# 		modify_texture = {
+			# 			name = "shimmer_4"
+			# 			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			# 			blend_mode = colordodge
+			# 			spriteType = corneredTiled
+			# 		}
+
+			# 		state = {
+			# 			trigger_on_create = yes
+			# 			name = a
+			# 			next = b
+			# 			duration = 0
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = 0
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = 0
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { 1 0 }
+			# 				alpha = 0.1
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { -1 0 }
+			# 				alpha = 0.5
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = b
+			# 			next = c
+			# 			duration = 10
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = 180
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = -180
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { 0 0 }
+			# 				alpha = 0.5
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { 0 0 }
+			# 				alpha = 0.1
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = c
+			# 			next = a
+			# 			duration = 10
+
+			# 			modify_texture = {
+			# 				name = "shimmer"
+			# 				translate_uv = { -0.1 0 }
+			# 				alpha = 0.1
+			# 				rotate_uv = 360
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_2"
+			# 				translate_uv = { 0.1 0 }
+			# 				alpha = 0.3
+			# 				rotate_uv = -360
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_3"
+			# 				translate_uv = { -1 0 }
+			# 				alpha = 0.1
+			# 			}
+
+			# 			modify_texture = {
+			# 				name = "shimmer_4"
+			# 				translate_uv = { 1 0 }
+			# 				alpha = 0.5
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_hierarchy_enter
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 1
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_hierarchy_leave
+			# 			duration = 0.2
+			# 			using = Animation_Curve_Default
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 0
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = _mouse_press
+			# 			duration = 0
+			# 			using = Animation_Curve_Default
+
+			# 			modify_texture = {
+			# 				name = "glow"
+			# 				alpha = 0
+			# 			}
+			# 		}
+
+			# 		state = {
+			# 			name = start_game_audio
+			# 			duration = 0.1
+
+			# 			start_sound = {
+			# 				soundeffect = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+			# 			}
+			# 		}
+
+			# 		text_single = {
+			# 			parentanchor = center
+			# 			text = "[FrontEndMainView.GetSubscriptionStatusText]"
+			# 			max_width = 312
+			# 			align = nobaseline
+			# 			using = Font_Size_Small
+			# 			default_format = "#clickable;glow_color:{0,0,0,1}"
+			# 			background = {
+			# 				texture ="gfx/interface/colors/black.dds"
+			# 				alpha = 0.75
+			# 				margin = { 100 20 }
+			# 				modify_texture = {
+			# 					texture = "gfx/interface/component_masks/mask_fade_circle.dds"
+			# 					blend_mode = alphamultiply
+
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+
+			# 	icon = {
+			# 		size = { 100% 100% }
+			# 		texture = "gfx/interface/component_decoration/subscribe_button_frame.dds"
+			# 	}
+			# }	
+		}
+	}
+
+	clickable_version_number = {
+		parentanchor = bottom|right
+		position = { -15 -15 }
+
+		using = tooltip_se
+
+		blockoverride "background"
+		{
+
+		}
+	}
+
+	error_horse = {
+		visible = "[Not(ReleaseMode)]"
+		parentanchor = bottom|right
+		position = { -80 -90 }
+	}
+	loaded_mods_icon = {
+		visible = "[And( HasLoadedMods, Not(ReleaseMode))]"
+		parentanchor = bottom|right
+		tooltip = "[GetLoadedMods]"
+		position = { -120 -85 }
+	}
+
+	widget = {
+		parentanchor = bottom|left
+		size = { 50% 100 }
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			vbox = {
+				layoutpolicy_vertical = expanding
+				margin_right = 10
+				expand = {}
+
+				#EK EDIT: disabled socials
+				# text_single = {
+				# 	text = "SOCIALS"
+				# 	autoresize = yes
+				# 	max_width = 70
+				# 	minimumsize = { 0 25 }
+				# 	align = nobaseline
+				# 	using = Font_Size_Medium
+				# }
+
+				spacer = {
+					size = { 1 24 }
+				}
+
+				text_single = {
+					text = "DLC"
+					autoresize = yes
+					max_width = 70
+					minimumsize = { 0 25 }
+					align = nobaseline
+					using = Font_Size_Medium
+				}
+
+				expand = {}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				spacing = 4
+
+				#EK EDIT: disabled socials
+				# hbox = {
+				# 	layoutpolicy_horizontal = expanding
+				# 	spacing = 8
+
+				# 	button_standard = {
+				# 		size = { 44 44 }
+
+				# 		icon = {
+				# 			size = { 100% 100%}
+				# 			texture = "gfx/interface/icons/social_media/youtube_button.dds"
+				# 		}
+				# 		onclick = "[FrontEndMainView.OnOpenYoutubeUrl]"
+				# 		tooltip = youtube_tooltip
+				# 		using = tooltip_ne
+				# 	}
+
+				# 	button_standard = {
+				# 		size = { 44 44 }
+
+				# 		icon = {
+				# 			size = { 100% 100%}
+				# 			texture = "gfx/interface/icons/social_media/discord_button.dds"
+				# 		}
+				# 		onclick = "[FrontEndMainView.OnOpenDiscordUrl]"
+				# 		tooltip = discord_tooltip
+				# 		using = tooltip_ne
+				# 	}
+
+				# 	expand = {}
+				# }
+
+				hbox = { # DLCs
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 10
+
+					hbox = {
+						hbox = {
+							datamodel = "[FrontEndMainView.GetDlcCollection.GetDlcs]"
+							spacing = 5
+
+							item = {
+								dlc_button = {
+									using = tooltip_nw
+								}
+							}
+						}
+
+						expand = {}
+					}
+				}
+			}
+		}
+	}
+
+	widget = {
+		name = "challenge_character"
+		#visible = "[FrontEndMainView.ShouldShowChallengeCharacter]"
+		datacontext = "[FrontEndMainView.GetChallengeCharacter]"
+		datacontext = "[ChallengeCharacter.GetBookmarkCharacter]"
+		allow_outside = yes
+
+		parentanchor = vcenter|right
+		position = { -60 -10 }
+		size = { 400 744 }
+
+		widget = {
+			position = { 0 -40 }
+			size = { 280 280 }
+			parentanchor = top|hcenter
+
+			icon = {
+				texture = "gfx/interface/colors/black.dds"
+				size = { 180% 180% }
+				position = { -10 -10 }
+				parentanchor = top|hcenter
+				alpha = 0.5
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_glow.dds"
+					blend_mode = alphaMultiply
+				}
+			}
+
+			icon = {
+				texture = "gfx/interface/colors/black.dds"
+				size = { 220% 220% }
+				position = { -10 -10 }
+				parentanchor = top|hcenter
+				alpha = 0.5
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_glow.dds"
+					blend_mode = alphaMultiply
+				}
+			}
+
+			coat_of_arms_icon = { #Dynasty
+				size = { 100% 100% }
+				visible = "[Not( BookmarkCharacter.HasDynastyHouse )]"
+				parentanchor = top|hcenter
+				coat_of_arms = "[BookmarkCharacter.GetDynastyTemplate.GetCoA.GetTexture('(int32)256','(int32)256')]"
+				coat_of_arms_slot = "[BookmarkCharacter.GetDynastyTemplate.GetCoA.GetSlot('(int32)256','(int32)256')]"
+				coat_of_arms_mask = "gfx/interface/frontend/mask_coa_flag.dds"
+
+				modify_texture = {
+					texture = "gfx/interface/coat_of_arms/coa_overlay.dds"
+					blend_mode = overlay
+					spritetype = corneredTiled
+				}
+
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_glow.dds"
+					blend_mode = alphaMultiply
+				}
+			}
+
+			coat_of_arms_icon = { #Dynasty House
+				size = { 100% 100% }
+				visible = "[BookmarkCharacter.HasDynastyHouse]"
+				parentanchor = top|hcenter
+				coat_of_arms = "[BookmarkCharacter.GetDynastyHouseTemplate.GetCoA.GetTexture('(int32)256','(int32)256')]"
+				coat_of_arms_slot = "[BookmarkCharacter.GetDynastyHouseTemplate.GetCoA.GetSlot('(int32)256','(int32)256')]"
+				coat_of_arms_mask = "gfx/interface/frontend/mask_coa_flag.dds"
+
+				modify_texture = {
+					texture = "gfx/interface/coat_of_arms/coa_overlay.dds"
+					blend_mode = overlay
+					spritetype = corneredTiled
+				}
+
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_glow.dds"
+					blend_mode = alphaMultiply
+				}
+			}
+		}
+
+		portrait_button = {
+			using = portrait_base
+			size = { 240 240 }
+			position = { 0 -42 }
+
+			parentanchor = top|hcenter
+
+			portrait_texture = "[FrontEndMainView.GetChallengeCharacterPortrait( 'environment_bookmarks_map', 'camera_shoulders', PdxGetWidgetScreenSize(PdxGuiWidget.Self) )]"
+			mask = "gfx/portraits/portrait_mask_body.dds"
+
+			blockoverride "grayscale" {}
+			blockoverride "portrait_button_template_onmouseenter" {}
+			blockoverride "portrait_button_template_onmouseleave" {}
+			blockoverride "portrait_button_template_onclick" {}
+			blockoverride "portrait_button_template_onrightclick" {}
+			blockoverride "portrait_button_template_tooltip" {}
+			alwaystransparent = yes
+		}
+
+		widget = {
+			parentanchor = hcenter
+			position = { 0 90 }
+			size = { 300 200 }
+			button_back = {
+				parentanchor = left
+				visible = "[InDebugMode]"
+				size = { 30 30 }
+				onclick = "[FrontEndMainView.GoPreviousChallengeCharacter]"
+			}
+
+			button_forward = {
+				parentanchor = right
+				visible = "[InDebugMode]"
+				size = { 30 30 }
+				onclick = "[FrontEndMainView.GoNextChallengeCharacter]"
+			}
+		}
+
+		icon = {
+			texture = "gfx/interface/component_decoration/decoration_frame_top_clean.dds"
+			position = { -24 164 }
+			spriteType = Corneredtiled
+			spriteborder = { 100 0 }
+			size = { 448 20 }
+			texture_density = 2
+		}
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			margin_bottom = 10
+
+			spacer = {
+				size = { 180 180 }
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				background = {
+					texture = "gfx/interface/component_masks/mask_rough_edges.dds"
+					spriteType = Corneredtiled
+					spriteborder = { 20 20 }
+					color = { 0.025 0.025 0.05 0.8 }
+					texture_density = 2
+					alpha = 0.75
+				}
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					margin = {0 10}
+
+					background = {
+						using = Background_Area_Dark
+					}
+
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						align = nobaseline|center
+						text = "CHALLENGE_CHARACTER_SUGGESTION"
+						default_format = "#high;glow_color:{0,0,0,1}"
+					}
+
+					text_single = {
+						name = "character_name"
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						align = nobaseline|center
+						text = "CHALLENGE_CHARACTER_INFO"
+						using = Font_Size_Big
+						default_format = "#high;glow_color:{0,0,0,1}"
+					}
+
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						align = nobaseline|center
+						text = challenge_char_date_replace #EK ADDITION
+						default_format = "#medium;glow_color:{0,0,0,1}"
+						using = Font_Size_Medium
+						using = Font_Type_Flavor
+					}
+	 			}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 24 0 }
+
+					divider_light = {
+						layoutpolicy_horizontal = expanding
+					}
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin_top = 16
+
+					expand = {layoutpolicy_horizontal = expanding}
+
+					vbox = {
+						layoutpolicy_vertical = expanding
+						coa_dynasty_bookmark = {
+							blockoverride "character" {}
+							using = tooltip_ws
+
+						}
+						expand = {layoutpolicy_vertical = expanding}
+					}
+
+					expand = {layoutpolicy_horizontal = expanding}
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+						spacing = 4
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							min_width = 270
+							spacing = 10
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								spacing = 5
+								text_single = {
+									max_width = 140
+									layoutpolicy_horizontal = expanding
+									text = "BOOKMARK_CHARACTER_CULTURE"
+									autoresize = no
+									align = nobaseline
+								}
+
+								text_single = {
+									max_width = 140
+									layoutpolicy_horizontal = expanding
+									text = "BOOKMARK_CHARACTER_RELIGION"
+									autoresize = no
+									align = nobaseline
+								}
+							}
+
+							divider_light = {
+								layoutpolicy_vertical = expanding
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								spacing = 5
+
+								text_single = {
+									max_width = 140
+									layoutpolicy_horizontal = expanding
+									text = "BOOKMARK_CHARACTER_GOVERNMENT"
+									autoresize = no
+									align = nobaseline
+								}
+
+								text_single = {
+									max_width = 140
+									layoutpolicy_horizontal = expanding
+									text = "BOOKMARK_CHARACTER_REALM"
+									autoresize = no
+									align = nobaseline
+									tooltip = "BOOKMARK_CHARACTER_REALM"
+								}
+							}
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "BOOKMARK_CHARACTER_DIFFICULTY"
+							autoresize = no
+							align = nobaseline
+						}
+					}
+					expand = {layoutpolicy_horizontal = expanding}
+				}
+
+				# hbox = {
+				# 	layoutpolicy_horizontal = expanding
+				# 	margin = { 24 12 }
+
+				# 	divider_light = {
+				# 		layoutpolicy_horizontal = expanding
+				# 	}
+				# }
+
+				# hbox = {
+				# 	datamodel = "[FrontEndMainView.AccessChallengeAchievements]"
+				# 	spacing = 16
+				# 	item = {
+
+				# 		container = {
+
+				# 			icon = {
+				# 				visible = "[GUIAchievement.GetAchievement.IsUnlocked]"
+				# 				texture = "[GUIAchievement.AccessTexture]"
+				# 				size = { 64 64 }
+				# 				alpha = "[Select_float(GUIAchievement.GetAchievement.IsUnlocked,'(float)1.0','(float)0.5')]"
+				# 				#tooltip = "ACHIEVEMENT_UNLOCKED"
+				# 				tooltip = "CHALLENGE_ACHIEVEMENT_TOOLTIP"
+				# 			}
+
+				# 			highlight_icon = {
+				# 				visible = "[Not(GUIAchievement.GetAchievement.IsUnlocked)]"
+				# 				texture = "[GUIAchievement.AccessTexture]"
+				# 				size = { 64 64 }
+				# 				alpha = "[Select_float(GUIAchievement.GetAchievement.IsUnlocked,'(float)1.0','(float)0.5')]"
+				# 				#tooltip = "ACHIEVEMENT_LOCKED"
+				# 				tooltip = "CHALLENGE_ACHIEVEMENT_TOOLTIP"
+
+				# 				effectname = "GreyedOut"
+
+				# 				highlight_icon = {
+				# 					size = { 96% 97% }
+				# 					parentanchor = center
+				# 					texture = "gfx/interface/component_masks/mask_frame_horizontal.dds"
+				# 					tintcolor = { 0 0 0 0.6 }
+				# 				}
+				# 			}
+				# 		}
+				# 	}
+				# }
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					margin_bottom = 12
+
+					background = {
+						using = Background_Area_Light
+						using = Mask_Rough_Edges
+						margin_top = -12
+						margin_bottom = 12
+					}
+
+					text_multi = {
+						name = "character_text"
+						text = "[BookmarkCharacter.GetDescription]"
+						size = { 330 330 }
+						margin_bottom = 10
+						align = left
+					}
+
+					expand = {}
+
+					hbox = {
+						layoutpolicy_horizontal = expanding
+
+						expand = {}
+
+
+						button_standard = {
+							size = { 160 40 }
+							onclick = "[FrontEndMainView.StartGameWithChallengeCharacter]"
+							text = "START"
+						}
+
+						expand = {}
+
+						button_tertiary = {
+							name = "game_rules_button"
+							size = { 160 40 }
+
+							onclick = "[OpenGameRules]"
+							hbox = {
+								layoutpolicy_horizontal = expanding
+								expand = {}
+								button_rules = {
+									size = { 25 25 }
+									alwaystransparent = yes
+								}
+
+								text_single = {
+									margin = { 4 0 }
+									text = "GAME_RULES"
+									align = nobaseline
+									default_format = "#clickable"
+									alwaystransparent = yes
+									max_width = 90
+								}
+
+								vbox = {
+									datacontext = "[GetGameRules]"
+									achievements_enabled_icon = {
+										visible = "[CanGetAchievements]"
+										size = { 25 25 }
+										tooltip = ACHIEVEMENTS_ENABLED
+									}
+									achievements_disabled_icon = {
+										visible = "[Not( CanGetAchievements )]"
+										size = { 25 25 }
+										tooltip = ACHIEVEMENTS_DISABLED
+									}
+								}
+
+								expand = {}
+							}
+						}
+
+						expand = {}
+					}
+	 			}
+	 		}
+	 	}
+		icon = {
+			parentanchor = bottom
+			texture = "gfx/interface/component_decoration/decoration_frame_bottom.dds"
+			position = { -20 42 }
+			spriteType = Corneredtiled
+			spriteborder = { 100 0 }
+			size = { 440 20 }
+			texture_density = 2
+		}
+	}
+}
+

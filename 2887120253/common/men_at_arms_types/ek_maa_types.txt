@@ -1,0 +1,538 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@high_maint_mult = 3
+@cultural_maa_extra_ai_score = 80 # Equivalent to having 8 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+
+#### generally counters should look like this:
+# skirmishers > heavy inf
+# bowmen > skirmishers
+# light cav > archers, heavy inf
+# heavy cav > archers, heavy inf
+# pikemen > all cav
+# heavy inf > pikemen, peasant_militia, mages
+# mages > all cav, skirmishers
+# cav counters make mages a bit more useful, but idk if they make sense 100%
+# but it creates a nice rock paper scissors dynamic i think - needs testing
+# heavy inf now take the niche of countering mages, so i gave light cav heavy inf counter 
+
+
+
+#Standard regiments
+war_mages = {
+	type = mages
+	
+	damage = 55
+	toughness = 5
+	pursuit = 0
+	screen = 15
+	
+	siege_tier = 1
+	siege_value = 0.1
+	
+	counters = {
+		skirmishers = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+	}
+	
+	buy_cost = { gold = mages_recruitment_cost }
+	low_maintenance_cost = { gold = mages_low_maint_cost}
+	high_maintenance_cost = { gold = mages_high_maint_cost }
+	provision_cost = @provisions_cost_special_cheap #EK 1.13 TODO: tweak this
+	
+	stack = 50
+	ai_quality = { value = culture_ai_weight_mages }
+
+	icon = mages
+}
+
+# Special regiments
+daedra = {
+	type = heavy_infantry
+	can_recruit = { always = no }
+	
+	damage = 45
+	toughness = 40
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	provision_cost = @provisions_cost_special_cheap #EK TODO 1.13: tweak this
+	
+	max_sub_regiments = 1
+	
+	stack = 50
+	ai_quality = { value = 100 }
+
+	icon = daedra
+
+}
+
+### Undead
+# Undead Soldiers
+maa_undead_soldiers = {
+	type = skirmishers
+	
+	damage = 20
+	toughness = 20
+	pursuit = 5
+	screen = 0
+	max = 1
+
+	counters = {
+		heavy_infantry = 1
+	}
+
+	# Free of charge?
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	
+	stack = 100
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by decision
+
+	icon = skirmishers
+	illustration = undead_maa
+}
+
+# Undead Archers
+maa_undead_archers = {
+	type = archers
+	
+	damage = 25
+	toughness = 15
+	pursuit = 0
+	screen = 5
+	max = 1
+
+	counters = {
+		skirmishers = 1
+		mages = 1
+	}
+
+	# Free of charge?
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	
+	stack = 100
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by decision
+
+	icon = bowmen
+	illustration = undead_maa
+}
+
+# Bone Colossus
+maa_bone_colossus = {
+	type = heavy_infantry
+	
+	damage = 75
+	toughness = 100
+	pursuit = 0
+	screen = 0
+	siege_tier = 1
+	siege_value = 0.2
+	
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	
+	max_sub_regiments = 1
+	
+	stack = 10
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by event
+
+	icon = heavy_infantry
+	illustration = undead_maa
+}
+
+# Mystery of Razak event troops
+razak_army = {
+	type = heavy_infantry
+	
+	damage = 22
+	toughness = 35
+	pursuit = 10
+	screen = 10
+	
+	counters = {
+		mages = 1
+		archers = 1
+		skirmishers = 1
+	}
+
+	# Free of charge?
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	provision_cost = @provisions_cost_infantry_cheap
+	
+	stack = 100
+	can_recruit = { always = no } # Spawned by decision
+
+	icon = heavy_infantry
+}
+
+dovah_vahlok = {
+	type = dragon_maa
+	can_recruit = { always = no }
+	
+	damage = 350
+	toughness = 150
+	pursuit = 50
+	screen = 50
+	
+	siege_tier = 4 # It's a flying dragon, walls are a bit useless innit
+	siege_value = 1
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	provision_cost = @provisions_cost_special_bankrupting
+	
+	max_sub_regiments = 1
+	
+	stack = 10
+	ai_quality = { value = 100 }
+	
+	icon = dragon_maa
+}
+
+# Should be self explanatory
+dragons_maa = {
+	type = dragon_maa
+	
+	damage = 300
+	toughness = 100
+	pursuit = 50
+	screen = 0 
+
+	siege_tier = 4 # It's a flying dragon, walls are a bit useless innit
+	siege_value = 1
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	provision_cost = @provisions_cost_special_bankrupting
+	
+	max_sub_regiments = 1
+	
+	stack = 10
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by decision
+
+	icon = dragon_maa
+}
+
+undead_dragon = {
+	type = dragon_maa
+	
+	damage = 300
+	toughness = 50
+	pursuit = 50
+	screen = 0 
+
+	siege_tier = 2 # It's a flying dragon, walls are a bit useless innit
+	siege_value = 1
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+	provision_cost = @provisions_cost_special_cheap
+	
+	max_sub_regiments = 1
+	
+	stack = 10
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by decision
+	
+	icon = dragon_maa
+	illustration = undead_dragon
+}
+
+undead_earth_bone = {
+	type = heavy_infantry
+
+	damage = 150
+	toughness = 50
+	pursuit = 50
+	screen = 0 
+
+	siege_tier = 3
+	siege_value = 0.5
+	
+	counters = {
+		skirmishers = 1
+		archers = 1
+		pikemen = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 1 }
+
+	terrain_bonus = {
+		valenwood = { damage = 500 toughness = 1000 }
+	}
+	
+	max_sub_regiments = 1
+	
+	stack = 10
+	ai_quality = { value = 100 }
+	
+	can_recruit = { always = no } # Spawned by decision
+
+	icon = heavy_infantry
+	illustration = undead_dragon
+}
+
+# Dust Adepts
+dust_adepts = {
+	type = mages
+	
+	damage = 32
+	toughness = 10
+	pursuit = 10
+	screen = 25
+
+	siege_tier = 1
+	siege_value = 0.05
+
+	can_recruit = {
+		any_sub_realm_county = {
+			any_county_province = {
+				has_building_or_higher = dust_adeptorium_01
+			}
+		}
+	}
+
+	terrain_bonus = {
+		ashlands = { damage = 10 toughness = 20 pursuit = 15 screen = 15 }	
+		plains = { damage = 10 toughness = 10 }	
+		hills = { damage = 10 toughness = 10 }	
+	}
+	
+	
+	counters = {
+		heavy_infantry = 1
+		skirmishers = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+	}
+	
+	buy_cost = { gold = mages_recruitment_cost }
+	low_maintenance_cost = { gold = mages_low_maint_cost}
+	high_maintenance_cost = { gold = mages_high_maint_cost }
+	provision_cost = @provisions_cost_special_expensive #EK TODO 1.13: tweak this
+	
+	stack = 50
+	ai_quality = { value = culture_ai_weight_mages }
+
+	icon = mages
+	illustration = ashlander_champions
+}
+
+# Bone Walker
+bone_walker = {
+	type = heavy_infantry
+
+	damage = 40
+	toughness = 25
+	pursuit = 0
+	screen = 15
+
+	can_recruit = { always = no } # Spawned by event
+	
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+	}
+	
+	buy_cost = { gold = 50 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = @provisions_cost_special_cheap #EK TODO 1.13: tweak this
+	
+	max_sub_regiments = 1
+	
+	stack = 25
+	ai_quality = { value = 100 }
+
+	icon = heavy_infantry
+	illustration = undead_maa
+}
+
+# Pride of Alkosh
+alkosh_pride = {
+	type = skirmishers
+
+	can_recruit = {
+		any_sub_realm_county = {
+			any_county_province = {
+				has_building_or_higher = pridehome_temple_01
+				root.culture = { has_cultural_pillar = heritage_khajiiti }
+				OR = {
+					barony = {
+						is_holy_site_of = root.faith
+					}
+					root.faith = { has_doctrine = doctrine_pantheon_riddlethar }
+				}
+			}
+		}
+		faith = { has_doctrine = doctrine_mystical_birthright_head }
+		any_held_title = { is_head_of_faith = yes }
+	}
+	
+	damage = 25
+	toughness = 20
+	pursuit = 15
+	screen = 10
+
+	terrain_bonus = {
+		jungle = { damage = 6 screen = 6 }
+		desert = { damage = 6 screen = 6 }
+		desert_mountains = { damage = 6 screen = 6 }
+	}
+	
+	counters = {
+		heavy_infantry = 1
+	}
+	
+	buy_cost = { gold = skirmisher_maa_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_maa_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_maa_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_moderate
+	
+	stack = 50
+	max_sub_regiments = 1
+	ai_quality = { value = culture_ai_weight_skirmishers }
+
+	icon = khajiit_skirmishers
+	
+}
+
+# Cultists
+cultists = {
+	type = mages
+	
+	damage = 40
+	toughness = 5
+	pursuit = 0
+	screen = 30
+	
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		light_cavalry = 1
+		heavy_cavalry = 1
+		camel_cavalry = 1
+		elephant_cavalry = 1
+	}
+	
+	# Especially cheap
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_cheap
+	
+	stack = 50
+	
+	can_recruit = {
+		faith = { has_doctrine_parameter = unlock_maa_cultists }
+	}
+	icon = mages
+
+}
+
+# Reavers
+reavers = {
+	type = heavy_infantry
+	
+	damage = 35
+	toughness = 22
+	pursuit = 12
+	screen = 0
+	
+	counters = {
+		pikemen = 1
+	}
+
+	can_recruit = {
+		has_perk = bountiful_offerings_perk
+		is_landless_adventurer = yes
+	}
+	
+	buy_cost = { gold = heavy_infantry_maa_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_infantry_maa_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_infantry_maa_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_moderate
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = ayyar
+}

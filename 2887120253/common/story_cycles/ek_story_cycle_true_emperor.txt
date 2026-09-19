@@ -1,0 +1,92 @@
+﻿story_true_emperor = {
+    visible = yes
+
+ 	icon = {
+ 		reference = "gfx/interface/icons/artifact/artifact_amulet_of_kings.dds"
+ 	}
+
+    background = {
+ 		reference = "gfx/interface/illustrations/event_scenes/cyrodiil_white_gold.dds"
+ 	}
+
+    visualization = {
+        custom_string_key = "TRUE_EMPEROR_CUSTOM_STRING_KEY"
+
+        artifact = { 
+            variable_name = "aok_artifact" 
+            label = "AOK_LABEL" 
+        }
+
+		traits = {
+			true_emperor
+		}
+    }
+
+	on_owner_death = {
+		# Should be inherited, so transfer to heir
+		if = {
+			limit = {
+				exists = story_owner.player_heir
+			}
+			make_story_owner = story_owner.player_heir
+		}
+		# Or destroy
+		else = {
+			end_story = yes
+		}
+	}
+
+    
+	effect_group = {
+		days = 1
+		trigger = { #You lost the Empire
+			story_owner = { has_cyrodilic_empire_trigger = no }
+		}
+		first_valid = {
+			triggered_effect = {
+                trigger = {  exists = title:h_tamriel.holder }
+                effect = { make_story_owner = title:h_tamriel.holder }
+            }
+			triggered_effect = {
+                trigger = {  exists = title:e_cyrodiil.holder }
+                effect = { make_story_owner = title:e_cyrodiil.holder }
+            }
+            triggered_effect = {
+                trigger = { always = yes }
+                effect = {
+                    end_story = yes
+                }
+            }
+		}
+	}
+
+	#Start a war. Happens less often than Emperor Zero, but still consistent
+	effect_group = {
+		days = { 30 360 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				gold > 0
+				has_trait = true_emperor
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					true_emperor_war_target_evaluation_and_declaration_effect = yes
+				}
+				story_owner = {
+					save_scope_as = owner
+				}
+			}
+		}
+	}
+
+}

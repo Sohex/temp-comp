@@ -1,0 +1,202 @@
+﻿story_emperor_zero = {
+	visible = yes
+	icon = {
+		trigger = {
+			always = yes
+		}
+		reference = "gfx/interface/icons/story_cycles/story_icon_conqueror.dds"
+	}
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/cyrodiil_white_gold.dds"
+	}
+
+	visualization = {
+		custom_string_key = "EMPEROR_ZERO_CUSTOM_STRING_KEY"
+		traits = {
+			emperor_zero
+		}
+		character = {
+			variable_name = talos_general
+			label = "TALOS_LABEL"
+		}
+		decisions = {
+			reunite_cyrodiil_emperor_zero_decision
+		}
+	}
+	
+	on_setup = {
+		story_owner = {
+			trigger_event = {
+				id = emperor_zero.0031
+				days = { 180 360 }
+			}
+		}
+	}
+
+	on_owner_death = {
+		root = { save_scope_as = story } #Story scope for transfer
+		if = { #If primary heir exists and Talos is not dead then trigger event with choice between them
+			limit = {
+				var:talos_general ?= { is_alive = yes }
+				exists = story_owner.primary_heir
+				NOT = { has_global_variable = emperor_zero_assassination_attempt }
+			}
+			var:talos_general = { save_scope_as = talos_character }
+			story_owner = {
+				save_scope_as = emperor_zero_character
+				primary_heir ?= {
+					trigger_event = {
+						id = emperor_zero.1004
+						days = 1
+					}
+				}
+			}
+		}
+		if = { #If Talos is alive and no primary heir exists then automatically make Talos heir
+			limit = {
+				var:talos_general ?= { is_alive =  yes }
+				NOT = { exists = story_owner.primary_heir }
+				NOT = { has_global_variable = emperor_zero_assassination_attempt }
+			}
+			var:talos_general = { save_scope_as = talos_character }
+			story_owner = {
+				set_designated_heir_unsafe = scope:talos_character
+				scope:talos_character = {
+					add_trait = emperor_zero
+				}
+			}
+			make_story_owner = scope:talos_character
+			if = { #If player dies without heir switch to Tiber automatically
+				limit = { story_owner = { is_ai = no } }
+				create_title_and_vassal_change = {
+					type = returned
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				root.capital_county = {
+					change_title_holder = {
+						holder = scope:talos_character
+						change =scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+				story_owner = { set_player_character = scope:talos_character }
+			}
+		}
+		if = { #If Tiber is dead and primary exists then transfer story if the heir is competent adult
+			limit = {
+				var:talos_general ?= { is_alive = no }
+				exists = story_owner.primary_heir
+				NOT = { has_global_variable = emperor_zero_assassination_attempt }
+			}
+			if = {
+				limit = {
+					#Check if the heir is competent adult
+					story_owner.primary_heir ?= {
+						is_adult = yes
+						OR = {
+							has_trait_with_flag = level_3_education
+							has_trait_with_flag = level_4_education
+							has_trait_with_flag = level_5_education
+						}
+					}
+				}
+				story_owner.primary_heir = {
+					add_trait = emperor_zero
+				}
+				make_story_owner = story_owner.primary_heir	
+			}
+			else = {
+				end_story = yes
+			}
+		}
+	}
+
+
+
+	#Start a new war if none is ongoing
+	effect_group = {
+		days = { 30 50 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				gold > 0
+				has_trait = emperor_zero
+				NOT = { can_execute_decision = reunite_cyrodiil_emperor_zero_decision }
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					emperor_zero_war_target_evaluation_and_declaration_effect = yes
+				}
+				story_owner = {
+					save_scope_as = owner
+				}
+			}
+		}
+	}
+
+
+	effect_group = { # Take the decision
+		days = { 60 120 }
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+					can_execute_decision = reunite_cyrodiil_emperor_zero_decision
+				}
+			}
+			effect = {
+				story_owner = {
+					execute_decision = reunite_cyrodiil_emperor_zero_decision
+				}
+			}
+		}
+	}
+
+	effect_group = { # Take the decision
+		days = { 90 180 }
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+					can_execute_decision = form_high_kingdom_emperor_zero_ai_decision
+				}
+			}
+			effect = {
+				story_owner = {
+					execute_decision = form_high_kingdom_emperor_zero_ai_decision
+				}
+			}
+		}
+	}
+
+	effect_group = { #Event announcement if Talos dies
+		days = 1
+		trigger = {
+			NOT = { has_global_variable = talos_died }
+			var:talos_general ?= { is_alive = no }
+			story_owner = { NOT = { has_trait = wulfharth_ghost } } #Hjalti can inherit this story cycle
+		}
+		triggered_effect = {
+			trigger = { always = yes }
+			effect = {
+				story_owner = { trigger_event = emperor_zero.1005 }
+				set_global_variable = {
+					name = talos_died
+					value = yes
+				}
+			}
+		}
+	}
+}

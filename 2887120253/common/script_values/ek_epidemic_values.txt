@@ -1,0 +1,25 @@
+﻿# Hooks into infection_duration min for the apocalyptic bubonic_plague
+ek_knahaten_infection_duration_min = {
+	value = 24 # months, vanilla default was 24
+	if = { #Non-Argonian BM province
+		limit = {
+			has_game_rule = bd_occurrence_historical
+			geographical_region = mundus_tamriel_black_marsh
+			root.county = { culture = { NOT = { has_cultural_tradition = tradition_histskin } } }
+		}
+		multiply = 1.5
+	}
+}
+
+# Hooks into infection_duration max for the apocalyptic bubonic_plague
+ek_knahaten_infection_duration_max = {
+	value = 48 # months, vanilla default was 48
+	if = { #Non-Argonian BM province
+		limit = {
+			has_game_rule = bd_occurrence_historical
+			geographical_region = mundus_tamriel_black_marsh
+			root.county = { culture = { NOT = { has_cultural_tradition = tradition_histskin } } }
+		}
+		multiply = 1.5
+	}
+}

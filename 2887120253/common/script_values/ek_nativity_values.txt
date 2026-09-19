@@ -1,0 +1,8 @@
+﻿nativity_zones_limit = 3
+
+num_nativity_zones = {
+	every_in_list = {
+		variable = nativity_regions
+		add = 1
+	}
+}

@@ -1,0 +1,32 @@
+﻿dyn_trollsbane = {
+	name = "dynn_Trollsbane"
+	culture = tundrastrider
+}
+dyn_wind_roarer =  {
+	name = "dynn_Wind_Roarer"
+	culture = tundrastrider
+}
+dyn_talkingstone =  {
+	name = "dynn_talkingstone"
+	culture = tundrastrider
+}
+dyn_stonehill =  {
+	name = "dynn_stonehill"
+	culture = tundrastrider
+}
+dyn_windblessed = {
+	name = "dynn_Wind_Blessed"
+	culture = tundrastrider
+}
+dyn_macearm = {
+	name = "dynn_Mace_Arm"
+	culture = tundrastrider
+}
+dyn_hawkeater = {
+	name = "dynn_Hawk_Eater"
+	culture = tundrastrider
+}
+dyn_rock_crusher = {
+	name = "dynn_Rock_Crusher"
+	culture = tundrastrider
+}

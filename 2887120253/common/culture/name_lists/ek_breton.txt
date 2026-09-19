@@ -1,0 +1,6716 @@
+﻿name_list_glenumbran = {
+
+	dynasty_names = {
+		{ dynn_Adrard }
+		{ dynnp_de dynn_Adrard } { dynnp_de_la dynn_Adrard } { dynnp_du dynn_Adrard } { dynnp_la dynn_Adrard } { dynnp_le dynn_Adrard }
+		{ dynn_Angeline }
+		{ dynnp_de dynn_Angeline } { dynnp_de_la dynn_Angeline } { dynnp_du dynn_Angeline } { dynnp_la dynn_Angeline } { dynnp_le dynn_Angeline }
+		{ dynn_Arianne }
+		{ dynnp_de dynn_Arianne } { dynnp_de_la dynn_Arianne } { dynnp_du dynn_Arianne } { dynnp_la dynn_Arianne } { dynnp_le dynn_Arianne }
+		{ dynn_Arnand }
+		{ dynnp_de dynn_Arnand } { dynnp_de_la dynn_Arnand } { dynnp_du dynn_Arnand } { dynnp_la dynn_Arnand } { dynnp_le dynn_Arnand }
+		{ dynn_Arne }
+		{ dynnp_de dynn_Arne } { dynnp_de_la dynn_Arne } { dynnp_du dynn_Arne } { dynnp_la dynn_Arne } { dynnp_le dynn_Arne }
+		{ dynn_Aurimonde }
+		{ dynnp_de dynn_Aurimonde } { dynnp_de_la dynn_Aurimonde } { dynnp_du dynn_Aurimonde } { dynnp_la dynn_Aurimonde } { dynnp_le dynn_Aurimonde }
+		{ dynn_Baelborne }
+		{ dynnp_de dynn_Baelborne } { dynnp_de_la dynn_Baelborne } { dynnp_du dynn_Baelborne } { dynnp_la dynn_Baelborne } { dynnp_le dynn_Baelborne }
+		{ dynn_Baolduin }
+		{ dynnp_de dynn_Baolduin } { dynnp_de_la dynn_Baolduin } { dynnp_du dynn_Baolduin } { dynnp_la dynn_Baolduin } { dynnp_le dynn_Baolduin }
+		{ dynn_Beatrice }
+		{ dynnp_de dynn_Beatrice } { dynnp_de_la dynn_Beatrice } { dynnp_du dynn_Beatrice } { dynnp_la dynn_Beatrice } { dynnp_le dynn_Beatrice }
+		{ dynn_Beauchamp }
+		{ dynnp_de dynn_Beauchamp } { dynnp_de_la dynn_Beauchamp } { dynnp_du dynn_Beauchamp } { dynnp_la dynn_Beauchamp } { dynnp_le dynn_Beauchamp }
+		{ dynn_Beluelle }
+		{ dynnp_de dynn_Beluelle } { dynnp_de_la dynn_Beluelle } { dynnp_du dynn_Beluelle } { dynnp_la dynn_Beluelle } { dynnp_le dynn_Beluelle }
+		{ dynn_Bercourt }
+		{ dynnp_de dynn_Bercourt } { dynnp_de_la dynn_Bercourt } { dynnp_du dynn_Bercourt } { dynnp_la dynn_Bercourt } { dynnp_le dynn_Bercourt }
+		{ dynn_Bertault }
+		{ dynnp_de dynn_Bertault } { dynnp_de_la dynn_Bertault } { dynnp_du dynn_Bertault } { dynnp_la dynn_Bertault } { dynnp_le dynn_Bertault }
+		{ dynn_Bertrand }
+		{ dynnp_de dynn_Bertrand } { dynnp_de_la dynn_Bertrand } { dynnp_du dynn_Bertrand } { dynnp_la dynn_Bertrand } { dynnp_le dynn_Bertrand }
+		{ dynn_Bielle }
+		{ dynnp_de dynn_Bielle } { dynnp_de_la dynn_Bielle } { dynnp_du dynn_Bielle } { dynnp_la dynn_Bielle } { dynnp_le dynn_Bielle }
+		{ dynn_Bienne }
+		{ dynnp_de dynn_Bienne } { dynnp_de_la dynn_Bienne } { dynnp_du dynn_Bienne } { dynnp_la dynn_Bienne } { dynnp_le dynn_Bienne }
+		{ dynn_Blanche }
+		{ dynnp_de dynn_Blanche } { dynnp_de_la dynn_Blanche } { dynnp_du dynn_Blanche } { dynnp_la dynn_Blanche } { dynnp_le dynn_Blanche }
+		{ dynn_Brinard }
+		{ dynnp_de dynn_Brinard } { dynnp_de_la dynn_Brinard } { dynnp_du dynn_Brinard } { dynnp_la dynn_Brinard } { dynnp_le dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynnp_de dynn_Bronwyn } { dynnp_de_la dynn_Bronwyn } { dynnp_du dynn_Bronwyn } { dynnp_la dynn_Bronwyn } { dynnp_le dynn_Bronwyn }
+		{ dynn_Camille }
+		{ dynnp_de dynn_Camille } { dynnp_de_la dynn_Camille } { dynnp_du dynn_Camille } { dynnp_la dynn_Camille } { dynnp_le dynn_Camille }
+		{ dynn_Carcette }
+		{ dynnp_de dynn_Carcette } { dynnp_de_la dynn_Carcette } { dynnp_du dynn_Carcette } { dynnp_la dynn_Carcette } { dynnp_le dynn_Carcette }
+		{ dynn_Cartier }
+		{ dynnp_de dynn_Cartier } { dynnp_de_la dynn_Cartier } { dynnp_du dynn_Cartier } { dynnp_la dynn_Cartier } { dynnp_le dynn_Cartier }
+		{ dynn_Casenne }
+		{ dynnp_de dynn_Casenne } { dynnp_de_la dynn_Casenne } { dynnp_du dynn_Casenne } { dynnp_la dynn_Casenne } { dynnp_le dynn_Casenne }
+		{ dynn_Cassandra }
+		{ dynnp_de dynn_Cassandra } { dynnp_de_la dynn_Cassandra } { dynnp_du dynn_Cassandra } { dynnp_la dynn_Cassandra } { dynnp_le dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynnp_de dynn_Cassel } { dynnp_de_la dynn_Cassel } { dynnp_du dynn_Cassel } { dynnp_la dynn_Cassel } { dynnp_le dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynnp_de dynn_Catherine } { dynnp_de_la dynn_Catherine } { dynnp_du dynn_Catherine } { dynnp_la dynn_Catherine } { dynnp_le dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynnp_de dynn_Cerys } { dynnp_de_la dynn_Cerys } { dynnp_du dynn_Cerys } { dynnp_la dynn_Cerys } { dynnp_le dynn_Cerys }
+		{ dynn_Chandlier }
+		{ dynnp_de dynn_Chandlier } { dynnp_de_la dynn_Chandlier } { dynnp_du dynn_Chandlier } { dynnp_la dynn_Chandlier } { dynnp_le dynn_Chandlier }
+		{ dynn_Charloux }
+		{ dynnp_de dynn_Charloux } { dynnp_de_la dynn_Charloux } { dynnp_du dynn_Charloux } { dynnp_la dynn_Charloux } { dynnp_le dynn_Charloux }
+		{ dynn_Cienne }
+		{ dynnp_de dynn_Cienne } { dynnp_de_la dynn_Cienne } { dynnp_du dynn_Cienne } { dynnp_la dynn_Cienne } { dynnp_le dynn_Cienne }
+		{ dynn_Crecy }
+		{ dynnp_de dynn_Crecy } { dynnp_de_la dynn_Crecy } { dynnp_du dynn_Crecy } { dynnp_la dynn_Crecy } { dynnp_le dynn_Crecy }
+		{ dynn_Croix }
+		{ dynnp_de dynn_Croix } { dynnp_de_la dynn_Croix } { dynnp_du dynn_Croix } { dynnp_la dynn_Croix } { dynnp_le dynn_Croix }
+		{ dynn_Daenia }
+		{ dynnp_de dynn_Daenia } { dynnp_de_la dynn_Daenia } { dynnp_du dynn_Daenia } { dynnp_la dynn_Daenia } { dynnp_le dynn_Daenia }
+		{ dynn_Dalan }
+		{ dynnp_de dynn_Dalan } { dynnp_de_la dynn_Dalan } { dynnp_du dynn_Dalan } { dynnp_la dynn_Dalan } { dynnp_le dynn_Dalan }
+		{ dynn_Damien }
+		{ dynnp_de dynn_Damien } { dynnp_de_la dynn_Damien } { dynnp_du dynn_Damien } { dynnp_la dynn_Damien } { dynnp_le dynn_Damien }
+		{ dynn_Delacourt }
+		{ dynnp_de dynn_Delacourt } { dynnp_de_la dynn_Delacourt } { dynnp_du dynn_Delacourt } { dynnp_la dynn_Delacourt } { dynnp_le dynn_Delacourt }
+		{ dynn_Desele }
+		{ dynnp_de dynn_Desele } { dynnp_de_la dynn_Desele } { dynnp_du dynn_Desele } { dynnp_la dynn_Desele } { dynnp_le dynn_Desele }
+		{ dynn_Diel }
+		{ dynnp_de dynn_Diel } { dynnp_de_la dynn_Diel } { dynnp_du dynn_Diel } { dynnp_la dynn_Diel } { dynnp_le dynn_Diel }
+		{ dynn_Dolbanitte }
+		{ dynnp_de dynn_Dolbanitte } { dynnp_de_la dynn_Dolbanitte } { dynnp_du dynn_Dolbanitte } { dynnp_la dynn_Dolbanitte } { dynnp_le dynn_Dolbanitte }
+		{ dynn_Dorian }
+		{ dynnp_de dynn_Dorian } { dynnp_de_la dynn_Dorian } { dynnp_du dynn_Dorian } { dynnp_la dynn_Dorian } { dynnp_le dynn_Dorian }
+		{ dynn_Dufont }
+		{ dynnp_de dynn_Dufont } { dynnp_de_la dynn_Dufont } { dynnp_du dynn_Dufont } { dynnp_la dynn_Dufont } { dynnp_le dynn_Dufont }
+		{ dynn_Dufort }
+		{ dynnp_de dynn_Dufort } { dynnp_de_la dynn_Dufort } { dynnp_du dynn_Dufort } { dynnp_la dynn_Dufort } { dynnp_le dynn_Dufort }
+		{ dynn_Eathmoor }
+		{ dynnp_de dynn_Eathmoor } { dynnp_de_la dynn_Eathmoor } { dynnp_du dynn_Eathmoor } { dynnp_la dynn_Eathmoor } { dynnp_le dynn_Eathmoor }
+		{ dynn_Egred }
+		{ dynnp_de dynn_Egred } { dynnp_de_la dynn_Egred } { dynnp_du dynn_Egred } { dynnp_la dynn_Egred } { dynnp_le dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynnp_de dynn_Eleanor } { dynnp_de_la dynn_Eleanor } { dynnp_du dynn_Eleanor } { dynnp_la dynn_Eleanor } { dynnp_le dynn_Eleanor }
+		{ dynn_Elisanne }
+		{ dynnp_de dynn_Elisanne } { dynnp_de_la dynn_Elisanne } { dynnp_du dynn_Elisanne } { dynnp_la dynn_Elisanne } { dynnp_le dynn_Elisanne }
+		{ dynn_Eloise }
+		{ dynnp_de dynn_Eloise } { dynnp_de_la dynn_Eloise } { dynnp_du dynn_Eloise } { dynnp_la dynn_Eloise } { dynnp_le dynn_Eloise }
+		{ dynn_Emilie }
+		{ dynnp_de dynn_Emilie } { dynnp_de_la dynn_Emilie } { dynnp_du dynn_Emilie } { dynnp_la dynn_Emilie } { dynnp_le dynn_Emilie }
+		{ dynn_Felicie }
+		{ dynnp_de dynn_Felicie } { dynnp_de_la dynn_Felicie } { dynnp_du dynn_Felicie } { dynnp_la dynn_Felicie } { dynnp_le dynn_Felicie }
+		{ dynn_Frenck }
+		{ dynnp_de dynn_Frenck } { dynnp_de_la dynn_Frenck } { dynnp_du dynn_Frenck } { dynnp_la dynn_Frenck } { dynnp_le dynn_Frenck }
+		{ dynn_Garcon }
+		{ dynnp_de dynn_Garcon } { dynnp_de_la dynn_Garcon } { dynnp_du dynn_Garcon } { dynnp_la dynn_Garcon } { dynnp_le dynn_Garcon }
+		{ dynn_Gemain }
+		{ dynnp_de dynn_Gemain } { dynnp_de_la dynn_Gemain } { dynnp_du dynn_Gemain } { dynnp_la dynn_Gemain } { dynnp_le dynn_Gemain }
+		{ dynn_Gemane }
+		{ dynnp_de dynn_Gemane } { dynnp_de_la dynn_Gemane } { dynnp_du dynn_Gemane } { dynnp_la dynn_Gemane } { dynnp_le dynn_Gemane }
+		{ dynn_Gerard }
+		{ dynnp_de dynn_Gerard } { dynnp_de_la dynn_Gerard } { dynnp_du dynn_Gerard } { dynnp_la dynn_Gerard } { dynnp_le dynn_Gerard }
+		{ dynn_Ghislaine }
+		{ dynnp_de dynn_Ghislaine } { dynnp_de_la dynn_Ghislaine } { dynnp_du dynn_Ghislaine } { dynnp_la dynn_Ghislaine } { dynnp_le dynn_Ghislaine }
+		{ dynn_Gielle }
+		{ dynnp_de dynn_Gielle } { dynnp_de_la dynn_Gielle } { dynnp_du dynn_Gielle } { dynnp_la dynn_Gielle } { dynnp_le dynn_Gielle }
+		{ dynn_Glenpoint }
+		{ dynnp_de dynn_Glenpoint } { dynnp_de_la dynn_Glenpoint } { dynnp_du dynn_Glenpoint } { dynnp_la dynn_Glenpoint } { dynnp_le dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynnp_de dynn_Glynn } { dynnp_de_la dynn_Glynn } { dynnp_du dynn_Glynn } { dynnp_la dynn_Glynn } { dynnp_le dynn_Glynn }
+		{ dynn_Godwin }
+		{ dynnp_de dynn_Godwin } { dynnp_de_la dynn_Godwin } { dynnp_du dynn_Godwin } { dynnp_la dynn_Godwin } { dynnp_le dynn_Godwin }
+		{ dynn_Granve }
+		{ dynnp_de dynn_Granve } { dynnp_de_la dynn_Granve } { dynnp_du dynn_Granve } { dynnp_la dynn_Granve } { dynnp_le dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynnp_de dynn_Guinevere } { dynnp_de_la dynn_Guinevere } { dynnp_du dynn_Guinevere } { dynnp_la dynn_Guinevere } { dynnp_le dynn_Guinevere }
+		{ dynn_Helene }
+		{ dynnp_de dynn_Helene } { dynnp_de_la dynn_Helene } { dynnp_du dynn_Helene } { dynnp_la dynn_Helene } { dynnp_le dynn_Helene }
+		{ dynn_Helwyn }
+		{ dynnp_de dynn_Helwyn } { dynnp_de_la dynn_Helwyn } { dynnp_du dynn_Helwyn } { dynnp_la dynn_Helwyn } { dynnp_le dynn_Helwyn }
+		{ dynn_Isabelle }
+		{ dynnp_de dynn_Isabelle } { dynnp_de_la dynn_Isabelle } { dynnp_du dynn_Isabelle } { dynnp_la dynn_Isabelle } { dynnp_le dynn_Isabelle }
+		{ dynn_Jacinda }
+		{ dynnp_de dynn_Jacinda } { dynnp_de_la dynn_Jacinda } { dynnp_du dynn_Jacinda } { dynnp_la dynn_Jacinda } { dynnp_le dynn_Jacinda }
+		{ dynn_Jacqueline }
+		{ dynnp_de dynn_Jacqueline } { dynnp_de_la dynn_Jacqueline } { dynnp_du dynn_Jacqueline } { dynnp_la dynn_Jacqueline } { dynnp_le dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynnp_de dynn_Jeannie } { dynnp_de_la dynn_Jeannie } { dynnp_du dynn_Jeannie } { dynnp_la dynn_Jeannie } { dynnp_le dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynnp_de dynn_Jessica } { dynnp_de_la dynn_Jessica } { dynnp_du dynn_Jessica } { dynnp_la dynn_Jessica } { dynnp_le dynn_Jessica }
+		{ dynn_Joslin }
+		{ dynnp_de dynn_Joslin } { dynnp_de_la dynn_Joslin } { dynnp_du dynn_Joslin } { dynnp_la dynn_Joslin } { dynnp_le dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_de dynn_Juillen } { dynnp_de_la dynn_Juillen } { dynnp_du dynn_Juillen } { dynnp_la dynn_Juillen } { dynnp_le dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynnp_de dynn_Jurard } { dynnp_de_la dynn_Jurard } { dynnp_du dynn_Jurard } { dynnp_la dynn_Jurard } { dynnp_le dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_de dynn_Kambria } { dynnp_de_la dynn_Kambria } { dynnp_du dynn_Kambria } { dynnp_la dynn_Kambria } { dynnp_le dynn_Kambria }
+		{ dynn_Laurent }
+		{ dynnp_de dynn_Laurent } { dynnp_de_la dynn_Laurent } { dynnp_du dynn_Laurent } { dynnp_la dynn_Laurent } { dynnp_le dynn_Laurent }
+		{ dynn_Lioncourt }
+		{ dynnp_de dynn_Lioncourt } { dynnp_de_la dynn_Lioncourt } { dynnp_du dynn_Lioncourt } { dynnp_la dynn_Lioncourt } { dynnp_le dynn_Lioncourt }
+		{ dynn_Lisette }
+		{ dynnp_de dynn_Lisette } { dynnp_de_la dynn_Lisette } { dynnp_du dynn_Lisette } { dynnp_la dynn_Lisette } { dynnp_le dynn_Lisette }
+		{ dynn_Llugwych }
+		{ dynnp_de dynn_Llugwych } { dynnp_de_la dynn_Llugwych } { dynnp_du dynn_Llugwych } { dynnp_la dynn_Llugwych } { dynnp_le dynn_Llugwych }
+		{ dynn_Llywelyn }
+		{ dynnp_de dynn_Llywelyn } { dynnp_de_la dynn_Llywelyn } { dynnp_du dynn_Llywelyn } { dynnp_la dynn_Llywelyn } { dynnp_le dynn_Llywelyn }
+		{ dynn_Lothaire }
+		{ dynnp_de dynn_Lothaire } { dynnp_de_la dynn_Lothaire } { dynnp_du dynn_Lothaire } { dynnp_la dynn_Lothaire } { dynnp_le dynn_Lothaire }
+		{ dynn_Mannick }
+		{ dynnp_de dynn_Mannick } { dynnp_de_la dynn_Mannick } { dynnp_du dynn_Mannick } { dynnp_la dynn_Mannick } { dynnp_le dynn_Mannick }
+		{ dynn_Marc }
+		{ dynnp_de dynn_Marc } { dynnp_de_la dynn_Marc } { dynnp_du dynn_Marc } { dynnp_la dynn_Marc } { dynnp_le dynn_Marc }
+		{ dynn_Martine }
+		{ dynnp_de dynn_Martine } { dynnp_de_la dynn_Martine } { dynnp_du dynn_Martine } { dynnp_la dynn_Martine } { dynnp_le dynn_Martine }
+		{ dynn_Mathieu }
+		{ dynnp_de dynn_Mathieu } { dynnp_de_la dynn_Mathieu } { dynnp_du dynn_Mathieu } { dynnp_la dynn_Mathieu } { dynnp_le dynn_Mathieu }
+		{ dynn_Maurard }
+		{ dynnp_de dynn_Maurard } { dynnp_de_la dynn_Maurard } { dynnp_du dynn_Maurard } { dynnp_la dynn_Maurard } { dynnp_le dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_de dynn_Maurice } { dynnp_de_la dynn_Maurice } { dynnp_du dynn_Maurice } { dynnp_la dynn_Maurice } { dynnp_le dynn_Maurice }
+		{ dynn_Mederic }
+		{ dynnp_de dynn_Mederic } { dynnp_de_la dynn_Mederic } { dynnp_du dynn_Mederic } { dynnp_la dynn_Mederic } { dynnp_le dynn_Mederic }
+		{ dynnp_de_la dynn_Mer }
+		{ dynn_Mercier }
+		{ dynnp_de dynn_Mercier } { dynnp_de_la dynn_Mercier } { dynnp_du dynn_Mercier } { dynnp_la dynn_Mercier } { dynnp_le dynn_Mercier }
+		{ dynn_Mornard }
+		{ dynnp_de dynn_Mornard } { dynnp_de_la dynn_Mornard } { dynnp_du dynn_Mornard } { dynnp_la dynn_Mornard } { dynnp_le dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_de dynn_Morrard } { dynnp_de_la dynn_Morrard } { dynnp_du dynn_Morrard } { dynnp_la dynn_Morrard } { dynnp_le dynn_Morrard }
+		{ dynn_Motierre }
+		{ dynnp_de dynn_Motierre } { dynnp_de_la dynn_Motierre } { dynnp_du dynn_Motierre } { dynnp_la dynn_Motierre } { dynnp_le dynn_Motierre }
+		{ dynn_Natalie }
+		{ dynnp_de dynn_Natalie } { dynnp_de_la dynn_Natalie } { dynnp_du dynn_Natalie } { dynnp_la dynn_Natalie } { dynnp_le dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynnp_de dynn_Nerys } { dynnp_de_la dynn_Nerys } { dynnp_du dynn_Nerys } { dynnp_la dynn_Nerys } { dynnp_le dynn_Nerys }
+		{ dynn_Nicolas }
+		{ dynnp_de dynn_Nicolas } { dynnp_de_la dynn_Nicolas } { dynnp_du dynn_Nicolas } { dynnp_la dynn_Nicolas } { dynnp_le dynn_Nicolas }
+		{ dynn_Noellaume }
+		{ dynnp_de dynn_Noellaume } { dynnp_de_la dynn_Noellaume } { dynnp_du dynn_Noellaume } { dynnp_la dynn_Noellaume } { dynnp_le dynn_Noellaume }
+		{ dynn_Oberon }
+		{ dynnp_de dynn_Oberon } { dynnp_de_la dynn_Oberon } { dynnp_du dynn_Oberon } { dynnp_la dynn_Oberon } { dynnp_le dynn_Oberon }
+		{ dynn_Oges }
+		{ dynnp_de dynn_Oges } { dynnp_de_la dynn_Oges } { dynnp_du dynn_Oges } { dynnp_la dynn_Oges } { dynnp_le dynn_Oges }
+		{ dynn_Owain }
+		{ dynnp_de dynn_Owain } { dynnp_de_la dynn_Owain } { dynnp_du dynn_Owain } { dynnp_la dynn_Owain } { dynnp_le dynn_Owain }
+		{ dynn_Panoit }
+		{ dynnp_de dynn_Panoit } { dynnp_de_la dynn_Panoit } { dynnp_du dynn_Panoit } { dynnp_la dynn_Panoit } { dynnp_le dynn_Panoit }
+		{ dynn_Pascale }
+		{ dynnp_de dynn_Pascale } { dynnp_de_la dynn_Pascale } { dynnp_du dynn_Pascale } { dynnp_la dynn_Pascale } { dynnp_le dynn_Pascale }
+		{ dynn_Pasteur }
+		{ dynnp_de dynn_Pasteur } { dynnp_de_la dynn_Pasteur } { dynnp_du dynn_Pasteur } { dynnp_la dynn_Pasteur } { dynnp_le dynn_Pasteur }
+		{ dynn_Rane }
+		{ dynnp_de dynn_Rane } { dynnp_de_la dynn_Rane } { dynnp_du dynn_Rane } { dynnp_la dynn_Rane } { dynnp_le dynn_Rane }
+		{ dynn_Reviere }
+		{ dynnp_de dynn_Reviere } { dynnp_de_la dynn_Reviere } { dynnp_du dynn_Reviere } { dynnp_la dynn_Reviere } { dynnp_le dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynnp_de dynn_Rhiannon } { dynnp_de_la dynn_Rhiannon } { dynnp_du dynn_Rhiannon } { dynnp_la dynn_Rhiannon } { dynnp_le dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_de dynn_Rhun } { dynnp_de_la dynn_Rhun } { dynnp_du dynn_Rhun } { dynnp_la dynn_Rhun } { dynnp_le dynn_Rhun }
+		{ dynn_Richarz }
+		{ dynnp_de dynn_Richarz } { dynnp_de_la dynn_Richarz } { dynnp_du dynn_Richarz } { dynnp_la dynn_Richarz } { dynnp_le dynn_Richarz }
+		{ dynn_Rielle }
+		{ dynnp_de dynn_Rielle } { dynnp_de_la dynn_Rielle } { dynnp_du dynn_Rielle } { dynnp_la dynn_Rielle } { dynnp_le dynn_Rielle }
+		{ dynn_Robert }
+		{ dynnp_de dynn_Robert } { dynnp_de_la dynn_Robert } { dynnp_du dynn_Robert } { dynnp_la dynn_Robert } { dynnp_le dynn_Robert }
+		{ dynn_Rodrie }
+		{ dynnp_de dynn_Rodrie } { dynnp_de_la dynn_Rodrie } { dynnp_du dynn_Rodrie } { dynnp_la dynn_Rodrie } { dynnp_le dynn_Rodrie }
+		{ dynn_Roland }
+		{ dynnp_de dynn_Roland } { dynnp_de_la dynn_Roland } { dynnp_du dynn_Roland } { dynnp_la dynn_Roland } { dynnp_le dynn_Roland }
+		{ dynn_Rolston }
+		{ dynnp_de dynn_Rolston } { dynnp_de_la dynn_Rolston } { dynnp_du dynn_Rolston } { dynnp_la dynn_Rolston } { dynnp_le dynn_Rolston }
+		{ dynn_Sele }
+		{ dynnp_de dynn_Sele } { dynnp_de_la dynn_Sele } { dynnp_du dynn_Sele } { dynnp_la dynn_Sele } { dynnp_le dynn_Sele }
+		{ dynn_Sette }
+		{ dynnp_de dynn_Sette } { dynnp_de_la dynn_Sette } { dynnp_du dynn_Sette } { dynnp_la dynn_Sette } { dynnp_le dynn_Sette }
+		{ dynn_Stroud }
+		{ dynnp_de dynn_Stroud } { dynnp_de_la dynn_Stroud } { dynnp_du dynn_Stroud } { dynnp_la dynn_Stroud } { dynnp_le dynn_Stroud }
+		{ dynn_Surilie }
+		{ dynnp_de dynn_Surilie } { dynnp_de_la dynn_Surilie } { dynnp_du dynn_Surilie } { dynnp_la dynn_Surilie } { dynnp_le dynn_Surilie }
+		{ dynn_Thierry }
+		{ dynnp_de dynn_Thierry } { dynnp_de_la dynn_Thierry } { dynnp_du dynn_Thierry } { dynnp_la dynn_Thierry } { dynnp_le dynn_Thierry }
+		{ dynn_Valtieri }
+		{ dynnp_de dynn_Valtieri } { dynnp_de_la dynn_Valtieri } { dynnp_du dynn_Valtieri } { dynnp_la dynn_Valtieri } { dynnp_le dynn_Valtieri }
+		{ dynn_Vien }
+		{ dynnp_de dynn_Vien } { dynnp_de_la dynn_Vien } { dynnp_du dynn_Vien } { dynnp_la dynn_Vien } { dynnp_le dynn_Vien }
+		{ dynn_Helomaine }
+		{ dynnp_de dynn_Helomaine } { dynnp_de_la dynn_Helomaine } { dynnp_du dynn_Helomaine } { dynnp_la dynn_Helomaine } { dynnp_le dynn_Helomaine }
+		{ dynn_Merowald }
+		{ dynnp_de dynn_Merowald } { dynnp_de_la dynn_Merowald } { dynnp_du dynn_Merowald } { dynnp_la dynn_Merowald } { dynnp_le dynn_Merowald }
+		{ dynn_Aurmine }
+		{ dynnp_de dynn_Aurmine } { dynnp_de_la dynn_Aurmine } { dynnp_du dynn_Aurmine } { dynnp_la dynn_Aurmine } { dynnp_le dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynnp_de dynn_Edrald } { dynnp_de_la dynn_Edrald } { dynnp_du dynn_Edrald } { dynnp_la dynn_Edrald } { dynnp_le dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynnp_de dynn_Vautrine } { dynnp_de_la dynn_Vautrine } { dynnp_du dynn_Vautrine } { dynnp_la dynn_Vautrine } { dynnp_le dynn_Vautrine }
+		{ dynn_Benele }
+		{ dynnp_de dynn_Benele } { dynnp_de_la dynn_Benele } { dynnp_du dynn_Benele } { dynnp_la dynn_Benele } { dynnp_le dynn_Benele }
+		{ dynn_Gulitte }
+		{ dynnp_de dynn_Gulitte } { dynnp_de_la dynn_Gulitte } { dynnp_du dynn_Gulitte } { dynnp_la dynn_Gulitte } { dynnp_le dynn_Gulitte }
+		{ dynn_Troivois }
+		{ dynnp_de dynn_Troivois } { dynnp_de_la dynn_Troivois } { dynnp_du dynn_Troivois } { dynnp_la dynn_Troivois } { dynnp_le dynn_Troivois }
+		{ dynn_Spenard }
+		{ dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_la dynn_Spenard } { dynnp_le dynn_Spenard }
+		{ dynn_Dumonte }
+		{ dynnp_de dynn_Dumonte } { dynnp_de_la dynn_Dumonte } { dynnp_du dynn_Dumonte } { dynnp_la dynn_Dumonte } { dynnp_le dynn_Dumonte }
+		{ dynn_Davaux }
+		{ dynnp_de dynn_Davaux } { dynnp_de_la dynn_Davaux } { dynnp_du dynn_Davaux } { dynnp_la dynn_Davaux } { dynnp_le dynn_Davaux }
+		{ dynn_Manteau }
+		{ dynnp_de dynn_Manteau } { dynnp_de_la dynn_Manteau } { dynnp_du dynn_Manteau } { dynnp_la dynn_Manteau } { dynnp_le dynn_Manteau }
+		{ dynn_Tetien }
+		{ dynnp_de dynn_Tetien } { dynnp_de_la dynn_Tetien } { dynnp_du dynn_Tetien } { dynnp_la dynn_Tetien } { dynnp_le dynn_Tetien }
+		{ dynn_Themond }
+		{ dynnp_de dynn_Themond } { dynnp_de_la dynn_Themond } { dynnp_du dynn_Themond } { dynnp_la dynn_Themond } { dynnp_le dynn_Themond }
+		{ dynn_Devet }
+		{ dynnp_de dynn_Devet } { dynnp_de_la dynn_Devet } { dynnp_du dynn_Devet } { dynnp_la dynn_Devet } { dynnp_le dynn_Devet }
+		{ dynn_Retene }
+		{ dynnp_de dynn_Retene } { dynnp_de_la dynn_Retene } { dynnp_du dynn_Retene } { dynnp_la dynn_Retene } { dynnp_le dynn_Retene }
+		{ dynn_Beanique }
+		{ dynnp_de dynn_Beanique } { dynnp_de_la dynn_Beanique } { dynnp_du dynn_Beanique } { dynnp_la dynn_Beanique } { dynnp_le dynn_Beanique }
+		{ dynn_Lauzon }
+		{ dynnp_de dynn_Lauzon } { dynnp_de_la dynn_Lauzon } { dynnp_du dynn_Lauzon } { dynnp_la dynn_Lauzon } { dynnp_le dynn_Lauzon }
+		{ dynn_Solais }
+		{ dynnp_de dynn_Solais } { dynnp_de_la dynn_Solais } { dynnp_du dynn_Solais } { dynnp_la dynn_Solais } { dynnp_le dynn_Solais }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Adrard }
+		{ dynnp_de dynn_Adrard } { dynnp_de_la dynn_Adrard } { dynnp_du dynn_Adrard } { dynnp_la dynn_Adrard } { dynnp_le dynn_Adrard }
+		{ dynn_Angeline }
+		{ dynnp_de dynn_Angeline } { dynnp_de_la dynn_Angeline } { dynnp_du dynn_Angeline } { dynnp_la dynn_Angeline } { dynnp_le dynn_Angeline }
+		{ dynn_Arianne }
+		{ dynnp_de dynn_Arianne } { dynnp_de_la dynn_Arianne } { dynnp_du dynn_Arianne } { dynnp_la dynn_Arianne } { dynnp_le dynn_Arianne }
+		{ dynn_Arnand }
+		{ dynnp_de dynn_Arnand } { dynnp_de_la dynn_Arnand } { dynnp_du dynn_Arnand } { dynnp_la dynn_Arnand } { dynnp_le dynn_Arnand }
+		{ dynn_Arne }
+		{ dynnp_de dynn_Arne } { dynnp_de_la dynn_Arne } { dynnp_du dynn_Arne } { dynnp_la dynn_Arne } { dynnp_le dynn_Arne }
+		{ dynn_Aurimonde }
+		{ dynnp_de dynn_Aurimonde } { dynnp_de_la dynn_Aurimonde } { dynnp_du dynn_Aurimonde } { dynnp_la dynn_Aurimonde } { dynnp_le dynn_Aurimonde }
+		{ dynn_Baelborne }
+		{ dynnp_de dynn_Baelborne } { dynnp_de_la dynn_Baelborne } { dynnp_du dynn_Baelborne } { dynnp_la dynn_Baelborne } { dynnp_le dynn_Baelborne }
+		{ dynn_Baolduin }
+		{ dynnp_de dynn_Baolduin } { dynnp_de_la dynn_Baolduin } { dynnp_du dynn_Baolduin } { dynnp_la dynn_Baolduin } { dynnp_le dynn_Baolduin }
+		{ dynn_Beatrice }
+		{ dynnp_de dynn_Beatrice } { dynnp_de_la dynn_Beatrice } { dynnp_du dynn_Beatrice } { dynnp_la dynn_Beatrice } { dynnp_le dynn_Beatrice }
+		{ dynn_Beauchamp }
+		{ dynnp_de dynn_Beauchamp } { dynnp_de_la dynn_Beauchamp } { dynnp_du dynn_Beauchamp } { dynnp_la dynn_Beauchamp } { dynnp_le dynn_Beauchamp }
+		{ dynn_Beluelle }
+		{ dynnp_de dynn_Beluelle } { dynnp_de_la dynn_Beluelle } { dynnp_du dynn_Beluelle } { dynnp_la dynn_Beluelle } { dynnp_le dynn_Beluelle }
+		{ dynn_Bercourt }
+		{ dynnp_de dynn_Bercourt } { dynnp_de_la dynn_Bercourt } { dynnp_du dynn_Bercourt } { dynnp_la dynn_Bercourt } { dynnp_le dynn_Bercourt }
+		{ dynn_Bertault }
+		{ dynnp_de dynn_Bertault } { dynnp_de_la dynn_Bertault } { dynnp_du dynn_Bertault } { dynnp_la dynn_Bertault } { dynnp_le dynn_Bertault }
+		{ dynn_Bertrand }
+		{ dynnp_de dynn_Bertrand } { dynnp_de_la dynn_Bertrand } { dynnp_du dynn_Bertrand } { dynnp_la dynn_Bertrand } { dynnp_le dynn_Bertrand }
+		{ dynn_Bielle }
+		{ dynnp_de dynn_Bielle } { dynnp_de_la dynn_Bielle } { dynnp_du dynn_Bielle } { dynnp_la dynn_Bielle } { dynnp_le dynn_Bielle }
+		{ dynn_Bienne }
+		{ dynnp_de dynn_Bienne } { dynnp_de_la dynn_Bienne } { dynnp_du dynn_Bienne } { dynnp_la dynn_Bienne } { dynnp_le dynn_Bienne }
+		{ dynn_Blanche }
+		{ dynnp_de dynn_Blanche } { dynnp_de_la dynn_Blanche } { dynnp_du dynn_Blanche } { dynnp_la dynn_Blanche } { dynnp_le dynn_Blanche }
+		{ dynn_Brinard }
+		{ dynnp_de dynn_Brinard } { dynnp_de_la dynn_Brinard } { dynnp_du dynn_Brinard } { dynnp_la dynn_Brinard } { dynnp_le dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynnp_de dynn_Bronwyn } { dynnp_de_la dynn_Bronwyn } { dynnp_du dynn_Bronwyn } { dynnp_la dynn_Bronwyn } { dynnp_le dynn_Bronwyn }
+		{ dynn_Camille }
+		{ dynnp_de dynn_Camille } { dynnp_de_la dynn_Camille } { dynnp_du dynn_Camille } { dynnp_la dynn_Camille } { dynnp_le dynn_Camille }
+		{ dynn_Carcette }
+		{ dynnp_de dynn_Carcette } { dynnp_de_la dynn_Carcette } { dynnp_du dynn_Carcette } { dynnp_la dynn_Carcette } { dynnp_le dynn_Carcette }
+		{ dynn_Cartier }
+		{ dynnp_de dynn_Cartier } { dynnp_de_la dynn_Cartier } { dynnp_du dynn_Cartier } { dynnp_la dynn_Cartier } { dynnp_le dynn_Cartier }
+		{ dynn_Casenne }
+		{ dynnp_de dynn_Casenne } { dynnp_de_la dynn_Casenne } { dynnp_du dynn_Casenne } { dynnp_la dynn_Casenne } { dynnp_le dynn_Casenne }
+		{ dynn_Cassandra }
+		{ dynnp_de dynn_Cassandra } { dynnp_de_la dynn_Cassandra } { dynnp_du dynn_Cassandra } { dynnp_la dynn_Cassandra } { dynnp_le dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynnp_de dynn_Cassel } { dynnp_de_la dynn_Cassel } { dynnp_du dynn_Cassel } { dynnp_la dynn_Cassel } { dynnp_le dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynnp_de dynn_Catherine } { dynnp_de_la dynn_Catherine } { dynnp_du dynn_Catherine } { dynnp_la dynn_Catherine } { dynnp_le dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynnp_de dynn_Cerys } { dynnp_de_la dynn_Cerys } { dynnp_du dynn_Cerys } { dynnp_la dynn_Cerys } { dynnp_le dynn_Cerys }
+		{ dynn_Chandlier }
+		{ dynnp_de dynn_Chandlier } { dynnp_de_la dynn_Chandlier } { dynnp_du dynn_Chandlier } { dynnp_la dynn_Chandlier } { dynnp_le dynn_Chandlier }
+		{ dynn_Charloux }
+		{ dynnp_de dynn_Charloux } { dynnp_de_la dynn_Charloux } { dynnp_du dynn_Charloux } { dynnp_la dynn_Charloux } { dynnp_le dynn_Charloux }
+		{ dynn_Cienne }
+		{ dynnp_de dynn_Cienne } { dynnp_de_la dynn_Cienne } { dynnp_du dynn_Cienne } { dynnp_la dynn_Cienne } { dynnp_le dynn_Cienne }
+		{ dynn_Crecy }
+		{ dynnp_de dynn_Crecy } { dynnp_de_la dynn_Crecy } { dynnp_du dynn_Crecy } { dynnp_la dynn_Crecy } { dynnp_le dynn_Crecy }
+		{ dynn_Croix }
+		{ dynnp_de dynn_Croix } { dynnp_de_la dynn_Croix } { dynnp_du dynn_Croix } { dynnp_la dynn_Croix } { dynnp_le dynn_Croix }
+		{ dynn_Daenia }
+		{ dynnp_de dynn_Daenia } { dynnp_de_la dynn_Daenia } { dynnp_du dynn_Daenia } { dynnp_la dynn_Daenia } { dynnp_le dynn_Daenia }
+		{ dynn_Dalan }
+		{ dynnp_de dynn_Dalan } { dynnp_de_la dynn_Dalan } { dynnp_du dynn_Dalan } { dynnp_la dynn_Dalan } { dynnp_le dynn_Dalan }
+		{ dynn_Damien }
+		{ dynnp_de dynn_Damien } { dynnp_de_la dynn_Damien } { dynnp_du dynn_Damien } { dynnp_la dynn_Damien } { dynnp_le dynn_Damien }
+		{ dynn_Delacourt }
+		{ dynnp_de dynn_Delacourt } { dynnp_de_la dynn_Delacourt } { dynnp_du dynn_Delacourt } { dynnp_la dynn_Delacourt } { dynnp_le dynn_Delacourt }
+		{ dynn_Desele }
+		{ dynnp_de dynn_Desele } { dynnp_de_la dynn_Desele } { dynnp_du dynn_Desele } { dynnp_la dynn_Desele } { dynnp_le dynn_Desele }
+		{ dynn_Diel }
+		{ dynnp_de dynn_Diel } { dynnp_de_la dynn_Diel } { dynnp_du dynn_Diel } { dynnp_la dynn_Diel } { dynnp_le dynn_Diel }
+		{ dynn_Diel }
+		{ dynnp_de dynn_Diel } { dynnp_de_la dynn_Diel } { dynnp_du dynn_Diel } { dynnp_la dynn_Diel } { dynnp_le dynn_Diel }
+		{ dynn_Dolbanitte }
+		{ dynnp_de dynn_Dolbanitte } { dynnp_de_la dynn_Dolbanitte } { dynnp_du dynn_Dolbanitte } { dynnp_la dynn_Dolbanitte } { dynnp_le dynn_Dolbanitte }
+		{ dynn_Dorian }
+		{ dynnp_de dynn_Dorian } { dynnp_de_la dynn_Dorian } { dynnp_du dynn_Dorian } { dynnp_la dynn_Dorian } { dynnp_le dynn_Dorian }
+		{ dynn_Dufont }
+		{ dynnp_de dynn_Dufont } { dynnp_de_la dynn_Dufont } { dynnp_du dynn_Dufont } { dynnp_la dynn_Dufont } { dynnp_le dynn_Dufont }
+		{ dynn_Dufort }
+		{ dynnp_de dynn_Dufort } { dynnp_de_la dynn_Dufort } { dynnp_du dynn_Dufort } { dynnp_la dynn_Dufort } { dynnp_le dynn_Dufort }
+		{ dynn_Eathmoor }
+		{ dynnp_de dynn_Eathmoor } { dynnp_de_la dynn_Eathmoor } { dynnp_du dynn_Eathmoor } { dynnp_la dynn_Eathmoor } { dynnp_le dynn_Eathmoor }
+		{ dynn_Egred }
+		{ dynnp_de dynn_Egred } { dynnp_de_la dynn_Egred } { dynnp_du dynn_Egred } { dynnp_la dynn_Egred } { dynnp_le dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynnp_de dynn_Eleanor } { dynnp_de_la dynn_Eleanor } { dynnp_du dynn_Eleanor } { dynnp_la dynn_Eleanor } { dynnp_le dynn_Eleanor }
+		{ dynn_Elisanne }
+		{ dynnp_de dynn_Elisanne } { dynnp_de_la dynn_Elisanne } { dynnp_du dynn_Elisanne } { dynnp_la dynn_Elisanne } { dynnp_le dynn_Elisanne }
+		{ dynn_Eloise }
+		{ dynnp_de dynn_Eloise } { dynnp_de_la dynn_Eloise } { dynnp_du dynn_Eloise } { dynnp_la dynn_Eloise } { dynnp_le dynn_Eloise }
+		{ dynn_Emilie }
+		{ dynnp_de dynn_Emilie } { dynnp_de_la dynn_Emilie } { dynnp_du dynn_Emilie } { dynnp_la dynn_Emilie } { dynnp_le dynn_Emilie }
+		{ dynn_Felicie }
+		{ dynnp_de dynn_Felicie } { dynnp_de_la dynn_Felicie } { dynnp_du dynn_Felicie } { dynnp_la dynn_Felicie } { dynnp_le dynn_Felicie }
+		{ dynn_Frenck }
+		{ dynnp_de dynn_Frenck } { dynnp_de_la dynn_Frenck } { dynnp_du dynn_Frenck } { dynnp_la dynn_Frenck } { dynnp_le dynn_Frenck }
+		{ dynn_Garcon }
+		{ dynnp_de dynn_Garcon } { dynnp_de_la dynn_Garcon } { dynnp_du dynn_Garcon } { dynnp_la dynn_Garcon } { dynnp_le dynn_Garcon }
+		{ dynn_Gemain }
+		{ dynnp_de dynn_Gemain } { dynnp_de_la dynn_Gemain } { dynnp_du dynn_Gemain } { dynnp_la dynn_Gemain } { dynnp_le dynn_Gemain }
+		{ dynn_Gemane }
+		{ dynnp_de dynn_Gemane } { dynnp_de_la dynn_Gemane } { dynnp_du dynn_Gemane } { dynnp_la dynn_Gemane } { dynnp_le dynn_Gemane }
+		{ dynn_Gerard }
+		{ dynnp_de dynn_Gerard } { dynnp_de_la dynn_Gerard } { dynnp_du dynn_Gerard } { dynnp_la dynn_Gerard } { dynnp_le dynn_Gerard }
+		{ dynn_Ghislaine }
+		{ dynnp_de dynn_Ghislaine } { dynnp_de_la dynn_Ghislaine } { dynnp_du dynn_Ghislaine } { dynnp_la dynn_Ghislaine } { dynnp_le dynn_Ghislaine }
+		{ dynn_Gielle }
+		{ dynnp_de dynn_Gielle } { dynnp_de_la dynn_Gielle } { dynnp_du dynn_Gielle } { dynnp_la dynn_Gielle } { dynnp_le dynn_Gielle }
+		{ dynn_Glenpoint }
+		{ dynnp_de dynn_Glenpoint } { dynnp_de_la dynn_Glenpoint } { dynnp_du dynn_Glenpoint } { dynnp_la dynn_Glenpoint } { dynnp_le dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynnp_de dynn_Glynn } { dynnp_de_la dynn_Glynn } { dynnp_du dynn_Glynn } { dynnp_la dynn_Glynn } { dynnp_le dynn_Glynn }
+		{ dynn_Godwin }
+		{ dynnp_de dynn_Godwin } { dynnp_de_la dynn_Godwin } { dynnp_du dynn_Godwin } { dynnp_la dynn_Godwin } { dynnp_le dynn_Godwin }
+		{ dynn_Granve }
+		{ dynnp_de dynn_Granve } { dynnp_de_la dynn_Granve } { dynnp_du dynn_Granve } { dynnp_la dynn_Granve } { dynnp_le dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynnp_de dynn_Guinevere } { dynnp_de_la dynn_Guinevere } { dynnp_du dynn_Guinevere } { dynnp_la dynn_Guinevere } { dynnp_le dynn_Guinevere }
+		{ dynn_Helene }
+		{ dynnp_de dynn_Helene } { dynnp_de_la dynn_Helene } { dynnp_du dynn_Helene } { dynnp_la dynn_Helene } { dynnp_le dynn_Helene }
+		{ dynn_Helwyn }
+		{ dynnp_de dynn_Helwyn } { dynnp_de_la dynn_Helwyn } { dynnp_du dynn_Helwyn } { dynnp_la dynn_Helwyn } { dynnp_le dynn_Helwyn }
+		{ dynn_Isabelle }
+		{ dynnp_de dynn_Isabelle } { dynnp_de_la dynn_Isabelle } { dynnp_du dynn_Isabelle } { dynnp_la dynn_Isabelle } { dynnp_le dynn_Isabelle }
+		{ dynn_Jacinda }
+		{ dynnp_de dynn_Jacinda } { dynnp_de_la dynn_Jacinda } { dynnp_du dynn_Jacinda } { dynnp_la dynn_Jacinda } { dynnp_le dynn_Jacinda }
+		{ dynn_Jacqueline }
+		{ dynnp_de dynn_Jacqueline } { dynnp_de_la dynn_Jacqueline } { dynnp_du dynn_Jacqueline } { dynnp_la dynn_Jacqueline } { dynnp_le dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynnp_de dynn_Jeannie } { dynnp_de_la dynn_Jeannie } { dynnp_du dynn_Jeannie } { dynnp_la dynn_Jeannie } { dynnp_le dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynnp_de dynn_Jessica } { dynnp_de_la dynn_Jessica } { dynnp_du dynn_Jessica } { dynnp_la dynn_Jessica } { dynnp_le dynn_Jessica }
+		{ dynn_Joslin }
+		{ dynnp_de dynn_Joslin } { dynnp_de_la dynn_Joslin } { dynnp_du dynn_Joslin } { dynnp_la dynn_Joslin } { dynnp_le dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_de dynn_Juillen } { dynnp_de_la dynn_Juillen } { dynnp_du dynn_Juillen } { dynnp_la dynn_Juillen } { dynnp_le dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynnp_de dynn_Jurard } { dynnp_de_la dynn_Jurard } { dynnp_du dynn_Jurard } { dynnp_la dynn_Jurard } { dynnp_le dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_de dynn_Kambria } { dynnp_de_la dynn_Kambria } { dynnp_du dynn_Kambria } { dynnp_la dynn_Kambria } { dynnp_le dynn_Kambria }
+		{ dynn_Laurent }
+		{ dynnp_de dynn_Laurent } { dynnp_de_la dynn_Laurent } { dynnp_du dynn_Laurent } { dynnp_la dynn_Laurent } { dynnp_le dynn_Laurent }
+		{ dynn_Lioncourt }
+		{ dynnp_de dynn_Lioncourt } { dynnp_de_la dynn_Lioncourt } { dynnp_du dynn_Lioncourt } { dynnp_la dynn_Lioncourt } { dynnp_le dynn_Lioncourt }
+		{ dynn_Lisette }
+		{ dynnp_de dynn_Lisette } { dynnp_de_la dynn_Lisette } { dynnp_du dynn_Lisette } { dynnp_la dynn_Lisette } { dynnp_le dynn_Lisette }
+		{ dynn_Llugwych }
+		{ dynnp_de dynn_Llugwych } { dynnp_de_la dynn_Llugwych } { dynnp_du dynn_Llugwych } { dynnp_la dynn_Llugwych } { dynnp_le dynn_Llugwych }
+		{ dynn_Llywelyn }
+		{ dynnp_de dynn_Llywelyn } { dynnp_de_la dynn_Llywelyn } { dynnp_du dynn_Llywelyn } { dynnp_la dynn_Llywelyn } { dynnp_le dynn_Llywelyn }
+		{ dynn_Lothaire }
+		{ dynnp_de dynn_Lothaire } { dynnp_de_la dynn_Lothaire } { dynnp_du dynn_Lothaire } { dynnp_la dynn_Lothaire } { dynnp_le dynn_Lothaire }
+		{ dynn_Mannick }
+		{ dynnp_de dynn_Mannick } { dynnp_de_la dynn_Mannick } { dynnp_du dynn_Mannick } { dynnp_la dynn_Mannick } { dynnp_le dynn_Mannick }
+		{ dynn_Marc }
+		{ dynnp_de dynn_Marc } { dynnp_de_la dynn_Marc } { dynnp_du dynn_Marc } { dynnp_la dynn_Marc } { dynnp_le dynn_Marc }
+		{ dynn_Martine }
+		{ dynnp_de dynn_Martine } { dynnp_de_la dynn_Martine } { dynnp_du dynn_Martine } { dynnp_la dynn_Martine } { dynnp_le dynn_Martine }
+		{ dynn_Mathieu }
+		{ dynnp_de dynn_Mathieu } { dynnp_de_la dynn_Mathieu } { dynnp_du dynn_Mathieu } { dynnp_la dynn_Mathieu } { dynnp_le dynn_Mathieu }
+		{ dynn_Maurard }
+		{ dynnp_de dynn_Maurard } { dynnp_de_la dynn_Maurard } { dynnp_du dynn_Maurard } { dynnp_la dynn_Maurard } { dynnp_le dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_de dynn_Maurice } { dynnp_de_la dynn_Maurice } { dynnp_du dynn_Maurice } { dynnp_la dynn_Maurice } { dynnp_le dynn_Maurice }
+		{ dynn_Mederic }
+		{ dynnp_de dynn_Mederic } { dynnp_de_la dynn_Mederic } { dynnp_du dynn_Mederic } { dynnp_la dynn_Mederic } { dynnp_le dynn_Mederic }
+		{ dynnp_de_la dynn_Mer }
+		{ dynn_Mercier }
+		{ dynnp_de dynn_Mercier } { dynnp_de_la dynn_Mercier } { dynnp_du dynn_Mercier } { dynnp_la dynn_Mercier } { dynnp_le dynn_Mercier }
+		{ dynn_Mornard }
+		{ dynnp_de dynn_Mornard } { dynnp_de_la dynn_Mornard } { dynnp_du dynn_Mornard } { dynnp_la dynn_Mornard } { dynnp_le dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_de dynn_Morrard } { dynnp_de_la dynn_Morrard } { dynnp_du dynn_Morrard } { dynnp_la dynn_Morrard } { dynnp_le dynn_Morrard }
+		{ dynn_Motierre }
+		{ dynnp_de dynn_Motierre } { dynnp_de_la dynn_Motierre } { dynnp_du dynn_Motierre } { dynnp_la dynn_Motierre } { dynnp_le dynn_Motierre }
+		{ dynn_Natalie }
+		{ dynnp_de dynn_Natalie } { dynnp_de_la dynn_Natalie } { dynnp_du dynn_Natalie } { dynnp_la dynn_Natalie } { dynnp_le dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynnp_de dynn_Nerys } { dynnp_de_la dynn_Nerys } { dynnp_du dynn_Nerys } { dynnp_la dynn_Nerys } { dynnp_le dynn_Nerys }
+		{ dynn_Nicolas }
+		{ dynnp_de dynn_Nicolas } { dynnp_de_la dynn_Nicolas } { dynnp_du dynn_Nicolas } { dynnp_la dynn_Nicolas } { dynnp_le dynn_Nicolas }
+		{ dynn_Noellaume }
+		{ dynnp_de dynn_Noellaume } { dynnp_de_la dynn_Noellaume } { dynnp_du dynn_Noellaume } { dynnp_la dynn_Noellaume } { dynnp_le dynn_Noellaume }
+		{ dynn_Oberon }
+		{ dynnp_de dynn_Oberon } { dynnp_de_la dynn_Oberon } { dynnp_du dynn_Oberon } { dynnp_la dynn_Oberon } { dynnp_le dynn_Oberon }
+		{ dynn_Oges }
+		{ dynnp_de dynn_Oges } { dynnp_de_la dynn_Oges } { dynnp_du dynn_Oges } { dynnp_la dynn_Oges } { dynnp_le dynn_Oges }
+		{ dynn_Owain }
+		{ dynnp_de dynn_Owain } { dynnp_de_la dynn_Owain } { dynnp_du dynn_Owain } { dynnp_la dynn_Owain } { dynnp_le dynn_Owain }
+		{ dynn_Panoit }
+		{ dynnp_de dynn_Panoit } { dynnp_de_la dynn_Panoit } { dynnp_du dynn_Panoit } { dynnp_la dynn_Panoit } { dynnp_le dynn_Panoit }
+		{ dynn_Pascale }
+		{ dynnp_de dynn_Pascale } { dynnp_de_la dynn_Pascale } { dynnp_du dynn_Pascale } { dynnp_la dynn_Pascale } { dynnp_le dynn_Pascale }
+		{ dynn_Pasteur }
+		{ dynnp_de dynn_Pasteur } { dynnp_de_la dynn_Pasteur } { dynnp_du dynn_Pasteur } { dynnp_la dynn_Pasteur } { dynnp_le dynn_Pasteur }
+		{ dynn_Rane }
+		{ dynnp_de dynn_Rane } { dynnp_de_la dynn_Rane } { dynnp_du dynn_Rane } { dynnp_la dynn_Rane } { dynnp_le dynn_Rane }
+		{ dynn_Reviere }
+		{ dynnp_de dynn_Reviere } { dynnp_de_la dynn_Reviere } { dynnp_du dynn_Reviere } { dynnp_la dynn_Reviere } { dynnp_le dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynnp_de dynn_Rhiannon } { dynnp_de_la dynn_Rhiannon } { dynnp_du dynn_Rhiannon } { dynnp_la dynn_Rhiannon } { dynnp_le dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_de dynn_Rhun } { dynnp_de_la dynn_Rhun } { dynnp_du dynn_Rhun } { dynnp_la dynn_Rhun } { dynnp_le dynn_Rhun }
+		{ dynn_Richarz }
+		{ dynnp_de dynn_Richarz } { dynnp_de_la dynn_Richarz } { dynnp_du dynn_Richarz } { dynnp_la dynn_Richarz } { dynnp_le dynn_Richarz }
+		{ dynn_Rielle }
+		{ dynnp_de dynn_Rielle } { dynnp_de_la dynn_Rielle } { dynnp_du dynn_Rielle } { dynnp_la dynn_Rielle } { dynnp_le dynn_Rielle }
+		{ dynn_Robert }
+		{ dynnp_de dynn_Robert } { dynnp_de_la dynn_Robert } { dynnp_du dynn_Robert } { dynnp_la dynn_Robert } { dynnp_le dynn_Robert }
+		{ dynn_Rodrie }
+		{ dynnp_de dynn_Rodrie } { dynnp_de_la dynn_Rodrie } { dynnp_du dynn_Rodrie } { dynnp_la dynn_Rodrie } { dynnp_le dynn_Rodrie }
+		{ dynn_Roland }
+		{ dynnp_de dynn_Roland } { dynnp_de_la dynn_Roland } { dynnp_du dynn_Roland } { dynnp_la dynn_Roland } { dynnp_le dynn_Roland }
+		{ dynn_Rolston }
+		{ dynnp_de dynn_Rolston } { dynnp_de_la dynn_Rolston } { dynnp_du dynn_Rolston } { dynnp_la dynn_Rolston } { dynnp_le dynn_Rolston }
+		{ dynn_Sele }
+		{ dynnp_de dynn_Sele } { dynnp_de_la dynn_Sele } { dynnp_du dynn_Sele } { dynnp_la dynn_Sele } { dynnp_le dynn_Sele }
+		{ dynn_Sette }
+		{ dynnp_de dynn_Sette } { dynnp_de_la dynn_Sette } { dynnp_du dynn_Sette } { dynnp_la dynn_Sette } { dynnp_le dynn_Sette }
+		{ dynn_Stroud }
+		{ dynnp_de dynn_Stroud } { dynnp_de_la dynn_Stroud } { dynnp_du dynn_Stroud } { dynnp_la dynn_Stroud } { dynnp_le dynn_Stroud }
+		{ dynn_Surilie }
+		{ dynnp_de dynn_Surilie } { dynnp_de_la dynn_Surilie } { dynnp_du dynn_Surilie } { dynnp_la dynn_Surilie } { dynnp_le dynn_Surilie }
+		{ dynn_Thierry }
+		{ dynnp_de dynn_Thierry } { dynnp_de_la dynn_Thierry } { dynnp_du dynn_Thierry } { dynnp_la dynn_Thierry } { dynnp_le dynn_Thierry }
+		{ dynn_Valtieri }
+		{ dynnp_de dynn_Valtieri } { dynnp_de_la dynn_Valtieri } { dynnp_du dynn_Valtieri } { dynnp_la dynn_Valtieri } { dynnp_le dynn_Valtieri }
+		{ dynn_Vien }
+		{ dynnp_de dynn_Vien } { dynnp_de_la dynn_Vien } { dynnp_du dynn_Vien } { dynnp_la dynn_Vien } { dynnp_le dynn_Vien }
+		{ dynn_Helomaine }
+		{ dynnp_de dynn_Helomaine } { dynnp_de_la dynn_Helomaine } { dynnp_du dynn_Helomaine } { dynnp_la dynn_Helomaine } { dynnp_le dynn_Helomaine }
+		{ dynn_Merowald }
+		{ dynnp_de dynn_Merowald } { dynnp_de_la dynn_Merowald } { dynnp_du dynn_Merowald } { dynnp_la dynn_Merowald } { dynnp_le dynn_Merowald }
+		{ dynn_Aurmine }
+		{ dynnp_de dynn_Aurmine } { dynnp_de_la dynn_Aurmine } { dynnp_du dynn_Aurmine } { dynnp_la dynn_Aurmine } { dynnp_le dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynnp_de dynn_Edrald } { dynnp_de_la dynn_Edrald } { dynnp_du dynn_Edrald } { dynnp_la dynn_Edrald } { dynnp_le dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynnp_de dynn_Vautrine } { dynnp_de_la dynn_Vautrine } { dynnp_du dynn_Vautrine } { dynnp_la dynn_Vautrine } { dynnp_le dynn_Vautrine }
+		{ dynn_Benele }
+		{ dynnp_de dynn_Benele } { dynnp_de_la dynn_Benele } { dynnp_du dynn_Benele } { dynnp_la dynn_Benele } { dynnp_le dynn_Benele }
+		{ dynn_Gulitte }
+		{ dynnp_de dynn_Gulitte } { dynnp_de_la dynn_Gulitte } { dynnp_du dynn_Gulitte } { dynnp_la dynn_Gulitte } { dynnp_le dynn_Gulitte }
+		{ dynn_Troivois }
+		{ dynnp_de dynn_Troivois } { dynnp_de_la dynn_Troivois } { dynnp_du dynn_Troivois } { dynnp_la dynn_Troivois } { dynnp_le dynn_Troivois }
+		{ dynn_Spenard }
+		{ dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_la dynn_Spenard } { dynnp_le dynn_Spenard }
+		{ dynn_Dumonte }
+		{ dynnp_de dynn_Dumonte } { dynnp_de_la dynn_Dumonte } { dynnp_du dynn_Dumonte } { dynnp_la dynn_Dumonte } { dynnp_le dynn_Dumonte }
+		{ dynn_Davaux }
+		{ dynnp_de dynn_Davaux } { dynnp_de_la dynn_Davaux } { dynnp_du dynn_Davaux } { dynnp_la dynn_Davaux } { dynnp_le dynn_Davaux }
+		{ dynn_Manteau }
+		{ dynnp_de dynn_Manteau } { dynnp_de_la dynn_Manteau } { dynnp_du dynn_Manteau } { dynnp_la dynn_Manteau } { dynnp_le dynn_Manteau }
+		{ dynn_Tetien }
+		{ dynnp_de dynn_Tetien } { dynnp_de_la dynn_Tetien } { dynnp_du dynn_Tetien } { dynnp_la dynn_Tetien } { dynnp_le dynn_Tetien }
+		{ dynn_Themond }
+		{ dynnp_de dynn_Themond } { dynnp_de_la dynn_Themond } { dynnp_du dynn_Themond } { dynnp_la dynn_Themond } { dynnp_le dynn_Themond }
+		{ dynn_Devet }
+		{ dynnp_de dynn_Devet } { dynnp_de_la dynn_Devet } { dynnp_du dynn_Devet } { dynnp_la dynn_Devet } { dynnp_le dynn_Devet }
+		{ dynn_Retene }
+		{ dynnp_de dynn_Retene } { dynnp_de_la dynn_Retene } { dynnp_du dynn_Retene } { dynnp_la dynn_Retene } { dynnp_le dynn_Retene }
+		{ dynn_Beanique }
+		{ dynnp_de dynn_Beanique } { dynnp_de_la dynn_Beanique } { dynnp_du dynn_Beanique } { dynnp_la dynn_Beanique } { dynnp_le dynn_Beanique }
+		{ dynn_Lauzon }
+		{ dynnp_de dynn_Lauzon } { dynnp_de_la dynn_Lauzon } { dynnp_du dynn_Lauzon } { dynnp_la dynn_Lauzon } { dynnp_le dynn_Lauzon }
+		{ dynn_Solais }
+		{ dynnp_de dynn_Solais } { dynnp_de_la dynn_Solais } { dynnp_du dynn_Solais } { dynnp_la dynn_Solais } { dynnp_le dynn_Solais }
+	}
+
+	male_names = {
+		Aaric
+		Adrien
+		Afonwen
+		Aiden
+		Alain
+		Alaird
+		Aldred
+		Alexandre
+		Amaund
+		Andre
+		Aneurin
+		Antoine
+		Ardennes
+		Armand
+		Arnand
+		Arniel
+		Arold
+		Arrie
+		Arthog
+		Astien
+		Baolduin
+		Barnand
+		Belchimac
+		Belethor
+		Benoit
+		Berenger
+		Bertrand
+		Birard
+		Boduan
+		Brice
+		Bruce
+		Bryngwran
+		Caerphilly
+		Cameron
+		Camus
+		Catwuldur
+		Chandlier
+		Charles
+		Cintugnan
+		Clotaire
+		Colin
+		Craig
+		Cynric
+		Daffyd
+		Dalan
+		Damien
+		Dandier
+		Daniel
+		Darien
+		Debentien
+		Degaine
+		Delacourt
+		Delvin
+		Diarmaid
+		Dolgarrog
+		Dominique
+		Donnel
+		Dorian
+		Dougal
+		Duach
+		Duncaine
+		Eathcliff
+		E-Eathmoor
+		Edgar
+		Edmond
+		Eduard
+		Edwastyr
+		Edwier
+		Elbert
+		Eltrys
+		Emeric
+		Emmanuel
+		E-Eric
+		Ernard
+		Ernest
+		Esmond
+		Etienne
+		E-Etome
+		Eudesin
+		Eugene
+		Faric
+		Fenas
+		Fitzwilliam
+		Florian
+		Folcque
+		Francois
+		Frederic
+		Gabriel
+		Garvey
+		Gaspard
+		Geon
+		Georges
+		Geraint
+		Gerard
+		Gilbert
+		Giraud
+		Godwin
+		Goffryth
+		Gordian
+		Graeme
+		Gregoire
+		Gruffyth
+		Guillame
+		Guthrie
+		Harley
+		Henri
+		Herbard
+		Hughes
+		Humphrey
+		Hywel
+		Iain
+		Ianto
+		Isidore
+		Jacob
+		Jacques
+		Jean
+		Jerian
+		Jocien
+		Joile
+		Joncis
+		Joseph
+		Joyce
+		Juane
+		Julien
+		Juvenal
+		Lanard
+		Lanie
+		Laurent
+		Listien
+		Llywelyn
+		Louis
+		Luc
+		Lucian
+		Lugrub
+		Lyndon
+		Lywel
+		Malcolm
+		Marc
+		Martine
+		Mathieu
+		Maurice
+		Mederic
+		Mercier
+		Michel
+		Moise
+		Mordred
+		Mordyctor
+		Morven
+		Nathan
+		Niall
+		Nicolas
+		Oberon
+		Octavie
+		Ogier
+		Olivier
+		Oscar
+		Owain
+		Pascale
+		Pasteur
+		Patraic
+		Paul
+		Perceval
+		Perien
+		Philippe
+		Phinis
+		Pierre
+		Polydor
+		Raven
+		Reges
+		Relien
+		Rerlas
+		Reynaud
+		Rhoshirwaun
+		Rhun
+		Richarz
+		Robert
+		Rodrie
+		Roger
+		Roland
+		Rolston
+		Rudie
+		Ruran
+		Salomon
+		Samuel
+		Se-ebastien
+		Serge
+		Simeon
+		Staubin
+		Stephan
+		Tamaiharanui
+		Tancred
+		Theodore
+		Thetrard
+		Thierry
+		Timothee
+		Tomas
+		Tristain
+		Tudor
+		Tuthul
+		Tybalt
+		Uraccen
+		Valence
+		Vicenze
+		Walter
+		Waric
+		Marhaus
+		RE_my
+	}
+
+	female_names = {
+		Abelle
+		Adelie
+		Aditte
+		Adriana
+		Adrienne
+		Aelynn
+		Agathe
+		Aisha
+		Ales
+		Alisonne
+		Allaine
+		Amanda
+		Amarie
+		Ambre
+		Amelie
+		Angeline
+		Anna
+		Annabelle
+		Antoinette
+		Arianne
+		Arielle
+		Aurnie
+		Aurora
+		Babette
+		Barbara
+		Beatrice
+		Belle
+		Bernadette
+		Brianna
+		Brielle
+		Bronwyn
+		Byrhandre
+		Camille
+		Caninetta
+		Carla
+		Carole
+		Cassandra
+		Catherine
+		Celeste
+		Celia
+		Ceri
+		Cerys
+		Chantelle
+		Charloux
+		Chloe
+		Cinelle
+		Cladine
+		Claire
+		Colette
+		Corinne
+		Dabienne
+		Danielle
+		Debora
+		Deidre
+		Delphine
+		Derelle
+		De-esire-ee
+		Diana
+		Donella
+		Edelinne
+		Eileen
+		Elanna
+		Elberta
+		Eleanor
+		Elisanne
+		Eloise
+		Emilie
+		Emma
+		Emusette
+		Erline
+		Estelle
+		Etiennette
+		Eve
+		Evelyn
+		Fabrelle
+		Fasele
+		Felicie
+		Fiona
+		Gabrielle
+		Genevieve
+		Ghislaine
+		Gise-ele
+		Grace
+		Guinevere
+		Hayley
+		Helene
+		Heloise
+		Helwyn
+		Ildene
+		Isabelle
+		Jacinda
+		Jacqueline
+		Janese
+		Janette
+		Jeanne
+		Jemima
+		Jenna
+		Jennifer
+		Jessica
+		Jocelyne
+		Julienne
+		Juliette
+		Kahurangi
+		Keira
+		Laelette
+		Leila
+		Lielle
+		Lisanne
+		Lisette
+		Lucille
+		Mabrelle
+		Madeleine
+		Mahlene
+		Malielle
+		Manone
+		Maranique
+		Marcelle
+		Marelle
+		Marguerite
+		Marianne
+		Marie
+		Mariette
+		Marthe
+		Maya
+		Medora
+		Megane
+		Melie
+		Mena
+		Meredith
+		Michelle
+		Mirabelle
+		Mollie
+		Morgana
+		Myfanwy
+		Natalie
+		Nerys
+		Nurese
+		Olivia
+		Orla
+		Padme
+		Pauline
+		Penelope
+		Perrere
+		Phoebe
+		Rebecca
+		Reliana
+		Rhiannon
+		Rhonda
+		Rochelle
+		Roselle
+		Ruth
+		Sabrina
+		Samanthe
+		Sara
+		Serafina
+		Sielle
+		Sinead
+		Sophia
+		Sorine
+		Surane
+		Suzanne
+		Syl
+		Sylvie
+		Synette
+		Tamatha
+		Tess
+		Thea
+		Theodesta
+		Titania
+		Urraca
+		Victoria
+		Vivienne
+		Yolande
+		Yvonne
+		Zara
+		Zoe
+		Roberta
+		Clarisse
+	}
+
+	dynasty_of_location_prefix = "dynnp_de"
+
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+	
+	mercenary_names = {
+			{ name = "mercenary_knights_tooth" coat_of_arms = "mo_knights_tooth" }
+			{ name = "mercenary_knights_heart" coat_of_arms = "mo_knights_heart" }
+			{ name = "mercenary_knights_fox" coat_of_arms = "mo_knights_fox" }
+			{ name = "mercenary_red_rooks" coat_of_arms = "mo_red_rooks" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }	
+			{ name = "mercenary_knights" }			
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }	
+			{ name = "mercenary_knights" }			
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+    }
+}
+
+name_list_northmen = {
+		
+	dynasty_names = {
+		{ dynn_Adrard }
+		{ dynnp_van_der dynn_Adrard } { dynnp_de dynn_Adrard } { dynnp_de_la dynn_Adrard } { dynnp_du dynn_Adrard } { dynnp_van dynn_Adrard }
+		{ dynn_Angeline }
+		{ dynnp_van_der dynn_Angeline } { dynnp_de dynn_Angeline } { dynnp_de_la dynn_Angeline } { dynnp_du dynn_Angeline } { dynnp_van dynn_Angeline }
+		{ dynn_Arianne }
+		{ dynnp_van_der dynn_Arianne } { dynnp_de dynn_Arianne } { dynnp_de_la dynn_Arianne } { dynnp_du dynn_Arianne } { dynnp_van dynn_Arianne }
+		{ dynn_Arnault }
+		{ dynnp_van_der dynn_Arnault } { dynnp_de dynn_Arnault } { dynnp_de_la dynn_Arnault } { dynnp_du dynn_Arnault } { dynnp_van dynn_Arnault }
+		{ dynn_Arne }
+		{ dynnp_van_der dynn_Arne } { dynnp_de dynn_Arne } { dynnp_de_la dynn_Arne } { dynnp_du dynn_Arne } { dynnp_van dynn_Arne }
+		{ dynn_Badwin }
+		{ dynnp_van_der dynn_Badwin } { dynnp_de dynn_Badwin } { dynnp_de_la dynn_Badwin } { dynnp_du dynn_Badwin } { dynnp_van dynn_Badwin }
+		{ dynn_Baldtwin }
+		{ dynnp_van_der dynn_Baldtwin } { dynnp_de dynn_Baldtwin } { dynnp_de_la dynn_Baldtwin } { dynnp_du dynn_Baldtwin } { dynnp_van dynn_Baldtwin }
+		{ dynn_Beatrix }
+		{ dynnp_van_der dynn_Beatrix } { dynnp_de dynn_Beatrix } { dynnp_de_la dynn_Beatrix } { dynnp_du dynn_Beatrix } { dynnp_van dynn_Beatrix }
+		{ dynn_Beauchamp }
+		{ dynnp_van_der dynn_Beauchamp } { dynnp_de dynn_Beauchamp } { dynnp_de_la dynn_Beauchamp } { dynnp_du dynn_Beauchamp } { dynnp_van dynn_Beauchamp }
+		{ dynn_Berengaria }
+		{ dynnp_van_der dynn_Berengaria } { dynnp_de dynn_Berengaria } { dynnp_de_la dynn_Berengaria } { dynnp_du dynn_Berengaria } { dynnp_van dynn_Berengaria }
+		{ dynn_Berenice }
+		{ dynnp_van_der dynn_Berenice } { dynnp_de dynn_Berenice } { dynnp_de_la dynn_Berenice } { dynnp_du dynn_Berenice } { dynnp_van dynn_Berenice }
+		{ dynn_Bertrand }
+		{ dynnp_van_der dynn_Bertrand } { dynnp_de dynn_Bertrand } { dynnp_de_la dynn_Bertrand } { dynnp_du dynn_Bertrand } { dynnp_van dynn_Bertrand }
+		{ dynn_Biltong }
+		{ dynnp_van_der dynn_Biltong } { dynnp_de dynn_Biltong } { dynnp_de_la dynn_Biltong } { dynnp_du dynn_Biltong } { dynnp_van dynn_Biltong }
+		{ dynn_Blanche }
+		{ dynnp_van_der dynn_Blanche } { dynnp_de dynn_Blanche } { dynnp_de_la dynn_Blanche } { dynnp_du dynn_Blanche } { dynnp_van dynn_Blanche }
+		{ dynn_Bloemfontein }
+		{ dynnp_van_der dynn_Bloemfontein } { dynnp_de dynn_Bloemfontein } { dynnp_de_la dynn_Bloemfontein } { dynnp_du dynn_Bloemfontein } { dynnp_van dynn_Bloemfontein }
+		{ dynn_Blokker }
+		{ dynnp_van_der dynn_Blokker } { dynnp_de dynn_Blokker } { dynnp_de_la dynn_Blokker } { dynnp_du dynn_Blokker } { dynnp_van dynn_Blokker }
+		{ dynn_Boer }
+		{ dynnp_van_der dynn_Boer } { dynnp_de dynn_Boer } { dynnp_de_la dynn_Boer } { dynnp_du dynn_Boer } { dynnp_van dynn_Boer }
+		{ dynn_Botha }
+		{ dynnp_van_der dynn_Botha } { dynnp_de dynn_Botha } { dynnp_de_la dynn_Botha } { dynnp_du dynn_Botha } { dynnp_van dynn_Botha }
+		{ dynn_Brinard }
+		{ dynnp_van_der dynn_Brinard } { dynnp_de dynn_Brinard } { dynnp_de_la dynn_Brinard } { dynnp_du dynn_Brinard } { dynnp_van dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynnp_van_der dynn_Bronwyn } { dynnp_de dynn_Bronwyn } { dynnp_de_la dynn_Bronwyn } { dynnp_du dynn_Bronwyn } { dynnp_van dynn_Bronwyn }
+		{ dynn_Burger }
+		{ dynnp_van_der dynn_Burger } { dynnp_de dynn_Burger } { dynnp_de_la dynn_Burger } { dynnp_du dynn_Burger } { dynnp_van dynn_Burger }
+		{ dynn_Cassandra }
+		{ dynnp_van_der dynn_Cassandra } { dynnp_de dynn_Cassandra } { dynnp_de_la dynn_Cassandra } { dynnp_du dynn_Cassandra } { dynnp_van dynn_Cassandra }
+		{ dynn_Cerys }
+		{ dynnp_van_der dynn_Cerys } { dynnp_de dynn_Cerys } { dynnp_de_la dynn_Cerys } { dynnp_du dynn_Cerys } { dynnp_van dynn_Cerys }
+		{ dynn_Chandboer }
+		{ dynnp_van_der dynn_Chandboer } { dynnp_de dynn_Chandboer } { dynnp_de_la dynn_Chandboer } { dynnp_du dynn_Chandboer } { dynnp_van dynn_Chandboer }
+		{ dynn_Charlize }
+		{ dynnp_van_der dynn_Charlize } { dynnp_de dynn_Charlize } { dynnp_de_la dynn_Charlize } { dynnp_du dynn_Charlize } { dynnp_van dynn_Charlize }
+		{ dynn_Cheryl }
+		{ dynnp_van_der dynn_Cheryl } { dynnp_de dynn_Cheryl } { dynnp_de_la dynn_Cheryl } { dynnp_du dynn_Cheryl } { dynnp_van dynn_Cheryl }
+		{ dynn_Claassen }
+		{ dynnp_van_der dynn_Claassen } { dynnp_de dynn_Claassen } { dynnp_de_la dynn_Claassen } { dynnp_du dynn_Claassen } { dynnp_van dynn_Claassen }
+		{ dynn_Coopboer }
+		{ dynnp_van_der dynn_Coopboer } { dynnp_de dynn_Coopboer } { dynnp_de_la dynn_Coopboer } { dynnp_du dynn_Coopboer } { dynnp_van dynn_Coopboer }
+		{ dynn_Cooper }
+		{ dynnp_van_der dynn_Cooper } { dynnp_de dynn_Cooper } { dynnp_de_la dynn_Cooper } { dynnp_du dynn_Cooper } { dynnp_van dynn_Cooper }
+		{ dynn_Crecy }
+		{ dynnp_van_der dynn_Crecy } { dynnp_de dynn_Crecy } { dynnp_de_la dynn_Crecy } { dynnp_du dynn_Crecy } { dynnp_van dynn_Crecy }
+		{ dynn_Daenia }
+		{ dynnp_van_der dynn_Daenia } { dynnp_de dynn_Daenia } { dynnp_de_la dynn_Daenia } { dynnp_du dynn_Daenia } { dynnp_van dynn_Daenia }
+		{ dynn_Damien }
+		{ dynnp_van_der dynn_Damien } { dynnp_de dynn_Damien } { dynnp_de_la dynn_Damien } { dynnp_du dynn_Damien } { dynnp_van dynn_Damien }
+		{ dynn_Dryburgh }
+		{ dynnp_van_der dynn_Dryburgh } { dynnp_de dynn_Dryburgh } { dynnp_de_la dynn_Dryburgh } { dynnp_du dynn_Dryburgh } { dynnp_van dynn_Dryburgh }
+		{ dynn_Elbert }
+		{ dynnp_van_der dynn_Elbert } { dynnp_de dynn_Elbert } { dynnp_de_la dynn_Elbert } { dynnp_du dynn_Elbert } { dynnp_van dynn_Elbert }
+		{ dynn_Elde }
+		{ dynnp_van_der dynn_Elde } { dynnp_de dynn_Elde } { dynnp_de_la dynn_Elde } { dynnp_du dynn_Elde } { dynnp_van dynn_Elde }
+		{ dynn_Eleanor }
+		{ dynnp_van_der dynn_Eleanor } { dynnp_de dynn_Eleanor } { dynnp_de_la dynn_Eleanor } { dynnp_du dynn_Eleanor } { dynnp_van dynn_Eleanor }
+		{ dynn_Elizabetha }
+		{ dynnp_van_der dynn_Elizabetha } { dynnp_de dynn_Elizabetha } { dynnp_de_la dynn_Elizabetha } { dynnp_du dynn_Elizabetha } { dynnp_van dynn_Elizabetha }
+		{ dynn_Erasmus }
+		{ dynnp_van_der dynn_Erasmus } { dynnp_de dynn_Erasmus } { dynnp_de_la dynn_Erasmus } { dynnp_du dynn_Erasmus } { dynnp_van dynn_Erasmus }
+		{ dynn_Etzebeth }
+		{ dynnp_van_der dynn_Etzebeth } { dynnp_de dynn_Etzebeth } { dynnp_de_la dynn_Etzebeth } { dynnp_du dynn_Etzebeth } { dynnp_van dynn_Etzebeth }
+		{ dynn_Farr }
+		{ dynnp_van_der dynn_Farr } { dynnp_de dynn_Farr } { dynnp_de_la dynn_Farr } { dynnp_du dynn_Farr } { dynnp_van dynn_Farr }
+		{ dynn_Fatima }
+		{ dynnp_van_der dynn_Fatima } { dynnp_de dynn_Fatima } { dynnp_de_la dynn_Fatima } { dynnp_du dynn_Fatima } { dynnp_van dynn_Fatima }
+		{ dynn_Felicia }
+		{ dynnp_van_der dynn_Felicia } { dynnp_de dynn_Felicia } { dynnp_de_la dynn_Felicia } { dynnp_du dynn_Felicia } { dynnp_van dynn_Felicia }
+		{ dynn_Frenck }
+		{ dynnp_van_der dynn_Frenck } { dynnp_de dynn_Frenck } { dynnp_de_la dynn_Frenck } { dynnp_du dynn_Frenck } { dynnp_van dynn_Frenck }
+		{ dynn_Fullerstadt }
+		{ dynnp_van_der dynn_Fullerstadt } { dynnp_de dynn_Fullerstadt } { dynnp_de_la dynn_Fullerstadt } { dynnp_du dynn_Fullerstadt } { dynnp_van dynn_Fullerstadt }
+		{ dynn_Garstadt }
+		{ dynnp_van_der dynn_Garstadt } { dynnp_de dynn_Garstadt } { dynnp_de_la dynn_Garstadt } { dynnp_du dynn_Garstadt } { dynnp_van dynn_Garstadt }
+		{ dynn_Gerbrandij }
+		{ dynnp_van_der dynn_Gerbrandij } { dynnp_de dynn_Gerbrandij } { dynnp_de_la dynn_Gerbrandij } { dynnp_du dynn_Gerbrandij } { dynnp_van dynn_Gerbrandij }
+		{ dynn_Gerhart }
+		{ dynnp_van_der dynn_Gerhart } { dynnp_de dynn_Gerhart } { dynnp_de_la dynn_Gerhart } { dynnp_du dynn_Gerhart } { dynnp_van dynn_Gerhart }
+		{ dynn_Glenpoindt }
+		{ dynnp_van_der dynn_Glenpoindt } { dynnp_de dynn_Glenpoindt } { dynnp_de_la dynn_Glenpoindt } { dynnp_du dynn_Glenpoindt } { dynnp_van dynn_Glenpoindt }
+		{ dynn_Guinevere }
+		{ dynnp_van_der dynn_Guinevere } { dynnp_de dynn_Guinevere } { dynnp_de_la dynn_Guinevere } { dynnp_du dynn_Guinevere } { dynnp_van dynn_Guinevere }
+		{ dynn_Gunter }
+		{ dynnp_van_der dynn_Gunter } { dynnp_de dynn_Gunter } { dynnp_de_la dynn_Gunter } { dynnp_du dynn_Gunter } { dynnp_van dynn_Gunter }
+		{ dynn_Heather }
+		{ dynnp_van_der dynn_Heather } { dynnp_de dynn_Heather } { dynnp_de_la dynn_Heather } { dynnp_du dynn_Heather } { dynnp_van dynn_Heather }
+		{ dynn_Heathmeur }
+		{ dynnp_van_der dynn_Heathmeur } { dynnp_de dynn_Heathmeur } { dynnp_de_la dynn_Heathmeur } { dynnp_du dynn_Heathmeur } { dynnp_van dynn_Heathmeur }
+		{ dynn_Helena }
+		{ dynnp_van_der dynn_Helena } { dynnp_de dynn_Helena } { dynnp_de_la dynn_Helena } { dynnp_du dynn_Helena } { dynnp_van dynn_Helena }
+		{ dynn_Heloise }
+		{ dynnp_van_der dynn_Heloise } { dynnp_de dynn_Heloise } { dynnp_de_la dynn_Heloise } { dynnp_du dynn_Heloise } { dynnp_van dynn_Heloise }
+		{ dynn_Hofmeyer }
+		{ dynnp_van_der dynn_Hofmeyer } { dynnp_de dynn_Hofmeyer } { dynnp_de_la dynn_Hofmeyer } { dynnp_du dynn_Hofmeyer } { dynnp_van dynn_Hofmeyer }
+		{ dynn_Isabella }
+		{ dynnp_van_der dynn_Isabella } { dynnp_de dynn_Isabella } { dynnp_de_la dynn_Isabella } { dynnp_du dynn_Isabella } { dynnp_van dynn_Isabella }
+		{ dynn_Jaacobs }
+		{ dynnp_van_der dynn_Jaacobs } { dynnp_de dynn_Jaacobs } { dynnp_de_la dynn_Jaacobs } { dynnp_du dynn_Jaacobs } { dynnp_van dynn_Jaacobs }
+		{ dynn_Jaarsveldt }
+		{ dynnp_van_der dynn_Jaarsveldt } { dynnp_de dynn_Jaarsveldt } { dynnp_de_la dynn_Jaarsveldt } { dynnp_du dynn_Jaarsveldt } { dynnp_van dynn_Jaarsveldt }
+		{ dynn_Jacindta }
+		{ dynnp_van_der dynn_Jacindta } { dynnp_de dynn_Jacindta } { dynnp_de_la dynn_Jacindta } { dynnp_du dynn_Jacindta } { dynnp_van dynn_Jacindta }
+		{ dynn_Jacindtasveldt }
+		{ dynnp_van_der dynn_Jacindtasveldt } { dynnp_de dynn_Jacindtasveldt } { dynnp_de_la dynn_Jacindtasveldt } { dynnp_du dynn_Jacindtasveldt } { dynnp_van dynn_Jacindtasveldt }
+		{ dynn_Jacomina }
+		{ dynnp_van_der dynn_Jacomina } { dynnp_de dynn_Jacomina } { dynnp_de_la dynn_Jacomina } { dynnp_du dynn_Jacomina } { dynnp_van dynn_Jacomina }
+		{ dynn_Jeannie }
+		{ dynnp_van_der dynn_Jeannie } { dynnp_de dynn_Jeannie } { dynnp_de_la dynn_Jeannie } { dynnp_du dynn_Jeannie } { dynnp_van dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynnp_van_der dynn_Jessica } { dynnp_de dynn_Jessica } { dynnp_de_la dynn_Jessica } { dynnp_du dynn_Jessica } { dynnp_van dynn_Jessica }
+		{ dynn_Jillian }
+		{ dynnp_van_der dynn_Jillian } { dynnp_de dynn_Jillian } { dynnp_de_la dynn_Jillian } { dynnp_du dynn_Jillian } { dynnp_van dynn_Jillian }
+		{ dynn_Johannes }
+		{ dynnp_van_der dynn_Johannes } { dynnp_de dynn_Johannes } { dynnp_de_la dynn_Johannes } { dynnp_du dynn_Johannes } { dynnp_van dynn_Johannes }
+		{ dynn_Joslin }
+		{ dynnp_van_der dynn_Joslin } { dynnp_de dynn_Joslin } { dynnp_de_la dynn_Joslin } { dynnp_du dynn_Joslin } { dynnp_van dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_van_der dynn_Juillen } { dynnp_de dynn_Juillen } { dynnp_de_la dynn_Juillen } { dynnp_du dynn_Juillen } { dynnp_van dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynnp_van_der dynn_Jurard } { dynnp_de dynn_Jurard } { dynnp_de_la dynn_Jurard } { dynnp_du dynn_Jurard } { dynnp_van dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_van_der dynn_Kambria } { dynnp_de dynn_Kambria } { dynnp_de_la dynn_Kambria } { dynnp_du dynn_Kambria } { dynnp_van dynn_Kambria }
+		{ dynn_Katherine }
+		{ dynnp_van_der dynn_Katherine } { dynnp_de dynn_Katherine } { dynnp_de_la dynn_Katherine } { dynnp_du dynn_Katherine } { dynnp_van dynn_Katherine }
+		{ dynn_Klerk }
+		{ dynnp_van_der dynn_Klerk } { dynnp_de dynn_Klerk } { dynnp_de_la dynn_Klerk } { dynnp_du dynn_Klerk } { dynnp_van dynn_Klerk }
+		{ dynn_Kruger }
+		{ dynnp_van_der dynn_Kruger } { dynnp_de dynn_Kruger } { dynnp_de_la dynn_Kruger } { dynnp_du dynn_Kruger } { dynnp_van dynn_Kruger }
+		{ dynn_Laurendt }
+		{ dynnp_van_der dynn_Laurendt } { dynnp_de dynn_Laurendt } { dynnp_de_la dynn_Laurendt } { dynnp_du dynn_Laurendt } { dynnp_van dynn_Laurendt }
+		{ dynn_Lochner }
+		{ dynnp_van_der dynn_Lochner } { dynnp_de dynn_Lochner } { dynnp_de_la dynn_Lochner } { dynnp_du dynn_Lochner } { dynnp_van dynn_Lochner }
+		{ dynn_Logdur }
+		{ dynnp_van_der dynn_Logdur } { dynnp_de dynn_Logdur } { dynnp_de_la dynn_Logdur } { dynnp_du dynn_Logdur } { dynnp_van dynn_Logdur }
+		{ dynn_Lothaire }
+		{ dynnp_van_der dynn_Lothaire } { dynnp_de dynn_Lothaire } { dynnp_de_la dynn_Lothaire } { dynnp_du dynn_Lothaire } { dynnp_van dynn_Lothaire }
+		{ dynn_Lugweglog }
+		{ dynnp_van_der dynn_Lugweglog } { dynnp_de dynn_Lugweglog } { dynnp_de_la dynn_Lugweglog } { dynnp_du dynn_Lugweglog } { dynnp_van dynn_Lugweglog }
+		{ dynn_Malan }
+		{ dynnp_van_der dynn_Malan } { dynnp_de dynn_Malan } { dynnp_de_la dynn_Malan } { dynnp_du dynn_Malan } { dynnp_van dynn_Malan }
+		{ dynn_Marcel }
+		{ dynnp_de_la dynn_Man }
+		{ dynnp_van_der dynn_Marcel } { dynnp_de dynn_Marcel } { dynnp_de_la dynn_Marcel } { dynnp_du dynn_Marcel } { dynnp_van dynn_Marcel }
+		{ dynn_Martin }
+		{ dynnp_van_der dynn_Martin } { dynnp_de dynn_Martin } { dynnp_de_la dynn_Martin } { dynnp_du dynn_Martin } { dynnp_van dynn_Martin }
+		{ dynn_Matthijs }
+		{ dynnp_van_der dynn_Matthijs } { dynnp_de dynn_Matthijs } { dynnp_de_la dynn_Matthijs } { dynnp_du dynn_Matthijs } { dynnp_van dynn_Matthijs }
+		{ dynn_Maurard }
+		{ dynnp_van_der dynn_Maurard } { dynnp_de dynn_Maurard } { dynnp_de_la dynn_Maurard } { dynnp_du dynn_Maurard } { dynnp_van dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_van_der dynn_Maurice } { dynnp_de dynn_Maurice } { dynnp_de_la dynn_Maurice } { dynnp_du dynn_Maurice } { dynnp_van dynn_Maurice }
+		{ dynn_Medericht }
+		{ dynnp_van_der dynn_Medericht } { dynnp_de dynn_Medericht } { dynnp_de_la dynn_Medericht } { dynnp_du dynn_Medericht } { dynnp_van dynn_Medericht }
+		{ dynn_Merard }
+		{ dynnp_van_der dynn_Merard } { dynnp_de dynn_Merard } { dynnp_de_la dynn_Merard } { dynnp_du dynn_Merard } { dynnp_van dynn_Merard }
+		{ dynn_Meyer }
+		{ dynnp_van_der dynn_Meyer } { dynnp_de dynn_Meyer } { dynnp_de_la dynn_Meyer } { dynnp_du dynn_Meyer } { dynnp_van dynn_Meyer }
+		{ dynn_Moerat }
+		{ dynnp_van_der dynn_Moerat } { dynnp_de dynn_Moerat } { dynnp_de_la dynn_Moerat } { dynnp_du dynn_Moerat } { dynnp_van dynn_Moerat }
+		{ dynn_Mora }
+		{ dynnp_van_der dynn_Mora } { dynnp_de dynn_Mora } { dynnp_de_la dynn_Mora } { dynnp_du dynn_Mora } { dynnp_van dynn_Mora }
+		{ dynn_Morkel }
+		{ dynnp_van_der dynn_Morkel } { dynnp_de dynn_Morkel } { dynnp_de_la dynn_Morkel } { dynnp_du dynn_Morkel } { dynnp_van dynn_Morkel }
+		{ dynn_Mornard }
+		{ dynnp_van_der dynn_Mornard } { dynnp_de dynn_Mornard } { dynnp_de_la dynn_Mornard } { dynnp_du dynn_Mornard } { dynnp_van dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_van_der dynn_Morrard } { dynnp_de dynn_Morrard } { dynnp_de_la dynn_Morrard } { dynnp_du dynn_Morrard } { dynnp_van dynn_Morrard }
+		{ dynn_Mostert }
+		{ dynnp_van_der dynn_Mostert } { dynnp_de dynn_Mostert } { dynnp_de_la dynn_Mostert } { dynnp_du dynn_Mostert } { dynnp_van dynn_Mostert }
+		{ dynn_Muller }
+		{ dynnp_van_der dynn_Muller } { dynnp_de dynn_Muller } { dynnp_de_la dynn_Muller } { dynnp_du dynn_Muller } { dynnp_van dynn_Muller }
+		{ dynn_Nadine }
+		{ dynnp_van_der dynn_Nadine } { dynnp_de dynn_Nadine } { dynnp_de_la dynn_Nadine } { dynnp_du dynn_Nadine } { dynnp_van dynn_Nadine }
+		{ dynn_Natalie }
+		{ dynnp_van_der dynn_Natalie } { dynnp_de dynn_Natalie } { dynnp_de_la dynn_Natalie } { dynnp_du dynn_Natalie } { dynnp_van dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynnp_van_der dynn_Nerys } { dynnp_de dynn_Nerys } { dynnp_de_la dynn_Nerys } { dynnp_du dynn_Nerys } { dynnp_van dynn_Nerys }
+		{ dynn_Nestal }
+		{ dynnp_van_der dynn_Nestal } { dynnp_de dynn_Nestal } { dynnp_de_la dynn_Nestal } { dynnp_du dynn_Nestal } { dynnp_van dynn_Nestal }
+		{ dynn_Nicholas }
+		{ dynnp_van_der dynn_Nicholas } { dynnp_de dynn_Nicholas } { dynnp_de_la dynn_Nicholas } { dynnp_du dynn_Nicholas } { dynnp_van dynn_Nicholas }
+		{ dynn_Oberon }
+		{ dynnp_van_der dynn_Oberon } { dynnp_de dynn_Oberon } { dynnp_de_la dynn_Oberon } { dynnp_du dynn_Oberon } { dynnp_van dynn_Oberon }
+		{ dynn_Osler }
+		{ dynnp_van_der dynn_Osler } { dynnp_de dynn_Osler } { dynnp_de_la dynn_Osler } { dynnp_du dynn_Osler } { dynnp_van dynn_Osler }
+		{ dynn_Owen }
+		{ dynnp_van_der dynn_Owen } { dynnp_de dynn_Owen } { dynnp_de_la dynn_Owen } { dynnp_du dynn_Owen } { dynnp_van dynn_Owen }
+		{ dynn_Partagaz }
+		{ dynnp_van_der dynn_Partagaz } { dynnp_de dynn_Partagaz } { dynnp_de_la dynn_Partagaz } { dynnp_du dynn_Partagaz } { dynnp_van dynn_Partagaz }
+		{ dynn_Pascal }
+		{ dynnp_van_der dynn_Pascal } { dynnp_de dynn_Pascal } { dynnp_de_la dynn_Pascal } { dynnp_du dynn_Pascal } { dynnp_van dynn_Pascal }
+		{ dynn_Pasteur }
+		{ dynnp_van_der dynn_Pasteur } { dynnp_de dynn_Pasteur } { dynnp_de_la dynn_Pasteur } { dynnp_du dynn_Pasteur } { dynnp_van dynn_Pasteur }
+		{ dynn_Reviere }
+		{ dynnp_van_der dynn_Reviere } { dynnp_de dynn_Reviere } { dynnp_de_la dynn_Reviere } { dynnp_du dynn_Reviere } { dynnp_van dynn_Reviere }
+		{ dynn_Rey }
+		{ dynnp_van_der dynn_Rey } { dynnp_de dynn_Rey } { dynnp_de_la dynn_Rey } { dynnp_du dynn_Rey } { dynnp_van dynn_Rey }
+		{ dynn_Rhiannon }
+		{ dynnp_van_der dynn_Rhiannon } { dynnp_de dynn_Rhiannon } { dynnp_de_la dynn_Rhiannon } { dynnp_du dynn_Rhiannon } { dynnp_van dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_van_der dynn_Rhun } { dynnp_de dynn_Rhun } { dynnp_de_la dynn_Rhun } { dynnp_du dynn_Rhun } { dynnp_van dynn_Rhun }
+		{ dynn_Richardt }
+		{ dynnp_van_der dynn_Richardt } { dynnp_de dynn_Richardt } { dynnp_de_la dynn_Richardt } { dynnp_du dynn_Richardt } { dynnp_van dynn_Richardt }
+		{ dynn_Robbert }
+		{ dynnp_van_der dynn_Robbert } { dynnp_de dynn_Robbert } { dynnp_de_la dynn_Robbert } { dynnp_du dynn_Robbert } { dynnp_van dynn_Robbert }
+		{ dynn_Rodrick }
+		{ dynnp_van_der dynn_Rodrick } { dynnp_de dynn_Rodrick } { dynnp_de_la dynn_Rodrick } { dynnp_du dynn_Rodrick } { dynnp_van dynn_Rodrick }
+		{ dynn_Rolandt }
+		{ dynnp_van_der dynn_Rolandt } { dynnp_de dynn_Rolandt } { dynnp_de_la dynn_Rolandt } { dynnp_du dynn_Rolandt } { dynnp_van dynn_Rolandt }
+		{ dynn_Rolston }
+		{ dynnp_van_der dynn_Rolston } { dynnp_de dynn_Rolston } { dynnp_de_la dynn_Rolston } { dynnp_du dynn_Rolston } { dynnp_van dynn_Rolston }
+		{ dynn_Sele }
+		{ dynnp_van_der dynn_Sele } { dynnp_de dynn_Sele } { dynnp_de_la dynn_Sele } { dynnp_du dynn_Sele } { dynnp_van dynn_Sele }
+		{ dynn_Ungboer }
+		{ dynnp_van_der dynn_Ungboer } { dynnp_de dynn_Ungboer } { dynnp_de_la dynn_Ungboer } { dynnp_du dynn_Ungboer } { dynnp_van dynn_Ungboer }
+		{ dynn_Vorster }
+		{ dynnp_van_der dynn_Vorster } { dynnp_de dynn_Vorster } { dynnp_de_la dynn_Vorster } { dynnp_du dynn_Vorster } { dynnp_van dynn_Vorster }
+		{ dynn_Vien }
+		{ dynnp_van_der dynn_Vien } { dynnp_de dynn_Vien } { dynnp_de_la dynn_Vien } { dynnp_du dynn_Vien } { dynnp_van dynn_Vien }
+		{ dynn_Helomaine }
+		{ dynnp_van_der dynn_Helomaine } { dynnp_de dynn_Helomaine } { dynnp_de_la dynn_Helomaine } { dynnp_du dynn_Helomaine } { dynnp_van dynn_Helomaine }
+		{ dynn_Merowald }
+		{ dynnp_van_der dynn_Merowald } { dynnp_de dynn_Merowald } { dynnp_de_la dynn_Merowald } { dynnp_du dynn_Merowald } { dynnp_van dynn_Merowald }
+		{ dynn_Klopmann }
+		{ dynnp_van_der dynn_Klopmann } { dynnp_de dynn_Klopmann } { dynnp_de_la dynn_Klopmann } { dynnp_du dynn_Klopmann } { dynnp_van dynn_Klopmann }
+		{ dynn_Edrald }
+		{ dynnp_van_der dynn_Edrald } { dynnp_de dynn_Edrald } { dynnp_de_la dynn_Edrald } { dynnp_du dynn_Edrald } { dynnp_van dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynnp_van_der dynn_Vautrine } { dynnp_de dynn_Vautrine } { dynnp_de_la dynn_Vautrine } { dynnp_du dynn_Vautrine } { dynnp_van dynn_Vautrine }
+		{ dynn_Merten }
+		{ dynnp_van_der dynn_Merten } { dynnp_de dynn_Merten } { dynnp_de_la dynn_Merten } { dynnp_du dynn_Merten } { dynnp_van dynn_Merten }
+		{ dynn_Spenard }
+		{ dynnp_van_der dynn_Spenard } { dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_van dynn_Spenard }
+		{ dynn_Dumonte }
+		{ dynnp_van_der dynn_Dumonte } { dynnp_de dynn_Dumonte } { dynnp_de_la dynn_Dumonte } { dynnp_du dynn_Dumonte } { dynnp_van dynn_Dumonte }
+		{ dynn_Davaux }
+		{ dynnp_van_der dynn_Davaux } { dynnp_de dynn_Davaux } { dynnp_de_la dynn_Davaux } { dynnp_du dynn_Davaux } { dynnp_van dynn_Davaux }
+		{ dynn_Manteau }
+		{ dynnp_van_der dynn_Manteau } { dynnp_de dynn_Manteau } { dynnp_de_la dynn_Manteau } { dynnp_du dynn_Manteau } { dynnp_van dynn_Manteau }
+		{ dynn_Devet }
+		{ dynnp_van_der dynn_Devet } { dynnp_de dynn_Devet } { dynnp_de_la dynn_Devet } { dynnp_du dynn_Devet } { dynnp_van dynn_Devet }
+		{ dynn_Retene }
+		{ dynnp_van_der dynn_Retene } { dynnp_de dynn_Retene } { dynnp_de_la dynn_Retene } { dynnp_du dynn_Retene } { dynnp_van dynn_Retene }
+		{ dynn_Lauzon }
+		{ dynnp_van_der dynn_Lauzon } { dynnp_de dynn_Lauzon } { dynnp_de_la dynn_Lauzon } { dynnp_du dynn_Lauzon } { dynnp_van dynn_Lauzon }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Adrard }
+		{ dynnp_van_der dynn_Adrard } { dynnp_de dynn_Adrard } { dynnp_de_la dynn_Adrard } { dynnp_du dynn_Adrard } { dynnp_van dynn_Adrard }
+		{ dynn_Angeline }
+		{ dynnp_van_der dynn_Angeline } { dynnp_de dynn_Angeline } { dynnp_de_la dynn_Angeline } { dynnp_du dynn_Angeline } { dynnp_van dynn_Angeline }
+		{ dynn_Arianne }
+		{ dynnp_van_der dynn_Arianne } { dynnp_de dynn_Arianne } { dynnp_de_la dynn_Arianne } { dynnp_du dynn_Arianne } { dynnp_van dynn_Arianne }
+		{ dynn_Arnault }
+		{ dynnp_van_der dynn_Arnault } { dynnp_de dynn_Arnault } { dynnp_de_la dynn_Arnault } { dynnp_du dynn_Arnault } { dynnp_van dynn_Arnault }
+		{ dynn_Arne }
+		{ dynnp_van_der dynn_Arne } { dynnp_de dynn_Arne } { dynnp_de_la dynn_Arne } { dynnp_du dynn_Arne } { dynnp_van dynn_Arne }
+		{ dynn_Badwin }
+		{ dynnp_van_der dynn_Badwin } { dynnp_de dynn_Badwin } { dynnp_de_la dynn_Badwin } { dynnp_du dynn_Badwin } { dynnp_van dynn_Badwin }
+		{ dynn_Baldtwin }
+		{ dynnp_van_der dynn_Baldtwin } { dynnp_de dynn_Baldtwin } { dynnp_de_la dynn_Baldtwin } { dynnp_du dynn_Baldtwin } { dynnp_van dynn_Baldtwin }
+		{ dynn_Beatrix }
+		{ dynnp_van_der dynn_Beatrix } { dynnp_de dynn_Beatrix } { dynnp_de_la dynn_Beatrix } { dynnp_du dynn_Beatrix } { dynnp_van dynn_Beatrix }
+		{ dynn_Beauchamp }
+		{ dynnp_van_der dynn_Beauchamp } { dynnp_de dynn_Beauchamp } { dynnp_de_la dynn_Beauchamp } { dynnp_du dynn_Beauchamp } { dynnp_van dynn_Beauchamp }
+		{ dynn_Berengaria }
+		{ dynnp_van_der dynn_Berengaria } { dynnp_de dynn_Berengaria } { dynnp_de_la dynn_Berengaria } { dynnp_du dynn_Berengaria } { dynnp_van dynn_Berengaria }
+		{ dynn_Berenice }
+		{ dynnp_van_der dynn_Berenice } { dynnp_de dynn_Berenice } { dynnp_de_la dynn_Berenice } { dynnp_du dynn_Berenice } { dynnp_van dynn_Berenice }
+		{ dynn_Bertrand }
+		{ dynnp_van_der dynn_Bertrand } { dynnp_de dynn_Bertrand } { dynnp_de_la dynn_Bertrand } { dynnp_du dynn_Bertrand } { dynnp_van dynn_Bertrand }
+		{ dynn_Biltong }
+		{ dynnp_van_der dynn_Biltong } { dynnp_de dynn_Biltong } { dynnp_de_la dynn_Biltong } { dynnp_du dynn_Biltong } { dynnp_van dynn_Biltong }
+		{ dynn_Blanche }
+		{ dynnp_van_der dynn_Blanche } { dynnp_de dynn_Blanche } { dynnp_de_la dynn_Blanche } { dynnp_du dynn_Blanche } { dynnp_van dynn_Blanche }
+		{ dynn_Bloemfontein }
+		{ dynnp_van_der dynn_Bloemfontein } { dynnp_de dynn_Bloemfontein } { dynnp_de_la dynn_Bloemfontein } { dynnp_du dynn_Bloemfontein } { dynnp_van dynn_Bloemfontein }
+		{ dynn_Blokker }
+		{ dynnp_van_der dynn_Blokker } { dynnp_de dynn_Blokker } { dynnp_de_la dynn_Blokker } { dynnp_du dynn_Blokker } { dynnp_van dynn_Blokker }
+		{ dynn_Boer }
+		{ dynnp_van_der dynn_Boer } { dynnp_de dynn_Boer } { dynnp_de_la dynn_Boer } { dynnp_du dynn_Boer } { dynnp_van dynn_Boer }
+		{ dynn_Botha }
+		{ dynnp_van_der dynn_Botha } { dynnp_de dynn_Botha } { dynnp_de_la dynn_Botha } { dynnp_du dynn_Botha } { dynnp_van dynn_Botha }
+		{ dynn_Brinard }
+		{ dynnp_van_der dynn_Brinard } { dynnp_de dynn_Brinard } { dynnp_de_la dynn_Brinard } { dynnp_du dynn_Brinard } { dynnp_van dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynnp_van_der dynn_Bronwyn } { dynnp_de dynn_Bronwyn } { dynnp_de_la dynn_Bronwyn } { dynnp_du dynn_Bronwyn } { dynnp_van dynn_Bronwyn }
+		{ dynn_Burger }
+		{ dynnp_van_der dynn_Burger } { dynnp_de dynn_Burger } { dynnp_de_la dynn_Burger } { dynnp_du dynn_Burger } { dynnp_van dynn_Burger }
+		{ dynn_Cassandra }
+		{ dynnp_van_der dynn_Cassandra } { dynnp_de dynn_Cassandra } { dynnp_de_la dynn_Cassandra } { dynnp_du dynn_Cassandra } { dynnp_van dynn_Cassandra }
+		{ dynn_Cerys }
+		{ dynnp_van_der dynn_Cerys } { dynnp_de dynn_Cerys } { dynnp_de_la dynn_Cerys } { dynnp_du dynn_Cerys } { dynnp_van dynn_Cerys }
+		{ dynn_Chandboer }
+		{ dynnp_van_der dynn_Chandboer } { dynnp_de dynn_Chandboer } { dynnp_de_la dynn_Chandboer } { dynnp_du dynn_Chandboer } { dynnp_van dynn_Chandboer }
+		{ dynn_Charlize }
+		{ dynnp_van_der dynn_Charlize } { dynnp_de dynn_Charlize } { dynnp_de_la dynn_Charlize } { dynnp_du dynn_Charlize } { dynnp_van dynn_Charlize }
+		{ dynn_Cheryl }
+		{ dynnp_van_der dynn_Cheryl } { dynnp_de dynn_Cheryl } { dynnp_de_la dynn_Cheryl } { dynnp_du dynn_Cheryl } { dynnp_van dynn_Cheryl }
+		{ dynn_Claassen }
+		{ dynnp_van_der dynn_Claassen } { dynnp_de dynn_Claassen } { dynnp_de_la dynn_Claassen } { dynnp_du dynn_Claassen } { dynnp_van dynn_Claassen }
+		{ dynn_Coopboer }
+		{ dynnp_van_der dynn_Coopboer } { dynnp_de dynn_Coopboer } { dynnp_de_la dynn_Coopboer } { dynnp_du dynn_Coopboer } { dynnp_van dynn_Coopboer }
+		{ dynn_Cooper }
+		{ dynnp_van_der dynn_Cooper } { dynnp_de dynn_Cooper } { dynnp_de_la dynn_Cooper } { dynnp_du dynn_Cooper } { dynnp_van dynn_Cooper }
+		{ dynn_Crecy }
+		{ dynnp_van_der dynn_Crecy } { dynnp_de dynn_Crecy } { dynnp_de_la dynn_Crecy } { dynnp_du dynn_Crecy } { dynnp_van dynn_Crecy }
+		{ dynn_Daenia }
+		{ dynnp_van_der dynn_Daenia } { dynnp_de dynn_Daenia } { dynnp_de_la dynn_Daenia } { dynnp_du dynn_Daenia } { dynnp_van dynn_Daenia }
+		{ dynn_Damien }
+		{ dynnp_van_der dynn_Damien } { dynnp_de dynn_Damien } { dynnp_de_la dynn_Damien } { dynnp_du dynn_Damien } { dynnp_van dynn_Damien }
+		{ dynn_Dryburgh }
+		{ dynnp_van_der dynn_Dryburgh } { dynnp_de dynn_Dryburgh } { dynnp_de_la dynn_Dryburgh } { dynnp_du dynn_Dryburgh } { dynnp_van dynn_Dryburgh }
+		{ dynn_Elbert }
+		{ dynnp_van_der dynn_Elbert } { dynnp_de dynn_Elbert } { dynnp_de_la dynn_Elbert } { dynnp_du dynn_Elbert } { dynnp_van dynn_Elbert }
+		{ dynn_Elde }
+		{ dynnp_van_der dynn_Elde } { dynnp_de dynn_Elde } { dynnp_de_la dynn_Elde } { dynnp_du dynn_Elde } { dynnp_van dynn_Elde }
+		{ dynn_Eleanor }
+		{ dynnp_van_der dynn_Eleanor } { dynnp_de dynn_Eleanor } { dynnp_de_la dynn_Eleanor } { dynnp_du dynn_Eleanor } { dynnp_van dynn_Eleanor }
+		{ dynn_Elizabetha }
+		{ dynnp_van_der dynn_Elizabetha } { dynnp_de dynn_Elizabetha } { dynnp_de_la dynn_Elizabetha } { dynnp_du dynn_Elizabetha } { dynnp_van dynn_Elizabetha }
+		{ dynn_Erasmus }
+		{ dynnp_van_der dynn_Erasmus } { dynnp_de dynn_Erasmus } { dynnp_de_la dynn_Erasmus } { dynnp_du dynn_Erasmus } { dynnp_van dynn_Erasmus }
+		{ dynn_Etzebeth }
+		{ dynnp_van_der dynn_Etzebeth } { dynnp_de dynn_Etzebeth } { dynnp_de_la dynn_Etzebeth } { dynnp_du dynn_Etzebeth } { dynnp_van dynn_Etzebeth }
+		{ dynn_Farr }
+		{ dynnp_van_der dynn_Farr } { dynnp_de dynn_Farr } { dynnp_de_la dynn_Farr } { dynnp_du dynn_Farr } { dynnp_van dynn_Farr }
+		{ dynn_Fatima }
+		{ dynnp_van_der dynn_Fatima } { dynnp_de dynn_Fatima } { dynnp_de_la dynn_Fatima } { dynnp_du dynn_Fatima } { dynnp_van dynn_Fatima }
+		{ dynn_Felicia }
+		{ dynnp_van_der dynn_Felicia } { dynnp_de dynn_Felicia } { dynnp_de_la dynn_Felicia } { dynnp_du dynn_Felicia } { dynnp_van dynn_Felicia }
+		{ dynn_Frenck }
+		{ dynnp_van_der dynn_Frenck } { dynnp_de dynn_Frenck } { dynnp_de_la dynn_Frenck } { dynnp_du dynn_Frenck } { dynnp_van dynn_Frenck }
+		{ dynn_Fullerstadt }
+		{ dynnp_van_der dynn_Fullerstadt } { dynnp_de dynn_Fullerstadt } { dynnp_de_la dynn_Fullerstadt } { dynnp_du dynn_Fullerstadt } { dynnp_van dynn_Fullerstadt }
+		{ dynn_Garstadt }
+		{ dynnp_van_der dynn_Garstadt } { dynnp_de dynn_Garstadt } { dynnp_de_la dynn_Garstadt } { dynnp_du dynn_Garstadt } { dynnp_van dynn_Garstadt }
+		{ dynn_Gerhart }
+		{ dynnp_van_der dynn_Gerhart } { dynnp_de dynn_Gerhart } { dynnp_de_la dynn_Gerhart } { dynnp_du dynn_Gerhart } { dynnp_van dynn_Gerhart }
+		{ dynn_Glenpoindt }
+		{ dynnp_van_der dynn_Glenpoindt } { dynnp_de dynn_Glenpoindt } { dynnp_de_la dynn_Glenpoindt } { dynnp_du dynn_Glenpoindt } { dynnp_van dynn_Glenpoindt }
+		{ dynn_Guinevere }
+		{ dynnp_van_der dynn_Guinevere } { dynnp_de dynn_Guinevere } { dynnp_de_la dynn_Guinevere } { dynnp_du dynn_Guinevere } { dynnp_van dynn_Guinevere }
+		{ dynn_Gunter }
+		{ dynnp_van_der dynn_Gunter } { dynnp_de dynn_Gunter } { dynnp_de_la dynn_Gunter } { dynnp_du dynn_Gunter } { dynnp_van dynn_Gunter }
+		{ dynn_Heather }
+		{ dynnp_van_der dynn_Heather } { dynnp_de dynn_Heather } { dynnp_de_la dynn_Heather } { dynnp_du dynn_Heather } { dynnp_van dynn_Heather }
+		{ dynn_Heathmeur }
+		{ dynnp_van_der dynn_Heathmeur } { dynnp_de dynn_Heathmeur } { dynnp_de_la dynn_Heathmeur } { dynnp_du dynn_Heathmeur } { dynnp_van dynn_Heathmeur }
+		{ dynn_Helena }
+		{ dynnp_van_der dynn_Helena } { dynnp_de dynn_Helena } { dynnp_de_la dynn_Helena } { dynnp_du dynn_Helena } { dynnp_van dynn_Helena }
+		{ dynn_Heloise }
+		{ dynnp_van_der dynn_Heloise } { dynnp_de dynn_Heloise } { dynnp_de_la dynn_Heloise } { dynnp_du dynn_Heloise } { dynnp_van dynn_Heloise }
+		{ dynn_Hofmeyer }
+		{ dynnp_van_der dynn_Hofmeyer } { dynnp_de dynn_Hofmeyer } { dynnp_de_la dynn_Hofmeyer } { dynnp_du dynn_Hofmeyer } { dynnp_van dynn_Hofmeyer }
+		{ dynn_Isabella }
+		{ dynnp_van_der dynn_Isabella } { dynnp_de dynn_Isabella } { dynnp_de_la dynn_Isabella } { dynnp_du dynn_Isabella } { dynnp_van dynn_Isabella }
+		{ dynn_Jaacobs }
+		{ dynnp_van_der dynn_Jaacobs } { dynnp_de dynn_Jaacobs } { dynnp_de_la dynn_Jaacobs } { dynnp_du dynn_Jaacobs } { dynnp_van dynn_Jaacobs }
+		{ dynn_Jaarsveldt }
+		{ dynnp_van_der dynn_Jaarsveldt } { dynnp_de dynn_Jaarsveldt } { dynnp_de_la dynn_Jaarsveldt } { dynnp_du dynn_Jaarsveldt } { dynnp_van dynn_Jaarsveldt }
+		{ dynn_Jacindta }
+		{ dynnp_van_der dynn_Jacindta } { dynnp_de dynn_Jacindta } { dynnp_de_la dynn_Jacindta } { dynnp_du dynn_Jacindta } { dynnp_van dynn_Jacindta }
+		{ dynn_Jacindtasveldt }
+		{ dynnp_van_der dynn_Jacindtasveldt } { dynnp_de dynn_Jacindtasveldt } { dynnp_de_la dynn_Jacindtasveldt } { dynnp_du dynn_Jacindtasveldt } { dynnp_van dynn_Jacindtasveldt }
+		{ dynn_Jacomina }
+		{ dynnp_van_der dynn_Jacomina } { dynnp_de dynn_Jacomina } { dynnp_de_la dynn_Jacomina } { dynnp_du dynn_Jacomina } { dynnp_van dynn_Jacomina }
+		{ dynn_Jeannie }
+		{ dynnp_van_der dynn_Jeannie } { dynnp_de dynn_Jeannie } { dynnp_de_la dynn_Jeannie } { dynnp_du dynn_Jeannie } { dynnp_van dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynnp_van_der dynn_Jessica } { dynnp_de dynn_Jessica } { dynnp_de_la dynn_Jessica } { dynnp_du dynn_Jessica } { dynnp_van dynn_Jessica }
+		{ dynn_Jillian }
+		{ dynnp_van_der dynn_Jillian } { dynnp_de dynn_Jillian } { dynnp_de_la dynn_Jillian } { dynnp_du dynn_Jillian } { dynnp_van dynn_Jillian }
+		{ dynn_Johannes }
+		{ dynnp_van_der dynn_Johannes } { dynnp_de dynn_Johannes } { dynnp_de_la dynn_Johannes } { dynnp_du dynn_Johannes } { dynnp_van dynn_Johannes }
+		{ dynn_Joslin }
+		{ dynnp_van_der dynn_Joslin } { dynnp_de dynn_Joslin } { dynnp_de_la dynn_Joslin } { dynnp_du dynn_Joslin } { dynnp_van dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_van_der dynn_Juillen } { dynnp_de dynn_Juillen } { dynnp_de_la dynn_Juillen } { dynnp_du dynn_Juillen } { dynnp_van dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynnp_van_der dynn_Jurard } { dynnp_de dynn_Jurard } { dynnp_de_la dynn_Jurard } { dynnp_du dynn_Jurard } { dynnp_van dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_van_der dynn_Kambria } { dynnp_de dynn_Kambria } { dynnp_de_la dynn_Kambria } { dynnp_du dynn_Kambria } { dynnp_van dynn_Kambria }
+		{ dynn_Katherine }
+		{ dynnp_van_der dynn_Katherine } { dynnp_de dynn_Katherine } { dynnp_de_la dynn_Katherine } { dynnp_du dynn_Katherine } { dynnp_van dynn_Katherine }
+		{ dynn_Klerk }
+		{ dynnp_van_der dynn_Klerk } { dynnp_de dynn_Klerk } { dynnp_de_la dynn_Klerk } { dynnp_du dynn_Klerk } { dynnp_van dynn_Klerk }
+		{ dynn_Kruger }
+		{ dynnp_van_der dynn_Kruger } { dynnp_de dynn_Kruger } { dynnp_de_la dynn_Kruger } { dynnp_du dynn_Kruger } { dynnp_van dynn_Kruger }
+		{ dynn_Laurendt }
+		{ dynnp_van_der dynn_Laurendt } { dynnp_de dynn_Laurendt } { dynnp_de_la dynn_Laurendt } { dynnp_du dynn_Laurendt } { dynnp_van dynn_Laurendt }
+		{ dynn_Lochner }
+		{ dynnp_van_der dynn_Lochner } { dynnp_de dynn_Lochner } { dynnp_de_la dynn_Lochner } { dynnp_du dynn_Lochner } { dynnp_van dynn_Lochner }
+		{ dynn_Logdur }
+		{ dynnp_van_der dynn_Logdur } { dynnp_de dynn_Logdur } { dynnp_de_la dynn_Logdur } { dynnp_du dynn_Logdur } { dynnp_van dynn_Logdur }
+		{ dynn_Lothaire }
+		{ dynnp_van_der dynn_Lothaire } { dynnp_de dynn_Lothaire } { dynnp_de_la dynn_Lothaire } { dynnp_du dynn_Lothaire } { dynnp_van dynn_Lothaire }
+		{ dynn_Lugweglog }
+		{ dynnp_van_der dynn_Lugweglog } { dynnp_de dynn_Lugweglog } { dynnp_de_la dynn_Lugweglog } { dynnp_du dynn_Lugweglog } { dynnp_van dynn_Lugweglog }
+		{ dynn_Malan }
+		{ dynnp_van_der dynn_Malan } { dynnp_de dynn_Malan } { dynnp_de_la dynn_Malan } { dynnp_du dynn_Malan } { dynnp_van dynn_Malan }
+		{ dynnp_de_la dynn_Man }
+		{ dynn_Marcel }
+		{ dynnp_van_der dynn_Marcel } { dynnp_de dynn_Marcel } { dynnp_de_la dynn_Marcel } { dynnp_du dynn_Marcel } { dynnp_van dynn_Marcel }
+		{ dynn_Martin }
+		{ dynnp_van_der dynn_Martin } { dynnp_de dynn_Martin } { dynnp_de_la dynn_Martin } { dynnp_du dynn_Martin } { dynnp_van dynn_Martin }
+		{ dynn_Matthijs }
+		{ dynnp_van_der dynn_Matthijs } { dynnp_de dynn_Matthijs } { dynnp_de_la dynn_Matthijs } { dynnp_du dynn_Matthijs } { dynnp_van dynn_Matthijs }
+		{ dynn_Maurard }
+		{ dynnp_van_der dynn_Maurard } { dynnp_de dynn_Maurard } { dynnp_de_la dynn_Maurard } { dynnp_du dynn_Maurard } { dynnp_van dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_van_der dynn_Maurice } { dynnp_de dynn_Maurice } { dynnp_de_la dynn_Maurice } { dynnp_du dynn_Maurice } { dynnp_van dynn_Maurice }
+		{ dynn_Medericht }
+		{ dynnp_van_der dynn_Medericht } { dynnp_de dynn_Medericht } { dynnp_de_la dynn_Medericht } { dynnp_du dynn_Medericht } { dynnp_van dynn_Medericht }
+		{ dynn_Merard }
+		{ dynnp_van_der dynn_Merard } { dynnp_de dynn_Merard } { dynnp_de_la dynn_Merard } { dynnp_du dynn_Merard } { dynnp_van dynn_Merard }
+		{ dynn_Meyer }
+		{ dynnp_van_der dynn_Meyer } { dynnp_de dynn_Meyer } { dynnp_de_la dynn_Meyer } { dynnp_du dynn_Meyer } { dynnp_van dynn_Meyer }
+		{ dynn_Moerat }
+		{ dynnp_van_der dynn_Moerat } { dynnp_de dynn_Moerat } { dynnp_de_la dynn_Moerat } { dynnp_du dynn_Moerat } { dynnp_van dynn_Moerat }
+		{ dynn_Mora }
+		{ dynnp_van_der dynn_Mora } { dynnp_de dynn_Mora } { dynnp_de_la dynn_Mora } { dynnp_du dynn_Mora } { dynnp_van dynn_Mora }
+		{ dynn_Morkel }
+		{ dynnp_van_der dynn_Morkel } { dynnp_de dynn_Morkel } { dynnp_de_la dynn_Morkel } { dynnp_du dynn_Morkel } { dynnp_van dynn_Morkel }
+		{ dynn_Mornard }
+		{ dynnp_van_der dynn_Mornard } { dynnp_de dynn_Mornard } { dynnp_de_la dynn_Mornard } { dynnp_du dynn_Mornard } { dynnp_van dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_van_der dynn_Morrard } { dynnp_de dynn_Morrard } { dynnp_de_la dynn_Morrard } { dynnp_du dynn_Morrard } { dynnp_van dynn_Morrard }
+		{ dynn_Mostert }
+		{ dynnp_van_der dynn_Mostert } { dynnp_de dynn_Mostert } { dynnp_de_la dynn_Mostert } { dynnp_du dynn_Mostert } { dynnp_van dynn_Mostert }
+		{ dynn_Muller }
+		{ dynnp_van_der dynn_Muller } { dynnp_de dynn_Muller } { dynnp_de_la dynn_Muller } { dynnp_du dynn_Muller } { dynnp_van dynn_Muller }
+		{ dynn_Nadine }
+		{ dynnp_van_der dynn_Nadine } { dynnp_de dynn_Nadine } { dynnp_de_la dynn_Nadine } { dynnp_du dynn_Nadine } { dynnp_van dynn_Nadine }
+		{ dynn_Natalie }
+		{ dynnp_van_der dynn_Natalie } { dynnp_de dynn_Natalie } { dynnp_de_la dynn_Natalie } { dynnp_du dynn_Natalie } { dynnp_van dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynnp_van_der dynn_Nerys } { dynnp_de dynn_Nerys } { dynnp_de_la dynn_Nerys } { dynnp_du dynn_Nerys } { dynnp_van dynn_Nerys }
+		{ dynn_Nestal }
+		{ dynnp_van_der dynn_Nestal } { dynnp_de dynn_Nestal } { dynnp_de_la dynn_Nestal } { dynnp_du dynn_Nestal } { dynnp_van dynn_Nestal }
+		{ dynn_Nicholas }
+		{ dynnp_van_der dynn_Nicholas } { dynnp_de dynn_Nicholas } { dynnp_de_la dynn_Nicholas } { dynnp_du dynn_Nicholas } { dynnp_van dynn_Nicholas }
+		{ dynn_Oberon }
+		{ dynnp_van_der dynn_Oberon } { dynnp_de dynn_Oberon } { dynnp_de_la dynn_Oberon } { dynnp_du dynn_Oberon } { dynnp_van dynn_Oberon }
+		{ dynn_Osler }
+		{ dynnp_van_der dynn_Osler } { dynnp_de dynn_Osler } { dynnp_de_la dynn_Osler } { dynnp_du dynn_Osler } { dynnp_van dynn_Osler }
+		{ dynn_Owen }
+		{ dynnp_van_der dynn_Owen } { dynnp_de dynn_Owen } { dynnp_de_la dynn_Owen } { dynnp_du dynn_Owen } { dynnp_van dynn_Owen }
+		{ dynn_Partagaz }
+		{ dynnp_van_der dynn_Partagaz } { dynnp_de dynn_Partagaz } { dynnp_de_la dynn_Partagaz } { dynnp_du dynn_Partagaz } { dynnp_van dynn_Partagaz }
+		{ dynn_Pascal }
+		{ dynnp_van_der dynn_Pascal } { dynnp_de dynn_Pascal } { dynnp_de_la dynn_Pascal } { dynnp_du dynn_Pascal } { dynnp_van dynn_Pascal }
+		{ dynn_Pasteur }
+		{ dynnp_van_der dynn_Pasteur } { dynnp_de dynn_Pasteur } { dynnp_de_la dynn_Pasteur } { dynnp_du dynn_Pasteur } { dynnp_van dynn_Pasteur }
+		{ dynn_Reviere }
+		{ dynnp_van_der dynn_Reviere } { dynnp_de dynn_Reviere } { dynnp_de_la dynn_Reviere } { dynnp_du dynn_Reviere } { dynnp_van dynn_Reviere }
+		{ dynn_Rey }
+		{ dynnp_van_der dynn_Rey } { dynnp_de dynn_Rey } { dynnp_de_la dynn_Rey } { dynnp_du dynn_Rey } { dynnp_van dynn_Rey }
+		{ dynn_Rhiannon }
+		{ dynnp_van_der dynn_Rhiannon } { dynnp_de dynn_Rhiannon } { dynnp_de_la dynn_Rhiannon } { dynnp_du dynn_Rhiannon } { dynnp_van dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_van_der dynn_Rhun } { dynnp_de dynn_Rhun } { dynnp_de_la dynn_Rhun } { dynnp_du dynn_Rhun } { dynnp_van dynn_Rhun }
+		{ dynn_Richardt }
+		{ dynnp_van_der dynn_Richardt } { dynnp_de dynn_Richardt } { dynnp_de_la dynn_Richardt } { dynnp_du dynn_Richardt } { dynnp_van dynn_Richardt }
+		{ dynn_Robbert }
+		{ dynnp_van_der dynn_Robbert } { dynnp_de dynn_Robbert } { dynnp_de_la dynn_Robbert } { dynnp_du dynn_Robbert } { dynnp_van dynn_Robbert }
+		{ dynn_Rodrick }
+		{ dynnp_van_der dynn_Rodrick } { dynnp_de dynn_Rodrick } { dynnp_de_la dynn_Rodrick } { dynnp_du dynn_Rodrick } { dynnp_van dynn_Rodrick }
+		{ dynn_Rolandt }
+		{ dynnp_van_der dynn_Rolandt } { dynnp_de dynn_Rolandt } { dynnp_de_la dynn_Rolandt } { dynnp_du dynn_Rolandt } { dynnp_van dynn_Rolandt }
+		{ dynn_Rolston }
+		{ dynnp_van_der dynn_Rolston } { dynnp_de dynn_Rolston } { dynnp_de_la dynn_Rolston } { dynnp_du dynn_Rolston } { dynnp_van dynn_Rolston }
+		{ dynn_Sele }
+		{ dynnp_van_der dynn_Sele } { dynnp_de dynn_Sele } { dynnp_de_la dynn_Sele } { dynnp_du dynn_Sele } { dynnp_van dynn_Sele }
+		{ dynn_Ungboer }
+		{ dynnp_van_der dynn_Ungboer } { dynnp_de dynn_Ungboer } { dynnp_de_la dynn_Ungboer } { dynnp_du dynn_Ungboer } { dynnp_van dynn_Ungboer }
+		{ dynn_Vorster }
+		{ dynnp_van_der dynn_Vorster } { dynnp_de dynn_Vorster } { dynnp_de_la dynn_Vorster } { dynnp_du dynn_Vorster } { dynnp_van dynn_Vorster }
+		{ dynn_Vien }
+		{ dynnp_van_der dynn_Vien } { dynnp_de dynn_Vien } { dynnp_de_la dynn_Vien } { dynnp_du dynn_Vien } { dynnp_van dynn_Vien }
+		{ dynn_Helomaine }
+		{ dynnp_van_der dynn_Helomaine } { dynnp_de dynn_Helomaine } { dynnp_de_la dynn_Helomaine } { dynnp_du dynn_Helomaine } { dynnp_van dynn_Helomaine }
+		{ dynn_Merowald }
+		{ dynnp_van_der dynn_Merowald } { dynnp_de dynn_Merowald } { dynnp_de_la dynn_Merowald } { dynnp_du dynn_Merowald } { dynnp_van dynn_Merowald }
+		{ dynn_Klopmann }
+		{ dynnp_van_der dynn_Klopmann } { dynnp_de dynn_Klopmann } { dynnp_de_la dynn_Klopmann } { dynnp_du dynn_Klopmann } { dynnp_van dynn_Klopmann }
+		{ dynn_Edrald }
+		{ dynnp_van_der dynn_Edrald } { dynnp_de dynn_Edrald } { dynnp_de_la dynn_Edrald } { dynnp_du dynn_Edrald } { dynnp_van dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynnp_van_der dynn_Vautrine } { dynnp_de dynn_Vautrine } { dynnp_de_la dynn_Vautrine } { dynnp_du dynn_Vautrine } { dynnp_van dynn_Vautrine }
+		{ dynn_Merten }
+		{ dynnp_van_der dynn_Merten } { dynnp_de dynn_Merten } { dynnp_de_la dynn_Merten } { dynnp_du dynn_Merten } { dynnp_van dynn_Merten }
+		{ dynn_Spenard }
+		{ dynnp_van_der dynn_Spenard } { dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_van dynn_Spenard }
+		{ dynn_Dumonte }
+		{ dynnp_van_der dynn_Dumonte } { dynnp_de dynn_Dumonte } { dynnp_de_la dynn_Dumonte } { dynnp_du dynn_Dumonte } { dynnp_van dynn_Dumonte }
+		{ dynn_Davaux }
+		{ dynnp_van_der dynn_Davaux } { dynnp_de dynn_Davaux } { dynnp_de_la dynn_Davaux } { dynnp_du dynn_Davaux } { dynnp_van dynn_Davaux }
+		{ dynn_Manteau }
+		{ dynnp_van_der dynn_Manteau } { dynnp_de dynn_Manteau } { dynnp_de_la dynn_Manteau } { dynnp_du dynn_Manteau } { dynnp_van dynn_Manteau }
+		{ dynn_Devet }
+		{ dynnp_van_der dynn_Devet } { dynnp_de dynn_Devet } { dynnp_de_la dynn_Devet } { dynnp_du dynn_Devet } { dynnp_van dynn_Devet }
+		{ dynn_Retene }
+		{ dynnp_van_der dynn_Retene } { dynnp_de dynn_Retene } { dynnp_de_la dynn_Retene } { dynnp_du dynn_Retene } { dynnp_van dynn_Retene }
+		{ dynn_Lauzon }
+		{ dynnp_van_der dynn_Lauzon } { dynnp_de dynn_Lauzon } { dynnp_de_la dynn_Lauzon } { dynnp_du dynn_Lauzon } { dynnp_van dynn_Lauzon }
+	}
+
+	male_names = {
+		Aaric
+		Adonai
+		Adriaan
+		Aelwyn
+		Afonwen
+		Agridur
+		Aiden
+		Alain
+		Albrecht
+		Aldryd
+		Alex
+		Andries
+		Angus
+		Anton
+		Arnault
+		Arniel
+		Arthog
+		Badwin
+		Baldtwin
+		Balknakh
+		Barnand
+		Barry
+		Berengar
+		Berndt
+		Bertrand
+		Birard
+		Boduan
+		Bolar
+		Brogidur
+		Bryngwran
+		Caerphilly
+		Caradog
+		Chandboer
+		Charles
+		Cody
+		Colin
+		Constandt
+		Cornelius-Willem
+		Damien
+		Daniel-Willem
+		Darius
+		Dawie
+		Delacourt
+		Deon
+		Dewald
+		Diarmaid
+		Dinorwig
+		Dirk
+		Dolgarrog
+		Dominic
+		Dryburgh
+		Dug
+		Dulug
+		Duncan
+		Edgar
+		Edmundt
+		Edward
+		Emmanuel
+		Engelbrecht
+		Erik
+		Ernard
+		Ernst
+		Esmond
+		Etienne
+		Eugene
+		Fenas
+		Fergus
+		Fitzwilliam
+		Florian
+		Francis
+		Frederik-Willem
+		Gabrol
+		Garrug
+		Georges
+		Gerhart
+		Gilbrecht
+		Gisulf
+		Gortwog
+		Gotrid
+		Grakom
+		Gregorie
+		Grodnak
+		Grukig
+		Harmen
+		Harries
+		Heathmeur
+		Heath-Tong
+		Hebrecht
+		Hendrickus
+		Henri
+		Herluin
+		Hjalti
+		Howl
+		Hugh
+		Ian
+		Jacobus
+		James
+		Jean
+		Jean-Tong
+		Jerian
+		Jesper
+		Johannes
+		Joik
+		Joncis
+		Joost
+		Josef
+		Josiah
+		Julian
+		Juvenal
+		Katumbog
+		Kharag
+		Kintugnat
+		Koos
+		Krag
+		Lanard
+		Lanbash
+		Laurence
+		Lindo
+		Lodewikus
+		Logdur
+		Lothaire
+		Lucian
+		Lugrub
+		Lugweglog
+		Luke
+		Madanach
+		Magrikbok
+		Magshonok
+		Marcel
+		Martin
+		Matthijs
+		Maurice
+		Medericht
+		Merard
+		Meurig
+		Michiel
+		Modotog
+		Mogrul
+		Mordred
+		Moshe
+		Mulush
+		Naas
+		Nagorm
+		Natan
+		Nelson
+		Nicholas
+		Nigel
+		Noleon
+		Oberon
+		Octieve
+		Odwan
+		Og
+		Ogron
+		Olv
+		Omluag
+		Orrendt
+		Oskar
+		Owen
+		Pascal
+		Pasteur
+		Patrick
+		Paul
+		Percival
+		Perien
+		Perth
+		Philip
+		Pieter
+		Pieter-Willem
+		Rassie
+		Reges
+		Reinhardt
+		Relien
+		Rhoshirwaun
+		Rhun
+		Richardt
+		Robbert
+		Rodrick
+		Rogier
+		Rolandt
+		Rold
+		Rolston
+		Rudolf
+		Ruran
+		Samuel
+		Saric
+		Schalk
+		Schlomo
+		Seamus
+		Sebastian
+		Serge
+		Simeon
+		Sogromm
+		Staub
+		Stefan
+		Steyn
+		Stoffel
+		Stromm
+		Tamaiharanui
+		Tankredt
+		Theo
+		Thetrard
+		Theuns
+		Thierry
+		Thomas
+		Timm
+		Tristan
+		Tudur
+		Tynan
+		Valendt
+		Vincent
+		Volkk
+		Willem
+		Willem-Tong
+		Marhaus
+	}
+
+	female_names = {
+		Adela
+		Adriana
+		Agathe
+		Albrechta
+		Alida
+		Alison
+		Allaine
+		Amanda
+		Amarie
+		Amelia
+		Angeline
+		Anna
+		Antoinette
+		Arianne
+		Arielle
+		Ashley
+		Astrid
+		Aurora
+		Ayesha
+		Barbara
+		Beatrix
+		Belle
+		Berenda
+		Berengaria
+		Berenice
+		Bernadette
+		Brianna
+		Bronwyn
+		Brooke
+		Byrhandre
+		Caitlin
+		Candice
+		Cassandra
+		Celeste
+		Celia
+		Cerys
+		Chantelle
+		Charlize
+		Cheryl
+		Chloe
+		Claire
+		Dalena
+		Danelle
+		Danielle
+		Deborah
+		Deirdre
+		De-esire-ee
+		Diana
+		Dorcas
+		Dorothea
+		Eileen
+		Eleanor
+		Elizabetha
+		Eloise
+		Emma
+		Eowyn
+		Erin
+		Eva
+		Evelyn
+		Fatima
+		Felicia
+		Fiona
+		Gabriela
+		Gertrude
+		Gisela
+		Grace
+		Griet
+		Guinevere
+		Hadas
+		Hayley
+		Heather
+		Helen
+		Helena
+		Heloise
+		Hendrice
+		Hennie
+		Ingrid
+		Isabella
+		Jacindta
+		Jacomina
+		Janece
+		Janet
+		Jemima
+		Jenna
+		Jennifer
+		Jessica
+		Jillian
+		Johanna
+		Jolene
+		Juliet
+		Juniper
+		Kahu
+		Karel
+		Karla
+		Katherine
+		Kayla
+		Keiller
+		Keira
+		Laelette
+		Lauren
+		Leila
+		Libbie
+		Lien
+		Lindelwa
+		Lisette
+		Luchell
+		Lucie
+		Lydia
+		Mabrelle
+		Magda
+		Magriet
+		Maja
+		Manta
+		Marcelle
+		Mariette
+		Marike
+		Marlize
+		Marta
+		Meghaine
+		Melie
+		Meredith
+		Mervilda
+		Michel
+		Micke
+		Micki
+		Molly
+		Morgana
+		Nadine
+		Natalie
+		Nerys
+		Nettles
+		Nicoline
+		Olivia
+		Orla
+		Otta
+		Otta-Helen
+		Padme
+		Pamela
+		Patience
+		Phoebe
+		Priscilla
+		Rata
+		Rebecca
+		Reza
+		Rhiannon
+		Rhonda
+		Rianne
+		Rochelle
+		Rose-Marie
+		Rozanne
+		Ruth
+		Sabrina
+		Salome
+		Samantha
+		Sarah
+		Sasha
+		Serafina
+		Sizophilia
+		Sonja
+		Sophie
+		Sorina
+		Stefanie
+		Stella
+		Suzaan
+		Synette
+		Tam
+		Taylah
+		Tegan
+		Tessa
+		Tina
+		Titania
+		Urraca
+		Vicky
+		Winnie
+		Yolanda
+		Yvonne
+		Zara
+		Robberta
+	}
+	
+	dynasty_of_location_prefix = "dynnp_van_der"
+			
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+	
+	mercenary_names = {
+			{ name = "mercenary_knights_crypt" coat_of_arms = "mo_knights_crypt" }
+			{ name = "mercenary_order_lance" coat_of_arms = "mo_order_lance" }
+			{ name = "mercenary_order_nyeraad" coat_of_arms = "mo_order_nyeraad" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+    }
+}
+
+name_list_iliac = {
+		
+	dynasty_names = {
+		{ dynn_Admand }
+		{ dynn_Adrard }
+		{ dynn_Angelina }
+		{ dynn_Arianna }
+		{ dynn_Arne }
+		{ dynn_Arnold }
+		{ dynn_Auberon }
+		{ dynn_Baldwin }
+		{ dynn_Ballard }
+		{ dynn_Beatrice }
+		{ dynn_Bell }
+		{ dynn_Benross }
+		{ dynn_Bergama }
+		{ dynn_Bertrand }
+		{ dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynn_Camilla }
+		{ dynn_Carcette }
+		{ dynn_Carter }
+		{ dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynn_Charlotte }
+		{ dynn_Cheryl }
+		{ dynn_Clark }
+		{ dynn_Cosnach }
+		{ dynn_Daenia }
+		{ dynn_Dale }
+		{ dynn_Dalton }
+		{ dynn_Danders }
+		{ dynn_Dilborn }
+		{ dynn_Dorian }
+		{ dynn_Dryston }
+		{ dynn_Easton }
+		{ dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynn_Elizabeth }
+		{ dynn_Elysana }
+		{ dynn_Emily }
+		{ dynn_Endell }
+		{ dynn_Ervine }
+		{ dynn_Fatima }
+		{ dynn_Felecia }
+		{ dynn_Frenck }
+		{ dynn_Frey }
+		{ dynn_Fullerton }
+		{ dynn_Gane }
+		{ dynn_Garvey }
+		{ dynn_Gerald }
+		{ dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynn_Goodwin }
+		{ dynn_Guinevere }
+		{ dynn_Heathmoor }
+		{ dynn_Helen }
+		{ dynn_Helwyn }
+		{ dynn_Holvey }
+		{ dynn_Isabella }
+		{ dynn_Jacinta }
+		{ dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynn_Jill }
+		{ dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynn_Lawrence }
+		{ dynn_Llewelyn }
+		{ dynn_Lloyg }
+		{ dynn_Llugwych }
+		{ dynn_Maddox }
+		{ dynn_Mallory }
+		{ dynn_Mannick }
+		{ dynn_Manton }
+		{ dynn_Marence }
+		{ dynn_Mark }
+		{ dynn_Martin }
+		{ dynn_Maston }
+		{ dynn_Matthew }
+		{ dynn_Mercer }
+		{ dynn_Merton }
+		{ dynn_Meyer }
+		{ dynn_Moile }
+		{ dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynn_Morris }
+		{ dynn_Nadeen }
+		{ dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynn_Nicholas }
+		{ dynn_Owen }
+		{ dynn_Rane }
+		{ dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynn_Rhobert }
+		{ dynn_Rhodri }
+		{ dynn_Rhun }
+		{ dynn_Richard }
+		{ dynn_Riente }
+		{ dynn_Ritton }
+		{ dynn_Roland }
+		{ dynn_Rolston }
+		{ dynn_Rolston }
+		{ dynn_Rooley }
+		{ dynn_Sele }
+		{ dynn_Selton }
+		{ dynn_Sertrand }
+		{ dynn_Stieve }
+		{ dynn_Sutton }
+		{ dynn_Woodborne }
+		{ dynn_Vien }
+		{ dynn_Merowald }
+		{ dynnp_of dynn_Menevia }
+		{ dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynn_Benele }
+		{ dynn_Horley }
+		{ dynn_Spenard }
+		{ dynn_Aethelred }
+		{ dynn_Lauzon }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Admand }
+		{ dynn_Adrard }
+		{ dynn_Angelina }
+		{ dynn_Arianna }
+		{ dynn_Arne }
+		{ dynn_Arnold }
+		{ dynn_Auberon }
+		{ dynn_Baldwin }
+		{ dynn_Ballard }
+		{ dynn_Beatrice }
+		{ dynn_Bell }
+		{ dynn_Benross }
+		{ dynn_Bergama }
+		{ dynn_Bertrand }
+		{ dynn_Brinard }
+		{ dynn_Bronwyn }
+		{ dynn_Camilla }
+		{ dynn_Carcette }
+		{ dynn_Carter }
+		{ dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynn_Charlotte }
+		{ dynn_Cheryl }
+		{ dynn_Clark }
+		{ dynn_Cosnach }
+		{ dynn_Daenia }
+		{ dynn_Dale }
+		{ dynn_Dalton }
+		{ dynn_Danders }
+		{ dynn_Dilborn }
+		{ dynn_Dorian }
+		{ dynn_Dryston }
+		{ dynn_Easton }
+		{ dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynn_Elizabeth }
+		{ dynn_Elysana }
+		{ dynn_Emily }
+		{ dynn_Endell }
+		{ dynn_Ervine }
+		{ dynn_Fatima }
+		{ dynn_Felecia }
+		{ dynn_Frenck }
+		{ dynn_Frey }
+		{ dynn_Gane }
+		{ dynn_Fullerton }
+		{ dynn_Garvey }
+		{ dynn_Gerald }
+		{ dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynn_Goodwin }
+		{ dynn_Guinevere }
+		{ dynn_Heathmoor }
+		{ dynn_Helen }
+		{ dynn_Helwyn }
+		{ dynn_Holvey }
+		{ dynn_Isabella }
+		{ dynn_Jacinta }
+		{ dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynn_Jessica }
+		{ dynn_Jill }
+		{ dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynn_Lawrence }
+		{ dynn_Llewelyn }
+		{ dynn_Lloyg }
+		{ dynn_Llugwych }
+		{ dynn_Maddox }
+		{ dynn_Mallory }
+		{ dynn_Mannick }
+		{ dynn_Manton }
+		{ dynn_Marence }
+		{ dynn_Mark }
+		{ dynn_Martin }
+		{ dynn_Maston }
+		{ dynn_Matthew }
+		{ dynn_Mercer }
+		{ dynn_Merton }
+		{ dynn_Meyer }
+		{ dynn_Moile }
+		{ dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynn_Morris }
+		{ dynn_Nadeen }
+		{ dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynn_Nicholas }
+		{ dynn_Owen }
+		{ dynn_Rane }
+		{ dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynn_Rhobert }
+		{ dynn_Rhodri }
+		{ dynn_Rhun }
+		{ dynn_Richard }
+		{ dynn_Riente }
+		{ dynn_Ritton }
+		{ dynn_Roland }
+		{ dynn_Rolston }
+		{ dynn_Rolston }
+		{ dynn_Rooley }
+		{ dynn_Sele }
+		{ dynn_Selton }
+		{ dynn_Sertrand }
+		{ dynn_Stieve }
+		{ dynn_Sutton }
+		{ dynn_Woodborne }
+		{ dynn_Vien }
+		{ dynn_Merowald }
+		{ dynnp_of dynn_Menevia }
+		{ dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynn_Vautrine }
+		{ dynn_Benele }
+		{ dynn_Horley }
+		{ dynn_Spenard }
+		{ dynn_Aethelred }
+		{ dynn_Lauzon }
+	}
+
+	male_names = {
+		Abdalric
+		Adonis
+		Adrian
+		Afonwen
+		Aiden
+		Alaird
+		Alan
+		Albert
+		Aldred
+		Alex
+		Alvin
+		Andreas
+		Angus
+		Anthony
+		Arniel
+		Arnold
+		Auberon
+		Baldwin
+		Barry
+		Belchimac
+		Belethor
+		Ben
+		Bernard
+		Berry
+		Bertrand
+		Boduan
+		Bruce
+		Bryce
+		Bryngwran
+		Caerphilly
+		Camaron
+		Carl
+		Carrick
+		Cato
+		Cedric
+		Chandler
+		Colin
+		Confidence
+		Connor
+		Constance
+		Cosnach
+		Cynric
+		Cyrus
+		Dale
+		Daniel
+		Darius
+		David
+		Desmond
+		Devin
+		Diarmaid
+		Dilborn
+		Dinorwig
+		Dolgarrog
+		Donald
+		Dorian
+		Douglas
+		Dryston
+		Duncan
+		Eadgar
+		Eadwyre
+		Eamond
+		Edmund
+		Edward
+		Edwastyr
+		Enoch
+		Eric
+		Ernard
+		Ernest
+		Ethan
+		Farleigh
+		Farouc
+		Fergus
+		Finn
+		Fitzwilliam
+		Francis
+		Fred
+		Fulvert
+		Gabriel
+		Gamaliel
+		Gene
+		George
+		Geraint
+		Gerald
+		Gilbert
+		Goodwin
+		Gordon
+		Gothryd
+		Graham
+		Gregory
+		Griffith
+		Harlech
+		Harold
+		Harris
+		Heathcliff
+		Heathmoor
+		Hendrick
+		Henry
+		Herbert
+		Howell
+		Hugh
+		Humphry
+		Ian
+		Ianto
+		Irving
+		Isran
+		Jacob
+		Jasper
+		Jerian
+		John
+		Joile
+		Joncis
+		Jory
+		Joseph
+		Josselyn
+		Joyce
+		Julian
+		Khan
+		Kumran
+		Lanard
+		Lanie
+		Lawrence
+		Lewis
+		Lindon
+		Llewelyn
+		Lloyg
+		Luke
+		Luther
+		Lysandus
+		Lywel
+		Maddox
+		Malcolm
+		Maldred
+		Mark
+		Martin
+		Marvin
+		Matthew
+		Mercer
+		Micheal
+		Mordred
+		Mordyctor
+		Morris
+		Mousa
+		Nathaniel
+		Neil
+		Nelson
+		Nicholas
+		Noleon
+		Octave
+		Oliver
+		Orient
+		Oscar
+		Owen
+		Patel
+		Patrick
+		Paul
+		Percy
+		Perry
+		Peter
+		Phillip
+		Phineas
+		Rahd
+		Reges
+		Reliance
+		Renald
+		Rerles
+		Rhobert
+		Rhodri
+		Rhoshirwaun
+		Rhun
+		Richard
+		Riente
+		Roger
+		Roland
+		Rolston
+		Ruran
+		Ruthven
+		Salman
+		Samuel
+		Shamus
+		Simon
+		Staubin
+		Stephen
+		Sturges
+		Tamaiharanui
+		Tancready
+		Tanner
+		Ted
+		Terry
+		Thomas
+		Timothy
+		Tristan
+		Tudor
+		Tynian
+		Uraccen
+		Valentine
+		Vicenti
+		Walt
+		Waris
+		Weylin
+		William
+		Wilson
+		Yorick
+		Marhaus
+		RE_my
+	}
+	
+	female_names = {
+		Abby
+		Adele
+		Adrianne
+		Aelynn
+		Agatha
+		Akorithi
+		Alana
+		Alberta
+		Alice
+		Alison
+		Amanda
+		Amber
+		Amelia
+		Angelina
+		Anne
+		Arianna
+		Arlie
+		Ashley
+		Aurane
+		Aurnie
+		Aurora
+		Avery
+		Ayisha
+		Barbara
+		Beatrice
+		Bella
+		Bethany
+		Brenda
+		Brianna
+		Brie
+		Bronwyn
+		Camilla
+		Caroline
+		Cassandra
+		Catherine
+		Celeste
+		Celia
+		Ceri
+		Cerys
+		Charlotte
+		Chloe
+		Cienne
+		Cladia
+		Claire
+		Corinne
+		Danielle
+		Darlene
+		Deborah
+		Deidre
+		Delphyne
+		Derelle
+		Desi
+		Diane
+		Donalda
+		Dorothy
+		Edana
+		Edith
+		Edwinna
+		Eileen
+		Elain
+		Elausa
+		Eleanor
+		Elizabeth
+		Elysana
+		Emily
+		Emma
+		Erith
+		Estelle
+		Eve
+		Evelyn
+		Fabine
+		Fasile
+		Fatima
+		Felecia
+		Fiona
+		Frelausa
+		Gabrielle
+		Genevieve
+		Gertrude
+		Giselle
+		Grace
+		Guinevere
+		Hadriana
+		Hayley
+		Helen
+		Helwyn
+		Ildene
+		Isabella
+		Jacinta
+		Jacqueline
+		Jane
+		Janet
+		Jemima
+		Jenna
+		Jennifer
+		Jessica
+		Jill
+		Joslin
+		Julia
+		Jyllia
+		Kahu
+		Kanet
+		Keiller
+		Khadija
+		Leila
+		Lielle
+		Lila
+		Lisa
+		Lucy
+		Lydia
+		Mabrelle
+		Madelyn
+		Mahlene
+		Margo
+		Mariah
+		Marianne
+		Martha
+		Mary
+		Megan
+		Mena
+		Meredith
+		Mia
+		Michelle
+		Milie
+		Mirabelle
+		Molly
+		Morgana
+		Nadeen
+		Natalie
+		Nerys
+		Nicolene
+		Olivia
+		Padma
+		Pauline
+		Penelope
+		Perra
+		Phoebe
+		Raelynne
+		Rebecca
+		Reza
+		Rhiannon
+		Rochelle
+		Rosemary
+		Rosie
+		Roxanne
+		Ruth
+		Sabine
+		Sabrina
+		Samantha
+		Sarah
+		Sela
+		Senna
+		Serafina
+		Shanti
+		Silvia
+		Sirone
+		Sonia
+		Sophie
+		Stephanie
+		Susan
+		Tamatha
+		Taylor
+		Theodesta
+		Therese
+		Titania
+		Urraca
+		Victoria
+		Vivian
+		Yolanda
+		Yvonne
+		Zahra
+		Zubaida
+		Rhoberta
+	}
+	
+	dynasty_of_location_prefix = "dynnp_of"
+		
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+	
+	mercenary_names = {
+			{ name = "mercenary_knights_of_saint_pelin" coat_of_arms = "mo_knights_saint_pelin" }
+			{ name = "mercenary_order_wings" coat_of_arms = "mo_order_wings" }
+			{ name = "mercenary_order_key" coat_of_arms = "mo_order_key" }
+			{ name = "mercenary_company_iliac_bay" coat_of_arms = "mo_company_iliac_bay" }
+			{ name = "mercenary_knights_moontree" coat_of_arms = "mo_knights_moontree" }
+			{ name = "mercenary_company_hat" coat_of_arms = "mo_company_hat" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+    }
+}
+
+name_list_wrothgarian = {
+
+	dynasty_names = {
+		{ dynn_Angeline }
+		{ dynnp_van_der Angeline } { dynnp_de Angeline } { dynnp_de_la Angeline } { dynnp_du Angeline } { dynnp_van Angeline }
+		{ dynn_Arianne }
+		{ dynnp_van_der Arianne } { dynnp_de Arianne } { dynnp_de_la Arianne } { dynnp_du Arianne } { dynnp_van Arianne }
+		{ dynn_Arnault }
+		{ dynnp_van_der Arnault } { dynnp_de Arnault } { dynnp_de_la Arnault } { dynnp_du Arnault } { dynnp_van Arnault }
+		{ dynn_Badwin }
+		{ dynnp_van_der Badwin } { dynnp_de Badwin } { dynnp_de_la Badwin } { dynnp_du Badwin } { dynnp_van Badwin }
+		{ dynn_Baldtwin }
+		{ dynnp_van_der Baldtwin } { dynnp_de Baldtwin } { dynnp_de_la Baldtwin } { dynnp_du Baldtwin } { dynnp_van Baldtwin }
+		{ dynn_Berenice }
+		{ dynnp_van_der Berenice } { dynnp_de Berenice } { dynnp_de_la Berenice } { dynnp_du Berenice } { dynnp_van Berenice }
+		{ dynn_Bertrand }
+		{ dynnp_van_der Bertrand } { dynnp_de Bertrand } { dynnp_de_la Bertrand } { dynnp_du Bertrand } { dynnp_van Bertrand }
+		{ dynn_Bronwyn }
+		{ dynnp_van_der Bronwyn } { dynnp_de Bronwyn } { dynnp_de_la Bronwyn } { dynnp_du Bronwyn } { dynnp_van Bronwyn }
+		{ dynn_Cerys }
+		{ dynnp_van_der Cerys } { dynnp_de Cerys } { dynnp_de_la Cerys } { dynnp_du Cerys } { dynnp_van Cerys }
+		{ dynn_Chandboer }
+		{ dynnp_van_der Chandboer } { dynnp_de Chandboer } { dynnp_de_la Chandboer } { dynnp_du Chandboer } { dynnp_van Chandboer }
+		{ dynn_Charlize }
+		{ dynnp_van_der Charlize } { dynnp_de Charlize } { dynnp_de_la Charlize } { dynnp_du Charlize } { dynnp_van Charlize }
+		{ dynn_Damien }
+		{ dynnp_van_der Damien } { dynnp_de Damien } { dynnp_de_la Damien } { dynnp_du Damien } { dynnp_van Damien }
+		{ dynn_Eleanor }
+		{ dynnp_van_der Eleanor } { dynnp_de Eleanor } { dynnp_de_la Eleanor } { dynnp_du Eleanor } { dynnp_van Eleanor }
+		{ dynn_Elizabetha }
+		{ dynnp_van_der Elizabetha } { dynnp_de Elizabetha } { dynnp_de_la Elizabetha } { dynnp_du Elizabetha } { dynnp_van Elizabetha }
+		{ dynn_Felicia }
+		{ dynnp_van_der Felicia } { dynnp_de Felicia } { dynnp_de_la Felicia } { dynnp_du Felicia } { dynnp_van Felicia }
+		{ dynn_Gerhart }
+		{ dynnp_van_der Gerhart } { dynnp_de Gerhart } { dynnp_de_la Gerhart } { dynnp_du Gerhart } { dynnp_van Gerhart }
+		{ dynn_Guinevere }
+		{ dynnp_van_der Guinevere } { dynnp_de Guinevere } { dynnp_de_la Guinevere } { dynnp_du Guinevere } { dynnp_van Guinevere }
+		{ dynn_Heather }
+		{ dynnp_van_der Heather } { dynnp_de Heather } { dynnp_de_la Heather } { dynnp_du Heather } { dynnp_van Heather }
+		{ dynn_Heathmeur }
+		{ dynnp_van_der Heathmeur } { dynnp_de Heathmeur } { dynnp_de_la Heathmeur } { dynnp_du Heathmeur } { dynnp_van Heathmeur }
+		{ dynn_Helena }
+		{ dynnp_van_der Helena } { dynnp_de Helena } { dynnp_de_la Helena } { dynnp_du Helena } { dynnp_van Helena }
+		{ dynn_Heloise }
+		{ dynnp_van_der Heloise } { dynnp_de Heloise } { dynnp_de_la Heloise } { dynnp_du Heloise } { dynnp_van Heloise }
+		{ dynn_Isabella }
+		{ dynnp_van_der Isabella } { dynnp_de Isabella } { dynnp_de_la Isabella } { dynnp_du Isabella } { dynnp_van Isabella }
+		{ dynn_Jacindta }
+		{ dynnp_van_der Jacindta } { dynnp_de Jacindta } { dynnp_de_la Jacindta } { dynnp_du Jacindta } { dynnp_van Jacindta }
+		{ dynn_Jacomina }
+		{ dynnp_van_der Jacomina } { dynnp_de Jacomina } { dynnp_de_la Jacomina } { dynnp_du Jacomina } { dynnp_van Jacomina }
+		{ dynn_Jessica }
+		{ dynnp_van_der Jessica } { dynnp_de Jessica } { dynnp_de_la Jessica } { dynnp_du Jessica } { dynnp_van Jessica }
+		{ dynn_Jillian }
+		{ dynnp_van_der Jillian } { dynnp_de Jillian } { dynnp_de_la Jillian } { dynnp_du Jillian } { dynnp_van Jillian }
+		{ dynn_Katherine }
+		{ dynnp_van_der Katherine } { dynnp_de Katherine } { dynnp_de_la Katherine } { dynnp_du Katherine } { dynnp_van Katherine }
+		{ dynn_Marcel }
+		{ dynnp_van_der Marcel } { dynnp_de Marcel } { dynnp_de_la Marcel } { dynnp_du Marcel } { dynnp_van Marcel }
+		{ dynn_Martin }
+		{ dynnp_van_der Martin } { dynnp_de Martin } { dynnp_de_la Martin } { dynnp_du Martin } { dynnp_van Martin }
+		{ dynn_Matthijs }
+		{ dynnp_van_der Matthijs } { dynnp_de Matthijs } { dynnp_de_la Matthijs } { dynnp_du Matthijs } { dynnp_van Matthijs }
+		{ dynn_Maurice }
+		{ dynnp_van_der Maurice } { dynnp_de Maurice } { dynnp_de_la Maurice } { dynnp_du Maurice } { dynnp_van Maurice }
+		{ dynn_Merard }
+		{ dynnp_van_der Merard } { dynnp_de Merard } { dynnp_de_la Merard } { dynnp_du Merard } { dynnp_van Merard }
+		{ dynn_Nadine }
+		{ dynnp_van_der Nadine } { dynnp_de Nadine } { dynnp_de_la Nadine } { dynnp_du Nadine } { dynnp_van Nadine }
+		{ dynn_Natalie }
+		{ dynnp_van_der Natalie } { dynnp_de Natalie } { dynnp_de_la Natalie } { dynnp_du Natalie } { dynnp_van Natalie }
+		{ dynn_Nerys }
+		{ dynnp_van_der Nerys } { dynnp_de Nerys } { dynnp_de_la Nerys } { dynnp_du Nerys } { dynnp_van Nerys }
+		{ dynn_Owen }
+		{ dynnp_van_der Owen } { dynnp_de Owen } { dynnp_de_la Owen } { dynnp_du Owen } { dynnp_van Owen }
+		{ dynn_Rhiannon }
+		{ dynnp_van_der Rhiannon } { dynnp_de Rhiannon } { dynnp_de_la Rhiannon } { dynnp_du Rhiannon } { dynnp_van Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_van_der Rhun } { dynnp_de Rhun } { dynnp_de_la Rhun } { dynnp_du Rhun } { dynnp_van Rhun }
+		{ dynn_Robbert }
+		{ dynnp_van_der Robbert } { dynnp_de Robbert } { dynnp_de_la Robbert } { dynnp_du Robbert } { dynnp_van Robbert }
+		{ dynn_Rolston }
+		{ dynnp_van_der Rolston } { dynnp_de Rolston } { dynnp_de_la Rolston } { dynnp_du Rolston } { dynnp_van Rolston }
+		{ dynnp_van_der dynn_Spenard } { dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_van dynn_Spenard }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Angeline }
+		{ dynnp_van_der Angeline } { dynnp_de Angeline } { dynnp_de_la Angeline } { dynnp_du Angeline } { dynnp_van Angeline }
+		{ dynn_Arianne }
+		{ dynnp_van_der Arianne } { dynnp_de Arianne } { dynnp_de_la Arianne } { dynnp_du Arianne } { dynnp_van Arianne }
+		{ dynn_Arnault }
+		{ dynnp_van_der Arnault } { dynnp_de Arnault } { dynnp_de_la Arnault } { dynnp_du Arnault } { dynnp_van Arnault }
+		{ dynn_Badwin }
+		{ dynnp_van_der Badwin } { dynnp_de Badwin } { dynnp_de_la Badwin } { dynnp_du Badwin } { dynnp_van Badwin }
+		{ dynn_Baldtwin }
+		{ dynnp_van_der Baldtwin } { dynnp_de Baldtwin } { dynnp_de_la Baldtwin } { dynnp_du Baldtwin } { dynnp_van Baldtwin }
+		{ dynn_Berenice }
+		{ dynnp_van_der Berenice } { dynnp_de Berenice } { dynnp_de_la Berenice } { dynnp_du Berenice } { dynnp_van Berenice }
+		{ dynn_Bertrand }
+		{ dynnp_van_der Bertrand } { dynnp_de Bertrand } { dynnp_de_la Bertrand } { dynnp_du Bertrand } { dynnp_van Bertrand }
+		{ dynn_Bronwyn }
+		{ dynnp_van_der Bronwyn } { dynnp_de Bronwyn } { dynnp_de_la Bronwyn } { dynnp_du Bronwyn } { dynnp_van Bronwyn }
+		{ dynn_Cerys }
+		{ dynnp_van_der Cerys } { dynnp_de Cerys } { dynnp_de_la Cerys } { dynnp_du Cerys } { dynnp_van Cerys }
+		{ dynn_Chandboer }
+		{ dynnp_van_der Chandboer } { dynnp_de Chandboer } { dynnp_de_la Chandboer } { dynnp_du Chandboer } { dynnp_van Chandboer }
+		{ dynn_Charlize }
+		{ dynnp_van_der Charlize } { dynnp_de Charlize } { dynnp_de_la Charlize } { dynnp_du Charlize } { dynnp_van Charlize }
+		{ dynn_Damien }
+		{ dynnp_van_der Damien } { dynnp_de Damien } { dynnp_de_la Damien } { dynnp_du Damien } { dynnp_van Damien }
+		{ dynn_Eleanor }
+		{ dynnp_van_der Eleanor } { dynnp_de Eleanor } { dynnp_de_la Eleanor } { dynnp_du Eleanor } { dynnp_van Eleanor }
+		{ dynn_Elizabetha }
+		{ dynnp_van_der Elizabetha } { dynnp_de Elizabetha } { dynnp_de_la Elizabetha } { dynnp_du Elizabetha } { dynnp_van Elizabetha }
+		{ dynn_Felicia }
+		{ dynnp_van_der Felicia } { dynnp_de Felicia } { dynnp_de_la Felicia } { dynnp_du Felicia } { dynnp_van Felicia }
+		{ dynn_Gerhart }
+		{ dynnp_van_der Gerhart } { dynnp_de Gerhart } { dynnp_de_la Gerhart } { dynnp_du Gerhart } { dynnp_van Gerhart }
+		{ dynn_Guinevere }
+		{ dynnp_van_der Guinevere } { dynnp_de Guinevere } { dynnp_de_la Guinevere } { dynnp_du Guinevere } { dynnp_van Guinevere }
+		{ dynn_Heather }
+		{ dynnp_van_der Heather } { dynnp_de Heather } { dynnp_de_la Heather } { dynnp_du Heather } { dynnp_van Heather }
+		{ dynn_Heathmeur }
+		{ dynnp_van_der Heathmeur } { dynnp_de Heathmeur } { dynnp_de_la Heathmeur } { dynnp_du Heathmeur } { dynnp_van Heathmeur }
+		{ dynn_Helena }
+		{ dynnp_van_der Helena } { dynnp_de Helena } { dynnp_de_la Helena } { dynnp_du Helena } { dynnp_van Helena }
+		{ dynn_Heloise }
+		{ dynnp_van_der Heloise } { dynnp_de Heloise } { dynnp_de_la Heloise } { dynnp_du Heloise } { dynnp_van Heloise }
+		{ dynn_Isabella }
+		{ dynnp_van_der Isabella } { dynnp_de Isabella } { dynnp_de_la Isabella } { dynnp_du Isabella } { dynnp_van Isabella }
+		{ dynn_Jacindta }
+		{ dynnp_van_der Jacindta } { dynnp_de Jacindta } { dynnp_de_la Jacindta } { dynnp_du Jacindta } { dynnp_van Jacindta }
+		{ dynn_Jacomina }
+		{ dynnp_van_der Jacomina } { dynnp_de Jacomina } { dynnp_de_la Jacomina } { dynnp_du Jacomina } { dynnp_van Jacomina }
+		{ dynn_Jessica }
+		{ dynnp_van_der Jessica } { dynnp_de Jessica } { dynnp_de_la Jessica } { dynnp_du Jessica } { dynnp_van Jessica }
+		{ dynn_Jillian }
+		{ dynnp_van_der Jillian } { dynnp_de Jillian } { dynnp_de_la Jillian } { dynnp_du Jillian } { dynnp_van Jillian }
+		{ dynn_Katherine }
+		{ dynnp_van_der Katherine } { dynnp_de Katherine } { dynnp_de_la Katherine } { dynnp_du Katherine } { dynnp_van Katherine }
+		{ dynn_Marcel }
+		{ dynnp_van_der Marcel } { dynnp_de Marcel } { dynnp_de_la Marcel } { dynnp_du Marcel } { dynnp_van Marcel }
+		{ dynn_Martin }
+		{ dynnp_van_der Martin } { dynnp_de Martin } { dynnp_de_la Martin } { dynnp_du Martin } { dynnp_van Martin }
+		{ dynn_Matthijs }
+		{ dynnp_van_der Matthijs } { dynnp_de Matthijs } { dynnp_de_la Matthijs } { dynnp_du Matthijs } { dynnp_van Matthijs }
+		{ dynn_Maurice }
+		{ dynnp_van_der Maurice } { dynnp_de Maurice } { dynnp_de_la Maurice } { dynnp_du Maurice } { dynnp_van Maurice }
+		{ dynn_Merard }
+		{ dynnp_van_der Merard } { dynnp_de Merard } { dynnp_de_la Merard } { dynnp_du Merard } { dynnp_van Merard }
+		{ dynn_Nadine }
+		{ dynnp_van_der Nadine } { dynnp_de Nadine } { dynnp_de_la Nadine } { dynnp_du Nadine } { dynnp_van Nadine }
+		{ dynn_Natalie }
+		{ dynnp_van_der Natalie } { dynnp_de Natalie } { dynnp_de_la Natalie } { dynnp_du Natalie } { dynnp_van Natalie }
+		{ dynn_Nerys }
+		{ dynnp_van_der Nerys } { dynnp_de Nerys } { dynnp_de_la Nerys } { dynnp_du Nerys } { dynnp_van Nerys }
+		{ dynn_Owen }
+		{ dynnp_van_der Owen } { dynnp_de Owen } { dynnp_de_la Owen } { dynnp_du Owen } { dynnp_van Owen }
+		{ dynn_Rhiannon }
+		{ dynnp_van_der Rhiannon } { dynnp_de Rhiannon } { dynnp_de_la Rhiannon } { dynnp_du Rhiannon } { dynnp_van Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_van_der Rhun } { dynnp_de Rhun } { dynnp_de_la Rhun } { dynnp_du Rhun } { dynnp_van Rhun }
+		{ dynn_Robbert }
+		{ dynnp_van_der Robbert } { dynnp_de Robbert } { dynnp_de_la Robbert } { dynnp_du Robbert } { dynnp_van Robbert }
+		{ dynn_Rolston }
+		{ dynnp_van_der Rolston } { dynnp_de Rolston } { dynnp_de_la Rolston } { dynnp_du Rolston } { dynnp_van Rolston }
+		{ dynnp_van_der dynn_Spenard } { dynnp_de dynn_Spenard } { dynnp_de_la dynn_Spenard } { dynnp_du dynn_Spenard } { dynnp_van dynn_Spenard }
+	}
+
+	male_names = {
+		Aden
+		Adriaan
+		Afonwen
+		Alain
+		Aldryd
+		Alex
+		Andries
+		Angus
+		Anton
+		Arnault
+		Arniel
+		Badwin
+		Baldtwin
+		Bertrand
+		Boduan
+		Bryngwran
+		Caerphilly
+		Chandboer
+		Charles
+		Colin
+		Cornelius-Willem
+		Damien
+		Daniel-Willem
+		Dawie
+		Delacourt
+		Dewald
+		Diarmaid
+		Edmundt
+		Edward
+		Emmanuel
+		Engelbrecht
+		Erik
+		Ernard
+		Ernst
+		Esmond
+		Etienne
+		Eugene
+		Fitzwilliam
+		Francis
+		Frederik-Willem
+		Georges
+		Gerhart
+		Gilbrecht
+		Gregorie
+		Heathmeur
+		Heath-Tong
+		Henri
+		Herluin
+		Howl
+		Hugh
+		Ian
+		Jacobus
+		James
+		Jean
+		Jean-Tong
+		Jerian
+		Johannes
+		Josef
+		Julian
+		Juvenal
+		Laurence
+		Lothaire
+		Lugrub
+		Marcel
+		Martin
+		Matthijs
+		Maurice
+		Merard
+		Michiel
+		Mordred
+		Nelson
+		Nigel
+		Olv
+		Owen
+		Paul
+		Percival
+		Perien
+		Philip
+		Pieter
+		Pieter-Willem
+		Reges
+		Relien
+		Rhoshirwaun
+		Rhun
+		Robbert
+		Rolston
+		Samuel
+		Seamus
+		Simeon
+		Stefan
+		Tamaiharanui
+		Theo
+		Theuns
+		Thierry
+		Thomas
+		Tristan
+		Tynan
+		Valendt
+		Vincent
+		Willem
+		Willem-Tong
+	}
+
+	female_names = {
+		Adela
+		Adriana
+		Alida
+		Alison
+		Allaine
+		Amanda
+		Amelia
+		Angeline
+		Anna
+		Arianne
+		Arielle
+		Barbara
+		Belle
+		Berenice
+		Brianna
+		Bronwyn
+		Candice
+		Celeste
+		Celia
+		Cerys
+		Chantelle
+		Charlize
+		Cheryl
+		Dalena
+		Danelle
+		Danielle
+		Deirdre
+		De-esire-ee
+		Diana
+		Dorothea
+		Eileen
+		Eleanor
+		Elizabetha
+		Eloise
+		Emma
+		Erin
+		Eva
+		Evelyn
+		Felicia
+		Grace
+		Guinevere
+		Hayley
+		Heather
+		Helen
+		Helena
+		Heloise
+		Hendrice
+		Isabella
+		Jacindta
+		Jacomina
+		Janece
+		Janet
+		Jemima
+		Jenna
+		Jennifer
+		Jessica
+		Jillian
+		Johanna
+		Juliet
+		Katherine
+		Laelette
+		Lauren
+		Libbie
+		Lisette
+		Mabrelle
+		Maja
+		Manta
+		Marcelle
+		Marta
+		Melie
+		Meredith
+		Michel
+		Morgana
+		Natalie
+		Nerys
+		Nicoline
+		Olivia
+		Orla
+		Phoebe
+		Rata
+		Rebecca
+		Rhiannon
+		Rhonda
+		Rozanne
+		Ruth
+		Samantha
+		Serafina
+		Sonja
+		Sophie
+		Sorina
+		Stefanie
+		Stella
+		Suzaan
+		Synette
+		Tessa
+		Tina
+		Yolanda
+		Yvonne
+		Robberta
+	}
+	
+	#
+	dynasty_of_location_prefix = "dynnp_van"
+
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 10
+	mat_grf_name_chance = 5
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 5
+	mat_grm_name_chance = 10
+	mother_name_chance = 5
+	
+	mercenary_names = {
+			{ name = "mercenary_order_boar" coat_of_arms = "mo_order_boar" }
+			{ name = "mercenary_iceblades" coat_of_arms = "mo_iceblades" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+			{ name = "mercenary_knights" }
+    }
+}
+
+name_list_bjoule = {
+
+	#Note: bjoule are gauls
+	dynasty_names = {
+		{ dynn_Atagutis }
+		{ dynn_Ategnatos }
+		{ dynn_Axrotalus }
+		{ dynn_Beatrix }
+		{ dynn_Berengaria }
+		{ dynn_Berenix }
+		{ dynn_Boudiaca }
+		{ dynn_Bronwyn }
+		{ dynn_Camula }
+		{ dynn_Canderix }
+		{ dynn_Cartimandua }
+		{ dynn_Cenicus }
+		{ dynn_Cenno }
+		{ dynn_Cerys }
+		{ dynn_Cimarius }
+		{ dynn_Coro }
+		{ dynn_Cosnach }
+		{ dynn_Damos }
+		{ dynn_Dovagni }
+		{ dynn_Epo }
+		{ dynn_Guinevere }
+		{ dynn_Katurix }
+		{ dynn_Kingetorix }
+		{ dynn_Leucona }
+		{ dynn_Lukotorix }
+		{ dynn_Mailagni }
+		{ dynn_Meero }
+		{ dynn_Mogurix }
+		{ dynn_Nerys }
+		{ dynn_Obelix }
+		{ dynn_Olluci }
+		{ dynn_Orgetorix }
+		{ dynn_Partagaz }
+		{ dynn_Rigarix }
+		{ dynn_Samalus }
+		{ dynn_Samorix }
+		{ dynn_Senovicix }
+		{ dynn_Suadurix }
+		{ dynn_Talagni }
+		{ dynn_Vello }
+		{ dynn_Vitusca }
+	}
+	
+	cadet_dynasty_names = {
+		{ dynn_Atagutis }
+		{ dynn_Ategnatos }
+		{ dynn_Axrotalus }
+		{ dynn_Beatrix }
+		{ dynn_Berengaria }
+		{ dynn_Berenix }
+		{ dynn_Boudiaca }
+		{ dynn_Bronwyn }
+		{ dynn_Camula }
+		{ dynn_Canderix }
+		{ dynn_Cartimandua }
+		{ dynn_Cenicus }
+		{ dynn_Cenno }
+		{ dynn_Cerys }
+		{ dynn_Cimarius }
+		{ dynn_Coro }
+		{ dynn_Cosnach }
+		{ dynn_Damos }
+		{ dynn_Dovagni }
+		{ dynn_Epo }
+		{ dynn_Guinevere }
+		{ dynn_Katurix }
+		{ dynn_Kingetorix }
+		{ dynn_Leucona }
+		{ dynn_Lukotorix }
+		{ dynn_Mailagni }
+		{ dynn_Meero }
+		{ dynn_Mogurix }
+		{ dynn_Nerys }
+		{ dynn_Obelix }
+		{ dynn_Olluci }
+		{ dynn_Orgetorix }
+		{ dynn_Partagaz }
+		{ dynn_Rigarix }
+		{ dynn_Samalus }
+		{ dynn_Samorix }
+		{ dynn_Senovicix }
+		{ dynn_Suadurix }
+		{ dynn_Talagni }
+		{ dynn_Vello }
+		{ dynn_Vitusca }
+	}
+
+	male_names = {
+		Acco
+		Adianrix
+		Adietuma
+		Afonwen
+		Alix
+		Andecam
+		Argiotix
+		Ariogorax
+		Arleno
+		Asterix
+		Atebodwos
+		Atewos
+		Attalix
+		Axrotal
+		Bann
+		Bellovix
+		Boduan
+		Brenn
+		Brico
+		Brogimar
+		Bryngwran
+		Caerphilly
+		Camul
+		Canderix
+		Carant
+		Carman
+		Carmo
+		Carrix
+		Caturix
+		Celunno
+		Cerdo
+		Cirges
+		Contessilo
+		Corius
+		Cosnach
+		Crixurax
+		Cudius
+		Dagodubnos
+		Dagodurnos
+		Dagolitus
+		Damos
+		Dannotax
+		Diarmaid
+		Dinorwig
+		Dosso
+		Drutalix
+		Dubnorix
+		Dunnius
+		Fearghas
+		Ferrix
+		Gar
+		Garomar
+		Heert
+		Iantumar
+		Iorwerth
+		Iymbez
+		Jerian
+		Joncis
+		Jurrifax
+		Katumar
+		Kintugen
+		Kintugnat
+		Leno
+		Lonnie
+		Lukotorix
+		Lutumo
+		Maguno
+		Magurix
+		Mano
+		Mindothrax
+		Obelix
+		Oclin
+		Oruittak
+		Perrin
+		Peterix
+		Regolith
+		Rhoshirwaun
+		Sagrona
+		Samo
+		Segoma
+		Tamaiharanuix
+		Tanez
+		Tanir
+		Tasco
+		Theodorix
+		Tirax
+		Tocco
+		Tonfanau
+		Uercassiuellaunos
+		Verkingetorix
+		Wilmon
+		Wirogalos
+	}
+
+	female_names = {
+		Abbula
+		Abrexta
+		Abruna
+		Acaunissa
+		Aculia
+		Adbugissa
+		Adiegias
+		Aia
+		Arcineaux
+		Babineaux
+		Banna
+		Bauila
+		Beatrix
+		Berengaria
+		Berenix
+		Betua
+		Bix
+		Blanda
+		Boudia
+		Boudiaca
+		Boudilatis
+		Bronwyn
+		Camula
+		Cantismerta
+		Carata
+		Cartimandua
+		Catta
+		Cauaria
+		Cerys
+		Cloustria
+		Contuinda
+		Coria
+		Dedra
+		Dorcas
+		Dousonna
+		Elantia
+		Eowyn
+		Evelyn
+		Feonna
+		Guinevere
+		Kahuraci
+		Kunopennos
+		Leida
+		Leuca
+		Lindelwa
+		Litogena
+		Lubitiata
+		Luguselwa
+		Lysaux
+		Maia
+		Manta
+		Margaux
+		Meredith
+		Mon
+		Morgana
+		Myfanwy
+		Nerys
+		Oclauia
+		Peccia
+		Sosia
+		Sucaria
+		Titania
+		Tocca
+		Uesuca
+		Uinda
+		Uindilla
+		Uiscareua
+	}
+		
+	#dynasty_of_location_prefix = "dynnp_of"
+		
+		
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+		
+	mercenary_names = {
+		{ name = "mercenary_knights_field" coat_of_arms = "mo_knights_field" }
+		{ name = "mercenary_wildlords" coat_of_arms = "mo_wildlords" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+	}
+}
+
+name_list_witchman = {
+
+	dynasty_names = {
+		{ dynn_Acques }
+		{ dynn_Adrard }
+		{ dynn_Agerne }
+		{ dynn_Amelion }
+		{ dynn_Ancois }
+		{ dynn_Anelinda }
+		{ dynn_Antrill }
+		{ dynn_Arne }
+		{ dynn_Arthe }
+		{ dynn_Auberon }
+		{ dynn_Auline }
+		{ dynn_Aurelie }
+		{ dynn_Aurilie }
+		{ dynn_Balduin }
+		{ dynn_Beatrix }
+		{ dynn_Berengaria }
+		{ dynn_Bierles }
+		{ dynn_Birian }
+		{ dynn_Boudicca }
+		{ dynn_Bracques }
+		{ dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynn_Brennag }
+		{ dynn_Brigh }
+		{ dynn_Brinard }
+		{ dynn_Broles }
+		{ dynn_Bronwyn }
+		{ dynn_Camellia }
+		{ dynn_Carter }
+		{ dynn_Cartimandua }
+		{ dynn_Cassandra }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynn_Charascel }
+		{ dynn_Charien }
+		{ dynn_Charlisse }
+		{ dynn_Cienne }
+		{ dynn_Clark }
+		{ dynn_Cosnach }
+		{ dynn_Daenia }
+		{ dynn_Dalinde }
+		{ dynn_Dalomax }
+		{ dynn_Dammond }
+		{ dynn_Danneg }
+		{ dynn_Diel }
+		{ dynn_Dorian }
+		{ dynn_Dylan }
+		{ dynn_Earana }
+		{ dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynn_Elenwen }
+		{ dynn_Elysana }
+		{ dynn_Emily }
+		{ dynn_Ence }
+		{ dynn_Endell }
+		{ dynn_Erelie }
+		{ dynn_Felenya }
+		{ dynn_Ferth }
+		{ dynn_Floyg }
+		{ dynn_Fullerton }
+		{ dynn_Gane }
+		{ dynn_Geles }
+		{ dynn_Genis }
+		{ dynn_Geontene }
+		{ dynn_Geralt }
+		{ dynn_Gernis }
+		{ dynn_Geves }
+		{ dynn_Gildern }
+		{ dynn_Glenpoint }
+		{ dynn_Goodwin }
+		{ dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynn_Heathmor }
+		{ dynn_Helena }
+		{ dynn_Helviane  }
+		{ dynn_Herraile }
+		{ dynn_Ildene }
+		{ dynn_Iscende }
+		{ dynn_Jacinta }
+		{ dynn_Jeannie }
+		{ dynn_Jeline }
+		{ dynn_Jenseric }
+		{ dynn_Jessica }
+		{ dynn_Jolvanne }
+		{ dynn_Julalanie }
+		{ dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynn_Lan }
+		{ dynn_Lavalle }
+		{ dynn_Lawrence }
+		{ dynn_Limax }
+		{ dynn_Llewelyn }
+		{ dynn_Louan }
+		{ dynn_Madach }
+		{ dynn_Maddoc }
+		{ dynn_Madrich }
+		{ dynn_Mallaig }
+		{ dynn_Mantel }
+		{ dynn_Marana }
+		{ dynn_Marek }
+		{ dynn_Marence }
+		{ dynn_Martin }
+		{ dynn_Matthias }
+		{ dynn_Maurard }
+		{ dynn_Mercano }
+		{ dynn_Meriadoc }
+		{ dynn_Merian }
+		{ dynn_Moile }
+		{ dynn_Moora }
+		{ dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynn_Morris }
+		{ dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynn_Nicos }
+		{ dynn_Nienne }
+		{ dynn_Niniel }
+		{ dynn_Nytte }
+		{ dynn_Onis }
+		{ dynn_Owain }
+		{ dynn_Pauling }
+		{ dynn_Phiencel }
+		{ dynn_Philulanie }
+		{ dynn_Phirrienele }
+		{ dynn_Radach }
+		{ dynn_Rarnis }
+		{ dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynn_Richard }
+		{ dynn_Riente }
+		{ dynn_Rirne }
+		{ dynn_Riscel }
+		{ dynn_Robert }
+		{ dynn_Rolandor }
+		{ dynn_Rolston }
+		{ dynn_Sele }
+		{ dynn_Soan }
+		{ dynn_Stegine }
+		{ dynn_Stentor }
+		{ dynn_Stieve }
+		{ dynn_Tailas }
+		{ dynn_Torrigne }
+		{ dynn_Viernis }
+		{ dynn_Ysbail }
+		{ dynn_Merowald }
+		{ dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynn_Horley }
+		{ dynn_Spenard }
+		{ dynn_Devet }
+		{ dynn_Retene }
+		{ dynn_Viralaine }
+		{ dynn_Lauzon }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Acques }
+		{ dynn_Adrard }
+		{ dynn_Agerne }
+		{ dynn_Amelion }
+		{ dynn_Ancois }
+		{ dynn_Anelinda }
+		{ dynn_Antrill }
+		{ dynn_Arne }
+		{ dynn_Arthe }
+		{ dynn_Auberon }
+		{ dynn_Auline }
+		{ dynn_Aurelie }
+		{ dynn_Aurilie }
+		{ dynn_Balduin }
+		{ dynn_Beatrix }
+		{ dynn_Berengaria }
+		{ dynn_Bierles }
+		{ dynn_Birian }
+		{ dynn_Boudicca }
+		{ dynn_Bracques }
+		{ dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynn_Brennag }
+		{ dynn_Brigh }
+		{ dynn_Brinard }
+		{ dynn_Broles }
+		{ dynn_Bronwyn }
+		{ dynn_Camellia }
+		{ dynn_Carter }
+		{ dynn_Cartimandua }
+		{ dynn_Cassandra }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynn_Charascel }
+		{ dynn_Charien }
+		{ dynn_Charlisse }
+		{ dynn_Cienne }
+		{ dynn_Clark }
+		{ dynn_Cosnach }
+		{ dynn_Daenia }
+		{ dynn_Dalinde }
+		{ dynn_Dalomax }
+		{ dynn_Dammond }
+		{ dynn_Danneg }
+		{ dynn_Diel }
+		{ dynn_Dorian }
+		{ dynn_Dylan }
+		{ dynn_Earana }
+		{ dynn_Egred }
+		{ dynn_Eleanor }
+		{ dynn_Elenwen }
+		{ dynn_Elysana }
+		{ dynn_Emily }
+		{ dynn_Ence }
+		{ dynn_Endell }
+		{ dynn_Erelie }
+		{ dynn_Felenya }
+		{ dynn_Ferth }
+		{ dynn_Floyg }
+		{ dynn_Fullerton }
+		{ dynn_Gane }
+		{ dynn_Geles }
+		{ dynn_Genis }
+		{ dynn_Geontene }
+		{ dynn_Geralt }
+		{ dynn_Gernis }
+		{ dynn_Geves }
+		{ dynn_Gildern }
+		{ dynn_Glenpoint }
+		{ dynn_Goodwin }
+		{ dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynn_Heathmor }
+		{ dynn_Helena }
+		{ dynn_Helviane  }
+		{ dynn_Herraile }
+		{ dynn_Ildene }
+		{ dynn_Iscende }
+		{ dynn_Jacinta }
+		{ dynn_Jeannie }
+		{ dynn_Jeline }
+		{ dynn_Jenseric }
+		{ dynn_Jessica }
+		{ dynn_Jolvanne }
+		{ dynn_Julalanie }
+		{ dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynn_Lan }
+		{ dynn_Lavalle }
+		{ dynn_Lawrence }
+		{ dynn_Limax }
+		{ dynn_Llewelyn }
+		{ dynn_Louan }
+		{ dynn_Madach }
+		{ dynn_Maddoc }
+		{ dynn_Madrich }
+		{ dynn_Mallaig }
+		{ dynn_Mantel }
+		{ dynn_Marana }
+		{ dynn_Marek }
+		{ dynn_Marence }
+		{ dynn_Martin }
+		{ dynn_Matthias }
+		{ dynn_Maurard }
+		{ dynn_Mercano }
+		{ dynn_Meriadoc }
+		{ dynn_Merian }
+		{ dynn_Moile }
+		{ dynn_Moora }
+		{ dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynn_Morris }
+		{ dynn_Natalie }
+		{ dynn_Nerys }
+		{ dynn_Nicos }
+		{ dynn_Nienne }
+		{ dynn_Niniel }
+		{ dynn_Nytte }
+		{ dynn_Onis }
+		{ dynn_Owain }
+		{ dynn_Pauling }
+		{ dynn_Phiencel }
+		{ dynn_Philulanie }
+		{ dynn_Phirrienele }
+		{ dynn_Radach }
+		{ dynn_Rarnis }
+		{ dynn_Reviere }
+		{ dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynn_Richard }
+		{ dynn_Riente }
+		{ dynn_Rirne }
+		{ dynn_Riscel }
+		{ dynn_Robert }
+		{ dynn_Rolandor }
+		{ dynn_Rolston }
+		{ dynn_Sele }
+		{ dynn_Soan }
+		{ dynn_Stegine }
+		{ dynn_Stentor }
+		{ dynn_Stieve }
+		{ dynn_Tailas }
+		{ dynn_Torrigne }
+		{ dynn_Viernis }
+		{ dynn_Ysbail }
+		{ dynn_Merowald }
+		{ dynn_Aurmine }
+		{ dynn_Edrald }
+		{ dynn_Horley }
+		{ dynn_Spenard }
+		{ dynn_Devet }
+		{ dynn_Retene }
+		{ dynn_Viralaine }
+		{ dynn_Lauzon }
+	}
+
+	male_names = {
+		Aaric
+		Acca-as
+		Addis
+		Adeber
+		Adian
+		Aelwyn
+		Afonwen
+		Aidwen
+		Alaird
+		Alastair
+		Aldrydd
+		Allan
+		Andion
+		Andur
+		Aneurin
+		Angus
+		Arberalmo
+		Ardun
+		Arlen
+		Aronil
+		Arthog
+		Astwyn
+		Atewys
+		Auberon
+		Baldwyn
+		Bannys
+		Barra
+		Belethor
+		Bernard
+		Berys
+		Bogdan
+		Bolar
+		Braig
+		Bryngwran
+		Caerphilly
+		Cain
+		Camarelur
+		Caradog
+		Carmen
+		Cato
+		Celarion
+		Cerdys
+		Chandler
+		Ciel
+		Cirges
+		Colin
+		Constaintin
+		Cornar
+		Corys
+		Cosnach
+		Craig
+		Cyrus
+		Dagodurnos
+		Daric
+		Darius
+		Delwyn
+		Diarmaid
+		Dinorwig
+		Dirk
+		Dolgarrog
+		Dorian
+		Douglas
+		Drurys
+		Dulug
+		Duncan
+		Dunys
+		Dylan
+		Eardir
+		Edmund
+		Edwastyr
+		Eltrys
+		Erdilorn
+		Eric
+		Ernard
+		Ernest
+		Esmond
+		Ethan
+		Ezra
+		Fearghus
+		Fena-as
+		Ferarilie
+		Fitzwilliam
+		Floyg
+		Franca-as
+		Fulvert
+		Gabriel
+		Garomar
+		Garrick
+		Geor
+		George
+		Geralt
+		Gilba-as
+		Goodwyn
+		Gordon
+		Griogair
+		Harris
+		Heathcliff
+		Heathmor
+		Hendaril
+		Heratir
+		Huw
+		Iantu
+		Iohen
+		Iorwerth
+		Jacob
+		Jerwyn
+		Jim
+		Jocwyn
+		Joile
+		Joncis
+		Joseph
+		Julian
+		Katumys
+		Kharag
+		Kingtunys
+		Kintugen
+		Lanard
+		Lenoc
+		Lindel
+		Llewelyn
+		Lucas
+		Lucek
+		Lugrub
+		Luthen
+		Lysander
+		Madana-as
+		Maddoc
+		Maguno
+		Magurix
+		Maldred
+		Malkar
+		Manis
+		Marek
+		Matthia-as
+		Meical
+		Mercano
+		Meriadoc
+		Meurig
+		Mirtonir
+		Mogrul
+		Mordred
+		Mordyctor
+		Morra-as
+		Morwyn
+		Mossanon
+		Mulush
+		Nathanael
+		Neil
+		Nelissil
+		Nicola-as
+		Noleon
+		Odvan
+		Oliver
+		Omluag
+		Orrent
+		Owain
+		Patrick
+		Paur
+		Pearcy
+		Peren
+		Phane
+		Philip
+		Rahd
+		Raven
+		Rega-as
+		Relien
+		Rerla-as
+		Reynard
+		Rhobert
+		Rhodri
+		Rhoshirwaun
+		Rhun
+		Riente
+		Ristard
+		Rogrug
+		Rolandor
+		Rolston
+		Ronar
+		Rurwyn
+		Sagrona-as
+		Samuel
+		Saric
+		Seamus
+		Sinyon
+		Solomon
+		Staubin
+		Steffan
+		Sycorax
+		Tamaiharana-as
+		Taniril
+		Terry
+		Timiwe
+		Tira-as
+		Toma-as
+		Tonfanau
+		Tristan
+		Tudwir
+		Tuthul
+		Tynan
+		Uraccen
+		Vailentine
+		Valtir
+		Verrys
+		Vincano
+		Warwick
+		Weylin
+		William
+		Wirogala-as
+		Yorick
+	}
+
+	female_names = {
+		Abby
+		Adelyne
+		Adrianne
+		Aethrare
+		Ainamee
+		Alberta
+		Alix
+		Allana
+		Althene
+		Amber
+		Amirmil
+		Anafire
+		Andarie
+		Anelinda
+		Annaig
+		Ansvyn
+		Arbene
+		Aryarie
+		Asciene
+		Aurane
+		Aurnie
+		Aurora
+		Ava
+		Avery
+		Baniel
+		Barbara
+		Beatrix
+		Bedene
+		Beira
+		Belene
+		Berengaria
+		Beth
+		Boudicca
+		Bresiele
+		Brianna
+		Bronwyn
+		Camellia
+		Caniel
+		Caralie
+		Carol
+		Cartimandua
+		Cassandra
+		Catherine
+		Cerise
+		Cerys
+		Charlisse
+		Chloe
+		Cienne
+		Cladia
+		Claire
+		Corinne
+		Danielle
+		Daralda
+		Darene
+		Deborah
+		Dedra
+		Desi
+		Diana
+		Dorcas
+		Drisene
+		Dumaise
+		Earana
+		Edana
+		Edre
+		Edwinna
+		Edythe
+		Eileen
+		Elain
+		Eleanor
+		Elenwen
+		Elgeryl
+		Ella
+		Elysana
+		Emily
+		Emma
+		Eola
+		Eoline
+		Eowyn
+		Erith
+		Evelyn
+		Fabrille
+		Falette
+		Fasile
+		Felenya
+		Finenya
+		Fionn
+		Frelene
+		Genevieve
+		Guinevere
+		Gulitte
+		Gwen
+		Hayley
+		Helena
+		Helviane
+		Heniele
+		Ildene
+		Jacinta
+		Jaene
+		Janet
+		Jeberilie
+		Jenna
+		Jennifer
+		Jessica
+		Joslin
+		Juliana
+		Kaera
+		Kahurangi
+		Kaori
+		Leles
+		Libbie
+		Lirielle
+		Lisa
+		Loriel
+		Lucy
+		Mabrelle
+		Madelaine
+		Madena
+		Maia
+		Maline
+		Mandalime
+		Marceline
+		Margot
+		Marian
+		Mariwen
+		Martha
+		Masalinie
+		Maurrie
+		Meghan
+		Melra
+		Mena
+		Mendarie
+		Meredith
+		Milie
+		Mirabelle
+		Mitanne
+		Molly
+		Morgana
+		Morigh
+		Muriel
+		Myfanwy
+		Natalie
+		Nerys
+		Olivia
+		Orla
+		Otha
+		Patience
+		Penelope
+		Perwe
+		Phoebe
+		Rebecca
+		Relie
+		Rhiannon
+		Rianciene
+		Rochelle
+		Ronerelie
+		Rose
+		Rosemary
+		Roxana
+		Ruth
+		Sabrina
+		Samantha
+		Sarai
+		Senna
+		Shanti
+		Sinead
+		Sireril
+		Sofia
+		Sonia
+		Sorcha
+		Stephine
+		Suriel
+		Talisse
+		Tamatha
+		Tayla
+		Tina
+		Titania
+		Tressa
+		Uaile
+		Udhena
+		Urgala
+		Urraca
+		Vicky
+		Virene
+		Vivien
+		Ysbail
+		Zara
+		Zoe
+		Rhoberta
+		Ayrenn
+	}
+
+	#dynasty_of_location_prefix = "dynnp_of"
+
+
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+
+	mercenary_names = {
+		{ name = "mercenary_order_albatross" coat_of_arms = "mo_order_albatross" }
+		{ name = "mercenary_order_iron_knot" coat_of_arms = "mo_order_iron_knot" }
+		{ name = "mercenary_oaken_order" coat_of_arms = "mo_oaken_order" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+		{ name = "mercenary_knights" }
+	}
+}
+
+#Note: all surnames available to other Breton cultures
+name_list_galen = {
+
+	dynasty_names = {
+		{ dynn_Abair }
+		{ dynnp_druid_of dynn_Abair }
+		{ dynn_Abhsalain }
+		{ dynnp_druid_of dynn_Abhsalain }
+		{ dynn_Acques }
+		{ dynnp_druid_of dynn_Acques }
+		{ dynn_Admand }
+		{ dynnp_druid_of dynn_Admand }
+		{ dynn_Adrard }
+		{ dynnp_druid_of dynn_Adrard }
+		{ dynn_Aech }
+		{ dynnp_druid_of dynn_Aech }
+		{ dynn_Agerne }
+		{ dynnp_druid_of dynn_Agerne }
+		{ dynn_Amelion }
+		{ dynnp_druid_of dynn_Amelion }
+		{ dynn_Ancois }
+		{ dynnp_druid_of dynn_Ancois }
+		{ dynn_Angad }
+		{ dynnp_druid_of dynn_Angad }
+		{ dynn_Angeline }
+		{ dynnp_druid_of dynn_Angeline }
+		{ dynn_Antrill }
+		{ dynnp_druid_of dynn_Antrill }
+		{ dynn_Aogh }
+		{ dynnp_druid_of dynn_Aogh }
+		{ dynn_Arana }
+		{ dynnp_druid_of dynn_Arana }
+		{ dynn_Araun }
+		{ dynnp_druid_of dynn_Araun }
+		{ dynn_Arnand  }
+		{ dynnp_druid_of dynn_Arnand  }
+		{ dynn_Arne }
+		{ dynnp_druid_of dynn_Arne }
+		{ dynn_Arthe }
+		{ dynnp_druid_of dynn_Arthe }
+		{ dynn_Atagutis }
+		{ dynnp_druid_of dynn_Atagutis }
+		{ dynn_Ategnatos }
+		{ dynnp_druid_of dynn_Ategnatos }
+		{ dynn_Auline }
+		{ dynnp_druid_of dynn_Auline }
+		{ dynn_Aurelie }
+		{ dynnp_druid_of dynn_Aurelie }
+		{ dynn_Aurilie }
+		{ dynnp_druid_of dynn_Aurilie }
+		{ dynn_Aurimonde }
+		{ dynnp_druid_of dynn_Aurimonde }
+		{ dynn_Axrotalus }
+		{ dynnp_druid_of dynn_Axrotalus }
+		{ dynn_Baelborne }
+		{ dynnp_druid_of dynn_Baelborne }
+		{ dynn_Baldwin }
+		{ dynnp_druid_of dynn_Baldwin }
+		{ dynn_Ballard }
+		{ dynnp_druid_of dynn_Ballard }
+		{ dynn_Beatrice }
+		{ dynnp_druid_of dynn_Beatrice }
+		{ dynn_Beauchamp }
+		{ dynnp_druid_of dynn_Beauchamp }
+		{ dynn_Beluelle }
+		{ dynnp_druid_of dynn_Beluelle }
+		{ dynn_Benross }
+		{ dynnp_druid_of dynn_Benross }
+		{ dynn_Bercourt }
+		{ dynnp_druid_of dynn_Bercourt }
+		{ dynn_Berengaria }
+		{ dynnp_druid_of dynn_Berengaria }
+		{ dynn_Berenice }
+		{ dynnp_druid_of dynn_Berenice }
+		{ dynn_Bergama }
+		{ dynnp_druid_of dynn_Bergama }
+		{ dynn_Bertault }
+		{ dynnp_druid_of dynn_Bertault }
+		{ dynn_Bertrand }
+		{ dynnp_druid_of dynn_Bertrand }
+		{ dynn_Bhugsand }
+		{ dynnp_druid_of dynn_Bhugsand }
+		{ dynn_Bielle }
+		{ dynnp_druid_of dynn_Bielle }
+		{ dynn_Bienne }
+		{ dynnp_druid_of dynn_Bienne }
+		{ dynn_Bierles }
+		{ dynnp_druid_of dynn_Bierles }
+		{ dynn_Biltong }
+		{ dynnp_druid_of dynn_Biltong }
+		{ dynn_Birian }
+		{ dynnp_druid_of dynn_Birian }
+		{ dynn_Blanche }
+		{ dynnp_druid_of dynn_Blanche }
+		{ dynn_Bloemfontein }
+		{ dynnp_druid_of dynn_Bloemfontein }
+		{ dynn_Blokker }
+		{ dynnp_druid_of dynn_Blokker }
+		{ dynn_Boer }
+		{ dynnp_druid_of dynn_Boer }
+		{ dynn_Botha }
+		{ dynnp_druid_of dynn_Botha }
+		{ dynn_Boudiaca }
+		{ dynnp_druid_of dynn_Boudiaca }
+		{ dynn_Bracques }
+		{ dynnp_druid_of dynn_Bracques }
+		{ dynn_Branna }
+		{ dynnp_druid_of dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynnp_druid_of dynn_Brannoc }
+		{ dynn_Brenatar }
+		{ dynnp_druid_of dynn_Brenatar }
+		{ dynn_Brennag }
+		{ dynnp_druid_of dynn_Brennag }
+		{ dynn_Brenuach }
+		{ dynnp_druid_of dynn_Brenuach }
+		{ dynn_Brigh }
+		{ dynnp_druid_of dynn_Brigh }
+		{ dynn_Brighegan }
+		{ dynnp_druid_of dynn_Brighegan }
+		{ dynn_Brikarth }
+		{ dynnp_druid_of dynn_Brikarth }
+		{ dynn_Brinard }
+		{ dynnp_druid_of dynn_Brinard }
+		{ dynn_Broch }
+		{ dynnp_druid_of dynn_Broch }
+		{ dynn_Broles }
+		{ dynnp_druid_of dynn_Broles }
+		{ dynn_Bronwyn }
+		{ dynnp_druid_of dynn_Bronwyn }
+		{ dynn_Burger }
+		{ dynnp_druid_of dynn_Burger }
+		{ dynn_Cailenadach }
+		{ dynnp_druid_of dynn_Cailenadach }
+		{ dynn_Camula }
+		{ dynnp_druid_of dynn_Camula }
+		{ dynn_Carcette }
+		{ dynnp_druid_of dynn_Carcette }
+		{ dynn_Cartimandua }
+		{ dynnp_druid_of dynn_Cartimandua }
+		{ dynn_Casenne }
+		{ dynnp_druid_of dynn_Casenne }
+		{ dynn_Cassandra }
+		{ dynnp_druid_of dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynnp_druid_of dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynnp_druid_of dynn_Catherine }
+		{ dynn_Cenicus }
+		{ dynnp_druid_of dynn_Cenicus }
+		{ dynn_Cenno }
+		{ dynnp_druid_of dynn_Cenno }
+		{ dynn_Cerys }
+		{ dynnp_druid_of dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynnp_druid_of dynn_Chandler }
+		{ dynn_Charascel }
+		{ dynnp_druid_of dynn_Charascel }
+		{ dynn_Charien }
+		{ dynnp_druid_of dynn_Charien }
+		{ dynn_Charlize }
+		{ dynnp_druid_of dynn_Charlize }
+		{ dynn_Cheryl }
+		{ dynnp_druid_of dynn_Cheryl }
+		{ dynn_Cienne }
+		{ dynnp_druid_of dynn_Cienne }
+		{ dynn_Cimarius }
+		{ dynnp_druid_of dynn_Cimarius }
+		{ dynn_Cionaoith }
+		{ dynnp_druid_of dynn_Cionaoith }
+		{ dynn_Claassen }
+		{ dynnp_druid_of dynn_Claassen }
+		{ dynn_Coro }
+		{ dynnp_druid_of dynn_Coro }
+		{ dynn_Cosnach }
+		{ dynnp_druid_of dynn_Cosnach }
+		{ dynn_Cradach }
+		{ dynnp_druid_of dynn_Cradach }
+		{ dynn_Crecy }
+		{ dynnp_druid_of dynn_Crecy }
+		{ dynn_Croix }
+		{ dynnp_druid_of dynn_Croix }
+		{ dynn_Daenia }
+		{ dynnp_druid_of dynn_Daenia }
+		{ dynn_Dalan }
+		{ dynnp_druid_of dynn_Dalan }
+		{ dynn_Dalinde }
+		{ dynnp_druid_of dynn_Dalinde }
+		{ dynn_Dalomax }
+		{ dynnp_druid_of dynn_Dalomax }
+		{ dynn_Dalton }
+		{ dynnp_druid_of dynn_Dalton }
+		{ dynn_Damian }
+		{ dynnp_druid_of dynn_Damian }
+		{ dynn_Dammond }
+		{ dynnp_druid_of dynn_Dammond }
+		{ dynn_Danders }
+		{ dynnp_druid_of dynn_Danders }
+		{ dynn_Danhart }
+		{ dynnp_druid_of dynn_Danhart }
+		{ dynn_Danneg }
+		{ dynnp_druid_of dynn_Danneg }
+		{ dynn_Delacourt }
+		{ dynnp_druid_of dynn_Delacourt }
+		{ dynn_Desele }
+		{ dynnp_druid_of dynn_Desele }
+		{ dynn_Diel }
+		{ dynnp_druid_of dynn_Diel }
+		{ dynn_Diel }
+		{ dynnp_druid_of dynn_Diel }
+		{ dynn_Dilborn }
+		{ dynnp_druid_of dynn_Dilborn }
+		{ dynn_Dochartaigh }
+		{ dynnp_druid_of dynn_Dochartaigh }
+		{ dynn_Dolbanitte }
+		{ dynnp_druid_of dynn_Dolbanitte }
+		{ dynn_Dorian }
+		{ dynnp_druid_of dynn_Dorian }
+		{ dynn_Dovagni }
+		{ dynnp_druid_of dynn_Dovagni }
+		{ dynn_Dryburgh }
+		{ dynnp_druid_of dynn_Dryburgh }
+		{ dynn_Dryston }
+		{ dynnp_druid_of dynn_Dryston }
+		{ dynn_Dufaigh }
+		{ dynnp_druid_of dynn_Dufaigh }
+		{ dynn_Dufont }
+		{ dynnp_druid_of dynn_Dufont }
+		{ dynn_Dufort }
+		{ dynnp_druid_of dynn_Dufort }
+		{ dynn_Easton }
+		{ dynnp_druid_of dynn_Easton }
+		{ dynn_Egred }
+		{ dynnp_druid_of dynn_Egred }
+		{ dynn_Elbert }
+		{ dynnp_druid_of dynn_Elbert }
+		{ dynn_Elde }
+		{ dynnp_druid_of dynn_Elde }
+		{ dynn_Eleanor }
+		{ dynnp_druid_of dynn_Eleanor }
+		{ dynn_Elizabeth }
+		{ dynnp_druid_of dynn_Elizabeth }
+		{ dynn_Elysana }
+		{ dynnp_druid_of dynn_Elysana }
+		{ dynn_Emilie }
+		{ dynnp_druid_of dynn_Emilie }
+		{ dynn_Ence }
+		{ dynnp_druid_of dynn_Ence }
+		{ dynn_Endell }
+		{ dynnp_druid_of dynn_Endell }
+		{ dynn_Epo }
+		{ dynnp_druid_of dynn_Epo }
+		{ dynn_Erasmus }
+		{ dynnp_druid_of dynn_Erasmus }
+		{ dynn_Erelie }
+		{ dynnp_druid_of dynn_Erelie }
+		{ dynn_Ervine }
+		{ dynnp_druid_of dynn_Ervine }
+		{ dynn_Etzebeth }
+		{ dynnp_druid_of dynn_Etzebeth }
+		{ dynn_Faorell }
+		{ dynnp_druid_of dynn_Faorell }
+		{ dynn_Farr }
+		{ dynnp_druid_of dynn_Farr }
+		{ dynn_Fatima }
+		{ dynnp_druid_of dynn_Fatima }
+		{ dynn_Felicia }
+		{ dynnp_druid_of dynn_Felicia }
+		{ dynn_Ferth }
+		{ dynnp_druid_of dynn_Ferth }
+		{ dynn_Frenck }
+		{ dynnp_druid_of dynn_Frenck }
+		{ dynn_Frey }
+		{ dynnp_druid_of dynn_Frey }
+		{ dynn_Fullerstadt }
+		{ dynnp_druid_of dynn_Fullerstadt }
+		{ dynn_Gane }
+		{ dynnp_druid_of dynn_Gane }
+		{ dynn_Garstadt }
+		{ dynnp_druid_of dynn_Garstadt }
+		{ dynn_Garvey }
+		{ dynnp_druid_of dynn_Garvey }
+		{ dynn_Geles }
+		{ dynnp_druid_of dynn_Geles }
+		{ dynn_Gemain }
+		{ dynnp_druid_of dynn_Gemain }
+		{ dynn_Gemane }
+		{ dynnp_druid_of dynn_Gemane }
+		{ dynn_Genis }
+		{ dynnp_druid_of dynn_Genis }
+		{ dynn_Geontene }
+		{ dynnp_druid_of dynn_Geontene }
+		{ dynn_Gerald }
+		{ dynnp_druid_of dynn_Gerald }
+		{ dynn_Gernis }
+		{ dynnp_druid_of dynn_Gernis }
+		{ dynn_Geves }
+		{ dynnp_druid_of dynn_Geves }
+		{ dynn_Gielle }
+		{ dynnp_druid_of dynn_Gielle }
+		{ dynn_Gildern }
+		{ dynnp_druid_of dynn_Gildern }
+		{ dynn_Glehew }
+		{ dynnp_druid_of dynn_Glehew }
+		{ dynn_Glenhyvach }
+		{ dynnp_druid_of dynn_Glenhyvach }
+		{ dynn_Glenpoint }
+		{ dynnp_druid_of dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynnp_druid_of dynn_Glynn }
+		{ dynn_Goodwin }
+		{ dynnp_druid_of dynn_Goodwin }
+		{ dynn_Granve }
+		{ dynnp_druid_of dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynnp_druid_of dynn_Guinevere }
+		{ dynn_Gunter }
+		{ dynnp_druid_of dynn_Gunter }
+		{ dynn_Heather }
+		{ dynnp_druid_of dynn_Heather }
+		{ dynn_Heathmoor }
+		{ dynnp_druid_of dynn_Heathmoor }
+		{ dynn_Helen }
+		{ dynnp_druid_of dynn_Helen }
+		{ dynn_Heloise }
+		{ dynnp_druid_of dynn_Heloise }
+		{ dynn_Helviane  }
+		{ dynnp_druid_of dynn_Helviane  }
+		{ dynn_Herraile }
+		{ dynnp_druid_of dynn_Herraile }
+		{ dynn_Hofmeyer }
+		{ dynnp_druid_of dynn_Hofmeyer }
+		{ dynn_Holvey }
+		{ dynnp_druid_of dynn_Holvey }
+		{ dynn_Ildene }
+		{ dynnp_druid_of dynn_Ildene }
+		{ dynn_Inmnthaigh }
+		{ dynnp_druid_of dynn_Inmnthaigh }
+		{ dynn_Isabelle }
+		{ dynnp_druid_of dynn_Isabelle }
+		{ dynn_Iscende }
+		{ dynnp_druid_of dynn_Iscende }
+		{ dynn_Jaacobs }
+		{ dynnp_druid_of dynn_Jaacobs }
+		{ dynn_Jaarsveldt }
+		{ dynnp_druid_of dynn_Jaarsveldt }
+		{ dynn_Jacinda }
+		{ dynnp_druid_of dynn_Jacinda }
+		{ dynn_Jacindtasveldt }
+		{ dynnp_druid_of dynn_Jacindtasveldt }
+		{ dynn_Jacqueline }
+		{ dynnp_druid_of dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynnp_druid_of dynn_Jeannie }
+		{ dynn_Jeline }
+		{ dynnp_druid_of dynn_Jeline }
+		{ dynn_Jenseric }
+		{ dynnp_druid_of dynn_Jenseric }
+		{ dynn_Jessica }
+		{ dynnp_druid_of dynn_Jessica }
+		{ dynn_Jillian }
+		{ dynnp_druid_of dynn_Jillian }
+		{ dynn_Johannes }
+		{ dynnp_druid_of dynn_Johannes }
+		{ dynn_Jolvanne }
+		{ dynnp_druid_of dynn_Jolvanne }
+		{ dynn_Joslin }
+		{ dynnp_druid_of dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_druid_of dynn_Juillen }
+		{ dynn_Julalanie }
+		{ dynnp_druid_of dynn_Julalanie }
+		{ dynn_Jurard }
+		{ dynnp_druid_of dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_druid_of dynn_Kambria }
+		{ dynn_Karth }
+		{ dynnp_druid_of dynn_Karth }
+		{ dynn_Kaskarth }
+		{ dynnp_druid_of dynn_Kaskarth }
+		{ dynn_Kasten }
+		{ dynnp_druid_of dynn_Kasten }
+		{ dynn_Kastenain }
+		{ dynnp_druid_of dynn_Kastenain }
+		{ dynn_Katurix }
+		{ dynnp_druid_of dynn_Katurix }
+		{ dynn_Kingetorix }
+		{ dynnp_druid_of dynn_Kingetorix }
+		{ dynn_Klerk }
+		{ dynnp_druid_of dynn_Klerk }
+		{ dynn_Kruger }
+		{ dynnp_druid_of dynn_Kruger }
+		{ dynn_Laedh }
+		{ dynnp_druid_of dynn_Laedh }
+		{ dynn_Lan }
+		{ dynnp_druid_of dynn_Lan }
+		{ dynn_Latenar }
+		{ dynnp_druid_of dynn_Latenar }
+		{ dynn_Latenhart }
+		{ dynnp_druid_of dynn_Latenhart }
+		{ dynn_Latenummon }
+		{ dynnp_druid_of dynn_Latenummon }
+		{ dynn_Laurent }
+		{ dynnp_druid_of dynn_Laurent }
+		{ dynn_Lavalle }
+		{ dynnp_druid_of dynn_Lavalle }
+		{ dynn_Leucona }
+		{ dynnp_druid_of dynn_Leucona }
+		{ dynn_Limax }
+		{ dynnp_druid_of dynn_Limax }
+		{ dynn_Lioncourt }
+		{ dynnp_druid_of dynn_Lioncourt }
+		{ dynn_Lloyd }
+		{ dynnp_druid_of dynn_Lloyd }
+		{ dynn_Llugwych }
+		{ dynnp_druid_of dynn_Llugwych }
+		{ dynn_Llywelyn }
+		{ dynnp_druid_of dynn_Llywelyn }
+		{ dynn_Lochner }
+		{ dynnp_druid_of dynn_Lochner }
+		{ dynn_Lothaire }
+		{ dynnp_druid_of dynn_Lothaire }
+		{ dynn_Lotharadair }
+		{ dynnp_druid_of dynn_Lotharadair }
+		{ dynn_Lothfryddoch }
+		{ dynnp_druid_of dynn_Lothfryddoch }
+		{ dynn_Louan }
+		{ dynnp_druid_of dynn_Louan }
+		{ dynn_Lukotorix }
+		{ dynnp_druid_of dynn_Lukotorix }
+		{ dynn_Mactilnethur }
+		{ dynnp_druid_of dynn_Mactilnethur }
+		{ dynn_Madach }
+		{ dynnp_druid_of dynn_Madach }
+		{ dynn_Madrich }
+		{ dynnp_druid_of dynn_Madrich }
+		{ dynn_Mailagni }
+		{ dynnp_druid_of dynn_Mailagni }
+		{ dynn_Malan }
+		{ dynnp_druid_of dynn_Malan }
+		{ dynn_Mallaig }
+		{ dynnp_druid_of dynn_Mallaig }
+		{ dynn_Mallory }
+		{ dynnp_druid_of dynn_Mallory }
+		{ dynn_Mannick }
+		{ dynnp_druid_of dynn_Mannick }
+		{ dynn_Mantel }
+		{ dynnp_druid_of dynn_Mantel }
+		{ dynn_Manton }
+		{ dynnp_druid_of dynn_Manton }
+		{ dynn_Marana }
+		{ dynnp_druid_of dynn_Marana }
+		{ dynn_Marcrag }
+		{ dynnp_druid_of dynn_Marcrag }
+		{ dynn_Marenach }
+		{ dynnp_druid_of dynn_Marenach }
+		{ dynn_Marence }
+		{ dynnp_druid_of dynn_Marence }
+		{ dynn_Maretach }
+		{ dynnp_druid_of dynn_Maretach }
+		{ dynn_Mark }
+		{ dynnp_druid_of dynn_Mark }
+		{ dynn_Markarth }
+		{ dynnp_druid_of dynn_Markarth }
+		{ dynn_Martin }
+		{ dynnp_druid_of dynn_Martin }
+		{ dynn_Maston }
+		{ dynnp_druid_of dynn_Maston }
+		{ dynn_Matthew }
+		{ dynnp_druid_of dynn_Matthew }
+		{ dynn_Maurard }
+		{ dynnp_druid_of dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_druid_of dynn_Maurice }
+		{ dynn_Meddich }
+		{ dynnp_druid_of dynn_Meddich }
+		{ dynn_Mederic }
+		{ dynnp_druid_of dynn_Mederic }
+		{ dynn_Meero }
+		{ dynnp_druid_of dynn_Meero }
+		{ dynn_Menetunnon }
+		{ dynnp_druid_of dynn_Menetunnon }
+		{ dynn_Mentenain }
+		{ dynnp_druid_of dynn_Mentenain }
+		{ dynn_Menuarach }
+		{ dynnp_druid_of dynn_Menuarach }
+		{ dynn_Merard  }
+		{ dynnp_druid_of dynn_Merard  }
+		{ dynn_Mercer }
+		{ dynnp_druid_of dynn_Mercer }
+		{ dynn_Merchad }
+		{ dynnp_druid_of dynn_Merchad }
+		{ dynn_Merian }
+		{ dynnp_druid_of dynn_Merian }
+		{ dynn_Merton }
+		{ dynnp_druid_of dynn_Merton }
+		{ dynn_Meyer }
+		{ dynnp_druid_of dynn_Meyer }
+		{ dynn_Mhaighstir }
+		{ dynnp_druid_of dynn_Mhaighstir }
+		{ dynn_Moerat }
+		{ dynnp_druid_of dynn_Moerat }
+		{ dynn_Mogurix }
+		{ dynnp_druid_of dynn_Mogurix }
+		{ dynn_Moile }
+		{ dynnp_druid_of dynn_Moile }
+		{ dynn_Moir }
+		{ dynnp_druid_of dynn_Moir }
+		{ dynn_Moora }
+		{ dynnp_druid_of dynn_Moora }
+		{ dynn_Mordhoch }
+		{ dynnp_druid_of dynn_Mordhoch }
+		{ dynn_Morkel }
+		{ dynnp_druid_of dynn_Morkel }
+		{ dynn_Mornard }
+		{ dynnp_druid_of dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_druid_of dynn_Morrard }
+		{ dynn_Mostert }
+		{ dynnp_druid_of dynn_Mostert }
+		{ dynn_Motierre }
+		{ dynnp_druid_of dynn_Motierre }
+		{ dynn_Muller }
+		{ dynnp_druid_of dynn_Muller }
+		{ dynn_Nadine }
+		{ dynnp_druid_of dynn_Nadine }
+		{ dynn_Natalie }
+		{ dynnp_druid_of dynn_Natalie }
+		{ dynn_Nekkarth }
+		{ dynnp_druid_of dynn_Nekkarth }
+		{ dynn_Nerys }
+		{ dynnp_druid_of dynn_Nerys }
+		{ dynn_Nestal }
+		{ dynnp_druid_of dynn_Nestal }
+		{ dynn_Nicholas }
+		{ dynnp_druid_of dynn_Nicholas }
+		{ dynn_Nienne }
+		{ dynnp_druid_of dynn_Nienne }
+		{ dynn_Niniel }
+		{ dynnp_druid_of dynn_Niniel }
+		{ dynn_Noellaume }
+		{ dynnp_druid_of dynn_Noellaume }
+		{ dynn_Nytte }
+		{ dynnp_druid_of dynn_Nytte }
+		{ dynn_Oberon }
+		{ dynnp_druid_of dynn_Oberon }
+		{ dynn_Oges }
+		{ dynnp_druid_of dynn_Oges }
+		{ dynn_Olluci }
+		{ dynnp_druid_of dynn_Olluci }
+		{ dynn_Onis }
+		{ dynnp_druid_of dynn_Onis }
+		{ dynn_Orgetorix }
+		{ dynnp_druid_of dynn_Orgetorix }
+		{ dynn_Osler }
+		{ dynnp_druid_of dynn_Osler }
+		{ dynn_Owen }
+		{ dynnp_druid_of dynn_Owen }
+		{ dynn_Panoit }
+		{ dynnp_druid_of dynn_Panoit }
+		{ dynn_Partagaz }
+		{ dynnp_druid_of dynn_Partagaz }
+		{ dynn_Pascal }
+		{ dynnp_druid_of dynn_Pascal }
+		{ dynn_Pasteur }
+		{ dynnp_druid_of dynn_Pasteur }
+		{ dynn_Peucag }
+		{ dynnp_druid_of dynn_Peucag }
+		{ dynn_Phiencel }
+		{ dynnp_druid_of dynn_Phiencel }
+		{ dynn_Philulanie }
+		{ dynnp_druid_of dynn_Philulanie }
+		{ dynn_Phirrienele }
+		{ dynnp_druid_of dynn_Phirrienele }
+		{ dynn_Radach }
+		{ dynnp_druid_of dynn_Radach }
+		{ dynn_Rane }
+		{ dynnp_druid_of dynn_Rane }
+		{ dynn_Ranhart }
+		{ dynnp_druid_of dynn_Ranhart }
+		{ dynn_Rarnis }
+		{ dynnp_druid_of dynn_Rarnis }
+		{ dynn_Reviere }
+		{ dynnp_druid_of dynn_Reviere }
+		{ dynn_Rey }
+		{ dynnp_druid_of dynn_Rey }
+		{ dynn_Rhiannon }
+		{ dynnp_druid_of dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_druid_of dynn_Rhun }
+		{ dynn_Rhyfeddelch }
+		{ dynnp_druid_of dynn_Rhyfeddelch }
+		{ dynn_Richard }
+		{ dynnp_druid_of dynn_Richard }
+		{ dynn_Rielle }
+		{ dynnp_druid_of dynn_Rielle }
+		{ dynn_Riente }
+		{ dynnp_druid_of dynn_Riente }
+		{ dynn_Rigarix }
+		{ dynnp_druid_of dynn_Rigarix }
+		{ dynn_Rirne }
+		{ dynnp_druid_of dynn_Rirne }
+		{ dynn_Riscel }
+		{ dynnp_druid_of dynn_Riscel }
+		{ dynn_Ritton }
+		{ dynnp_druid_of dynn_Ritton }
+		{ dynn_Robert }
+		{ dynnp_druid_of dynn_Robert }
+		{ dynn_Roddach }
+		{ dynnp_druid_of dynn_Roddach }
+		{ dynn_Rodric }
+		{ dynnp_druid_of dynn_Rodric }
+		{ dynn_Roland }
+		{ dynnp_druid_of dynn_Roland }
+		{ dynn_Rolston }
+		{ dynnp_druid_of dynn_Rolston }
+		{ dynn_Rolston }
+		{ dynnp_druid_of dynn_Rolston }
+		{ dynn_Rooley }
+		{ dynnp_druid_of dynn_Rooley }
+		{ dynn_Saktenkarth }
+		{ dynnp_druid_of dynn_Saktenkarth }
+		{ dynn_Samalus }
+		{ dynnp_druid_of dynn_Samalus }
+		{ dynn_Samorix }
+		{ dynnp_druid_of dynn_Samorix }
+		{ dynn_Saorfain }
+		{ dynnp_druid_of dynn_Saorfain }
+		{ dynn_Sarenain }
+		{ dynnp_druid_of dynn_Sarenain }
+		{ dynn_Saretar }
+		{ dynnp_druid_of dynn_Saretar }
+		{ dynn_Sarethart }
+		{ dynnp_druid_of dynn_Sarethart }
+		{ dynn_Sarhart }
+		{ dynnp_druid_of dynn_Sarhart }
+		{ dynn_Sarkarain }
+		{ dynnp_druid_of dynn_Sarkarain }
+		{ dynn_Sarkarth }
+		{ dynnp_druid_of dynn_Sarkarth }
+		{ dynn_Sarketummon }
+		{ dynnp_druid_of dynn_Sarketummon }
+		{ dynn_Sarten }
+		{ dynnp_druid_of dynn_Sarten }
+		{ dynn_Seaghadain }
+		{ dynnp_druid_of dynn_Seaghadain }
+		{ dynn_Sele }
+		{ dynnp_druid_of dynn_Sele }
+		{ dynn_Selton }
+		{ dynnp_druid_of dynn_Selton }
+		{ dynn_Sennaibhe }
+		{ dynnp_druid_of dynn_Sennaibhe }
+		{ dynn_Senovicix }
+		{ dynnp_druid_of dynn_Senovicix }
+		{ dynn_Sertrand }
+		{ dynnp_druid_of dynn_Sertrand }
+		{ dynn_Sette }
+		{ dynnp_druid_of dynn_Sette }
+		{ dynn_Soan }
+		{ dynnp_druid_of dynn_Soan }
+		{ dynn_Stegine }
+		{ dynnp_druid_of dynn_Stegine }
+		{ dynn_Stentor }
+		{ dynnp_druid_of dynn_Stentor }
+		{ dynn_Stieve }
+		{ dynnp_druid_of dynn_Stieve }
+		{ dynn_Stroud }
+		{ dynnp_druid_of dynn_Stroud }
+		{ dynn_Suadurix }
+		{ dynnp_druid_of dynn_Suadurix }
+		{ dynn_Surilie }
+		{ dynnp_druid_of dynn_Surilie }
+		{ dynn_Sutton }
+		{ dynnp_druid_of dynn_Sutton }
+		{ dynn_Tailas }
+		{ dynnp_druid_of dynn_Tailas }
+		{ dynn_Talagni }
+		{ dynnp_druid_of dynn_Talagni }
+		{ dynn_Tankarrth }
+		{ dynnp_druid_of dynn_Tankarrth }
+		{ dynn_Tannagh }
+		{ dynnp_druid_of dynn_Tannagh }
+		{ dynn_Tarnach }
+		{ dynnp_druid_of dynn_Tarnach }
+		{ dynn_Tarnerach }
+		{ dynnp_druid_of dynn_Tarnerach }
+		{ dynn_Tenetain }
+		{ dynnp_druid_of dynn_Tenetain }
+		{ dynn_Tenetunnon }
+		{ dynnp_druid_of dynn_Tenetunnon }
+		{ dynn_Thierry }
+		{ dynnp_druid_of dynn_Thierry }
+		{ dynn_Torrigne }
+		{ dynnp_druid_of dynn_Torrigne }
+		{ dynn_Tyrhonth }
+		{ dynnp_druid_of dynn_Tyrhonth }
+		{ dynn_Udirgh }
+		{ dynnp_druid_of dynn_Udirgh }
+		{ dynn_Uhlain }
+		{ dynnp_druid_of dynn_Uhlain }
+		{ dynn_Valtieri }
+		{ dynnp_druid_of dynn_Valtieri }
+		{ dynn_Valtieri }
+		{ dynnp_druid_of dynn_Valtieri }
+		{ dynn_Vasenkarth }
+		{ dynnp_druid_of dynn_Vasenkarth }
+		{ dynn_Vasenon }
+		{ dynnp_druid_of dynn_Vasenon }
+		{ dynn_Vello }
+		{ dynnp_druid_of dynn_Vello }
+		{ dynn_Viernis }
+		{ dynnp_druid_of dynn_Viernis }
+		{ dynn_Vitusca }
+		{ dynnp_druid_of dynn_Vitusca }
+		{ dynn_Woodborne }
+		{ dynnp_druid_of dynn_Woodborne }
+	}
+	
+	cadet_dynasty_names = {
+		{ dynn_Abair }
+		{ dynnp_druid_of dynn_Abair }
+		{ dynn_Abhsalain }
+		{ dynnp_druid_of dynn_Abhsalain }
+		{ dynn_Acques }
+		{ dynnp_druid_of dynn_Acques }
+		{ dynn_Admand }
+		{ dynnp_druid_of dynn_Admand }
+		{ dynn_Adrard }
+		{ dynnp_druid_of dynn_Adrard }
+		{ dynn_Aech }
+		{ dynnp_druid_of dynn_Aech }
+		{ dynn_Agerne }
+		{ dynnp_druid_of dynn_Agerne }
+		{ dynn_Amelion }
+		{ dynnp_druid_of dynn_Amelion }
+		{ dynn_Ancois }
+		{ dynnp_druid_of dynn_Ancois }
+		{ dynn_Angad }
+		{ dynnp_druid_of dynn_Angad }
+		{ dynn_Angeline }
+		{ dynnp_druid_of dynn_Angeline }
+		{ dynn_Antrill }
+		{ dynnp_druid_of dynn_Antrill }
+		{ dynn_Aogh }
+		{ dynnp_druid_of dynn_Aogh }
+		{ dynn_Arana }
+		{ dynnp_druid_of dynn_Arana }
+		{ dynn_Araun }
+		{ dynnp_druid_of dynn_Araun }
+		{ dynn_Arnand  }
+		{ dynnp_druid_of dynn_Arnand  }
+		{ dynn_Arne }
+		{ dynnp_druid_of dynn_Arne }
+		{ dynn_Arthe }
+		{ dynnp_druid_of dynn_Arthe }
+		{ dynn_Atagutis }
+		{ dynnp_druid_of dynn_Atagutis }
+		{ dynn_Ategnatos }
+		{ dynnp_druid_of dynn_Ategnatos }
+		{ dynn_Auline }
+		{ dynnp_druid_of dynn_Auline }
+		{ dynn_Aurelie }
+		{ dynnp_druid_of dynn_Aurelie }
+		{ dynn_Aurilie }
+		{ dynnp_druid_of dynn_Aurilie }
+		{ dynn_Aurimonde }
+		{ dynnp_druid_of dynn_Aurimonde }
+		{ dynn_Axrotalus }
+		{ dynnp_druid_of dynn_Axrotalus }
+		{ dynn_Baelborne }
+		{ dynnp_druid_of dynn_Baelborne }
+		{ dynn_Baldwin }
+		{ dynnp_druid_of dynn_Baldwin }
+		{ dynn_Ballard }
+		{ dynnp_druid_of dynn_Ballard }
+		{ dynn_Beatrice }
+		{ dynnp_druid_of dynn_Beatrice }
+		{ dynn_Beauchamp }
+		{ dynnp_druid_of dynn_Beauchamp }
+		{ dynn_Beluelle }
+		{ dynnp_druid_of dynn_Beluelle }
+		{ dynn_Benross }
+		{ dynnp_druid_of dynn_Benross }
+		{ dynn_Bercourt }
+		{ dynnp_druid_of dynn_Bercourt }
+		{ dynn_Berengaria }
+		{ dynnp_druid_of dynn_Berengaria }
+		{ dynn_Berenice }
+		{ dynnp_druid_of dynn_Berenice }
+		{ dynn_Bergama }
+		{ dynnp_druid_of dynn_Bergama }
+		{ dynn_Bertault }
+		{ dynnp_druid_of dynn_Bertault }
+		{ dynn_Bertrand }
+		{ dynnp_druid_of dynn_Bertrand }
+		{ dynn_Bhugsand }
+		{ dynnp_druid_of dynn_Bhugsand }
+		{ dynn_Bielle }
+		{ dynnp_druid_of dynn_Bielle }
+		{ dynn_Bienne }
+		{ dynnp_druid_of dynn_Bienne }
+		{ dynn_Bierles }
+		{ dynnp_druid_of dynn_Bierles }
+		{ dynn_Biltong }
+		{ dynnp_druid_of dynn_Biltong }
+		{ dynn_Birian }
+		{ dynnp_druid_of dynn_Birian }
+		{ dynn_Blanche }
+		{ dynnp_druid_of dynn_Blanche }
+		{ dynn_Bloemfontein }
+		{ dynnp_druid_of dynn_Bloemfontein }
+		{ dynn_Blokker }
+		{ dynnp_druid_of dynn_Blokker }
+		{ dynn_Boer }
+		{ dynnp_druid_of dynn_Boer }
+		{ dynn_Botha }
+		{ dynnp_druid_of dynn_Botha }
+		{ dynn_Boudiaca }
+		{ dynnp_druid_of dynn_Boudiaca }
+		{ dynn_Bracques }
+		{ dynnp_druid_of dynn_Bracques }
+		{ dynn_Branna }
+		{ dynnp_druid_of dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynnp_druid_of dynn_Brannoc }
+		{ dynn_Brenatar }
+		{ dynnp_druid_of dynn_Brenatar }
+		{ dynn_Brennag }
+		{ dynnp_druid_of dynn_Brennag }
+		{ dynn_Brenuach }
+		{ dynnp_druid_of dynn_Brenuach }
+		{ dynn_Brigh }
+		{ dynnp_druid_of dynn_Brigh }
+		{ dynn_Brighegan }
+		{ dynnp_druid_of dynn_Brighegan }
+		{ dynn_Brikarth }
+		{ dynnp_druid_of dynn_Brikarth }
+		{ dynn_Brinard }
+		{ dynnp_druid_of dynn_Brinard }
+		{ dynn_Broch }
+		{ dynnp_druid_of dynn_Broch }
+		{ dynn_Broles }
+		{ dynnp_druid_of dynn_Broles }
+		{ dynn_Bronwyn }
+		{ dynnp_druid_of dynn_Bronwyn }
+		{ dynn_Burger }
+		{ dynnp_druid_of dynn_Burger }
+		{ dynn_Cailenadach }
+		{ dynnp_druid_of dynn_Cailenadach }
+		{ dynn_Camula }
+		{ dynnp_druid_of dynn_Camula }
+		{ dynn_Carcette }
+		{ dynnp_druid_of dynn_Carcette }
+		{ dynn_Cartimandua }
+		{ dynnp_druid_of dynn_Cartimandua }
+		{ dynn_Casenne }
+		{ dynnp_druid_of dynn_Casenne }
+		{ dynn_Cassandra }
+		{ dynnp_druid_of dynn_Cassandra }
+		{ dynn_Cassel }
+		{ dynnp_druid_of dynn_Cassel }
+		{ dynn_Catherine }
+		{ dynnp_druid_of dynn_Catherine }
+		{ dynn_Cenicus }
+		{ dynnp_druid_of dynn_Cenicus }
+		{ dynn_Cenno }
+		{ dynnp_druid_of dynn_Cenno }
+		{ dynn_Cerys }
+		{ dynnp_druid_of dynn_Cerys }
+		{ dynn_Chandler }
+		{ dynnp_druid_of dynn_Chandler }
+		{ dynn_Charascel }
+		{ dynnp_druid_of dynn_Charascel }
+		{ dynn_Charien }
+		{ dynnp_druid_of dynn_Charien }
+		{ dynn_Charlize }
+		{ dynnp_druid_of dynn_Charlize }
+		{ dynn_Cheryl }
+		{ dynnp_druid_of dynn_Cheryl }
+		{ dynn_Cienne }
+		{ dynnp_druid_of dynn_Cienne }
+		{ dynn_Cimarius }
+		{ dynnp_druid_of dynn_Cimarius }
+		{ dynn_Cionaoith }
+		{ dynnp_druid_of dynn_Cionaoith }
+		{ dynn_Claassen }
+		{ dynnp_druid_of dynn_Claassen }
+		{ dynn_Coro }
+		{ dynnp_druid_of dynn_Coro }
+		{ dynn_Cosnach }
+		{ dynnp_druid_of dynn_Cosnach }
+		{ dynn_Cradach }
+		{ dynnp_druid_of dynn_Cradach }
+		{ dynn_Crecy }
+		{ dynnp_druid_of dynn_Crecy }
+		{ dynn_Croix }
+		{ dynnp_druid_of dynn_Croix }
+		{ dynn_Daenia }
+		{ dynnp_druid_of dynn_Daenia }
+		{ dynn_Dalan }
+		{ dynnp_druid_of dynn_Dalan }
+		{ dynn_Dalinde }
+		{ dynnp_druid_of dynn_Dalinde }
+		{ dynn_Dalomax }
+		{ dynnp_druid_of dynn_Dalomax }
+		{ dynn_Dalton }
+		{ dynnp_druid_of dynn_Dalton }
+		{ dynn_Damian }
+		{ dynnp_druid_of dynn_Damian }
+		{ dynn_Dammond }
+		{ dynnp_druid_of dynn_Dammond }
+		{ dynn_Danders }
+		{ dynnp_druid_of dynn_Danders }
+		{ dynn_Danhart }
+		{ dynnp_druid_of dynn_Danhart }
+		{ dynn_Danneg }
+		{ dynnp_druid_of dynn_Danneg }
+		{ dynn_Delacourt }
+		{ dynnp_druid_of dynn_Delacourt }
+		{ dynn_Desele }
+		{ dynnp_druid_of dynn_Desele }
+		{ dynn_Diel }
+		{ dynnp_druid_of dynn_Diel }
+		{ dynn_Diel }
+		{ dynnp_druid_of dynn_Diel }
+		{ dynn_Dilborn }
+		{ dynnp_druid_of dynn_Dilborn }
+		{ dynn_Dochartaigh }
+		{ dynnp_druid_of dynn_Dochartaigh }
+		{ dynn_Dolbanitte }
+		{ dynnp_druid_of dynn_Dolbanitte }
+		{ dynn_Dorian }
+		{ dynnp_druid_of dynn_Dorian }
+		{ dynn_Dovagni }
+		{ dynnp_druid_of dynn_Dovagni }
+		{ dynn_Dryburgh }
+		{ dynnp_druid_of dynn_Dryburgh }
+		{ dynn_Dryston }
+		{ dynnp_druid_of dynn_Dryston }
+		{ dynn_Dufaigh }
+		{ dynnp_druid_of dynn_Dufaigh }
+		{ dynn_Dufont }
+		{ dynnp_druid_of dynn_Dufont }
+		{ dynn_Dufort }
+		{ dynnp_druid_of dynn_Dufort }
+		{ dynn_Easton }
+		{ dynnp_druid_of dynn_Easton }
+		{ dynn_Egred }
+		{ dynnp_druid_of dynn_Egred }
+		{ dynn_Elbert }
+		{ dynnp_druid_of dynn_Elbert }
+		{ dynn_Elde }
+		{ dynnp_druid_of dynn_Elde }
+		{ dynn_Eleanor }
+		{ dynnp_druid_of dynn_Eleanor }
+		{ dynn_Elizabeth }
+		{ dynnp_druid_of dynn_Elizabeth }
+		{ dynn_Elysana }
+		{ dynnp_druid_of dynn_Elysana }
+		{ dynn_Emilie }
+		{ dynnp_druid_of dynn_Emilie }
+		{ dynn_Ence }
+		{ dynnp_druid_of dynn_Ence }
+		{ dynn_Endell }
+		{ dynnp_druid_of dynn_Endell }
+		{ dynn_Epo }
+		{ dynnp_druid_of dynn_Epo }
+		{ dynn_Erasmus }
+		{ dynnp_druid_of dynn_Erasmus }
+		{ dynn_Erelie }
+		{ dynnp_druid_of dynn_Erelie }
+		{ dynn_Ervine }
+		{ dynnp_druid_of dynn_Ervine }
+		{ dynn_Etzebeth }
+		{ dynnp_druid_of dynn_Etzebeth }
+		{ dynn_Faorell }
+		{ dynnp_druid_of dynn_Faorell }
+		{ dynn_Farr }
+		{ dynnp_druid_of dynn_Farr }
+		{ dynn_Fatima }
+		{ dynnp_druid_of dynn_Fatima }
+		{ dynn_Felicia }
+		{ dynnp_druid_of dynn_Felicia }
+		{ dynn_Ferth }
+		{ dynnp_druid_of dynn_Ferth }
+		{ dynn_Frenck }
+		{ dynnp_druid_of dynn_Frenck }
+		{ dynn_Frey }
+		{ dynnp_druid_of dynn_Frey }
+		{ dynn_Fullerstadt }
+		{ dynnp_druid_of dynn_Fullerstadt }
+		{ dynn_Gane }
+		{ dynnp_druid_of dynn_Gane }
+		{ dynn_Garstadt }
+		{ dynnp_druid_of dynn_Garstadt }
+		{ dynn_Garvey }
+		{ dynnp_druid_of dynn_Garvey }
+		{ dynn_Geles }
+		{ dynnp_druid_of dynn_Geles }
+		{ dynn_Gemain }
+		{ dynnp_druid_of dynn_Gemain }
+		{ dynn_Gemane }
+		{ dynnp_druid_of dynn_Gemane }
+		{ dynn_Genis }
+		{ dynnp_druid_of dynn_Genis }
+		{ dynn_Geontene }
+		{ dynnp_druid_of dynn_Geontene }
+		{ dynn_Gerald }
+		{ dynnp_druid_of dynn_Gerald }
+		{ dynn_Gernis }
+		{ dynnp_druid_of dynn_Gernis }
+		{ dynn_Geves }
+		{ dynnp_druid_of dynn_Geves }
+		{ dynn_Gielle }
+		{ dynnp_druid_of dynn_Gielle }
+		{ dynn_Gildern }
+		{ dynnp_druid_of dynn_Gildern }
+		{ dynn_Glehew }
+		{ dynnp_druid_of dynn_Glehew }
+		{ dynn_Glenhyvach }
+		{ dynnp_druid_of dynn_Glenhyvach }
+		{ dynn_Glenpoint }
+		{ dynnp_druid_of dynn_Glenpoint }
+		{ dynn_Glynn }
+		{ dynnp_druid_of dynn_Glynn }
+		{ dynn_Goodwin }
+		{ dynnp_druid_of dynn_Goodwin }
+		{ dynn_Granve }
+		{ dynnp_druid_of dynn_Granve }
+		{ dynn_Guinevere }
+		{ dynnp_druid_of dynn_Guinevere }
+		{ dynn_Gunter }
+		{ dynnp_druid_of dynn_Gunter }
+		{ dynn_Heather }
+		{ dynnp_druid_of dynn_Heather }
+		{ dynn_Heathmoor }
+		{ dynnp_druid_of dynn_Heathmoor }
+		{ dynn_Helen }
+		{ dynnp_druid_of dynn_Helen }
+		{ dynn_Heloise }
+		{ dynnp_druid_of dynn_Heloise }
+		{ dynn_Helviane  }
+		{ dynnp_druid_of dynn_Helviane  }
+		{ dynn_Herraile }
+		{ dynnp_druid_of dynn_Herraile }
+		{ dynn_Hofmeyer }
+		{ dynnp_druid_of dynn_Hofmeyer }
+		{ dynn_Holvey }
+		{ dynnp_druid_of dynn_Holvey }
+		{ dynn_Ildene }
+		{ dynnp_druid_of dynn_Ildene }
+		{ dynn_Inmnthaigh }
+		{ dynnp_druid_of dynn_Inmnthaigh }
+		{ dynn_Isabelle }
+		{ dynnp_druid_of dynn_Isabelle }
+		{ dynn_Iscende }
+		{ dynnp_druid_of dynn_Iscende }
+		{ dynn_Jaacobs }
+		{ dynnp_druid_of dynn_Jaacobs }
+		{ dynn_Jaarsveldt }
+		{ dynnp_druid_of dynn_Jaarsveldt }
+		{ dynn_Jacinda }
+		{ dynnp_druid_of dynn_Jacinda }
+		{ dynn_Jacindtasveldt }
+		{ dynnp_druid_of dynn_Jacindtasveldt }
+		{ dynn_Jacqueline }
+		{ dynnp_druid_of dynn_Jacqueline }
+		{ dynn_Jeannie }
+		{ dynnp_druid_of dynn_Jeannie }
+		{ dynn_Jeline }
+		{ dynnp_druid_of dynn_Jeline }
+		{ dynn_Jenseric }
+		{ dynnp_druid_of dynn_Jenseric }
+		{ dynn_Jessica }
+		{ dynnp_druid_of dynn_Jessica }
+		{ dynn_Jillian }
+		{ dynnp_druid_of dynn_Jillian }
+		{ dynn_Johannes }
+		{ dynnp_druid_of dynn_Johannes }
+		{ dynn_Jolvanne }
+		{ dynnp_druid_of dynn_Jolvanne }
+		{ dynn_Joslin }
+		{ dynnp_druid_of dynn_Joslin }
+		{ dynn_Juillen }
+		{ dynnp_druid_of dynn_Juillen }
+		{ dynn_Julalanie }
+		{ dynnp_druid_of dynn_Julalanie }
+		{ dynn_Jurard }
+		{ dynnp_druid_of dynn_Jurard }
+		{ dynn_Kambria }
+		{ dynnp_druid_of dynn_Kambria }
+		{ dynn_Karth }
+		{ dynnp_druid_of dynn_Karth }
+		{ dynn_Kaskarth }
+		{ dynnp_druid_of dynn_Kaskarth }
+		{ dynn_Kasten }
+		{ dynnp_druid_of dynn_Kasten }
+		{ dynn_Kastenain }
+		{ dynnp_druid_of dynn_Kastenain }
+		{ dynn_Katurix }
+		{ dynnp_druid_of dynn_Katurix }
+		{ dynn_Kingetorix }
+		{ dynnp_druid_of dynn_Kingetorix }
+		{ dynn_Klerk }
+		{ dynnp_druid_of dynn_Klerk }
+		{ dynn_Kruger }
+		{ dynnp_druid_of dynn_Kruger }
+		{ dynn_Laedh }
+		{ dynnp_druid_of dynn_Laedh }
+		{ dynn_Lan }
+		{ dynnp_druid_of dynn_Lan }
+		{ dynn_Latenar }
+		{ dynnp_druid_of dynn_Latenar }
+		{ dynn_Latenhart }
+		{ dynnp_druid_of dynn_Latenhart }
+		{ dynn_Latenummon }
+		{ dynnp_druid_of dynn_Latenummon }
+		{ dynn_Laurent }
+		{ dynnp_druid_of dynn_Laurent }
+		{ dynn_Lavalle }
+		{ dynnp_druid_of dynn_Lavalle }
+		{ dynn_Leucona }
+		{ dynnp_druid_of dynn_Leucona }
+		{ dynn_Limax }
+		{ dynnp_druid_of dynn_Limax }
+		{ dynn_Lioncourt }
+		{ dynnp_druid_of dynn_Lioncourt }
+		{ dynn_Lloyd }
+		{ dynnp_druid_of dynn_Lloyd }
+		{ dynn_Llugwych }
+		{ dynnp_druid_of dynn_Llugwych }
+		{ dynn_Llywelyn }
+		{ dynnp_druid_of dynn_Llywelyn }
+		{ dynn_Lochner }
+		{ dynnp_druid_of dynn_Lochner }
+		{ dynn_Lothaire }
+		{ dynnp_druid_of dynn_Lothaire }
+		{ dynn_Lotharadair }
+		{ dynnp_druid_of dynn_Lotharadair }
+		{ dynn_Lothfryddoch }
+		{ dynnp_druid_of dynn_Lothfryddoch }
+		{ dynn_Louan }
+		{ dynnp_druid_of dynn_Louan }
+		{ dynn_Lukotorix }
+		{ dynnp_druid_of dynn_Lukotorix }
+		{ dynn_Mactilnethur }
+		{ dynnp_druid_of dynn_Mactilnethur }
+		{ dynn_Madach }
+		{ dynnp_druid_of dynn_Madach }
+		{ dynn_Madrich }
+		{ dynnp_druid_of dynn_Madrich }
+		{ dynn_Mailagni }
+		{ dynnp_druid_of dynn_Mailagni }
+		{ dynn_Malan }
+		{ dynnp_druid_of dynn_Malan }
+		{ dynn_Mallaig }
+		{ dynnp_druid_of dynn_Mallaig }
+		{ dynn_Mallory }
+		{ dynnp_druid_of dynn_Mallory }
+		{ dynn_Mannick }
+		{ dynnp_druid_of dynn_Mannick }
+		{ dynn_Mantel }
+		{ dynnp_druid_of dynn_Mantel }
+		{ dynn_Manton }
+		{ dynnp_druid_of dynn_Manton }
+		{ dynn_Marana }
+		{ dynnp_druid_of dynn_Marana }
+		{ dynn_Marcrag }
+		{ dynnp_druid_of dynn_Marcrag }
+		{ dynn_Marenach }
+		{ dynnp_druid_of dynn_Marenach }
+		{ dynn_Marence }
+		{ dynnp_druid_of dynn_Marence }
+		{ dynn_Maretach }
+		{ dynnp_druid_of dynn_Maretach }
+		{ dynn_Mark }
+		{ dynnp_druid_of dynn_Mark }
+		{ dynn_Markarth }
+		{ dynnp_druid_of dynn_Markarth }
+		{ dynn_Martin }
+		{ dynnp_druid_of dynn_Martin }
+		{ dynn_Maston }
+		{ dynnp_druid_of dynn_Maston }
+		{ dynn_Matthew }
+		{ dynnp_druid_of dynn_Matthew }
+		{ dynn_Maurard }
+		{ dynnp_druid_of dynn_Maurard }
+		{ dynn_Maurice }
+		{ dynnp_druid_of dynn_Maurice }
+		{ dynn_Meddich }
+		{ dynnp_druid_of dynn_Meddich }
+		{ dynn_Mederic }
+		{ dynnp_druid_of dynn_Mederic }
+		{ dynn_Meero }
+		{ dynnp_druid_of dynn_Meero }
+		{ dynn_Menetunnon }
+		{ dynnp_druid_of dynn_Menetunnon }
+		{ dynn_Mentenain }
+		{ dynnp_druid_of dynn_Mentenain }
+		{ dynn_Menuarach }
+		{ dynnp_druid_of dynn_Menuarach }
+		{ dynn_Merard  }
+		{ dynnp_druid_of dynn_Merard  }
+		{ dynn_Mercer }
+		{ dynnp_druid_of dynn_Mercer }
+		{ dynn_Merchad }
+		{ dynnp_druid_of dynn_Merchad }
+		{ dynn_Merian }
+		{ dynnp_druid_of dynn_Merian }
+		{ dynn_Merton }
+		{ dynnp_druid_of dynn_Merton }
+		{ dynn_Meyer }
+		{ dynnp_druid_of dynn_Meyer }
+		{ dynn_Mhaighstir }
+		{ dynnp_druid_of dynn_Mhaighstir }
+		{ dynn_Moerat }
+		{ dynnp_druid_of dynn_Moerat }
+		{ dynn_Mogurix }
+		{ dynnp_druid_of dynn_Mogurix }
+		{ dynn_Moile }
+		{ dynnp_druid_of dynn_Moile }
+		{ dynn_Moir }
+		{ dynnp_druid_of dynn_Moir }
+		{ dynn_Moora }
+		{ dynnp_druid_of dynn_Moora }
+		{ dynn_Mordhoch }
+		{ dynnp_druid_of dynn_Mordhoch }
+		{ dynn_Morkel }
+		{ dynnp_druid_of dynn_Morkel }
+		{ dynn_Mornard }
+		{ dynnp_druid_of dynn_Mornard }
+		{ dynn_Morrard }
+		{ dynnp_druid_of dynn_Morrard }
+		{ dynn_Mostert }
+		{ dynnp_druid_of dynn_Mostert }
+		{ dynn_Motierre }
+		{ dynnp_druid_of dynn_Motierre }
+		{ dynn_Muller }
+		{ dynnp_druid_of dynn_Muller }
+		{ dynn_Nadine }
+		{ dynnp_druid_of dynn_Nadine }
+		{ dynn_Natalie }
+		{ dynnp_druid_of dynn_Natalie }
+		{ dynn_Nekkarth }
+		{ dynnp_druid_of dynn_Nekkarth }
+		{ dynn_Nerys }
+		{ dynnp_druid_of dynn_Nerys }
+		{ dynn_Nestal }
+		{ dynnp_druid_of dynn_Nestal }
+		{ dynn_Nicholas }
+		{ dynnp_druid_of dynn_Nicholas }
+		{ dynn_Nienne }
+		{ dynnp_druid_of dynn_Nienne }
+		{ dynn_Niniel }
+		{ dynnp_druid_of dynn_Niniel }
+		{ dynn_Noellaume }
+		{ dynnp_druid_of dynn_Noellaume }
+		{ dynn_Nytte }
+		{ dynnp_druid_of dynn_Nytte }
+		{ dynn_Oberon }
+		{ dynnp_druid_of dynn_Oberon }
+		{ dynn_Oges }
+		{ dynnp_druid_of dynn_Oges }
+		{ dynn_Olluci }
+		{ dynnp_druid_of dynn_Olluci }
+		{ dynn_Onis }
+		{ dynnp_druid_of dynn_Onis }
+		{ dynn_Orgetorix }
+		{ dynnp_druid_of dynn_Orgetorix }
+		{ dynn_Osler }
+		{ dynnp_druid_of dynn_Osler }
+		{ dynn_Owen }
+		{ dynnp_druid_of dynn_Owen }
+		{ dynn_Panoit }
+		{ dynnp_druid_of dynn_Panoit }
+		{ dynn_Partagaz }
+		{ dynnp_druid_of dynn_Partagaz }
+		{ dynn_Pascal }
+		{ dynnp_druid_of dynn_Pascal }
+		{ dynn_Pasteur }
+		{ dynnp_druid_of dynn_Pasteur }
+		{ dynn_Peucag }
+		{ dynnp_druid_of dynn_Peucag }
+		{ dynn_Phiencel }
+		{ dynnp_druid_of dynn_Phiencel }
+		{ dynn_Philulanie }
+		{ dynnp_druid_of dynn_Philulanie }
+		{ dynn_Phirrienele }
+		{ dynnp_druid_of dynn_Phirrienele }
+		{ dynn_Radach }
+		{ dynnp_druid_of dynn_Radach }
+		{ dynn_Rane }
+		{ dynnp_druid_of dynn_Rane }
+		{ dynn_Ranhart }
+		{ dynnp_druid_of dynn_Ranhart }
+		{ dynn_Rarnis }
+		{ dynnp_druid_of dynn_Rarnis }
+		{ dynn_Reviere }
+		{ dynnp_druid_of dynn_Reviere }
+		{ dynn_Rey }
+		{ dynnp_druid_of dynn_Rey }
+		{ dynn_Rhiannon }
+		{ dynnp_druid_of dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynnp_druid_of dynn_Rhun }
+		{ dynn_Rhyfeddelch }
+		{ dynnp_druid_of dynn_Rhyfeddelch }
+		{ dynn_Richard }
+		{ dynnp_druid_of dynn_Richard }
+		{ dynn_Rielle }
+		{ dynnp_druid_of dynn_Rielle }
+		{ dynn_Riente }
+		{ dynnp_druid_of dynn_Riente }
+		{ dynn_Rigarix }
+		{ dynnp_druid_of dynn_Rigarix }
+		{ dynn_Rirne }
+		{ dynnp_druid_of dynn_Rirne }
+		{ dynn_Riscel }
+		{ dynnp_druid_of dynn_Riscel }
+		{ dynn_Ritton }
+		{ dynnp_druid_of dynn_Ritton }
+		{ dynn_Robert }
+		{ dynnp_druid_of dynn_Robert }
+		{ dynn_Roddach }
+		{ dynnp_druid_of dynn_Roddach }
+		{ dynn_Rodric }
+		{ dynnp_druid_of dynn_Rodric }
+		{ dynn_Roland }
+		{ dynnp_druid_of dynn_Roland }
+		{ dynn_Rolston }
+		{ dynnp_druid_of dynn_Rolston }
+		{ dynn_Rolston }
+		{ dynnp_druid_of dynn_Rolston }
+		{ dynn_Rooley }
+		{ dynnp_druid_of dynn_Rooley }
+		{ dynn_Saktenkarth }
+		{ dynnp_druid_of dynn_Saktenkarth }
+		{ dynn_Samalus }
+		{ dynnp_druid_of dynn_Samalus }
+		{ dynn_Samorix }
+		{ dynnp_druid_of dynn_Samorix }
+		{ dynn_Saorfain }
+		{ dynnp_druid_of dynn_Saorfain }
+		{ dynn_Sarenain }
+		{ dynnp_druid_of dynn_Sarenain }
+		{ dynn_Saretar }
+		{ dynnp_druid_of dynn_Saretar }
+		{ dynn_Sarethart }
+		{ dynnp_druid_of dynn_Sarethart }
+		{ dynn_Sarhart }
+		{ dynnp_druid_of dynn_Sarhart }
+		{ dynn_Sarkarain }
+		{ dynnp_druid_of dynn_Sarkarain }
+		{ dynn_Sarkarth }
+		{ dynnp_druid_of dynn_Sarkarth }
+		{ dynn_Sarketummon }
+		{ dynnp_druid_of dynn_Sarketummon }
+		{ dynn_Sarten }
+		{ dynnp_druid_of dynn_Sarten }
+		{ dynn_Seaghadain }
+		{ dynnp_druid_of dynn_Seaghadain }
+		{ dynn_Sele }
+		{ dynnp_druid_of dynn_Sele }
+		{ dynn_Selton }
+		{ dynnp_druid_of dynn_Selton }
+		{ dynn_Sennaibhe }
+		{ dynnp_druid_of dynn_Sennaibhe }
+		{ dynn_Senovicix }
+		{ dynnp_druid_of dynn_Senovicix }
+		{ dynn_Sertrand }
+		{ dynnp_druid_of dynn_Sertrand }
+		{ dynn_Sette }
+		{ dynnp_druid_of dynn_Sette }
+		{ dynn_Soan }
+		{ dynnp_druid_of dynn_Soan }
+		{ dynn_Stegine }
+		{ dynnp_druid_of dynn_Stegine }
+		{ dynn_Stentor }
+		{ dynnp_druid_of dynn_Stentor }
+		{ dynn_Stieve }
+		{ dynnp_druid_of dynn_Stieve }
+		{ dynn_Stroud }
+		{ dynnp_druid_of dynn_Stroud }
+		{ dynn_Suadurix }
+		{ dynnp_druid_of dynn_Suadurix }
+		{ dynn_Surilie }
+		{ dynnp_druid_of dynn_Surilie }
+		{ dynn_Sutton }
+		{ dynnp_druid_of dynn_Sutton }
+		{ dynn_Tailas }
+		{ dynnp_druid_of dynn_Tailas }
+		{ dynn_Talagni }
+		{ dynnp_druid_of dynn_Talagni }
+		{ dynn_Tankarrth }
+		{ dynnp_druid_of dynn_Tankarrth }
+		{ dynn_Tannagh }
+		{ dynnp_druid_of dynn_Tannagh }
+		{ dynn_Tarnach }
+		{ dynnp_druid_of dynn_Tarnach }
+		{ dynn_Tarnerach }
+		{ dynnp_druid_of dynn_Tarnerach }
+		{ dynn_Tenetain }
+		{ dynnp_druid_of dynn_Tenetain }
+		{ dynn_Tenetunnon }
+		{ dynnp_druid_of dynn_Tenetunnon }
+		{ dynn_Thierry }
+		{ dynnp_druid_of dynn_Thierry }
+		{ dynn_Torrigne }
+		{ dynnp_druid_of dynn_Torrigne }
+		{ dynn_Tyrhonth }
+		{ dynnp_druid_of dynn_Tyrhonth }
+		{ dynn_Udirgh }
+		{ dynnp_druid_of dynn_Udirgh }
+		{ dynn_Uhlain }
+		{ dynnp_druid_of dynn_Uhlain }
+		{ dynn_Valtieri }
+		{ dynnp_druid_of dynn_Valtieri }
+		{ dynn_Valtieri }
+		{ dynnp_druid_of dynn_Valtieri }
+		{ dynn_Vasenkarth }
+		{ dynnp_druid_of dynn_Vasenkarth }
+		{ dynn_Vasenon }
+		{ dynnp_druid_of dynn_Vasenon }
+		{ dynn_Vello }
+		{ dynnp_druid_of dynn_Vello }
+		{ dynn_Viernis }
+		{ dynnp_druid_of dynn_Viernis }
+		{ dynn_Vitusca }
+		{ dynnp_druid_of dynn_Vitusca }
+		{ dynn_Woodborne }
+		{ dynnp_druid_of dynn_Woodborne }
+	}
+
+	male_names = {
+		Acco
+		Adietuma
+		Adrian
+		Adwyn
+		Aelwyn
+		Afonwen
+		Ainethach
+		Alan
+		Aldrydd
+		Alexander
+		Amaund
+		Andrew
+		Aneurin
+		Anton
+		Aonghas
+		Argiotix
+		Ariogorax
+		Arleno
+		Arnand
+		Arniel
+		Arthog
+		Asterix
+		Atebodwos
+		Atewos
+		Attalix
+		Axrotal
+		Baldwin
+		Bann
+		Belchimac
+		Bellovix
+		Benoit
+		Bernard
+		Bertrand
+		Birard
+		Boduan
+		Bolar
+		Brenn
+		Brogimar
+		Bryngwran
+		Caerphilly
+		Cain
+		Camorian
+		Camul
+		Candhler
+		Caradog
+		Carant
+		Carman
+		Carmo
+		Caturix
+		Celunno
+		Cerdo
+		Charles
+		Cirges
+		Colin
+		Confidence
+		Connor
+		Constance
+		Contessilo
+		Cornelius
+		Cosnach
+		Crixurax
+		Cudius
+		Cynric
+		Cyrus
+		Dagodubnos
+		Dagodurnos
+		Dalan
+		Damos
+		Danders
+		Daniel
+		Dannotax
+		Daric
+		Darius
+		David
+		Degaine
+		Delacourt
+		Delvin
+		Diarmaid
+		Dinorwig
+		Dirk
+		Dolgarrog
+		Donald
+		Dorian
+		Dosso
+		Douglas
+		Drutalix
+		Dryston
+		Duach
+		Dubnorix
+		Dulug
+		Duncan
+		Dunnius
+		Eadmund
+		Eadwyre
+		Edward
+		Eltrys
+		Emmanuel
+		Engelbrecht
+		Enmon
+		Enoch
+		Ernard
+		Ernest
+		Erroch
+		Esmond
+		Ethan
+		Eugene
+		Ezra
+		Farroch
+		Fearghas
+		Fenas
+		Ferarilie
+		Fitzwilliam
+		Folcque
+		Franca-as
+		Frederick
+		Gabriel
+		Gar
+		Garomar
+		Geon
+		George
+		Gerald
+		Gilbert
+		Goodwin
+		Gordon
+		Gothryd
+		Graham
+		Gregory
+		Griffith
+		Guthrie
+		Harlech
+		Harold
+		Harris
+		Heathcliff
+		Heathmoor
+		Hendrick
+		Henry
+		Herb
+		Hjalti
+		Hugh
+		Humfrys
+		Hywel
+		Ian
+		Iantumar
+		Imedhnain
+		Isidore
+		Iymbez
+		Jacob
+		Jadier
+		James
+		Jeanciele
+		Jerian
+		Jocwyn
+		Johannes
+		John
+		Joncis
+		Joost
+		Joseph
+		Joyce
+		Julian
+		Jurrifax
+		Juvenal
+		Katumar
+		Kharag
+		Kintugen
+		Kintugnat
+		Koos
+		Krag
+		Larynx
+		Leno
+		Lewis
+		Listien
+		Lloyd
+		Llywelyn
+		Lorcan
+		Lugrub
+		Lukotorix
+		Luther
+		Lutumo
+		Lyndon
+		Lysander
+		Madanach
+		Maguno
+		Magurix
+		Malcolm
+		Manis
+		Mark
+		Martin
+		Matthew
+		Maurice
+		Mederic
+		Merard
+		Mercer
+		Meurig
+		Michael
+		Mindothrax
+		Mogrul
+		Mordred
+		Mordyctor
+		Morven
+		Moses
+		Mulush
+		Naas
+		Nathanael
+		Nelson
+		Nicolas
+		Nigel
+		Noleon
+		Obelix
+		Oclin
+		Octieve
+		Odvan
+		Ogier
+		Oliver
+		Omluag
+		Orrent
+		Oscar
+		Owen
+		Patrick
+		Paul
+		Pearcy
+		Perien
+		Perth
+		Peter
+		Phane
+		Philip
+		Phinis
+		Polydor
+		Rahd
+		Rassie
+		Raven
+		Rega-as
+		Relien
+		Rerlas
+		Rhoshirwaun
+		Rhun
+		Richard
+		Robert
+		Rodric
+		Roland
+		Rolston
+		Rondach
+		Rudolf
+		Ruran
+		Sagrona
+		Samuel
+		Schalk
+		Seamas
+		Segoma
+		Simon
+		Staubin
+		Stephen
+		Steyn
+		Stoffel
+		Stromm
+		Tamaiharanuix
+		Tancred
+		Tanez
+		Tanir
+		Tasco
+		Theo
+		Thetrard
+		Theuns
+		Thierry
+		Thomas
+		Tirax
+		Tocco
+		Tonfanau
+		Tristan
+		Tudwir
+		Tuthul
+		Tynan
+		Uercassiuellaunos
+		Vailentine
+		Verkingetorix
+		Vincent
+		Walter
+		Warwick
+		Weylin
+		Willem-Tong
+		William
+		Wirogalos
+		Ylbert
+	}
+
+	female_names = {
+		Abelle
+		Abrexta
+		Abruna
+		Acaunissa
+		Aculia
+		Adbugissa
+		Adela
+		Adiegias
+		Aditte
+		Adrienne
+		Aethra
+		Aia
+		Aislin
+		Akorithi
+		Alana
+		Alberta
+		Alice
+		Alida
+		Alison
+		Ama
+		Amanda
+		Amarie
+		Ambre
+		Anafira
+		Angeline
+		Annadeth
+		Annaig
+		Anssula
+		Aodhenn
+		Arana
+		Arbene
+		Arcineaux
+		Arielle
+		Asciene
+		Ashley
+		Astrid
+		Aurane
+		Aurnie
+		Aurora
+		Averla
+		Aydsil
+		Ayesha
+		Babineaux
+		Banna
+		Barbara
+		Bauila
+		Beatrix
+		Bedene
+		Beira
+		Berenda
+		Berengaria
+		Berenix
+		Betua
+		Bix
+		Blanda
+		Bothela
+		Boudia
+		Boudiaca
+		Boudilatis
+		Bresiele
+		Brianna
+		Bronwyn
+		Brooke
+		Caitlyn
+		Camula
+		Candice
+		Cantismerta
+		Carata
+		Carla
+		Carol
+		Cartimandua
+		Cassandra
+		Catherine
+		Catta
+		Cauaria
+		Celeste
+		Celia
+		Cerise
+		Cerys
+		Charlize
+		Cheryl
+		Chloe
+		Cienne
+		Cladine
+		Claire
+		Cloustria
+		Colette
+		Contuinda
+		Coria
+		Dabienne
+		Daighre
+		Danielle
+		Darene
+		Deborah
+		Dedra
+		Delphine
+		Derelle
+		Diana
+		Donalda
+		Dorcas
+		Dorothea
+		Dousonna
+		Drascua
+		Dumaise
+		Edana
+		Edre
+		Edwinna
+		Eileen
+		Elantia
+		Elausa
+		Eleanor
+		Elizabeth
+		Elysana
+		Emilie
+		Emma
+		Emusette
+		Eola
+		Eoline
+		Eowyn
+		Erin
+		Erith
+		Estelle
+		Eva
+		Evelyn
+		Fabrelle
+		Fasele
+		Fatima
+		Felicia
+		Finola
+		Fionn
+		Frelene
+		Genevieve
+		Gertrude
+		Grace
+		Griet
+		Guinevere
+		Gulitte
+		Gwenyfe
+		Hadas
+		Hayley
+		Heather
+		Helen
+		Heloise
+		Helviane
+		Heniele
+		Hennie
+		Ildene
+		Ingrid
+		Isabelle
+		Jacinta
+		Jacqueline
+		Janece
+		Janet
+		Jeanne
+		Jeberilie
+		Jemima
+		Jenna
+		Jennifer
+		Jessica
+		Jillian
+		Joslin
+		Julienne
+		Juliette
+		Kahurangi
+		Kaie
+		Kaori
+		Kayla
+		Keiller
+		Khadija
+		Kunopennos
+		Laelette
+		Lauren
+		Leles
+		Leuca
+		Libbie
+		Lindelwa
+		Lirielle
+		Litogena
+		Lubitiata
+		Lucy
+		Luguselwa
+		Lydia
+		Lysaux
+		Mabrelle
+		Madena
+		Magda
+		Maia
+		Malielle
+		Maline
+		Manta
+		Maranique
+		Marcelle
+		Marelle
+		Margaux
+		Marianne
+		Marlize
+		Marthe
+		Maurrie
+		Medora
+		Meghan
+		Melie
+		Melisandre
+		Mena
+		Meredith
+		Michelle
+		Micke
+		Mirabelle
+		Mitanne
+		Molly
+		Mon
+		Morgana
+		Morrigan
+		Muiri
+		Muriel
+		Myfanwy
+		Nadine
+		Natalie
+		Nerys
+		Nettles
+		Nurese
+		Oclauia
+		Olivia
+		Orla
+		Otha
+		Otta-Helen
+		Padme
+		Pamela
+		Patience
+		Peccia
+		Penelope
+		Perrere
+		Phoebe
+		Priscilla
+		Rata
+		Rebecca
+		Relie
+		Reza
+		Rhiannon
+		Rhonda
+		Rianciene
+		Rochelle
+		Ronerelie
+		Roselle
+		Rosemary
+		Roxanne
+		Ruth
+		Sabine
+		Sabrina
+		Salome
+		Samantha
+		Sarah
+		Sasha
+		Senna
+		Serafina
+		Shanti
+		Sielle
+		Sinead
+		Sofia
+		Sonia
+		Sorcha
+		Sorine
+		Stephanie
+		Sucaria
+		Surane
+		Susan
+		Syl
+		Sylvie
+		Talisse
+		Tamatha
+		Taylor
+		Tegan
+		Theodesta
+		Tina
+		Titania
+		Tocca
+		Toireasa
+		Uaile
+		Udha
+		Uesuca
+		Uinda
+		Uindilla
+		Uiscareua
+		Uraka
+		Uratra
+		Urgala
+		Urraca
+		Victoria
+		Virene
+		Vivian
+		Voada
+		Winnie
+		Yolanda
+		Yvonne
+		Zara
+		Zoe
+		Zubaida
+	}
+	
+	
+	dynasty_of_location_prefix = "dynnp_druid_of"
+
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+	
+	mercenary_names = {
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+	}
+}
+
+name_list_reachfolk = {
+
+	dynasty_names = {
+		{ dynn_Abair }
+		{ dynn_Abhsalain }
+		{ dynn_Aech }
+		{ dynn_Aingeal }
+		{ dynn_Angad }
+		{ dynn_Aogh }
+		{ dynn_Arana }
+		{ dynn_Araun }
+		{ dynn_Balduin }
+		{ dynn_Bhugsand }
+		{ dynn_Boudicea }
+		{ dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynn_Brenatar }
+		{ dynn_Brennag }
+		{ dynn_Brenuach }
+		{ dynn_Brigh }
+		{ dynn_Brighegan }
+		{ dynn_Brikarth }
+		{ dynn_Broch }
+		{ dynn_Bronwyn }
+		{ dynn_Cailenadach }
+		{ dynn_Cannich }
+		{ dynn_Carter }
+		{ dynn_Cartimandua }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Cionaoith }
+		{ dynn_Cosnach }
+		{ dynn_Cradach }
+		{ dynn_Danhart }
+		{ dynn_Danneg }
+		{ dynn_Dochartaigh }
+		{ dynn_Dufaigh }
+		{ dynn_Faorell }
+		{ dynn_Floyg }
+		{ dynn_Fullerton }
+		{ dynn_Glehew }
+		{ dynn_Glenhyvach }
+		{ dynn_Helvana }
+		{ dynn_Ildene }
+		{ dynn_Inmnthaigh }
+		{ dynn_Jacinta }
+		{ dynn_Karth }
+		{ dynn_Kaskarth }
+		{ dynn_Kasten }
+		{ dynn_Kastenain }
+		{ dynn_Laedh }
+		{ dynn_Latenar }
+		{ dynn_Latenhart }
+		{ dynn_Latenummon }
+		{ dynn_Llewelyn }
+		{ dynn_Lotharadair }
+		{ dynn_Lothfryddoch }
+		{ dynn_Louan }
+		{ dynn_Mactilnethur }
+		{ dynn_Madach }
+		{ dynn_Maddoc }
+		{ dynn_Madrich }
+		{ dynn_Mallaig }
+		{ dynn_Marana }
+		{ dynn_Marcas }
+		{ dynn_Marcrag }
+		{ dynn_Marenach }
+		{ dynn_Maretach }
+		{ dynn_Markarth }
+		{ dynn_Meddich }
+		{ dynn_Menetunnon }
+		{ dynn_Mentenain }
+		{ dynn_Menuarach }
+		{ dynn_Merchad }
+		{ dynn_Mhaighstir }
+		{ dynn_Moir }
+		{ dynn_Moora }
+		{ dynn_Mordhoch }
+		{ dynn_Moric }
+		{ dynn_Nekkarth }
+		{ dynn_Nerys }
+		{ dynn_Nicos }
+		{ dynn_Peucag }
+		{ dynn_Radach }
+		{ dynn_Ranhart }
+		{ dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynn_Rhyfeddelch }
+		{ dynn_Roddach }
+		{ dynn_Saktenkarth }
+		{ dynn_Saorfain }
+		{ dynn_Sarenain }
+		{ dynn_Saretar }
+		{ dynn_Sarethart }
+		{ dynn_Sarhart }
+		{ dynn_Sarkarain }
+		{ dynn_Sarkarth }
+		{ dynn_Sarketummon }
+		{ dynn_Sarten }
+		{ dynn_Seaghadain }
+		{ dynn_Searlait }
+		{ dynn_Sennaibhe }
+		{ dynn_Tankarrth }
+		{ dynn_Tannagh }
+		{ dynn_Tarnach }
+		{ dynn_Tarnerach }
+		{ dynn_Tenetain }
+		{ dynn_Tenetunnon }
+		{ dynn_Tyrhonth }
+		{ dynn_Udirgh }
+		{ dynn_Uhlain }
+		{ dynn_Usbail }
+		{ dynn_Vasenkarth }
+		{ dynn_Vasenon }
+		{ dynn_Edrald }
+		{ dynn_Lauzon }
+	}
+
+	cadet_dynasty_names = {
+		{ dynn_Abair }
+		{ dynn_Abhsalain }
+		{ dynn_Aech }
+		{ dynn_Aingeal }
+		{ dynn_Angad }
+		{ dynn_Aogh }
+		{ dynn_Arana }
+		{ dynn_Araun }
+		{ dynn_Balduin }
+		{ dynn_Bhugsand }
+		{ dynn_Boudicea }
+		{ dynn_Branna }
+		{ dynn_Brannoc }
+		{ dynn_Brenatar }
+		{ dynn_Brennag }
+		{ dynn_Brenuach }
+		{ dynn_Brigh }
+		{ dynn_Brighegan }
+		{ dynn_Brikarth }
+		{ dynn_Broch }
+		{ dynn_Bronwyn }
+		{ dynn_Cailenadach }
+		{ dynn_Cannich }
+		{ dynn_Carter }
+		{ dynn_Cartimandua }
+		{ dynn_Catherine }
+		{ dynn_Cerys }
+		{ dynn_Cionaoith }
+		{ dynn_Cosnach }
+		{ dynn_Cradach }
+		{ dynn_Danhart }
+		{ dynn_Danneg }
+		{ dynn_Dochartaigh }
+		{ dynn_Dufaigh }
+		{ dynn_Faorell }
+		{ dynn_Floyg }
+		{ dynn_Fullerton }
+		{ dynn_Glehew }
+		{ dynn_Glenhyvach }
+		{ dynn_Helvana }
+		{ dynn_Ildene }
+		{ dynn_Inmnthaigh }
+		{ dynn_Jacinta }
+		{ dynn_Karth }
+		{ dynn_Kaskarth }
+		{ dynn_Kasten }
+		{ dynn_Kastenain }
+		{ dynn_Laedh }
+		{ dynn_Latenar }
+		{ dynn_Latenhart }
+		{ dynn_Latenummon }
+		{ dynn_Llewelyn }
+		{ dynn_Lotharadair }
+		{ dynn_Lothfryddoch }
+		{ dynn_Louan }
+		{ dynn_Mactilnethur }
+		{ dynn_Madach }
+		{ dynn_Maddoc }
+		{ dynn_Madrich }
+		{ dynn_Mallaig }
+		{ dynn_Marana }
+		{ dynn_Marcas }
+		{ dynn_Marcrag }
+		{ dynn_Marenach }
+		{ dynn_Maretach }
+		{ dynn_Markarth }
+		{ dynn_Meddich }
+		{ dynn_Menetunnon }
+		{ dynn_Mentenain }
+		{ dynn_Menuarach }
+		{ dynn_Merchad }
+		{ dynn_Mhaighstir }
+		{ dynn_Moir }
+		{ dynn_Moora }
+		{ dynn_Mordhoch }
+		{ dynn_Moric }
+		{ dynn_Nekkarth }
+		{ dynn_Nerys }
+		{ dynn_Nicos }
+		{ dynn_Peucag }
+		{ dynn_Radach }
+		{ dynn_Ranhart }
+		{ dynn_Rhiannon }
+		{ dynn_Rhun }
+		{ dynn_Rhyfeddelch }
+		{ dynn_Roddach }
+		{ dynn_Saktenkarth }
+		{ dynn_Saorfain }
+		{ dynn_Sarenain }
+		{ dynn_Saretar }
+		{ dynn_Sarethart }
+		{ dynn_Sarhart }
+		{ dynn_Sarkarain }
+		{ dynn_Sarkarth }
+		{ dynn_Sarketummon }
+		{ dynn_Sarten }
+		{ dynn_Seaghadain }
+		{ dynn_Searlait }
+		{ dynn_Sennaibhe }
+		{ dynn_Tankarrth }
+		{ dynn_Tannagh }
+		{ dynn_Tarnach }
+		{ dynn_Tarnerach }
+		{ dynn_Tenetain }
+		{ dynn_Tenetunnon }
+		{ dynn_Tyrhonth }
+		{ dynn_Udirgh }
+		{ dynn_Uhlain }
+		{ dynn_Usbail }
+		{ dynn_Vasenkarth }
+		{ dynn_Vasenon }
+		{ dynn_Edrald }
+		{ dynn_Lauzon }
+	}
+
+	male_names = {
+		Aaric
+		Acca-as
+		Adanra-as
+		Adietuma
+		Adraig
+		Adwyn
+		Aelwyn
+		Afonwen
+		Agrnach
+		Ainethach
+		Alaird
+		Aldrydd
+		Aleksander
+		Andrea-as
+		Andwyn
+		Aneurin
+		Anga-as
+		Ariogora-as
+		Arllonal
+		Arthog
+		Asaph
+		Astwyn
+		Atebodwa-as
+		Auberon
+		Balduin
+		Balknakh
+		Banning
+		Barra-as
+		Bera-as
+		Bogdan
+		Bolar
+		Braig
+		Brailan
+		Bryngwran
+		Caddach
+		Caerphilly
+		Cain
+		Cannich
+		Caradog
+		Carinar
+		Catura-as
+		Cedran
+		Celann
+		Ciel
+		Colin
+		Connor
+		Constys
+		Coria-as
+		Cosnach
+		Cuhlecain
+		Cuhlenac
+		Cynric
+		Cyra-as
+		Dagodubnos
+		Daria-as
+		Darich
+		Degaine
+		Delwyn
+		Diarmaid
+		Dinorwig
+		Dirk
+		Dolgarrog
+		Duach
+		Duareg
+		Dulug
+		Duncan
+		Durcorach
+		Dylan
+		Edwastyr
+		Eltrys
+		Enmon
+		Ennis
+		Ennoc
+		Ernard
+		Erroch
+		Esmond
+		Ethan
+		Ezra
+		Faolan
+		Faoric
+		Farroch
+		Feargha-as
+		Floyg
+		Franca-as
+		Gabriel
+		Garomar
+		Geor
+		Geraint
+		Gibbis
+		Gordon
+		Griogair
+		Gudaine
+		Heathclys
+		Heathmorich
+		Humfrys
+		Huw
+		Iantu
+		Idunhael
+		Imedhnain
+		Iorich
+		Iorwerth
+		Jerwyn
+		Jocwyn
+		Jonca-as
+		Julia-as
+		Karadog
+		Kharag
+		Kintugna-as
+		Krag
+		Leovic
+		Llewelyn
+		Lorca-an
+		Luca-as
+		Lucek
+		Lugrub
+		Luthen
+		Lysanda-as
+		Madanach
+		Madaric
+		Maddoc
+		Maguno
+		Magurix
+		Mairtin
+		Majcher
+		Maldred
+		Manis
+		Marca-as
+		Meical
+		Meurig
+		Modryc
+		Mogrul
+		Mordred
+		Moric
+		Moricar
+		Morvar
+		Morwen
+		Mossanon
+		Mulush
+		Nathanael
+		Niall
+		Nica-as
+		Noleon
+		Odvan
+		Ogier
+		Omluag
+		Orrent
+		Padraig
+		Paur
+		Pearcy
+		Pedrwul
+		Peryn
+		Pethys
+		Phane
+		Pilib
+		Rahd
+		Rega-as
+		Relien
+		Rerlys
+		Rhobert
+		Rhodri
+		Rhoshirwaun
+		Rhun
+		Ristard
+		Rogrug
+		Rondach
+		Rurwyn
+		Sagrona-as
+		Salamon
+		Samuel
+		Saric
+		Seama-as
+		Senan
+		Simine
+		Sogromm
+		Staubin
+		Stiovan
+		Tamaiharana-as
+		Terrys
+		Tira-as
+		Tomos
+		Tonfanau
+		Tristyr
+		Tudwir
+		Tuthul
+		Tynan
+		Uilliam
+		Uraccen
+		Uthyn
+		Vailintin
+		Weylin
+		Wirogala-as
+		Ylbert
+		Malug
+	}
+
+	female_names = {
+		Aethra
+		Aingeal
+		Aislin
+		Alona
+		Ama
+		Amanda
+		Ambritt
+		Anafira
+		Annadeth
+		Annait
+		Anssula
+		Aodhait
+		Aodhelse
+		Aodhenn
+		Arana
+		Aurora
+		Avelra
+		Aydsil
+		Bani
+		Barbara
+		Beatrix
+		Bedene
+		Beirgane
+		Berengaria
+		Betua
+		Bothela
+		Boudicea
+		Braina
+		Bronwyn
+		Cairine
+		Cartimandua
+		Cassandra
+		Catherine
+		Celarion
+		Cerys
+		Chloe
+		Ciannait
+		Claire
+		Daighre
+		Danielle
+		Deborah
+		Dedra
+		Delait
+		Dena
+		Diana
+		Dorcas
+		Drascua
+		Drisene
+		Eabha
+		Edana
+		Edre
+		Eileen
+		Eleanor
+		Elgeryl
+		Emma
+		Eola
+		Eoline
+		Eowyn
+		Erith
+		Evelyn
+		Fascune
+		Finola
+		Fionn
+		Glyna
+		Guinevere
+		Gwenyfe
+		Hayley
+		Helena
+		Helvana
+		Ildene
+		Jacinta
+		Janet
+		Jenna
+		Jennifer
+		Jessica
+		Juliana
+		Kahurangi
+		Kaie
+		Kaina
+		Kalla
+		Kaori
+		Kienola
+		Lessa
+		Leuca
+		Leven
+		Libbie
+		Linele
+		Lucy
+		Lurza
+		Madelaine
+		Maia
+		Maira
+		Mairrna
+		Malvina
+		Mandaillonan
+		Margaux
+		Marian
+		Marsaili
+		Meghan
+		Mele
+		Melra
+		Mena
+		Meredith
+		Modhna
+		Moira
+		Molly
+		Morgana
+		Morrigan
+		Muiri
+		Muriel
+		Myfanwy
+		Natalie
+		Nerys
+		Olivia
+		Onora
+		Orlagh
+		Patience
+		Peccia
+		Pera
+		Phoebe
+		Rebecca
+		Rhiannon
+		Rhonda
+		Rochelle
+		Rosemary
+		Rosia
+		Ruth
+		Sabrina
+		Samantha
+		Sarai
+		Searlait
+		Senna
+		Shanti
+		Siarl
+		Sinead
+		Siobhan
+		Sofia
+		Sonia
+		Sorcha
+		Tamatha
+		Titania
+		Tocca
+		Toireasa
+		Tyle
+		Tynan
+		Uaile
+		Udha
+		Uraka
+		Uratra
+		Urgala
+		Urraca
+		Usbail
+		Vicky
+		Voada
+		Ylberta
+		Zara
+		Zoe
+		Cuhlena
+		Rhoberta
+	}
+
+	house_based_map_names = yes
+	
+	#dynasty_of_location_prefix = "dynnp_of"
+		
+	# Chance of male children being named after their paternal or maternal grandfather or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 20
+	mat_grf_name_chance = 10
+	father_name_chance = 10
+		
+	# Chance of female children being named after their paternal or maternal grandmother or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 10
+	mat_grm_name_chance = 20
+	mother_name_chance = 10
+	
+	mercenary_names = {
+		{ name = "mercenary_band_reachmen" coat_of_arms = "mo_band_reachmen" }
+		{ name = "mercenary_bitterroot_band" coat_of_arms = "mo_bitterroot_band" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+	}
+}

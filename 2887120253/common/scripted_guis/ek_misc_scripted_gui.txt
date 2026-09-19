@@ -1,0 +1,72 @@
+﻿culture_dead = {
+    scope = culture
+
+    is_shown = { culture_is_alive = no }
+}
+
+# Replaces set_realm_capital_button
+set_realm_capital_gui = {
+    scope = province
+    saved_scopes = { current_char set_realm_capital_confirm }
+
+    is_shown = {
+		exists = scope:current_char
+        province_owner = scope:current_char
+        is_county_capital = yes
+        NOT = { scope:current_char.capital_province = ROOT }
+    }
+    
+    is_valid = {
+        ROOT = { save_temporary_scope_as = current_province }
+        # current_char has already been saved
+        # Hasn't already moved their capital, unless it's the de Jure capital of their primary title
+		custom_description = {
+			text = no_recent_capital_change_or_de_jure_capital
+			exists = scope:current_char
+			OR = {
+				scope:current_char = { NOT = { has_character_flag = recently_moved_capital } }
+				scope:current_char.primary_title.title_capital_county = ROOT.county
+			}
+		}
+    }
+
+    effect = {
+        if = {
+            limit = { scope:current_char = { has_variable = is_changing_realm_capital } }
+			if = {
+				limit = { exists = scope:set_realm_capital_confirm scope:set_realm_capital_confirm = yes }
+				province_owner = {			
+					# Move the capital
+					set_realm_capital = ROOT.county
+					
+					# Setup flags
+					add_character_flag = recently_moved_capital
+				}
+			}
+            scope:current_char = { remove_variable = is_changing_realm_capital }
+        }
+        else = {
+			scope:current_char = { set_variable = { name = is_changing_realm_capital value = 1 } }
+        }
+    }
+}
+
+### Court Amenities
+uses_regular_amenities = {
+	scope = character
+	
+	is_valid = { NOT = { government_has_flag = government_is_pirate } }
+}
+
+uses_pirate_amenities = {
+	scope = character
+	
+	is_valid = { government_has_flag = government_is_pirate }
+}
+
+### Magic
+can_see_magic_bar = {
+	scope = character
+	
+	is_valid = { can_magic_trigger = yes }
+}

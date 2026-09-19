@@ -1,0 +1,67 @@
+﻿# Geographical regions for Natural Disasters
+
+global_flood_region = {
+	regions = {
+		### Elsweyr
+		xylo_river_region eshita_river_region
+		#Cyrodiil
+		corbolo_river_region silverfish_river_region panther_river_region larsius_river_region strid_river_region
+		#Hammerfell
+		brena_river_region
+		#Skyrim
+		white_river_region
+	}
+}
+xylo_river_region = {
+	counties = { c_torval c_agrotis c_abyalia c_artay c_portneu c_zelinin }
+}
+eshita_river_region = {
+	counties = { c_eshita c_anard c_khenarthi_arch c_fur_forge_cove }
+}
+corbolo_river_region = {
+	counties = {
+		c_harlun_watch c_poppad c_naso c_wenderbek c_drakelowe c_crayfish c_crestbridge c_cedrian c_timberscar c_newt c_aurus
+	}
+}
+silverfish_river_region = {
+	counties = {
+		c_nenalata c_flecia c_diabell c_bedrock_break c_nayon c_ondo c_entius
+	}
+}
+panther_river_region = {
+	counties = {
+		c_morahame c_panthermouth c_bartholm c_atatar c_artemon c_gold_throat c_wendelbek c_redwater c_pantherfang c_bloodrun
+	}
+}
+larsius_river_region = {
+	counties = {
+		c_bay_roan c_bravil c_yellowmoth c_bloodmayne
+	}
+}
+strid_river_region = {
+	counties = {
+		c_mortal c_gnoll c_istirus c_grateful_pass c_strident_springs c_arenthia c_senalana c_grimwatch
+	}
+}
+brena_river_region = {
+	counties = {
+		c_rihad c_birich c_roulai c_niryastare c_hafar c_stonemoor c_helkati c_brena
+	}
+}
+white_river_region = {
+	counties = {
+		c_lakeview c_riverwood c_honningbrew c_graywinter c_whitewatch c_whiterun c_fellglow c_valtheim c_darkshade c_mixwater c_amol c_aalto c_gallows_rock c_cronvangr	
+	}
+}
+
+### ASIA
+#yellow_river_region = { # Yellow River
+#	counties = {
+#		c_dizhou c_dezhou c_bozhou_1 c_weizhou c_xiangzhou c_weizhou_1 c_huaizhou c_hezhong c_tongzhou c_guozhou c_shanzhou_2 c_henan c_zhengzhou c_huazhou c_puzhou_2 c_yunzhou c_qizhou c_zichuan c_qingzhou
+#	}
+#}
+#yangtze_river_region = { # Yangtze River
+#	counties = {
+#		c_taizhou_1 c_yangzhou c_chuzhou_2 c_liyang_2 c_lujiang c_shuzhou c_qizhou_1 c_huangzhou c_hanyang c_fuzhou_3 c_jiangling c_xiazhou_1 c_liyang c_langzhou c_tanzhou c_yuezhou_1 c_ezhou c_yunyang c_hongzhou c_raozhou c_nankang c_chizhou c_xuanzhou c_jiangning c_runzhou c_changzhou
+#	}
+#}

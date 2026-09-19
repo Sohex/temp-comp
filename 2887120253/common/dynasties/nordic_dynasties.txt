@@ -1,0 +1,994 @@
+﻿#Nordic Range: 300.000-399.999
+	#Eastmarcher: 300.000-309.999
+	#Westmarcher: 310.000-319.999
+	#Cyro-Nord: 320.000-329.999
+	#Atmoran: 330.000-339.999
+	#Skaal: 340.000-349.999
+
+#Eastmarcher: 300.000-309.999
+
+dyn_stuhn = {
+	name = "dynn_Stuhn"
+	culture = eastmarcher
+}
+dyn_high_shoal = {
+	name = "dynn_High_Shoal"
+	culture = eastmarcher
+	motto = dynn_high_shoal_motto
+}
+dyn_changewind = {
+	name = "dynn_changewind"
+	culture = eastmarcher
+	motto = dynn_changewind_motto
+}
+dyn_flamehair = {
+	name = "dynn_Flame_Hair"
+	culture = eastmarcher
+	motto = dynn_flamehair_motto
+}
+dyn_bjorga = {
+	name = "dynn_Bjorga"
+	culture = eastmarcher
+	motto = dynn_bjorga_motto
+}
+dyn_trothgar = {
+	name = "dynn_Trothgar"
+	culture = eastmarcher
+}
+dyn_silver_anvil = {
+	name = "dynn_Silver_Anvil"
+	culture = eastmarcher
+}
+dyn_blackbriar = {
+	name = "dynn_Smoke_Breather" #They rule Smoke-Frost
+	culture = eastmarcher
+	motto = dynn_black_briar_motto
+}
+dyn_snow_shod = {
+	name = "dynn_Snow_Walker"
+	culture = eastmarcher
+	motto = dynn_snow_shod_motto
+}
+dyn_bannertorn = {
+	name = "dynn_Banner_Torn"
+	culture = eastmarcher
+}
+dyn_snow_bourne = {
+	name = "dynn_Snow_Bourne"
+	culture = eastmarcher
+}
+dyn_blackthorn = {
+	name = "dynn_Blackthorn"
+	culture = eastmarcher
+	motto = dynn_blackthorn_motto
+}
+dyn_staghorn = {
+	name = "dynn_Staghorn"
+	culture = eastmarcher
+}
+dyn_cruel_sea = {
+	name = "dynn_Frost_Skin"
+	culture = eastmarcher
+	motto = dynn_cruelsea_motto
+}
+dyn_hate_basket = {
+	name = "dynn_Hate_Basket"
+	culture = eastmarcher
+}
+dyn_sweetroll_stealer = {
+	name = "dynn_Sweetroll_Stealer"
+	culture = eastmarcher
+}
+dyn_bell_striker = {
+	name = "dynn_Bell_Striker"
+	culture = eastmarcher
+	motto = dynn_bell_striker_motto
+}
+dyn_hoar_blood = {
+	name = "dynn_Hoar_Blood"
+	culture = eastmarcher
+}
+dyn_amber_shield = {
+	name = "dynn_Amber_Shield"
+	culture = eastmarcher
+	motto = dynn_amber_shield_motto
+}
+dyn_oakensword = {
+	name = "dynn_Oaken_Sword"
+	culture = eastmarcher
+}
+dyn_Ghost_Bear = {
+	name = "dynn_Ghost_Bear"
+	culture = eastmarcher
+}
+dyn_bird_catcher = {
+	name = "dynn_Bird_Catcher"
+	culture = eastmarcher
+}
+dyn_ffion = {
+	name = "dynn_Ffion"
+	culture = eastmarcher # Actually Reachfolk origins
+}
+dyn_snow_foot = {
+	name = "dynn_snow_foot"
+	culture = eastmarcher
+}
+dyn_hroldarsen = {
+	name = "dynn_hroldarsen"
+	culture = hrothgar
+}
+dyn_golden_hilt = {
+	name = "dynn_golden_hilt"
+	culture = eastmarcher
+}
+dyn_ale_scribe = {
+	name = "dynn_Ale_Scribe"
+	culture = eastmarcher
+}
+#300018 = {
+#	prefix = "dynnp_ap"
+#	name = "Dugal"
+#	culture = colovian
+#}
+dyn_ysgramoor = {
+	prefix = "dynnp_of"
+	name = "dynn_Ysgramoor"
+	culture = eastmarcher
+	motto = dynn_ysgramoor_motto
+}
+dyn_ardvar = {
+	name = "dynn_Ardvar" # 'ar' means 'clever', roughly; fitting for someone associated with the fox
+	culture = eastmarcher
+}
+dyn_ice_breaker = {
+	name = "dynn_Ice_Breaker"
+	culture = eastmarcher
+}
+dyn_kjoric = {
+	prefix = "dynnp_of"
+	name = "dynn_Kjoric"
+	culture = eastmarcher
+}
+dyn_gap_tooth = {
+	name = "dynn_Gap_Tooth"
+	culture = eastmarcher
+}
+dyn_orun = {
+	name = "dynn_Orun"
+	culture = eastmarcher
+}
+dyn_grey_eye = {
+	name = "dynn_Grey_Eye"
+	culture = eastmarcher
+}
+dyn_hoagbellow = {
+	name = "dynn_Hoagbellow"
+	culture = eastmarcher
+	motto = dynn_hoagbellow_motto
+}
+
+#
+#300025 = {
+#	name = "dynn_Windcaller"
+#	culture = eastmarcher
+#}
+#
+#300027 = {
+#	name = "dynn_Ravencrone"
+#	culture = eastmarcher
+#	motto = dynn_ravencrone_motto
+#}
+#
+#300028 = {
+#	name = "dynn_Brittlehelm"
+#	culture = eastmarcher
+#}
+#
+#300029 = {
+#	name = "dynn_Helmbolg"
+#	culture = eastmarcher
+#}
+#
+#300030 = {
+#	name = "dynn_Kaarn"
+#	culture = eastmarcher
+#}
+
+dyn_shatter_shield = { #Clan-Heads of Mistwatch
+	name = "dynn_Shatter_Fist"
+	culture = eastmarcher
+	motto = dynn_shattershield_motto
+}
+
+dyn_sea_raider = { #Retainers of the Cruel-Sea
+	name = "dynn_Sea_Raider"
+	culture = eastmarcher
+	motto = dynn_searaider_motto
+}
+
+dyn_jurgald = {
+	name = "dynn_Jurgald"
+	culture = eastmarcher
+}
+dyn_stone_fist = {
+	name = "dynn_Two_Fists"
+	culture = eastmarcher
+	motto = dynn_stone_fist_motto
+}
+dyn_sour_stone = {
+	name = "dynn_Sour_Stone"
+	culture = eastmarcher
+}
+dyn_sail_mender = {
+	name = "dynn_Sail_Mender"
+	culture = eastmarcher
+}
+dyn_fire_mouth = {
+	name = "dynn_Fire_Mouth"
+	culture = eastmarcher
+}
+dyn_ashen_voice = {
+	name = "dynn_Ashen_Voice"
+	culture = eastmarcher
+}
+dyn_lothid = {
+	name = "dynn_Lothid"
+	culture = eastmarcher
+	motto = dynn_lothid_motto
+}
+dyn_keeneye = {
+	name = "dynn_Keen_Eye"
+	culture = eastmarcher
+	motto = dynn_keeneye_motto
+}
+dyn_winterthorn = {
+	name = "dynn_Winterthorn"
+	culture = eastmarcher
+}
+
+dyn_darkhammer = {
+	name = "dynn_Darkhammer"
+	culture = eastmarcher
+}
+
+dyn_highlander = {
+	name = "dynn_Highlander"
+	culture = eastmarcher
+}
+dyn_trollback = {
+	name = "dynn_Trollback"
+	culture = eastmarcher
+}
+dyn_firstlander = {
+	name = "dynn_Firstlander"
+	culture = eastmarcher
+}
+
+dyn_short_breath = { #Historical dynasty in Cyrodiil
+	name = "dynn_Short_Breath"
+	culture = eastmarcher
+}
+dyn_long_arm = { #Historical dynasty in Cyrodiil
+	name = "dynn_Long_Arm"
+	culture = eastmarcher
+}
+dyn_ironhand = {
+	name = "dynn_Ironhand"
+	culture = eastmarcher
+}
+dyn_smallhammer = {
+	name = "dynn_Small_Hammer"
+	culture = eastmarcher
+}
+dyn_timberclaw = {
+	name = "dynn_Timberclaw"
+	culture = eastmarcher
+}
+dyn_redblade = {
+	name = "dynn_Redblade"
+	culture = eastmarcher
+}
+dyn_redhand = {
+	name = "dynn_Red_Hand"
+	culture = eastmarcher
+}
+
+#Westmarcher: 310.000-319.999
+
+dyn_reachbreaker = {
+	name = "dynn_Reachbreaker"
+	culture = westmarcher
+	motto = dynn_reachbreaker_motto
+}
+dyn_cursebraid = {
+	name = "dynn_Cursebraid"
+	culture = westmarcher
+	motto = dynn_cursebraid_motto
+}
+dyn_thrice_pierced = {
+	name = "dynn_Bear_Heart"
+	culture = westmarcher
+	motto = dynn_thrice_pierced_motto
+}
+dyn_ghilred = {
+	name = "dynn_Ghilred"
+	culture = westmarcher
+	motto = dynn_ghilred_motto
+}
+dyn_axebite = {
+	name = "dynn_Axebite"
+	culture = westmarcher
+}
+dyn_blue_wall = {
+	name = "dynn_Blue_Wall"
+	culture = westmarcher
+}
+dyn_doom_sayer = {
+	name = "dynn_Doom_Sayer"
+	culture = westmarcher
+	motto = dynn_doom_sayer_motto
+}
+dyn_yngvlar = {
+	name = "dynn_Yngvlar"
+	culture = westmarcher
+	motto = dynn_yngvlar_motto
+}
+dyn_snow_whale = {
+	name = "dynn_Snow_Whale"
+	culture = westmarcher
+	motto = dynn_snowwhale_motto
+}
+dyn_ivory_blood = {	#bastard dynasty of Jolund Half-Mer
+	name = "dynn_Ivory_Blood"
+	culture = westmarcher
+}
+dyn_sword_poet = {
+	name = "dynn_Sword_Poet"
+	culture = westmarcher
+	motto = dynn_sword_poet_motto
+}
+dyn_twice_stabbed = {
+	name = "dynn_Twice_Stabbed"
+	culture = westmarcher
+}
+dyn_wood_hewn = {
+	name = "dynn_Wood_Hewn"
+	culture = westmarcher
+}
+dyn_head_rolling = {
+	name = "dynn_Head_Rolling"
+	culture = westmarcher
+}
+dyn_kyne_favored = {
+	name = "dynn_Kyne_Favored"
+	culture = westmarcher
+}
+dyn_fine_sword = {
+	name = "dynn_Fine_Sword"
+	culture = westmarcher
+}
+dyn_volunnar = {
+	name = "dynn_Volunnar"
+	culture = westmarcher
+}
+dyn_blackblade = {
+	name = "dynn_Blackblade"
+	culture = westmarcher
+}
+dyn_marsh_trotter = {
+	name = "dynn_marsh_trotter"
+	culture = westmarcher
+}
+dyn_red_tooth = {
+	name = "dynn_red_tooth"
+	culture = westmarcher
+}
+dyn_Raven_Hair = {
+	name = "dynn_Raven_Hair"
+	culture = westmarcher
+}
+dyn_freiretta = {
+	name = "dynn_Freiretta"
+	culture = westmarcher
+}
+#310015 = {
+#	name = "dynn_High_Wall"
+#	culture = westmarcher
+#	motto = dynn_highwall_motto
+#}
+dyn_dovahater = {
+	name = "dynn_Dovahater"
+	culture = westmarcher
+}
+
+#310017 = {
+#	name = "dynn_Alaldsen"
+#	culture = westmarcher
+#}
+
+dyn_numinex = {
+	name = "dynn_Numinex" #"Alansen"
+	culture = westmarcher
+}
+dyn_helgr = {
+	name = "dynn_Helgr"
+	culture = westmarcher
+}
+dyn_hellefrost = {
+	name = "dynn_Hellefrost"
+	culture = westmarcher
+}
+
+dyn_scalecaller = {
+	name = "dynn_scalecaller"
+	culture = westmarcher
+}
+
+dyn_runebrand = {
+	name = "dynn_runebrand"
+	culture = westmarcher
+}
+
+dyn_kjarnesen = {
+	name = "dynn_kjarnesen"
+	culture = westmarcher
+}
+
+#310019 = {
+#	name = "Alarsen"
+#	culture = westmarcher
+#}
+#
+#310020 = {
+#	name = "Alariksen"
+#	culture = westmarcher
+#}
+#
+#310021 = {
+#	name = "Alarkesen"
+#	culture = westmarcher
+#}
+#
+#310022 = {
+#	name = "Numinex"
+#	culture = westmarcher
+#	motto = dynn_placeholder_motto
+#}
+#
+#310023 = {
+#	name = "Farseer"
+#	culture = westmarcher
+#}
+#
+#310024 = {
+#	name = "Halfhand"
+#	culture = westmarcher
+#}
+#
+#310025 = {
+#	name = "Highlander"
+#	culture = westmarcher
+#}
+#
+#310026 = {
+#	name = "Tallowhand" 
+#	culture = westmarcher # should be skaal!
+#}
+#
+#310027 = {
+#	name = "Whitebeard"
+#	culture = westmarcher
+#}
+#
+#310028 = {
+#	name = "dynn_Half_Troll"
+#	culture = westmarcher
+#}
+#
+dyn_hard_heart = {
+	name = "dynn_Hard_Heart"
+	culture = westmarcher
+}
+#
+#310030 = {
+#	name = "dynn_Ice_Mane"
+#	culture = westmarcher
+#}
+#
+#
+#310031 = {
+#	name = "dynn_Axe_Wife"
+#	culture = westmarcher
+#}
+#
+#310032 = {
+#	name = "dynn_Blue_Tooth"
+#	culture = westmarcher
+#}
+#
+#310033 = {
+#	name = "dynn_Bold_Lute"
+#	culture = westmarcher
+#}
+#
+#310034 = {
+#	name = "dynn_Deep_Raed"
+#	culture = westmarcher
+#}
+#
+dyn_elf_hewer = {
+	name = "dynn_Elf_Hewer"
+	culture = westmarcher
+}
+#
+#310036 = {
+#	name = "dynn_Fine_Hair"
+#	culture = westmarcher
+#}
+#
+dyn_fire_eye = {
+	name = "dynn_Fire_Eye"
+	culture = westmarcher
+}
+#
+#310038 = {
+#	name = "dynn_Flat_Foot"
+#	culture = westmarcher
+#}
+#
+dyn_fork_beard = {
+	name = "dynn_Fork_Beard"
+	culture = westmarcher
+}
+#
+dyn_gray_wave = {
+	name = "dynn_Gray_Wave"
+	culture = westmarcher
+}
+dyn_icesail = {
+	name = "dynn_Icesail"
+	culture = westmarcher
+}
+dyn_ulterding = {
+	name = "dynn_Ulterding"
+	culture = westmarcher
+}
+dyn_berlinger = {
+	name = "dynn_Berlinger"
+	culture = westmarcher
+}
+dyn_redshoal = {
+	name = "dynn_Redshoal"
+	culture = westmarcher
+}
+dyn_snowmason = {
+	name = "dynn_Snowmason"
+	culture = westmarcher
+}
+
+dyn_volkihar = {
+	name = "dynn_Volkihar"
+	culture = westmarcher
+	motto = dynn_volkihar_motto
+}
+
+dyn_shatter_ice = {
+	name = "dynn_Shatter_Ice"
+	culture = westmarcher
+	motto = dynn_shatter_ice_motto
+}
+dyn_goldblood = {
+	name = "dynn_Goldblood"
+	culture = westmarcher
+}
+dyn_honeymaw = {
+	name = "dynn_Honeymaw"
+	culture = westmarcher
+}
+dyn_stormfist = {
+	name = "dynn_Stormfist"
+	culture = westmarcher
+	motto = dynn_stormfist_motto
+}
+dyn_dragonwrath = {
+	name = "dynn_Dragonwrath"
+	culture = westmarcher
+	motto = dynn_dragonwrath_motto
+}
+dyn_bloodsung = {
+	name = "dynn_Bloodsung"
+	culture = westmarcher
+}
+dyn_aald = {
+	name = "dynn_Aald"
+	culture = westmarcher
+}
+dyn_ysmjord = {
+	name = "dynn_Ysmjord"
+	culture = westmarcher
+}
+dyn_ale_ice = {
+	name = "dynn_Ale_Ice"
+	culture = westmarcher
+	motto = dynn_ale_ice_motto
+}
+dyn_whitebird = {
+	name = "dynn_Whitebird"
+	culture = westmarcher
+}
+dyn_eel_eared = {
+	name = "dynn_Eel_Eared"
+	culture = westmarcher
+}
+dyn_embervein = {
+	name = "dynn_Embervein"
+	culture = westmarcher
+}
+dyn_broadwall = {
+	name = "dynn_Broadwall"
+	culture = westmarcher
+	motto = dynn_broadwall_motto
+}
+dyn_halfhand = {
+	name = "dynn_Halfhand"
+	culture = westmarcher
+}
+dyn_bolger = {
+	name = "dynn_Bolger"
+	culture = westmarcher
+}
+dyn_blackbone = {
+	name = "dynn_Blackbone"
+	culture = westmarcher
+}
+dyn_knotbeard = {
+	name = "dynn_Knotbeard"
+	culture = westmarcher
+}
+dyn_winterborn = {
+	name = "dynn_Winterborn"
+	culture = westmarcher
+	motto = dynn_winterborn_motto
+}
+dyn_newsword = {
+	name = "dynn_New_Sword"
+	culture = westmarcher
+}
+dyn_axerester = {
+	name = "dynn_Axe_Rester"
+	culture = westmarcher
+}
+dyn_ironbeak = {
+	name = "dynn_Ironbeak"
+	culture = westmarcher
+}
+dyn_bloodstone = {
+	name = "dynn_Bloodstone"
+	culture = westmarcher
+}
+dyn_snowpelt = {
+	name = "dynn_Snowpelt"
+	culture = westmarcher
+}
+
+#Cyro-Nord: 320.000-329.999
+
+dyn_saltbreaker = {
+	name = "dynn_Salt_Breaker"
+	culture = cyro_nord
+}
+dyn_skjoralmor = {
+	name = "dynn_Skjoralmor"
+	culture = westmarcher
+	motto = dynn_skjoralmor_motto
+}
+dyn_starsong = {
+	name = "dynn_Star_Song"
+	culture = cyro_nord
+	motto = dynn_starsong_motto
+}
+dyn_frostbeard = {
+	name = "dynn_Frost_Beard"
+	culture = cyro_nord
+	motto = dynn_frostbeard_motto
+}
+dyn_brittleblade = {
+	name = "dynn_Brittleblade"
+	culture = cyro_nord
+}
+dyn_stormcatcher = {
+	name = "dynn_Storm_Catcher"
+	culture = cyro_nord
+}
+dyn_wolfgale = {
+	name = "dynn_Wolf_Gale"
+	culture = cyro_nord
+}
+dyn_vlinorman = {
+	name = "dynn_Vlinorman"
+	culture = cyro_nord
+}
+dyn_iceheart = {
+	name = "dynn_Ice_Heart"
+	culture = cyro_nord
+}
+dyn_trollvanquisher = {
+	name = "dynn_Troll_Vanquisher"
+	culture = cyro_nord
+}
+dyn_ralof = {
+	prefix = "dynnp_of"
+	name = "dynn_Ralof"
+	culture = cyro_nord
+}
+dyn_farseeker = {
+	name = "dynn_Far_Seeker"
+	culture = cyro_nord
+}
+dyn_mahunter = {
+	name = "dynn_Man_Hunter"
+	culture = cyro_nord
+}
+
+dyn_palestone = {
+	name = "dynn_Palestone"
+	culture = westmarcher
+}
+dyn_brumaht = {
+	name = "dynn_Brumaht"
+	culture = cyro_nord
+}
+dyn_bruiant = {
+	name = "dynn_Bruiant"
+	culture = cyro_nord
+}
+
+dyn_hellebor = {
+	name = "dynn_Hellebor"
+	culture = cyro_nord
+}
+
+dyn_venukkus = {
+	name = "dynn_Venukkus"
+	culture = westmarcher
+}
+dyn_starshield = {
+	name = "dynn_Star_Shield"
+	culture = cyro_nord
+}
+dyn_foe_slayer = {
+	name = "dynn_Foe_Slayer"
+	culture = cyro_nord
+}
+dyn_halgern = {
+	name = "dynn_Halgren"
+	culture = cyro_nord
+}
+dyn_gatebasher = {
+	name = "dynn_Gate_Basher"
+	culture = cyro_nord
+}
+dyn_grimfang = {
+	name = "dynn_Grim_Fang"
+	culture = cyro_nord
+}
+dyn_mistrunner = {
+	name = "dynn_Mist_Runner"
+	culture = cyro_nord
+}
+dyn_hearteater = {
+	name = "dynn_Heart_Eater"
+	culture = cyro_nord
+}
+dyn_stormwraith = {
+	name = "dynn_Storm_Wraith"
+	culture = cyro_nord
+}
+dyn_stagheart = {
+	name = "dynn_Stag_Heart"
+	culture = cyro_nord
+}
+dyn_boldclaw = {
+	name = "dynn_Bold_Claw"
+	culture = cyro_nord
+}
+dyn_stoneheaver = {
+	name = "dynn_Stoneheaver"
+	culture = cyro_nord
+}
+dyn_firebelly = {
+	name = "dynn_Fire_Belly"
+	culture = cyro_nord
+}
+
+#Atmoran: 330.000-339.999
+dyn_atmora = {
+	prefix = "dynnp_of"
+	name = "dynn_Atmora" # Wulfharth's dynasty
+	culture = atmoran
+	motto = dynn_wulfharth_motto
+}
+
+dyn_grim_fist = {
+	name = "dynn_Grim_Fist"
+	culture = atmoran
+}
+
+#Skaal: 340.000-349.999
+
+dyn_death_brand = { # Deathbrand
+	name = "dynn_Death_Brand"
+	culture = skaal
+	motto = dynn_deathbrand_motto
+}
+
+dyn_heart_fang = {
+	name = "dynn_Heart_Fang"
+	culture = skaal
+	motto = dynn_heart_fang_motto
+}
+
+dyn_ice_mane = {
+	name = "dynn_Ice_Mane"
+	culture = skaal
+	motto = dynn_ice_mane_motto
+}
+
+dyn_bloodskal = {
+	name = "dynn_Bloodskal"
+	culture = skaal
+	motto = dynn_bloodskal_motto
+}
+
+dyn_red_spear = {
+	name = "dynn_Red_Spear"
+	culture = skaal
+}
+
+dyn_snow_song = {
+	name = "dynn_Snow_Song"
+	culture = skaal
+}
+
+dyn_crag_strider = {
+	name = "dynn_Crag_Strider"
+	culture = skaal
+	motto = dynn_cragstrider_motto
+}
+#dyn_strong_voice = {
+#	name = "dynn_Strong_Voice"
+#	culture = skaal
+#}
+
+#EK TODO: old reachman dynasties that can be used for nords
+#500024 = {
+#	name = "Silvertalon"
+#	culture = reachfolk
+#}
+#500025 = {
+#	name = "Heartspire"
+#	culture = reachfolk
+#}
+#500028 = {
+#	name = "Greenskull"
+#	culture = reachfolk
+#}
+#500031 = {
+#	name = "Icetalon"
+#	culture = reachfolk
+#}
+#500032 = {
+#	name = "Fairfeather"
+#	culture = reachfolk
+#}
+#500035 = {
+#	name = "Blackmantle"
+#	culture = reachfolk
+#}
+#500036 = {
+#	name = "Stormsinger"
+#	culture = reachfolk
+#}
+#500037 = {
+#	name = "Blackthumb"
+#	culture = reachfolk
+#}
+#500041 = {
+#	name = "Trollslaughter"
+#	culture = reachfolk
+#}
+#500046 = {
+#	name = "Blackoath"
+#	culture = reachfolk
+#}
+#500048 = {
+#	name = "Boneshaper"
+#	culture = reachfolk
+#}
+#500052 = {
+#	name = "Dark Witness"
+#	culture = reachfolk
+#}
+#
+#500053 = {
+#	name = "Deathwing"
+#	culture = reachfolk
+#}
+#
+#500054 = {
+#	name = "Doomfang"
+#	culture = reachfolk
+#}
+#
+#500055 = {
+#	name = "Dragonclaw"
+#	culture = reachfolk
+#}
+#
+#500056 = {
+#	name = "Eagleseer"
+#	culture = reachfolk
+#}
+#rageclaw = {
+#	name = "Rageclaw"
+#	culture = reachfolk
+#}
+#
+#
+#500067 = {
+#	name = "Shadowbloom"
+#	culture = reachfolk
+#}
+#
+#500068 = {
+#	name = "The Shunned Ones"
+#	culture = reachfolk
+#}
+#
+#500070 = {
+#	name = "Skyweaver"
+#	culture = reachfolk
+#}
+#
+#500071 = {
+#	name = "Spiritdancer"
+#	culture = reachfolk
+#}
+#
+#500072 = {
+#	name = "dynn_Spirit_Tale"
+#	culture = reachfolk
+#}
+#
+#500075 = {
+#	name = "Stonetalon"
+#	culture = reachfolk
+#}
+#
+#500076 = {
+#	name = "Stranglehollow"
+#	culture = reachfolk
+#}
+#
+#500078 = {
+#	name = "Timbercrow"
+#	culture = reachfolk
+#}
+#
+#500079 = {
+#	name = "Treeshade"
+#	culture = reachfolk
+#}
+#
+#500080 = {
+#	name = "Twisted Briar"
+#	culture = reachfolk
+#}
+
+#EK NOTE: Haafingar dynasty per TES4, don't think we really need it
+# dyn_dugal = {
+# 	prefix = "dynnp_ap"
+# 	name = "dynn_Dugal"
+# 	culture = strident
+# 	motto = dynn_dugal_motto
+# }

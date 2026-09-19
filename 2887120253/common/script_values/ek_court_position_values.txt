@@ -1,0 +1,965 @@
+﻿court_mage_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = court_mage } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = court_mage
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = court_mage } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = court_mage } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+court_mage_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = court_mage } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = court_mage
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = court_mage }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = court_mage }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+housecarl_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = court_housecarl } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = court_housecarl
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = court_housecarl } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = court_housecarl } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+loremaster_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = loremaster } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = loremaster
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = loremaster } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = loremaster } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+loremaster_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = loremaster } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = loremaster
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = loremaster }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = loremaster }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+huntwife_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = huntwife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = huntwife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = huntwife } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = huntwife } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+huntwife_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = huntwife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = huntwife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = huntwife }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = huntwife }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+forgewife_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = forgewife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = forgewife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = forgewife } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = forgewife } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+forgewife_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = forgewife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = forgewife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = forgewife }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = forgewife }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+hearthwife_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = hearthwife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = hearthwife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = hearthwife } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = hearthwife } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+hearthwife_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = hearthwife } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = hearthwife
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = hearthwife }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = hearthwife }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+shadowscale_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = shadowscale } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = shadowscale
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = shadowscale } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = shadowscale } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+shadowscale_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = shadowscale } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = shadowscale
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = shadowscale }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = shadowscale }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+clan_mother_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = clan_mother } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = clan_mother
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = clan_mother } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = clan_mother } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+clan_mother_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = clan_mother } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = clan_mother
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = clan_mother }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = clan_mother }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+enforcer_total_salary_value = {
+	value = medium_court_position_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = enforcer } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+    else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = enforcer
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+    # Halved salary
+	if = {
+		limit = { court_position_halved_salary_trigger = { POS = enforcer } }
+		multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = { court_position_increased_salary_trigger = { POS = enforcer } }
+	    multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { scope:liege ?= { government_has_flag = government_is_landless_adventurer } }
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}
+
+enforcer_prestige_salary_value = {
+	value = medium_court_position_prestige_salary # Update X_salary_tooltip if script_value is changed
+	# Set to 0 with Dynasty Perk Inner Circle
+	if = {
+		limit = { court_position_inner_circle_salary_trigger = { POS = enforcer } }
+		multiply = {
+			value = 0
+			desc = inner_circle_salary_mod
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved via obligation hook
+	else_if = {
+		limit = {
+			court_position_obligation_hook_salary_trigger = {
+				POS = enforcer
+				LIEGE = scope:liege
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = obligation_hook_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Halved salary
+	if = {
+		limit = {
+			court_position_halved_salary_trigger = { POS = enforcer }
+		}
+	    multiply = {
+			value = 0.5
+			desc = court_position_halved_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	# Increased salary
+	if = {
+		limit = {
+			court_position_increased_salary_trigger = { POS = enforcer }
+		}
+		multiply = {
+			value = 1.5
+			desc = court_position_increased_salary
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+	#You're working with LAAMPS now
+	if = {
+		limit = { 
+			scope:liege ?= { government_has_flag = government_is_landless_adventurer }
+		}
+		multiply = {
+			value = 0
+			desc = court_position_laamps_free
+			format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+		}
+	}
+}

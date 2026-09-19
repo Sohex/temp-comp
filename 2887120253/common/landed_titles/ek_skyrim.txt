@@ -1,0 +1,6679 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+##############
+#Skyrim Block
+##############
+
+e_skyrim = {
+	color = { 45 100 255 }
+	
+
+	cultural_names = {
+		#aldmeris
+		name_list_ayleid = cn_falmereth
+		name_list_falmer = cn_falmereth
+		#Reachmen
+		name_list_reachfolk = cn_marwyr #Marwyr, Mar- (above, reachspeak) -wyr (sky, from welsh)
+		#goblin
+		name_list_goblin = cn_skrum
+	}
+
+	#capital = c_windhelm
+	can_be_named_after_dynasty = no
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_atmoran }
+			}
+			add = @correct_culture_primary_score
+				}
+		}
+
+	k_windhelm = {
+		color = { 45 102 173 }
+		
+
+		capital = c_windhelm
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_ayleid = cn_silator_twyll
+			name_list_falmer = cn_silator_twyll
+			name_list_dwemer = cn_mzulft
+		}
+
+		d_windhelm = {
+			color = { 46 102 183 }
+
+			cultural_names = {
+				name_list_dwemer = cn_ragnthar
+			}
+			
+
+			capital = c_windhelm
+
+			cultural_names = {
+				name_list_ayleid = cn_angatulmath
+				name_list_falmer = cn_angatulmath
+			}
+
+			can_create = {
+				completely_controls = title:d_windhelm.title_capital_county
+			}
+
+			c_windhelm = {
+				color = { 36 111 191 }
+				
+				cultural_names = {
+					name_list_ayleid = cn_angatulmath
+					name_list_falmer = cn_angatulmath
+				}
+
+				b_windhelm = {
+					province = 1116
+
+					color = { 36 111 191 }
+				
+					cultural_names = {
+						name_list_ayleid = cn_angatulmath
+						name_list_falmer = cn_angatulmath
+					}
+					
+				}
+				b_palace_of_kings = {
+					province = 1115
+
+					color = { 36 111 191 }
+					
+				}
+				b_snow_quarter = {
+					province = 4233
+
+					color = { 36 111 191 }
+					
+				}
+				b_lower_yorgrim = {
+					province = 1117
+
+					color = { 36 111 191 }
+					
+				}
+				b_brandy_mug = {
+					province = 1118
+
+					color = { 36 111 191 }
+					
+				}
+				b_southbridge = {
+					province = 1119
+
+					color = { 36 111 191 }
+					
+				}
+			}
+			c_hollyfrost = {
+				color = { 32 102 189 }
+
+				b_hollyfrost = {
+					province = 1122
+
+					color = { 32 102 189 }
+					
+				}
+				b_yngol_barrow = {
+					province = 1120
+
+					color = { 32 102 189 }
+					
+				}
+				b_chill_hollow = {
+					province = 1121
+
+					color = { 32 102 189 }
+					
+				}
+				b_giant_heart = {
+					province = 1123
+
+					color = { 32 102 189 }
+					
+				}
+				b_traitor_post = {
+					province = 2717
+
+					color = { 32 102 189 }
+					
+				}
+			}
+			c_shorflow = {
+				color = { 53 125 183 }
+				
+
+				b_shorflow = {
+					province = 1124
+
+					color = { 53 125 183 }
+					
+				}
+				b_storjdal = {
+					province = 1125
+
+					color = { 53 125 183 }
+					
+				}
+			}
+			c_lothbrand = {
+				color = { 75 110 131 }
+				
+
+				b_lothbrand = {
+					province = 5839
+
+					color = { 75 110 131 }
+					
+				}
+				b_yngolshoj = {
+					province = 5840
+
+					color = { 75 110 131 }
+					
+				}
+			}
+			c_falkirstead = {
+				color = { 60 72 89 }
+				
+
+				b_falkirstead = {
+					province = 5836
+
+					color = { 60 72 89 }
+					
+				}
+				b_valholl = {
+					province = 5837
+
+					color = { 60 72 89 }
+					
+				}
+				b_asthyll = {
+					province = 5838
+
+					color = { 60 72 89 }
+					
+				}
+			}
+		}
+		d_morvunskar = {
+			color = { 32 90 173 }
+			
+
+			capital = c_morvunskar
+
+			cultural_names = {
+				name_list_mountain_orc = cn_cradlecrush
+				name_list_iron_orc = cn_cradlecrush
+				name_list_wood_orc = cn_cradlecrush
+				name_list_dwemer = cn_mhuvnak
+			}
+
+			can_create = {
+				completely_controls = title:d_morvunskar.title_capital_county
+			}
+
+			c_morvunskar = {
+				color = { 32 90 173 }
+				
+
+				b_morvunskar = {
+					province = 1112
+
+					color = { 32 90 173 }
+					
+				}
+				b_giant_run = {
+					province = 1111
+
+					color = { 32 90 173 }
+					
+				}
+				b_uttering_hill = {
+					province = 1113
+
+					color = { 32 90 173 }
+					
+				}
+				b_mara_eye = {
+					province = 1114
+
+					color = { 32 90 173 }
+					
+				}
+				b_grinning_horker = {
+					province = 1181
+
+					color = { 32 90 173 }
+					
+				}
+			}
+			c_gallows_rock = {
+				color = { 39 98 177 }
+				
+
+				b_gallows_rock = {
+					province = 1097
+
+					color = { 39 98 177 }
+					
+				}
+				b_rageclaw = {
+					province = 1098
+
+					color = { 39 98 177 }
+					
+				}
+			}
+			c_mixwater = {
+				color = { 31 87 167 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_cradlecrush
+					name_list_iron_orc = cn_cradlecrush
+					name_list_wood_orc = cn_cradlecrush
+					name_list_dwemer = cn_mhuvnak
+				}
+
+				b_frostvault = {
+					province = 1100
+
+					color = { 31 87 167 }
+					
+
+					cultural_names = {
+						name_list_mountain_orc = cn_cradlecrush
+						name_list_iron_orc = cn_cradlecrush
+						name_list_wood_orc = cn_cradlecrush
+						name_list_dwemer = cn_mhuvnak
+					}
+				}
+				b_mixwater = {
+					province = 1099
+
+					color = { 31 87 167 }
+					
+				}
+			}
+			c_yssgrim = {
+				color = { 32 70 90 }
+				
+
+				b_yssgrim = {
+					province = 5841
+
+					color = { 32 70 90 }
+					
+				}
+				b_kaltarbor = {
+					province = 5842
+
+					color = { 32 70 90 }
+					
+				}
+			}
+		}
+		d_amol = {
+			color = { 38 68 127 }
+			
+
+			capital = c_amol
+
+			can_create = {
+				completely_controls = title:d_amol.title_capital_county
+			}
+
+			c_amol = {
+				color = { 18 62 134 }
+				
+
+				b_fort_amol = {
+					province = 1078
+
+					color = { 18 62 134 }
+					
+				}
+				b_amol = {
+					province = 1077
+
+					color = { 18 62 134 }
+					
+				}
+				b_lost_knives = {
+					province = 1079
+
+					color = { 18 62 134 }
+					
+				}
+				b_frostwater = {
+					province = 1080
+
+					color = { 18 62 134 }
+					
+				}
+			}
+			c_darkshade = {
+				color = { 26 81 140 }
+				
+
+				b_darkshade = {
+					province = 1074
+
+					color = { 26 81 140 }
+					
+				}
+				b_hillgrund_tomb = {
+					province = 1075
+
+					definite_form = yes
+
+					color = { 26 81 140 }
+					
+				}
+				b_fellheim = {
+					province = 1076
+
+					color = { 26 81 140 }
+					
+				}
+			}
+			c_snowgrad = {
+				color = { 19 61 121 }
+				
+
+				b_snowgrad = {
+					province = 1058
+
+					color = { 19 61 121 }
+					
+				}
+				b_volunhall = {
+					province = 1055
+
+					color = { 19 61 121 }
+					
+				}
+				b_shorrun = {
+					province = 1056
+
+					color = { 19 61 121 }
+					
+				}
+				b_whitestone = {
+					province = 1057
+
+					color = { 19 61 121 }
+					
+				}
+			}
+			c_pargran = {
+				color = { 22 69 132 }
+				
+
+				b_pargran = {
+					province = 1062
+
+					color = { 22 69 132 }
+					
+				}
+				b_jarnmalm = {
+					province = 1059
+
+					color = { 22 69 132 }
+					
+				}
+				b_fagrskinna = {
+					province = 1060
+
+					color = { 22 69 132 }
+					
+				}
+				b_porsgrun = {
+					province = 1061
+
+					color = { 22 69 132 }
+					
+				}
+			}
+		}
+		d_aalto = {
+			color = { 91 137 201 }
+			
+
+			capital = c_aalto
+
+			can_create = {
+				completely_controls = title:d_aalto.title_capital_county
+			}
+
+			c_aalto = {
+				color = { 65 91 147 }
+				
+
+				b_aalto = {
+					province = 1082
+
+					color = { 65 91 147 }
+					
+				}
+				b_broken_limbs = {
+					province = 1081
+
+					color = { 65 91 147 }
+					
+				}
+			}
+			c_wittestadr = {
+				color = { 77 128 192 }
+				
+
+				b_wittestadr = {
+					province = 1087
+
+					color = { 77 128 192 }
+					
+				}
+				b_bonestrewn_crest = {
+					province = 1086
+
+					color = { 77 128 192 }
+					
+				}
+				b_skerd = {
+					province = 1088
+
+					color = { 77 128 192 }
+					
+				}
+			}
+			c_cronvangr = {
+				color = { 74 113 165 }
+
+				b_cronvangr = {
+					province = 1103
+
+					color = { 74 113 165 }
+					
+				}
+				b_riversite = {
+					province = 1101
+
+					color = { 74 113 165 }
+					
+				}
+				b_witchmist = {
+					province = 1102
+
+					color = { 74 113 165 }
+					
+				}
+			}
+		}
+		d_kynesgrove = {
+			color = { 49 112 178 }
+			
+
+			capital = c_kynesgrove
+
+			can_create = {
+				completely_controls = title:d_kynesgrove.title_capital_county
+			}
+			
+			c_kynesgrove = {
+				color = { 43 106 179 }
+
+				cultural_names = {
+					name_list_dwemer = cn_ragnthar
+				}
+
+				b_kynesgrove = {
+					province = 1107
+
+					color = { 43 106 179 }
+					
+				}
+				b_frost_tree = {
+					province = 1104
+
+					color = { 43 106 179 }
+					
+				}
+				b_ragnthar = {
+					province = 1105
+
+					color = { 43 106 179 }
+					
+				}
+				b_icehammer = {
+					province = 1106
+
+					color = { 43 106 179 }
+					
+				}
+			}
+			c_gloombound = {
+				color = { 51 106 150 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_narzulbur
+					name_list_iron_orc = cn_narzulbur
+					name_list_wood_orc = cn_narzulbur
+				}
+
+				b_gloombound = {
+					province = 1109
+
+					color = { 51 106 150 }
+					
+				}
+				b_narzulbur = {
+					province = 1108
+
+					color = { 51 106 150 }
+					
+				}
+				b_karlaz = {
+					province = 1110
+
+					color = { 51 106 150 }
+					
+				}
+			}
+			c_cragwallow = {
+				color = { 59 127 190 }
+				
+
+				b_cragwallow = {
+					province = 1089
+
+					color = { 59 127 190 }
+					
+				}
+				b_scarrund = {
+					province = 1090
+
+					color = { 59 127 190 }
+					
+				}
+				b_thuvald = {
+					province = 1091
+
+					color = { 59 127 190 }
+					
+				}
+				b_steamcrag = {
+					province = 1092
+
+					color = { 59 127 190 }
+					
+				}
+			}
+		}
+		d_mistwatch = {
+			color = { 60 106 159 }
+			
+
+			capital = c_mistwatch
+
+			can_create = {
+				completely_controls = title:d_mistwatch.title_capital_county
+			}
+
+			c_mistwatch = {
+				color = { 43 98 162 }
+				
+
+				b_mistwatch = {
+					province = 1065
+
+					color = { 43 98 162 }
+					
+				}
+				b_darkpass = {
+					province = 1063
+
+					color = { 43 98 162 }
+					
+				}
+				b_reich_corigate = {
+					province = 1064
+
+					color = { 43 98 162 }
+					
+				}
+			}
+			c_darkwater = {
+				color = { 73 111 160 }
+				
+
+				b_darkwater = {
+					province = 1085
+
+					color = { 73 111 160 }
+					
+				}
+				b_eldergleam = {
+					province = 1083
+
+					color = { 73 111 160 }
+					
+				}
+				b_atronach_rock = {
+					province = 1084
+
+					color = { 73 111 160 }
+					
+				}
+			}
+			c_nilheim = {
+				color = { 42 60 107 }
+				
+
+				b_nilheim = {
+					province = 1026
+
+					color = { 42 60 107 }
+					
+				}
+				b_thorshavn = {
+					province = 5831
+
+					color = { 42 60 107 }
+					
+				}
+			}
+		}
+		d_ansilvund = {
+			color = { 49 112 178 }
+			
+
+			capital = c_ansilvund
+
+			cultural_names = {
+				name_list_mountain_orc = cn_narzulbur
+				name_list_iron_orc = cn_narzulbur
+				name_list_wood_orc = cn_narzulbur
+				name_list_dwemer = cn_mzulft
+			}
+
+			can_create = {
+				completely_controls = title:d_ansilvund.title_capital_county
+			}
+
+			c_ansilvund = {
+				color = { 52 123 165 }
+
+				cultural_names = {
+					name_list_dwemer = cn_kagrenzel
+				}
+
+				b_ansilvund = {
+					province = 1071
+
+					color = { 52 123 165 }
+					
+				}
+				b_cragslane = {
+					province = 1070
+
+					color = { 52 123 165 }
+					
+				}
+				b_kagrenzel = {
+					province = 1072
+
+					color = { 52 123 165 }
+					
+				}
+				b_tolvald = {
+					province = 1073
+
+					color = { 52 123 165 }
+					
+				}
+			}
+			c_bitterblade = {
+				color = { 52 123 172 }
+				
+				cultural_names = {
+					name_list_dwemer = cn_mzulft
+				}
+
+				b_bitterblade = {
+					province = 1094
+
+					color = { 52 123 172 }
+					
+				}
+				b_mzulft = {
+					province = 1093
+
+					color = { 52 123 172 }
+					
+				}
+				b_jorrun_stand = {
+					province = 1095
+
+					color = { 52 123 172 }
+					
+				}
+			}
+			c_icewind = {
+				color = { 39 94 150 }
+				
+
+				b_icewind = {
+					province = 1067
+
+					color = { 39 94 150 }
+					
+				}
+				b_old_sord = {
+					province = 1066
+
+					color = { 39 94 150 }
+					
+				}
+				b_stormcrag = {
+					province = 1068
+
+					color = { 39 94 150 }
+					
+				}
+				b_hfirorg = {
+					province = 1069
+
+					color = { 39 94 150 }
+					
+				}
+			}
+			c_sjorsten = {
+				color = { 52 61 84 }
+				
+
+				b_sjorsten = {
+					province = 5832
+
+					color = { 52 61 84 }
+					
+				}
+				b_valdris = {
+					province = 5833
+
+					color = { 52 61 84 }
+					
+				}
+				b_stellarvik = {
+					province = 5834
+
+					color = { 52 61 84 }
+					
+				}
+				b_muspelfort = {
+					province = 5835
+
+					color = { 52 61 84 }
+					
+				}
+			}
+		}
+	}
+	k_morthal = {
+		color = { 164 194 146 }
+		
+
+		capital = c_morthal
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#Atmorans
+			name_list_atmoran = cn_drajkmyr
+			name_list_skaal = cn_drajkmyr
+			name_list_atmoran_giant = cn_drajkmyr
+			#Elves
+			name_list_ayleid = cn_nenyond
+			name_list_falmer = cn_nenyond
+		}
+
+		d_morthal = {
+			color = { 179 219 158 }
+			
+
+			capital = c_morthal
+
+			cultural_names = {
+				name_list_ayleid = cn_nenyond
+				name_list_falmer = cn_nenyond
+			}
+
+			can_create = {
+				completely_controls = title:d_morthal.title_capital_county
+			}
+
+			c_morthal = {
+				color = { 170 212 113 }
+				
+				cultural_names = {
+					name_list_ayleid = cn_nenagasel
+					name_list_falmer = cn_nenagasel
+				}
+
+				b_morthal = {
+					province = 1354
+
+					color = { 170 212 113 }
+
+					cultural_names = {
+						name_list_ayleid = cn_nenagasel
+						name_list_falmer = cn_nenagasel
+					}
+					
+				}
+				b_highmoon = {
+					province = 1353
+
+					color = { 170 212 113 }
+					
+				}
+				b_morthal_barrows = {
+					province = 1355
+
+					color = { 170 212 113 }
+					
+				}
+				b_dunholm = {
+					province = 1356
+
+					color = { 170 212 113 }
+					
+				}
+				b_laesten = {
+					province = 1357
+
+					color = { 170 212 113 }
+					
+				}
+			}
+			c_wildsung = {
+				color = { 170 215 125 }
+
+				b_wildsung = {
+					province = 1358
+
+					color = { 170 215 125 }
+					
+				}
+				b_sagard = {
+					province = 1359
+
+					color = { 170 215 125 }
+					
+				}
+			}
+			c_hailstone = {
+				color = { 163 206 122 }
+
+				b_stonehills = {
+					province = 1347
+
+					color = { 163 206 122 }
+					
+				}
+				b_hailstone = {
+					province = 1346
+
+					color = { 163 206 122 }
+					
+				}
+			}
+			c_myrwatch = {
+				color = { 165 203 119 }
+
+				b_myrwatch = {
+					province = 1360
+
+					color = { 165 203 119 }
+					
+				}
+				b_guthlac = {
+					province = 1415
+
+					color = { 165 203 119 }
+					
+				}
+				b_dresten = {
+					province = 1416
+
+					color = { 165 203 119 }
+					
+				}
+			}
+			c_valkygg = {
+				color = { 190 220 156 }
+				
+
+				b_valkygg = {
+					province = 1361
+
+					color = { 190 220 156 }
+					
+				}
+				b_labyrinthian = {
+					province = 1363
+
+					color = { 190 220 156 }
+					
+				}
+				b_helmsdeep = {
+					province = 1362
+
+					color = { 190 220 156 }
+					
+				}
+			}
+		}
+		d_chillvale = {
+			color = { 119 165 95 }
+			
+
+			capital = c_amberguard
+
+			cultural_names = {
+				name_list_atmoran = cn_hjaalvale
+				name_list_eastmarcher = cn_hjaalvale
+				name_list_westmarcher = cn_hjaalvale
+				name_list_cyro_nord = cn_hjaalvale
+				name_list_atmoran_giant = cn_hjaalvale
+				#orsimer
+				name_list_mountain_orc = cn_muranak
+				name_list_iron_orc = cn_muranak
+				name_list_wood_orc = cn_muranak
+			}
+
+			can_create = {
+				completely_controls = title:d_chillvale.title_capital_county
+			}
+
+			c_amberguard = {
+				color = { 93 143 67 }
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_muranak
+					name_list_iron_orc = cn_muranak
+					name_list_wood_orc = cn_muranak
+				}
+				
+
+				b_amberguard = {
+					province = 1316
+
+					color = { 93 143 67 }
+					
+				}
+				b_gefyr = {
+					province = 1315
+
+					color = { 93 143 67 }
+					
+				}
+				b_orotheim = {
+					province = 1317
+
+					color = { 93 143 67 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_muranak
+						name_list_iron_orc = cn_muranak
+						name_list_wood_orc = cn_muranak
+					}
+					
+				}
+			}
+			c_chillwind = {
+				color = { 119 158 93 }
+				
+
+				b_chillwind = {
+					province = 1318
+
+					color = { 119 158 93 }
+					
+				}
+				b_nilfheim = {
+					province = 1319
+
+					color = { 119 158 93 }
+					
+				}
+				b_kjarta = {
+					province = 1320
+
+					color = { 119 158 93 }
+					
+				}
+			}
+			c_old_karth = {
+				color = { 90 133 63 }
+				
+
+				b_old_karth = {
+					province = 1322
+
+					color = { 90 133 63 }
+					
+				}
+				b_gwenstaed = {
+					province = 1321
+
+					color = { 90 133 63 }
+					
+				}
+				b_robber_gorge = {
+					province = 1323
+
+					color = { 90 133 63 }
+					
+				}
+			}
+			c_coldrock = {
+				color = { 98 138 68 }
+				
+
+				b_coldrock = {
+					province = 1365
+
+					color = { 98 138 68 }
+					
+
+				}
+				b_dead_men_respite = {
+					province = 1364
+
+					color = { 98 138 68 }
+					
+				}
+				b_karmist = {
+					province = 454
+
+					color = { 98 138 68 }
+					
+				}
+			}
+		}
+		d_snowhawk = {
+			color = { 136 170 118 }
+			
+
+			capital = c_snowhawk
+
+			can_create = {
+				completely_controls = title:d_snowhawk.title_capital_county
+			}
+
+			c_snowhawk = {
+				color = { 181 230 163 }
+				
+
+				b_snowhawk = {
+					province = 1329
+
+					color = { 181 230 163 }
+					
+				}
+				b_black_morass = {
+					province = 1328
+
+					color = { 181 230 163 }
+					
+				}
+				b_haesten = {
+					province = 1330
+
+					color = { 181 230 163 }
+					
+				}
+				b_shearwatch = {
+					province = 1331
+
+					color = { 181 230 163 }
+					
+				}
+				b_meeko = {
+					province = 1332
+
+					color = { 181 230 163 }
+					
+				}
+			}
+			c_valmund = {
+				color = { 158 215 140 }
+				
+
+				b_valmund = {
+					province = 1327
+
+					color = { 158 215 140 }
+					
+				}
+				b_einherjar = {
+					province = 1326
+
+					color = { 158 215 140 }
+					
+				}
+			}
+			c_korleva = {
+				color = { 142 189 125 }
+				
+
+				b_korleva = {
+					province = 1324
+
+					color = { 142 189 125 }
+					
+				}
+				b_volger = {
+					province = 1325
+
+					color = { 142 189 125 }
+					
+				}
+			}
+		}
+		d_drajkmyr = {
+			color = { 92 99 65 }
+			
+
+			capital = c_stormhawk
+
+			can_create = {
+				completely_controls = title:d_drajkmyr.title_capital_county
+			}
+
+			c_stormhawk = {
+				color = { 77 91 51 }
+				
+
+				b_stormhawk = {
+					province = 1335
+
+					color = { 77 91 51 }
+					
+				}
+				b_kendheld = {
+					province = 1333
+
+					color = { 77 91 51 }
+					
+				}
+				b_folgunthur = {
+					province = 1334
+
+					color = { 77 91 51 }
+					
+				}
+			}
+			c_morvunrund = {
+				color = { 97 115 63 }
+				
+
+				b_morvunrund = {
+					province = 1337
+
+					color = { 97 115 63 }
+					
+				}
+				b_iliivatu = {
+					province = 5774
+
+					color = { 65 70 98 }
+					
+				}
+			}
+			c_hjalvik = {
+				color = { 33 47 69 }
+				
+
+				b_hjalvik = {
+					province = 1336
+
+					color = { 33 47 69 }
+					
+				}
+				b_frenja = {
+					province = 5775
+
+					color = { 33 47 69 }
+					
+				}
+			}
+			c_gruelan = {
+				color = { 85 114 63 }
+				
+
+				b_gruelan = {
+					province = 1351
+
+					color = { 85 114 63 }
+					
+				}
+				b_morvarth = {
+					province = 1352
+
+					color = { 85 114 63 }
+					
+				}
+			}
+			c_kjenstag = {
+				color = { 96 115 70 }
+				
+
+				b_kjenstag = {
+					province = 1349
+
+					color = { 96 115 70 }
+					
+				}
+				b_kjanheim = {
+					province = 1348
+
+					color = { 96 115 70 }
+					
+				}
+				b_merzen = {
+					province = 1350
+
+					color = { 96 115 70 }
+					
+				}
+			}
+		}
+		d_winstad = {
+			color = { 105 139 96 }
+			
+
+			capital = c_winstad
+
+			can_create = {
+				completely_controls = title:d_winstad.title_capital_county
+			}
+
+			c_winstad = {
+				color = { 108 139 87 }
+				
+
+				b_winstad = {
+					province = 1338
+
+					color = { 108 139 87 }
+					
+				}
+				b_ysel = {
+					province = 1339
+
+					color = { 108 139 87 }
+					
+				}
+				b_ustengrav = {
+					province = 1340
+
+					color = { 108 139 87 }
+					
+				}
+			}
+			c_hammerhall = {
+				color = { 142 167 107 }
+				
+
+				b_hammerhall = {
+					province = 1344
+
+					color = { 142 167 107 }
+					
+				}
+				b_bjestor = {
+					province = 1345
+
+					color = { 142 167 107 }
+					
+				}
+			}
+			c_hunstand = {
+				color = { 125 151 90 }
+				
+
+				b_hunstand = {
+					province = 1341
+
+					color = { 125 151 90 }
+					
+				}
+				b_berjord = {
+					province = 1342
+
+					color = { 125 151 90 }
+					
+				}
+				b_hjaalstorm = {
+					province = 1343
+
+					color = { 125 151 90 }
+					
+				}
+			}
+		}
+	}
+	k_solitude = {
+		color = { 104 27 27 }
+		
+
+		capital = c_solitude
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#reachfolk
+			name_list_reachfolk = cn_kilkreath
+			#nordic
+			name_list_skaal = cn_haafing
+			name_list_atmoran = cn_haafing
+			name_list_atmoran_giant = cn_haafing
+			#orsimer
+			name_list_mountain_orc = cn_khazgur
+			name_list_iron_orc = cn_khazgur
+			name_list_wood_orc = cn_khazgur
+			#Elves
+			name_list_ayleid = cn_feywend
+			name_list_falmer = cn_feywend
+		}
+
+		d_solitude = {
+			color = { 90 13 13 }
+			
+
+			capital = c_solitude
+
+			cultural_names = {
+				name_list_reachfolk = cn_kilkreath
+			}
+
+			can_create = {
+				completely_controls = title:d_solitude.title_capital_county
+			}
+
+			c_solitude = {
+				color = { 96 7 7 }
+				
+
+				b_blue_palace = {
+					province = 1393
+					
+					definite_form = yes					
+
+					color = { 96 7 7 }
+					
+				}
+				b_solitude_temple = {
+					province = 5476
+
+					color = { 96 7 7 }
+				}
+				b_solitude = {
+					province = 1392
+
+					color = { 96 7 7 }
+				}
+				b_dour = {
+					province = 1391
+
+					definite_form = yes
+
+					color = { 96 7 7 }
+					
+				}
+				b_bard_college = {
+					province = 5534
+
+					definite_form = yes
+
+					color = { 96 7 7 }
+				}
+				b_harbourside = {
+					province = 1394
+
+					color = { 96 7 7 }
+					
+				}
+			}
+			c_lonewatch = {
+				color = { 77 5 5 }
+
+				b_lonewatch = {
+					province = 1387
+
+					color = { 77 5 5 }
+					
+				}
+				b_brinewater = {
+					province = 1386
+
+					color = { 77 5 5 }
+					
+				}
+				b_karthmouth = {
+					province = 1388
+
+					color = { 77 5 5 }
+					
+				}
+			}
+			c_silent_isles = {
+				color = { 114 17 17 }
+
+				b_aldhelm = {
+					province = 1389
+
+					color = { 114 17 17 }
+					
+				}
+				b_svellfold = {
+					province = 1390
+
+					color = { 114 17 17 }
+					
+				}
+			}
+			c_falconstar = {
+				color = { 101 17 17 }
+
+				b_falconstar = {
+					province = 5453
+
+					color = { 101 17 17 }
+					
+				}
+				b_steedhold = {
+					province = 1401
+
+					color = { 101 17 17 }
+					
+				}
+				b_katla = {
+					province = 1402
+
+					color = { 101 17 17 }
+					
+				}
+			}
+			c_ironback = {
+				color = { 81 10 10 }
+				
+
+				b_ironback = {
+					province = 1395
+
+					color = { 81 10 10 }
+					
+				}
+				b_glenmarch = {
+					province = 1396
+
+					color = { 81 10 10 }
+					
+				}
+				b_helstead = {
+					province = 1397
+
+					color = { 81 10 10 }
+					
+				}
+			}
+			c_kilkreath = {
+				color = { 82 14 14 }
+				
+
+				b_kilkreath = {
+					province = 1400
+
+					color = { 82 14 14 }
+					
+				}
+				#wolfskull doesn't exist yet, the castle in it's place does. i made it kogmenthist castle
+				b_kogmenthist = {
+					province = 1398
+
+					color = { 82 14 14 }
+					
+				}
+				b_helgar = {
+					province = 1399
+
+					color = { 82 14 14 }
+					
+				}
+			}
+		}
+		d_ravenscar = {
+			color = { 132 10 13 }
+			
+
+			capital = c_ravenscar
+
+			can_create = {
+				completely_controls = title:d_ravenscar.title_capital_county
+			}
+
+			c_ravenscar = {
+				color = { 152 10 13 }
+				
+
+				b_ravenscar = {
+					province = 1378
+
+					color = { 152 10 13 }
+				}
+				b_widow_watch = {
+					province = 1377
+
+					color = { 152 10 13 }
+				}
+				b_sword_point = {
+					province = 1379
+
+					color = { 152 10 13 }
+				}
+			}
+			c_span_isles = {
+				color = { 132 30 13 }
+				
+
+				cultural_names = {
+					name_list_eastmarcher = cn_kyne_aegis
+					name_list_westmarcher = cn_kyne_aegis
+					name_list_cyro_nord = cn_kyne_aegis
+				}
+
+				b_kyne_perch = {
+					province = 1380
+
+					color = { 132 30 13 }
+				}
+				b_coldstone = {
+					province = 1381
+
+					color = { 132 30 13 }
+				}
+			}
+			c_whiteflow = {
+				color = { 132 10 33 }
+				
+
+				b_whiteflow = {
+					province = 1384
+
+					color = { 132 10 33 }
+				}
+				b_shadowgreen = {
+					province = 1385
+
+					color = { 132 10 33 }
+				}
+				b_valthammer = {
+					province = 1382
+
+					color = { 132 10 33 }
+				}
+				b_broaken_oar = {
+					province = 1383
+
+					color = { 132 10 33 }
+				}
+			}
+			c_icereach = {
+				color = { 102 10 13 }
+				
+
+				b_icereach = {
+					province = 1418
+
+					color = { 102 10 13 }
+				}
+				b_grenivik = {
+					province = 1419
+
+					color = { 102 10 13 }
+				}
+				b_unhrug = {
+					province = 1420
+
+					color = { 102 10 13 }
+				}
+			}
+		}
+		d_darkfall = {
+			color = { 81 25 12 }
+			
+
+			capital = c_darkfall
+
+			cultural_names = {
+				name_list_mountain_orc = cn_khazgur
+				name_list_iron_orc = cn_khazgur
+				name_list_wood_orc = cn_khazgur
+			}
+
+			can_create = {
+				completely_controls = title:d_darkfall.title_capital_county
+			}
+
+			c_darkfall = {
+				color = { 45 12 3 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_khazgur
+					name_list_iron_orc = cn_khazgur
+					name_list_wood_orc = cn_khazgur
+				}
+
+				b_mor_khazgur = {
+					province = 1421
+
+					color = { 45 12 3 }
+					
+
+					cultural_names = {
+						name_list_mountain_orc = cn_mor_khazgur
+						name_list_iron_orc = cn_mor_khazgur
+						name_list_wood_orc = cn_mor_khazgur
+					}
+
+				}
+				b_ralf_finger = {
+					province = 1422
+
+					color = { 45 12 3 }
+					
+				}
+				b_darkfall = {
+					province = 1423
+
+					color = { 45 12 3 }
+					
+				}
+			}
+			c_bruca_leap = {
+				color = { 94 33 18 }
+				
+
+				b_bruca_leap = {
+					province = 1425
+
+					color = { 94 33 18 }
+					
+				}
+				b_champion_ring = {
+					province = 1424
+
+					color = { 94 33 18 }
+					
+				}
+			}
+			c_skold = {
+				color = { 78 30 193 }
+				
+
+				b_skold = {
+					province = 5766
+
+					color = { 78 30 193 }
+					
+				}
+				b_askaregg = {
+					province = 5767
+
+					color = { 89 62 154 }
+					
+				}
+			}
+		}
+		d_dragon_bridge = {
+			color = { 105 57 51 }
+			
+
+			capital = c_dragon_bridge
+
+			cultural_names = {
+				name_list_eastmarcher = cn_hraggstad
+				name_list_westmarcher = cn_hraggstad
+				name_list_cyro_nord = cn_hraggstad
+				name_list_reachfolk = cn_deepwoods
+				name_list_nibenu = cn_poggersbridge #blame ev
+			}
+
+			can_create = {
+				completely_controls = title:d_dragon_bridge.title_capital_county
+			}
+
+			c_dragon_bridge = {
+				color = { 125 57 51 }
+				
+				
+				cultural_names = {
+					name_list_nibenu = cn_poggersbridge
+				}
+
+				b_dragon_bridge = {
+					province = 1404
+
+					color = { 125 57 51 }
+
+					cultural_names = {
+						name_list_nibenu = cn_poggersbridge
+					}
+				}
+				b_hag_end = {
+					province = 1403
+
+					color = { 125 57 51 }
+				}
+				b_karthshore = {
+					province = 1405
+
+					color = { 125 57 51 }
+				}
+			}
+			c_hraggstad = {
+				color = { 85 57 51 }
+				
+
+				b_hraggstad = {
+					province = 1411
+
+					color = { 85 57 51 }
+				}
+				b_jallenheim = {
+					province = 1412
+
+					color = { 85 57 51 }
+				}
+				b_clearpine = {
+					province = 1413
+
+					color = { 85 57 51 }
+				}
+			}
+			c_cascabel = {
+				color = { 105 37 51 }
+				
+
+				b_cascabel_hall = {
+					province = 5452
+
+					color = { 105 37 51 }
+				}
+				b_pinefrost = {
+					province = 1409
+
+					color = { 105 37 51 }
+				}
+				b_lost_echo = {
+					province = 1410
+
+					color = { 105 37 51 }
+				}
+			}
+			c_deepwood = {
+				color = { 105 57 71 }
+				
+
+				b_deepwood = {
+					province = 1406
+
+					color = { 105 57 71 }
+				}
+				b_volskygge = {
+					province = 1407
+
+					color = { 105 57 71 }
+				}
+				b_pinemoon = {
+					province = 1408
+
+					color = { 105 57 71 }
+				}
+			}
+		}
+		d_northwatch = {
+			color = { 175 12 13 }
+			
+
+			capital = c_northwatch
+
+			can_create = {
+				completely_controls = title:d_northwatch.title_capital_county
+			}
+
+			c_northwatch = {
+				color = { 155 12 13 }
+				
+
+				b_northwatch = {
+					province = 1370
+
+					color = { 155 12 13 }
+				}
+				b_giant_coast = {
+					province = 1369
+
+					color = { 155 12 13 }
+				}
+			}
+			c_rimerock = {
+				color = { 175 32 13 }
+				
+
+				b_rimerock = {
+					province = 1367
+
+					color = { 175 32 13 }
+				}
+				b_frostbite = {
+					province = 1366
+
+					color = { 175 32 13 }
+				}
+				b_dragonhome = {
+					province = 1368
+
+					color = { 175 32 13 }
+				}
+			}
+			c_dunbarrow = {
+				color = { 175 12 33 }
+				
+
+				b_ustenhall = {
+					province = 1375
+
+					color = { 175 12 33 }
+				}
+				b_dunbarrow = {
+					province = 1376
+
+					color = { 175 12 33 }
+				}
+				b_steepfall = {
+					province = 1374
+
+					color = { 175 12 33 }
+				}
+			}
+		}
+		d_volkihar = {
+			color = { 42 14 19 }
+			
+
+			capital = c_volkihar
+
+			can_create = {
+				completely_controls = title:d_volkihar.title_capital_county
+			}
+
+			c_volkihar = {
+				color = { 23 0 3 }
+				
+
+				b_volkihar = {
+					province = 1371
+
+					color = { 23 0 3 }
+					
+				}
+				b_hakonholt = {
+					province = 5843
+
+					color = { 23 0 3 }
+					
+				}
+			}
+			c_bloodstone = {
+				color = { 73 56 53 }
+				
+
+				b_boneshore = {
+					province = 1372
+
+					color = { 73 56 53 }
+					
+				}
+				b_boodstone = {
+					province = 1373
+
+					color = { 73 56 53 }
+					
+				}
+			}
+			c_blackbone = {
+				color = { 32 0 5 }
+				
+
+				b_blackbone = {
+					province = 5491
+
+					color = { 32 0 5 }
+					
+				}
+			}
+		}
+	}
+	k_whiterun = {
+		color = { 253 246 213 }
+		
+
+		capital = c_whiterun
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_ayleid = cn_tel_relleis
+			name_list_falmer = cn_tel_relleis
+		}
+
+		d_whiterun = {
+			color = { 255 245 196 }
+			
+
+			capital = c_whiterun
+
+			can_create = {
+				completely_controls = title:d_whiterun.title_capital_county
+			}
+
+			cultural_names = {
+				name_list_ayleid = cn_torskylata
+				name_list_falmer = cn_torskylata
+			}
+
+			c_whiterun = {
+				color = { 255 249 207 }
+
+				cultural_names = {
+					name_list_ayleid = cn_torskylata
+					name_list_falmer = cn_torskylata
+				}
+				
+
+				b_dragonsreach = {
+					province = 1239
+					color = { 255 249 207 }
+					
+				}
+				b_whiterun = {
+					province = 1243
+
+					color = { 255 249 207 }
+
+					cultural_names = {
+						name_list_ayleid = cn_torskylata
+						name_list_falmer = cn_torskylata
+					}
+					
+				}
+				b_jorrvaskr = {
+					province = 1240
+
+					color = { 255 249 207 }
+					
+				}
+				b_gildergreen = {
+					province = 5348
+
+					color = { 255 249 207 }
+					
+				}
+				b_battleborn = {
+					province = 1241
+
+					color = { 255 249 207 }
+					
+				}
+				b_chillfurrow = {
+					province = 1242
+
+					color = { 255 249 207 }
+					
+				}
+			}
+			c_honningbrew = {
+				color = { 254 246 183 }
+
+				b_honningbrew = {
+					province = 1236
+
+					color = { 254 246 183 }
+					
+				}
+				b_pelagia = {
+					province = 1235
+
+					color = { 254 246 183 }
+					
+				}
+				b_alesund = {
+					province = 1237
+
+					color = { 254 246 183 }
+					
+				}
+			}
+			c_steppewatch = {
+				color = { 244 245 194 }
+
+				b_steppewatch = {
+					province = 1291
+
+					color = { 244 245 194 }
+					
+				}
+				b_gruben = {
+					province = 1290
+
+					color = { 244 245 194 }
+					
+				}
+				b_secunda_kiss = {
+					province = 1292
+
+					color = { 244 245 194 }
+					
+				}
+			}
+			c_halted_stream = {
+				color = { 206 207 156 }
+
+				b_halted_stream = {
+					province = 1286
+
+					color = { 206 207 156 }
+					
+				}
+				b_frostfield = {
+					province = 1287
+
+					color = { 206 207 156 }
+					
+				}
+			}
+			c_skulvar = {
+				color = { 228 223 173 }
+
+				b_skulvar = {
+					province = 1288
+
+					color = { 228 223 173 }
+					
+				}
+				b_bockhorn = {
+					province = 1289
+
+					color = { 228 223 173 }
+					
+				}
+				b_stendal = {
+					province = 1238
+
+					color = { 228 223 173 }
+					
+				}
+			}
+		}
+		d_riverwood = {
+			color = { 229 231 161 }
+			
+
+			capital = c_riverwood
+
+			can_create = {
+				completely_controls = title:d_riverwood.title_capital_county
+			}
+			
+			
+			c_riverwood = {
+				color = { 229 231 161 }
+
+				b_riverwood = {
+					province = 1233
+
+					color = { 229 231 161 }
+					
+				}
+				b_woketree = {
+					province = 1232
+
+					color = { 229 231 161 }
+					
+				}
+				b_gastenheim = {
+					province = 1234
+
+					color = { 229 231 161 }
+					
+				}
+			}
+			c_bleak_falls = {
+				color = { 122 72 58 }
+
+				b_bleak_falls = {
+					province = 993
+
+					color = { 82 107 200 }
+					
+				}
+				b_jahoje = {
+					province = 5785
+
+					color = { 122 72 58 }
+					
+				}
+			}
+		}
+		d_valtheim = {
+			color = { 210 209 198 }
+			
+
+			capital = c_valtheim
+
+			can_create = {
+				completely_controls = title:d_valtheim.title_capital_county
+			}
+
+			c_valtheim = {
+				color = { 255 254 243 }
+
+				b_valtheim = {
+					province = 1252
+
+					color = { 255 254 243 }
+					
+				}
+				b_guldun_rock = {
+					province = 1253
+
+					color = { 255 254 243 }
+					
+				}
+			}
+			c_whitewatch = {
+				color = { 255 253 228 }
+
+				b_whitewatch = {
+					province = 1244
+
+					color = { 255 253 228 }
+					
+				}
+				b_shimmermist = {
+					province = 1245
+
+					color = { 255 253 228 }
+					
+				}
+				b_bleakmarch = {
+					province = 1246
+
+					color = { 255 253 228 }
+					
+				}
+			}
+			c_laintar = {
+				color = { 112 104 56 }
+
+				b_laintar = {
+					province = 5786
+
+					color = { 112 104 56 }
+					
+				}
+				b_almdalir = {
+					province = 5787
+
+					color = { 131 116 32 }
+					
+				}
+				b_kjolr = {
+					province = 5788
+
+					color = { 157 147 88 }
+					
+				}
+			}
+			c_graywinter = {
+				color = { 255 252 208 }
+
+				b_whiteriver_watch = {
+					province = 1249
+
+					color = { 255 252 208 }
+					
+				}
+				b_graywinter = {
+					province = 1247
+
+					color = { 255 252 208 }
+					
+				}
+				b_sai_ritual = {
+					province = 1248
+
+					color = { 255 252 208 }
+					
+				}
+			}
+			c_fellglow = {
+				color = { 255 251 234 }
+
+				b_fellglow = {
+					province = 1250
+
+					color = { 255 251 234 }
+					
+				}
+				b_oleriad = {
+					province = 1251
+
+					color = { 255 251 234 }
+					
+				}
+			}
+		}
+		d_greymarch = {
+			color = { 235 231 185 }
+			
+
+			capital = c_greymarch
+
+			can_create = {
+				completely_controls = title:d_greymarch.title_capital_county
+			}
+
+			c_greymarch = {
+				color = { 151 151 122 }
+
+				b_greymarch = {
+					province = 1282
+
+					color = { 151 151 122 }
+					
+				}
+				b_dustman_cairn = {
+					province = 1280
+
+					color = { 151 151 122 }
+					
+				}
+				b_redoran_retreat = {
+					province = 1281
+
+					color = { 151 151 122 }
+					
+				}
+			}
+			c_hamvir = {
+				color = { 154 152 119 }
+
+				b_hamvir_rest = {
+					province = 1277
+
+					color = { 154 152 119 }
+					
+				}
+				b_sundsvall = {
+					province = 1276
+
+					color = { 154 152 119 }
+					
+				}
+				b_greensprings = {
+					province = 1278
+
+					color = { 154 152 119 }
+					
+				}
+				b_drelas = {
+					province = 1279
+
+					color = { 154 152 119 }
+					
+				}
+			}
+			c_eldersblood = {
+				color = { 151 147 102 }
+
+				b_eldersblood = {
+					province = 1275
+
+					color = { 151 147 102 }
+					
+				}
+				b_apen = {
+					province = 1273
+
+					color = { 151 147 102 }
+					
+				}
+				b_rannveig_fast = {
+					province = 1274
+
+					color = { 151 147 102 }
+					
+				}
+			}
+			c_silent_moon = {
+				color = { 199 195 157 }
+
+				b_silent_moon = {
+					province = 1284
+
+					color = { 199 195 157 }
+					
+				}
+				b_ansilheim = {
+					province = 1283
+
+					color = { 199 195 157 }
+					
+				}
+				b_bleakhammer = {
+					province = 1285
+
+					color = { 199 195 157 }
+					
+				}
+			}
+			c_torenhal = {
+				color = { 80 118 35 }
+
+				b_torenhal = {
+					province = 5779
+
+					color = { 80 118 35 }
+					
+				}
+				b_hermodhal = {
+					province = 5780
+
+					color = { 134 160 104 }
+					
+				}
+				b_kingraav = {
+					province = 5781
+
+					color = { 127 162 84 }
+					
+				}
+			}
+		}
+		d_darkmoor = {
+			color = { 173 166 109 }
+			
+
+			capital = c_darkmoor
+
+			can_create = {
+				completely_controls = title:d_darkmoor.title_capital_county
+			}
+
+			c_darkmoor = {
+				color = { 167 159 100 }
+
+				b_darkmoor = {
+					province = 1295
+
+					color = { 167 159 100 }
+					
+				}
+				b_bleakbasin = {
+					province = 1294
+
+					color = { 167 159 100 }
+					
+				}
+				b_black_moor = {
+					province = 1293
+
+					color = { 167 159 100 }
+					
+				}
+				b_lathen = {
+					province = 1296
+
+					color = { 167 159 100 }
+					
+				}
+				b_stavern = {
+					province = 1297
+
+					color = { 167 159 100 }
+					
+				}
+			}
+
+			c_krumm_horn = {
+				color = { 163 163 97 }
+
+				b_krumm_horn = {
+					province = 1299
+
+					color = { 163 163 97 }
+					
+				}
+				b_brinkum = {
+					province = 1298
+
+					color = { 163 163 97 }
+					
+				}
+				b_sleeping_tree = {
+					province = 1300
+
+					color = { 163 163 97 }
+					
+				}
+			}
+			c_granite_hall = {
+				color = { 135 132 75 }
+
+				b_granite_hall = {
+					province = 1303
+
+					color = { 135 132 75 }
+					
+				}
+				b_broken_fang = {
+					province = 1301
+
+					color = { 135 132 75 }
+					
+				}
+				b_gavrostead = {
+					province = 1302
+
+					color = { 135 132 75 }
+					
+				}
+			}
+			c_north_brittleshin = {
+				color = { 145 142 95 }
+
+				b_north_brittleshin = {
+					province = 1305
+
+					color = { 145 142 95 }
+					
+				}
+				b_vorsia = {
+					province = 1304
+
+					color = { 145 142 95 }
+					
+				}
+				b_bloated_man_grotto = {
+					province = 1306
+
+					color = { 145 142 95 }
+					
+				}
+			}
+			c_tagutatorvog = {
+				color = { 183 110 147 }
+
+				b_tagutatorvog = {
+					province = 5782
+
+					color = { 183 110 147 }
+					
+				}
+				b_straven = {
+					province = 5783
+
+					color = { 137 89 113 }
+					
+				}
+			}
+		}
+		d_fairmoor = {
+			color = { 238 220 133 }
+			
+
+			capital = c_fairmoor
+
+			can_create = {
+				completely_controls = title:d_fairmoor.title_capital_county
+			}
+
+			c_fairmoor = {
+				color = { 214 214 132 }
+
+				b_fairmoor = {
+					province = 1270
+
+					color = { 214 214 132 }
+					
+				}
+				b_swindler_den = {
+					province = 1266
+
+					color = { 214 214 132 }
+					
+				}
+				b_njorvela = {
+					province = 1267
+
+					color = { 214 214 132 }
+					
+				}
+			}
+			c_gjukar = {
+				color = { 223 214 130 }
+
+				b_gjukar_monument = {
+					province = 1272
+
+					color = { 223 214 130 }
+					
+				}
+				b_lainalten = {
+					province = 1271
+
+					color = { 223 214 130 }
+					
+				}
+			}
+			c_hagarmarch = {
+				color = { 221 220 146 }
+
+				b_hagarmarch = {
+					province = 1265
+
+					color = { 221 220 146 }
+					
+				}
+				b_baltrum = {
+					province = 1268
+
+					color = { 221 220 146 }
+					
+				}
+				b_muranak = {
+					province = 1269
+
+					color = { 221 220 146 }
+					
+				}
+			}
+		}
+		d_rorikstead = {
+			color = { 215 189 91 }
+
+			capital = c_rorikstead
+
+			can_create = {
+				completely_controls = title:d_rorikstead.title_capital_county
+			}
+
+			c_rorikstead = {
+				color = { 208 203 99 }
+
+				b_rorikstead = {
+					province = 1257
+
+					color = { 208 203 99 }
+					
+				}
+				b_lundshut = {
+					province = 1258
+
+					color = { 208 203 99 }
+					
+				}
+				b_norden = {
+					province = 1259
+
+					color = { 208 203 99 }
+					
+				}
+			}
+			c_moldering = {
+				color = { 209 198 93 }
+
+				b_moldering = {
+					province = 1260
+
+					color = { 209 198 93 }
+					
+				}
+				b_jagermeister = {
+					province = 1261
+
+					color = { 209 198 93 }
+					
+				}
+				b_coebbel = {
+					province = 1262
+
+					color = { 209 198 93 }
+					
+				}
+			}
+			c_eversnow = {
+				color = { 211 201 88 }
+
+				cultural_names = {
+					# totally the mythical Evensnow, from the ancient nordic Song of Hrormir
+					name_list_atmoran = cn_evensnow
+					name_list_skaal = cn_evensnow
+					name_list_atmoran_giant = cn_evensnow
+				}
+
+				b_eversnow = {
+					province = 1254
+
+					cultural_names = {
+						name_list_atmoran = cn_evensnow
+						name_list_skaal = cn_evensnow
+						name_list_atmoran_giant = cn_evensnow
+					}
+
+					color = { 211 201 88 }
+					
+				}
+				b_brettin = {
+					province = 1255
+
+					color = { 211 201 88 }
+					
+				}
+				b_werra = {
+					province = 1256
+
+					color = { 211 201 88 }
+					
+				}
+			}
+			c_talking_stone = {
+				color = { 215 208 105 }
+
+				b_talking_stone = {
+					province = 1263
+
+					color = { 215 208 105 }
+					
+				}
+				b_milteren = {
+					province = 1264
+
+					color = { 215 208 105 }
+					
+				}
+			}
+		}
+	}
+	k_falkreath = {
+		color = { 83 102 189 }
+		
+
+		capital = c_falkreath
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#orsimer
+			name_list_mountain_orc = cn_falcrenth
+			name_list_iron_orc = cn_falcrenth
+			name_list_wood_orc = cn_falcrenth
+			#Elves
+			name_list_ayleid = cn_falkaran
+			name_list_falmer = cn_falkaran
+		}
+
+		d_falkreath = {
+			color = { 88 104 177 }
+			
+
+			capital = c_falkreath
+
+			cultural_names = {
+				#orsimer
+				name_list_mountain_orc = cn_falcrenth
+				name_list_iron_orc = cn_falcrenth
+				name_list_wood_orc = cn_falcrenth
+				#Elves
+				name_list_ayleid = cn_falkaran
+				name_list_falmer = cn_falkaran
+			}
+
+			can_create = {
+				completely_controls = title:d_falkreath.title_capital_county
+			}
+
+			c_falkreath = {
+				color = { 85 105 201 }
+				
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_falcrenth
+					name_list_iron_orc = cn_falcrenth
+					name_list_wood_orc = cn_falcrenth
+					#Elves
+					name_list_ayleid = cn_falkaran
+					name_list_falmer = cn_falkaran
+				}
+
+				b_falkreath = {
+					province = 969
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_falcrenth
+						name_list_iron_orc = cn_falcrenth
+						name_list_wood_orc = cn_falcrenth
+						#Elves
+						name_list_ayleid = cn_falkaran
+						name_list_falmer = cn_falkaran
+					}
+
+					color = { 85 105 201 }
+					
+				}
+				b_greypine = {
+					province = 1848
+
+					color = { 85 105 201 }
+					
+				}
+				b_hakkvildheim = {
+					province = 1849
+
+					color = { 85 105 201 }
+					
+				}
+				b_great_graveyard = {
+					province = 1850
+
+					color = { 85 105 201 }
+					
+				}
+			}
+			c_peak_shade = {
+				color = { 82 104 183 }
+				
+
+				b_peak_shade = {
+					province = 971
+
+					color = { 82 104 183 }
+					
+				}
+				b_hafnarstad = {
+					province = 1847
+
+					color = { 82 104 183 }
+					
+				}
+			}
+			c_morgate = {
+				color = { 96 118 198 }
+				
+
+				b_morgate = {
+					province = 973
+
+					color = { 96 118 198 }
+					
+				}
+				b_halldir = {
+					province = 972
+
+					color = { 96 118 198 }
+					
+				}
+			}
+			c_pinewatch = {
+				color = { 102 116 183 }
+				
+				b_pinewatch = {
+					province = 978
+
+					color = { 102 116 183 }
+					
+				}
+				b_haigar = {
+					province = 979
+
+					color = { 102 116 183 }
+					
+				}
+
+				b_bonechill = {
+					province = 976
+
+					color = { 116 130 199 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_ashokar
+						name_list_iron_orc = cn_ashokar
+						name_list_wood_orc = cn_ashokar
+					}
+					
+				}
+			}
+			c_bloodlet = {
+				color = { 127 137 190 }
+
+				b_bloodlet = {
+					province = 974
+					color = { 127 137 190 }
+				}
+
+				b_ancestor_glade = {
+					province = 975
+					color = { 127 137 190 }
+				}
+				b_ancient_ascent = {
+					province = 1310
+
+					color = { 116 130 199 }
+					
+				}
+			}
+			
+			c_cracked_tusk = {
+				color = { 88 105 197 }
+				
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_gularz_khazgur
+					name_list_iron_orc = cn_gularz_khazgur
+					name_list_wood_orc = cn_gularz_khazgur
+				}
+
+				b_cracked_tusk = {
+					province = 967
+
+					color = { 88 105 197 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_gularz_khazgur
+						name_list_iron_orc = cn_gularz_khazgur
+						name_list_wood_orc = cn_gularz_khazgur
+					}
+					
+				}
+				b_falkreath_watch = {
+					province = 966
+
+					color = { 88 105 197 }
+					
+				}
+				b_murena = {
+					province = 5811
+
+					color = { 88 105 197 }
+					
+				}
+			}
+		}
+		d_sunderstone = {
+			color = { 109 137 183 }
+			
+
+			capital = c_bannermist
+		
+			can_create = {
+				completely_controls = title:d_sunderstone.title_capital_county
+			}
+
+			c_bannermist = {
+				color = { 92 108 210 }
+				
+
+				b_bannermist = {
+					province = 962
+
+					color = { 92 108 210 }
+					
+				}
+				b_knifepoint = {
+					province = 964
+
+					color = { 92 108 210 }
+					
+				}
+				b_hunter_rest = {
+					province = 1314
+
+					color = { 92 108 210 }
+					
+				}
+			}
+			c_sunderstone = {
+				color = { 80 90 199 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_bilegulch
+					name_list_iron_orc = cn_bilegulch
+					name_list_wood_orc = cn_bilegulch
+				}
+
+				b_sunderstone = {
+					province = 959
+
+					color = { 80 90 199 }
+					
+				}
+				b_bilegulch = {
+					province = 960
+
+					color = { 80 90 199 }
+					
+				}
+				b_glenvale = {
+					province = 961
+
+					color = { 80 90 199 }
+					
+				}
+			}
+			c_half_moon = {
+				color = { 112 112 236 }
+
+				b_half_moon = {
+					province = 963
+
+					color = { 112 112 236 }
+					
+				}
+				b_tjer_pass = {
+					province = 1312
+
+					color = { 112 112 236 }
+					
+				}
+				b_mossmother = {
+					province = 1313
+
+					color = { 112 112 236 }
+					
+				}
+			}
+			c_evergreen = {
+				color = { 108 105 197 }
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_shagohk
+					name_list_iron_orc = cn_shagohk
+					name_list_wood_orc = cn_shagohk
+				}
+
+				b_evergreen = {
+					province = 965
+
+					color = { 108 105 197 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_shagohk
+						name_list_iron_orc = cn_shagohk
+						name_list_wood_orc = cn_shagohk
+					}	
+				}
+				b_twilight_sepulcher = {
+					province = 968
+
+					color = { 108 105 197 }
+					
+				}
+				b_vamsel = {
+					province = 5810
+
+					color = { 108 105 197 }
+					
+				}
+			}
+		}
+		d_helgen = {
+			color = { 56 63 120 }
+			
+
+			capital = c_helgen
+
+			cultural_names = {
+				#nordic
+				name_list_eastmarcher = cn_helgr
+				name_list_westmarcher = cn_helgr
+				name_list_skaal = cn_helgr
+				name_list_atmoran = cn_helgr
+				name_list_atmoran_giant = cn_helgr
+			}
+
+			can_create = {
+				completely_controls = title:d_helgen.title_capital_county
+			}
+
+			c_helgen = {
+				color = { 82 85 147 }
+				
+
+				b_helkeep = {
+					province = 1846
+
+					color = { 82 85 147 }
+					
+				}
+				b_helgen = {
+					province = 980
+
+					color = { 82 85 147 }
+					
+				}
+				b_kreathrest = {
+					province = 1308
+
+					color = { 82 85 147 }
+					
+				}
+			}
+			c_neugrad = {
+				color = { 140 151 193 }
+				
+
+				b_neugrad = {
+					province = 986
+
+					color = { 140 151 193 }
+					
+				}
+				b_greywater = {
+					province = 987
+
+					color = { 140 151 193 }
+					
+				}
+				b_southfringe = {
+					province = 988
+
+					color = { 140 151 193 }
+					
+				}
+				b_pale_path = {
+					province = 989
+
+					color = { 140 151 193 }
+					
+				}
+			}
+			c_rimgrad = {
+				color = { 166 126 133 }
+				
+
+				b_rimgrad = {
+					province = 5805
+
+					color = { 166 126 133 }
+					
+				}
+				b_haruthal = {
+					province = 5806
+
+					color = { 166 126 133 }
+					
+				}
+				b_vanchel = {
+					province = 5807
+
+					color = { 166 126 133 }
+					
+				}
+			}
+			c_churthal = {
+				color = { 109 35 48 }
+				
+
+				b_churthal = {
+					province = 5808
+
+					color = { 109 35 48 }
+					
+				}
+				b_elcand = {
+					province = 5809
+
+					color = { 109 35 48 }
+					
+				}
+			}
+		}
+		d_athalvund = {
+			color = { 188 82 101 }
+			
+
+			capital = c_athalvund
+
+			can_create = {
+				completely_controls = title:d_athalvund.title_capital_county
+			}
+		
+			c_athalvund = {
+				color = { 188 82 101 }
+
+				b_athalvund = {
+					province = 5802
+
+					color = { 188 82 101 }
+					
+				}
+				b_pamprasandat = {
+					province = 5803
+
+					color = { 188 82 101 }
+					
+				}
+				b_osar = {
+					province = 5804
+
+					color = { 188 82 101 }
+					
+				}
+			}		
+			c_dunmarch = {
+				color = { 90 94 176 }
+
+				b_dunmarch = {
+					province = 982
+
+					color = { 90 94 176 }
+					
+				}
+				b_skybound = {
+					province = 983
+
+					color = { 82 85 147 }
+					
+				}
+				b_norskir = {
+					province = 1307
+
+					color = { 66 73 117 }
+					
+				}
+			}
+			c_orphan_rock = {
+				color = { 66 73 117 }
+				
+
+				b_orphan_rock = {
+					province = 984
+
+					color = { 66 73 117 }
+					
+				}
+				b_falkenstein = {
+					province = 985
+
+					color = { 66 73 117 }
+					
+				}
+			}
+		}
+		d_ilinalta = {
+			color = { 112 123 178 }
+			
+
+			capital = c_lakeview
+
+			can_create = {
+				completely_controls = title:d_ilinalta.title_capital_county
+			}
+
+			c_lakeview = {
+				color = { 102 116 183 }
+				
+
+				b_lakeview = {
+					province = 977
+
+					color = { 102 116 183 }
+					
+				}
+				b_falkway = {
+					province = 1309
+
+					color = { 102 116 183 }
+					
+				}
+				b_embershard = {
+					province = 981
+
+					color = { 90 94 176 }
+					
+				}
+			}
+			c_south_brittleshin = {
+				color = { 82 107 200 }
+
+				b_south_brittleshin = {
+					province = 992
+
+					color = { 82 107 200 }
+					
+				}
+				b_ilinalta = {
+					province = 991
+
+					color = { 82 107 200 }
+					
+				}
+				b_shorvelds_wall = {
+					province = 5784
+
+					color = { 82 107 200 }
+					
+				}
+			}
+			c_shriekwind = {
+				color = { 110 135 245 }
+				
+
+				b_shriekwind = {
+					province = 970
+
+					color = { 120 125 240 }
+					
+				}
+				b_southshriek = {
+					province = 1311
+
+					color = { 120 125 240 }
+					
+				}
+			}
+		}
+	}
+	k_dawnstar = {
+		color = { 140 146 127 }
+		
+
+		capital = c_dawnstar
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_atmoran = cn_danstrar
+			name_list_skaal = cn_danstrar
+			name_list_atmoran_giant = cn_danstrar
+			name_list_ayleid = cn_tamvarlais
+			name_list_falmer = cn_tamvarlais
+			name_list_dwemer = cn_mzinchaleft
+		}
+
+		d_dawnstar = {
+			color = { 172 178 146 }
+			
+
+			capital = c_dawnstar
+
+			can_create = {
+				completely_controls = title:d_dawnstar.title_capital_county
+			}
+
+			cultural_names = {
+				name_list_atmoran = cn_danstrar
+				name_list_skaal = cn_danstrar
+				name_list_atmoran_giant = cn_danstrar
+				name_list_ayleid = cn_tamvarlais
+				name_list_falmer = cn_tamvarlais
+				name_list_dwemer = cn_mzinchaleft
+			}
+
+			c_dawnstar = {
+				color = { 165 170 144 }
+				
+
+				cultural_names = {
+					name_list_atmoran = cn_danstrar
+					name_list_skaal = cn_danstrar
+					name_list_atmoran_giant = cn_danstrar
+					name_list_ayleid = cn_tamvarlais
+					name_list_falmer = cn_tamvarlais
+				}
+
+				b_dawnstar = {
+					province = 1222
+
+					cultural_names = {
+						name_list_atmoran = cn_danstrar
+						name_list_skaal = cn_danstrar
+						name_list_atmoran_giant = cn_danstrar
+						name_list_ayleid = cn_tamvarlais
+						name_list_falmer = cn_tamvarlais
+					}
+
+					color = { 165 170 144 }
+					
+				}
+				b_white_hall = {
+					province = 1226
+
+					color = { 165 170 144 }
+					
+				}
+				b_shorwind = {
+					province = 1223
+
+					color = { 165 170 144 }
+					
+				}
+				b_lindsfjord = {
+					province = 1224
+
+					color = { 165 170 144 }
+					
+				}
+				b_tower_of_dawn = {
+					province = 1225
+
+					definite_form = yes
+
+					color = { 165 170 144 }
+					
+				}
+			}
+			c_high_gate = {
+				color = { 192 202 176 }
+
+				cultural_names = {
+					name_list_eastmarcher = cn_verglas
+					name_list_westmarcher = cn_verglas
+					name_list_cyro_nord = cn_verglas
+				}
+
+				b_high_gate = {
+					province = 1217
+
+					color = { 192 202 176 }
+					
+
+					cultural_names = {
+						name_list_eastmarcher = cn_verglas_hollow
+						name_list_westmarcher = cn_verglas_hollow
+						name_list_cyro_nord = cn_verglas_hollow
+					}
+
+				}
+				b_icerun = {
+					province = 1215
+
+					color = { 192 202 176 }
+					
+				}
+				b_brinehammer = {
+					province = 1216
+
+					color = { 192 202 176 }
+					
+				}
+			}
+			c_frozen_coast = {
+				color = { 168 174 146 }
+
+				b_olrunstead = {
+					province = 1220
+
+					color = { 168 174 146 }
+					
+				}
+				b_volgrav = {
+					province = 1218
+
+					color = { 168 174 146 }
+					
+				}
+				b_morvunhall = {
+					province = 1219
+
+					color = { 168 174 146 }
+					
+				}
+				b_askursund = {
+					province = 1221
+
+					color = { 168 174 146 }
+					
+				}
+			}
+			c_frostmere = {
+				color = { 128 131 113 }
+
+				cultural_names = {
+					name_list_dwemer = cn_mzinchaleft
+				}
+
+				b_frostmere = {
+					province = 1206
+
+					color = { 128 131 113 }
+					
+				}
+				b_mzinchaleft = {
+					province = 1205
+
+					color = { 128 131 113 }
+					
+				}
+				b_bergryfshoj = {
+					province = 5791
+
+					color = { 128 131 113 }
+					
+				}
+			}
+			c_windward = {
+				color = { 179 183 161 }
+
+				b_windward = {
+					province = 1227
+
+					color = { 179 183 161 }
+					
+				}
+				b_skovde = {
+					province = 1228
+
+					color = { 179 183 161 }
+					
+				}
+				b_red_road_pass = {
+					province = 1229
+
+					color = { 179 183 161 }
+					
+				}
+			}
+		}
+		d_heljarchen = {
+			color = { 100 139 130 }
+
+			cultural_names = {
+				name_list_dwemer = cn_mzark
+			}
+
+			capital = c_heljarchen
+
+			can_create = {
+				completely_controls = title:d_heljarchen.title_capital_county
+			}
+
+			c_heljarchen = {
+				color = { 80 139 130 }
+				
+
+				b_heljarchen = {
+					province = 1199
+
+					color = { 80 139 130 }
+				}
+				b_blizzard_rest = {
+					province = 1200
+
+					color = { 80 139 130 }
+				}
+				b_loreius = {
+					province = 1201
+
+					color = { 80 139 130 }
+				}
+			}
+			c_trumble_arch = {
+				color = { 100 139 110 }
+				
+
+				b_trumble_arch = {
+					province = 1190
+
+					color = { 100 139 110 }
+				}
+				b_korvanjund = {
+					province = 1189
+
+					color = { 100 139 110 }
+				}
+			}
+			c_shearpoint = {
+				color = { 149 150 143 }
+				
+
+				b_shearpoint = {
+					province = 1204
+
+					color = { 120 139 130 }
+				}
+				b_rattgram = {
+					province = 1202
+
+					color = { 120 139 130 }
+				}
+				b_skuld = {
+					province = 1203
+
+					color = { 120 139 130 }
+				}
+			}
+		}
+		d_dunstad = {
+			color = { 170 142 120 }
+			
+
+			capital = c_dunstad
+
+			can_create = {
+				completely_controls = title:d_dunstad.title_capital_county
+			}
+
+			c_dunstad = {
+				color = { 190 142 120 }
+				
+
+				b_dunstad = {
+					province = 1211
+
+					color = { 190 142 120 }
+				}
+				b_vigilant_rest = {
+					province = 1209
+
+					color = { 190 142 120 }
+				}
+				b_hjaldheim = {
+					province = 1210
+
+					color = { 190 142 120 }
+				}
+				b_hringnir_bridge = {
+					province = 5794
+
+					color = { 190 142 120 }
+				}
+			}
+			c_dimhollow = {
+				color = { 170 122 120 }
+				
+
+				b_dimhollow = {
+					province = 1207
+
+					color = { 170 122 120 }
+				}
+				b_snestrom = {
+					province = 1208
+
+					color = { 170 122 120 }
+				}
+			}
+			c_bromjunaar = {
+				color = { 82 79 36 }
+				
+
+				b_bromjunaar = {
+					province = 5792
+
+					color = { 82 79 36 }
+				}
+				b_valkigg = {
+					province = 5793
+
+					color = { 82 79 36 }
+				}
+				b_ljosavatn = {
+					province = 5795
+
+					color = { 82 79 36 }
+				}
+			}
+			c_jormar = {
+				color = { 80 66 114 }
+				
+
+				b_jormar = {
+					province = 5789
+
+					color = { 80 66 114 }
+				}
+				b_berjod = {
+					province = 5790
+
+					color = { 80 66 114 }
+				}
+			}
+			c_skyborn = {
+				color = { 100 119 130 }
+				
+
+				b_skyborn = {
+					province = 1194
+
+					color = { 100 119 130 }
+				}
+				b_volunruud = {
+					province = 1195
+
+					color = { 100 119 130 }
+				}
+			}
+			c_stonechill = {
+				color = { 100 139 150 }
+
+				cultural_names = {
+					name_list_dwemer = cn_mzark
+				}
+				
+				b_stonechill_bluff = {
+					province = 1196
+
+					color = { 100 139 150 }
+				}
+				b_mzark = {
+					province = 1197
+
+					color = { 100 139 150 }
+				}
+				b_brantwein = {
+					province = 1198
+
+					color = { 100 139 150 }
+				}
+			}
+		}
+		d_duskglow = {
+			color = { 170 142 100 }
+			
+
+			capital = c_duskglow
+
+			can_create = {
+				completely_controls = title:d_duskglow.title_capital_county
+			}
+
+			c_duskglow = {
+				color = { 170 142 100 }
+				
+
+				b_duskglow = {
+					province = 1213
+
+					color = { 170 142 100 }
+				}
+				b_arkavan = {
+					province = 1212
+
+					color = { 170 142 100 }
+				}
+				b_falkenheim = {
+					province = 1214
+
+					color = { 170 142 100 }
+				}
+			}
+			c_weystone = {
+				color = { 170 142 150 }
+				
+
+				b_weystones = {
+					province = 1185
+
+					color = { 170 142 150 }
+				}
+				b_silverdrift = {
+					province = 1186
+
+					color = { 170 142 150 }
+				}
+			}
+			c_shrouded_grove = {
+				color = { 131 135 108 }
+
+				cultural_names = {
+					name_list_ayleid = cn_laidaldal
+					name_list_falmer = cn_laidaldal
+				}		
+				
+
+				b_skagen = {
+					province = 1188
+
+					cultural_names = {
+						name_list_ayleid = cn_laidaldal
+						name_list_falmer = cn_laidaldal
+					}
+					color = { 131 135 108 }
+					
+				}
+				b_shrouded_grove = {
+					province = 1187
+
+					color = { 131 135 108 }
+					
+				}
+			}
+		}
+		d_yorgrim = {
+			color = { 106 108 82 }
+
+			cultural_names = {
+				name_list_dwemer = cn_raldbthar
+				name_list_ayleid = cn_laidaldal
+				name_list_falmer = cn_laidaldal
+			}
+			
+
+			capital = c_ironbind
+
+			can_create = {
+				completely_controls = title:d_yorgrim.title_capital_county
+			}
+
+			c_ironbind = {
+				color = { 93 96 79 }
+				
+
+				b_ironbind = {
+					province = 1182
+
+					color = { 93 96 79 }
+					
+				}
+				b_bronzewater = {
+					province = 1183
+
+					color = { 93 96 79 }
+					
+				}
+				b_nightgate = {
+					province = 1184
+
+					color = { 93 96 79 }
+					
+				}
+			}
+			c_sigilkeep = {
+				color = { 108 111 86 }
+				
+				cultural_names = {
+					name_list_dwemer = cn_raldbthar
+				}
+
+				b_sigilkeep = {
+					province = 1192
+
+					color = { 108 111 86 }
+					
+				}
+				b_irkngthand = {
+					province = 1191
+
+					color = { 108 111 86 }
+					
+				}
+				b_raldbthar = {
+					province = 1193
+
+					color = { 108 111 86 }
+					
+				}
+			}
+			c_jurgard = {
+				color = { 140 134 66 }
+
+				b_jurgard = {
+					province = 5796
+
+					color = { 140 134 66 }
+					
+				}
+				b_wuurthal = {
+					province = 5797
+
+					color = { 140 134 66 }
+					
+				}
+				b_selvagr = {
+					province = 5798
+
+					color = { 140 134 66 }
+					
+				}
+			}
+			c_yorgrim_gate = {
+				color = { 121 127 91 }
+				
+
+				b_yorgrim_overlook = {
+					province = 1178
+
+					color = { 121 127 91 }
+					
+				}
+				b_skuldenheim = {
+					province = 1179
+
+					color = { 121 127 91 }
+					
+				}
+				b_helsingborn = {
+					province = 1180
+
+					color = { 121 127 91 }
+					
+				}
+			}
+		}
+	}
+	k_hrothgar = {
+		color = { 129 98 147 }
+
+		capital = c_ivarstead
+		can_be_named_after_dynasty = no
+	}
+	k_riften = {
+		color = { 69 39 78 }
+		
+
+		capital = c_riften
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_ayleid = cn_molagnen_tarn
+			name_list_falmer = cn_molagnen_tarn
+			name_list_dwemer = cn_avanchnzel
+		}
+
+		d_riften = {
+			color = { 76 48 95 }
+			
+
+			capital = c_riften
+
+			cultural_names = {
+				name_list_cyro_nord = cn_rifton
+				name_list_colovian = cn_rifton
+				name_list_ayleid = cn_raundir
+				name_list_falmer = cn_raundir
+			}
+
+			can_create = {
+				completely_controls = title:d_riften.title_capital_county
+			}
+
+			c_riften = {
+				color = { 73 48 101 }
+				
+
+				cultural_names = {
+					name_list_cyro_nord = cn_rifton
+					name_list_colovian = cn_rifton
+					name_list_ayleid = cn_raundir
+					name_list_falmer = cn_raundir
+				}
+
+				b_riften = {
+					province = 1045
+
+					color = { 73 48 101 }
+
+					cultural_names = {
+						name_list_cyro_nord = cn_rifton
+						name_list_colovian = cn_rifton
+						name_list_ayleid = cn_raundir
+						name_list_falmer = cn_raundir
+					}
+				}
+				b_mistveil_keep = {
+					province = 1047
+
+					color = { 73 48 101 }
+					
+				}
+				b_merryfair = {
+					province = 1043
+
+					color = { 73 48 101 }
+					
+				}
+				b_tsun_hold = {
+					province = 1044
+
+					color = { 73 48 101 }
+					
+				}
+				b_mara_grace = {
+					province = 1046
+
+					color = { 73 48 101 }
+					
+				}
+			}
+			c_goldenglow = {
+				color = { 89 47 129 }
+
+				b_goldenglow = {
+					province = 1013
+
+					color = { 89 47 129 }
+					
+				}
+			}
+			c_autumnshade = {
+				color = { 106 64 150 }
+
+
+				b_faldar_tooth = {
+					province = 1037
+
+					color = { 106 64 150 }
+					
+				}
+				b_autumnshade = {
+					province = 1036
+
+					color = { 106 64 150 }
+					
+				}
+				b_boulderfall = {
+					province = 1035
+
+					color = { 106 64 150 }
+					
+				}
+			}
+			c_snowshod = {
+				color = { 67 52 89 }
+
+				b_snowshod = {
+					province = 1010
+
+					color = { 67 52 89 }
+					
+				}
+				b_darklight_tower = {
+					province = 1011
+
+					color = { 67 52 89 }
+					
+				}
+				b_frostmoon = {
+					province = 1012
+
+					color = { 67 52 89 }
+					
+				}
+			}
+			c_gronvold = {
+				color = { 165 141 200 }
+
+				b_gronvold = {
+					province = 5822
+
+					color = { 165 141 200 }
+					
+				}
+				b_dofrar = {
+					province = 5823
+
+					color = { 165 141 200 }
+					
+				}
+			}
+		}
+		
+		
+		d_songard = {
+			color = { 95 80 133 }
+			
+			capital = c_songard
+
+			can_create = {
+				completely_controls = title:d_songard.title_capital_county
+			}
+			
+			c_songard = {
+				color = { 95 80 133 }
+
+				b_songard = {
+					province = 5826
+
+					color = { 95 80 133 }
+					
+				}
+				b_hofsa = {
+					province = 5827
+
+					color = { 95 80 133 }
+					
+				}
+				b_baroargata = {
+					province = 5828
+
+					color = { 95 80 133 }
+					
+				}
+			}
+			c_blackbriar = {
+				color = { 61 46 89 }
+
+				b_blackbriar = {
+					province = 1050
+
+					color = { 61 46 89 }
+					
+				}
+				b_fallowstone = {
+					province = 1048
+
+					color = { 61 46 89 }
+					
+				}
+				b_lost_prospect = {
+					province = 1049
+
+					color = { 61 46 89 }
+					
+				}
+			}
+			c_salkvund = {
+				color = { 113 76 165 }
+
+				b_salkvund = {
+					province = 5829
+
+					color = { 113 76 165 }
+					
+				}
+				b_fjaora = {
+					province = 5830
+
+					color = { 113 76 165 }
+					
+				}
+			}
+		}
+		
+		d_smokefrost = {
+			color = { 49 37 64 }
+			
+			cultural_names = {
+				name_list_dwemer = cn_rkund
+			}
+
+			capital = c_smokefrost
+
+			can_create = {
+				completely_controls = title:d_smokefrost.title_capital_county
+			}
+
+			c_smokefrost = {
+				color = { 50 40 61 }
+				
+
+				b_smokefrost = {
+					province = 1017
+
+					color = { 50 40 61 }
+					
+				}
+				b_gromm_pass = {
+					province = 1018
+
+					color = { 50 40 61 }
+					
+				}
+				b_gaular = {
+					province = 5824
+
+					color = { 50 40 61 }
+					
+				}
+			}
+			c_forelhost = {
+				color = { 120 83 174 }
+				
+
+				b_forelhost = {
+					province = 1019
+
+					color = { 120 83 174 }
+					
+				}
+				b_leira = {
+					province = 5825
+
+					color = { 120 83 174 }
+					
+				}
+			}
+			c_fullhelm = {
+				color = { 61 45 81 }
+				
+
+				b_fullhelm = {
+					province = 1020
+
+					color = { 61 45 81 }
+					
+				}
+				b_broken_helm = {
+					province = 1021
+
+					color = { 61 45 81 }
+					
+				}
+				b_stendarr_beacon = {
+					province = 1022
+
+					color = { 61 45 81 }
+					
+				}
+			}
+			c_crystaldrift = {
+				color = { 52 40 71 }
+				
+
+				cultural_names = {
+					name_list_dwemer = cn_rkund
+				}
+				
+				b_crystaldrift = {
+					province = 1015
+
+					color = { 52 40 71 }
+					
+				}
+				b_rkund = {
+					province = 1014
+
+					color = { 52 40 71 }
+					
+				}
+				b_jenedusil_claw = {
+					province = 1016
+
+					color = { 52 40 71 }
+					
+				}
+			}
+		}
+		d_heartwood = {
+			color = { 93 59 127 }
+			
+
+			capital = c_honrich
+
+			cultural_names = {
+				name_list_mountain_orc = cn_largashbur
+				name_list_iron_orc = cn_largashbur
+				name_list_wood_orc = cn_largashbur
+				name_list_dwemer = cn_avanchnzel
+			}
+
+			can_create = {
+				completely_controls = title:d_heartwood.title_capital_county
+			}
+
+			c_honrich = {
+				color = { 88 60 110 }
+
+				cultural_names = {
+					name_list_dwemer = cn_avanchnzel
+				}
+				
+
+				b_honrich = {
+					province = 1005
+
+					color = { 88 60 110 }
+					
+				}
+				b_angarvunde = {
+					province = 1004
+
+					color = { 88 60 110 }
+					
+				}
+				b_heartwood = {
+					province = 1006
+
+					color = { 88 60 110 }
+					
+				}
+				b_avanchnzel = {
+					province = 1007
+
+					color = { 88 60 110 }
+					
+				}
+			}
+			c_lorndal = {
+				color = { 119 30 209 }
+
+				cultural_names = {
+					name_list_dwemer = cn_avanchnzel
+				}
+				
+
+				b_lorndal = {
+					province = 5817
+
+					color = { 119 30 209 }
+					
+				}
+				b_darmukh = {
+					province = 5818
+
+					color = { 119 30 209 }
+					
+				}
+				b_kalmansa = {
+					province = 5819
+
+					color = { 119 30 209 }
+					
+				}
+			}
+			c_largashbur = {
+				color = { 88 54 104 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_largashbur
+					name_list_iron_orc = cn_largashbur
+					name_list_wood_orc = cn_largashbur
+				}
+
+				b_largashbur = {
+					province = 1009
+
+					color = { 88 54 104 }
+					
+				}
+				b_trollslayer_gully = {
+					province = 1008
+
+					color = { 88 54 104 }
+					
+				}
+			}
+		}
+		d_ivarstead = {
+			color = { 129 98 147 }
+			
+
+			capital = c_ivarstead
+
+			can_create = {
+				completely_controls = title:d_ivarstead.title_capital_county
+			}
+
+			c_ivarstead = {
+				color = { 163 124 193 }
+				
+
+				b_ivarstead = {
+					province = 1023
+
+					color = { 163 124 193 }
+					
+				}
+				b_geirmund_hall = {
+					province = 1024
+
+					color = { 163 124 193 }
+					
+				}
+				b_pinepeak = {
+					province = 1025
+
+					color = { 163 124 193 }
+					
+				}
+			}
+			c_treva = {
+				color = { 141 97 180 }
+				
+
+				b_treva_watch = {
+					province = 1030
+
+					color = { 141 97 180 }
+					
+				}
+				b_smapleg = {
+					province = 1027
+
+					color = { 141 97 180 }
+					
+				}
+				b_sarethis = {
+					province = 1028
+
+					color = { 141 97 180 }
+					
+				}
+				b_riftwatch = {
+					province = 1029
+
+					color = { 141 97 180 }
+					
+				}
+			}
+			c_geir = {
+				color = { 108 95 156 }
+				
+
+				b_geirmunhal = {
+					province = 5812
+
+					color = { 108 95 156 }
+					
+				}
+				b_hilgrundsgraav = {
+					province = 5813
+
+					color = { 108 95 156 }
+					
+				}
+				b_raumsdalr = {
+					province = 5814
+
+					color = { 108 95 156 }
+					
+				}
+			}
+			c_thundstrad = {
+				color = { 39 122 74 }
+				
+
+				b_thundstrad = {
+					province = 5820
+
+					color = { 39 122 74 }
+					
+				}
+				b_hernar = {
+					province = 5821
+
+					color = { 39 122 74 }
+					
+				}
+			}
+		}
+		d_stony_basin = {
+			color = { 96 62 174 }
+			
+
+			capital = c_shor_stone
+
+			cultural_names = {
+				name_list_cyro_nord = cn_shor_stone
+				name_list_eastmarcher = cn_shor_stone
+				name_list_westmarcher = cn_shor_stone
+			}
+
+			can_create = {
+				completely_controls = title:d_stony_basin.title_capital_county
+			}
+
+			c_shor_stone = {
+				color = { 90 53 127 }
+				
+
+				b_shor_stone = {
+					province = 1051
+
+					color = { 90 53 127 }
+					
+				}
+				b_redbelly = {
+					province = 1041
+
+					color = { 90 53 127 }
+					
+				}
+				b_ruunvald = {
+					province = 1042
+
+					color = { 90 53 127 }
+					
+				}
+				b_fallowhall = {
+					province = 1052
+
+					color = { 90 53 127 }
+					
+				}
+				b_shor_watch = {
+					province = 1053
+
+					color = { 90 53 127 }
+					
+				}
+			}
+			c_clearspring = {
+				color = { 115 69 160 }
+				
+
+				b_clearspring_tarn = {
+					province = 1031
+
+					color = { 115 69 160 }
+					
+				}
+				b_northwind = {
+					province = 1032
+
+					color = { 115 69 160 }
+					
+				}
+			}
+			c_vernim_woods = {
+				color = { 133 87 184 }
+				
+
+				b_vernim_woods = {
+					province = 1034
+
+					color = { 133 87 184 }
+					
+				}
+				b_apprentice_glade = {
+					province = 1033
+
+					color = { 133 87 184 }
+					
+				}
+			}
+			c_greenwall = {
+				color = { 87 56 131 }
+
+				b_greenwall = {
+					province = 1038
+
+					color = { 87 56 131 }
+					
+				}
+				b_champion_rest = {
+					province = 1039
+
+					color = { 87 56 131 }
+					
+				}
+				b_last_vigil = {
+					province = 1040
+
+					color = { 87 56 131 }
+					
+				}
+			}
+		}
+		d_nimalten = {
+			color = { 49 72 110 }
+
+			cultural_names = {
+				name_list_dwemer = cn_bthalft
+				#orsimer
+				name_list_mountain_orc = cn_darmukh
+				name_list_iron_orc = cn_darmukh
+				name_list_wood_orc = cn_darmukh
+			}
+			
+			capital = c_nimalten
+
+			can_create = {
+				completely_controls = title:d_nimalten.title_capital_county
+			}
+
+			c_nimalten = {
+				color = { 69 72 110 }
+				
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_darmukh
+					name_list_iron_orc = cn_darmukh
+					name_list_wood_orc = cn_darmukh
+				}
+
+				b_nimalten = {
+					province = 1002
+
+					color = { 69 72 110 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_darmukh
+						name_list_iron_orc = cn_darmukh
+						name_list_wood_orc = cn_darmukh
+					}
+				}
+				b_valtgard = {
+					province = 1003
+
+					color = { 69 72 110 }
+				}
+				b_honeystrand = {
+					province = 1000
+
+					color = { 69 72 110 }
+				}
+				b_grethel_vigil = {
+					province = 1001
+
+					color = { 69 72 110 }
+				}
+			}
+			c_hastvard = {
+				color = { 24 90 171 }
+
+				b_hastvard = {
+					province = 5815
+
+					color = { 24 90 171 }
+				}
+				b_akrar = {
+					province = 5816
+
+					color = { 24 90 171 }
+				}
+			}
+			c_arcwind = {
+				color = { 49 92 110 }
+
+				cultural_names = {
+					name_list_dwemer = cn_bthalft
+				}
+
+				b_arcwind = {
+					province = 998
+
+					color = { 49 92 110 }
+				}
+				b_bthalft = {
+					province = 997
+
+					color = { 49 92 110 }
+				}
+				b_autumnwatch = {
+					province = 999
+
+					color = { 49 92 110 }
+				}
+			}
+			c_steelhead_cleft = {
+				color = { 49 72 130 }
+				
+				b_lion_pass = {
+					province = 995
+
+					color = { 49 72 130 }
+				}
+				b_haemar_shame = {
+					province = 994
+
+					color = { 49 72 130 }
+				}
+			}
+			c_ysmir_pass = {
+				color = { 160 130 120 }
+
+				cultural_names = {
+					name_list_goblin = cn_yirpa
+				}
+
+				b_ysmir_pass = {
+					province = 5487
+					cultural_names = {
+						name_list_goblin = cn_yirpa
+					}
+					color = { 160 130 120 }
+				}
+				b_taarengrav = {
+					province = 996
+
+					color = { 49 92 110 }
+				}
+			}
+		}
+	}
+	k_winterhold = {
+		color = { 144 203 177 }
+		
+
+		capital = c_winterhold
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_ayleid = cn_angalayond
+			name_list_falmer = cn_angalayond
+			name_list_dwemer = cn_alftand
+		}
+
+		d_winterhold = {
+			color = { 153 222 181 }
+			
+
+			capital = c_winterhold
+
+			cultural_names = {
+				name_list_ayleid = cn_angalayond
+				name_list_falmer = cn_angalayond
+			}
+
+			can_create = {
+				completely_controls = title:d_winterhold.title_capital_county
+			}
+
+			c_winterhold = {
+				color = { 124 213 188 }
+
+				cultural_names = {
+					name_list_ayleid = cn_angalayond
+					name_list_falmer = cn_angalayond
+				}
+				
+				b_winterhold = {
+					province = 1144
+
+					color = { 124 213 188 }
+
+					cultural_names = {
+						name_list_ayleid = cn_angalayond
+						name_list_falmer = cn_angalayond
+					}
+				}
+				b_winterhold_college = {
+					province = 1145
+
+					definite_form = yes
+
+					color = { 124 213 188 }
+					
+				}
+				b_hagsfjord = {
+					province = 1142
+
+					color = { 124 213 188 }
+					
+				}
+				b_bjarbrun = {
+					province = 1143
+
+					color = { 124 213 188 }
+					
+				}
+			}
+			c_stromhelm = {
+				color = { 123 209 168 }
+
+				b_ysgramor_crypt = {
+					province = 1150
+
+					definite_form = yes
+
+					color = { 123 209 168 }
+					
+				}
+				b_nerone = {
+					province = 5455
+
+					color = { 123 209 168 }
+					
+				}
+				b_stromhelm = {
+					province = 1151
+
+					color = { 123 209 168 }
+					
+				}
+				b_varheim = {
+					province = 1152
+
+					color = { 123 209 168 }
+					
+				}
+			}
+			c_broken_cape = {
+				color = { 117 205 176 }
+
+				b_pilgrim_rest = {
+					province = 1157
+
+					color = { 117 205 176 }
+					
+				}
+				b_halmstad = {
+					province = 1158
+
+					color = { 117 205 176 }
+					
+				}
+				b_trollhatten = {
+					province = 1159
+
+					color = { 117 205 176 }
+					
+				}
+			}
+			c_yngvild = {
+				color = { 118 211 189 }
+
+				b_hob_fall = {
+					province = 1166
+
+					color = { 118 211 189 }
+					
+				}
+				b_yngvild = {
+					province = 1164
+
+					color = { 118 211 189 }
+					
+				}
+				b_horker = {
+					province = 1165
+
+					color = { 118 211 189 }
+					
+				}
+			}
+			c_hsaarik = {
+				color = { 135 249 211 }
+
+				b_skytemple = {
+					province = 1147
+
+					color = { 135 249 211 }
+					
+				}
+				b_porhnak = {
+					province = 1146
+
+					color = { 135 249 211 }
+					
+				}
+				b_gorvigh = {
+					province = 5454
+
+					color = { 135 249 211 }
+					
+				}
+			}
+		}
+		d_anthor = {
+			color = { 87 156 134 }
+
+			cultural_names = {
+				name_list_dwemer = cn_alftand
+			}
+			
+
+			capital = c_anthor
+
+			cultural_names = {
+				name_list_eastmarcher = cn_saarthal
+				name_list_westmarcher = cn_saarthal
+				name_list_cyro_nord = cn_saarthal
+			}
+
+			can_create = {
+				completely_controls = title:d_anthor.title_capital_county
+			}
+
+			c_anthor = {
+				color = { 117 211 188 }
+
+				cultural_names = {
+					name_list_dwemer = cn_alftand
+				}
+				
+
+				b_anthor = {
+					province = 1163
+
+					color = { 117 211 188 }
+					
+				}
+				b_hodorsheim = {
+					province = 1160
+
+					color = { 117 211 188 }
+					
+				}
+				b_alftand = {
+					province = 1161
+
+					color = { 117 211 188 }
+					
+				}
+				b_kraldar = {
+					province = 1162
+
+					color = { 117 211 188 }
+					
+				}
+			}
+			c_kastav = {
+				color = { 61 109 97 }
+				
+
+				b_kastav = {
+					province = 1126
+
+					color = { 61 109 97 }
+					
+				}
+				b_winterway = {
+					province = 1127
+
+					color = { 61 109 97 }
+					
+				}
+			}
+			c_saarthal = {
+				color = { 53 150 141 }
+				
+
+				b_joetnar = {
+					province = 1155
+
+					color = { 53 150 141 }
+					
+
+				}
+				b_saarthal = {
+					province = 1153
+
+					color = { 53 150 141 }
+					
+				}
+				b_sightless_vale = {
+					province = 1154
+
+					color = { 53 150 141 }
+					
+				}
+				b_dusk_pass = {
+					province = 1156
+
+					color = { 53 150 141 }
+					
+				}
+			}
+			c_valsangr = {
+				color = { 173 192 139 }
+				
+
+				b_valsangr = {
+					province = 5799
+
+					color = { 173 192 139 }
+					
+
+				}
+				b_holmlond = {
+					province = 5800
+
+					color = { 173 192 139 }
+					
+				}
+				b_guodalir = {
+					province = 5801
+
+					color = { 173 192 139 }
+					
+				}
+			}
+		}
+		d_eastern_isles = {
+			color = { 118 163 153 } # Temp
+
+			capital = c_japhet_folly
+
+			can_create = {
+				completely_controls = title:d_eastern_isles.title_capital_county
+			}
+			
+			c_japhet_folly = {
+				color = { 137 221 179 }
+
+				cultural_names = {
+					name_list_riekling = cn_joorfal
+				}
+
+				b_rockjoint = {
+					province = 1148
+
+					color = { 137 221 179 }
+
+					cultural_names = {
+						name_list_riekling = cn_joorkar
+					}
+					
+				}
+				b_serpentstone = {
+					province = 1149
+
+					color = { 137 221 179 }
+
+					cultural_names = {
+						name_list_riekling = cn_joorraak
+					}
+					
+				}
+			}
+			c_bleakrock = {
+				color = { 118 163 153 }
+
+				cultural_names = {
+					#dunmer
+					name_list_dunmer = cn_bal_sehrma
+					name_list_ashlander =  cn_bal_sehrma
+					name_list_riekling = cn_joorfarok 
+				}
+
+				b_bleakrock = {
+					province = 1662
+
+					color = { 118 163 153 }
+
+					cultural_names = {
+						#dunmer
+						name_list_dunmer = cn_bal_sehrma
+						name_list_ashlander =  cn_bal_sehrma
+					}
+				}
+				b_hozzin_folly = {
+					province = 1660
+
+					color = { 118 163 153 }
+				}
+				b_skyshroud = {
+					province = 1661
+
+					color = { 118 163 153 }
+				}
+			}
+			c_dawn_isles = {
+				color = { 220 231 172 }
+
+				b_kalmar = {
+					province = 1230
+
+					color = { 220 231 172 }
+					
+				}
+				b_norderney = {
+					province = 1231
+
+					color = { 220 231 172 }
+					
+				}
+			}
+		}
+		d_bleakcoast = {
+			color = { 118 163 173 }
+			
+
+			capital = c_bannerwatch
+
+			can_create = {
+				completely_controls = title:d_bleakcoast.title_capital_county
+			}
+
+			c_bannerwatch = {
+				color = { 138 163 173 }
+				
+
+				b_bannerwatch = {
+					province = 1140
+
+					color = { 138 163 173 }
+				}
+				b_icewreck = {
+					province = 1138
+
+					color = { 138 163 173 }
+				}
+				b_volungar = {
+					province = 1139
+
+					color = { 138 163 173 }
+				}
+				b_markthal = {
+					province = 1141
+
+					color = { 138 163 173 }
+				}
+			}
+			c_bleakcoast = {
+				color = { 118 143 173 }
+				
+
+				b_bleakcoast = {
+					province = 1135
+
+					color = { 118 143 173 }
+				}
+				b_fjallskard = {
+					province = 1134
+
+					color = { 118 143 173 }
+				}
+				b_journeyman_nook = {
+					province = 1136
+
+					color = { 118 143 173 }
+				}
+				b_whistling_mine = {
+					province = 1137
+
+					color = { 118 143 173 }
+				}
+			}
+			c_snow_veil = {
+				color = { 118 163 193 }
+				
+
+				b_kvarner = {
+					province = 1132
+
+					color = { 118 163 193 }
+				}
+				b_snow_veil = {
+					province = 1131
+
+					color = { 118 163 193 }
+				}
+				b_horgrsgard = {
+					province = 1133
+
+					color = { 118 163 193 }
+				}
+			}
+			c_halfrun = {
+				color = { 76 158 146 }
+				
+
+				b_halfrun = {
+					province = 1128
+
+					color = { 76 158 146 }
+					
+
+				}
+				b_stillborn = {
+					province = 1129
+
+					color = { 76 158 146 }
+					
+				}
+				b_krondheim = {
+					province = 1130
+
+					color = { 76 158 146 }
+					
+				}
+			}
+		}
+		d_fellhammer = {
+			color = { 135 183 159 }
+			
+
+			capital = c_fellhammer
+
+			can_create = {
+				completely_controls = title:d_fellhammer.title_capital_county
+			}
+
+			c_fellhammer = {
+				color = { 60 114 102 }
+				
+
+				b_fellhammer = {
+					province = 1176
+
+					color = { 60 114 102 }
+					
+				}
+				b_erolgard = {
+					province = 1177
+
+					color = { 60 114 102 }
+					
+				}
+			}
+			c_driftshade = {
+				color = { 76 152 138 }
+				
+
+				b_driftshade = {
+					province = 1174
+
+					color = { 76 152 138 }
+					
+				}
+				b_hela_folly = {
+					province = 1173
+
+					color = { 76 152 138 }
+					
+				}
+				b_snowpoint_beacon = {
+					province = 1175
+
+					color = { 76 152 138 }
+					
+				}
+			}
+			c_frostflow = {
+				color = { 97 176 158 }
+				
+
+				b_frostflow_watch = {
+					province = 1169
+
+					color = { 97 176 158 }
+					
+				}
+				b_isengard = {
+					province = 1167
+
+					color = { 97 176 158 }
+					
+				}
+				b_vanir = {
+					province = 1168
+
+					color = { 97 176 158 }
+					
+				}
+			}
+			c_wayward = {
+				color = { 67 127 113 }
+				
+
+				b_wayward = {
+					province = 1172
+
+					color = { 67 127 113 }
+					
+				}
+				b_orevein = {
+					province = 1170
+
+					color = { 67 127 113 }
+					
+				}
+				b_elvenum = {
+					province = 1171
+
+					color = { 67 127 113 }
+					
+				}
+			}
+		}
+	}
+	k_markarth = {
+		color = { 51 79 35 }
+		
+
+		capital = c_markarth
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#breton
+			name_list_glenumbran = cn_east_reach
+			name_list_witchman = cn_east_reach
+			name_list_northmen = cn_east_reach
+			name_list_iliac = cn_east_reach
+			name_list_bjoule = cn_east_reach
+			#Cyrodiilic
+			name_list_nibenu = cn_karthay #Karthay, calque of Niben-ay but with the Karth River
+			#Elves
+			name_list_ayleid = cn_dweseli
+			name_list_falmer = cn_dweseli
+			#Dwemer
+			name_list_dwemer = cn_nchuand_zel
+		}
+
+		d_markarth = {
+			color = { 38 74 25 }
+			
+
+			capital = c_markarth
+
+			cultural_names = {
+				name_list_ayleid = cn_garlastel
+				name_list_falmer = cn_garlastel
+				name_list_dwemer = cn_nchuand_zel
+			}
+			can_create = {
+				completely_controls = title:d_markarth.title_capital_county
+			}
+
+			c_markarth = {
+				color = { 39 85 29 }
+				
+				cultural_names = {
+					name_list_ayleid = cn_garlastel
+					name_list_falmer = cn_garlastel
+					name_list_dwemer = cn_nchuand_zel
+				}
+
+				b_markarth = {
+					province = 1459
+
+					color = { 39 85 29 }
+
+					cultural_names = {
+						name_list_ayleid = cn_garlastel
+						name_list_falmer = cn_garlastel
+						name_list_dwemer = cn_nchuand_zel
+					}
+					
+				}
+				b_faldarach = {
+					province = 1460
+
+					color = { 39 85 29 }		
+				}
+				b_batush = {
+					province = 1461
+
+					color = { 39 85 29 }
+					
+				}
+				b_baelus = {
+					province = 1462
+
+					color = { 39 85 29 }
+					
+				}
+				b_mhemadh = {
+					province = 1463
+
+					color = { 39 85 29 }
+					
+				}
+			}
+			c_brasswater = {
+				color = { 47 95 32 }
+
+				b_brasswater = {
+					province = 1464
+
+					color = { 47 95 32 }
+					
+				}
+				b_bonechime = {
+					province = 1465
+
+					color = { 47 95 32 }
+					
+				}
+				b_duimnach = {
+					province = 1466
+
+					color = { 47 95 32 }
+					
+				}
+			}
+			c_purewater = {
+				color = { 67 110 50 }
+
+				b_purewater_run = {
+					province = 1468
+
+					color = { 67 110 50 }
+					
+				}
+				b_hag_rock = {
+					province = 1467
+
+					color = { 67 110 50 }
+					
+				}
+			}
+			c_ragnvald = {
+				color = { 49 101 31 }
+
+				b_ragnvald = {
+					province = 1454
+
+					color = { 49 101 31 }
+					
+				}
+				b_deadchime = {
+					province = 1455
+
+					color = { 49 101 31 }
+					
+				}
+				b_tor_ayarla = {
+					province = 1456
+
+					color = { 49 101 31 }
+					
+				}
+			}
+			c_kolskeggr = {
+				color = { 59 106 42 }
+
+				b_kolskeggr = {
+					province = 1458
+
+					color = { 59 106 42 }
+					
+				}
+				b_wildspear = {
+					province = 1457
+
+					color = { 59 106 42 }
+					
+				}
+			}
+			c_leylan = {
+				color = { 52 91 30 }
+
+				b_leylan = {
+					province = 1508
+
+					color = { 52 91 30 }
+					
+				}
+				b_druadein = {
+					province = 1509
+
+					color = { 52 91 30 }
+					
+				}
+			}
+		}
+		d_skyhammer = {
+			color = { 87 65 31 }
+			
+
+			capital = c_skyhammer
+
+			cultural_names = {
+				name_list_mountain_orc = cn_dushnikh
+				name_list_iron_orc = cn_dushnikh
+				name_list_wood_orc = cn_dushnikh
+				name_list_dwemer = cn_arkngthamz
+			}
+
+			can_create = {
+				completely_controls = title:d_skyhammer.title_capital_county
+			}
+
+			c_skyhammer = {
+				color = { 67 65 31 }
+				
+
+				b_skyhammer = {
+					province = 1496
+
+					color = { 67 65 31 }
+					
+
+				}
+				b_reachcliff = {
+					province = 1501
+
+					color = { 67 65 31 }
+					
+				}
+				b_ansilgard = {
+					province = 1494
+
+					color = { 67 65 31 }
+					
+				}
+				b_sheargen = {
+					province = 1495
+
+					color = { 67 65 31 }
+					
+				}
+			}
+			c_reachwind = {
+				color = { 87 85 31 }
+				
+
+				b_reachwind = {
+					province = 1502
+
+					color = { 87 85 31 }
+					
+				}
+				b_reachwater = {
+					province = 1500
+
+					color = { 87 85 31 }
+					
+				}
+				b_eyrie = {
+					province = 1503
+
+					color = { 87 85 31 }
+					
+				}
+			}
+			c_dushnikh = {
+				color = { 87 65 51 }
+				
+
+				cultural_names = {
+					name_list_mountain_orc = cn_dushnikh
+					name_list_iron_orc = cn_dushnikh
+					name_list_wood_orc = cn_dushnikh
+					name_list_reachfolk = cn_briarrock
+					name_list_dwemer = cn_nalzthdbar
+				}
+
+				b_dushnikh = {
+					province = 1504
+
+					color = { 87 65 51 }
+					
+
+					cultural_names = {
+						name_list_mountain_orc = cn_dushnikh_yal
+						name_list_iron_orc = cn_dushnikh_yal
+						name_list_wood_orc = cn_dushnikh_yal
+						name_list_reachfolk = cn_briarrock
+					}
+				}
+				b_vateshran_hollow = {
+					province = 1505
+
+					color = { 87 65 51 }
+					
+				}
+				b_nalzthdbar = {
+					province = 1506
+
+					color = { 87 65 51 }
+					
+				}
+			}
+			c_rockwatch = {
+				color = { 107 65 31 }
+
+				cultural_names = {
+					name_list_dwemer = cn_arkngthamz
+				}
+				
+				b_rockwatch = {
+					province = 1499
+
+					color = { 107 65 31 }
+				}
+				b_gearagh = {
+					province = 1497
+
+					color = { 107 65 31 }
+				}
+				b_arkngthamz = {
+					province = 1498
+
+					color = { 107 65 31 }
+				}
+			}
+		}
+		d_sungard = {
+			color = { 53 79 83 }
+
+			cultural_names = {
+				name_list_dwemer = cn_vardnknd
+			}
+			
+			capital = c_sungard
+
+			can_create = {
+				completely_controls = title:d_sungard.title_capital_county
+			}
+
+			c_sungard = {
+				color = { 73 79 83 }
+				
+
+				b_sungard = {
+					province = 1485
+
+					color = { 73 79 83 }
+				}
+				b_helwatch = {
+					province = 1483
+
+					color = { 73 79 83 }
+				}
+				b_hendraheim = {
+					province = 1484
+
+					color = { 73 79 83 }
+				}
+				b_bjorlam = {
+					province = 1486
+
+					color = { 73 79 83 }
+				}
+			}
+			c_breakwind = {
+				color = { 53 79 103 }
+				
+
+				b_breakwind = {
+					province = 1487
+
+					color = { 53 79 103 }
+				}
+				b_lost_valley = {
+					province = 1488
+
+					color = { 53 79 103 }
+				}
+				b_cradle_stone = {
+					province = 1489
+
+					color = { 53 79 103 }
+				}
+			}
+			c_valthume = {
+				color = { 53 79 63 }
+
+				cultural_names = {
+					name_list_dwemer = cn_vardnknd
+				}
+
+				b_valthume = {
+					province = 1493
+
+					color = { 53 79 63 }
+
+					cultural_names = {
+						name_list_dwemer = cn_vardnknd
+					}
+				}
+				b_shadefeather = {
+					province = 1490
+
+					color = { 53 79 63 }
+				}
+				b_gloomreach = {
+					province = 1491
+
+					color = { 53 79 63 }
+				}
+				b_volgard = {
+					province = 1492
+
+					color = { 53 79 63 }
+				}
+			}
+			c_ravenhall = {
+				color = { 53 99 83 }
+				
+
+				b_ravenhall = {
+					province = 1481
+
+					color = { 53 99 83 }
+				}
+				b_falkhall = {
+					province = 1480
+
+					color = { 53 99 83 }
+				}
+				b_ustunhammer = {
+					province = 1482
+
+					color = { 53 99 83 }
+				}
+			}
+		}
+		d_hroldan = {
+			color = { 52 85 46 }
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_lugrash # Not right where TR has it
+					name_list_iron_orc = cn_lugrash
+					name_list_wood_orc = cn_lugrash
+				}
+
+			capital = c_hroldan
+
+			can_create = {
+				completely_controls = title:d_hroldan.title_capital_county
+			}
+
+			c_hroldan = {
+				color = { 72 85 46 }
+				
+
+				b_hroldan = {
+					province = 1479
+
+					color = { 72 85 46 }
+
+					cultural_names = {
+						name_list_reachfolk = cn_hroldan_ring
+					}
+				}
+				b_harrowed_haunt = {
+					province = 1478
+
+					color = { 72 85 46 }
+				}
+				b_cinderheart = {
+					province = 1476
+
+					color = { 72 85 46 }
+				}
+			}
+			c_karthspire = {
+				color = { 52 85 66 }
+				
+				cultural_names = {
+					name_list_jaegi	= cn_skyhaven
+					name_list_rimmen = cn_skyhaven
+					name_list_ilniviri = cn_skyhaven
+					name_list_tsaesci = cn_skyhaven
+				}
+
+				b_karthspire = {
+					province = 1474
+
+					color = { 52 85 66 }
+					
+				}
+				b_sky_haven = {
+					province = 1473
+
+					color = { 52 85 66 }
+					
+				}
+			}
+			c_soljund = {
+				color = { 52 65 46 }
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_lugrash # Not right where TR has it
+					name_list_iron_orc = cn_lugrash
+					name_list_wood_orc = cn_lugrash
+				}
+				
+
+				b_soljund = {
+					province = 1477
+
+					color = { 52 65 46 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_lugrash # Not right where TR has it
+						name_list_iron_orc = cn_lugrash
+						name_list_wood_orc = cn_lugrash
+					}
+
+				}
+				b_rebel_retreat = {
+					province = 1475
+
+					color = { 52 65 46 }
+				}
+			}
+			c_hraggen = {
+				color = { 52 105 46 }
+				
+
+				b_hraggen = {
+					province = 1472
+
+					color = { 52 105 46 }
+				}
+				b_fourskull = {
+					province = 1469
+
+					color = { 52 105 46 }
+				}
+				b_red_eagle = {
+					province = 1470
+
+					color = { 52 105 46 }
+				}
+				b_dunruadh = {
+					province = 1471
+
+					color = { 52 105 46 }
+				}
+			}
+		}
+		d_druadach = {
+			color = { 67 96 41 }
+
+			cultural_names = {
+				#orsimer
+				name_list_mountain_orc = cn_muralag
+				name_list_iron_orc = cn_muralag
+				name_list_wood_orc = cn_muralag
+				name_list_dwemer = cn_bthar_zel
+			}
+			
+
+			capital = c_druadach
+
+			can_create = {
+				completely_controls = title:d_druadach.title_capital_county
+			}
+
+			c_druadach = {
+				color = { 112 182 98 }
+				
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_muralag
+					name_list_iron_orc = cn_muralag
+					name_list_wood_orc = cn_muralag
+					name_list_dwemer = cn_bthar_zel
+				}
+
+				b_druadach = {
+					province = 1438
+
+					color = { 112 182 98 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_muralag
+						name_list_iron_orc = cn_muralag
+						name_list_wood_orc = cn_muralag
+					}
+					
+				}
+				b_deep_folk_crossing = {
+					province = 1437
+
+					color = { 112 182 98 }
+
+					cultural_names = {
+						name_list_dwemer = cn_bthar_zel
+					}
+					
+				}
+				b_reachreach = {
+					province = 1439
+
+					color = { 112 182 98 }
+					
+				}
+			}
+			c_luspardain = {
+				color = { 77 129 56 }
+
+				cultural_names = {
+					#orsimer
+					name_list_mountain_orc = cn_nargozh
+					name_list_iron_orc = cn_nargozh
+					name_list_wood_orc = cn_nargozh
+					name_list_dwemer = cn_bthardamz
+				}
+				
+
+				b_luspardain = {
+					province = 1451
+
+					color = { 77 129 56 }
+
+					cultural_names = {
+						#orsimer
+						name_list_mountain_orc = cn_nargozh
+						name_list_iron_orc = cn_nargozh
+						name_list_wood_orc = cn_nargozh
+					}
+					
+				}
+				b_bthardamz = {
+					province = 1449
+
+					color = { 77 129 56 }
+					
+				}
+				b_rearial = {
+					province = 1450
+
+					color = { 77 129 56 }
+					
+				}
+			}
+			c_blackmoon = {
+				color = { 113 178 99 }
+				
+
+				b_blackmoon = {
+					province = 1443
+
+					color = { 113 178 99 }
+					
+				}
+				b_peryitein = {
+					province = 1444
+
+					color = { 113 178 99 }
+					
+				}
+			}
+		}
+		d_karthwasten = {
+			color = { 106 108 21 }
+			
+
+			capital = c_karthwasten
+
+			cultural_names = {
+				name_list_eastmarcher = cn_harmugstahl
+				name_list_westmarcher = cn_harmugstahl
+				name_list_cyro_nord = cn_harmugstahl
+				#Orsimer
+				name_list_mountain_orc = cn_urakmok
+				name_list_iron_orc = cn_urakmok
+				name_list_wood_orc = cn_urakmok
+			}
+
+			can_create = {
+				completely_controls = title:d_karthwasten.title_capital_county
+			}
+
+			c_karthwasten = {
+				color = { 126 108 21 }
+
+				cultural_names = {
+					#Orsimer
+					name_list_mountain_orc = cn_urakmok # Not the exact place from TR
+					name_list_iron_orc = cn_urakmok
+					name_list_wood_orc = cn_urakmok
+				}
+				
+
+				b_karthkeep = {
+					province = 1448
+
+					color = { 126 108 21 }
+
+					cultural_names = {
+						#Orsimer
+						name_list_mountain_orc = cn_urakmok # Not the exact place from TR
+						name_list_iron_orc = cn_urakmok
+						name_list_wood_orc = cn_urakmok
+					}
+
+				}
+				b_karthwasten = {
+					province = 1447
+
+					color = { 126 108 21 }
+				}
+				b_sanuarach = {
+					province = 1445
+
+					color = { 126 108 21 }
+				}
+				b_crow_eye = {
+					province = 1446
+
+					color = { 126 108 21 }
+				}
+			}
+			c_dragontooth = {
+				color = { 106 108 41 }
+				
+
+				cultural_names = {
+					name_list_eastmarcher = cn_harmugstahl
+					name_list_westmarcher = cn_harmugstahl
+					name_list_cyro_nord = cn_harmugstahl
+				}
+
+				b_harmugstahl = {
+					province = 1441
+
+					color = { 106 108 41 }
+				}
+				b_witchborne = {
+					province = 1440
+
+					color = { 106 108 41 }
+				}
+				b_dragontooth = {
+					province = 1442
+
+					color = { 106 108 41 }
+				}
+			}
+			c_blindcliff = {
+				color = { 106 88 21 }
+				
+
+				b_blindcliff = {
+					province = 1453
+
+					color = { 106 88 21 }		
+				}
+				b_nocturn = {
+					province = 1452
+
+					color = { 106 88 21 }
+				}
+			}
+		}
+		d_karthald = {
+			color = { 27 42 22 }
+			
+
+			capital = c_karthwatch
+
+			cultural_names = {
+				name_list_atmoran = cn_aelfendor
+				name_list_skaal = cn_aelfendor
+				name_list_atmoran_giant = cn_aelfendor
+			}
+
+			can_create = {
+				completely_controls = title:d_karthald.title_capital_county
+			}
+
+			c_karthwatch = {
+				color = { 22 36 17 }
+				
+
+				cultural_names = {
+					name_list_atmoran = cn_aelfendor
+					name_list_skaal = cn_aelfendor
+					name_list_atmoran_giant = cn_aelfendor
+				}
+
+				b_karthwatch = {
+					province = 1430
+
+					cultural_names = {
+						name_list_atmoran = cn_aelfendor
+						name_list_skaal = cn_aelfendor
+						name_list_atmoran_giant = cn_aelfendor
+					}
+
+					color = { 22 36 17 }
+					
+				}
+				b_silversnow = {
+					province = 1431
+
+					color = { 22 36 17 }
+					
+				}
+				b_froststone = {
+					province = 1432
+
+					color = { 22 36 17 }
+					
+				}
+				b_scarhammer = {
+					province = 1433
+
+					color = { 22 36 17 }
+					
+				}
+			}
+			c_bleakwind = {
+				color = { 30 45 26 }
+				
+
+				b_bleakwind = {
+					province = 1436
+
+					color = { 30 45 26 }
+					
+				}
+				b_sundered = {
+					province = 1434
+
+					color = { 30 45 26 }
+					
+				}
+				b_rebel_cairn = {
+					province = 1435
+
+					color = { 30 45 26 }
+					
+				}
+			}
+			c_chillbain = {
+				color = { 32 45 27 }
+				
+
+				b_chillbain = {
+					province = 1426
+
+					color = { 32 45 27 }
+					
+				}
+				b_cliffside = {
+					province = 1427
+
+					color = { 32 45 27 }
+					
+				}
+				b_liar_retreat = {
+					province = 1428
+
+					color = { 32 45 27 }
+					
+				}
+				b_breakwatch = {
+					province = 1429
+
+					color = { 32 45 27 }
+					
+				}
+			}
+			c_beorinhal = {
+				color = { 48 76 55 }
+				
+
+				b_beorinhal = {
+					province = 5776
+
+					color = { 48 76 55 }
+					
+				}
+				b_brunsvold = {
+					province = 5777
+
+					color = { 100 147 111 }
+					
+				}
+				b_deskav = {
+					province = 5778
+
+					color = { 75 108 83 }
+					
+				}
+			}
+		}
+	}
+	k_solstheim = {
+		color = { 20 235 255 }
+
+		capital = c_raven_rock
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_riekling = cn_joorfaaloo
+			name_list_dwemer = cn_falbtharz
+			name_list_ayleid = cn_eld_arpensel
+			name_list_falmer = cn_eld_arpensel
+			name_list_galen = cn_solstice #Yeah...
+			name_list_orma = cn_soulstheim
+		}
+
+		d_raven_rock = {
+			color = { 20 255 255 }
+			
+
+			capital = c_raven_rock
+
+			cultural_names = {
+				name_list_skaal = cn_hirstaang
+				name_list_atmoran = cn_hirstaang
+				name_list_atmoran_giant = cn_hirstaang
+				name_list_riekling = cn_swaalook
+				name_list_dwemer = cn_kagrumez
+			}
+
+			can_create = {
+				completely_controls = title:d_raven_rock.title_capital_county
+			}
+
+			c_raven_rock = {
+				color = { 10 245 255 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_hirstaang
+					name_list_atmoran = cn_hirstaang
+					name_list_atmoran_giant = cn_hirstaang
+					name_list_riekling = cn_koolaamookara
+				}
+
+				b_raven_rock = {
+					province = 1687
+
+					color = { 20 235 255 }
+					
+
+					cultural_names = {
+						name_list_skaal = cn_hirstaang
+						name_list_atmoran = cn_hirstaang
+						name_list_atmoran_giant = cn_hirstaang
+						name_list_riekling = cn_koolaamookara
+					}
+				}
+				b_severin = {
+					province = 1685
+
+					color = { 20 235 255 }
+					
+				}
+				b_ravenmine = {
+					province = 1686
+
+					color = { 20 235 255 }
+					
+				}
+				b_coldcinder = {
+					province = 1688
+
+					color = { 20 235 255 }
+					
+				}
+			}
+			c_bloodskal = {
+				color = { 10 220 190 }
+
+				cultural_names = {
+						name_list_riekling = cn_boodjarak
+					} 
+
+				b_bloodskal = {
+					province = 1680
+
+					color = { 10 220 240 }
+
+					cultural_names = {
+						name_list_riekling = cn_boodjarak
+					} 
+					
+				}
+				b_damphall = {
+					province = 1681
+
+					color = { 10 220 240 }
+					
+				}
+			}
+			c_solvjord = {
+				color = { 5 235 235 }
+
+				cultural_names = {
+						name_list_riekling = cn_solvajoor
+					} 
+				
+				cultural_names = {
+					name_list_dwemer = cn_kagrumez
+				}
+
+				b_solvjord = {
+					province = 1683
+
+					color = { 5 215 245 }
+
+					cultural_names = {
+						name_list_riekling = cn_solvajoor
+					} 
+					
+				}
+				b_brodir = {
+					province = 1682
+
+					color = { 5 215 245 }
+					
+				}
+			}
+			c_highpoint = {
+				color = { 15 235 215 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_gandrung
+					name_list_atmoran = cn_gandrung
+					name_list_atmoran_giant = cn_gandrung
+					name_list_riekling = cn_kaarfaal
+				}
+
+				b_highpoint = {
+					province = 1689
+
+					color = { 5 240 255 }
+
+					cultural_names = {
+					name_list_riekling = cn_kaarfaal
+				}
+					
+				}
+				b_penumbra = {
+					province = 1690
+
+					color = { 5 240 255 }
+					
+				}
+				b_gandrung = {
+					province = 1691
+
+					color = { 5 240 255 }
+					
+				}
+			}
+			c_frostmoth = {
+				color = { 25 240 225 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_kolbjorn
+					name_list_riekling = cn_klokaar
+					name_list_atmoran = cn_kolbjorn
+					name_list_atmoran_giant = cn_kolbjorn
+				}
+
+				b_frostmoth = {
+					province = 1697
+
+					color = { 25 230 240 }
+					
+				}
+				b_kolbjorn = {
+					province = 1695
+
+					color = { 25 230 240 }
+
+					cultural_names = {
+					name_list_riekling = cn_klokaar
+				}
+					
+				}
+				b_stormpfund = {
+					province = 1696
+
+					color = { 25 230 240 }
+					
+				}
+			}
+		}
+		d_northshore = {
+			color = { 15 195 255 }
+			
+
+			capital = c_northshore
+
+			cultural_names = {
+				name_list_skaal = cn_mortrag
+				name_list_atmoran = cn_mortrag
+				name_list_atmoran_giant = cn_mortrag
+				name_list_riekling = cn_norookar
+				name_list_dwemer = cn_falbtharz
+			}
+
+			can_create = {
+				completely_controls = title:d_northshore.title_capital_county
+			}
+
+			c_northshore = {
+				color = { 15 195 255 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_mortrag
+					name_list_atmoran = cn_mortrag
+					name_list_atmoran_giant = cn_mortrag
+					name_list_riekling = cn_froogarjoorak
+				}
+
+				b_northshore_landing = {
+					province = 1663
+
+					color = { 15 225 255 }
+					
+
+					cultural_names = {
+						name_list_skaal = cn_mortrag
+						name_list_atmoran = cn_mortrag
+						name_list_atmoran_giant = cn_mortrag
+						name_list_riekling = cn_froogarjoorak
+					}
+				}
+				b_karstaag = {
+					province = 1664
+
+					color = { 15 225 255 }
+					
+				}
+				b_hrothmund_bane = {
+					province = 1665
+
+					color = { 15 225 255 }
+					
+				}
+			}
+			c_thormoor = {
+				color = { 5 200 255 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_varstaad
+					name_list_atmoran = cn_varstaad
+					name_list_atmoran_giant = cn_varstaad
+					name_list_riekling = cn_maawaabrelkoo
+				}
+
+				b_thormoor_watch = {
+					province = 1670
+
+					color = { 5 230 255 }
+
+				cultural_names = {
+					name_list_riekling = cn_farokawaa
+				}
+					
+				}
+
+				b_varstaad = {
+					province = 1669
+
+					color = { 5 230 255 }
+
+				cultural_names = {
+					name_list_riekling = cn_maawaabrelkoo
+				}
+
+					
+				}
+			}
+			c_harstrad = {
+				color = { 0 195 250 }
+
+				cultural_names = {
+					name_list_riekling = cn_benkongerike
+				}
+
+				b_harstrad = {
+					province = 1672
+
+					color = { 0 235 250 }
+
+					cultural_names = {
+					name_list_riekling = cn_benkongerike
+				}
+					
+				}
+				b_thrond = {
+					province = 1671
+
+					color = { 0 235 250 }
+					
+				}
+				b_gronn = {
+					province = 1673
+
+					color = { 0 235 250 }
+					
+				}
+			}
+			c_moesring = {
+				color = { 25 199 255 }
+
+				cultural_names = {
+					name_list_riekling = cn_hralookaarok
+					name_list_dwemer = cn_falbtharz
+				}
+
+				b_moesring = {
+					province = 1675
+
+					cultural_names = {
+						name_list_dwemer = cn_falbtharz
+						name_list_riekling = cn_hralookaarok
+					}
+
+					color = { 25 225 255 }
+
+				
+				}
+				b_hvitkald = {
+					province = 1674
+
+					color = { 25 225 255 }
+					
+				}
+				b_snowclad = {
+					province = 1676
+
+					color = { 25 225 255 }
+					
+				}
+			}
+		}
+		d_snowfallow = {
+			color = { 70 230 255 }
+			
+
+			capital = c_snowfallow
+
+			cultural_names = {
+				name_list_skaal = cn_felsaad
+				name_list_atmoran = cn_felsaad
+				name_list_atmoran_giant = cn_felsaad
+				name_list_riekling = cn_eerawaa
+				name_list_dwemer = cn_nchardak
+			}
+
+			can_create = {
+				completely_controls = title:d_snowfallow.title_capital_county
+			}
+
+			c_snowfallow = {
+				color = { 70 235 255 }
+				
+
+				cultural_names = {
+					name_list_skaal = cn_valbrandr
+					name_list_atmoran = cn_valbrandr
+					name_list_atmoran_giant = cn_valbrandr
+					name_list_riekling = cn_gorwak
+					name_list_dwemer = cn_nchardak
+				}
+
+				b_snowfallow = {
+					province = 1678
+
+					color = { 10 235 255 }
+					
+
+					cultural_names = {
+						name_list_skaal = cn_valbrandr
+						name_list_atmoran = cn_valbrandr
+						name_list_atmoran_giant = cn_valbrandr
+						name_list_riekling = cn_gorwak
+					}
+				}
+				b_vahlok = {
+					province = 1677
+
+					color = { 10 235 255 }
+					
+				}
+				b_nchardak = {
+					province = 1679
+
+					color = { 10 235 255 }
+					
+				}
+			}
+			c_fjalding = {
+				color = { 90 230 255 }
+
+				cultural_names = {
+				name_list_riekling = cn_brafaal
+				}
+
+				b_fjalding = {
+					province = 1701
+
+					color = { 0 230 255 }
+
+				cultural_names = {
+				name_list_riekling = cn_brafaal
+				}
+					
+				}
+				b_sjobal = {
+					province = 1699
+
+					color = { 0 230 255 }
+					
+				}
+				b_gyldenhul = {
+					province = 1700
+
+					color = { 0 230 255 }
+					
+				}
+			}
+			c_felsaad = {
+				color = { 85 220 250 }
+				
+				cultural_names = {
+					name_list_riekling = cn_karruuk
+				}
+
+				b_skaal = {
+					province = 1666
+
+					color = { 15 220 250 }
+
+					cultural_names = {
+					name_list_riekling = cn_braaloo
+				}
+					
+				}
+				b_frossel = {
+					province = 1667
+
+					color = { 15 220 250 }
+					
+				}
+				b_rimhull = {
+					province = 1668
+
+					color = { 15 220 250 }
+					
+				}
+			}
+			c_himmelhost = {
+				color = { 75 230 255 }
+
+				cultural_names = {
+					name_list_riekling = cn_gahwaka
+				}
+				
+
+				b_himmelhost = {
+					province = 1694
+
+					color = { 15 230 255 }
+
+					cultural_names = {
+						name_list_riekling = cn_gahwaka
+					}
+					
+				}
+				b_skogsdrake = {
+					province = 1692
+
+					color = { 15 230 255 }
+					
+
+					cultural_names = {
+						name_list_skaal = cn_skogsdrake
+						name_list_atmoran = cn_skogsdrake
+						name_list_atmoran_giant = cn_skogsdrake
+					}
+				}
+				b_toralf = {
+					province = 1693
+
+					color = { 15 230 255 }
+					
+				}
+			}
+		}
+	}
+}
+###Eastern & Western Skyrim, non-formable, Skyrim Civil War 1
+e_eastern_skyrim = {
+	color = { 0 100 240 }
+
+	cultural_names = {
+		name_list_ayleid = cn_eastern_falmeris
+		name_list_falmer = cn_eastern_falmeris
+	}
+
+	capital = c_windhelm
+	can_be_named_after_dynasty = no
+    ignore_titularity_for_title_weighting = yes
+	ai_primary_priority = {
+		if = {
+			limit = { culture = culture:eastmarcher }
+			add = @better_than_the_alternatives_score
+		}
+	}
+}	
+
+e_western_skyrim = {
+	color = { 0 50 125 }
+
+	cultural_names = {
+		name_list_ayleid = cn_western_falmeris
+		name_list_falmer = cn_western_falmeris
+	}
+
+	capital = c_solitude
+	can_be_named_after_dynasty = no
+    ignore_titularity_for_title_weighting = yes	
+	ai_primary_priority = {
+		if = {
+			limit = { culture = culture:westmarcher }
+			add = @better_than_the_alternatives_score
+		}
+	}
+}

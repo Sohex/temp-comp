@@ -1,0 +1,401 @@
+﻿ek_on_game_start_religion = {
+
+	effect = {
+
+		############
+		# RELIGION #
+		############
+
+		### We use a lot of story_cycles, so it's better to use a placeholder character
+		random_ruler = { save_scope_as = placeholder_char }
+
+		### Some religious tweaks
+		every_religion_global = {
+			every_faith = {
+				save_scope_as = current_faith
+
+				# Goes from a blanket view of the Daedric Princes to the sixteen specific ones
+				faith_give_view_daedric_princes = yes
+			}
+		}
+
+		### Cultural/Communal identity doctrines
+		## We always save a single culture in it, and depending on the doctrine used it will either target the culture itself or its heritage
+		# Aldmer pantheon
+		faith:aedric = {
+			culture:balfiera = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:chantry_auriel = {
+			culture:falmer = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:mainland_auriel = {
+			culture:balfiera = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:malada = {
+			culture:barsaebic = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Bosmeri pantheon
+		faith:greenpact = {
+			culture:morathi = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:pact_exemptions = {
+			culture:morathi = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:blacksapmovement = {
+			culture:morathi = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:wilderking = {
+			culture:morathi = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		#Imperial pantheon
+		faith:eight_divines = {
+			culture:colovian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:breton_cult = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:redguard_cult = {
+			culture:forebear = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:hero_cult = {
+			culture:colovian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:niben_cult = {
+			culture:nibenu = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:temple_one = {
+			culture:nibenese = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		#Kothri
+		faith:nedic_cult = {
+			culture:kothringi = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:horwalli_faith = {
+			culture:horwalli = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Trinimac
+		faith:trinimac_cult = {
+			culture:mountain_orc = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:vosh_rakh = {
+			culture:mountain_orc = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Yokudan
+		faith:yoku_spirits = {
+			culture:raga = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:walkabout = {
+			culture:crown_culture = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:herd_mother = {
+			culture:horsefolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:satakal = {
+			culture:alikr = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Akaviri
+		faith:court_dawnbeauty = {
+			culture:ilniviri = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Wyrd
+		faith:forgotten_gods = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:breton_aedra = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:beldama_wyrd = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:glenmoril_wyrd = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:druid_circles = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Atmoran
+		faith:nord_cult = {
+			culture:westmarcher = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:totemism = {
+			culture:westmarcher = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:anuic_skaal = {
+			culture:skaal = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:dragon_cult = {
+			culture:westmarcher = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:woodland_man = {
+			culture:westmarcher = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:mammoth_path = {
+			culture:tundrastrider = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Dwemeris
+		faith:golden_tones = {
+			culture:amz_vtharden = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Falmeris
+		faith:xrib = {
+			culture:falmer_betrayed = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Hist
+		faith:hist = {
+			culture:hleel = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:amberhist = {
+			culture:hleel = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:lilmothiit_hist = {
+			culture:lilmothiit = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:ghostpeople = {
+			culture:hleel = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:sunhist = {
+			culture:hleel = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Imga
+		faith:ius_cult = {
+			culture:imga = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:anui_el = {
+			culture:imga = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Khajiit
+		faith:twomoonsdance = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:manypathsdance = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:baandari_code = {
+			culture:baandari = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:order_new_moon = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:hidden_moon = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:blood_cat = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Sithis
+		faith:xanmeer = {
+			culture:hleel = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:coiled_path = {
+			culture:ashlander = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:numenism = {
+			culture:orma = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Stone
+		faith:osh_ornim = {
+			culture:iron_orc = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Malacath
+		faith:code_of_malacath = {
+			culture:mountain_orc = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:goblin_shamanism = {
+			culture:goblin = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:malacath_brutal_breed = {
+			culture:mountain_orc = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:pact_of_malahk = {
+			culture:malahk_orc = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Meridia
+		faith:ilpenada = {
+			culture:mathmeldi = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Namira
+		faith:darkmoondance = {
+			culture:pellitinian = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		#Sanguine
+		faith:sanguine_mysteries = {
+			culture:yespest = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		# Reach
+		faith:old_gods = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:dwemer_idolatry = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:hircine_coven = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:malacath_coven = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:namira_coven = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:minotaur_cult = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:druadach_cult = {
+			culture:reachfolk = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:witchman_faith = {
+			culture:witchman = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+
+		# Velothi
+		faith:high_velothi = {
+			culture:ashlander = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:tribunal_temple = {
+			culture:chuzei = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:tribunal_cult = {
+			culture:marduhn_oad = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:sixth_house = {
+			culture:chuzei = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:cantemiric_sect = {
+			culture:cantemiric = { save_scope_as = culture_faith } #culture
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+
+		# Aetherial
+		faith:magnus_cult = {
+			culture:iliac = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+		faith:celestial_cult = {
+			culture:keptu = { save_scope_as = culture_faith } #heritage
+			set_variable = { name = ek_associated_culture value = scope:culture_faith }
+		}
+
+
+		### Fervor Equilibrium
+		every_religion_global = {
+			every_faith = {
+				faith_update_fervor_equilibrium = yes
+			}
+		}
+				
+		### Every ruler with a Liturgical language doctrine needs a realm priest
+		every_ruler = {
+			limit = {
+				faith = {
+					OR = {
+						has_doctrine_parameter = clergy_knows_dragon
+						has_doctrine_parameter = clergy_knows_tsaesci
+					}
+				}
+
+				any_councillor = { has_council_position = councillor_court_chaplain }
+			}
+
+			random_councillor = {
+				limit = { has_council_position = councillor_court_chaplain }
+				update_liturgical_language = yes
+			}
+		}
+
+		set_global_variable = {
+			name = init_realm_priests_liturgical_languages
+			value = 1
+		}
+
+		### There's no Celestial Serpent rulers in 450 or 440 right now but it doesn't hurt to have the framework for it
+		every_ruler = {
+			limit = {
+				faith = {
+					has_doctrine_parameter = serpent_priest
+				}
+				
+				any_councillor = { has_council_position = councillor_court_chaplain }
+			}
+			
+			random_councillor = {
+				limit = { has_council_position = councillor_court_chaplain }
+				update_serpent_priest = yes
+			}
+		}
+
+		# Ensure proper setup of generic holy site buildings
+		ek_holy_site_building_setup = yes
+	}
+}

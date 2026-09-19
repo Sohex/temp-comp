@@ -1,0 +1,221 @@
+﻿namespace = ek_ask_zizemir_is_this_ideology_events
+
+#Zizemir 8ball tombola
+ek_ask_zizemir_is_this_ideology_events.0001 = {
+	type = character_event
+	hidden = yes
+	immediate = {
+		scope:actor = {
+			change_variable = {
+				name = ek_character_interaxion_events_zizemir_variable_number_of_times_asked_zizemir_if_it_is_ideology_variable
+				add = 1
+			}
+		}
+		random_list = {
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_it_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_it_is_ideology
+					years = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.it_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_faith_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_faith_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_faith_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_culture_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_culture_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_culture_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_heritage_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_heritage_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_heritage_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_dynasty_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_dynasty_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_dynasty_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_house_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_house_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_house_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_your_primary_title_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_your_primary_title_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.your_primary_title_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_my_culture_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_my_culture_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.my_culture_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_my_faith_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_my_faith_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.my_faith_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_my_heritage_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_my_heritage_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.my_heritage_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_my_dynasty_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_my_dynasty_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.my_dynasty_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+			11 = {
+				trigger = {
+					NOT = {
+						has_character_flag = ek_character_interaxion_events_zizemir_flags_my_house_is_ideology
+					}
+				}
+				add_character_flag = {
+					flag = ek_character_interaxion_events_zizemir_flags_my_house_is_ideology
+					months = 36
+				}
+				send_interface_toast = {
+					title = ek_ask_zizemir_is_this_ideology_events.0001.title
+					type = event_toast_text_good
+					desc = ek_ask_zizemir_is_this_ideology_events.0001.my_house_is_ideology
+					left_icon = scope:recipient
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,822 @@
+﻿#EK NOTE: removed unused modifiers
+##################################################
+# #General Character Modifiers
+
+#fp2_mozarab_church_modifier
+
+#fp2_mozarab_rejected_modifier
+
+#EK DISABLED
+#fp2_mercenary_acquaintances_modifier = {
+#	icon = social_positive
+
+#	mercenary_hire_cost_mult = -0.15
+#	raid_speed = 1.25
+#}
+
+#EK DISABLED
+#fp2_lenient_towards_foreign_merchants_modifier = {
+#	icon = social_positive
+
+#	different_faith_opinion = 15
+#	opinion_of_different_faith = 5
+#	domain_tax_different_faith_mult = 0.45
+#	different_faith_county_opinion_mult = 0.15
+#}
+
+#fp2_kept_accused_traitor_in_court_modifier
+
+#fp2_kept_op_knight_in_court_modifier
+
+#fp2_kept_upstart_knight_in_court_modifier
+
+#fp2_kept_godless_mercenary_in_court_modifier
+
+##################################################
+# #Best Friendship Synergy Character Modifiers
+
+fp2_single_synergy_diplomacy_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = major_skill_bonus
+	stress_gain_mult = 0.15
+}
+
+fp2_single_synergy_martial_modifier = {
+	icon = martial_mixed
+	martial = major_skill_bonus
+	stress_gain_mult = 0.15
+}
+
+fp2_single_synergy_stewardship_modifier = {
+	icon = stewardship_mixed
+	stewardship = major_skill_bonus
+	stress_gain_mult = 0.15
+}
+
+fp2_single_synergy_intrigue_modifier = {
+	icon = intrigue_mixed
+	intrigue = major_skill_bonus
+	stress_gain_mult = 0.15
+}
+
+fp2_single_synergy_learning_modifier = {
+	icon = learning_mixed
+	learning = major_skill_bonus
+	stress_gain_mult = 0.15
+}
+
+# Diplomacy combi-synergies.
+## Diplomacy-Diplomacy
+fp2_double_synergy_diplomacy_diplomacy_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = massive_skill_bonus
+	stress_gain_mult = 0.25
+}
+## Diplomacy-Martial
+fp2_double_synergy_diplomacy_martial_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = medium_skill_bonus
+	martial = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Diplomacy-Stewardship
+fp2_double_synergy_diplomacy_stewardship_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = medium_skill_bonus
+	stewardship = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Diplomacy-Intrigue
+fp2_double_synergy_diplomacy_intrigue_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = medium_skill_bonus
+	intrigue = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Diplomacy-Learning
+fp2_double_synergy_diplomacy_learning_modifier = {
+	icon = diplomacy_mixed
+	diplomacy = medium_skill_bonus
+	learning = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+# Martial combi-synergies.
+## Martial-Diplomacy
+fp2_double_synergy_martial_diplomacy_modifier = {
+	icon = martial_mixed
+	martial = medium_skill_bonus
+	diplomacy = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Martial-Martial
+fp2_double_synergy_martial_martial_modifier = {
+	icon = martial_mixed
+	martial = massive_skill_bonus
+	stress_gain_mult = 0.25
+}
+## Martial-Stewardship
+fp2_double_synergy_martial_stewardship_modifier = {
+	icon = martial_mixed
+	martial = medium_skill_bonus
+	stewardship = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Martial-Intrigue
+fp2_double_synergy_martial_intrigue_modifier = {
+	icon = martial_mixed
+	martial = medium_skill_bonus
+	intrigue = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Martial-Learning
+fp2_double_synergy_martial_learning_modifier = {
+	icon = martial_mixed
+	martial = medium_skill_bonus
+	learning = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+# Stewardship combi-synergies.
+## Stewardship-Diplomacy
+fp2_double_synergy_stewardship_diplomacy_modifier = {
+	icon = stewardship_mixed
+	stewardship = medium_skill_bonus
+	diplomacy = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Stewardship-Martial
+fp2_double_synergy_stewardship_martial_modifier = {
+	icon = stewardship_mixed
+	stewardship = medium_skill_bonus
+	martial = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Stewardship-Stewardship
+fp2_double_synergy_stewardship_stewardship_modifier = {
+	icon = stewardship_mixed
+	stewardship = massive_skill_bonus
+	stress_gain_mult = 0.25
+}
+## Stewardship-Intrigue
+fp2_double_synergy_stewardship_intrigue_modifier = {
+	icon = stewardship_mixed
+	stewardship = medium_skill_bonus
+	intrigue = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Stewardship-Learning
+fp2_double_synergy_stewardship_learning_modifier = {
+	icon = stewardship_mixed
+	stewardship = medium_skill_bonus
+	learning = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+# Intrigue combi-synergies.
+## Intrigue-Diplomacy
+fp2_double_synergy_intrigue_diplomacy_modifier = {
+	icon = intrigue_mixed
+	intrigue = medium_skill_bonus
+	diplomacy = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Intrigue-Martial
+fp2_double_synergy_intrigue_martial_modifier = {
+	icon = intrigue_mixed
+	intrigue = medium_skill_bonus
+	martial = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Intrigue-Stewardship
+fp2_double_synergy_intrigue_stewardship_modifier = {
+	icon = intrigue_mixed
+	intrigue = medium_skill_bonus
+	stewardship = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Intrigue-Intrigue
+fp2_double_synergy_intrigue_intrigue_modifier = {
+	icon = intrigue_mixed
+	intrigue = massive_skill_bonus
+	stress_gain_mult = 0.25
+}
+## Intrigue-Learning
+fp2_double_synergy_intrigue_learning_modifier = {
+	icon = intrigue_mixed
+	intrigue = medium_skill_bonus
+	learning = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+# Learning combi-synergies.
+## Learning-Diplomacy
+fp2_double_synergy_learning_diplomacy_modifier = {
+	icon = learning_mixed
+	learning = medium_skill_bonus
+	diplomacy = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Learning-Martial
+fp2_double_synergy_learning_martial_modifier = {
+	icon = learning_mixed
+	learning = medium_skill_bonus
+	martial = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Learning-Stewardship
+fp2_double_synergy_learning_stewardship_modifier = {
+	icon = learning_mixed
+	learning = medium_skill_bonus
+	stewardship = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Learning-Intrigue
+fp2_double_synergy_learning_intrigue_modifier = {
+	icon = learning_mixed
+	learning = medium_skill_bonus
+	intrigue = medium_skill_bonus
+	stress_gain_mult = 0.2
+}
+## Learning-Learning
+fp2_double_synergy_learning_learning_modifier = {
+	icon = learning_mixed
+	learning = massive_skill_bonus
+	stress_gain_mult = 0.25
+}
+
+#EK DISABLED
+#fp2_advanced_maritime_technology_modifier = {
+#	icon = compass_positive
+#	naval_movement_speed_mult = 0.25
+#	coastal_advantage = 2
+#	embarkation_cost_mult = -0.5
+#}
+
+#fp2_multifaith_county_modifier
+
+#fp2_religious_strife_modifier
+
+#fp2_camino_santiago_ho_protected_modifier
+
+#fp2_camino_santiago_protected_modifier
+
+##################################################
+# #County Modifiers
+
+#EK DISABLED
+#fp2_successful_shipyards_modifier = {
+#	icon = county_modifier_development_positive
+#	development_growth_factor = medium_development_growth_gain
+#	tax_mult = 0.15
+#}
+
+#fp2_mozarab_quarter_modifier
+
+#fp2_dismantling_verracos_modifier
+
+#fp2_saints_tombs_modifier
+
+#fp2_religious_riots_modifier
+
+#fp2_religious_riots_suppressed_modifier
+
+#fp2_religious_riots_defused_modifier
+
+#EK DISABLED
+#fp2_smooth_market_oversight_modifier = {
+#	icon = economy_positive
+
+#	development_growth_factor = 0.1
+#	tax_mult = 0.2
+#}
+
+#EK DISABLED
+#fp2_inefficient_market_oversight_modifier = {
+#	icon = economy_negative
+
+#	development_growth_factor = -0.3
+#	tax_mult = -0.2
+#}
+
+#EK DISABLED
+#fp2_free_market_boom_modifier = {
+#	icon = goods_positive
+
+#	development_growth_factor = 0.35
+#	tax_mult = 0.12
+#	monthly_county_control_growth_factor = -0.4
+#}
+
+#EK DISABLED
+#fp2_ruthless_market_oversight_modifier = {
+#	icon = blood_negative
+
+#	development_growth_factor = -0.3
+#	tax_mult = -0.1
+#	monthly_county_control_growth_factor = 0.4
+#}
+
+#EK DISABLED
+#fp2_forsaken_turned_levies_modifier = {
+#	icon = prowess_positive
+
+#	garrison_size = 1
+#	monthly_county_control_growth_factor = 0.1
+#	tax_mult = -0.1
+#	county_opinion_add = -10
+#	travel_danger = 10
+#}
+
+#EK DISABLED
+#fp2_veteran_mercenaries_as_instructors_modifier = { # Should be paired with fp2_mercenary_acquaintances_modifier for full effect, add to holder.
+#	icon = prowess_positive
+
+#	tax_mult = -0.05
+#	county_opinion_add = -10
+#	monthly_county_control_growth_add = 0.1
+#}
+
+#EK DISABLED
+#fp2_local_garrison_slaughtered_modifier = {
+#	icon = prowess_negative
+
+#	garrison_size = -0.72
+#	monthly_county_control_growth_factor = -0.2
+#}
+
+#EK DISABLED
+#fp2_elite_tactics_for_civil_guards_modifier = {
+#	icon = prowess_positive
+
+#	county_opinion_add = 5
+#	tax_mult = 0.05 # Improved tax collection agents
+#	monthly_county_control_growth_factor = 0.3
+#}
+
+#EK DISABLED
+#fp2_mercs_slaughtered_populance_modifier = {
+#	icon = blood_negative
+
+#	development_growth_factor = -0.45
+#	tax_mult = -0.55
+#	county_opinion_add = -20
+#}
+
+#EK DISABLED
+#fp2_mercs_turned_farmers_modifier = {
+#	icon = family_positive
+
+#	farmlands_levy_size = 2
+#	tax_mult = 0.05 # Seems low but this bonus is meant to last like 20 years
+#}
+
+#EK DISABLED
+#fp2_improved_administrative_checks_modifier = {
+#	icon = economy_positive
+
+#	development_growth_factor = 0.12
+#	county_opinion_add = 15
+#}
+
+#fp2_horchata_colonialism_modifier
+
+#fp2_funded_agriculture_modifier
+
+#EK DISABLED
+#fp2_order_of_the_hachet_modifier = {
+#	icon = prowess_positive
+	
+#	garrison_size = 0.75
+#}
+
+#EK DISABLED
+#fp2_punished_order_of_the_hachet_modifier = {
+#	icon = feast_positive
+	
+#	dread_gain_mult = 0.15
+#	dread_decay_mult = -0.20
+#}
+
+#EK DISABLED
+#fp2_lightning_stones_modifier = {
+#	icon = martial_positive
+	
+#	defender_holding_advantage = 5
+#}
+
+#EK DISABLED
+#fp2_lightning_stones_poison_modifier = {
+#	icon = intrigue_positive
+	
+#	hostile_scheme_phase_duration_add = miniscule_scheme_phase_duration_bonus_value
+#}
+
+#fp2_vow_against_conscription_modifier
+
+#fp2_monument_to_war_modifier
+
+#fp2_village_rebuiling_efforts_modifier
+
+#fp2_border_encampments_modifier
+
+##################################################
+# #Dynasty Modifiers
+
+
+
+##################################################
+# #Religion Modifiers
+
+fp2_opportunistic_schismatic_modifier = {
+	icon = learning_positive
+	faith_creation_piety_cost_mult = -0.5
+}
+
+#fp2_jewish_community_denied_modifier
+
+#fp2_thriving_jewish_community_modifier
+
+#fp2_conversos_persecution_modifier
+
+fp2_toledo_nights_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = -25
+}
+
+fp2_toledo_nights_fallout_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = -5
+}
+
+#fp2_correctly_facing_church
+
+fp2_friend_of_the_old_ways_modifier = {
+	icon = learning_positive
+	same_faith_opinion = 5
+	realm_priest_opinion = 10
+	monthly_piety_gain_mult = 0.05
+}
+
+#EK DISABLED
+#fp2_champion_of_the_old_ways_modifier
+
+#Event Modifiers
+
+#EK DISABLED
+#fp2_hawk_of_quarysh_martial_modifier = {
+#	icon = martial_positive
+#	martial_per_piety_level = 1
+#}
+
+#fp2_hawk_of_quarysh_diplomacy_modifier = {
+#	icon = diplomacy_positive
+#	diplomacy = medium_skill_bonus
+#}
+
+#fp2_respected_clergy_chess
+
+#EK DISABLED
+#fp2_2001_promise_reminder = { icon = compass_negative } # If a reminder system is ever added, replace all instances of this modifier with that.
+
+#EK DISABLED
+# Council of Toledo
+
+##################################################
+# # Unsorted / Unknown
+
+#fp2_epitaph_modifier
+
+#EK DISABLED
+#terraced_hills_modifier = {
+#	icon = goods_positive
+#	development_growth = 0.2
+#	build_gold_cost = -0.1
+#	county_opinion_add = 5
+#}
+
+#EK DISABLED
+#tolerance_gospel_modifier = {
+#	icon = piety_positive
+#	different_faith_opinion = 20
+#	different_faith_county_opinion_mult = -0.15 
+#}
+
+#EK DISABLED
+#tensions_eased_province_modifier = {
+#	icon = county_modifier_opinion_positive
+#	county_opinion_add = 10
+#}
+
+#EK DISABLED
+#riots_and_murders_province_modifier = {
+#	icon = county_modifier_opinion_negative
+#	county_opinion_add = -20
+#	development_growth_factor = medium_development_growth_loss
+#	tax_mult = -0.15
+#	travel_danger = 10
+#}
+
+#EK DISABLED
+#hate_monger_modifier = {
+#	icon = social_negative 
+#	different_faith_opinion = -20
+#}
+
+#EK DISABLED
+#fanatical_recruits_modifier = {
+#	icon = martial_positive
+#	tolerance_advantage_mod = 4
+#	levy_reinforcement_rate_same_faith = 0.5
+#	army_maintenance_mult = -0.10
+#	different_faith_opinion = -10
+#}
+
+#EK DISABLED
+#nursing_salaries_for_single_mothers_modifier = {
+#	icon = stewardship_positive
+#	county_opinion_add = 15
+#	development_growth_factor = small_development_growth_gain
+#}
+
+#EK DISABLED
+#widows_and_widowers_amazing_funds_modifier = {
+#	icon = stewardship_positive
+#	county_opinion_add = 10	
+#}
+
+#EK DISABLED
+#starving_single_mothers_and_children_modifier = {
+#	icon = food_negative
+#	county_opinion_add = -15
+#	development_growth_factor = small_development_growth_loss
+#}
+
+#EK DISABLED
+#destitute_single_mothers_modifier = {
+#	icon = prestige_negative 
+#	county_opinion_add = 10
+#	courtier_and_guest_opinion = -10
+#	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+#}
+
+#EK DISABLED
+#anti_innovation_muslim_modifier = {
+#	icon = piety_positive  
+#	development_growth_factor = tiny_development_growth_loss 
+#	monthly_piety_gain_mult = 0.1
+#	learning_per_piety_level = 1
+#}
+
+#EK DISABLED
+#rolling_in_filth_modifier = {
+#	icon = treatment_negative
+#	health = -0.25
+#}
+
+#EK DISABLED
+#medical_insights_modifier  = {
+#	icon = treatment_positive
+#	health = 0.15
+#	learning = 1
+#}
+
+#EK DISABLED
+#misread_medicine_incompetence_modifier = {
+#	icon = treatment_negative
+#	health = -0.25
+#	learning = -1
+#}
+
+#EK DISABLED
+#cannot_read_greek_modifier = {
+#	icon = learning_negative
+#	monthly_prestige_gain_mult = -0.10
+#}
+
+#EK DISABLED
+#inspired_medicine_modifier = {
+#	icon = treatment_positive
+#	health = 0.25
+#	learning = 2
+#}
+
+#EK DISABLED
+#compelling_apology_modifier = {
+#	icon = social_positive
+#	diplomacy = 2
+#}
+
+#EK DISABLED
+#memorable_public_execution_modifier = {
+#	icon = dread_positive
+#	dread_gain_mult = 0.4
+#	tyranny_gain_mult = 0.2
+#}
+
+#EK DISABLED
+#restitution_to_minorities_modifier = {
+#	icon = social_positive
+#	different_faith_opinion = 10
+#}
+
+#EK DISABLED
+#mysterious_prophetess_illness_modifier = {
+#	icon = health_negative
+#	health = -0.5
+#}
+
+#EK DISABLED
+#foreboding_visions_modifier = {
+#	icon = magic_negative 
+#	stress_gain_mult = 0.25
+#}
+
+#EK DISABLED
+#frightened_by_portent_modifier = {
+#	icon = magic_negative
+#	stress_gain_mult = 0.15
+#}
+
+
+#cortes_modifier
+
+#extra_large_cortes_modifier
+
+#vineyards_burnt_county_modifier
+
+#vineyards_protected_county_modifier
+
+#crusading_against_iberian_wine_modifier
+
+#wine_supply_secure_modifier
+
+
+#EK DISABLED
+#toledo_steel_armaments_modifier = {
+#	icon = martial_positive
+#	army_damage_mult = 0.15
+#	knight_effectiveness_mult = 0.15
+#	men_at_arms_maintenance = 0.05 
+#}
+
+#EK DISABLED
+#toledo_steel_county_modifier = {
+#	icon = martial_positive
+#	development_growth_factor = medium_development_growth_gain
+#}
+
+#EK DISABLED
+#tortured_smith_spilling_secrets_modifier = {
+#	icon = martial_positive
+#	martial = 1
+#	learning = 1
+#	artifact_decay_reduction_mult = -0.5
+#}
+
+#EK DISABLED
+#master_smith_npc_modifier = {
+#	icon = horse_positive
+#	stewardship = 3
+#	monthly_income_mult = 0.2
+#}
+
+#EK DISABLED
+#artifact_amazing_toledo_sword_modifier = {
+#   icon = blood_positive
+#   monthly_prestige = 0.4
+#   prowess_no_portrait = 8
+#   glory_hound_opinion = 10
+#   martial_per_stress_level = 2
+#}
+
+#EK DISABLED
+#artifact_masterwork_toledo_sword_modifier = {
+#   icon = blood_positive
+#   monthly_prestige = 0.4
+#   prowess_no_portrait = 4
+#   glory_hound_opinion = 5
+#}
+
+#EK DISABLED
+#guild_rights_protected_modifier = {
+#	icon = martial_positive
+#	county_opinion_add = 10
+#	development_growth_factor = small_development_growth_gain
+#}
+
+#obligations_fulfilled_modifier
+
+#saqaliba_settlers_county_modifier
+
+#former_slave_npc_modifier
+
+#lay_ruler_issued_fatwa_modifier
+
+#mystery_meat_health_benefits_modifier
+
+#mystery_meat_unhealth_benefits_modifier
+
+#felt_something_modifier
+
+#investing_in_music_modifier
+
+#aversion_to_joy_modifier
+
+#great_pine_chopped_down_county_modifier
+
+
+#saw_the_world_from_above_modifier
+
+
+#great_translation_school_modifier
+
+#mediocre_translation_school_modifier
+
+#translation_effort_modifier
+
+#dusty_libraries_modifier
+
+fp2_controls_the_mediterranean_house_modifier = {
+	icon = compass_positive
+
+	development_growth_factor = 0.15
+	monthly_prestige_gain_mult = 0.05
+	naval_movement_speed_mult = 0.1
+	coastal_advantage = 5
+}
+
+#fp2_aragon_title_reward_house_modifier
+
+#fp2_sponsored_golden_age_modifier
+
+#fp2_epicenter_of_golden_age_modifier
+
+#fp2_part_of_golden_age_modifier
+
+#fp2_removed_cataracts_modifier
+
+#fp2_pilgrim_roads_modifier
+
+#EK DISABLED
+#fp2_trusted_by_pilgrim_warriors_modifier
+
+#fp2_form_kingdom_toledo_modifier
+
+# Decision mods, translated aincient books
+#fp2_translated_skill_book_diplomacy_modifier
+#fp2_translated_skill_book_martial_modifier
+#fp2_translated_skill_book_stewardship_modifier
+#fp2_translated_skill_book_intrigue_modifier
+#fp2_translated_skill_book_learning_modifier
+
+#fp2_rejection_of_old_thoughts_modifier
+
+
+# # Phase Modifiers
+# Hostility
+
+#EK NOTE: I'd like to remove this and the combined one below, but they're used in a ton of places. I figure it's better to just leave them here in case we need to reuse them later.
+fp2_struggle_hostility_house_faith_modifier = {
+	icon = piety_mixed
+	same_faith_opinion = fp2_struggle_hostility_opinion_value
+	different_faith_opinion = fp2_struggle_hostility_opinion_negative_value
+}
+
+#EK DISABLED
+#fp2_struggle_hostility_house_culture_modifier = {
+#	icon = county_modifier_opinion_positive
+#	same_culture_opinion = fp2_struggle_hostility_opinion_value
+#	different_culture_opinion = fp2_struggle_hostility_opinion_negative_value
+#}
+
+fp2_struggle_hostility_house_combined_modifier = {
+	icon = county_modifier_opinion_mixed
+	same_heritage_county_advantage_add = 5
+	tolerance_advantage_mod = 5
+	different_faith_opinion = fp2_struggle_hostility_opinion_negative_value
+	different_culture_opinion = fp2_struggle_hostility_opinion_negative_value
+}
+
+# Compromise
+
+#EK DISABLED
+#fp2_struggle_compromise_house_reward_modifier = {
+#	icon = county_modifier_development_positive
+#	same_heritage_county_advantage_add = 5
+#	independent_ruler_opinion = 15
+#}
+
+#EK DISABLED
+#fp2_struggle_compromise_defensive_reward_modifier = {
+#	icon = rock_positive
+#	development_growth_factor = 0.1
+#	additional_fort_level = 2
+#	garrison_size = 0.25
+#}
+
+# Conciliation
+
+#EK DISABLED
+#fp2_struggle_conciliation_house_reward_modifier = {
+#	icon = social_positive
+#	different_culture_opinion = fp2_struggle_hostility_opinion_value
+#	different_faith_opinion = fp2_struggle_hostility_opinion_value
+#	learn_language_scheme_phase_duration_add = major_scheme_phase_duration_malus_value
+#}

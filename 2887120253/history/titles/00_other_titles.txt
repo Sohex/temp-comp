@@ -1,0 +1,293 @@
+##Religious Heads
+#Khajiiti
+d_mane = {
+	3231.1.1 = { #2E 311 - Rid-Thar-ri'Datta proclaims Riddle'thar Epiphany
+		holder = mane_100
+		government = mandala_government 
+	}
+	3229.1.1 = { liege = e_elsweyr }
+    3310.7.8 = { holder = mane_101 }
+	3385.6.19 = { holder = mane_102 }
+	3405.7.14 = { holder = mane_103 }
+	3482.1.1 = { holder = mane_104 }
+	3506.1.1 = { holder = mane_105 }
+}
+
+d_many_paths_mane = { #Manes before Riddle'Thar
+	620.1.1 = { holder = mane_mp_001 }
+	1200.1.1 = { holder = mane_mp_002 }
+	2208.1.1 = { holder = mane_mp_003 }
+	2526.1.1 = { holder = mane_mp_93 }
+	2611.8.24 = { holder = mane_mp_94 }
+	2705.1.20 = { holder = mane_mp_95 }
+	2784.3.5 = { holder = mane_mp_96 }
+	2871.12.17 = { holder = mane_mp_97 }
+	2967.5.9 = { holder = mane_mp_98 }
+	3043.2.2 = { holder = mane_mp_99 }
+	3128.3.22 = { holder = mane_mp_100 }
+	3210.2.24 = { holder = mane_100 }
+	3231.1.1 = { holder = 0 } #Riddle'Thar epiphany
+}
+
+d_new_moon_mane = {
+	-591.1.1 = { holder = new_moon_ancient_001 }
+	-568.1.1 = { holder = 0 }
+	3494.1.1 = { holder = pridehome_rakhajiin }
+}
+
+#Aldmeri
+d_auriel = {
+	-2500.1.1 = {
+		holder = xarxes_xarxes
+	}
+	3300.1.1 = { 
+		liege = e_summerset
+		holder = auriel_priest_1000 # Urwaninwe
+	}
+}
+
+#Vampiric
+d_scions_faith = { 
+	253.1.1 = { holder = bal_100 }
+}
+
+#Necromantic
+d_worm_kingdom = { 
+	# 3150.10.1 = { holder = mannimarco_1000 } #starts the cult
+	3350.10.1 = { holder = mannimarco_1000 } #has an actual landed base of operations
+}
+
+#Marukhati
+d_alessian_order = {
+	300.1.1 = { holder = marukh_100 }
+	368.1.1 = { holder = cosmas_001 }
+	1188.1.1 = { holder = tharn_3 }
+	2300.1.1 = { holder = zinius_001 }
+	2331.1.1 = { holder = 0 } # End of the War of Righteousness
+}
+
+#Dwemer
+d_tonal_architects = { #The rest should be from Vvardenfell
+	400.1.1 = { holder = avatheled_100 }
+	700.1.1 = { holder = 0 }
+}
+
+### Legions
+# Removed as it was messing up admin governorships
+#d_first_legion = {
+#	3368.9.22 = {
+#		holder = basicilius_100
+#		liege = k_heartlands
+#	}	#EC loyalist after Attrebus takes over, installed as new leader of the legion. later imperial battlemage
+#	3369.1.1 = { 
+#		succession_laws = {
+#			magelord_elective_succession_law #Imperial Battlemages, only the best should lead them.
+#		}
+#	}
+#}
+
+### Pirates
+
+d_sea_vipers = {
+	3360.1.1 = { 
+		holder = maormer_1_pirate
+		government = pirate_government 
+	}
+}
+
+d_brethren_gold_coast = {
+	3364.1.1 = {
+		holder = stirk_100
+		government = pirate_government 
+	}
+	3380.1.1 = { holder = 0 }
+}
+
+d_red_sails = {
+	3489.7.9 = { 
+		holder = dalton_100
+		government = pirate_government 
+	}
+	3503.9.14 = { holder = 0 }
+}
+
+d_regal_pirate = { 
+	3354.8.25 = { 
+		holder = gurges_100
+		government = pirate_government 
+	}
+	3376.1.1 = { holder = 0 } #Settles down and joins other people in Abah's Landing
+}
+
+d_ghost_fleet = { 
+	 3297.1.1 = { 
+		 holder = deathbrand_1000
+		 government = pirate_government 
+	 }
+	 3379.1.1 = { holder = 0 }
+}
+
+d_masconian_pirates = {
+	3359.7.29 = { 
+		holder = cybiak_100
+		government = pirate_government
+	}
+	3362.3.28 = { holder = 0 }
+	3369.3.16 = {
+		holder = cybiak_100c
+		government = pirate_government
+	}
+}
+
+d_heartless_horde = {
+	3250.1.1 = { 
+		holder = dremora_1000
+		government = pirate_government
+	}
+}
+
+d_yoku_freeport = {
+	3349.1.1 = { 
+		holder = jilani_1000
+		government = pirate_government
+	}
+	3363.1.1 = { holder = 0 }
+}
+
+d_ruddy_fangs = {
+	3500.1.1 = { 
+		holder = sharpclaw_001
+	}
+}
+
+d_bonechime_gang = {
+	3500.1.1 = { 
+		holder = mahkar_001
+	}
+}
+
+d_topal_corsairs = {
+	3368.1.1 = {
+		holder = vogian_100
+		government = pirate_government
+	}
+	3393.1.1 = { holder = vogian_101 }
+	3403.1.1 = { holder = 0 } #Stop pirating, join Leyawiin
+}
+
+d_ra_ugakta = {
+	3358.1.1 = { 
+		holder = asmar_1000
+		government = pirate_government
+	}
+}
+
+d_napere_do_kotu = {
+	3349.1.1 = { 
+		holder = kazemi_1000
+		government = pirate_government
+	}
+	3363.1.1 = { holder = 0 }
+}
+
+d_hiradirge = {
+	3310.1.1 = {
+		holder = hel_gye_1000
+	}
+}
+
+d_blue_venom = {
+	3323.1.1 = { holder = blue_venom_001 }
+	#Kicked out of Haven, currently disbanded
+	3358.7.8 = { holder = 0 }
+	#Manage to conquer island in Rictus
+	3369.1.1 = { 
+		holder = blue_venom_002
+		government = pirate_government
+	}
+	3418.1.1 = { holder = 0 }
+
+}
+
+d_storm_sharks = {
+	3500.1.1 = {
+		holder = storm_shark_1000
+		government = pirate_government
+	}
+}
+
+d_ghost_sea_slavers = {
+	3366.8.11 = { 
+		holder = ulver_100
+		government = pirate_government
+	}
+}
+
+### Black Marsh
+d_padomaic_slavers = {
+	3355.9.27 = { 
+		holder = balakas_101b
+		government = pirate_government
+	}
+	3442.1.1 = { holder = faren_101d }
+}
+
+### Holy Orders
+#d_order_of_the_hour = {
+#	1040.1.1 = {
+#		holder = decan_ennon
+#		liege = k_kvatch
+#		government = landed_order_government
+#	}
+#	3352.1.1 = { holder = merula_cavor }
+#	3450.1.1 = { holder = hour_phrastus }
+#	3470.1.1 = { holder = coventine_jonas }
+#	3490.1.1 = { holder = ancrus_102d }
+#	# 3511.1.1 = { liege = 0 } # Probably wouldn't work anyway, handle that via script when we get to 2E582
+#}
+
+### Bretons / High Rock
+
+d_beldama_wyrd = {
+	3320.1.1 = { holder = beldama_99 }
+	3350.1.1 = { holder = beldama_100 }
+	3450.1.1 = { holder = beldama_101 }
+}
+
+#Blackcaster Mages Guild
+d_blackcaster = {
+	#Blackcaster granted land after helping with defense of ELinhir
+	3355.6.21 = { 
+		holder = blackcaster_1000
+		liege = k_elinhir
+		succession_laws = {
+			magelord_elective_succession_law #Blackcaster Guild founded
+		}
+	}
+	3368.7.17 = { liege = 0 }
+	3386.3.1 = { #Join Hammerfell
+		liege = k_elinhir
+		government = academy_government #Become full-time academy
+	}
+	3397.1.1 = { holder = blackcaster_1002 }
+	3416.1.1 = { holder = blackcaster_1003 }
+	3431.1.1 = { holder = blackcaster_1004 }
+	3456.1.1 = { holder = blackcaster_1005 }
+	3491.1.1 = { holder = blackcaster_1001 }
+}
+
+d_oracles_ruptga = {
+	3358.1.1 = {
+		holder = ruptga_oracle_100
+		liege = e_crown
+	}
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3490.1.1 = { holder = ruptga_oracle_101 }
+}
+
+d_zun_warriors = {
+	# Knights of the Sun
+	
+	20.1.1 = {
+	}
+}

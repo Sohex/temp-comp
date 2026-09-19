@@ -1,0 +1,371 @@
+﻿namespace = ek_hammerfell
+
+# Crown Republic held by non-Crown
+ek_hammerfell.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	theme = culture_change
+
+	title = ek_hammerfell.0001.t
+	desc = ek_hammerfell.0001.desc
+
+	trigger = {
+		has_title = title:e_crown
+		culture = {
+			NOR = { 
+				this = culture:crown_culture
+				any_parent_culture_or_above = {
+					this = culture:crown_culture
+				}
+			}
+		}
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {	# Convert to Crown
+		name = ek_hammerfell.0001.a
+
+		# borrowed from diplomacy_majesty.4071
+		root = {
+			set_culture = culture:crown_culture
+		}
+		every_close_family_member = {
+			limit = {
+				OR = {
+					is_courtier_of = root
+					AND = {
+						is_vassal_of = root
+						is_child_of = root
+					}
+				}
+			}
+			random = {
+				chance = {
+					value = root.diplomacy
+					multiply = 3
+					add = 30
+				}
+				set_culture = culture:crown_culture
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						this = root.player_heir
+					}
+					set_culture = culture:crown_culture
+				}
+			}
+		}
+
+		# this makes you more legitimate
+		add_legitimacy = {
+			value = medium_legitimacy_gain
+		}
+
+		# but it's a bit of a personal loss
+		add_prestige = {
+			value = medium_prestige_loss
+		}
+
+		# we generally want the AI to pick this option
+		ai_chance = {
+			base = 100
+
+			modifier = {
+				has_trait = stubborn
+				add = -25
+			}
+		}
+	}
+
+	option = {	# Refuse to convert to Crown!
+		name = ek_hammerfell.0001.b
+
+		# bit personal prestige issue
+		add_prestige = {
+			value = major_prestige_gain
+		}
+
+		# crown vassals don't like this
+		custom_tooltip = ek_hammerfell.0001.tooltip
+		hidden_effect = {
+			every_vassal = {
+				limit = {
+					culture = {
+						OR = {
+							this = culture:crown_culture
+							any_parent_culture_or_above = {
+								this = culture:crown_culture
+							}
+						}
+					}
+				}
+				add_opinion = {
+					target = prev
+					modifier = forebear_crown_opinion
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				has_trait = stubborn
+				add = 25
+			}
+		}
+	}
+}
+
+# Forebear Union held by non-Forebear
+ek_hammerfell.0002 = {
+	type = character_event
+	content_source = dlc_ek
+	theme = culture_change
+
+	title = ek_hammerfell.0002.t
+	desc = ek_hammerfell.0002.desc
+
+	trigger = {
+		has_title = title:e_forebear
+		culture = {
+			NOR = { 
+				this = culture:forebear
+				any_parent_culture_or_above = {
+					this = culture:forebear
+				}
+			}
+		}
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {	# Convert to Forebear
+		name = ek_hammerfell.0002.a
+
+		# borrowed from diplomacy_majesty.4071
+		root = {
+			set_culture = culture:forebear
+		}
+		every_close_family_member = {
+			limit = {
+				OR = {
+					is_courtier_of = root
+					AND = {
+						is_vassal_of = root
+						is_child_of = root
+					}
+				}
+			}
+			random = {
+				chance = {
+					value = root.diplomacy
+					multiply = 3
+					add = 30
+				}
+				set_culture = culture:forebear
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						this = root.player_heir
+					}
+					set_culture = culture:forebear
+				}
+			}
+		}
+
+		# this makes you more legitimate
+		add_legitimacy = {
+			value = medium_legitimacy_gain
+		}
+
+		# but it's a bit of a personal loss
+		add_prestige = {
+			value = medium_prestige_loss
+		}
+
+		# we generally want the AI to pick this option
+		ai_chance = {
+			base = 100
+
+			modifier = {
+				has_trait = stubborn
+				add = -25
+			}
+		}
+	}
+
+	option = {	# Refuse to convert to Forebear!
+		name = ek_hammerfell.0002.b
+
+		# bit personal prestige issue
+		add_prestige = {
+			value = major_prestige_gain
+		}
+
+		# crown vassals don't like this
+		custom_tooltip = ek_hammerfell.0002.tooltip
+		hidden_effect = {
+			every_vassal = {
+				limit = {
+					culture = {
+						OR = {
+							this = culture:forebear
+							any_parent_culture_or_above = {
+								this = culture:forebear
+							}
+						}
+					}
+				}
+				add_opinion = {
+					target = prev
+					modifier = crown_dictator_opinion
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				has_trait = stubborn
+				add = 25
+			}
+		}
+	}
+}
+
+#Hegemony event
+ek_hammerfell.0003 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_hammerfell.0003.t
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { culture = { has_cultural_tradition = tradition_forebear_core } }
+				}
+				desc = ek_hammerfell.0003.desc.crown
+			}
+			triggered_desc = {
+				trigger = {
+					culture = { has_cultural_tradition = tradition_forebear_core }
+				}
+				desc = ek_hammerfell.0003.desc.forebear
+			}
+		}
+		triggered_desc = {
+			trigger = {
+				faith = faith:redguard_cult
+			}
+			desc = ek_hammerfell.0003.desc.imperial
+		}
+	}
+
+	theme = diplomacy_foreign_affairs_focus
+	
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	
+	immediate = {
+	}
+
+	# Redguard Republic + Crown of the Redguards
+	option = {
+		name = ek_hammerfell.0003.a
+
+		custom_tooltip = ek_hammerfell.0003.a.tooltip
+
+		ai_chance = 50
+
+		trigger = {
+			NOT = {
+				culture = { has_cultural_tradition = tradition_forebear_core }
+			}
+		}
+	}
+
+	# Redguard Union
+	option = {
+		name = ek_hammerfell.0003.b
+
+		custom_tooltip = ek_hammerfell.0003.b.tooltip
+
+		ai_chance = 50
+
+		trigger = {
+			culture = { has_cultural_tradition = tradition_forebear_core }
+		}
+
+		title:h_redguard_republic = {
+			set_title_name = REDGUARD_UNION
+			set_variable = forebear_hegemony_flag
+		}
+	}
+
+	# Redguard Empire
+	option = {
+		name = ek_hammerfell.0003.c
+
+		custom_tooltip = ek_hammerfell.0003.c.tooltip
+
+		ai_chance = 50
+
+		trigger = {
+			faith = faith:redguard_cult
+		}
+		
+		title:h_redguard_republic = {
+			set_title_name = REDGUARD_EMPIRE
+			set_variable = redguard_imperial_hegemony_flag
+		}
+	}
+
+	option = {
+		name = ek_hammerfell.0003.d
+
+		custom_tooltip = ek_hammerfell.0003.d.tooltip
+
+		ai_chance = 50
+
+		trigger = {
+			NOT = {
+				culture = { has_cultural_tradition = tradition_forebear_core }
+			}
+		}
+
+		title:h_redguard_republic = {
+			set_variable = president_hegemony_flag
+		}
+	}
+
+	option = {
+		name = ek_hammerfell.0003.e
+
+		custom_tooltip = ek_hammerfell.0003.e.tooltip
+
+		ai_chance = 50
+
+		trigger = {
+			culture = { has_cultural_tradition = tradition_forebear_core }
+		}
+
+		title:h_redguard_republic = {
+			set_title_name = REDGUARD_UNION
+			set_variable = dictator_hegemony_flag
+		}
+	}
+}

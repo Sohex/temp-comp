@@ -1,0 +1,197 @@
+﻿#EK NOTE: disabled vanilla regions
+alinor_isolationism = {
+	
+	is_unique = yes # It can only exist once in the world
+
+	gui_window_name = "window_situation_alinor_isolationism"
+	gui_participation_window_name = "window_situation_participation"
+	illustration = "gfx/interface/illustrations/event_scenes/alinor.dds"
+	situation_group_type = major
+
+	##################################################
+	# Regions
+	##################################################
+	sub_regions = {
+		alinor = {
+			icon = "gfx/interface/icons/situations/debug_situation/steppe_west.dds"
+			geographical_regions = { mundus_tamriel_summerset_isles }
+		}
+	}
+	
+	##################################################
+	# On Actions
+	##################################################
+	# on_monthly = {
+	# }
+
+	##################################################
+	# Groups
+	##################################################
+	participant_groups = {
+		ceremoniarchy_rulers = {
+			icon = "gfx/interface/icons/situations/alinor_isolationism/group_ceremoniarchy.dds"
+
+			is_character_valid = {
+				should_use_praxis_mechanics = yes
+				highest_held_title_tier >= tier_county
+			}
+
+			on_join = {
+				trigger_event = alinor_isolationism.0001
+			}
+
+			map_color = { 255 180 46 }
+		}
+
+		non_ceremoniarchy_rulers = {
+			icon = "gfx/interface/icons/situations/alinor_isolationism/other_rulers.dds" #Goblin icon
+
+			is_character_valid = {
+				should_use_praxis_mechanics = no
+				highest_held_title_tier >= tier_county
+			}
+
+			on_join = {
+				trigger_event = alinor_isolationism.0001
+			}
+
+			map_color = { 37 194 79 }
+		}
+
+		rulers_outside_alinor = {
+			icon = "gfx/interface/icons/situations/grand_council/other_rulers.dds" #Imperial Cult icon
+			is_character_valid = {
+				scope:situation = {
+					is_manual_participant = root
+				}
+			}
+			require_realm_in_sub_region = no
+			map_color = hsv{ 0.37 0.50 0.9 }
+		}
+	}
+	
+	##################################################
+	# Phases
+	##################################################
+	start_phase = alinor_closed
+
+	phases = {
+		alinor_closed = {
+			icon = "gfx/interface/icons/situations/alinor_isolationism/isolation_closed.dds"
+
+			on_start = {
+				scope:situation_sub_region = {
+					save_scope_as = my_subregion
+					every_situation_sub_region_participant_group = {
+						limit = { participant_group_type = ceremoniarchy_rulers }
+						every_situation_group_participant = {
+							trigger_event = alinor_isolationism.0002
+						}
+					}
+				}
+				title:c_alinor = { add_county_modifier = alinor_capital_isolation }
+			}
+
+			future_phases = {
+				alinor_open = {
+					takeover_type = points
+					takeover_points = 1000
+
+					catalysts = {
+						catalyst_situation_high_king_ended_isolation = great_alinor_isolationism_catalyst_gain
+						catalyst_situation_alinor_destroyed = great_alinor_isolationism_catalyst_gain
+					}
+				}
+			}
+
+			modifier_sets = {
+				situation_alinor_military_effects = {
+					icon = "gfx/interface/icons/situations/situation_modifier_military.dds"
+					
+					ceremoniarchy_rulers = {
+						character_modifier = {
+							defender_advantage = 5
+						}
+						parameters = {
+							unable_to_declare_war_alinor = yes
+							unable_to_demand_tribute_alinor = yes
+							unable_to_start_dissolution_factions_alinor = yes
+							unable_to_start_independence_factions_alinor = yes
+						}
+					}
+				}
+				situation_alinor_domain_effects = {
+					icon = "gfx/interface/icons/situations/situation_modifier_subject.dds"
+					ceremoniarchy_rulers = {
+						character_modifier = {
+							monthly_income_mult = -0.1
+							monthly_county_control_growth_factor = 0.15
+						}
+						county_modifier = {
+							epidemic_resistance = 10
+						}
+						parameters = {
+							city_of_alinor_gets_bonuses = yes
+						}
+					}
+				}
+				situation_alinor_diplomacy_effects = {
+					icon = "gfx/interface/icons/situations/situation_modifier_character.dds"
+					
+					ceremoniarchy_rulers = {
+						character_modifier = {
+							different_culture_opinion = -10
+						}
+						parameters = {
+							unable_to_marry_outside_alinor = yes
+							unable_to_negotiate_alliance_outside_alinor = yes
+							can_freely_revoke_non_ceremoniarchy_titles = yes
+						}
+					}
+				}
+			}
+		}
+
+		alinor_open = {
+			icon = "gfx/interface/icons/situations/alinor_isolationism/isolation_open.dds"
+
+			on_start = {
+				scope:situation_sub_region = {
+					save_scope_as = my_subregion
+					every_situation_sub_region_participant_group = {
+						limit = { participant_group_type = ceremoniarchy_rulers }
+						every_situation_group_participant = {
+							trigger_event = alinor_isolationism.0002
+						}
+					}
+				}
+				title:c_alinor = { remove_county_modifier = alinor_capital_isolation }
+			}
+
+			max_duration_next_phase = weighted_random_points
+
+			future_phases = {			
+				alinor_closed = {
+					takeover_type = points
+					takeover_points = 1000
+					
+					catalysts = {
+						catalyst_situation_high_king_closed_alinor = great_alinor_isolationism_catalyst_gain
+					}
+				}
+			}
+
+			modifier_sets = {
+				situation_alinor_domain_effects = {
+					icon = "gfx/interface/icons/situations/situation_modifier_subject.dds"
+					ceremoniarchy_rulers = {
+						character_modifier = {
+							county_opinion_add = -15
+							monthly_county_control_growth_factor = -0.15
+						}
+					}
+				}
+			}
+		}
+	}
+}

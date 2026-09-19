@@ -1,0 +1,18 @@
+﻿#EK NOTE: unused by us
+get_council_of_toledo_count_suffix = {
+	type = character
+	#EK EDIT: removed most loc, made kept this to not delete it completely
+	text = {
+		localization_key = num_suffix_9
+		trigger = { always = yes }
+	}
+}
+
+get_council_of_toledo_attendee_description = {
+	type = character
+	#EK EDIT: removed most loc, made kept this to not delete it completely
+	text = { 
+		localization_key = council_toledo_landed_desc
+		trigger = { always = yes }
+	}
+}

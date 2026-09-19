@@ -1,0 +1,1111 @@
+﻿namespace = ek_travel_events_hammerfell
+
+############################
+## Travel Hammerfell Flavor Events
+## 0001-3999
+############################
+
+# Extract Arcana from the Sands of the Alikr
+ek_travel_events_hammerfell.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.0001.t
+	desc = ek_travel_events_hammerfell.0001.desc
+	theme = travel
+
+	override_background = wilderness_wetlands
+	
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { 
+			geographical_region = mundus_tamriel_hammerfell_alikr_desert
+			is_desert_trigger = yes
+		}
+		can_magic_trigger = yes
+		NOT = { has_character_flag = gained_desert_arcana }
+	}		
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # Seek magical might
+		name = ek_travel_events_hammerfell.0001.a
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 3 }
+		}
+
+		random_list = {
+			60 = {
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_hammerfell.0001.a.success
+					add_arcana_skill = { VALUE = 1 }
+					add_character_flag = gained_desert_arcana
+				}
+			}
+			40 = {
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_bad
+					title = ek_travel_events_hammerfell.0001.a.failure
+					add_stress = medium_stress_gain
+				}
+			}
+		}
+
+		stress_impact = {
+			ambitious = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			impatient = medium_stress_impact_gain
+			lazy = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Continue your journey
+		name = ek_travel_events_hammerfell.0001.b
+
+		stress_impact = {
+			ambitious = medium_stress_impact_gain
+			diligent = medium_stress_impact_gain
+			impatient = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+# A Poet recites "On the immortality of Dust" in the Alikr
+ek_travel_events_hammerfell.0005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.0005.t
+	desc = ek_travel_events_hammerfell.0005.desc
+	theme = travel
+
+	override_background = wilderness_wetlands
+	
+	left_portrait = {
+		character = root
+	}
+
+	right_portrait = {
+		character = scope:poet_character
+		animation = chancellor
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { 
+			geographical_region = mundus_tamriel_hammerfell_alikr_desert
+			is_desert_trigger = yes
+		}
+		current_travel_plan = {
+			any_entourage_character = {
+				has_trait = lifestyle_poet
+			}
+		}
+	}		
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+		if = {
+			limit = {
+				current_travel_plan = {
+					any_entourage_character = {
+						has_trait = lifestyle_poet
+					}
+				}
+			}
+			current_travel_plan = {
+				random_entourage_character = {
+					limit = { has_trait = lifestyle_poet }
+					save_scope_as = poet_character
+				}
+			}
+		}
+	}
+
+	option = { # Teach me to write something like that
+		name = ek_travel_events_hammerfell.0005.a
+
+		trigger = {	NOT = { has_trait = lifestyle_poet } }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 3 }
+		}
+
+		random_list = {
+			60 = {
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_hammerfell.0005.a.success
+					add_trait = lifestyle_poet
+				}
+			}
+			40 = {
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_bad
+					title = ek_travel_events_hammerfell.0005.a.failure
+					add_stress = medium_stress_gain
+				}
+			}
+		}
+
+		stress_impact = {
+			arrogant = medium_stress_impact_gain
+			lazy = medium_stress_impact_gain
+			diligent = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # As a poet yourself, just gain some learning
+		name = ek_travel_events_hammerfell.0005.b
+		trait = lifestyle_poet
+
+		trigger = { has_trait = lifestyle_poet }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 3 }
+		}
+
+		add_learning_skill = 1
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # Meaningless words
+		name = ek_travel_events_hammerfell.0005.c
+
+		stress_impact = {
+			arrogant = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+			diligent = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+############################
+## Travel Hammerfell Danger Events
+## 4000-7999
+############################
+
+# Danger Event: Duneripper Attack
+ek_travel_events_hammerfell.4000 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.4000.t
+	desc = ek_travel_events_hammerfell.4000.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	right_portrait = {
+		character = scope:caravan_master 
+		animation = sadness
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { geographical_region = mundus_tamriel_hammerfell_alikr_desert }
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 5
+			has_variable = bad_prophecy_var
+		}
+	}
+
+	immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		traveler_danger_xp_effect = {
+			MIN = 3
+			MAX = 7
+		}
+		if = {
+			limit = { exists = current_travel_plan.travel_leader }
+			current_travel_plan.travel_leader = { save_scope_as = caravan_master }
+		}
+	}
+
+	option = { # Gather around me, fight back
+		name = ek_travel_events_hammerfell.4000.a
+
+		trigger = {
+			current_travel_plan = {
+				any_entourage_character = {
+					NOT = { this = root }
+					count > 3
+				}
+			}
+		}
+
+		duel = {
+			skill = martial
+			value = medium_skill_rating
+			10 = {
+				desc = ek_travel_events_hammerfell.4000.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_valenwood.4000.a.success
+					add_prestige = medium_prestige_gain
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_valenwood.4000.a.failure
+				send_interface_toast = {
+					left_icon = scope:duneripper_food
+					type = event_toast_effect_bad
+					title = ek_travel_events_valenwood.4000.a.failure
+					current_travel_plan = {
+						random_entourage_character = {
+							limit = { NOT = { this = root } }
+							death = { death_reason = death_duneripper }
+							save_scope_as = duneripper_food
+						}
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			craven = medium_stress_impact_gain
+			diligent = minor_stress_impact_loss
+			brave = minor_stress_impact_loss			
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # I bring that beast down
+		name = ek_travel_events_hammerfell.4000.b
+
+		duel = {
+			skill = prowess
+			value = very_high_skill_rating
+			10 = {
+				desc = ek_travel_events_hammerfell.4000.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_hammerfell.4000.b.success
+					add_prestige = major_prestige_gain
+					hidden_effect = {
+						create_artifact_animal_hide_effect = {
+							OWNER = root
+							HUNTER = root
+							LEGENDARY = yes
+							ANIMAL = flag:duneripper
+						}
+					}
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_hammerfell.4000.b.failure
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_bad
+					title = ek_travel_events_hammerfell.4000.b.failure
+					death = { death_reason = death_duneripper }
+				}
+			}
+		}
+
+		stress_impact = {
+			craven = major_stress_impact_gain
+			arrogant = minor_stress_impact_loss
+			brave = medium_stress_impact_loss			
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_trait = craven
+			}
+		}
+	}
+
+	option = { # Run and hide
+		name = ek_travel_events_hammerfell.4000.c
+		custom_tooltip = ek_travel_events_hammerfell.4000.c.t
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 3 }
+		}
+
+		hidden_effect = {
+			send_interface_toast = {
+				left_icon = scope:duneripper_food
+				type = event_toast_effect_bad
+				title = ek_travel_events_hammerfell.4000.a.failure
+				current_travel_plan = {
+					random_entourage_character = {
+						limit = { NOT = { this = root } }
+						death = { death_reason = death_duneripper }
+						save_scope_as = duneripper_food
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			brave = major_stress_impact_gain
+			craven = medium_stress_impact_loss					
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_trait = craven
+				add = 50
+			}
+		}
+	}
+}
+
+# Danger Event: Desert Lamia
+ek_travel_events_hammerfell.4005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.4005.t
+	desc = ek_travel_events_hammerfell.4005.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	right_portrait = {
+		trigger = { exists = scope:caravan_master }
+		character = scope:caravan_master
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { 
+			geographical_region = mundus_tamriel_hammerfell
+			terrain = oasis
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 5
+			has_variable = bad_prophecy_var
+		}
+	}
+
+	immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		traveler_danger_xp_effect = {
+			MIN = 3
+			MAX = 7
+		}
+		if = {
+			limit = { exists = current_travel_plan.travel_leader }
+			current_travel_plan.travel_leader = { save_scope_as = caravan_master }
+		}
+	}
+
+	option = { # Pay for the Water
+		name = ek_travel_events_hammerfell.4005.a
+
+		add_gold = major_gold_loss
+
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+			humble = minor_stress_impact_loss
+			just = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # Fight the Lamia
+		name = ek_travel_events_hammerfell.4005.b
+
+		duel = {
+			skill = prowess
+			value = very_high_skill_rating
+			10 = {
+				desc = ek_travel_events_hammerfell.4005.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_hammerfell.4005.b.success
+					create_artifact_necklace_effect = {
+						OWNER = root
+						SMITH = scope:dummy_gender
+					}
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_hammerfell.4005.b.failure
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_bad
+					title = ek_travel_events_hammerfell.4005.b.failure
+					death = { death_reason = death_lamia }
+				}
+			}
+		}
+
+		stress_impact = {
+			craven = medium_stress_impact_gain
+			brave = minor_stress_impact_loss
+			wrathful = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_trait = craven
+			}
+		}
+	}
+
+	option = { # If mercenaries are hired, use them
+		name = ek_travel_events_hammerfell.4005.c
+		custom_tooltip = ek_travel_events_hammerfell.4005.c.t
+
+		trigger = { current_travel_plan = { has_travel_option = hire_experienced_mercenaries_option } }
+
+		stress_impact = {
+			humble = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			greedy = minor_stress_impact_loss			
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# Danger Event: Someone got stung by a scorpion
+ek_travel_events_hammerfell.4010 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.4010.t
+	desc = ek_travel_events_hammerfell.4010.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+
+	right_portrait = {
+		character = scope:unlucky_character
+		animation = pain
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { geographical_region = mundus_tamriel_hammerfell }
+		current_travel_plan = {
+			any_entourage_character = {
+				NOT = { this = root }
+				count > 1
+			}
+		}
+	}		
+
+    immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		traveler_danger_xp_effect = {
+			MIN = 2
+			MAX = 5
+		}
+		current_travel_plan = {
+			random_entourage_character = {
+				limit = { NOT = { this = root } }
+				save_scope_as = unlucky_character
+			}
+			if = {
+				limit = {
+					any_entourage_character = { 
+						has_court_position = court_physician_court_position
+						NOR = { 
+							this = root
+							this = scope:unlucky_character
+							is_undead = yes
+							is_vampire = yes
+							is_briarheart = yes
+							is_hagraven = yes
+						}
+					}
+				}
+				random_entourage_character = {
+					limit = { 
+						has_court_position = court_physician_court_position
+						NOR = { 
+							this = root
+							this = scope:unlucky_character
+						}
+					}
+					save_scope_as = traveling_court_physician
+				}
+			}
+		}
+	}
+
+	option = { # I know a spell!
+		name = ek_travel_events_hammerfell.4010.a
+
+		trigger = { has_perk = restoration_novice_perk }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Court Physician can help
+		name = ek_travel_events_hammerfell.4010.b
+
+		trigger = { exists = scope:traveling_court_physician }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Argonians are resistant against poison
+		name = ek_travel_events_hammerfell.4010.b
+
+		trigger = { 
+			scope:unlucky_character = { culture = { has_cultural_pillar = heritage_argonian } }
+		}
+
+		scope:unlucky_character = {
+			add_stress = medium_stress_gain
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # Try to catch that scorpion
+		name = ek_travel_events_hammerfell.4010.c
+
+		scope:unlucky_character = {
+			death = { death_reason = death_scorpion }
+		}
+
+		random_list = {
+			50 = { 
+				custom_tooltip = ek_travel_events_hammerfell.4010.c.success
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_hammerfell.4010.c.success
+					start_scorpion_story_cycle_effect = yes
+				}				
+			}
+			50 = {
+				custom_tooltip = ek_travel_events_hammerfell.4010.c.failure
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_bad
+					title = ek_travel_events_hammerfell.4010.c.failure
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # Oh no
+		name = ek_travel_events_hammerfell.4010.d
+
+		scope:unlucky_character = {
+			death = { death_reason = death_scorpion }
+		}
+
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_trait = sadistic
+				add = 90				
+			}
+		}
+	}
+}
+
+# Danger Event: Shifting Sands
+ek_travel_events_hammerfell.4015 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.4015.t
+	desc = ek_travel_events_hammerfell.4015.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { 
+			geographical_region = mundus_tamriel_hammerfell_alikr_desert
+			is_desert_trigger = yes
+		}
+	}		
+
+    immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		traveler_danger_xp_effect = {
+			MIN = 2
+			MAX = 5
+		}
+		if = {
+			limit = { exists = current_travel_plan.travel_leader }
+			current_travel_plan.travel_leader = { save_scope_as = caravan_master }
+		}
+		current_travel_plan = {
+			if = {
+				limit = {
+					any_entourage_character = {
+						has_trait = desert_warrior
+					}
+				}
+				random_entourage_character = {
+					limit = { has_trait = desert_warrior }
+					save_scope_as = desert_warrior_character
+				}
+			}
+		}
+	}
+
+	option = { # You are clueless
+		name = ek_travel_events_hammerfell.4015.a
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 21 }
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = { # You have a caravan master
+		name = ek_travel_events_hammerfell.4015.b
+
+		trigger = { exists = scope:caravan_master }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 14 }
+		}
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = { # You have a desert specialist
+		name = ek_travel_events_hammerfell.4015.c
+
+		trigger = { exists = scope:desert_warrior_character }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+############################
+## Travel Hammerfell Province Events
+## 8000-9999
+############################
+
+### EK TODO: rework
+# The Oldest Captive
+ek_travel_events_hammerfell.8000 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.8000.t
+	desc = ek_travel_events_hammerfell.8000.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = {
+				OR = {
+					has_trait = sadistic
+					has_trait = callous
+				}
+			}
+			animation = laugh
+		}
+	   	animation = shock
+	}
+
+	right_portrait = {
+		character = scope:prisoner
+	   	animation = sadness
+	}
+
+	cooldown = { years = 15 }
+
+	trigger = {
+		is_available_travelling = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = province:428 #Salas En
+    }
+
+	immediate = {
+		create_character = {
+			template = oldest_captive
+			location = root.location
+			culture = root.location.county.culture
+			faith = root.location.county.faith
+			#Set up the scope
+			save_scope_as = prisoner
+		}
+	}
+
+	# Help them, for a reward
+	option = {
+		name = ek_travel_events_hammerfell.8000.a
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		fake_duel = {
+			skill = arcana
+			target = this
+			value = extremely_high_skill_rating
+		}
+		random_list = {
+			50 = {
+				compare_modifier = {
+					value = scope:fake_duel_value
+					multiplier = 1
+					min = -49
+				}
+				desc = ek_travel_events_hammerfell.8000.a.tt
+				send_interface_toast = {
+					title = ek_travel_events_hammerfell.8000.a.tt
+					type = event_toast_effect_good
+					left_icon = root
+					add_gold = massive_gold_value
+					add_hook = {
+						type = favor_hook
+						target = scope:prisoner
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:fake_duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = ek_travel_events_hammerfell.8000.a.tt_fail
+				send_interface_toast = {
+					title = ek_travel_events_hammerfell.8000.a.tt_fail
+					type = event_toast_effect_bad
+					left_icon = root
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		stress_impact = {
+			callous = medium_stress_impact_gain
+			sadistic = medium_stress_impact_gain
+			generous = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = callous
+					has_trait = sadistic
+					has_trait = generous
+				}
+			}
+		}
+	}
+
+	# Help them, for their loyalty
+	option = {
+		name = ek_travel_events_hammerfell.8000.b
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		fake_duel = {
+			skill = arcana
+			target = this
+			value = extremely_high_skill_rating
+		}
+		random_list = {
+			50 = {
+				compare_modifier = {
+					value = scope:fake_duel_value
+					multiplier = 1
+					min = -49
+				}
+				desc = ek_travel_events_hammerfell.8000.a.tt
+				send_interface_toast = {
+					title = ek_travel_events_hammerfell.8000.a.tt
+					type = event_toast_effect_good
+					left_icon = root
+					add_courtier = scope:prisoner
+					root.current_travel_plan = {
+						add_companion = scope:prisoner
+					}
+					scope:prisoner = {
+						add_character_flag = {
+							flag = blocked_from_leaving
+							years = 10
+						}
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:fake_duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				desc = ek_travel_events_hammerfell.8000.a.tt_fail
+				send_interface_toast = {
+					title = ek_travel_events_hammerfell.8000.a.tt_fail
+					type = event_toast_effect_bad
+					left_icon = root
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+		
+		stress_impact = {
+			callous = minor_stress_impact_gain
+			sadistic = minor_stress_impact_gain
+			paranoid = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = callous
+					has_trait = sadistic
+					has_trait = shy
+					has_trait = paranoid
+					has_trait = greedy
+				}
+			}
+		}
+	}
+
+	# Cackle at them and walk away
+	option = {
+		name = ek_travel_events_hammerfell.8000.c
+		add_prestige = miniscule_prestige_gain
+		if = {
+			limit = {
+				NOR = {
+					has_trait = callous
+					has_trait = sadistic
+				}
+			}
+			stress_impact = {
+				compassionate = minor_stress_impact_gain
+				just = minor_stress_impact_gain
+				forgiving = medium_stress_impact_gain
+				greedy = medium_stress_impact_gain
+			}
+		}
+		else = {
+			stress_impact = {
+				compassionate = medium_stress_impact_gain
+				just = medium_stress_impact_gain
+				forgiving = medium_stress_impact_gain
+				greedy = medium_stress_impact_gain
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					has_trait = callous
+					has_trait = sadistic
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_trait = compassionate
+					has_trait = just
+					has_trait = forgiving
+					has_trait = greedy
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					scope:prisoner = {
+						NOT = {
+							is_courtier_of = root
+						}
+					}
+				}
+				scope:prisoner = {
+					if = {
+						limit = {
+							root = { is_ai = yes }
+						}
+						silent_disappearance_effect = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Jewel of the Alik'r
+ek_travel_events_hammerfell.8005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_hammerfell.8005.t
+	desc = ek_travel_events_hammerfell.8005.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		location = province:434 #Sentinel
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # stewardship
+		name = ek_travel_events_hammerfell.8005.a
+		skill = stewardship
+		add_stewardship_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # martial
+		name = ek_travel_events_hammerfell.8005.b
+		skill = martial
+		add_martial_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # no thanks
+		name = ek_travel_events_hammerfell.8005.c
+	}
+}

@@ -1,0 +1,365 @@
+﻿### Main
+# We duplicate this doctrine group to avoid weird tooltip jankiness when creating the faith
+# The doctrines are swapped once the faith is created	
+doctrine_cultural_identity_none_creating_faith = {
+	icon = doctrine_cultural_identity_none_creating_faith
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_cultural_identity_none }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	
+	parameters = {
+
+	}
+}
+
+doctrine_cultural_identity_heritage_creating_faith = {
+	icon = doctrine_cultural_identity_heritage_creating_faith
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_cultural_identity_heritage }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	
+	parameters = {
+		same_heritage_conversion_bonus_creating_faith_active = yes
+		same_faith_promote_heritage_bonus_creating_faith_active = yes
+		other_heritage_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_heritage_exclusive_creating_faith = {
+	icon = doctrine_cultural_identity_heritage_exclusive_creating_faith
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_cultural_identity_heritage_exclusive }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	
+	parameters = {
+		same_heritage_exclusive_conversion_bonus_creating_faith_active = yes
+		same_faith_promote_heritage_exclusive_bonus_creating_faith_active = yes
+		other_heritage_exclusive_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_culture_creating_faith = {
+	icon = doctrine_cultural_identity_culture_creating_faith
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_cultural_identity_culture }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	
+	parameters = {
+		same_culture_conversion_bonus_creating_faith_active = yes
+		same_faith_promote_culture_bonus_creating_faith_active = yes
+		other_culture_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_culture_exclusive_creating_faith = {
+	icon = doctrine_cultural_identity_culture_exclusive_creating_faith
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_cultural_identity_culture_exclusive }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	
+	parameters = {
+		same_culture_exclusive_conversion_bonus_creating_faith_active = yes
+		same_faith_promote_culture_exclusive_bonus_creating_faith_active = yes
+		other_culture_exclusive_conversion_penalty_active = yes
+	}
+}
+	
+doctrine_cultural_identity_none = {
+	icon = doctrine_cultural_identity_none
+	parameters = {
+	}
+}
+
+doctrine_cultural_identity_heritage = { #Heritage Identity
+	icon = doctrine_cultural_identity_heritage
+	parameters = {
+		same_heritage_conversion_bonus_active = yes
+		same_faith_promote_heritage_bonus_active = yes
+		other_heritage_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_heritage_exclusive = { #Strong Heritage Identity
+	icon = doctrine_cultural_identity_heritage_exclusive
+	parameters = {
+		same_heritage_exclusive_conversion_bonus_active = yes
+		same_faith_promote_heritage_exclusive_bonus_active = yes
+		other_heritage_exclusive_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_culture = { #Cultural Identity
+	icon = doctrine_cultural_identity_culture
+	parameters = {
+		same_culture_conversion_bonus_active = yes
+		same_faith_promote_culture_bonus_active = yes
+		other_culture_conversion_penalty_active = yes
+	}
+}
+
+doctrine_cultural_identity_culture_exclusive = { #Strong Cultural Identity
+	icon = doctrine_cultural_identity_culture_exclusive
+	parameters = {
+		same_culture_exclusive_conversion_bonus_active = yes
+		same_faith_promote_culture_exclusive_bonus_active = yes
+		other_culture_exclusive_conversion_penalty_active = yes
+	}
+}
+
+### Marriage
+doctrine_marriage_suitable_party_any = {
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_marriage_suitable_party_any }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	parameters = {
+		can_marry_no_restriction_active = yes
+	}
+}
+
+doctrine_marriage_suitable_party_one_landed = {
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_marriage_suitable_party_one_landed }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	parameters = {
+		can_marry_one_landed_active = yes
+	}
+}
+
+### Crimes
+doctrine_lycanthropy_crime  = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_lycanthropy_crime  }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_shunned }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_accepted }
+			multiply = faith_changed_doctrine_cost_mult_three_step
+		}
+	}
+	parameters = {
+		lycanthropy_criminal = yes
+		cleanse_abominations_lycanthropes_rulers = yes
+	}
+}
+doctrine_lycanthropy_shunned = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_lycanthropy_shunned }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_virtuous }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		lycanthropy_shunned = yes
+	}
+}
+doctrine_lycanthropy_accepted = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_lycanthropy_accepted }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_crime }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		lycanthropy_accepted = yes
+	}
+}
+doctrine_lycanthropy_virtuous = {
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		if = {
+			limit = { has_doctrine = doctrine_lycanthropy_virtuous }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_shunned }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_lycanthropy_crime }
+			multiply = faith_changed_doctrine_cost_mult_three_step
+		}
+	}
+	traits = {
+		virtues = { lycan_character }
+	}
+	parameters = {
+		lycanthropy_accepted = yes
+	}
+}
+
+doctrine_vampirism_crime  = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_vampirism_crime  }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_shunned }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_accepted }
+			multiply = faith_changed_doctrine_cost_mult_three_step
+		}
+	}
+	parameters = {
+		vampirism_criminal = yes
+		cleanse_abominations_vampires_rulers = yes
+	}
+}
+doctrine_vampirism_shunned = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_vampirism_shunned }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_virtuous }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		vampirism_shunned = yes
+	}
+}
+doctrine_vampirism_accepted = {
+	piety_cost = {
+		value = faith_doctrine_cost_low
+		if = {
+			limit = { has_doctrine = doctrine_vampirism_accepted }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_crime }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		vampirism_accepted = yes
+		anti_undeath_gods_blocker = yes
+	}
+}
+doctrine_vampirism_virtuous = {
+	piety_cost = {
+		value = faith_tenet_cost_massive
+		if = {
+			limit = { has_doctrine = doctrine_vampirism_virtuous }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_shunned }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_vampirism_crime }
+			multiply = faith_changed_doctrine_cost_mult_three_step
+		}
+	}
+	traits = {
+		virtues = { vampire_character }
+	}
+	parameters = {
+		vampirism_accepted = yes
+		anti_undeath_gods_blocker = yes
+	}
+}
+
+doctrine_necromancy_crime = {
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_necromancy_crime }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_necromancy_accepted }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		necromancy_criminal = yes
+		undeath_criminal = yes
+		cleanse_abominations_undead_rulers = yes
+		cleanse_abominations_necromancers_rulers = yes
+		hostility_override_tenet_necromancy_worship = 3
+	}
+}
+
+doctrine_necromancy_shunned = {
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_necromancy_shunned }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+	}
+	parameters = {
+		necromancy_shunned = yes
+		undeath_shunned = yes
+	}
+}
+
+doctrine_necromancy_accepted = {
+	piety_cost = {
+		value = faith_doctrine_cost_mid
+		if = {
+			limit = { has_doctrine = doctrine_necromancy_accepted }
+			multiply = faith_unchanged_doctrine_cost_mult
+		}
+		else_if = {
+			limit = { has_doctrine = doctrine_necromancy_crime }
+			multiply = faith_changed_doctrine_cost_mult_two_step
+		}
+	}
+	parameters = {
+		necromancy_accepted = yes
+		undeath_accepted = yes
+		anti_undeath_gods_blocker = yes
+	}
+}

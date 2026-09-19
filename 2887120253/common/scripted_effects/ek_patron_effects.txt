@@ -1,0 +1,233 @@
+﻿# try using get_patron and $PATRON$ on update effects to streamline
+# need to be able to get a return value to make it useful though I think
+
+patron_trait_master_effect = {
+    # Divines
+    $EFFECT$ = { TRAIT = _dv_akatosh }
+    $EFFECT$ = { TRAIT = _dv_arkay }
+    $EFFECT$ = { TRAIT = _dv_dibella }
+    $EFFECT$ = { TRAIT = _dv_julianos }
+    $EFFECT$ = { TRAIT = _dv_kynareth }
+    $EFFECT$ = { TRAIT = _dv_mara }
+    $EFFECT$ = { TRAIT = _dv_stendarr }
+    $EFFECT$ = { TRAIT = _dv_zenithar }
+    $EFFECT$ = { TRAIT = _dv_shezarr }
+    $EFFECT$ = { TRAIT = _dv_dragonborn }
+    # Aedra
+    $EFFECT$ = { TRAIT = _ae_auriel }
+    $EFFECT$ = { TRAIT = _ae_jephre }
+    $EFFECT$ = { TRAIT = _ae_magnus }
+    $EFFECT$ = { TRAIT = _ae_phynaster }
+    $EFFECT$ = { TRAIT = _ae_syrabane }
+    $EFFECT$ = { TRAIT = _ae_trinimac }
+    $EFFECT$ = { TRAIT = _ae_xarxes }
+    $EFFECT$ = { TRAIT = _ae_xen }
+    $EFFECT$ = { TRAIT = _ae_lorkhan }
+    $EFFECT$ = { TRAIT = _ae_cassimoran }
+    $EFFECT$ = { TRAIT = _ae_iric }
+    # Daedra
+    $EFFECT$ = { TRAIT = _ob_azura }
+    $EFFECT$ = { TRAIT = _ob_boethiah }
+    $EFFECT$ = { TRAIT = _ob_clavicus }
+    $EFFECT$ = { TRAIT = _ob_hermaeus }
+    $EFFECT$ = { TRAIT = _ob_hircine }
+    $EFFECT$ = { TRAIT = _ob_malacath }
+    $EFFECT$ = { TRAIT = _ob_mehrunes }
+    $EFFECT$ = { TRAIT = _ob_mephala }
+    $EFFECT$ = { TRAIT = _ob_meridia }
+    $EFFECT$ = { TRAIT = _ob_molag }
+    $EFFECT$ = { TRAIT = _ob_namira }
+    $EFFECT$ = { TRAIT = _ob_nocturnal }
+    $EFFECT$ = { TRAIT = _ob_peryite }
+    $EFFECT$ = { TRAIT = _ob_sanguine }
+    $EFFECT$ = { TRAIT = _ob_sheogorath }
+    $EFFECT$ = { TRAIT = _ob_vaermina }
+    # Dwemer Ancestors
+    $EFFECT$ = { TRAIT = _da_architect }
+    $EFFECT$ = { TRAIT = _da_giant }
+    $EFFECT$ = { TRAIT = _da_lost_king }
+    $EFFECT$ = { TRAIT = _da_warrior }
+    # Atmoran Totems
+    $EFFECT$ = { TRAIT = _at_bear }
+    $EFFECT$ = { TRAIT = _at_dragon }
+    $EFFECT$ = { TRAIT = _at_fox }
+    $EFFECT$ = { TRAIT = _at_hawk }
+    $EFFECT$ = { TRAIT = _at_moth }
+    $EFFECT$ = { TRAIT = _at_owl }
+    $EFFECT$ = { TRAIT = _at_snake }
+    $EFFECT$ = { TRAIT = _at_whale }
+    $EFFECT$ = { TRAIT = _at_wolf }
+    $EFFECT$ = { TRAIT = _at_hare }
+    # Giant Totems
+    $EFFECT$ = { TRAIT = _gt_mammoth }
+    $EFFECT$ = { TRAIT = _gt_sabrecat }
+    # Elemental Gods
+    $EFFECT$ = { TRAIT = _eg_myn }
+    $EFFECT$ = { TRAIT = _eg_zisa }
+    $EFFECT$ = { TRAIT = _eg_nyfa }
+    $EFFECT$ = { TRAIT = _eg_ilni }
+    $EFFECT$ = { TRAIT = _eg_tam }
+    # Cyrodiilic Heroes
+    $EFFECT$ = { TRAIT = _ch_alessia }
+    $EFFECT$ = { TRAIT = _ch_pelinal }
+    $EFFECT$ = { TRAIT = _ch_morihaus }
+    $EFFECT$ = { TRAIT = _ch_reman }
+    $EFFECT$ = { TRAIT = _ch_bendu }
+    # Thousand Cults
+    $EFFECT$ = { TRAIT = _tc_aka }
+	$EFFECT$ = { TRAIT = _tc_missing }
+	$EFFECT$ = { TRAIT = _tc_land }
+	$EFFECT$ = { TRAIT = _tc_moth }
+	$EFFECT$ = { TRAIT = _tc_beasts }
+	$EFFECT$ = { TRAIT = _tc_love }
+	$EFFECT$ = { TRAIT = _tc_guilds }
+	$EFFECT$ = { TRAIT = _tc_heavens }
+    # Yokudan Pantheon
+    $EFFECT$ = { TRAIT = _yp_diagna }
+    $EFFECT$ = { TRAIT = _yp_morwha }
+    $EFFECT$ = { TRAIT = _yp_onsi }
+    $EFFECT$ = { TRAIT = _yp_ruptga }
+    $EFFECT$ = { TRAIT = _yp_satakal }
+    $EFFECT$ = { TRAIT = _yp_tava }
+    $EFFECT$ = { TRAIT = _yp_tuwhacca }
+    $EFFECT$ = { TRAIT = _yp_zeht }
+    $EFFECT$ = { TRAIT = _yp_leki }
+    $EFFECT$ = { TRAIT = _yp_hoonding }
+    # Tribunal Pantheon
+    $EFFECT$ = { TRAIT = _tr_vivec }
+    $EFFECT$ = { TRAIT = _tr_almalexia }
+    $EFFECT$ = { TRAIT = _tr_sotha }
+    # Velothi Saints
+    $EFFECT$ = { TRAIT = _vl_aralor }
+    $EFFECT$ = { TRAIT = _vl_felms }
+    $EFFECT$ = { TRAIT = _vl_meris }
+    $EFFECT$ = { TRAIT = _vl_nerevar }
+    $EFFECT$ = { TRAIT = _vl_olms }
+    $EFFECT$ = { TRAIT = _vl_rilms }
+    $EFFECT$ = { TRAIT = _vl_seryn }
+    $EFFECT$ = { TRAIT = _vl_veloth }
+    $EFFECT$ = { TRAIT = _vl_vorys }
+    $EFFECT$ = { TRAIT = _vl_llothis }
+    # Khajiiti Pantheon
+    $EFFECT$ = { TRAIT = _kj_baandar }
+    # Forgotten Gods
+    $EFFECT$ = { TRAIT = _fg_notorgo }
+    $EFFECT$ = { TRAIT = _fg_raen }
+    $EFFECT$ = { TRAIT = _fg_vigryl }
+    $EFFECT$ = { TRAIT = _fg_shandar }
+    $EFFECT$ = { TRAIT = _fg_jhimsei }
+    $EFFECT$ = { TRAIT = _fg_druaaga }
+    $EFFECT$ = { TRAIT = _fg_qolwen }
+    $EFFECT$ = { TRAIT = _fg_sai }
+    $EFFECT$ = { TRAIT = _fg_ebonarm }
+    $EFFECT$ = { TRAIT = _fg_ius }
+    # Magna-Ge
+    $EFFECT$ = { TRAIT = _mg_mnemoli }
+    $EFFECT$ = { TRAIT = _mg_xerolyg }
+    # Reman
+    $EFFECT$ = { TRAIT = _rm_light_of_man }
+    $EFFECT$ = { TRAIT = _rm_the_cyrodiil }
+    $EFFECT$ = { TRAIT = _rm_worldly_god }
+    # Trinimac
+    $EFFECT$ = { TRAIT = _tm_paragon }
+    $EFFECT$ = { TRAIT = _tm_gold_champ }
+    $EFFECT$ = { TRAIT = _tm_blade_of_courage }
+    #Satakal
+    $EFFECT$ = { TRAIT = _st_first_serpent }
+    $EFFECT$ = { TRAIT = _st_hungry_serpent }
+    #King of Worms
+    $EFFECT$ = { TRAIT = _kw_wormking }
+    $EFFECT$ = { TRAIT = _kw_necromancer }
+    $EFFECT$ = { TRAIT = _kw_mannimarco }
+    #Missing
+    $EFFECT$ = { TRAIT = _lk_king }
+    #Reach
+    $EFFECT$ = { TRAIT = _rf_karth }
+    #Sanguine
+    $EFFECT$ = { TRAIT = _sg_birth }
+    $EFFECT$ = { TRAIT = _sg_feast }
+    $EFFECT$ = { TRAIT = _sg_wild }
+}
+
+patron_get_list = {
+    patron_trait_master_effect = { EFFECT = patron_add_to_list }
+}
+
+patron_add_to_list = { #variant of this for local list for ai to select
+    if = {
+        limit = { patron$TRAIT$_valid = yes }
+        #scope:player_s = { add_to_variable_list = { name = faith_patrons target = flag:$TRAIT$ } }
+        add_to_variable_list = { name = faith_patrons target = flag:$TRAIT$ }
+    }
+}
+
+patron_set_trait = { #need 1.4 commands to pass flag/scope:trait from gui
+    patron_trait_master_effect = { EFFECT = patron_add_trait }
+}
+
+patron_add_trait = { #need 1.4 commands to pass flag/scope:trait from gui
+    if = {
+        limit = { scope:trait = flag:$TRAIT$ }
+        add_trait = p$TRAIT$
+        if = {
+            limit = { is_ai = no }
+            set_variable = { name = recent_patron_selected value = yes years = 5 }
+        }
+    }
+    else = { remove_trait = p$TRAIT$ }
+}
+
+#need remove trait before grant. also need to replace the faith change one, also the modifier blocking recent
+
+#this one only clears if the patron is no longer valid so nord cult -> imperial cult keeps akatosh move to master
+patron_faith_change_clear_traits = {
+    patron_trait_master_effect = { EFFECT = patron_faith_change_clear_trait }
+    if = {
+        limit = { is_ai = no }
+        set_variable = { name = recent_patron_selected value = yes years = 5 }
+    }
+}
+
+patron_faith_change_clear_trait = {
+    if = {
+        limit = { faith = { patron$TRAIT$_valid = no } }
+        remove_trait = p$TRAIT$
+    }
+}
+
+patron_clear_traits_effect = { #for when you need to clear all existing patron traits
+    if = {
+        limit = {
+            has_trait_with_flag = patron_trait
+        }
+        every_character_trait = {
+            limit = {
+                has_trait_flag = patron_trait
+            }
+            prev = {
+                remove_trait = prev
+            }
+        }
+    }
+}
+
+#EK NOTE: Commenting these out since they cause errors, they don't seem to actively be used, and from some testing of them I don't think they actually work as intended anymore.
+#patron_get_list_ai = {
+#    patron_trait_master_effect = { EFFECT = patron_add_to_list_ai }
+#}
+
+#patron_add_to_list_ai = { #variant of this for local list for ai to select
+#    if = {
+#        limit = { faith = { patron$TRAIT$_valid = yes } }
+#        flag:$TRAIT$ = { add_to_list = faith_patrons } #ignore what error.log & ck3-tiger say, this works (in 1.11.5)
+#    }
+#}
+
+#patron_assign_trait_ai = { #very wierd behaviour in events. it works and assigns removes existing trait then assigns the flag one, but localization says you gain a completely different one. doesnt really matter as the ai wont notice
+#    patron_get_list_ai = yes
+#    random_in_list = { #can possibly use weight block here to modify chances of selection
+#        list = faith_patrons
+#        save_scope_as = trait
+#    }
+#    patron_set_trait = yes
+#}

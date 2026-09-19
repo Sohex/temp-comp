@@ -1,0 +1,2586 @@
+
+e_summerset = {
+	3360.1.1 = { change_development_level = 18 }
+	-2000.1.1 = { #Al-Udhendra
+		holder = auriel_1
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = administrative_government }
+				}
+				set_state_faith = faith:aedric
+			}
+			holder ?= {
+				add_realm_law_skip_effects = xarxean_investiture_succession_law
+				if = {
+					limit = {
+						NOT = { 
+							has_realm_law = imperial_bureaucracy_1 
+						}
+					}
+					add_realm_law = imperial_bureaucracy_1 
+				}
+				if = {
+					limit = {
+						NOT = { 
+							has_realm_law = province_war_law_1 
+						}
+					}
+					add_realm_law = province_war_law_1 
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	-1499.1.1 = { holder = auriel_1b } #Uranya
+	-1086.8.8 = { holder = auriel_1c } #Erisare
+	-819.1.1 = { holder = auriel1_2 } #Laranrian
+	-672.11.22 = { holder = auriel1_2b } #Quaranil
+	-474.1.1 = { holder = auriel_3 } #Aldanya
+	-327.1.1 = { holder = auriel_1d } #Arantar
+	-186.1.1 = { holder = auriel2_2 } #Ayarynne
+	-37.1.1 = { holder = auriel1_3 } #Eteviniir
+	249.5.13 = { holder = auriel3_3 } #Novenaril
+	514.12.21 = { holder = auriel_6 } #Cimeneth
+	673.5.25 = { holder = auriel3_4 } #Astilme
+	756.3.2 = { holder = auriel2_3b } #Lernuvaril
+	892.1.1 = { holder = auriel2_7 } #Esteltin
+	1017.1.1 = { holder = auriel_8 } #Talisse
+	1245.7.9 = { holder = auriel3_7 }
+	1331.1.1 = { holder = auriel_91 }
+	1624.1.1 = { holder = auriel_92 }
+	1962.1.1 = { holder = auriel_93 }
+	2125.10.30 = { holder = auriel_94 }
+	2300.5.11 = { holder = auriel_95 }
+	2452.5.18 = { holder = auriel_96 }
+	2645.9.7 = { holder = auriel_97 }
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 } #King Hidellith
+	3500.10.1 = { holder = auriel_101 } #Queen Ayrenn
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+
+#k_skywatch
+k_skywatch = {
+	-487.1.1 = {
+		holder = errinorne_1
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	-154.1.1 = { holder = errinorne_2 }
+	96.1.1 = { holder = errinorne_3 }
+	316.1.1 = { holder = errinorne_4 }
+	418.1.1 = { holder = errinorne_5 }
+	499.1.1 = { holder = errinorne_6 }
+	602.1.1 = { holder = errinorne_7 }
+	896.1.1 = { holder = errinorne_8 }
+	1005.1.1 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	1480.10.17 = { holder = errinorne_004 }
+	1700.10.2 = { holder = errinorne_005 }
+	1860.6.1 = { holder = errinorne_006 } #Queen Erranil
+	2000.9.16 = { holder = errinorne_007 } #King Kyanka
+	2188.5.3 = { holder = errinorne_93 } #King Thargallith
+	2209.5.1 = { holder = errinorne_95b } #King Honditar I
+	2259.9.8 = { holder = errinorne_95b2 } #King Honditar II
+	2267.11.12 = { holder = errinorne_95b3 } #King Tyermaillin
+	2268.1.3 = { holder = errinorne_95c } #King Aldaril
+	2537.6.11 = { holder = errinorne_96 } #Queen Peregrine-necromancer queen
+	2680.4.1 = { holder = errinorne_97 } #King Norionil-last king of historical Auridon
+	2905.3.18 = { holder = errinorne_98 } #Tandil
+	3181.11.27 = { holder = errinorne_99 } #Estre
+	3221.8.26 = { holder = errinorne_100 } #Arivanya
+	3349.3.30 = { holder = errinorne_100b } #King Merandil
+	3422.3.15 = { holder = errinorne1_101 } #King Tusamircil
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }
+}
+d_skywatch = {
+	3360.1.1 = { change_development_level = 19 }
+	-487.1.1 = { holder = errinorne_1 }
+	-154.1.1 = { holder = errinorne_2 }
+	96.1.1 = { holder = errinorne_3 }
+	316.1.1 = { holder = errinorne_4 }
+	418.1.1 = { holder = errinorne_5 }
+	499.1.1 = { holder = errinorne_6 }
+	602.1.1 = { holder = errinorne_7 }
+	896.1.1 = { holder = errinorne_8 }
+	1005.1.1 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	1480.10.17 = { holder = errinorne_004 }
+	1700.10.2 = { holder = errinorne_005 }
+	1860.6.1 = { holder = errinorne_006 }
+	2000.9.16 = { holder = errinorne_007 }
+	2188.5.3 = { holder = errinorne_93 }
+	2209.5.1 = { holder = errinorne_95b }
+	2259.9.8 = { holder = errinorne_95b2 }
+	2267.11.12 = { holder = errinorne_95b3 }
+	2268.1.3 = { holder = errinorne_95c }
+	2537.6.11 = { holder = errinorne_96 }
+	2680.4.1 = { holder = errinorne_97 }
+	2905.3.18 = { holder = errinorne_98 }
+	3181.11.27 = { holder = errinorne_99 }
+	3221.8.26 = { holder = errinorne_100 }
+	3349.3.30 = { holder = errinorne_100b }
+	3422.3.15 = { holder = errinorne1_101 }
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }	
+}
+c_skywatch = {
+	3360.1.1 = { change_development_level = 22 }
+	-487.1.1 = { holder = errinorne_1 }
+	-154.1.1 = { holder = errinorne_2 }
+	96.1.1 = { holder = errinorne_3 }
+	316.1.1 = { holder = errinorne_4 }
+	418.1.1 = { holder = errinorne_5 }
+	499.1.1 = { holder = errinorne_6 }
+	602.1.1 = { holder = errinorne_7 }
+	896.1.1 = { holder = errinorne_8 }
+	1005.1.1 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	1480.10.17 = { holder = errinorne_004 }
+	1700.10.2 = { holder = errinorne_005 }
+	1860.6.1 = { holder = errinorne_006 }
+	2000.9.16 = { holder = errinorne_007 }
+	2188.5.3 = { holder = errinorne_93 }
+	2209.5.1 = { holder = errinorne_95b }
+	2259.9.8 = { holder = errinorne_95b2 }
+	2267.11.12 = { holder = errinorne_95b3 }
+	2268.1.3 = { holder = errinorne_95c }
+	2537.6.11 = { holder = errinorne_96 }
+	2680.4.1 = { holder = errinorne_97 }
+	2905.3.18 = { holder = errinorne_98 }
+	3181.11.27 = { holder = errinorne_99 }
+	3221.8.26 = { holder = errinorne_100 }
+	3349.3.30 = { holder = errinorne_100b }
+	3422.3.15 = { holder = errinorne1_101 }
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }	
+}
+c_marblewater = {
+	2350.1.1 = { 
+		holder = auralus_002
+		liege = k_skywatch 
+	}
+	2362.5.2 = { holder = auralus_003 } 
+	2412.4.21 = { holder = auralus_004 } 
+	2589.1.27 = { holder = auralus_005 } 
+	2682.3.28 = { holder = auralus_006 } 
+	2733.12.19 = { holder = auralus_007 } 
+	2896.8.28 = { holder = auralus_97 } 
+	3103.9.4 = { holder = auralus_98 } 
+	3245.6.4 = { holder = auralus_99 } 
+	3357.1.14 = { holder = auralus_100 }
+	3511.3.4 = { holder = auralus_100b }
+	3524.5.12 = { holder = auralus_101 }
+}
+c_errinorne = {
+	-487.1.1 = { holder = errinorne_1 }
+	-154.1.1 = { holder = errinorne_2 }
+	96.1.1 = { holder = errinorne_3 }
+	316.1.1 = { holder = errinorne_4 }
+	418.1.1 = { holder = errinorne_5 }
+	499.1.1 = { holder = errinorne_6 }
+	602.1.1 = { holder = errinorne_7 }
+	896.1.1 = { holder = errinorne_8 }
+	1005.1.1 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	2260.12.15 = { holder = errinorne_95b2 }
+	2267.11.12 = { holder = errinorne_95b3 }
+	2268.1.3 = { holder = errinorne_95c }
+	2537.6.11 = { holder = errinorne_96 }
+	2680.4.1 = { holder = errinorne_97 }
+	2905.3.18 = { holder = errinorne_98 }
+	3181.11.27 = { holder = errinorne_99 }
+	3221.8.26 = { holder = errinorne_100 }
+	3349.3.30 = { holder = errinorne_100b }
+	3422.3.15 = { holder = errinorne1_101 }
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }	
+}
+c_sternidar = {
+	3101.1.1 = {
+		liege = d_skywatch
+		holder = derinil_98
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3198.4.10 = { holder = derinil_99 }
+	3331.4.2 = { holder = derinil_100 }
+	3403.10.19 = { holder = derinil_101 }
+	3511.5.4 = { holder = derinil_102 }
+}
+c_ezduiin = {
+	800.1.1 = { holder = derinil_1 }
+	1011.12.18 = { holder = derinil_2b }
+	1065.5.6 = { holder = derinil_3b }
+	1068.11.30 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	2260.12.15 = { holder = errinorne_95b2 }
+	2267.11.12 = { holder = errinorne_95b3 }
+	2268.1.3 = { holder = errinorne_95c }
+	2537.6.11 = { holder = errinorne_96 }
+	2680.4.1 = { holder = errinorne_97 }
+	2905.3.18 = { holder = errinorne_98 }
+	3181.11.27 = { holder = errinorne_99 }
+	3221.8.26 = { holder = errinorne_100 }
+	3349.3.30 = { holder = errinorne_100b }
+	3422.3.15 = { holder = errinorne1_101 }
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }	
+}
+
+#d_mathiisen
+d_mathiisen = {
+	2717.1.1 = {
+		holder = arelsenil_96
+		liege = k_skywatch 
+	}
+	2831.6.14 = { holder = arelsenil_97 }
+	2895.1.10 = { holder = arelsenil_98 }
+	2988.3.22 = { holder = arelsenil_99 }
+	3086.10.19 = { holder = arelsenil_100 }
+	3261.9.20 = {  holder = arelsenil_102 }
+	3429.12.21 = { holder = arelsenil_103 }
+	3451.3.27 = { holder = arelsenil_103c }
+	3502.6.3 = { holder = arelsenil_104 }
+	3661.1.1 = { holder = arelsenil_105 }
+	3793.1.1 = { holder = arelsenil_106 }
+	4323.1.1 = { holder = arelsenil_106b }	
+}
+c_mathiisen = {
+	2717.1.1 = { holder = arelsenil_96 }
+	2831.6.14 = { holder = arelsenil_97 }
+	2895.1.10 = { holder = arelsenil_98 }
+	2988.3.22 = { holder = arelsenil_99 }
+	3086.10.19 = { holder = arelsenil_100 }
+	3261.9.20 = {  holder = arelsenil_102 }
+	3429.12.21 = { holder = arelsenil_103 }
+	3451.3.27 = { holder = arelsenil_103c }
+	3502.6.3 = { holder = arelsenil_104 }
+	3661.1.1 = { holder = arelsenil_105 }
+	3793.1.1 = { holder = arelsenil_106 }
+	4323.1.1 = { holder = arelsenil_106b }	
+}
+c_lillmora = {
+	2717.1.1 = { holder = arelsenil_96 }
+	2831.6.14 = { holder = arelsenil_97 }
+	2895.1.10 = { holder = arelsenil_98 }
+	2988.3.22 = { holder = arelsenil_99 }
+	3086.10.19 = { holder = arelsenil_100 }
+	3261.9.20 = {  holder = arelsenil_102 }
+	3429.12.21 = { holder = arelsenil_103 }
+	3451.3.27 = { holder = arelsenil_103c }
+	3502.6.3 = { holder = arelsenil_104 }
+	3661.1.1 = { holder = arelsenil_105 }
+	3793.1.1 = { holder = arelsenil_106 }
+	4323.1.1 = { holder = arelsenil_106b }	
+}
+c_buraniim = {
+	2717.1.1 = { holder = arelsenil_96 }
+	2831.6.14 = { holder = arelsenil_97 }
+	2895.1.10 = { holder = arelsenil_98 }
+	2988.3.22 = { holder = arelsenil_99 }
+	3086.10.19 = { holder = arelsenil_100 }
+	3261.9.20 = {  holder = arelsenil_102 }
+	3429.12.21 = { holder = arelsenil_103 }
+	3451.3.27 = { holder = arelsenil_103c }
+	3502.6.3 = { holder = arelsenil_104 }
+	3661.1.1 = { holder = arelsenil_105 }
+	3793.1.1 = { holder = arelsenil_106 }
+	4323.1.1 = { holder = arelsenil_106b }	
+}
+c_tamlaure = {
+	2814.1.1 = { 
+		holder = vaelata_96
+		liege = d_mathiisen
+		government = administrative_government 
+	}
+	3003.1.1 = { holder = vaelata_97 }
+	3008.1.1 = { holder = vaelata_98 }
+	3219.10.2 = { holder = vaelata_99 }
+	3366.8.27 = { holder = vaelata_100 }
+	3501.4.6 = { holder = vaelata_101b }
+	3502.6.17 = { holder = vaelata_101 }
+}
+
+
+#k_vulkhel
+k_vulkhel = {
+	2337.1.1 = {
+		holder = phynaster_92
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+d_vulkhel = {
+	3360.1.1 = { change_development_level = 19 }
+	2337.9.2 = { holder = phynaster_92 }
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+c_vulkhel = {
+	3360.1.1 = { change_development_level = 22 }
+	2337.9.2 = { holder = phynaster_92 }
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+c_potansa = {
+	2337.9.2 = { holder = phynaster_92 }
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+c_rellith = {
+	2337.9.2 = { holder = phynaster_92 }
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+
+c_iluvamir = {
+	2337.9.2 = { holder = phynaster_92 }
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+
+d_phaer = {
+	#history todo: possible switched between phaers and dyn_valano
+	3020.1.1 = {
+		holder = phaer_998
+		liege = k_vulkhel
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3240.7.2 = { holder = phaer_999	}
+	3441.8.24 = { holder = phaer_1000 }
+}
+c_phaer = {
+	3020.1.1 = { holder = phaer_998 }
+	3240.7.2 = { holder = phaer_999	}
+	3441.8.24 = { holder = phaer_1000 }
+}
+c_valano = {
+	3020.1.1 = { holder = phaer_998 }
+	3240.7.2 = { holder = phaer_999	}
+	3441.8.24 = { holder = phaer_1000 }
+}
+c_silatar = {
+	3301.1.1 = {
+		liege = d_vulkhel
+		holder = silatar_1000
+	}
+	3491.2.2 = {
+		holder = silatar_1001
+	}
+}
+
+d_tanzelwil = {
+	3000.1.1 = {
+		holder = fiora_999
+		liege = k_vulkhel
+	}
+	3180.4.2 = { holder = fiora_1000 }
+	3321.7.10 = { holder = fiora_1001 }
+	3481.6.27 = { holder = fiora_1002 }
+}
+c_tanzelwil = {
+	3000.1.1 = { holder = fiora_999 }
+	3180.4.2 = { holder = fiora_1000 }
+	3321.7.10 = { holder = fiora_1001 }
+	3481.6.27 = { holder = fiora_1002 }
+}
+c_morilant = {
+	3360.1.1 = { change_development_level = 5 }
+	3351.1.1 = { holder = coralsplitter_1000 }
+	3373.7.1 = { holder = fiora_1001 }
+	3481.6.27 = { holder = fiora_1002 }
+	3491.8.26 = { holder = toothmaul_1000 }
+}
+c_ondill = {
+	851.1.1 = { holder = fiora_fiorallelle }
+	2874.1.1 = { holder = fiora_98 }
+	3101.1.1 = { holder = fiora_999 }
+	3180.4.2 = { holder = fiora_1000 }
+	3321.7.10 = { holder = fiora_1001 }
+	3481.6.27 = { holder = fiora_1002 }
+}
+c_urien = {
+	3050.1.1 = {
+		liege = d_tanzelwil
+		holder = jaroril_998		
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3260.7.11 = { holder = jaroril_999 }
+	3330.10.14 = { holder = jaroril_1000 }
+	3474.4.5 = { holder = jororil_ciranya }
+}
+c_antaron = {
+	3050.1.1 = {
+		liege = d_tanzelwil
+		holder = jaroril_998
+	}
+	3260.7.11 = { holder = jaroril_999 }
+	3330.10.14 = { holder = jaroril_1000 }
+	3474.4.5 = { holder = jororil_ciranya }
+}
+
+#k_shimmerene
+k_shimmerene = {
+	2130.1.1 = { 
+		holder = syrabanis_1 #Syrabane, of humbler origins, is landed
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	} 
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2762.8.4 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+d_shimmerene = {
+	3360.1.1 = { change_development_level = 19 }
+	2130.1.1 = { holder = syrabanis_1 } #Syrabane
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+c_shimmerene = {
+	3360.1.1 = { change_development_level = 22 }
+	2130.1.1 = { holder = syrabanis_1 } #Syrabane
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+c_ironbark = {
+	2130.1.1 = { holder = syrabanis_1 } #Syrabane
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+c_lorenar = {
+	2130.1.1 = { holder = syrabanis_1 } #Syrabane
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+
+c_eldbar = {
+	2130.1.1 = { holder = syrabanis_1 } #Syrabane
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 } #Estormo
+}
+c_eldbur = {
+	3231.1.1 = {
+		holder = eldbar_1000
+		liege = d_shimmerene
+	}
+	3501.9.16 = { holder = eldbar_1001 }	
+}
+
+#d_thorheim
+d_thorheim = {
+	700.1.1 = { holder = hinrorue_1 }
+	2832.1.1 = { 
+		holder = hesnaton_97
+		liege = k_shimmerene 
+	}
+	3203.3.19 = { holder = yanilia_999 }
+	3341.12.29 = { holder = yanilia_1000 }
+	3571.5.29 = { holder = yanilia_1001 }
+}
+c_thorheim = {
+	3360.1.1 = { change_development_level = 16 }
+	700.1.1 = { holder = hinrorue_1 }
+	2832.1.1 = { holder = hesnaton_97 }
+	3203.3.19 = { holder = yanilia_999 }
+	3341.12.29 = { holder = yanilia_1000 }
+	3571.5.29 = { holder = yanilia_1001 }
+}
+c_orcariel = {
+	3281.1.9 = { holder = yanilia_999 }
+	3341.12.29 = { holder = yanilia_1000 }
+	3571.5.29 = { holder = yanilia_1001 }
+}
+c_mageholt = {
+	3052.1.1 = { holder = celcerar_97b }
+	3103.12.10 = { holder = yanilia_999 }
+	3348.8.16 = {
+		government = academy_government
+		liege = d_thorheim
+		holder = mageholt_1000
+	}
+}
+c_heinor = {
+	3360.1.1 = { change_development_level = 16 }
+	2832.1.1 = { holder = hesnaton_97 }
+	3203.3.19 = { holder = yanilia_999 }
+	3341.12.29 = { holder = yanilia_1000 }
+	3571.5.29 = { holder = yanilia_1001 }
+}
+
+#d_caelcalen
+d_caelcalen = {
+	3080.1.1 = { holder = grevil_998 }
+	3261.9.14 = { holder = grevil_999a }
+	3351.5.29 = { 
+		holder = grevil_1000
+		liege = k_shimmerene
+	}
+	3442.12.3 = { liege = e_summerset }
+	3450.1.1 = { liege = k_shimmerene }
+	3458.7.1 = { holder = grevil_1001 }
+}
+c_caelcalen = {
+	3360.1.1 = { change_development_level = 5 }
+	3323.1.1 = { holder = bonedweller_1000 }
+	3359.8.6 = { holder = calcract_1000 }
+	3370.11.1 = { holder = valestalker_1002 }
+	3370.11.7 = { holder = ukmiar_100 }
+	3449.7.3 = { holder = grevil_1000 }
+	3458.7.1 = { holder = grevil_1001 }
+}
+c_gryphon_run = {
+	3080.1.1 = { holder = grevil_998 }
+	3261.9.14 = { holder = grevil_999a }
+	3351.5.29 = { holder = grevil_1000 }
+	3458.7.1 = { holder = grevil_1001 }
+}
+c_gryerie = {
+	3360.1.1 = { change_development_level = 14 }
+	3080.1.1 = { holder = grevil_998 }
+	3261.9.14 = { holder = grevil_999a }
+	3351.5.29 = { holder = grevil_1000 }
+	3458.7.1 = { holder = grevil_1001 }
+}
+c_loredan = {
+	3360.1.1 = { change_development_level = 5 }
+	2650.1.1 = { holder = coralsplitter_993 }
+	2700.9.12 = { holder = coralsplitter_995 }
+	3359.11.18 = { holder = bonefriend_1000 }
+	3379.7.30 = { holder = coralsplitter_1001 }
+	3403.5.4 = { holder = coralsplitter_1002 }
+	3456.11.5 = { holder = coralsplitter_1003 }
+	3486.5.2 = { holder = coralsplitter_1004 }
+}
+
+#d_karndar
+d_karndar = {
+	2880.1.1 = { 
+		holder = carindon_998
+		liege = k_shimmerene 
+	}
+	3042.2.14 = { holder = carindon_999 }
+	3193.3.4 = { holder = carindon_1001 }
+	3312.9.22 = { holder = direnni_tyrigel_101 }
+	3355.5.10 = { holder = direnni_tyrigel_102 }
+	3368.7.6 = { holder = ukmiar_100 }
+	3448.5.1 = { holder = carindon_1004 }
+}
+c_dirennis = {
+	375.1.1 = { holder = direnni_tyrigel_1 }
+	552.1.23 = { holder = direnni_tyrigel_2 }
+	602.7.3 = { holder = direnni_tyrigel_2b }
+	2880.1.1 = { holder = carindon_998 }
+	3042.2.14 = { holder = carindon_999 }
+	3193.3.4 = { holder = carindon_1001 }
+	3312.9.22 = { holder = direnni_tyrigel_101 }
+	3355.5.10 = { holder = direnni_tyrigel_102 }
+	3368.7.6 = { holder = ukmiar_100 }
+	3448.5.1 = { holder = carindon_1004 }
+}
+c_tyrigel = {
+	-1764.1.1 = { holder = direnni_1 }
+	-1496.1.1 = { holder = direnni_2 }
+	552.1.23 = { holder = direnni_tyrigel_2 }
+	602.7.3 = { holder = direnni_tyrigel_2b }
+	2880.1.1 = { holder = carindon_998 }
+	3042.2.14 = { holder = carindon_999 }
+	3193.3.4 = { holder = carindon_1001 }
+	3312.9.22 = { holder = direnni_tyrigel_101 }
+	3355.5.10 = { holder = direnni_tyrigel_102 }
+	3368.7.6 = { holder = ukmiar_100 }
+	3448.5.1 = { holder = carindon_1004 }
+}
+c_karndar = {
+	2880.1.1 = { holder = carindon_998 }
+	3042.2.14 = { holder = carindon_999 }
+	3193.3.4 = { holder = carindon_1001 }
+	3312.9.22 = { holder = direnni_tyrigel_101 }
+	3355.5.10 = { holder = direnni_tyrigel_102 }
+	3368.7.6 = { holder = ukmiar_100 }
+	3448.5.1 = { holder = carindon_1004 }
+}
+
+#k_firsthold
+k_firsthold = {
+	-2000.1.1 = { holder = auridon_torinaan }
+	154.1.1 = { # Rilis I
+		holder = rilis_0
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		} 
+	}
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+d_firsthold = {
+	3360.1.1 = { change_development_level = 19 }
+	-2000.1.1 = { holder = auridon_torinaan }
+	154.1.1 = { holder = rilis_0 } # Rilis I
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+c_firsthold = {
+	3360.1.1 = { change_development_level = 22 }
+	-2000.1.1 = { holder = auridon_torinaan }
+	154.1.1 = { holder = rilis_0 } # Rilis I
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+
+c_palantir = {
+	-1150.1.1 = { holder = caerinor_cassimoran }
+	3120.1.1 = {
+		liege = d_firsthold
+		holder = caerinor_998
+	}
+	3344.1.15 = { holder = caerinor_1000 }
+	3592.3.17 = { holder = caerinor_1001 }
+}
+c_bourrill = {
+	-1150.1.1 = { holder = caerinor_cassimoran }
+	3120.1.1 = {
+		liege = d_firsthold
+		holder = caerinor_998
+	}
+	3344.1.15 = { holder = caerinor_1000 }
+	3592.3.17 = { holder = caerinor_1001 }
+}
+
+c_torinaan = {
+	1260 = { holder = torinaan_995 }
+	2270.8.27 = { holder = torinaan_996 }
+	2602.5.19 = { holder = torinaan_997 }
+	2808.3.23 = { holder = torinaan_998 }
+	3042.4.7 = { holder = torinaan_999 }
+	3239.8.28 = {
+		liege = d_firsthold
+		holder = torinaan_1000
+	}
+	3451.4.21 = { holder = torinaan_1001 }
+	3576.1.1 = { holder = torinaan_1004 }
+}
+c_meliadale = {
+	3321.1.1 = {
+		liege = d_firsthold
+		holder = tyegoni_998
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3493.11.12 = { holder = north_beacon_1001 }	
+}
+
+d_rilis = {
+	-2000.1.1 = { holder = auridon_torinaan }
+	154.1.1 = { holder = rilis_0 } # Rilis I
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+c_rilis = {
+	-2000.1.1 = { holder = auridon_torinaan }
+	154.1.1 = { holder = rilis_0 } # Rilis I
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+c_calluis_lar = {
+	3100.1.1 = { 
+		holder = larion_998
+		liege = d_firsthold 
+	}
+	3323.3.29 = { holder = larion_999 }
+	3354.3.31 = { holder = larion_1000 }
+	3364.1.29 = {
+		liege = d_brethren_gold_coast
+		government = pirate_government
+		holder = vayn_100
+	}
+	3396.2.26 = {
+		liege = d_firsthold
+		holder = larion_1003
+	}
+}
+
+d_vafe = {
+	2195.1.1 = { 
+		holder = ancuryil_94
+		liege = k_firsthold 
+	}
+	2359.5.10 = { holder = ancuryil_95 }
+	2458.10.7 = { holder = ancuryil_97 }
+	2837.12.27 = { holder = ancuryil_98 }
+	3037.5.13 = { holder = ancuryil_99c }
+	3267.5.22 = { holder = ancuryil_100 }
+	3368.4.5 = { holder = surnaluar_100 }
+	3386.1.1 = { holder = surnaluar_101 }
+}
+c_nelanya = {
+	2200.1.1 = { holder = ancuryil_94 }
+	2359.5.10 = { holder = ancuryil_95 }
+	2458.10.7 = { holder = ancuryil_97 }
+	2837.12.27 = { holder = ancuryil_98 }
+	3037.5.13 = { holder = ancuryil_99c }
+	3267.5.22 = { holder = ancuryil_100 }
+	3368.4.5 = { holder = surnaluar_100 }
+	3386.1.1 = { holder = surnaluar_101 }
+}
+c_marenil = {
+	2200.1.1 = { holder = ancuryil_94 }
+	2359.5.10 = { holder = ancuryil_95 }
+	2458.10.7 = { holder = ancuryil_97 }
+	2837.12.27 = { holder = ancuryil_98 }
+	3037.5.13 = { holder = ancuryil_99c }
+	3267.5.22 = { holder = ancuryil_100 }
+	3368.4.5 = { holder = surnaluar_100 }
+	3386.1.1 = { holder = surnaluar_101 }
+}
+
+c_belinor = {
+	3260.1.1 = {
+		holder = urayel_1000
+		liege = d_vafe
+	}
+	#the Brethren launch an attack on belport
+	3366.3.10 = {
+		liege = d_brethren_gold_coast
+		holder = vayn_100
+	}
+	3395.12.20 = { holder = belport_1000 }
+	3442.12.3 = { liege = d_karndar }
+	3501.12.1 = { holder = maormer_1_pirate }	#Sea Viper staging ground for invasion of Greenwater
+}
+c_hyanaire = {
+	3000.1.1 = { 
+		holder = adalil_998
+		liege = d_vafe
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3218.11.28 = { holder = adalil_999 }
+	3303.2.1 = { holder = adalil_1000 }
+	3431.3.14 = { holder = adalil_1001 }
+	3481.1.1 = {
+		liege = 0 
+		holder = dremora_mati #A Dremora discovers the daedric ruins below the keep, conquers it with a cult of Mehrunes Dagon
+	}
+}
+c_bewan = {
+	2200.1.1 = { holder = ancuryil_94 }
+	2359.5.10 = { holder = ancuryil_95 }
+	2458.10.7 = { holder = ancuryil_97 }
+	2837.12.27 = { holder = ancuryil_98 }
+	3037.5.13 = { holder = ancuryil_99c }
+	3267.5.22 = { holder = ancuryil_100 }
+	3368.4.5 = { holder = surnaluar_100 }
+	3386.1.1 = { holder = surnaluar_101 }
+}
+
+#Thalmor
+d_itento = {
+	3159.11.6 = { 
+		holder = mersamiren_98
+		liege = k_firsthold 
+	}
+	3276.3.3 = { holder = mersamiren_999 }
+	3358.12.19 = { holder = mersamiren_1000 }
+	3500.5.2 = { holder = mersamiren_1001 }
+}
+c_itento = {
+	3159.11.6 = { holder = mersamiren_98 }
+	3276.3.3 = { holder = mersamiren_999 }
+	3358.12.19 = { holder = mersamiren_1000 }
+	3500.5.2 = { holder = mersamiren_1001 }
+}
+b_malangwe = {
+	3330.1.1 = { holder = thalmor_1000 }
+	3501.1.1 = { holder = thalmor_1001 }
+}
+c_ald_ciniro = {
+	3159.11.6 = { holder = mersamiren_98 }
+	3276.3.3 = { holder = mersamiren_999 }
+	3358.12.19 = { holder = mersamiren_1000 }
+	3500.5.2 = { holder = mersamiren_1001 }
+}
+c_quendeluun = {
+	3159.11.6 = { holder = mersamiren_98 }
+	3276.3.3 = { holder = mersamiren_999 }
+	3358.12.19 = { holder = mersamiren_1000 }
+	3500.5.2 = { holder = mersamiren_1001 }
+}
+c_fuinne = {
+	3343.1.1 = {
+		liege = d_itento
+		holder = dawnbreak_999
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3429.1.1 = { holder = dawnbreak_1000 }
+}
+
+#k_dusk
+k_dusk = {
+	-777.1.1 = {
+		holder = xarxes_1
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	-452.1.1 = { holder = xarxes_2 }
+	-396.1.1 = { holder = xarxes_2c }
+	-352.1.1 = { holder = oghma_2 }
+	-296.1.1 = { holder = xarxes_3b }
+	-242.1.1 = { holder = xarxes_3b1 }
+	122.1.1 =  { holder = oghma_5 }
+	227.1.1 = { holder = xarxes_7 }
+	332.1.1 = { holder = xarxes2_8 }
+	522.1.1 = { holder = oghma_7c }
+	601.1.1 = { holder = xarxes_10 }
+	822.1.1 = { holder = oghma_9 }
+	898.1.1 = { holder = xarxes_11 }
+	975.1.1 = { holder = xarxes_13 }
+	1101.1.1 = { holder = xarxes_13b }
+	1229.1.1 = { holder = xarxes_14 }
+	1341.1.1 = { holder = xarxes_15 }
+	1500.1.1 = { holder = xarxes_16b }
+	1976.1.1 = { holder = xarxes_17 }
+	2041.1.1 = { holder = xarxes_18 }
+	2198.1.1 = { holder = xarxes_19 }
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+d_dusk = {
+	3360.1.1 = { change_development_level = 19 }
+	-777.1.1 = { holder = xarxes_1 }
+	-452.1.1 = { holder = xarxes_2 }
+	-396.1.1 = { holder = xarxes_2c }
+	-352.1.1 = { holder = oghma_2 }
+	-296.1.1 = { holder = xarxes_3b }
+	-242.1.1 = { holder = xarxes_3b1 }
+	122.1.1 =  { holder = xarxes1_6 }
+	220.1.1 = { holder = xarxes_7 }
+	332.1.1 = { holder = xarxes2_8 }
+	522.1.1 = { holder = xarxes2_9 }
+	577.1.1 = { holder = xarxes2_9b }
+	591.1.1 = { holder = xarxes_10 }
+	822.1.1 = { holder = xarxes_11 }
+	975.1.1 = { holder = xarxes_13 }
+	1101.1.1 = { holder = xarxes_13b }
+	1229.1.1 = { holder = xarxes_14 }
+	1341.1.1 = { holder = xarxes_15 }
+	1500.1.1 = { holder = xarxes_16b }
+	1976.1.1 = { holder = xarxes_17 }
+	2041.1.1 = { holder = xarxes_18 }
+	2198.1.1 = { holder = xarxes_19 }
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+c_dusk = {
+	3360.1.1 = { change_development_level = 22 }
+	-777.1.1 = { holder = xarxes_1 }
+	-452.1.1 = { holder = xarxes_2 }
+	-396.1.1 = { holder = xarxes_2c }
+	-352.1.1 = { holder = oghma_2 }
+	-296.1.1 = { holder = xarxes_3b }
+	-242.1.1 = { holder = xarxes_3b1 }
+	122.1.1 =  { holder = xarxes1_6 }
+	220.1.1 = { holder = xarxes_7 }
+	332.1.1 = { holder = xarxes2_8 }
+	522.1.1 = { holder = xarxes2_9 }
+	577.1.1 = { holder = xarxes2_9b }
+	591.1.1 = { holder = xarxes_10 }
+	822.1.1 = { holder = xarxes_11 }
+	975.1.1 = { holder = xarxes_13 }
+	1101.1.1 = { holder = xarxes_13b }
+	1229.1.1 = { holder = xarxes_14 }
+	1341.1.1 = { holder = xarxes_15 }
+	1500.1.1 = { holder = xarxes_16b }
+	1976.1.1 = { holder = xarxes_17 }
+	2041.1.1 = { holder = xarxes_18 }
+	2198.1.1 = { holder = xarxes_19 }
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+c_eldara = {
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+c_karnview = {
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+c_nylirin = {
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+c_ald_pharo = {
+	3100.1.1 = {
+		holder = arknisar_999
+		liege = k_dusk
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3324.4.22 = { holder = arknisar_1001 }
+	3430.1.1 = { holder = arknisar_1002 }
+	3540.1.1 = { holder = arknisar_1004 }
+}
+
+c_argran = {
+	2165.1.1 = { holder = scintilla_995 }
+	2923.2.6 = { holder = scintilla_997 }
+	3122.8.16 = { holder = scintilla_998 }
+	3243.10.19 = { 
+		holder = scintilla_999
+		liege = d_dusk
+	}
+	3362.5.7 = { holder = scintilla_1000 }
+}
+#d_silverwood
+d_silverwood = {
+	3110.1.1 = { 
+		holder = lirgonme_98
+		liege = k_dusk 
+	}
+	3249.6.4 = { holder = lirgonme_99 }
+	3349.6.29 = { holder = lirgonme_100 }
+	3369.12.1 = { holder = lirgonme_101 }
+}
+c_silverwood = {
+	3110.1.1 = { holder = lirgonme_98 }
+	3249.6.4 = { holder = lirgonme_99 }
+	3349.6.29 = { holder = lirgonme_100 }
+	3369.12.1 = { holder = lirgonme_101 }
+}
+c_alnar = {
+	3110.1.1 = { holder = lirgonme_98 }
+	3249.6.4 = { holder = lirgonme_99 }
+	3349.6.29 = { holder = lirgonme_100 }
+	3369.12.1 = { holder = lirgonme_101 }
+}
+c_quistrelle = {
+	3110.1.1 = { holder = lirgonme_98 }
+	3249.6.4 = { holder = lirgonme_99 }
+	3349.6.29 = { holder = lirgonme_100 }
+	3369.12.1 = { holder = lirgonme_101 }
+}
+d_celwil = {
+	3049.1.1 = { 
+		holder = gildera_997
+		liege = k_dusk 
+	}
+	3157.2.18 = { holder = calicen_98 }
+	3268.1.1 = { holder = calicen_99 }
+	3313.7.4 = { holder = calicen_100 }
+	3491.1.17 = { holder = calicen_101 }
+}
+c_celwil = {
+	3049.1.1 = { holder = gildera_997 }
+	3157.2.18 = { holder = calicen_98 }
+	3268.1.1 = { holder = calicen_99 }
+	3313.7.4 = { holder = calicen_100 }
+	3491.1.17 = { holder = calicen_101 }
+}
+c_alaxonald = {
+	3360.1.1 = { change_development_level = 6 }
+	3049.1.1 = { holder = gildera_997 }
+	3157.2.18 = { holder = calicen_98 }
+	3268.1.1 = { holder = calicen_99 }
+	3313.7.4 = { holder = calicen_100 }
+	3491.1.17 = { holder = calicen_101 }
+}
+c_gilera = {
+	3049.1.1 = { holder = gildera_997 }
+	3157.2.18 = { holder = calicen_98 }
+	3268.1.1 = { holder = calicen_99 }
+	3313.7.4 = { holder = calicen_100 }
+	3491.1.17 = { holder = calicen_101 }
+}
+c_auvasin = {
+	3123.6.19 = { 
+		holder = levena_998
+		liege = d_celwil 
+	}
+	3315.1.12 = { holder = toadtongue_1000 }
+	3323.2.27 = { holder = levena_999 }
+	3344.9.6 = { holder = levena_1000 }
+}
+#d_varadan
+d_varadan = {
+	2702.1.1 = {
+		holder = calianor_996
+		liege = k_dusk
+	}
+	2858.5.7 = { holder = calianor_997 }
+	3072.1.1 = { holder = calianor_998a }
+	3275.2.24 = { holder = calianor_999d }
+	3290.6.19 = { holder = calianor_1000 }
+	3576.2.16 = { holder = calianor_1001 }
+}
+c_varadan = {
+	2702.1.1 = { holder = calianor_996 }
+	2858.5.7 = { holder = calianor_997 }
+	3072.1.1 = { holder = calianor_998a }
+	3275.2.24 = { holder = calianor_999d }
+	3290.6.19 = { holder = calianor_1000 }
+	3576.2.16 = { holder = calianor_1001 }
+}
+c_nendeium = {
+	3331.1.1 = { 
+		holder = ilanme_100
+		liege = d_varadan 
+	}
+	3431.12.1 = { holder = ilanme_101 }
+}
+c_virumariel = {
+	3331.1.1 = { 
+		holder = ilanme_100
+		liege = d_varadan 
+	}
+	3431.12.1 = { holder = ilanme_101 }
+}
+c_edruhil = {
+	2702.1.1 = { holder = calianor_996 }
+	2858.5.7 = { holder = calianor_997 }
+	3072.1.1 = { holder = calianor_998a }
+	3275.2.24 = { holder = calianor_999d }
+	3290.6.19 = { holder = calianor_1000 }
+	3576.2.16 = { holder = calianor_1001 }
+}
+c_graveld = {
+	2702.1.1 = { holder = calianor_996 }
+	2858.5.7 = { holder = calianor_997 }
+	3072.1.1 = { holder = calianor_998a }
+	3275.2.24 = { holder = calianor_999d }
+	3290.6.19 = { holder = calianor_1000 }
+	3576.2.16 = { holder = calianor_1001 }
+}
+
+#k_sunhold
+k_sunhold = {
+	-600.1.1 = { holder = isquer_ulorome } #Ulorome
+	-300.1.1 = { #Ummanor
+		holder = isquer_ummanor
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+d_sunhold = {
+	3360.1.1 = { change_development_level = 19 }
+	-600.1.1 = { holder = isquer_ulorome } #Ulorome
+	-300.1.1 = { holder = isquer_ummanor } #Ummanor
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+c_sunhold = {
+	3360.1.1 = { change_development_level = 22 }
+	-600.1.1 = { holder = isquer_ulorome } #Ulorome
+	-300.1.1 = { holder = isquer_ummanor } #Ummanor
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+c_beamwood = {
+	-600.1.1 = { holder = isquer_ulorome } #Ulorome
+	-300.1.1 = { holder = isquer_ummanor } #Ummanor
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+c_sunwhisp = {
+	-600.1.1 = { holder = isquer_ulorome } #Ulorome
+	-300.1.1 = { holder = isquer_ummanor } #Ummanor
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+c_kovelir = {
+	2856.1.1 = { 
+		holder = hesene_98
+		liege = k_sunhold 
+	}
+	3024.7.11 = { holder = hesene_99 }
+	3356.2.25 = { holder = hesene_100 }
+	3541.1.1 = { holder = hesene_101 }
+}
+c_sungaze = {
+	3059.6.29 = { holder = esturyon_100 }
+}
+d_magnus_watchers = {
+	3059.6.29 = {
+		holder = esturyon_100
+		liege = k_sunhold
+	}
+}
+#d_nesteholt
+d_nesteholt = {
+	2900.1.1 = { 
+		holder = celcerar_95
+		liege = k_sunhold 
+	}
+	3011.1.24 = { holder = celcerar_96 }
+	3182.7.28 = { holder = celcerar_97 }
+	3256.11.27 = { holder = celcerar_98 }
+	3334.2.9 = { holder = celcerar_99b }
+	3453.7.12 = { holder = celcerar_100 }
+	3640.1.1 = { holder = celcerar_101 }
+}
+c_nesteholt = {
+	3360.1.1 = { change_development_level = 5 }
+	2900.1.1 = { holder = celcerar_95 }
+	3011.1.24 = { holder = celcerar_96 }
+	3182.7.28 = { holder = celcerar_97 }
+	3256.11.27 = { holder = celcerar_98 }
+	3334.2.9 = { holder = celcerar_99b }
+	3453.7.12 = { holder = celcerar_100 }
+	3640.1.1 = { holder = celcerar_101 }
+}
+c_lillok = {
+	3360.1.1 = { change_development_level = 7 }
+	2900.1.1 = { holder = celcerar_95 }
+	3011.1.24 = { holder = celcerar_96 }
+	3182.7.28 = { holder = celcerar_97 }
+	3256.11.27 = { holder = celcerar_98 }
+	3334.2.9 = { holder = celcerar_99b }
+	3453.7.12 = { holder = celcerar_100 }
+	3640.1.1 = { holder = celcerar_101 }
+}
+c_marnvalfen = {
+	3360.1.1 = { change_development_level = 6 }
+	3276.1.1 = { holder = marvlafl_997 }
+	3291.11.17 = { holder = marvlafl_998 }
+	3351.5.29 = { holder = marvlafl_1000 }
+	3370.7.1 = { holder = marvlafl_1001 }
+	3421.7.6 = { holder = marvlafl_1003 }
+	3440.5.17 = { holder = marvlafl_1004 }
+}
+c_visendel = {
+	2900.1.1 = { holder = celcerar_95 }
+	3011.1.24 = { holder = celcerar_96 }
+	3182.7.28 = { holder = celcerar_97 }
+	3256.11.27 = { holder = celcerar_98 }
+	3334.2.9 = { holder = celcerar_99b }
+	3453.7.12 = { holder = celcerar_100 }
+	3640.1.1 = { holder = celcerar_101 }
+}
+#d_lillarnor
+d_lillarnor = {
+	3267.3.23 = { #Tyermaillin
+		holder = lirmiron_99
+		liege = k_sunhold
+	}
+	3289.8.29 = { holder = lirmiron_100 } #Enrion
+	3361.11.3 = { holder = lirmiron_101 } #Sorcalin
+	3484.6.6 = { holder = lirmiron_102d } #Elenya
+	3665.1.1 = { holder = lirmiron_103 }
+	3755.1.1 = { holder = lirmiron_104 }
+}
+c_lillarnor = {
+	2800.1.1 = { holder = lirmiron_95 } #Falion
+	2930.3.1 = { holder = lirmiron_96 } #Hydalion
+	2979.1.20 = { holder = lirmiron_97 } #Loncano
+	3139.3.29 = { holder = lirmiron_98 } #Nelanya
+	3245.2.23 = { holder = lirmiron_99 } #Tyermaillin
+	3289.8.29 = { holder = lirmiron_100 } #Enrion
+	3361.11.3 = { holder = lirmiron_101 } #Sorcalin
+	3484.6.6 = { holder = lirmiron_102d } #Elenya
+	3665.1.1 = { holder = lirmiron_103 }
+	3755.1.1 = { holder = lirmiron_104 }	
+}
+c_sonnen = {
+	3100.1.1 = { holder = aroroui_998 } #Sarodor
+	3267.3.23 = { holder = lirmiron_99 } #Tyermaillin
+	3289.8.29 = { holder = lirmiron_100 } #Enrion
+	3361.11.3 = { holder = lirmiron_101 } #Sorcalin
+	3484.6.6 = { holder = lirmiron_102d } #Elenya
+	3665.1.1 = { holder = lirmiron_103 }
+	3755.1.1 = { holder = lirmiron_104 }	
+}
+c_ilunsare = {
+	3140.1.1 = {
+		holder = aangdil_998 #Condalin
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	} 
+	3215.9.6 = { holder = aangdil_999 } #Elante
+	3217.8.9 = { holder = aangdil_1000 } #Earos
+	3360.1.1 = { liege = d_lillarnor }
+	3494.3.24 = { holder = aangdil_1001 }
+}
+c_hyuldril = {
+	3000.1.1 = { 
+		holder = tyegar_998
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3246.9.2 = { holder = tyegar_999 }
+	3347.4.17 = { holder = tyegar_1000 }
+	3360.1.1 = { liege = d_lillarnor }
+	3440.1.1 = { liege = d_nesteholt }
+	3499.2.2 = { holder = tyegar_1001 }
+	3580.4.5 = { holder = tyegar_1004 }
+}
+c_archen_grove = {
+	3360.1.1 = { change_development_level = 6 }
+	2446.1.1 = { 
+		holder = nandorie_100
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3360.1.1 = { liege = d_lillarnor }
+}
+
+#k_alinor
+k_alinor = {
+	-2000.1.1 = { holder = auriel_1 }
+	-1499.1.1 = { holder = auriel_1b } #Uranya
+	-1086.8.8 = { holder = auriel_1c } #Erisare
+	-819.1.1 = { holder = auriel1_2 } #Laranrian
+	-672.11.22 = { holder = auriel1_2b } #Quaranil
+	-474.1.1 = { holder = auriel_3 } #Aldanya
+	-327.1.1 = { holder = auriel_1d } #Arantar
+	-186.1.1 = { holder = auriel2_2 } #Ayarynne
+	-37.1.1 = { holder = auriel1_3 } #Eteviniir
+	249.5.13 = { holder = auriel3_3 } #Novenaril
+	514.12.21 = { holder = auriel_6 } #Cimeneth
+	673.5.25 = { holder = auriel3_4 } #Astilme
+	756.3.2 = { holder = auriel2_3b } #Lernuvaril
+	892.1.1 = { holder = auriel2_7 } #Esteltin
+	1017.1.1 = { holder = auriel_8 } #Talisse
+	1245.7.9 = { holder = auriel3_7 }
+	1331.1.1 = { holder = auriel_91 }
+	1624.1.1 = { holder = auriel_92 }
+	1962.1.1 = { holder = auriel_93 }
+	2125.10.30 = { holder = auriel_94 }
+	2300.5.11 = { holder = auriel_95 }
+	2452.5.18 = { holder = auriel_96 }
+	2645.9.7 = { holder = auriel_97 }
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+d_alinor = {
+	3360.1.1 = { change_development_level = 22 }
+	-2000.1.1 = { holder = auriel_1 }
+	-1499.1.1 = { holder = auriel_1b } #Uranya
+	-1086.8.8 = { holder = auriel_1c } #Erisare
+	-819.1.1 = { holder = auriel1_2 } #Laranrian
+	-672.11.22 = { holder = auriel1_2b } #Quaranil
+	-474.1.1 = { holder = auriel_3 } #Aldanya
+	-327.1.1 = { holder = auriel_1d } #Arantar
+	-186.1.1 = { holder = auriel2_2 } #Ayarynne
+	-37.1.1 = { holder = auriel1_3 } #Eteviniir
+	249.5.13 = { holder = auriel3_3 } #Novenaril
+	514.12.21 = { holder = auriel_6 } #Cimeneth
+	673.5.25 = { holder = auriel3_4 } #Astilme
+	756.3.2 = { holder = auriel2_3b } #Lernuvaril
+	892.1.1 = { holder = auriel2_7 } #Esteltin
+	1017.1.1 = { holder = auriel_8 } #Talisse
+	1245.7.9 = { holder = auriel3_7 }
+	1331.1.1 = { holder = auriel_91 }
+	1624.1.1 = { holder = auriel_92 }
+	1962.1.1 = { holder = auriel_93 }
+	2125.10.30 = { holder = auriel_94 }
+	2300.5.11 = { holder = auriel_95 }
+	2452.5.18 = { holder = auriel_96 }
+	2645.9.7 = { holder = auriel_97 }
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+c_alinor = {
+	3360.1.1 = { change_development_level = 25 }
+	-2000.1.1 = { holder = auriel_1 }
+	-1499.1.1 = { holder = auriel_1b } #Uranya
+	-1086.8.8 = { holder = auriel_1c } #Erisare
+	-819.1.1 = { holder = auriel1_2 } #Laranrian
+	-672.11.22 = { holder = auriel1_2b } #Quaranil
+	-474.1.1 = { holder = auriel_3 } #Aldanya
+	-327.1.1 = { holder = auriel_1d } #Arantar
+	-186.1.1 = { holder = auriel2_2 } #Ayarynne
+	-37.1.1 = { holder = auriel1_3 } #Eteviniir
+	249.5.13 = { holder = auriel3_3 } #Novenaril
+	514.12.21 = { holder = auriel_6 } #Cimeneth
+	673.5.25 = { holder = auriel3_4 } #Astilme
+	756.3.2 = { holder = auriel2_3b } #Lernuvaril
+	892.1.1 = { holder = auriel2_7 } #Esteltin
+	1017.1.1 = { holder = auriel_8 } #Talisse
+	1245.7.9 = { holder = auriel3_7 }
+	1331.1.1 = { holder = auriel_91 }
+	1624.1.1 = { holder = auriel_92 }
+	1962.1.1 = { holder = auriel_93 }
+	2125.10.30 = { holder = auriel_94 }
+	2300.5.11 = { holder = auriel_95 }
+	2452.5.18 = { holder = auriel_96 }
+	2645.9.7 = { holder = auriel_97 }
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+c_chrysalir = {
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+c_dusandril = {
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+b_welenkin = {
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+c_marryn = {
+	3211.1.1 = { 
+		holder = ocyan_98
+		liege = k_alinor 
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3351.5.29 = { holder = ocyan_99d }
+	3501.12.21 = { holder = storm_shark_1000 }
+}
+
+# d_rellenthil
+d_rellenthil = {
+	2950.1.1 = { holder = salnilde_97 }
+	3286.1.16 = { 
+		holder = salnilde_99
+		liege = k_alinor 
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	3348.8.23 = { holder = salnilde_100 }
+	3408.11.6 = { holder = salnilde_101 }
+}
+c_rellenthil = {
+	2950.1.1 = { holder = salnilde_97 }
+	3286.1.16 = { holder = salnilde_99 }
+	3348.8.23 = { holder = salnilde_100 }
+	3408.11.6 = { holder = salnilde_101 }
+}
+c_heinarwe = {
+	3360.1.1 = { change_development_level = 7 }
+	2950.1.1 = { holder = salnilde_97 }
+	3286.1.16 = { holder = salnilde_99 }
+	3348.8.23 = { holder = salnilde_100 }
+	3408.11.6 = { holder = salnilde_101 }
+}
+c_ceytarn = {
+	3071.3.6 = { holder = auriel_99 }
+	3172.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+}
+
+# d_laurediil
+d_laurediil = {
+	3220.1.1 = { 
+		holder = illiuar_98
+		liege = k_alinor
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3333.8.10 = { holder = illiuar_99 }
+	3340.8.8 = { holder = auriel1_101 } #Given to Hiddie's cousin
+	3561.1.1 = { holder = mernilon_101 }
+}
+c_laurediil = {
+	3220.1.1 = { holder = illiuar_98 }
+	3333.8.10 = { holder = illiuar_99 }
+	3340.8.8 = { holder = auriel1_101 }
+	3561.1.1 = { holder = mernilon_101 }
+}
+c_selinel = {
+	3220.1.1 = { holder = illiuar_98 }
+	3333.8.10 = { holder = illiuar_99 }
+	3340.8.8 = { holder = auriel1_101 }
+	3561.1.1 = { holder = mernilon_101 }
+}
+c_anirdala = {
+	3125.1.1 = { holder = mernilon_98 }
+	3310.6.13 = { 
+		holder = mernilon_99
+		liege = k_alinor
+	}
+	3359.11.18 = { holder = mernilon_100 }
+	3359.12.1 = { holder = maormer_1_pirate }
+	3389.1.7 = { holder = mernilon_100 }
+	3441.2.6 = { liege = d_laurediil }
+	3501.12.21 = { holder = storm_shark_1000 }
+	3504.8.7 = { holder = mernilon_101 }
+}
+c_tinistegil = {
+	3220.1.1 = { holder = illiuar_98 }
+	3333.8.10 = { holder = illiuar_99 }
+	3340.8.8 = { holder = auriel1_101 }
+	3561.1.1 = { holder = mernilon_101 }
+}
+
+# d_glynvea
+c_glynvea = {
+	3025.1.1 = { 
+		holder = aundae_97
+		liege = d_laurediil
+		government = administrative_government
+	}
+	3260.1.1 = { holder = aundae_98 }
+	3354.11.20 = { holder = aundae_99 }
+	3458.1.1 = { holder = aundae_100 }
+	3619.2.21 = { holder = aundae_100b }
+	3650.1.1 = { holder = aundae_102 }
+}
+c_marnor = {
+	3360.1.1 = { change_development_level = 6 }
+	3016.1.1 = { 
+		holder = herecalon_97
+		liege = d_laurediil
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		} 
+	}
+	3154.12.11 = { holder = herecalon_98 }
+	3310.9.9. = { holder = herecalon_99 }
+	3310.9.23 = { holder = herecalon_100 }
+	3406.4.26 = { holder = herecalon_99b }
+	3412.2.14 = { holder = herecalon_101 }
+	3512.10.8 = { holder = herecalon_102 }
+}
+
+#k_cloudrest
+
+k_cloudrest = {
+	200.1.1 = { 
+		holder = ancmirar_001
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	1100.4.10 = { holder = ancmirar_002 }
+	1500.12.26 = { holder = ancmirar_004 }
+	1900.5.30 = { holder = ancmirar_005 }
+	2200.10.26 = { holder = ancmirar_006 }
+	2450.11.3 = { holder = ancmirar_007 }
+	2630.12.1 = { holder = ancmirar_008 }
+	2950.9.23 = { holder = ancmirar_97 }
+	3130.9.9 = { holder = ancmirar_98 }
+	3250.3.1 = { holder = ancmirar_99 }
+	3367.6.6 = { holder = ancmirar_100 }
+}
+d_cloudrest = {
+	200.1.1 = { holder = ancmirar_001 }
+	1100.4.10 = { holder = ancmirar_002 }
+	1500.12.26 = { holder = ancmirar_004 }
+	1900.5.30 = { holder = ancmirar_005 }
+	2200.10.26 = { holder = ancmirar_006 }
+	2450.11.3 = { holder = ancmirar_007 }
+	2630.12.1 = { holder = ancmirar_008 }
+	2950.9.23 = { holder = ancmirar_97 }
+	3130.9.9 = { holder = ancmirar_98 }
+	3250.3.1 = { holder = ancmirar_99 }
+	3367.6.6 = { holder = ancmirar_100 }
+}
+c_cloudrest = {
+	3360.1.1 = { change_development_level = 22 }
+	200.1.1 = { holder = ancmirar_001 }
+	1100.4.10 = { holder = ancmirar_002 }
+	1500.12.26 = { holder = ancmirar_004 }
+	1900.5.30 = { holder = ancmirar_005 }
+	2200.10.26 = { holder = ancmirar_006 }
+	2450.11.3 = { holder = ancmirar_007 }
+	2630.12.1 = { holder = ancmirar_008 }
+	2950.9.23 = { holder = ancmirar_97 }
+	3130.9.9 = { holder = ancmirar_98 }
+	3250.3.1 = { holder = ancmirar_99 }
+	3367.6.6 = { holder = ancmirar_100 }
+}
+c_ebon_stadmont = {
+	200.1.1 = { holder = ancmirar_001 }
+	1100.4.10 = { holder = ancmirar_002 }
+	1500.12.26 = { holder = ancmirar_004 }
+	1900.5.30 = { holder = ancmirar_005 }
+	2200.10.26 = { holder = ancmirar_006 }
+	2450.11.3 = { holder = ancmirar_007 }
+	2630.12.1 = { holder = ancmirar_008 }
+	2950.9.23 = { holder = ancmirar_97 }
+	3130.9.9 = { holder = ancmirar_98 }
+	3250.3.1 = { holder = ancmirar_99 }
+	3367.6.6 = { holder = ancmirar_100 }
+}
+c_alt_nir = {
+	3360.1.1 = { change_development_level = 9 }
+	2166.11.11 = {
+		holder = ilmiril_100
+		liege = k_cloudrest
+	}
+}
+c_king_pass = {
+	3360.1.1 = { change_development_level = 14 }
+	3100.1.1 = { 
+		holder = hinyal_99
+		liege = k_cloudrest 
+	}
+	3300.12.16 = { holder = hinyal_100 }
+	3347.4.25 = { holder = hinyal_102 }
+}
+c_keelsplitter_coast = {
+	3100.1.1 = { 
+		holder = hinyal_99
+		liege = k_cloudrest 
+	}
+	3300.12.16 = { holder = hinyal_100 }
+	3347.4.25 = { holder = hinyal_102 }
+}
+
+# d_king_haven
+d_king_haven = {
+	2711.10.12 = { 
+		holder = mothril_95
+		liege = k_cloudrest 
+	}
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3565.1.28 = { holder = mothril_100b }
+}
+c_king_haven = {
+	2210.1.1 = { holder = mothril_92 }
+	2254.9.20 = { holder = mothril_93 }
+	2560.1.17 = { holder = mothril_94 }
+	2677.3.2 = { holder = mothril_95 }
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3565.1.28 = { holder = mothril_100b }
+}
+c_tiranor = {
+	3360.1.1 = { change_development_level = 16 }
+	2210.1.1 = { holder = mothril_92 }
+	2254.9.20 = { holder = mothril_93 }
+	2560.1.17 = { holder = mothril_94 }
+	2677.3.2 = { holder = mothril_95 }
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3565.1.28 = { holder = mothril_100b }
+}
+c_siladoril = {
+	2210.1.1 = { holder = mothril_92 }
+	2254.9.20 = { holder = mothril_93 }
+	2560.1.17 = { holder = mothril_94 }
+	2677.3.2 = { holder = mothril_95 }
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3565.1.28 = { holder = mothril_100b }
+}
+c_gralan = {
+	3360.1.1 = { change_development_level = 9 } #Not very settled mountains
+	2210.1.1 = { holder = mothril_92 }
+	2254.9.20 = { holder = mothril_93 }
+	2560.1.17 = { holder = mothril_94 }
+	2677.3.2 = { holder = mothril_95 }
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3565.1.28 = { holder = mothril_100b }
+}
+c_welkynir = {
+	3360.1.1 = { change_development_level = 9 } #Not very settled mountains
+	2650.1.1 = { holder = coralsplitter_993 }
+	2700.9.12 = { holder = coralsplitter_994 }
+	2711.10.12 = { holder = hinyal_994 }
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3456.3.22 = {
+		liege = k_cloudrest
+		holder = hinyal1_101b 
+	}
+}
+
+d_sunnor = {
+	3360.1.1 = {
+		holder = hinrorue_100
+		liege = k_cloudrest
+	}
+	3480.10.29 = { holder = hinrorue_101 }
+}
+c_sunnor = {
+	3360.1.1 = { holder = hinrorue_100 }
+	3480.10.29 = { holder = hinrorue_101 }
+}
+c_ald_mora = {
+	3360.1.1 = { holder = hinrorue_100 }
+	3480.10.29 = { holder = hinrorue_101 }
+}
+c_shatterwood = {
+	3360.1.1 = { holder = hinrorue_100 }
+	3480.10.29 = { holder = hinrorue_101 }
+}
+
+#d_rosefield
+d_rosefield = {
+	2270.1.1 = { 
+		holder = fisenon_93
+		liege = k_shimmerene 
+	}
+	2436.4.16 = { holder = fisenon_94 }
+	2500.1.1 = { holder = fisenon_95 }
+	2660.1.1 = { holder = fisenon_96 }
+	2690.3.4 = { holder = fisenon_97 }
+	2822.8.15 = { holder = fisenon_98 }
+	2990.7.22 = { holder = fisenon_99c }
+	3030.1.3 = { holder = fisenon1_100 }
+	3150.7.3 = { holder = fisenon1_100b }
+	3190.6.30 = { holder = fisenon_100 }
+	3462.1.1 = { holder = fisenon_101 }
+	3506.12.7 = { holder = fisenon_101b }
+	3650.1.1 = { holder = fisenon_102 }
+	3721.1.1 = { holder = fisenon_103 }
+	3826.1.1 = { holder = fisenon_104 }
+}
+c_rosefield = {
+	2270.1.1 = { holder = fisenon_93 }
+	2436.4.16 = { holder = fisenon_94 }
+	2500.1.1 = { holder = fisenon_95 }
+	2660.1.1 = { holder = fisenon_96 }
+	2690.3.4 = { holder = fisenon_97 }
+	2822.8.15 = { holder = fisenon_98 }
+	2990.7.22 = { holder = fisenon_99c }
+	3030.1.3 = { holder = fisenon1_100 }
+	3150.7.3 = { holder = fisenon1_100b }
+	3190.6.30 = { holder = fisenon_100 }
+	3462.1.1 = { holder = fisenon_101 }
+	3506.12.7 = { holder = fisenon_101b }
+	3650.1.1 = { holder = fisenon_102 }
+	3721.1.1 = { holder = fisenon_103 }
+	3826.1.1 = { holder = fisenon_104 }
+}
+c_syraglade = {
+	2130.1.1 = { holder = syrabanis_1 }
+	2270.1.1 = { holder = fisenon_93 }
+	2436.4.16 = { holder = fisenon_94 }
+	2500.1.1 = { holder = fisenon_95 }
+	2660.1.1 = { holder = fisenon_96 }
+	2690.3.4 = { holder = fisenon_97 }
+	2822.8.15 = { holder = fisenon_98 }
+	2990.7.22 = { holder = fisenon_99c }
+	3030.1.3 = { holder = fisenon1_100 }
+	3150.7.3 = { holder = fisenon1_100b }
+	3190.6.30 = { holder = fisenon_100 }
+	3462.1.1 = { holder = fisenon_101 }
+	3506.12.7 = { holder = fisenon_101b }
+	3650.1.1 = { holder = fisenon_102 }
+	3721.1.1 = { holder = fisenon_103 }
+	3826.1.1 = { holder = fisenon_104 }
+}
+c_aldothren = {
+	2270.1.1 = { holder = fisenon_93 }
+	2436.4.16 = { holder = fisenon_94 }
+	2500.1.1 = { holder = fisenon_95 }
+	2660.1.1 = { holder = fisenon_96 }
+	2690.3.4 = { holder = fisenon_97 }
+	2822.8.15 = { holder = fisenon_98 }
+	2990.7.22 = { holder = fisenon_99c }
+	3030.1.3 = { holder = fisenon1_100 }
+	3150.7.3 = { holder = fisenon1_100b }
+	3190.6.30 = { holder = fisenon_100 }
+	3462.1.1 = { holder = fisenon_101 }
+	3506.12.7 = { holder = fisenon_101b }
+	3650.1.1 = { holder = fisenon_102 }
+	3721.1.1 = { holder = fisenon_103 }
+	3826.1.1 = { holder = fisenon_104 }
+}
+
+k_lillandril = {
+	1360.1.1 = {
+		holder = aunoroe_94
+		liege = e_summerset
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+					add_realm_law_skip_effects = altmeri_elective_succession_law
+				}
+			}
+		}
+	}
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	#Elendarie the Bosmer and her supporters do a coup
+	3369.12.13 = { holder = aunoroe_100	}
+	#Following the turmoil of Lillandril's civil war, Hidellith places his brother Calcelmo on the throne, 
+	#an act that draws a divided reaction within Lillandril yet proves popular elsewhere in Summerset
+	3375.8.8 = { holder = auriel_100d }
+	#After Calcelmo's deposition by Fanorne Aunoroe, Hidellith stops Fanorne from taking Lillandril and gives it to different family in Lillandril - Helenil
+	3465.3.16 = { holder = helenil_101 }
+}
+d_lillandril = {
+	3360.1.1 = { change_development_level = 19 }
+	1360.1.1 = { holder = aunoroe_94 }
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = auriel_100d }
+	3465.3.16 = { holder = helenil_101 }
+}
+c_lillandril = {
+	3360.1.1 = { change_development_level = 22 }
+	1360.1.1 = { holder = aunoroe_94 }
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = auriel_100d }
+	3465.3.16 = { holder = helenil_101 }
+}
+c_sapiarchis = {
+	2800.1.1 = { holder = estarmo_99 }
+	3222.3.22 = { holder = fisenon1_101 }
+	3340.1.1 = { 
+		holder = anccermo_99
+		liege = e_summerset
+	}
+}
+c_seakeep = {
+	1360.1.1 = { holder = aunoroe_94 }
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = auriel_100d }
+	3465.3.16 = { holder = helenil_101 }
+}
+c_sunarnor = {
+	1360.1.1 = { holder = aunoroe_94 }
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = auriel_100d }
+	3465.3.16 = { holder = helenil_101 }
+}
+c_marnsailen = {
+	1360.1.1 = { holder = aunoroe_94 }
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = auriel_100d }
+	3465.3.16 = { holder = helenil_101 }
+}
+
+# # d_corgrad
+d_corgrad = {
+	1850.1.1 = { 
+		holder = areldaen_95
+		liege = k_lillandril
+	}
+	2170.1.23 = { holder = areldaen_96 }
+	2260.11.27 = { holder = areldaen_97 }
+	3050.6.23 = { holder = areldaen_98 }
+	3267.7.14 = { holder = areldaen_99 }
+	3307.3.7 = { holder = helenil_100b }
+	3354.6.19 = { holder = helenil_101 }
+	3465.3.16 = { holder = corranto_101 }
+}
+c_corgrad = {
+	3360.1.1 = { change_development_level = 14 }
+	1850.1.1 = { holder = areldaen_95 }
+	2170.1.23 = { holder = areldaen_96 }
+	2260.11.27 = { holder = areldaen_97 }
+	3050.6.23 = { holder = areldaen_98 }
+	3267.7.14 = { holder = areldaen_99 }
+	3357.3.7 = { holder = areldaen_100 }
+	3359.12.10 = { holder = helenil_101 }
+	3465.3.16 = { holder = corranto_101 }
+}
+c_karnwasten = {
+	3360.1.1 = { change_development_level = 14 }
+	1850.1.1 = { holder = areldaen_95 }
+	2170.1.23 = { holder = areldaen_96 }
+	2260.11.27 = { holder = areldaen_97 }
+	3050.6.23 = { holder = areldaen_98 }
+	3267.7.14 = { holder = areldaen_99 }
+	3357.3.7 = { holder = areldaen_100 }
+	3359.12.10 = { holder = helenil_101 }
+	3465.3.16 = { holder = corranto_101 }
+}
+c_marnandril = {
+	3360.1.1 = { change_development_level = 14 }
+	1850.1.1 = { holder = areldaen_95 }
+	2170.1.23 = { holder = areldaen_96 }
+	2260.11.27 = { holder = areldaen_97 }
+	3050.6.23 = { holder = areldaen_98 }
+	3267.7.14 = { holder = areldaen_99 }
+	3357.3.7 = { holder = areldaen_100 }
+	3359.12.10 = { holder = helenil_101 } #Landare Helenil appointed
+	3465.3.16 = { holder = corranto_101 }
+}
+
+# d_crystal
+d_crystal = {
+	304.1.1 = {
+		holder = iric_harad
+		liege = e_summerset
+		government = academy_government
+	}
+	2800.1.1 = { holder = estarmo_99 }
+	3222.3.22 = { holder = fisenon1_101 }
+	3340.1.1 = { holder = anccermo_99 }
+}
+c_crystal = {
+	3360.1.1 = { change_development_level = 18 }
+	304.1.1 = { holder = iric_harad }
+	2800.1.1 = { holder = estarmo_99 }
+	3222.3.22 = { holder = fisenon1_101 }
+	3340.1.1 = { holder = anccermo_99 }
+}
+
+# d_graddun
+d_graddun = {	#EK Todo: elevate into a merchant republic if/when MRs are added
+	2902.1.1 = {
+		holder = cellian_97
+		liege = k_lillandril
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocracy_government
+				}
+			}
+		}
+	}
+	2983.1.1 = { holder = cellian_98 }
+	3211.1.1 = { holder = cellian_99 }
+	3362.1.1 = { holder = cellian_100 }
+	3520.4.11 = { holder = cellian_101 }
+}
+c_graddun = {
+	2902.1.1 = { holder = cellian_97 }
+	2983.1.1 = { holder = cellian_98 }
+	3211.1.1 = { holder = cellian_99 }
+	3362.1.1 = { holder = cellian_100 }
+	3520.4.11 = { holder = cellian_101 }
+}
+c_westpoint = {
+	2902.1.1 = { holder = cellian_97 }
+	2983.1.1 = { holder = cellian_98 }
+	3211.1.1 = { holder = cellian_99 }
+	3362.1.1 = { holder = cellian_100 }
+	3520.4.11 = { holder = cellian_101 }
+}
+c_narrocil = {
+	2902.1.1 = { holder = cellian_97 }
+	2983.1.1 = { holder = cellian_98 }
+	3211.1.1 = { holder = cellian_99 }
+	3362.1.1 = { holder = cellian_100 }
+	3520.4.11 = { holder = cellian_101 }
+}
+
+# # d_illuminis
+d_illuminis = {
+	3360.1.1 = { change_development_level = 14 }
+	3329.1.1 = {
+		holder = arkdan_100
+		liege = k_lillandril
+	}
+	3408.5.2 = { holder = arkdan_101 }
+}
+c_illuminis = {
+	3329.1.1 = { holder = arkdan_100 }
+	3408.5.2 = { holder = arkdan_101 }
+}
+b_illumination = {
+	3260.1.1 = { holder = estarmo_101b }
+	3492.5.9 = { holder = illuminis_cimerhros }
+}
+c_keelfen = {
+	3329.1.1 = { holder = arkdan_100 }
+	3369.12.16 = { #Elendarie's coup, appoints cousin
+		holder = hedorme_100
+		liege = k_lillandril 
+	}
+	3375.8.8 = { holder = arkdan_100 }
+	3408.5.2 = { holder = arkdan_101 }
+}
+c_augury_basin = {
+	3329.1.1 = { holder = arkdan_100 }
+	3369.12.16 = { #Elendarie's coup, appoints cousin
+		holder = hedorme_100
+		liege = k_lillandril 
+	}
+	3375.8.8 = { holder = arkdan_100 }
+	3408.5.2 = { holder = arkdan_101 }
+}
+c_marbrook = {
+	3329.1.1 = { holder = arkdan_100 }
+	3408.5.2 = { holder = arkdan_101 }
+}

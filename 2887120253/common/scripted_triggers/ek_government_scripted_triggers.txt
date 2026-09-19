@@ -1,0 +1,160 @@
+﻿### To replace most of the faith = { religion_tag = islam_religion }, in case we ever want to re-add Clan government
+has_feudal_like_government = {
+	OR = {
+		government_has_flag = government_is_feudal
+		government_has_flag = government_is_clan
+		government_has_flag = government_is_autocracy
+	}
+}
+
+has_feudal_government_building_trigger = {
+	scope:holder ?= {
+		OR = {
+			government_has_flag = government_is_feudal
+			government_has_flag = government_is_clan
+			government_has_flag = government_is_autocracy
+		}
+	}
+}
+
+has_feudal_or_admin_government = { #Mostly for decisions
+	OR = {
+		has_feudal_like_government = yes
+		government_has_flag = government_is_administrative
+	}
+}
+
+### For government types that have similar succession laws to feudal
+has_feudal_like_succession = {
+	OR = {
+		government_has_flag = government_is_feudal
+		government_has_flag = government_is_clan
+		government_has_flag = government_is_autocracy
+	}
+}
+
+government_has_vassal_contract = { # In vanilla only feudal_government uses vassal contract
+	OR = {
+		# Vanilla - Playable
+		government_has_flag = government_is_feudal
+		government_has_flag = government_is_clan
+		government_has_flag = government_is_tribal
+		
+		# Vanilla - Unplayable
+		government_has_flag = government_is_republic
+		government_has_flag = government_is_theocracy
+		
+		# EK
+		government_has_flag = government_is_autocracy
+		government_has_flag = government_is_landed_order
+	}
+}
+
+should_use_clan_government = {
+	always = no
+}
+should_use_feudal_government = {
+	NOT = { 
+		has_government = administrative_government #Admin people should stay admin
+	}
+	culture = { has_cultural_parameter = unlocks_feudal_government }
+	exists = capital_province
+	trigger_if = {
+		limit = { exists = capital_province }
+		capital_province = { has_holding_type = castle_holding }
+	}
+}
+should_use_praxis_mechanics = {
+	culture = { has_cultural_parameter = uses_praxis_mechanics }
+	faith = {
+		has_doctrine = tenet_legalism
+		has_doctrine = tenet_divine_purity
+		has_doctrine = doctrine_pantheon_aedra
+	}
+}
+uses_praxis_mechanics = {
+	#If dlc is enabled then it's only for admin altmers, otherwise check for elective
+	OR = {
+		primary_title.state_faith ?= faith:aedric
+		has_realm_law = xarxean_investiture_succession_law
+		primary_title ?= { has_title_law = altmeri_elective_succession_law }
+	}
+}
+should_use_mandala_government = {
+	faith = {
+		has_doctrine_parameter = hof_is_hierocracy
+		religious_head = prev
+	}
+}
+should_use_autocracy_government = {
+	NOR = {
+		should_use_clan_government = yes
+		should_use_feudal_government = yes
+		should_use_landed_order_government = yes
+		should_use_mandala_government = yes
+	}
+}
+
+should_use_landed_order_government = {
+	OR = {
+		has_primary_title = title:d_dawnguard
+		has_primary_title = title:b_jorrvaskr
+	}
+}
+
+is_great_house_head = {
+	OR = {
+		has_title = title:k_hlaalu
+		has_title = title:k_dres
+		has_title = title:k_redoran
+		has_title = title:k_indoril
+		has_title = title:k_telvanni
+	}
+}
+
+special_succession_moot_trigger = {
+	culture = { has_cultural_parameter = moot_elective_enabled }
+}
+
+special_succession_sorcerous_trigger = {
+	OR = {
+		AND = {
+			exists = dynasty
+			dynasty = { has_dynasty_perk = magicka_legacy_4 }
+		}
+		culture = { has_cultural_parameter = magic_elective_enabled }
+		culture = { has_cultural_parameter = sorcerer_kings_tradition }
+	}
+}
+
+special_succession_magelord_trigger = {
+	OR = { #Telvanni
+		culture = { has_cultural_tradition = tradition_parliament_of_bugs }
+	}
+	OR = {
+		AND = {
+			exists = dynasty
+			dynasty = { has_dynasty_perk = magicka_legacy_4 }
+		}
+		culture = { has_cultural_parameter = magic_elective_enabled }
+		culture = { has_cultural_parameter = sorcerer_kings_tradition }
+	}
+}
+
+special_succession_altmeri_trigger = {
+	culture = { has_cultural_parameter = uses_praxis_mechanics }
+	faith = {
+		has_doctrine = tenet_legalism
+		has_doctrine = tenet_divine_purity
+		has_doctrine = doctrine_pantheon_aedra
+	}
+}
+
+check_autocracy_tax_collector_aptitude = {
+	$CHARACTER$ = {
+		tax_collector_aptitude = {
+			target = autocracy_tax_slot
+			value = $VALUE$
+		}
+	}
+}

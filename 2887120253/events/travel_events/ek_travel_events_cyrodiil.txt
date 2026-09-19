@@ -1,0 +1,686 @@
+﻿namespace = ek_travel_events_cyrodiil
+
+############################
+## Travel Cyrodiil Flavor Events
+## 0001-3999
+############################
+
+#The Wolf and the Deer
+ek_travel_events_cyrodiil.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.0001.t
+	desc = ek_travel_events_cyrodiil.0001.desc
+	theme = travel
+	left_portrait = {
+		character = root 
+		animation = worry
+	}
+
+	cooldown = { years = 10 }
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = {
+			geographical_region = mundus_tamriel_cyrodiil
+		}
+	}
+	
+	option = { # Let's go!
+		name = ek_travel_events_cyrodiil.0001.a
+		current_travel_plan = {
+			add_destination_progress = { days = 5 }
+		}
+	}	
+}
+
+# The Hill of Kvatch
+ek_travel_events_cyrodiil.0005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.0005.t
+	desc = ek_travel_events_cyrodiil.0005.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	right_portrait = {
+		character = scope:new_friend
+		animation = ecstasy
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = {
+			geographical_region = mundus_tamriel_cyrodiil_kvatch
+		}
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+		current_travel_plan = {
+			random_entourage_character = {
+				limit = {
+					can_set_relation_friend_trigger = { CHARACTER = root }
+					is_available_travelling_ai_adult = yes
+				}
+				save_scope_as = new_friend
+			}
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.0005.a
+		skill = diplomacy
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		random = {
+			chance = 30
+			set_relation_friend = { reason = friend_common_interests target = scope:new_friend }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.0005.b
+	}
+}
+
+# Trans-Niben Delicacies
+ek_travel_events_cyrodiil.0010 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.0010.t
+	desc = ek_travel_events_cyrodiil.0010.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = {
+			geographical_region = mundus_tamriel_cyrodiil_nibenese_lowlands
+		}
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.0010.a
+		skill = diplomacy
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.0010.b
+	}
+}
+
+# Wines of Blackwood
+ek_travel_events_cyrodiil.0015 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.0015.t
+	desc = ek_travel_events_cyrodiil.0015.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = {
+			geographical_region = mundus_tamriel_cyrodiil_nibenese_lowlands
+		}
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # left banks
+		name = ek_travel_events_cyrodiil.0015.a
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+		add_prestige = minor_prestige_gain
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # niben forest
+		name = ek_travel_events_cyrodiil.0015.b
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+		add_piety = minor_piety_gain
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # black marsh
+		name = ek_travel_events_cyrodiil.0015.c
+		skill = diplomacy
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+		add_diplomacy_lifestyle_xp = minor_lifestyle_experience
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.0015.d
+	}
+}
+
+# An Eye for Fashion
+ek_travel_events_cyrodiil.0020 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.0020.t
+	desc = ek_travel_events_cyrodiil.0020.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 15 }
+
+	trigger = {
+		is_available_travelling_adult = yes		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = { geographical_region = mundus_tamriel_cyrodiil }
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	#EK TODO: rework
+	#option = { # dress to mingle
+	#	name = ek_travel_events_cyrodiil.0020.a
+	#	skill = diplomacy
+	#	trigger = { diplomacy >= high_skill_rating }
+	#	
+	#	add_diplomacy_lifestyle_xp = medium_lifestyle_xp		
+	#	remove_short_term_gold = minor_gold_value
+	#}
+
+	option = { # dress to impress
+		name = ek_travel_events_cyrodiil.0020.b
+		add_prestige = medium_prestige_gain
+		remove_short_term_gold = minor_gold_value
+	}
+
+	option = { # keep your money
+		name = ek_travel_events_cyrodiil.0020.c
+		add_prestige = medium_prestige_gain
+
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+		}
+	}
+}
+
+############################
+## Travel Cyrodiil Danger Events
+## 4000-7999
+############################
+
+# Among the Nixad
+ek_travel_events_cyrodiil.4000 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.4000.t
+	desc = ek_travel_events_cyrodiil.4000.desc
+	theme = travel_danger
+	left_portrait = {
+		character = root 
+		animation = shock
+	}
+
+	right_portrait = {
+		character = scope:caravan_master 
+		animation = sadness
+	}
+
+	cooldown = { years = 10 }
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		location = {
+			geographical_region = mundus_tamriel_cyrodiil_gold_coast
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 5
+			has_variable = bad_prophecy_var
+		}
+	}
+
+	immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		traveler_danger_xp_effect = {
+			MIN = 3
+			MAX = 7
+		}
+		remove_short_term_gold = minor_gold_value
+		domicile ?= {
+			change_provisions = medium_provisions_loss
+		}
+		if = {
+			limit = { exists = current_travel_plan.travel_leader }
+			current_travel_plan.travel_leader = { save_scope_as = caravan_master }
+		}
+	}
+	
+	option = { # Damned things!
+		name = ek_travel_events_cyrodiil.4000.a
+
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+	}	
+}
+
+############################
+## Travel Cyrodiil Province Events
+## 8000-9999
+############################
+
+# Glories and Laments
+ek_travel_events_cyrodiil.8000 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8000.t
+	desc = ek_travel_events_cyrodiil.8000.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = province:1996 #Ceyatatar
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # just chill
+		name = ek_travel_events_cyrodiil.8000.a
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		random = {
+			chance = 10
+			add_trait = architect
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+	}
+
+	option = { # Interesting...
+		name = ek_travel_events_cyrodiil.8000.c
+		trigger = {
+			OR = {
+				has_trait = cynical
+			}
+			culture = { has_cultural_pillar = heritage_ayleid }
+			NOT = {
+				faith = faith:malada
+			}
+		}
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		set_character_faith_with_conversion = faith:malada
+		add_piety = major_piety_loss
+		
+		add_internal_flag = dangerous
+	}
+
+	option = { # no thanks
+		name = ek_travel_events_elsweyr.8000.d
+	}
+}
+
+# A Door in Niben Bay
+ek_travel_events_cyrodiil.8005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8005.t
+	desc = ek_travel_events_cyrodiil.8005.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	#Check if you're in the Inner Sea Region, then use the inner_sea background
+	override_background = {
+		trigger = {
+			location = {
+				is_sea_province = yes
+				geographical_region = sea_inner_sea
+			}
+		}
+		reference = ek_inner_sea
+	}
+	#Otherwise, use the default ocean background
+	override_background = { reference = fp1_ocean }
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		location = province:2589 #Niben Bay
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # curious
+		name = ek_travel_events_cyrodiil.8005.a
+	}
+}
+
+# The Mysterious Mermaid of Anvil
+ek_travel_events_cyrodiil.8010 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8010.t
+	desc = ek_travel_events_cyrodiil.8010.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = province:1721 #Anvil
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8010.a
+		skill = diplomacy
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8010.b
+		skill = learning
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.8010.c
+	}
+}
+
+# The History of Sutch
+ek_travel_events_cyrodiil.8015 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8015.t
+	desc = ek_travel_events_cyrodiil.8015.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = province:1744 #Sutch
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8015.a
+		skill = diplomacy
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8015.b
+		skill = stewardship
+		add_stewardship_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8015.c
+		skill = martial
+		add_martial_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.8015.d
+	}
+}
+
+# Topal Legionary Academy
+ek_travel_events_cyrodiil.8020 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8020.t
+	desc = ek_travel_events_cyrodiil.8020.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = province:3835 #Topal Legionary Academy
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8020.a
+		skill = martial
+		add_martial_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8020.b
+		skill = learning
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.8020.c
+	}
+}
+
+# History of Fort Redmane
+ek_travel_events_cyrodiil.8025 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8025.t
+	desc = ek_travel_events_cyrodiil.8025.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = province:2505 #Fort Redmane
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8025.a
+		skill = martial
+		add_martial_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8025.b
+		skill = diplomacy
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.8025.c
+	}
+}
+
+# The Ancestor Moth Cult
+ek_travel_events_cyrodiil.8030 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_cyrodiil.8030.t
+	desc = ek_travel_events_cyrodiil.8030.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		OR = {
+			location = province:2328 #Ancestor Moth
+			location = province:1855 #Ni-Mohk
+			location = province:1933 #Alma-Ruma
+			location = province:2332 #Chim
+			location = province:2344 #Ghartok
+		}
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # very cool
+		name = ek_travel_events_cyrodiil.8030.a
+		skill = learning
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+	}
+
+	option = { # just go
+		name = ek_travel_events_cyrodiil.8030.b
+	}
+}

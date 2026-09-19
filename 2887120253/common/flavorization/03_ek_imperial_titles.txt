@@ -1,0 +1,197 @@
+﻿##################
+###CYRODIILIC#####
+##################
+##### Feudal ##### 
+
+#Duchy
+duchy_vassal_cyrodilic = {
+	type = title
+	tier = duchy
+	priority = 35
+	governments = { administrative_government }
+	name_lists = { name_list_nibenese name_list_rimmenese name_list_nibenu name_list_colovian name_list_strident name_list_ilniviri name_list_rimmen }
+	flavourization_rules = {
+		top_liege = no
+		only_vassals = yes
+	}	
+}
+
+kingdom_vassal_imperial = {
+	type = title
+	tier = kingdom
+	priority = 120
+	governments = { administrative_government }
+	name_lists = { name_list_colovian name_list_strident name_list_nibenese name_list_nibenu  }
+	flavourization_rules = {
+		only_vassals = yes
+		top_liege = no
+	}	
+}
+king_vassal_imperial_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 120
+	governments = { administrative_government }
+	name_lists = { name_list_colovian name_list_strident name_list_nibenese name_list_nibenu }
+	flavourization_rules = {
+		only_vassals = yes
+		top_liege = no
+	}
+}
+king_vassal_imperial_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 120
+	governments = { administrative_government }
+	name_lists = { name_list_colovian name_list_strident name_list_nibenese name_list_nibenu }
+	flavourization_rules = {
+		only_vassals = yes
+		top_liege = no
+	}
+}
+
+#Colovians are always kings and dukes in Cyrodiil, regardless of government
+duke_colovian_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 120
+	name_lists = { name_list_colovian name_list_strident }
+	flavourization_rules = {
+		top_liege = no
+	}	
+}
+duke_colovian_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 120
+	name_lists = { name_list_colovian name_list_strident }
+	flavourization_rules = {
+		top_liege = no
+	}	
+}
+king_colovian_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 122
+	name_lists = { name_list_colovian name_list_strident }
+	titles = { k_kvatch k_anvil k_skingrad k_chorrol k_sancre_tor k_sutch k_sarchal k_delodiil }
+	flavourization_rules = {
+		top_liege = no
+	}
+}
+king_colovian_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 122
+	name_lists = { name_list_colovian name_list_strident }
+	titles = { k_kvatch k_anvil k_skingrad k_chorrol k_sancre_tor k_sutch k_sarchal k_delodiil }
+	flavourization_rules = {
+		top_liege = no
+	}	
+}
+kingdom_colovian = {
+	type = title
+	tier = kingdom
+	priority = 122
+	name_lists = { name_list_colovian name_list_strident }
+	titles = { k_kvatch k_anvil k_skingrad k_chorrol k_sancre_tor k_sutch k_sarchal k_delodiil }
+	flavourization_rules = {
+		top_liege = no
+	}	
+}
+
+#Kingdom Nibenese
+king_feudal_male_nibenese = { #Overlord
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 107
+	governments = { feudal_government autocracy_government administrative_government }
+	name_lists = { name_list_nibenese name_list_nibenu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}	
+}
+king_feudal_female_nibenese = { #Overlady
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 107
+	governments = { feudal_government autocracy_government administrative_government }
+	name_lists = { name_list_nibenese name_list_nibenu }
+	flavourization_rules = {
+		top_liege = no
+		only_independent = yes
+	}	
+}
+
+kingdom_feudal_nibenay_territory = { #Territory, used for Cisniben
+    type = title
+    tier = kingdom
+    priority = 99
+    titles = { k_nibenay }
+    flavourization_rules = {
+        top_liege = no
+    }    
+}
+
+# Imperial Empire-tier vassals use "Provincial Governor" and "Province". Reason for name list is that vassal admin Alinor or Hammerfell wouldn't be Provincial Governor but would use their default Aran-El/High King
+emperor_vassal_male_imperial = { #Provincial governor
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 110
+	name_lists = { name_list_nibenese name_list_rimmenese name_list_nibenu name_list_colovian name_list_strident name_list_ilniviri name_list_rimmen }
+	governments = { administrative_government }
+	de_jure_liege = { h_tamriel }
+	flavourization_rules = {
+		top_liege = no
+		only_vassals = yes
+		spouse_takes_title = no
+	}
+}
+emperor_vassal_female_imperial = { #Provincial governor
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 110
+	name_lists = { name_list_nibenese name_list_rimmenese name_list_nibenu name_list_colovian name_list_strident name_list_ilniviri name_list_rimmen }
+	governments = { administrative_government }
+	de_jure_liege = { h_tamriel }	
+	flavourization_rules = {
+		top_liege = no
+		only_vassals = yes
+		spouse_takes_title = no
+	}
+}
+
+empire_vassal_imperial = { #Province
+	type = title
+	tier = empire
+	priority = 110
+	name_lists = { name_list_nibenese name_list_rimmenese name_list_nibenu name_list_colovian name_list_strident name_list_ilniviri name_list_rimmen }
+	governments = { administrative_government }
+	de_jure_liege = { h_tamriel }
+	
+	flavourization_rules = {
+		top_liege = no
+		only_vassals = yes
+	}
+}

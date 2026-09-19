@@ -1,0 +1,96 @@
+﻿l_russian:
+ emperor_zero.1002.t: "Арена ждёт"
+ emperor_zero.1002.desc: "Преодолев хаос Междуцарствия, [emperor_zero_character.GetTitledFirstName] [Select_CString(emperor_zero_character.IsFemale, 'возвысилась', 'возвысился' )] над мелкими ссорами ничтожных правителей. [emperor_zero_character.GetFirstName] [Select_CString(emperor_zero_character.IsFemale, 'благословлена', 'благословлён' )] самим предназначением объединить расколотый Сиродил в Империю, чья власть охватит весь Тамриэль.\n\nМножество ранее независимых правителей клянутся [emperor_zero_character.GetHerHim] в верности, пока [emperor_zero_character.GetHerHis] армия и двор пополняются теми, кто освободился от прежних клятв. Все они стоят плечом к плечу, единым фронтом готовые выступить на праведную войну."
+ emperor_zero.1002.a: "Всего лишь [Select_CString(emperor_zero_character.IsFemale, 'очередная претендентка', 'очередной претендент' )]."
+ emperor_zero.1002.b: "За Сиродил! За Тамриэль!"
+
+ emperor_zero.1003.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'возвысилась', 'возвысился' )] над мелкими ссорами этого Междуцарствия. [Select_CString(ROOT.Char.IsFemale, 'Благословенная', 'Благословлённый' )] самим предназначением, я превращу Сиродил в Империю, чья власть охватит весь Тамриэль.\n\nПравители приходят ко мне, чтобы принести присягу верности, пока моя армия и двор пополняются теми, кто освободился от прежних клятв. Все они стоят плечом к плечу, единым фронтом готовые выступить на праведную войну."
+
+ emperor_zero.1004.t: "Тяжесть судьбы"
+ emperor_zero.1004.desc: "[emperor_zero_character.GetFirstName] [Select_CString(emperor_zero_character.IsFemale, 'мертва', 'мёртв' )]. Держава скорбит и обращает свой взор ко мне в поисках наставления и указаний.\n\nСуждено ли именно мне вести наш народ вперёд? Объединить весь Тамриэль? Справлюсь ли я?\n\nИли же это должен быть Талос? Верный полководец, которого мой [ROOT.Char.Custom2('RelationToMeShort', emperor_zero_character)] [Select_CString(emperor_zero_character.IsFemale, 'оставила', 'оставил' )] после себя. Суждено ли Талосу продолжить этот путь и завершить завоевания?"
+ emperor_zero.1004.a: "Я завершу начатое, [emperor_zero_character.GetFirstNameNoTooltip]!"
+ emperor_zero.1004.b: "Талос, выступи вперёд и покори Тамриэль!"
+
+ emperor_zero.1005.t: "Талос мёртв"
+ emperor_zero.1005.desc: "Придворный, опасаясь вашей реакции, неуверенно повторяет эти слова. Вы прогоняете его прочь.\n\nО Талос, сколько всего мы должны были свершить вместе! Весь Тамриэль склонился бы перед нами... но что теперь? Неужели мне придётся нести бремя этой судьбы в одиночку?"
+ emperor_zero.1005.a: "Будущее туманно..."
+
+ emperor_zero.1006.desc: "[emperor_zero_character.GetTitledFirstName] [Select_CString(emperor_zero_character.IsFemale, 'мертва', 'мёртв' )]. Держава обратила свой взор ко мне, а вместе с ней и весь остальной мир.\n\nТвоя жизнь, [Select_CString(emperor_zero_character.IsFemale, 'дорогая', 'дорогой' )] [emperor_zero_character.GetFirstName], оборвалась не напрасно. Ровно так всё и должно было быть. Мои пальцы сжимают твою корону. Точнее теперь уже мою корону.\n\nОкружающие плачут, удручённые твоей гибелью. Но я [Select_CString(ROOT.GetCharacter.IsFemale, 'жива', 'жив' )]! Как и Сиродил!"
+
+ emperor_zero.0020_title: "[recipient.GetTitledFirstNameNoTooltip] подчиняется"
+
+ emperor_zero.0021.opening: "[Select_CString(ROOT.Char.IsFemale, 'Великая', 'Великий' )] [ROOT.Char.GetFirstName], [Select_CString(ROOT.Char.IsFemale, 'императрица', 'император' )] Сиродила"
+ emperor_zero.0021.desc: "Судьба явно на вашей стороне, и я вверяю себя вашей милости. Дураки, что всё ещё противостоят вам, затрепещут перед нашим единством!"
+ emperor_zero.0021.a: "Приветствую вас, [recipient.GetFirstNameNoTooltip], в новом Тамриэле."
+
+ emperor_zero.0022.opening: "[Select_CString(ROOT.Char.IsFemale, 'Самозванка', 'Самозванец' )],"
+ emperor_zero.0022.desc: "Неужто ты смеешь думать, что мы все дураки, которых можно подкупить красивыми речами да дешёвыми победами? Ты — всего лишь [Select_CString(ROOT.Char.IsFemale, 'очередная корыстная', 'очередной корыстный' )] выскочка, ничем не [Select_CString(ROOT.Char.IsFemale, 'отличающаяся', 'отличающийся' )] от тех, кто прежде пытался прыгнуть выше головы, но неизбежно терпел крах.\n\nЕсли ты хочешь забрать мои земли, то милости просим. Одни только слова не принесут тебе победы, всё решится на поле брани."
+ emperor_zero.0022.a: "Наглый пёс. Твои дни сочтены."
+
+ emperor_zero.0031.t: "[Select_CString(talos_character.IsFemale, 'Незнакомка', 'Незнакомец' )]..."
+ emperor_zero.0031.desc: "За окном бушует буря, отвлекая меня от придворных дел, пока моё внимание не привлекает [Select_CString(talos_character.IsFemale, 'незнакомая женщина, преклоняющая', 'незнакомый мужчина, преклоняющий' )] передо мной колени.\n\n«Мой светлейший сюзерен, я — [talos_character.GetFullName]. Оказавшись в отчаянном положении во время безнадёжной осады, я [Select_CString(talos_character.IsFemale, 'получила', 'получил' )] защиту от самого неба и [Select_CString(talos_character.IsFemale, 'сокрушила', 'сокрушил' )] врагов своим криком. После нашей победы мои воины нарекли меня #bold Талосом#!. И ныне я преклоняю колени перед вами, дабы служить вам своим голосом и мечом. Примите мою присягу, и я сотру в порошок любого, кто дерзнёт встать у вас на пути».\n\n[talos_character.GetFirstName] улыбается, с надеждой смотря на меня. [Select_CString(talos_character.IsFemale, 'Она', 'Он' )] ждёт ответа."
+ emperor_zero.0031.a: "Встань, Талос из Атморы!"
+ emperor_zero.0031.b: "Подлиза! Лишь моим именем вершится судьба!"
+ DAUGHTERS_OF_ATMORA: "Дочери Атморы"
+ SONS_OF_ATMORA: "Сыны Атморы"
+
+ emperor_zero.0041.t: "Предательство"
+ emperor_zero.0041.desc: "Наконец-то минута покоя. Уединение моих покоев дарует умиротворение и отдых вдали от непрестанно вьющихся вокруг придворных и льстецов, каждый из которых жаждет урвать своё место на моей коронации.\n\nК моему удивлению, внутри меня ждёт [talos_character.GetFirstName]. Я тепло обнимаю [Select_CString(talos_character.IsFemale, 'её', 'его' )] и предлагаю передохнуть перед церемонией. Но стоит мне это произнести, как лицо [Select_CString(talos_character.IsFemale, 'её', 'его' )] становится отстранённым и суровым. Моё сердце уходит в пятки.\n\n«Сия судьба предназначена не тебе, — говорит [talos_character.GetFirstName], доставая кинжал и делая шаг ко мне. — А мне».\n\nТеперь всё встаёт на свои места. Теперь я всё понимаю как никогда ясно."
+ emperor_zero.0041.a: "[talos_character.GetFirstNameNoTooltip], [Select_CString(talos_character.IsFemale, 'моя подруга', 'мой друг' )]..."
+ emperor_zero.0041.b: "[talos_character.GetFirstNameNoTooltip], [Select_CString(talos_character.IsFemale, 'предательница', 'предатель' )]!"
+ emperor_zero.0041.b.success: "Вы одерживаете победу над [Select_CString(talos_character.IsFemale, 'ней', 'ним' )]"
+ emperor_zero.0041.b.fail: "[talos_character.GetFirstNameNoTooltip] побеждает вас"
+
+ emperor_zero.0042.t: "Император"
+ emperor_zero.0042.desc: "Дворцовые покои всё ещё дымятся за моей спиной. Я иду вперёд, к толпе, к солдатам — ко всем, кто с трепетом ждёт появления персонажа по имени [emperor_zero.GetTitledFirstName].\n\nЯ крепко зажимаю шею, пока кровь струится по пальцам. В другой ладони покоится Корона Красного Дракона, теперь уже принадлежащая мне. Всё кончено. Всё должно было быть именно так.\n\nЯ вижу, как плачут стоящие передо мной, убитые осознанием того, что [emperor_zero.GetFirstName] [Select_CString(emperor_zero.IsFemale, 'мертва', 'мёртв' )]. [Select_CString(emperor_zero.IsFemale, 'Убита', 'Убит' )] теми, кто противостоит нам, теми, кто выступает против единого Сиродила. Но я [Select_CString(ROOT.Char.IsFemale, 'жива', 'жив' )]! И Сиродил жив! Изголодавшись по будущему, толпа ликует. Один из моих воинов шагает вперёд и возлагает корону на мою голову."
+ emperor_zero.0042.a: "Я — Тайбер Септим. Ваш император."
+ wulfharth_retreats_tooltip: "Вулфхарт покинет вас и продолжит действовать в ваших интересах в иных землях."
+ stormcrown_modifier: "Венец Бури"
+
+ emperor_zero.0043.desc: "Не медля ни мгновения, я толкаю [Select_CString(talos_character.IsFemale, 'изменницу', 'изменника' )] на пол, выбивая кинжал из [Select_CString(talos_character.IsFemale, 'её', 'его' )] руки.\n\nПрежде чем [talos_character.GetFirstName] успевает опомниться, я вынимаю клинок из ножен и вонзаю его прямо в горло [Select_CString(talos_character.IsFemale, 'предательницы', 'предателя' )]. Свирепый вихрь сотрясает покои, сбивая меня с ног. Стража врывается в комнату, но застаёт там лишь меня [Select_CString(ROOT.Char.IsFemale, 'одну', 'одного' )]."
+ emperor_zero.0043.a: "[talos_character.GetFirstNameNoTooltip]?"
+ 
+ emperor_zero.0044.desc: "Прежде чем я успеваю что-либо сделать, [talos_character.GetFirstName] сбивает меня с ног и перерезает мне горло своим кинжалом. Моя корона с глухим стуком падает на пол.\n\nИз раны на шее хлещет кровь, и комната погружается во тьму. Запах дыма подступает всё ближе."
+ emperor_zero.0044.a: "Теперь я понимаю. Я вижу..."
+ emperor_zero.0044.b: "Только не так..."
+ HEIRS_OF_EMPEROR_ZERO: "Наследники персонажа [emperor_zero.GetFirstNameNoTooltip]"
+
+ emperor_zero.0045.desc: "Гонец вбегает в ваш двор с вестью: [emperor_zero.GetTitledFirstName] [Select_CString(emperor_zero.IsFemale, 'убита', 'убит' )] врагами Сиродила.\n\nСиродильцы короновали персонажа по имени [talos_character.GetTitledFirstName] взамен [Select_CString(emperor_zero.IsFemale, 'погибшей', 'погибшего' )], объединившись вокруг своего нового правителя. Даже их северные сородичи начинают прислушиваться к [Select_CString(talos_character.IsFemale, 'ней', 'нему' )]. Некоторые шепчут, будто [Select_CString(talos_character.IsFemale, 'она', 'он' )] — [Select_CString(talos_character.IsFemale, 'та самая Драконорождённая', 'тот самый Драконорождённый' )] из пророчеств. Вне зависимости от правды, за этим днём несомненно последуют война и смерть. Но ждёт ли [Select_CString(talos_character.IsFemale, 'её', 'его' )] успех?"
+ emperor_zero.0045.desc.emperor_zero_dead: "Гонец вбегает в ваш двор с вестью: сиродильцы возложили корону императора на чело персонажа по имени [talos_character.GetTitledFirstName], и ныне весь Сиродил сплотился вокруг [Select_CString(talos_character.IsFemale, 'неё', 'него' )]. Даже их северные сородичи начинают прислушиваться к [Select_CString(talos_character.IsFemale, 'ней', 'нему' )].\n\nНекоторые шепчут, будто [Select_CString(talos_character.IsFemale, 'она', 'он' )] — [Select_CString(talos_character.IsFemale, 'та самая Драконорождённая', 'тот самый Драконорождённый' )] из пророчеств. Вне зависимости от правды, за этим днём несомненно последуют война и смерть. Но ждёт ли [Select_CString(talos_character.IsFemale, 'её', 'его' )] успех?"
+ emperor_zero.0045.a: "Безумие! Всего лишь [Select_CString(talos_character.IsFemale, 'очередная самозванка', 'очередной самозванец' )]. [talos_character.GetFirstName] сгинет точно так же, как и остальные."
+ emperor_zero.0045.b: "Интересно, каков будет [Select_CString(talos_character.IsFemale, 'её', 'его' )] следующий шаг."
+ emperor_zero.0045.c: "Мой сюзерен, [Select_CString(talos_character.IsFemale, 'моя', 'мой' )] [talos_character.GetTitleTierName]!"
+
+ emperor_zero.0046.desc: "Держава обратила свой взор ко мне, а вместе с ней — и весь остальной мир.\n\nКорона Красного Дракона Сиродила венчает моё чело. Сиродил вновь един, и весь Тамриэль ждёт моего следующего шага.\n\nНыне передо мной стоят толпы, нетерпеливо жаждущие великих свершений. Среди них находятся и мои Красные легионы, готовые беспрекословно сражаться и умирать за меня. Время пришло."
+ 
+ emperor_zero_invasion_cb: "Восстановление империи"
+ EMPEROR_ZERO_INVASION_NAME: "Восстановление империи"
+ EMPEROR_ZERO_INVASION_WAR_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetPrefix]-[DEFENDER.GetPrimaryTitle.GetAdjective|l]ая#! война за восстановление империи"
+ EMPEROR_ZERO_INVASION_WAR_NAME_BASE: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+ EMPEROR_ZERO_INVASION_SPECIFIC_NAME: "Возврат имперской территории: [TITLE.GetNameNoTier]"
+ EMPEROR_ZERO_INVASION_WAR_SPECIFIC_NAME: "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')] #L [ATTACKER.GetPrimaryTitle.GetPrefix]-[DEFENDER.GetPrimaryTitle.GetAdjective|l]ая#! война за восстановление империи"
+ EMPEROR_ZERO_INVASION_WAR_SPECIFIC_NAME_BASE: "#L [ATTACKER.GetPrimaryTitle.GetAdjective]ий#! домен [DEFENDER.GetPrimaryTitle.GetName]"
+ emperor_zero_war_gain_all_titles: "Получает #high всех#! [Concept('vassals', 'вассалов')|E] и [Concept('titles', 'титулы')|E] с [Concept('title_tier', 'уровнем')|E] не ниже [Concept('kingdom', 'королевства')|E], которые принадлежали [Select_CString(defender.IsLocalPlayer, 'вам', Concatenate('персонажу ', defender.GetShortUINamePossessive))]"
+
+ story_emperor_zero: "Великое предназначение"
+ story_emperor_zero_desc: "Сама судьба благословила вас объединить расколотый Сиродил в Империю, которая затем охватит весь Тамриэль."
+ EMPEROR_ZERO_CUSTOM_STRING_KEY: "Вы получите доступ к могущественному [Concept('interaction', 'взаимодействию')|E] «$emperor_zero_demand_subjugation_interaction$» и [casus_belli|El] «$emperor_zero_invasion_cb$»"
+ emperor_zero_troops: "Имперские легионы"
+ red_legions_troops: "Красные легионы"
+ TALOS_LABEL: "Талос из Атморы"
+ 
+ emperor_zero_demand_subjugation_interaction: "Потребовать подчинения"
+ emperor_zero_demand_subjugation_interaction_desc: "[recipient.GetShortUINameNoTooltip] предстанет перед выбором: стать вашим [Concept( 'vassal', 'вассалом' )|E] или встретиться с вами на поле брани в сокрушительной [Concept( 'war', 'войне' )|E] за подчинение"
+ imperial_legacy_reason: "Имперское наследие: $VALUE|=+0$"
+
+ hjalti_change_name_tooltip: "Имя сменится на «Талос из Атморы»"
+ tiber_name_tooltip: "Вы примете сиродильское имя: Тайбер Септим"
+ tiber_female_name_tooltip: "Вы примете сиродильское имя: Тайберия Септим"
+
+ reunite_cyrodiil_emperor_zero_decision: "$reunite_cyrodiil_decision$"
+ reunite_cyrodiil_emperor_zero_decision_confirm: "$reunite_cyrodiil_decision_confirm$"
+ 
+ form_high_kingdom_emperor_zero_ai_decision: "#R Решение для ИИ о создании Коловии/Нибенея. Вы не должны это видеть#!"
+ form_high_kingdom_emperor_zero_ai_decision_desc: "$form_high_kingdom_emperor_zero_ai_decision$"
+ form_high_kingdom_emperor_zero_ai_decision_tooltip: "$form_high_kingdom_emperor_zero_ai_decision$"
+ form_high_kingdom_emperor_zero_ai_decision_confirm: "$form_high_kingdom_emperor_zero_ai_decision$"

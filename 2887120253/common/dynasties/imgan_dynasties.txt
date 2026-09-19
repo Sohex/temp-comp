@@ -1,0 +1,51 @@
+﻿
+
+dyn_grumma = {
+    name = "dynn_Grumma"
+	culture = imga
+    motto = dynn_grumma_motto
+}
+
+dyn_kragul = {
+    name = "dynn_Kragul"
+	culture = imga
+    motto = dynn_leafeater_motto
+}
+
+dyn_kuhloga = {
+    name = "dynn_Kuhloga"
+	culture = imga
+    motto = dynn_cliffshade_motto
+}
+
+dyn_thokra = {
+    name = "dynn_Thokra"
+	culture = imga
+}
+
+dyn_apana = {
+    name = "dynn_Apana"
+	culture = imga
+    motto = dynn_apana_motto
+}
+
+dyn_malga = {
+    name = "dynn_Malga"
+	culture = imga
+    motto = dynn_malga_motto
+}
+
+dyn_kraxar = { #Original rulers of Hectaran
+    name = "dynn_Kraxar"
+    culture = imga
+}
+
+dyn_nagon = { #Imga rebel in Hectaran
+    name = "dynn_Nagon"
+    culture = imga
+}
+
+dyn_grathor = { #Bastard of Grumma
+    name = "dynn_Grathor"
+    culture = imga
+}

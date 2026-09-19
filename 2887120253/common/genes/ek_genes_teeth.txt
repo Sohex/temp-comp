@@ -1,0 +1,47 @@
+﻿morph_genes = {
+
+	beast_teeth = {
+		inheritable = yes
+		sync_inheritance_with = skin_color
+		group = mouth
+		human_teeth = {
+			visible = no
+			index = 0
+			male = {}
+			female = male
+			boy = male
+			girl = male
+		}
+		orc_tusk_size = {
+			visible = no
+			index = 1
+			male = {
+				setting = { attribute = "teeth_bs_orc_tusks"	value = { min = 0.0 max = 1.0 }	age = age_preset_child_features_wide_range }
+				setting = { attribute = "bs_orc_teeth_lips"	value = { min = 0.0 max = 1.0 }	age = age_preset_child_features_wide_range }
+			}
+			female = {
+				setting = { attribute = "teeth_bs_orc_tusks"	value = { min = 0.0 max = 0.9 }	age = age_preset_child_features_wide_range }
+				setting = { attribute = "bs_orc_teeth_lips"	value = { min = 0.0 max = 0.9 }	age = age_preset_child_features_wide_range }
+			}
+			boy = male
+			girl = female
+		}
+		kamal_tusk_size = {
+			visible = no
+			index = 2
+			male = {
+				setting = { attribute = "teeth_bs_kamal_tusks"	value = { min = 0.0 max = 1.0 }	age = age_preset_child_features_wide_range }
+				setting = { attribute = "bs_orc_teeth_lips"	value = { min = 0.0 max = 1.0 }	age = age_preset_child_features_wide_range }
+			}
+			female = {
+				setting = { attribute = "teeth_bs_kamal_tusks"	value = { min = 0.0 max = 0.9 }	age = age_preset_child_features_wide_range }
+				setting = { attribute = "bs_orc_teeth_lips"	value = { min = 0.0 max = 0.9 }	age = age_preset_child_features_wide_range }
+			}
+			boy = male
+			girl = female
+		}
+	}
+
+}
+
+

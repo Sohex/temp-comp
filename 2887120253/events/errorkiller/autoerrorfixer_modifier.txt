@@ -1,0 +1,25 @@
+﻿namespace = autoerrorfixer_modifier
+autoerrorfixer_modifier.1 = {
+	hidden = yes
+	orphan = yes
+	immediate = {
+		add_character_modifier = artifact_attraction_opinion_negative_1_modifier
+		add_character_modifier = artifact_attraction_opinion_negative_2_modifier
+		add_character_modifier = artifact_monthly_piety_negative_1_modifier
+		add_character_modifier = artifact_clergy_opinion_penalty_5_modifier
+		add_character_modifier = artifact_monthly_piety_gain_per_legitimacy_level_mult_3_modifier
+		add_character_modifier = artifact_legitimacy_gain_mult_3_modifier
+		add_character_modifier = laamps_8090_preparing_invasion
+		add_character_modifier = travel_city_well_supplied
+		add_character_modifier = travel_city_history_irrigation
+		add_character_modifier = travel_city_history_underground_tunnels
+		add_character_modifier = travel_city_roman_rulership
+		add_character_modifier = stanky_modifier
+		add_character_modifier = full_of_jesus_modifier
+		random_scheme = {
+			add_scheme_modifier = { type = massive_extra_success_chance_modifier }
+		}
+		add_character_modifier = longsleeves_modifier
+		add_character_modifier = lost_button_modifier
+	}
+}

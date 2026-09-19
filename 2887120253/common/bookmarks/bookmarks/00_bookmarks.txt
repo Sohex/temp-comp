@@ -1,0 +1,1106 @@
+﻿#just history checking
+#bm_potentate = {
+#	start_date = 3350.12.19
+#	is_playable = yes
+#}
+
+#just history checking
+#bm_colovia = {
+#	start_date = 3351.7.3
+#	is_playable = yes
+#}
+
+#just history checking
+#bm_attrebus = {
+#	start_date = 3362.12.4
+#	is_playable = yes
+#}
+
+########################################
+# 1E3360 alias 2E 440: Warlord Rising  #
+########################################
+
+bm_warlordrising = {
+	start_date = 3360.1.1
+	is_playable = yes
+	recommended = yes
+	group = bm_group_440
+
+	weight = {
+		value = 100
+	}
+
+	character = {
+		name = "bm_warlordrising_attrebus"
+		dynasty = dyn_sosildor
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3327.8.12
+		title = e_colovian_estates
+		government = autocracy_government
+		culture = torell
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = sosildor_100
+		position = { 380 390 }
+
+		animation = personality_bold
+		
+		character = {
+			name = "bm_warlordrising_attrebus_alt_vesta"
+			relation = "BOOKMARK_RELATION_SPOUSE_FEMALE"
+			dynasty = dyn_valentian
+			type = female
+			birth = 3334.1.1
+			religion = niben_cult
+			culture = nibenese
+			history_id = valentian_101b
+			animation = personality_bold
+		}
+	}
+
+	character = {
+		name = "bm_warlordrising_aixnieras_ves"
+		dynasty = dyn_chorak
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3309.7.11
+		title = e_potentate
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = nibenese
+		religion = court_dawnbeauty
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = chorak_101
+		position = { 1000 550 }
+
+		animation = map_rage
+	}
+
+	character = {
+		name = "bm_warlordrising_caius"
+		dynasty = lex
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3312.2.7
+		title = d_nikel
+		government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = lex_caius
+		position = { 750 230 }
+
+		animation = personality_greedy
+	}
+
+	character = {
+		name = "bm_warlordrising_camilla"
+		dynasty = dyn_pardus
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3309.1.1
+		title = k_rimmen
+		government = autocracy_government
+		culture = rimmenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = pardus_100
+		position = { 640 760 }
+
+		animation = war_over_win
+	}
+
+	character = {
+		name = "bm_warlordrising_threki"
+		dynasty = dyn_stormcatcher
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3337.1.1
+		title = d_arrius
+		government = autocracy_government
+		culture = cyro_nord
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = stormcatcher_100
+		position = { 1025 170 }
+
+		animation = personality_rational
+	}
+}
+
+bm_skyrim = {
+	start_date = 3360.1.1
+	is_playable = yes
+	group = bm_group_440
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_skyrim_svartr"
+		dynasty = dyn_cursebraid
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3297.1.15
+		title = e_western_skyrim
+		government = autocracy_government
+		culture = westmarcher
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = cursebraid_1000
+		position = { 730 180 }
+
+		animation = personality_callous
+	}
+
+	character = {
+		name = "bm_skyrim_freydis"
+		dynasty = dyn_flamehair
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3314.1.1
+		title = e_eastern_skyrim
+		government = autocracy_government
+		culture = eastmarcher
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = flamehair_1000
+		position = { 1165 500 }
+
+		animation = personality_vengeful
+	}
+
+	character = {
+		name = "bm_skyrim_lodvar"
+		dynasty = dyn_reachbreaker
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3296.10.19
+		title = k_markarth
+		government = autocracy_government
+		culture = westmarcher
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = reachbreaker_101
+		position = { 310 625 }
+
+		animation = personality_rational
+	}
+
+	character = {
+		name = "bm_skyrim_torygg"
+		dynasty = dyn_yngvlar
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3314.1.1
+		title = k_whiterun
+		government = autocracy_government
+		culture = hrothgar
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = yngvlar_995
+		position = { 810 590 }
+
+		animation = personality_rational
+	}
+
+	character = {
+		name = "bm_skyrim_brynjolfr"
+		dynasty = dyn_heart_fang
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3295.1.1
+		title = d_snowfallow
+		government = tribal_government
+		culture = skaal
+		religion = anuic_skaal
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = heartfang_1000
+		position = { 1085 115 }
+
+		animation = personality_bold
+	}
+}
+
+bm_topal = {
+	start_date = 3360.1.1
+	is_playable = yes
+	group = bm_group_440
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_topal_aine"
+		dynasty = dyn_atla
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3337.10.18
+		title = k_soulrest
+		government = autocracy_government
+		culture = yespest
+		religion = sanguine_mysteries
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = atla_100
+		position = { 1250 740 }
+
+		animation = personality_bold
+	}
+
+	character = {
+		name = "bm_topal_fabiana"
+		dynasty = dyn_arcato
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3340.1.1
+		title = d_blackwood
+		government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = arcato_99
+		position = { 980 450 }
+
+		animation = personality_content
+	}
+
+	character = {
+		name = "bm_topal_lovierus"
+		dynasty = dyn_darak
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3339.5.3
+		title = k_leyawiin
+		government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = darak_100
+		position = { 550 390 }
+
+		animation = personality_cynical
+	}
+
+	character = {
+		name = "bm_topal_kahada"
+		dynasty = dyn_zatani
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3312.3.5
+		title = d_senchal
+		government = autocracy_government
+		culture = pellitinian
+		religion = twomoonsdance
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = zatani_100
+		position = { 320 600 }
+
+		animation = personality_compassionate
+	}
+}
+
+bm_reaper = {
+	start_date = 3360.1.1
+	is_playable = yes
+	group = bm_group_440
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_reaper_cicero"
+		dynasty = dyn_pullia
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3319.8.14
+		title = k_arenthia
+		government = autocracy_government
+		culture = colovian
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = pullia_1
+		position = { 1050 190 }
+
+		animation = personality_content
+	}
+
+	character = {
+		name = "bm_reaper_maevelle"
+		dynasty_house = camoran_arenthia
+		dynasty_splendor_level = 10
+		type = female
+		birth = 3190.1.1
+		title = c_autumnsite
+		government = autocracy_government
+		culture = arenthi
+		religion = greenpact
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = camoran_arenthia_100
+		position = { 800 500 }
+
+		animation = personality_vengeful
+	}
+
+	character = {
+		name = "bm_reaper_habais"
+		dynasty = dyn_shabu
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3300.6.18
+		title = k_dune
+		government = autocracy_government
+		culture = anequinan
+		religion = twomoonsdance
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = shabu_001
+		position = { 1170 420 }
+
+		animation = personality_rational
+	}
+
+	character = {
+		name = "bm_reaper_nendaer"
+		dynasty = dyn_valeglehn
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3280.7.14
+		title = d_vinedusk
+		government = tribal_government
+		culture = arenthi
+		religion = pact_exemptions
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = valeglehn_100
+		position = { 455 350 }
+
+		animation = personality_honorable
+	}
+}
+
+bm_hf = {
+	start_date = 3360.1.1
+	is_playable = yes
+	recommended = yes
+	group = bm_group_440
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_hf_kavar"
+		dynasty = dyn_phyllos
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3304.12.18
+		title = e_crown
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = crown_culture
+		religion = walkabout
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = phyllos_100
+		position = { 450 820 }
+
+		animation = personality_callous
+	}
+
+	character = {
+		name = "bm_hf_ahlam"
+		dynasty = dyn_beraja
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3312.6.11
+		title = d_bergama
+		government = autocracy_government
+		culture = forebear
+		religion = walkabout
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = beraja_100
+		position = { 390 350 }
+
+		animation = personality_honorable
+	}
+
+	character = {
+		name = "bm_hf_murahd"
+		dynasty = dyn_tarin
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3303.8.10
+		title = k_rihad
+		government = autocracy_government
+		culture = forebear
+		religion = walkabout
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = tarin_100
+		position = { 1150 730 }
+		
+		animation = personality_bold
+	}
+
+	character = {
+		name = "bm_hf_isobel"
+		dynasty = dyn_lucullus
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3316.6.29
+		title = d_lainlyn
+		government = autocracy_government
+		culture = colovian
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = lucullus_100b
+		position = { 690 220 }
+		
+		animation = war_over_win
+	}
+
+	character = {
+		name = "bm_hf_yarana"
+		dynasty = dyn_rahal
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3332.10.16
+		title = k_elinhir
+		government = autocracy_government
+		culture = forebear
+		religion = redguard_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = rahal_100
+		position = { 1150 200 }
+	}
+}
+
+bm_kv = { #kv = Ku-Vastei
+	start_date = 3360.1.1
+	is_playable = yes
+	group = bm_group_440
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_kv_morilye"
+		dynasty = dyn_carandol
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3260.4.14
+		title = d_murkwater
+		government = autocracy_government
+		culture = barsaebic
+		religion = malada
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = carandol_100
+		position = { 620 300 }
+
+		animation = personality_forgiving
+	}
+	character = {
+		name = "bm_kv_xir"
+		dynasty = dyn_dyaan
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3320.10.16
+		title = d_lakemire
+		government = tribal_government
+		culture = lilmothiit
+		religion = lilmothiit_hist
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = dyaan_100
+		position = { 640 820 }
+
+		animation = map_rage
+		
+		character = {
+			name = "bm_kv_alt_mispaxa"
+			relation = "BOOKMARK_RELATION_SISTER"
+			dynasty = dyn_dyaan
+			type = female
+			birth = 3338.4.29
+			religion = lilmothiit_hist
+			culture = lilmothiit
+			history_id = dyaan_100b
+			animation = personality_honorable
+		}
+	}
+	character = {
+		name = "bm_kv_vraseth"
+		dynasty = dyn_shuluni
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3297.5.6
+		title = d_archon
+		government = tribal_government
+		culture = horwalli
+		religion = horwalli_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = shuluni_100
+		position = { 1170 770 }
+
+		animation = personality_honorable
+	}
+	character = {
+		name = "bm_kv_brandshei"
+		dynasty = dyn_su_zahleel 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3323.1.1 
+		title = d_alten_tormont
+		government = tribal_government
+		culture = hleel
+		religion = hist
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = suzahleel_100
+		position = { 1030 200 }
+
+		animation = personality_callous
+	}
+	character = {
+		name = "bm_kv_milos"
+		dynasty = dyn_tharumee
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3330.1.1 
+		title = d_seafalls
+		government = tribal_government
+		culture = hapsleet
+		religion = hist
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = tharumee_100
+		position = { 1010 480 }
+
+		animation = personality_compassionate
+	}
+	character = {
+		name = "bm_kv_talenjei"
+		dynasty = dyn_juseius
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3343.1.1 
+		title = d_helstrom
+		government = autocracy_government
+		culture = naga
+		religion = xanmeer
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = jassa_100
+		position = { 530 520 }
+
+		animation = personality_dishonorable
+	}
+
+}
+
+########################################
+# 1E3370 alias 2E 450: The Interregnum #
+########################################
+
+bm_interregnum = {
+	start_date = 3370.9.11
+	is_playable = yes
+	recommended = yes
+	test_default = yes
+	group = bm_group_450
+
+	weight = {
+		value = 200
+	}
+
+	character = {
+		name = "bm_interregnum_hesta"
+		dynasty = dyn_sosildor
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3353.6.15
+		title = k_heartlands
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = sosildor_101
+		position = { 720 510 }
+
+		animation = personality_coward
+
+		character = {
+			name = "bm_ir_cyro_caius"
+			relation = "BOOKMARK_RELATION_REGENT"
+			dynasty = lex
+			type = male
+			birth = 3312.2.7
+			culture = nibenese
+			religion = eight_divines
+			history_id = lex_caius
+			animation = personality_greedy
+		}
+	}
+	character = {
+		name = "bm_interregnum_nilwen"
+		dynasty_house = camoran_graht
+		dynasty_splendor_level = 10
+		type = female
+		birth = 3257.6.6
+		title = k_eldenroot
+		government = autocracy_government
+		culture = etarani
+		religion = greenpact
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = camoran_grahtwood_100
+		position = { 550 820 }
+
+		animation = personality_callous
+	}
+	character = {
+		name = "bm_interregnum_leythen"
+		dynasty = dyn_mersamiren
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3254.6.18
+		title = d_itento
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = auridon
+		religion = aedric
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = mersamiren_1000
+		position = { 255 690 }
+
+		animation = personality_honorable
+	}
+	character = {
+		name = "bm_interregnum_hakkvild"
+		dynasty = dyn_skjoralmor
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3330.1.1
+		title = d_helgen
+		government = autocracy_government
+		culture = hrothgar
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = skjoralmor_100
+		position = { 895 145 }
+
+		animation = personality_vengeful
+	}
+	character = {
+		name = "bm_interregnum_marandrujo"
+		dynasty = dyn_mane
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3310.7.8
+		title = e_elsweyr
+		government = mandala_government
+		fallback_government = autocracy_government
+		culture = pellitinian
+		religion = twomoonsdance
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = mane_101
+		position = { 815 780 }
+
+		animation = personality_compassionate
+	}
+	character = {
+		name = "bm_interregnum_donella"
+		dynasty = dyn_deleyn
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3332.12.4
+		title = k_daggerfall
+		government = feudal_government
+		culture = glenumbran
+		religion = breton_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = deleyn_100
+		position = { 320 180 }
+		tutorial = yes
+
+		animation = personality_rational
+	}
+	character = {
+		name = "bm_interregnum_girvani"
+		dynasty = dyn_melur
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3243.1.1
+		title = d_stormhold
+		government = autocracy_government
+		culture = marduhn_oad
+		religion = tribunal_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = melur_100
+		position = { 1080 420 }
+
+		animation = personality_zealous
+	}
+	character = {
+		name = "bm_interregnum_yashnag"
+		dynasty = dyn_yal
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3322.1.1
+		title = k_falkreath
+		government = tribal_government
+		culture = mountain_orc
+		religion = code_of_malacath
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = yashnag_100
+		position = { 595 280 }
+
+		animation = personality_bold
+	}
+	character = {
+		name = "bm_interregnum_kavar"
+		dynasty = dyn_kasa
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3331.2.19
+		title = e_crown
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = crown_culture
+		religion = walkabout
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = kasa_101
+		position = { 345 460 }
+
+		animation = personality_honorable
+	}
+	character = {
+		name = "bm_interregnum_haxara"
+		dynasty_house = dyn_nikassa
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3327.1.1
+		title = d_felmarsh
+		government = tribal_government
+		culture = naga
+		religion = hist
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = nikassa_100
+		position = { 1160 770 }
+
+		animation = personality_vengeful
+	}
+}
+
+bm_ir_cyro = {
+	start_date = 3370.9.11
+	is_playable = yes
+	group = bm_group_450
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_interregnum_hesta"
+		dynasty = dyn_sosildor
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3353.6.15
+		title = k_heartlands
+		government = administrative_government
+		fallback_government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = sosildor_101
+		position = { 850 590 }
+
+		animation = personality_coward
+
+		character = {
+			name = "bm_ir_cyro_caius"
+			relation = "BOOKMARK_RELATION_REGENT"
+			dynasty = lex
+			type = male
+			birth = 3312.2.7
+			culture = nibenese
+			religion = eight_divines
+			history_id = lex_caius
+			animation = personality_greedy
+		}
+	}
+	character = {
+		name = "bm_ir_cyro_venaros"
+		dynasty = dyn_cuptor
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3298.3.1
+		title = e_nibenay
+		government = autocracy_government
+		culture = nibenese
+		religion = niben_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = cuptor_99
+		position = { 1150 780 }
+
+		animation = personality_vengeful
+	}
+	character = {
+		name = "bm_ir_cyro_hieron"
+		dynasty = dyn_dor
+		dynasty_splendor_level = 3
+		type = male
+		birth = 3332.1.1
+		title = k_sancre_tor
+		government = autocracy_government
+		culture = torell
+		religion = reman_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = dor_101
+		position = { 350 280 }
+
+		animation = personality_vengeful
+	}
+	character = {
+		name = "bm_ir_cyro_ilnori" 
+		dynasty = aquilarios
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3330.1.1
+		title = k_chorrol
+		government = autocracy_government
+		culture = torell
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = aquilarios_101
+		position = { 620 500 }
+
+		animation = personality_callous
+	}
+	character = {
+		name = "bm_ir_cyro_abnur" 
+		dynasty = dyn_tharn
+		dynasty_splendor_level = 2
+		type = male
+		birth = 3338.1.1
+		title = d_cheydinhal
+		government = autocracy_government
+		culture = nibenese
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = tharn_abnur 
+		position = { 1295 410 }
+
+		animation = personality_cynical
+	}
+	character = {
+		name = "bm_ir_cyro_harald" 
+		dynasty = dyn_frostbeard
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3334.6.26
+		title = k_bruma
+		government = autocracy_government
+		culture = cyro_nord
+		religion = nord_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = frostbeard_99
+		position = { 1100 220 }
+
+		animation = personality_forgiving
+	}
+}
+
+bm_iliac = {
+	start_date = 3370.9.11
+	is_playable = yes
+	recommended = yes
+	group = bm_group_450
+
+	weight = {
+		value = 0
+	}
+	character = {
+		name = "bm_iliac_faric"
+		dynasty = dyn_oges
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3332.5.16
+		title = c_crosswych
+		government = feudal_government
+		culture = glenumbran
+		religion = breton_aedra
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = oges_100
+		position = { 440 410 }
+
+		animation = personality_cynical
+	}
+	character = {
+		name = "bm_iliac_ancotar"
+		dynasty = dyn_direnni
+		dynasty_splendor_level = 3
+		type = male
+		birth = 3236.6.29
+		title = d_balfiera
+		government = autocracy_government
+		culture = balfiera
+		religion = mainland_auriel
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = direnni_100
+		position = { 350 700 }
+
+		animation = personality_vengeful
+	}
+	character = {
+		name = "bm_iliac_evelyn"
+		dynasty = dyn_moile
+		dynasty_splendor_level = 2
+		type = female
+		birth = 3329.4.16
+		title = k_evermore
+		government = autocracy_government
+		culture = witchman
+		religion = witchman_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = moile_100b
+		position = { 1080 670 }
+
+		animation = personality_rational
+	}
+	character = {
+		name = "bm_iliac_yvonne"
+		dynasty = dyn_classen
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3337.1.1
+		title = c_port_duncreek
+		government = tribal_government
+		culture = northmen
+		religion = breton_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = classen_100
+		position = { 710 230 }
+
+		animation = personality_bold
+	}
+	character = {
+		name = "bm_iliac_sielle"
+		dynasty = dyn_baolduin
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3330.9.12
+		title = d_pale_watch
+		government = feudal_government
+		culture = glenumbran
+		religion = breton_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = baolduin_100
+		position = { 1000 340 }
+
+		animation = war_over_win
+	}
+}
+
+bm_abecean = {
+	start_date = 3370.9.11
+	is_playable = yes
+	group = bm_group_450
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bm_abecean_velehk"
+		dynasty = 170004 
+		dynasty_splendor_level = 2
+		type = male
+		birth = 2345.1.1
+		title = d_heartless_horde
+		government = pirate_government
+		culture = dremora
+		religion = molag_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = dremora_1000
+		position = { 350 390 }
+
+		animation = personality_vengeful
+	}
+	character = {
+		name = "bm_abecean_fabrelle"
+		dynasty = dyn_adrich
+		dynasty_splendor_level = 1
+		type = female
+		birth = 3339.10.13
+		title = d_systres
+		government = autocracy_government
+		culture = strident
+		religion = redguard_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = adrich_100
+		position = { 450 700 }
+
+		animation = personality_honorable
+	}
+	character = {
+		name = "bm_abecean_afshuur"
+		dynasty = dyn_addin
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3340.1.1
+		title = d_hnas
+		government = autocracy_government
+		culture = abecean
+		religion = redguard_cult
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = addin_1000
+		position = { 855 230 }
+
+		animation = personality_rational
+	}
+	character = {
+		name = "bm_abecean_arctur"
+		dynasty = dyn_doralis
+		dynasty_splendor_level = 1
+		type = male
+		birth = 3340.3.11
+		title = k_anvil
+		government = pirate_government
+		culture = strident
+		religion = eight_divines
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = doralis_arctur
+		position = { 1220 690 }
+
+		animation = personality_bold
+	}
+}
+###########################################
+# 1E3492 alias 2E 572: Kamal Invasion     #
+###########################################
+# Planned, but not in development yet.
+# bm_kamal = {
+# 	start_date = 3492.1.1
+# 	is_playable = yes
+# 	group = bm_group_572
+# 	weight = {
+# 		value = 100
+# 	}
+
+# 	#needs one character to appear in UI
+# 	character = {
+# 		name = "bm_kamal_aethra"
+# 		dynasty = dyn_uhlain
+# 		dynasty_splendor_level = 1
+# 		type = female
+# 		birth = 3453.11.20
+# 		title = e_blackdrake_empire
+# 		government = administrative_government
+# 		culture = reachfolk
+# 		religion = thousand_cults
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = durcorach_104
+# 		position = { 810 480 }
+
+# 		animation = personality_bold
+# 	}
+# }

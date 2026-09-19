@@ -1,0 +1,401 @@
+﻿namespace = ek_kvatch_bread_riots
+
+ek_kvatch_bread_riots.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0001.t
+	desc = ek_kvatch_bread_riots.0001.desc
+	theme = stewardship_domain_focus
+
+	left_portrait = {
+		character = ROOT
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:steward
+	}
+
+	trigger = {	
+		current_date > 3385.1.1
+		has_title = title:c_kvatch
+		NOT = {
+			has_global_variable = kvatch_bread_riots
+		}
+	}	
+
+	immediate = {
+		set_global_variable = {
+			name = kvatch_bread_riots
+			value = yes
+		}
+		cp:councillor_steward ?= {
+			save_scope_as = steward
+		}
+		title:b_kvatch.title_province.county = {
+			add_county_modifier = {
+				modifier = red_wheat_blight_modifier
+				months = 26
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		# EK TODO: add an increasing chance to trigger for each year passed from the starting date on trigger
+	}
+	
+	option = { # feed the commoners
+		name = ek_kvatch_bread_riots.0001.a
+		flavor = ek_kvatch_bread_riots.0001.a.flavor
+		remove_short_term_gold = medium_gold_value
+		title:b_kvatch.title_province.county = {
+			change_county_control = major_county_control_gain
+		}	
+		ai_chance = {
+			base = 1
+			ai_value_modifier = {
+				ai_compassion = 0.5
+			}
+			modifier = {
+				add = -2
+				has_trait = sadistic
+			}
+		}
+	}
+
+	option = { # who cares
+		name = ek_kvatch_bread_riots.0001.b
+		flavor = ek_kvatch_bread_riots.0001.b.flavor
+
+		trigger_event = {
+			id = ek_kvatch_bread_riots.0002
+			days = 366
+		}
+	}		
+}
+
+ek_kvatch_bread_riots.0002 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0002.t
+	desc = ek_kvatch_bread_riots.0002.desc
+	theme = stewardship_domain_focus
+
+	left_portrait = {
+		character = ROOT
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:steward
+		animation = fear
+	}
+
+	trigger = {	
+		current_date > 3385.1.1
+		has_title = title:c_kvatch
+		title:b_kvatch.title_province.county = {
+			has_county_modifier = red_wheat_blight_modifier
+		}
+	}	
+
+	immediate = {
+		cp:councillor_steward ?= {
+			save_scope_as = steward
+		}
+	}
+	
+	option = { # feed the commoners
+		name = ek_kvatch_bread_riots.0002.a
+		flavor = ek_kvatch_bread_riots.0002.a.flavor
+		remove_short_term_gold = major_gold_value
+		title:b_kvatch.title_province.county = {
+			change_county_control = major_county_control_gain
+		}
+		ai_chance = {
+			base = 1
+			ai_value_modifier = {
+				ai_compassion = 0.5
+			}
+			modifier = {
+				add = -2
+				has_trait = sadistic
+			}
+		}	
+	}
+
+	option = { # who cares
+		name = ek_kvatch_bread_riots.0002.b
+		flavor =  ek_kvatch_bread_riots.0002.b.flavor
+		add_prestige = medium_prestige_gain
+		title:b_kvatch.title_province.county = {
+			change_county_control = major_county_control_loss
+		}
+
+		every_county_in_region = {
+			region = mundus_tamriel_cyrodiil_kvatch
+			limit = {
+				holder = root
+			}
+			add_county_modifier = {
+				modifier = red_wheat_blight_modifier
+				months = 26
+			}
+		}
+
+
+		trigger_event = {
+			id = ek_kvatch_bread_riots.0003
+			months = 12
+		}
+	}		
+}
+
+ek_kvatch_bread_riots.0003 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0003.t
+	desc = ek_kvatch_bread_riots.0003.desc
+	theme = war
+
+	override_background = { reference = throne_room }
+
+	left_portrait = {
+		character = ROOT
+		animation = fear
+	}
+
+	right_portrait = {
+		character = scope:order_hour
+		animation = anger
+	}
+
+	trigger = {	
+		current_date > 3385.1.1
+		has_title = title:k_kvatch
+		title:b_kvatch.title_province.county = {
+			has_county_modifier = red_wheat_blight_modifier
+		}
+		exists = title:d_order_of_the_hour.holder
+	}	
+
+	immediate = {
+		play_music_cue = "mx_cue_combat_2"
+		title:d_order_of_the_hour.holder = {
+			save_scope_as = order_hour
+		}
+
+		title:k_kvatch = {
+			title_create_faction  = {
+				type = peasant_faction
+				target = root
+			}
+		}
+	}
+	
+	option = { # send the order of the hour
+		name = ek_kvatch_bread_riots.0003.a
+		flavor = ek_kvatch_bread_riots.0003.a.flavor
+		
+		add_piety = major_piety_loss
+		
+		add_tyranny = major_tyranny_gain
+
+		scope:order_hour = {
+			add_hook = {
+				target = root
+				type = favor_hook
+			}
+		}
+
+		show_as_tooltip = {
+			random_targeting_faction = {
+				limit = {
+					faction_is_type = peasant_faction
+				}
+				destroy_faction = yes
+			}
+
+			title:b_kvatch.title_province.county = {
+				add_county_modifier = {
+					modifier = kvatch_bread_riots_modifier
+				}
+				change_county_control = major_county_control_gain
+			}
+		}
+
+		trigger_event = {
+			id = ek_kvatch_bread_riots.0004
+			days = 1
+		}
+	}
+
+	option = { # let them burn it
+		name = ek_kvatch_bread_riots.0003.b
+		flavor = ek_kvatch_bread_riots.0003.b.flavor
+		add_prestige = major_prestige_loss
+
+		show_as_tooltip = {
+			province:1771 = {
+				remove_building = great_chapel_akatosh_02
+				add_special_building = great_chapel_akatosh_01
+			}
+
+			title:b_kvatch.title_province.county = {
+				add_county_modifier = {
+					modifier = kvatch_bread_riots_modifier
+				}
+				change_county_control = major_county_control_loss
+			}
+		}
+
+		hidden_effect = {
+			random_list = {
+				5 = { #the hourglass boys do it anyway
+					modifier = {
+						add = 10
+						scope:order_hour = { has_trait = zealous }
+					}
+					modifier = {
+						add = 10
+						scope:order_hour = { has_trait = sadistic }
+					}
+					trigger_event = {
+						id = ek_kvatch_bread_riots.0006
+						days = 1
+					}
+				}
+
+				20 = { #they don't
+					trigger_event = {
+						id = ek_kvatch_bread_riots.0005
+						days = 1
+					}
+				}
+			}
+		}
+	}		
+}
+
+ek_kvatch_bread_riots.0004 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0003.t
+	desc = ek_kvatch_bread_riots.0004.desc
+	theme = war
+
+	override_background = { reference = battlefield }
+
+	immediate = {
+		random_targeting_faction = {
+			limit = {
+				faction_is_type = peasant_faction
+			}
+			destroy_faction = yes
+		}
+
+		title:b_kvatch.title_province.county = {
+			add_county_modifier = {
+				modifier = kvatch_bread_riots_modifier
+			}
+			change_county_control = major_county_control_gain
+		}
+	}
+
+	left_portrait = {
+		character = ROOT
+		animation = shame
+	}
+
+	option = { # it had to be done
+		name = ek_kvatch_bread_riots.0004.a
+		
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+	}		
+}
+
+ek_kvatch_bread_riots.0005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0003.t
+	desc = ek_kvatch_bread_riots.0005.desc
+	theme = war
+
+	override_background = { reference = burning_building }
+
+	immediate = {
+		province:1771 = {
+			remove_building = great_chapel_akatosh_02
+			add_special_building = great_chapel_akatosh_01
+		}
+
+		title:b_kvatch.title_province.county = {
+			add_county_modifier = {
+				modifier = kvatch_bread_riots_modifier
+			}
+			change_county_control = major_county_control_loss
+		}
+	}
+
+	left_portrait = {
+		character = ROOT
+		animation = sadness
+	}
+
+	option = { # I had no choice
+		name = ek_kvatch_bread_riots.0005.a
+		remove_short_term_gold = major_gold_value
+	}		
+}
+
+ek_kvatch_bread_riots.0006 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_kvatch_bread_riots.0003.t
+	desc = ek_kvatch_bread_riots.0006.desc
+	theme = war
+
+	override_background = { reference = battlefield }
+
+	immediate = {
+		random_targeting_faction = {
+			limit = {
+				faction_is_type = peasant_faction
+			}
+			destroy_faction = yes
+		}
+
+		title:b_kvatch.title_province.county = {
+			add_county_modifier = {
+				modifier = kvatch_bread_riots_modifier
+			}
+			change_county_control = major_county_control_gain
+		}
+	}
+
+	left_portrait = {
+		character = ROOT
+		animation = shock
+	}
+
+	right_portrait = {
+		character = scope:order_hour
+		animation = war_over_win
+	}
+
+	option = { # what have you done?
+		name = ek_kvatch_bread_riots.0006.a
+
+		add_opinion = {
+			target = scope:order_hour
+			modifier = slaughtered_peasants_opinion
+		}
+		
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+	}		
+}

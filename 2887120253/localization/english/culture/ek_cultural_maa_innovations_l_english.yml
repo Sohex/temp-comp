@@ -1,0 +1,54 @@
+﻿l_english:
+
+ unlocks_raiding: "Unlocks the ability to [raid|E]"
+ 
+ ### Military
+ # Aldmeris
+ # Argonian
+ innovation_black_marsh_materials: "Black Marsh Materials"
+ innovation_black_marsh_materials_desc: "Flint and bone, hackwing feathers and volcanic glass, bog iron and brass, all these and more can be found in Black Marsh. Perhaps the armors we create from such disparate materials cannot rival steel plate, but wherever our warrios fight, it is Black Marsh itself that armors them."
+ # Bosmeris
+ # Chimeris
+ # Dunmeris
+ innovation_guar: "Guar Breeding"
+ innovation_guar_desc: "Guars are the primary domesticated herd animals of Morrowind and Black Marsh, and are often raised as pack animals, beasts of burden and providers of hide, eggs and meat. Their more aggresive cousins, the Kagouti, are used as war mounts."
+ # Falmeris
+ innovation_crag_warfare: "Crag Warfare"
+ innovation_crag_warfare_desc: "For decades we fought against our tyrant overlords for control of the underground. When they were no more, we were free of our bonds and could make our homes in this subterranean world. There we lived, prospered - and fought, a neverending fight for survival."
+ # Orcish
+
+#Goblinken
+# Riekling
+ innovation_bristleback_taming: "Bristleback Taming"
+ innovation_bristleback_taming_desc: "The robust bristlebacks roaming the snowy plains of northern Tamriel prove to be surprisingly adept steeds when properly tamed. Their sturdiness and toughness make them particularly well-suited for the harsh climate of our own homeland."
+# Riekr
+# Goblin
+ innovation_durzog_breeding: "Durzog Breeding"
+ innovation_durzog_breeding_desc: "Most individuals tend to avoid Durzogs due to their repulsive appearance and carnivorous hunting behavior. However, it's worth noting that these creatures possess remarkable intelligence, making them capable of being trained as formidable war beasts."
+
+# Imga
+
+# Argonian
+ 
+ # Khajiit 
+ innovation_lunar_lattice: "Lunar Lattice"
+ innovation_lunar_lattice_desc: "Eons ago we were forced to live shapeless, constantly changing and never assuming a stable form. We have then been tied to the Moons, so that our people's form depends on the cycle of Masser and Secunda."
+ unlocks_other_maa_innovations: "Automatically unlocks other Khajiiti army innovations when the regular innovation is researched"
+ replaces_innovation_basic_armor_forging: "#I This [innovation|E] replaces $innovation_basic_armor_forging$#!"
+ innovation_unlocked_by_innovation_lunar_lattice: "Is unlocked with the $innovation_lunar_lattice$ [innovation|E]"
+
+ innovation_lunar_mysteries: "Lunar Mysteries"
+ innovation_lunar_mysteries_desc: "Not only does the Lunar Lattice determine our physcial form, it also opens a path to lost and eminent secrets. If we decipher the movements of the moons and follow their path we can reach deeper into the arcane and even share this knowledge with our children."
+ 
+ innovation_alfiq: "Alfiq Training"
+ innovation_alfiq_desc: "We are bound to the Moons, and our physiology is deeply tied to their form when we are born. The smallest of us, the Alfiq, are predisposed to the magical arts, and can support our warriors either in the backline, or by sitting in a shoulder harness worn by our largest warriors."
+ 
+ innovation_pahmar: "Pahmar Training"
+ innovation_pahmar_desc: "We are bound to the Moons, and our physiology is deeply tied to their form when we are born. The largest of the two-legged forms, the Pahmar can easily wear even the heaviest armor and wield the biggest weapons. They will be great on the battlefield, charging the enemy frontline and paving the way for their smaller brethren."
+ innovation_unlocked_by_innovation_quilted_armor: "Is unlocked with the $innovation_quilted_armor$ [innovation|E]"
+ 
+ innovation_senche_raht: "Senche-Raht Training"
+ innovation_senche_raht_desc: "We are bound to the Moons, and our physiology is deeply tied to their form when we are born. Some of us, the Senche-Raht, are capable of charging the enemy lines on four feet, and are strong enough to carry a regular-sized soldier on their back. We should integrate them into our armies."
+ innovation_unlocked_by_innovation_arched_saddle: "Is unlocked with the $innovation_arched_saddle$ [innovation|E]"
+
+ 

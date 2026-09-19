@@ -1,0 +1,323 @@
+﻿namespace = ek_travel_events_reach
+
+############################
+## Travel Reach Flavor Events
+## 0001-3999
+############################
+
+# Peoples of the Reach
+ek_travel_events_reach.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_reach.0001.t
+	desc = ek_travel_events_reach.0001.desc
+	theme = travel
+	
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	cooldown = { years = 15 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 
+		location = {
+			geographical_region = mundus_tamriel_reach
+		}
+	}
+
+	immediate = {
+		mp_delay_travel_plan = { DAYS = 90 }
+		play_music_cue = mx_cue_travel_arrival
+	}
+
+	option = { # focus on diplomacy
+		name = ek_travel_events_reach.0001.a
+		skill = diplomacy
+		trigger = { diplomacy >= high_skill_rating }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		add_diplomacy_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	option = { # focus on magick
+		name = ek_travel_events_reach.0001.b
+		skill = learning
+		trigger = { learning >= high_skill_rating }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		add_learning_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	option = { # focus on trade
+		name = ek_travel_events_reach.0001.c
+		skill = stewardship
+		trigger = { stewardship >= high_skill_rating }
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 7 }
+		}
+		add_stewardship_lifestyle_xp = medium_lifestyle_xp
+	}
+
+	option = { # no thanks
+		name = ek_travel_events_reach.0001.d
+	}
+}
+
+# Politics of the Reach
+ek_travel_events_reach.0005 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_travel_events_reach.0005.t
+	desc = ek_travel_events_reach.0005.desc
+	theme = travel_danger
+	
+	left_portrait = {
+		character = root
+	}
+
+	right_portrait = {
+		character = scope:chief
+		scripted_animation = duel_wield_weapon
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		is_available_travelling_adult = yes
+		 NOT = {
+			culture = {
+				has_cultural_tradition = tradition_reach_core
+			}
+		 }
+		is_location_valid_for_travel_event_on_land = yes
+		NOT = { location.county.holder = root } #If I own it then it does not make sense to visit it.
+		location = {
+			geographical_region = mundus_tamriel_reach
+			county.holder = {
+				is_ai = yes
+				culture = {
+					has_cultural_tradition = tradition_reach_core
+				}
+			}	
+		}
+	}
+
+	immediate = {
+		play_music_cue = mx_cue_travel_arrival
+
+		location.county.holder = {
+			save_scope_as = chief
+		}
+
+		traveler_danger_xp_effect = {
+			MIN = 3
+			MAX = 7
+		}
+	}
+
+	option = { # attempt to negotiate passage
+		trigger = {
+			short_term_gold >= minor_gold_value
+		}
+		show_as_unavailable = {
+			short_term_gold < minor_gold_value
+		}
+		name = ek_travel_events_reach.0005.a
+		duel = {
+			skill = stewardship
+			target = scope:chief
+			10 = {
+				desc = ek_travel_events_reach.0005.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_reach.0005.a.success
+					
+					add_prestige = major_prestige_gain
+					remove_short_term_gold = minor_gold_value
+
+					culture = {
+						change_cultural_acceptance = {
+							target = scope:chief.culture
+							value = miniscule_positive_culture_acceptance
+							desc = cultural_acceptance_gain_event
+						}
+					}
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_reach.0005.a.failure
+				random_list = {
+					5 = {
+						send_interface_toast = {
+							title = ek_travel_events_reach.0005.failure.death.tt
+							type = event_toast_effect_bad
+							left_icon = root
+
+							increase_wounds_effect = { REASON = fight }
+							add_prestige = medium_prestige_loss
+						}
+					}
+					30 = { 
+						send_interface_toast = {
+							title = ek_travel_events.0065.a.failure
+							type = event_toast_effect_bad
+							left_icon = root
+
+							
+
+							increase_wounds_effect = { REASON = fight }
+						}
+					} 
+				}
+			}
+		}
+	}
+
+	option = { # claim allegiance to a clan
+		name = ek_travel_events_reach.0005.b
+		duel = {
+			skill = diplomacy
+			target = scope:chief
+			10 = {
+				desc = ek_travel_events_reach.0005.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_reach.0005.b.success
+					
+					add_prestige = major_prestige_gain
+
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_reach.0005.b.failure
+				random_list = {
+					5 = {
+						send_interface_toast = {
+							title = ek_travel_events_reach.0005.failure.death.tt
+							type = event_toast_effect_bad
+							left_icon = root
+
+							death = { 
+								death_reason = death_execution
+								killer = scope:chief
+							}
+						}
+					}
+					30 = { 
+						send_interface_toast = {
+							title = ek_travel_events_reach.0005.b.failure
+							type = event_toast_effect_bad
+							left_icon = root
+
+							
+
+							increase_wounds_effect = { REASON = fight }
+						}
+					} 
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 50
+				has_trait = brave
+			}
+		}
+	}
+
+	option = { # intimidate them
+		name = ek_travel_events_reach.0005.c
+		duel = {
+			skill = martial
+			target = scope:chief
+			10 = {
+				desc = ek_travel_events_reach.0005.c.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				send_interface_toast = {
+					left_icon = root
+					type = event_toast_effect_good
+					title = ek_travel_events_reach.0005.c.success
+					
+					add_prestige = major_prestige_gain
+
+				}
+			}
+			
+			5 = {
+				desc = ek_travel_events_reach.0005.c.failure
+				random_list = {
+					5 = {
+						send_interface_toast = {
+							title = ek_travel_events_reach.0005.failure.death.tt
+							type = event_toast_effect_bad
+							left_icon = root
+
+							death = { 
+								death_reason = death_execution
+								killer = scope:chief
+							}
+						}
+					}
+					30 = { 
+						send_interface_toast = {
+							title = ek_travel_events_reach.0005.c.failure
+							type = event_toast_effect_bad
+							left_icon = root
+
+							
+
+							increase_wounds_effect = { REASON = fight }
+						}
+					} 
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 50
+				has_trait = brave
+			}
+		}
+	}
+
+	option = { # avoid the encounter
+		name = ek_travel_events_reach.0005.d
+		
+		add_prestige = minor_prestige_loss
+		current_travel_plan = {
+			delay_travel_plan = { days = 14 }
+		}
+	}
+}
+
+############################
+## Travel Reach Danger Events
+## 4000-7999
+############################

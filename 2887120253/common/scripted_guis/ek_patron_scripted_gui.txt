@@ -1,0 +1,88 @@
+﻿# Patrons done #
+faith_get_patrons = {
+	scope = faith
+
+	saved_scopes = { player_s }
+
+	effect = {
+		scope:player_s = {
+			if = {
+				limit = { exists = var:faith_window }
+				var:faith_window = { save_temporary_scope_as = faith_window_prev }
+			}
+			set_variable = { name = faith_window value = PREV }
+			remove_variable = patron_sel
+		}
+		if = {
+			limit = { exists = scope:faith_window_prev }
+			scope:faith_window_prev = {
+				if = {
+					limit = {
+						has_variable = faith_patrons_set
+						NOT = {
+							any_player = { #dont clear if other player viewing. try faith_window_prev or something
+								exists = var:faith_window
+								var:faith_window = PREV
+							}
+						}
+					}
+					remove_variable = faith_patrons_set
+					clear_variable_list = faith_patrons
+				}
+			}
+		}
+		set_variable = faith_patrons_set
+		patron_get_list = yes
+	}
+}
+
+faith_clear_patrons = {
+	scope = faith
+
+	saved_scopes = { player_s }
+
+	effect = {
+		scope:player_s = {
+			remove_variable = faith_window
+			remove_variable = patron_sel
+		}
+		if = {
+			limit = {
+				has_variable = faith_patrons_set
+				NOT = {
+					any_player = { #dont clear if other player viewing
+						exists = var:faith_window
+						var:faith_window = PREV
+					}
+				}
+			}
+			remove_variable = faith_patrons_set
+			clear_variable_list = faith_patrons
+		}
+	}
+}
+
+faith_set_patron = {
+	scope = character
+
+	saved_scopes = { trait patron_sel }
+
+	is_valid = { patron_has_specific_trait = no }
+
+	effect = {
+		if = {
+			limit = { exists = scope:patron_sel }
+			if = {
+				limit = { scope:patron_sel = yes }
+				patron_set_trait = yes
+			}
+			remove_variable = patron_sel
+		}
+		else = {
+			set_variable = { name = patron_sel value = scope:trait }
+		}
+	}
+}
+
+# could also use a loc string :0 "[thing]_[thing2]" and call it
+# Localize is apparently going to be fixed to work properly

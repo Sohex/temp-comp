@@ -1,0 +1,4659 @@
+﻿#440
+
+c_nf_chorak = { # Chorak
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2987.1.1 = {
+		holder = chorak_96
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3122.1.1 = { holder = chorak_97 }
+	3206.1.1 =  { holder = chorak_98 }
+	3257.1.1 = { holder = chorak_99 }
+	3312.1.1 = { holder = chorak_100 }
+	3334.12.18 = { holder = chorak_101 } # Potentate
+	3362.12.4 = {
+		holder = 0
+	}
+}
+
+c_nf_aerius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3302.1.1 = {
+		holder = aerius_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3329.1.1 = { holder = aerius_99 }
+	3352.1.1 = { holder = aerius_100 }
+	3362.12.4 = { holder = 0 } #Potentate dies
+	3426.1.1 = {
+		holder = aerius_102
+		liege = k_heartlands
+	}
+	3468.1.1 = { holder = aerius_103 }
+	3479.1.1 = { holder = aerius_104 }
+	3487.1.1 = { holder = 0 } #They all die from Knahaten
+}
+
+c_nf_domian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3292.1.1 = { 
+		holder = domian_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }   
+	}
+	3331.1.1 = { holder = domian_99 }
+	3355.1.1 = { holder = domian_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+	3460.1.1 = {
+		holder = domian_103
+		liege = k_heartlands
+	}
+	3477.1.1 = { holder = domian_104 }
+}
+
+c_nf_tharn = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2703.1.1 = {
+		holder = tharn_5
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2747.1.1 = { holder = tharn_6 }
+	2791.1.1 = { holder = tharn_7 }
+	2819.1.1 = { holder = tharn_8 }
+	2852.1.1 = { holder = tharn_9 }
+	2875.1.1 = { holder = tharn_10 }
+	2901.1.1 = { holder = tharn_11 }
+	2953.1.1 = { 
+		holder = tharn_12
+		liege = e_potentate
+	}
+	2975.1.1 = { holder = tharn_13 }
+	3008.1.1 = { holder = tharn_89 }
+	3029.1.1 = { holder = tharn_90 }
+	3062.1.1 = { holder = tharn_91 }
+	3087.1.1 = { holder = tharn_92 }
+	3110.1.1 = { holder = tharn_93 }
+	3117.1.1 = { holder = tharn_93b }
+	3154.1.1 = { holder = tharn_94 }
+	3216.1.14 = { holder = tharn_95 }
+	3249.4.2 = { holder = tharn_96 }
+	3276.1.1 = { holder = tharn_97 }
+	3307.4.18 = { holder = tharn_98 }
+	3335.11.1 = { holder = tharn_99 }
+	3368.9.22 = { holder = 0 } #Potentate falls apart
+	3462.1.1 = {
+		holder = tharn_abnur
+		liege = k_heartlands
+	}
+}
+
+c_nf_celatus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3285.1.1 = {
+		holder = celatus_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3326.1.1 = { holder = celatus_99 }
+	3354.1.1 = { holder = celatus_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_kssazi = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3199.1.1 = { 
+		holder = kssazi_95
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3257.1.1 = { holder = kssazi_96 }
+	3299.1.1 = { holder = kssazi_97 }
+	3318.1.1 = { holder = kssazi_98 }
+	3341.1.1 = { holder = kssazi_99 }
+	3359.1.1 = { holder = kssazi_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_sylla = { # Sylla
+	2705.6.15 = { holder = sylla_1 } # Some years after Tsaesci arrive, family is firmly established
+	2820.7.11 = { holder = potentate_2 }
+	2881.5.16 = { holder = sylla_95 }
+	2920.12.6 = { holder = 0 } #Sylla family executed and exiled
+}
+
+c_nf_valentian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3286.1.1 = {
+		holder = valentian_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3341.1.1 = { holder = valentian1_99 }
+	3346.1.1 = { holder = valentian1_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_crito = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3295.1.1 = { 
+		holder = crito_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }   
+	}
+	3334.1.1 = { holder = crito_99 }
+	3359.1.1 = { holder = crito_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_ciero = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3195.1.1 = { 
+		holder = ciero_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3231.1.1 = { holder = ciero_98 }
+	3286.1.1 = { holder = ciero_99 }
+	3307.1.1 = { holder = ciero_100	}
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_romus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3369.1.1 = { #Becomes noble in Heartlands
+		holder = romus_100
+		liege = k_heartlands
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+}
+
+c_nf_hanotepelus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3343.1.1 = {
+		holder = hanotepelus_100
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_kaie = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3165.1.1 = {
+		holder = kaie_96
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3218.1.1 = { holder = kaie_97 }
+	3294.1.1 = { holder = kaie_98 }
+	3317.1.1 = { holder = kaie_99b }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_drassi = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3198.1.1 = {
+		holder = drassi_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3233.1.1 = { holder = drassi_99 }
+	3299.1.1 = { holder = drassi_100 }
+	3350.12.22 = { holder = drassi_101 }
+	3351.11.7 = { holder = drassi_101b }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_osician = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3261.1.1 = {
+		holder = osician_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3296.1.1 = { holder = osician_98 }
+	3329.1.1 = { holder = osician_99 }
+	3341.1.1 = { holder = osician_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+	3461.1.1 = { 
+		holder = osician_104
+		liege = d_variela 
+	}
+}
+
+c_nf_vandacia = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3352.1.1 = {
+		holder = vandacia_100
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3392.1.15 = { holder = vandacia_101 }
+	3403.1.15 = { holder = vandacia_102 }
+	3442.4.15 = { holder = vandacia_103 }
+}
+
+c_nf_martius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3299.1.1 = {
+		holder = martius_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3337.6.13 = { holder = martius_99 }
+	3348.12.28 = { holder = martius_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_saluphus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3332.1.1 = {
+		holder = saluphus_99
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3358.1.15 = { holder = saluphus_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_galenus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3278.1.1 = {
+		holder = galenus_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3311.12.28 = { holder = galenus_98 }
+	3347.11.6 = { holder = galenus_99 }
+	3353.10.5 = { holder = galenus_100 }
+	3400.1.8 = { holder = galenus_101 }
+	3426.7.2 = { holder = galenus_102b } #Inherited by second child
+	3462.2.24 = { holder = 0 }
+}
+
+c_nf_leztixus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3264.1.1 = {
+		holder = leztixus_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3325.1.1 = { holder = leztixus_99 }
+	3352.10.9 = { holder = leztixus_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_fleccian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3276.1.1 = {
+		holder = fleccian_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3305.1.1 = { holder = fleccian_99 }
+	3343.1.1 = { holder = fleccian_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_voteporix = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3265.1.1 = {
+		holder = voteporix_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3301.1.1 = { holder = voteporix_98 }
+	3334.1.1 = { holder = voteporix_99 }
+	3351.1.1 = { holder = voteporix_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_meronian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3248.1.1 = {
+		holder = meronian_96
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3265.1.1 = { holder = meronian_97 }
+	3300.1.1 = { holder = meronian_98 }
+	3326.1.1 = { holder = meronian_99 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_derana = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3320.1.1 = {
+		holder = derana_99
+		liege = k_bravil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3367.1.1 = { holder = derana_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+}
+
+c_nf_bartholomo = {	
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3299.1.1 = {
+		holder = bartholomo_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3326.1.1 = { holder = bartholomo_99 }
+	3354.7.15 = { holder = bartholomo_100 }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_cuptor = {	
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2938.1.1 = {
+		holder = cuptor_10
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2963.1.1 = { holder = cuptor_11 }
+	2999.1.1 = { holder = cuptor_12 }
+	3086.1.1 = { holder = cuptor_13 }
+	3093.1.1 = { holder = cuptor_14 }
+	3119.1.1 = { holder = cuptor_15 }
+	3159.1.1 = { holder = cuptor_16 }
+	3172.1.1 = { holder = cuptor_17 }
+	3221.1.1 = { holder = cuptor_18 }
+	3236.1.1 = { holder = cuptor_97 }
+	3270.1.1 = { holder = cuptor_98 }
+	3320.1.1 = { holder = cuptor_99 }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_suviero = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2891.1.1 = {
+		holder = suviero_1
+		liege = e_cyrodiil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3126.1.1 = { 
+		holder = suviero_94
+		liege = e_potentate
+	}
+	3167.1.1 = { holder = suviero_95 }
+	3191.1.1 = { holder = suviero_96 }
+	3249.8.28 = { holder = suviero_97 }
+	3261.7.21 = { holder = suviero_98 }
+	3289.11.24 = { holder = suviero_99 }
+	3317.1.1 = { holder = suviero_100 }
+	3337.1.1 = { holder = suviero_101 }
+	3366.7.25 = { holder = suviero_102 }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_aeresius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3266.1.1 = {
+		holder = aeresius_98
+		liege = d_cheydinhal
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3334.1.1 = { holder = aeresius_99 }
+	3353.1.1 = { holder = aeresius_100 }
+	3362.9.11 = { holder = aeresius_100b }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_aylerian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3332.1.1 = {
+		holder = aylerian_98
+		liege = d_cheydinhal
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3353.1.1 = { holder = aylerian_99 }
+	3358.11.13 = { holder = aylerian_100 }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_duronian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3348.1.1 = {
+		holder = duronian_100
+		liege = d_cheydinhal
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3362.12.4 = { holder = 0 }
+	3462.1.1 = { 
+		holder = duronian_103
+		liege = k_heartlands
+	}
+	3478.1.1 = { holder = duronian_104 }
+}
+
+c_nf_quivelius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3358.1.1 = {
+		holder = quivelius_100
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_cedrian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3267.1.1 = { 
+		holder = cedrian_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3301.1.1 = { holder = cedrian_99 }
+	3357.1.1 = { holder = cedrian_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+}
+
+c_nf_nepiliae = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3305.1.1 = { 
+		holder = nepiliae_99
+		liege = d_blueroad
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3354.1.1 = { holder = nepiliae_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+}
+
+c_nf_brol = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2749.1.1 = { 
+		holder = brol_1
+		liege = e_cyrodiil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2782.1.1 = { holder = brol_2 }
+	3146.1.1 = {
+		holder = brol_97
+		liege = e_potentate
+	}
+	3212.1.1 = { holder = brol_98 }
+	3296.1.1 = { holder = brol_99 }
+	3352.1.1 = { holder = brol_100 }
+	3363.5.15 = { holder = 0 } #Attrebus persecution
+	3473.1.17 = { #Brols get Sejanus
+		holder = brol_105b
+		liege = k_heartlands
+	}
+}
+
+c_nf_sartos = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3292.1.1 = { 
+		holder = sartos_98 
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3326.1.1 = { holder = sartos_99 }
+	3356.6.14 = { holder = sartos_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+	3461.1.1 = {
+		holder = sartos1_104
+		liege = k_heartlands
+	}
+	3492.1.1 = { holder = sartos1_105 }
+}
+
+c_nf_terentius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3244.9.4 = { 
+		holder = terentius_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3282.11.7 = { holder = terentius_98c }
+	3311.4.15 = { holder = terentius_99 }
+	3341.1.1 = { holder = terentius_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+	3426.1.1 = { #Join Svalla Axe-Rester through marriage alliance
+		holder = terentius_102
+		liege = k_heartlands 
+	}
+	3436.10.8 = { holder = terentius_103 }
+	3460.1.1 = { holder = terentius_104 } #Previous character retires before death
+	3487.1.1 = { holder = terentius_105 }
+}
+
+c_nf_antonius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3356.1.1 = { 
+		holder = antonius_100
+		liege = d_urasek
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+	3426.1.1 = {
+		liege = k_heartlands
+		holder = antonius_102
+	}
+	3445.1.1 = { holder = antonius_103 }
+	3482.1.1 = { holder = antonius_104b }
+}
+
+c_nf_venalia = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3286.1.1 = { 
+		holder = venalia_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3303.1.1 = { holder = venalia_99 }
+	3310.1.1 = { liege = d_magia }
+	3355.1.1 = { holder = venalia_100 }
+	3362.12.4 = { holder = venalia_101 }
+	3423.1.1 = { holder = venalia_102 }
+	3470.1.1 = { holder = venalia_103 }
+	3502.1.1 = { holder = venalia_104 }
+}
+
+c_nf_bascilius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3277.1.1 = { 
+		holder = bascilius_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3312.1.1 = { holder = bascilius_98 }
+	3349.1.1 = { 
+		holder = bascilius_99
+		liege = d_variela 
+	}
+	3368.1.1 = { holder = basicilius_100 }
+	3368.9.22 = { liege = k_heartlands }
+	3412.1.1 = { holder = basicilius_101b }
+	3418.4.13 = { holder = 0 }
+}
+
+c_nf_quintilius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3225.1.1 = { 
+		holder = quintilius_95
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3257.1.1 = { holder = quintilius_96 }
+	3295.1.1 = { holder = quintilius_97 }
+	3323.1.1 = { holder = quintilius_98 }
+	3339.1.1 = { holder = quintilius_99 }
+	3359.1.1 = { holder = quintilius_100 }
+	3368.9.22 = { holder = 0 } #Formally under Attrebus until the end
+	3430.1.1 = {
+		holder = quintilius_101
+		liege = k_heartlands
+	}
+	3466.1.1 = { holder = quintilius_102 }
+	3471.1.1 = { holder = quintilius_104 }
+}
+
+c_nf_tsavizus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3270.1.1 = { 
+		holder = tsavizus_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3308.1.1 = { holder = tsavizus_98 }
+	3331.1.1 = { 
+		holder = tsavizus_99
+		liege = d_virtue 
+	}
+	3341.1.1 = { holder = tsavizus_100 }
+	3362.12.21 = { holder = 0 } #Attrebus persecution
+}
+
+c_nf_szivi = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3242.1.1 = { 
+		holder = szivi_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3292.1.1 = { holder = szivi_98 }
+	3319.1.1 = { holder = szivi_99 }
+	3356.1.1 = { holder = szivi_100 }
+	3362.12.21 = { holder = 0 } #Attrebus persecution
+}
+
+c_nf_belucci = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3326.1.1 = { 
+		holder = belucci_99
+		liege = d_facian
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3354.1.1 = { holder = belucci_100 }
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_efinicci = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3326.1.1 = { 
+		holder = efinicci_100
+		liege = d_cropsford
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3363.1.1 = { holder = 0 } #Cropsford kind of falls apart
+}
+
+c_nf_locundus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3344.1.1 = {
+		holder = locundus_100
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3362.12.4 = { holder = 0 } #Potentate falls apart
+}
+
+c_nf_salvius = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3243.1.1 = {
+		holder = salvius_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3262.1.1 = { liege = d_caer_suvio }
+	3281.1.1 = { holder = salvius_98 }
+	3302.1.1 = { holder = salvius_99 }
+	3352.1.1 = { holder = salvius_100 }
+	3362.12.4 = { holder = 0 }
+}
+
+c_nf_shouz = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3268.1.1 = {
+		holder = shouz_97
+		liege = d_sejanus
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3289.1.1 = { holder = shouz_98 }
+	3318.1.1 = { holder = shouz_99 }
+	3357.1.1 = { holder = shouz_100 }
+	3368.9.22 = { holder = 0 } #Attrebus dies 
+}
+
+c_nf_dherirrik = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3237.1.1 = {
+		holder = dherirrik_97
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3295.1.1 = { holder = dherirrik_99 }
+	3345.1.1 = { holder = dherirrik_100 }
+	3363.1.15 = { holder = 0 }
+	3430.7.6 = { holder = dherirrik_102 } #Given governoship by Alexius-Chorak
+	3439.1.1 = { holder = dherirrik_103 }
+	3456.1.1 = { holder = dherirrik_104 }
+	3478.1.1 = { holder = dherirrik_105 }
+}
+
+#450
+c_nf_sosildor = {
+	3370.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3370.1.1 }
+		}
+	}
+	3201.5.12 = { holder = sosildor_94 }
+	3222.1.1 = { holder = sosildor_95 }
+	3251.1.1 = { holder = sosildor_96 }
+	3276.1.1 = { holder = sosildor_97 }
+	3339.4.14 = { holder = sosildor_99 }
+	3350.12.18 = { holder = 0 } #Potentate murdered
+	3362.12.4 = { holder = sosildor_100 }
+	3368.9.22 = { 
+		holder = sosildor_101
+		liege = k_heartlands
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3409.7.10 = { holder = 0 }
+	3415.2.26 = { holder = sosildor_102 }
+	3418.4.13 = { holder = 0 }
+}
+
+c_nf_lex = { # Lex
+	3370.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3370.1.1 }
+		}
+	}
+	3282.1.1 = { 
+		holder = lex_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3319.1.1 = { holder = lex_99 }
+	3341.1.1 = { holder = lex_caius }
+	3350.12.18 = { holder = 0 } #Potentate murdered
+	3362.12.4 = { #Join Attrebus
+		holder = lex_caius
+		liege = k_heartlands
+	}
+	3376.10.7 = { holder = lex_101 }
+	3405.4.5 = { holder = lex_102 }
+	3419.2.4 = { holder = 0 }
+}
+
+c_nf_haraka = { #Heartlands Tharns
+	3370.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3370.1.1 }
+		}
+	}
+	3280.1.1 = { 
+		holder = haraka_98
+		liege = e_potentate
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3308.1.1 = { 
+		holder = haraka_99
+		liege = d_magia
+	}
+	3327.1.1 = { holder = haraka_100 }
+	3367.1.1 = { holder = haraka_101 }
+	3368.9.22 = { liege = k_heartlands }
+	3416.1.1 = { holder = haraka_102 }
+	3431.1.1 = { holder = haraka_104 }
+	3448.2.24 = { holder = haraka_104b }
+}
+
+c_nf_abelius = {
+	3370.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3370.1.1 }
+		}
+	}
+	3330.1.1 = { 
+		holder = abelius_99
+		liege = d_nikel
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}	
+	3350.12.18 = { holder = 0 } #Potentate murdered
+	3362.12.4 = { #Join Attrebus and Caius
+		holder = abelius_100
+		liege = d_nikel
+	}
+	3368.7.12 = { holder = abelius_100b }
+	3408.1.1 = { holder = abelius_101 }
+	3425.1.1 = { holder = abelius_102 }
+	3456.1.1 = { holder = abelius_103 }
+	3489.1.1 = { holder = abelius_104 }
+}
+
+c_nf_falco = {
+	3370.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3370.1.1 }
+		}
+	}
+	3364.6.1 = {
+		holder = falco_100
+		liege = k_heartlands
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3368.7.8 = { holder = falco_101 }
+}
+
+#572
+c_nf_galsalis = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3412.1.1 = {
+		holder = timberclaw_100
+		liege = k_heartlands 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	} 
+	3429.1.1 = { holder = 0 } #Exiled by Alexius-Chorak
+	3434.1.1 = { holder = timberclaw_101 } #Return after Alexius-Chorak dies
+	3456.1.1 = { holder = timberclaw_102 }
+	3468.1.1 = { holder = timberclaw_103 }
+}
+
+c_nf_kairian = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3436.1.1 = {
+		holder = kairian_100
+		liege = k_heartlands 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3446.7.10 = { holder = kairian_101 }
+	3468.1.1 = { holder = kairian_101b }
+	3487.1.1 = { holder = kairian_102 }
+}
+
+c_nf_ironbeak = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3460.1.1 = {
+		holder = ironbeak_100
+		liege = k_heartlands
+		government = administrative_government  
+		succession_laws = { noble_family_succession_law }
+	}
+}
+c_nf_jirich = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3424.1.1 = { #Start being important when Heartlands conquer Caractacus for the first time
+		holder = jirich_98
+		liege = k_heartlands
+		government = administrative_government  
+		succession_laws = { noble_family_succession_law }
+	}
+	3455.1.1 = { holder = jirich_99 }
+	3470.1.1 = { holder = jirich_100 }
+}
+c_nf_ettila = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3431.1.1 = {
+		holder = ettila_100
+		liege = k_heartlands
+		government = administrative_government  
+		succession_laws = { noble_family_succession_law }
+	}
+	3468.1.1 = { holder = ettila_101 }
+	3486.1.1 = { holder = ettila_102 }
+}
+
+c_nf_durcorach = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3447.1.1 = { #Aneurin becomes an important figure in Imperial City
+		holder = durcorach_103
+		liege = k_heartlands
+		government = administrative_government  
+		succession_laws = { noble_family_succession_law }
+	}
+	3491.3.25 = { holder = durcorach_104 } #Aethra
+	3496.4.8 = { holder = durcorach_104d } #Morica
+	3498.1.1 = { holder = 0 } #EK TODO: maybe should go to cousin in Farragut
+}
+
+c_nf_bigano = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3462.1.1 = {
+		holder = bigano_102
+		liege = k_heartlands
+		government = administrative_government  
+		succession_laws = { noble_family_succession_law }
+	}
+	3469.1.1 = { holder = bigano_103 }
+	3482.1.1 = { holder = bigano_104 }
+}
+
+c_nf_tremellian = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3462.1.1 = { 
+		holder = tremellian_106
+		liege = k_heartlands
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law }
+	}
+	3486.10.31 = { holder = tremellian_107 }
+	3491.1.1 = { holder = tremellian_107b }
+}
+
+c_nf_harachton = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3447.5.23 = { 
+		holder = harachton_100
+		liege = k_heartlands
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law } 
+	}
+	3459.10.20 = { holder = harachton_101 }
+	3489.1.1 = { holder = harachton_102 }
+	3498.1.1 = { holder = 0 } #Planemeld
+}
+
+c_nf_ottiliae = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3290.1.1 = {
+		holder = ottiliae_98
+		liege = e_potentate
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law } 
+	}
+	3322.1.1 = { holder = ottiliae_99 }
+	3340.1.1 = { holder = ottiliae_100 }
+	3368.9.22 = { holder = 0 }
+	3434.1.1 = { #Join Heartlands
+		liege = k_heartlands
+		holder = ottiliae_103
+	}
+	3441.10.1 = { holder = ottiliae_103b }
+	3478.1.1 = { holder = ottiliae_104 }
+}
+
+c_nf_arvina = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3462.2.24 = { 
+		holder = arvina_100
+		liege = k_heartlands
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law }
+	}
+}
+
+c_nf_ulpius = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3392.1.1 = { 
+		holder = frostwall_102
+		liege = k_heartlands
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law } 
+	}
+	3401.2.17 = { holder = frostwall_103 }
+	3451.10.18 = { holder = frostwall_104 }
+	3482.7.25 = { holder = frostwall_105 }
+	3511.1.1 = { holder = frostwall_106b }
+}
+
+c_nf_bonavo = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3473.1.1 = {
+		holder = bonavo_104
+		liege = k_heartlands
+		government = administrative_government 
+		succession_laws = { noble_family_succession_law } 
+	}
+	3502.1.1 = { holder = bonavo_105 }
+	3528.1.1 = { holder = bonavo_106 }
+}
+
+#Indoril families
+c_nf_meris = { #Meris
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2755.7.17 = { 
+		holder = meris_93
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2858.11.14 = { holder = meris_94 }
+	2995.6.11 = { holder = meris_95 }
+	3069.5.20 = { holder = meris_96 }
+	3175.2.23 = { holder = meris_97 }
+	3280.7.2 = { holder = meris_98 }
+	3362.11.8 = { holder = meris_100 }
+	3493.1.1 = { holder = meris_101 }
+	3609.10.30 = { holder = meris_102 }
+}
+
+c_nf_llothis = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	1672.11.15 = { 
+		holder = llothis_82
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }   
+	}
+	1800.4.6 = { holder = llothis_83 }
+	1908.11.17 = { holder = llothis_84 }
+	2001.5.27 = { holder = llothis_85 }
+	2095.3.13 = { holder = llothis_86 }
+	2165.4.15 = { holder = llothis_87 }
+	2376.5.24 = { holder = llothis_88 }
+	2393.1.26 = { holder = llothis_88b }
+	2457.1.1 = { holder = llothis_89 }
+	2514.8.21 = { holder = llothis_90 }
+	2579.9.3 = { holder = llothis_91 }
+	2671.7.30 = { holder = llothis_92 }
+	2730.7.2 = { holder = llothis_93 }
+	2849.2.27 = { holder = llothis_94 }
+	2936.3.6 = { holder = llothis_95 }
+	3024.7.15 = { holder = llothis_96 }
+	3135.4.13 = { holder = llothis_97 }
+	3218.3.8 = { holder = llothis_98 }
+	3308.1.21 = { holder = llothis_99 }
+	3364.1.15 = { holder = llothis_100 }
+	3491.4.28 = { holder = llothis_102 }
+	3604.8.22 = { holder = llothis_103 }
+}
+
+c_nf_saryoni = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3049.9.24 = { 
+		holder = saryoni_97
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3178.3.26 = { holder = saryoni_98 }
+	3241.11.6 = { holder = saryoni_99 }
+	3336.2.2 = { holder = saryoni_100 }
+	3418.9.22 = { holder = saryoni_101 }
+	3551.7.18 = { holder = saryoni_102 }
+}
+
+c_nf_delyn = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3058.5.8 = { 
+		holder = delyn_97
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3107.4.5 = { holder = delyn_97b }
+	3144.1.1 = { holder = delyn_98 }
+	3225.12.28 = { holder = delyn_99 }
+	3328.7.8 = { holder = delyn_100 }
+	3436.12.8 = { holder = delyn_101 }
+	3461.3.16 = { holder = delyn_104 }
+	3549.12.29 = { holder = delyn_105 }
+	3657.2.17 = { holder = delyn1_105 }
+}
+
+c_nf_sedroth = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	940.11.18 = { 
+		holder = sedroth_1
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }   
+	}
+	1015.2.6 = { holder = sedroth_2 }
+	1103.1.30 = { holder = sedroth_3 }
+	3018.8.9 = { holder = sedroth_96 }
+	3122.12.2 = { holder = sedroth_97 }
+	3176.11.3 = { holder = sedroth_98 }
+	3254.9.4 = { holder = sedroth_99 }
+	3341.11.21 = { holder = sedroth_100 }
+	3425.9.23 = { holder = sedroth1_100 }
+	3456.8.29 = { holder = sedroth1_101 }
+	3574.1.26 = { holder = sedroth1_102b }
+}
+
+c_nf_raathim = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	700.1.1 = { 
+		holder = raathim_1
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2166.1.1 = { holder = raathim1b1 }
+	2228.1.1 = { holder = raathim1b2 }
+	3096.5.27 = { holder = raathim_97 }
+	3199.2.9 = { holder = raathim_98 }
+	3252.2.25 = { holder = raathim_99 }
+	3325.9.5 = { holder = raathim_100 }
+	3364.12.6 = { holder = raathim_101 }
+	3433.1.1 = { holder = raathim_102 }
+}
+
+c_nf_llori = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3050.6.3 = { 
+		holder = llori_97
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3186.7.1 = { holder = llori_98 }
+	3275.12.29 = { holder = llori_99 }
+	3327.11.16 = { holder = llori_100 }
+	3430.5.1 = { holder = llori_101 }
+}
+
+c_nf_ilvi = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2768.9.15 = { 
+		holder = ilvi_94
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2841.2.10 = { holder = ilvi_95 }
+	2849.8.7 = { holder = ilvi_95b }
+	2989.1.4 = { holder = ilvi_96 }
+	3073.12.14 = { holder = ilvi_97 }
+	3184.1.28 = { holder = ilvi_98 }
+	3251.3.7 = { holder = ilvi_99 }
+    3327.7.25 = { holder = ilvi_100 }
+	3378.6.4 = { holder = ilvi_100b }
+	3423.3.13 = { holder = ilvi_101b }
+	3513.1.1 = { holder = ilvi_102 }
+}
+
+c_nf_salvu = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	733.1.1 = { #Warlord submits to Tribunal
+		holder = salvu_1
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	} 
+	833.11.25 = { holder = salvu_2 }
+	928.5.16 = { holder = salvu_3 }
+	3057.6.29 = { holder = salvu_98 }
+	3168.1.13 = { holder = salvu_99 }
+	3243.12.22 = { holder = salvu_100 }
+	3309.1.1 = { holder = salvu_101 }
+	3367.9.23 = { holder = salvu_101b }
+	3390.8.4 = { holder = salvu_101c }
+	3408.9.30 = { holder = salvu_102 }
+	3468.3.19 = { holder = salvu_103 }
+	3486.3.11 = { holder = salvu1_100 }
+	3545.8.6 = { holder = salvu1_100b }
+	3568.11.26 = { holder = salvu1_101 }
+	3638.7.11 = { holder = salvu1_102 }
+}
+
+c_nf_seras = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2784.6.11 = {
+		holder = seras_93
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2861.4.4 = { holder = seras_94 }
+	2954.3.29 = { holder = seras_95 }
+	3054.12.7 = { holder = seras_96 }
+	3137.3.20 = { holder = seras_97 }
+	3246.11.17 = { holder = seras_98 }
+	3306.10.1 = { holder = seras_99 }
+	3338.5.24 = { holder = seras_100 }
+	3437.7.19 = { holder = seras_101 }
+	3481.6.14 = { holder = seras_101b }
+}
+
+c_nf_karath = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	798.1.1 = { #Conquered by Indorils
+		holder = karath_1
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3055.8.21 = { holder = karath_98 }
+	3134.3.4 = { holder = karath_99 }
+	3236.9.16 = { holder = karath_100 }
+	3459.7.12 = { holder = karath_102 }
+	3466.8.21 = { holder = karath1_102 }
+	3530.11.5 = { holder = karath1_103 }
+}
+
+c_nf_ornavel = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3045.1.1 = { 
+		holder = ornavel_96
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3146.11.6 = { holder = ornavel_97 }
+	3185.9.23 = { holder = ornavel_98 }
+	3212.1.31 = { holder = ornavel_99 }
+	3329.4.29 = { holder = ornavel_100 }
+	3455.7.8 = { holder = ornavel_101 }
+}
+
+c_nf_beroth = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2855.1.1 = { 
+		holder = beroth_95
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2887.5.24 = { holder = beroth_96 }
+	3076.7.20 = { holder = beroth_97 }
+	3159.12.22 = { holder = beroth_98 }
+	3228.4.13 = { holder = beroth_99 }
+	3319.12.18 = { holder = beroth_100 }
+	3402.10.21 = { holder = beroth_101 }
+	3476.9.7 = { holder = beroth_102 }
+}
+
+c_nf_indalas = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2504.10.10 = { 
+		holder = indalas_1
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2613.1.30 = { holder = indalas_2b }
+	3194.3.2 = { holder = indalas_97 }
+	3291.4.10 = { holder = indalas_98 }
+	3322.5.31 = { holder = indalas_99 }
+	3356.8.22 = { holder = indalas_100 }
+	3589.5.13 = { holder = indalas_101 }
+}
+
+c_nf_llathsa = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3120.1.1 = {
+		holder = llathsa_98 
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3198.1.1 = { holder = llathsa_99 }
+	3305.1.1 = { holder = llathsa_100 }
+	3398.1.1 = { holder = llathsa_101 }
+	3489.3.25 = { holder = llathsa_103 }
+}
+
+c_nf_parys = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2741.3.24 = { 
+		holder = parys_93
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2846.1.21 = { holder = parys_94 }
+	2937.1.1 = { holder = parys_95 }
+	3018.1.1 = { holder = parys_96 }
+	3127.1.1 = { holder = parys_97 }
+	3193.1.1 = { holder = parys_98 }
+	3301.1.1 = { holder = parys_99 }
+	3338.1.1 = { holder = parys_100 }
+	3495.1.1 = { holder = parys_101 }
+}
+
+c_nf_dorom = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2350.7.15 = { 
+		holder = dorom_91
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2417.5.19 = { holder = dorom_92 }
+	2544.1.13 = { holder = dorom_93 }
+	2624.3.2 = { holder = dorom_94 }
+	2713.9.30 = { holder = dorom_95 }
+	2826.6.10 = { holder = dorom_96 }
+	2834.1.18 = { holder = dorom_brindisi } #Ruled this before becoming head Indoril
+	2920.11.12 = { holder = dorom1_97 }
+	2976.7.4 = { holder = dorom_96c }
+	3021.1.1 = { holder = dorom_97 }
+	3104.2.18 = { holder = dorom_98 }
+	3179.5.15 = { holder = dorom_99 }
+	3280.11.3 = { holder = dorom_100 }
+	3391.8.22 = { holder = dorom_101 }
+	3444.3.28 = { holder = dorom_101b }
+	3487.6.9 = { holder = dorom_102 }
+	3488.1.13 = { holder = dorom_104 }
+}
+
+c_nf_indoril = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	331.11.1 = { holder = indoril_1 }
+	390.4.9 = { holder = indoril_almalexia }
+	699.1.1 = { 
+		holder = indoril_4
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	746.6.2 = { holder = indoril_5 }
+	835.4.18 = { holder = indoril_6 }
+	909.3.6 = { holder = indoril_6c }
+	994.1.1 = { holder = indoril_7 }
+	1109.3.4 = { holder = indoril_8b }
+	1217.2.15 = { holder = indoril_9 }
+	1272.4.29 = { holder = indoril_9b }
+	1369.1.1 = { holder = indoril_10 }
+	1606.11.2 = { holder = indoril_12 }
+	1691.4.12 = { holder = indoril_13b }
+	1746.10.17 = { holder = indoril_14 }
+	1825.5.24 = { holder = indoril_15 }
+	1849.9.13 = { holder = indoril_16 }
+	1945.6.28 = { holder = indoril_17 }
+	2009.9.26 = { holder = indoril_18 }
+	2108.4.14 = { holder = indoril_19 }
+	2176.3.21 = { holder = indoril_19b }
+	2205.9.4 = { holder = indoril_20 }
+	2252.9.3 = { holder = indoril_20b }
+	2304.1.4 = { holder = indoril_91 }
+	2598.4.29 = { holder = indoril_92 }
+	2607.9.24 = { holder = indoril_93 }
+	2680.3.23 = { holder = indoril_93b }
+	2720.12.26 = { holder = indoril_93c }
+	2767.1.1 = { holder = indoril_94 }
+	2851.2.16 = { holder = indoril_95 }
+	2858.6.1 = { holder = indoril_96 }
+	2920.11.12 = { holder = indoril_97 }
+	3092.10.27 = { holder = indoril_97b }
+	3156.1.1 = { holder = indoril_98 }
+	3214.5.12 = { holder = indoril_99 }
+	3316.8.31 = { holder = indoril_100 }
+	3363.3.21 = { holder = indoril_100b }
+	3408.7.10 = { holder = indoril_101 }
+	3489.5.19 = { holder = indoril_102b }
+	3493.1.1 = { holder = indoril_103 }
+	3502.8.15 = { holder = indoril_105 }
+	3638.11.3 = { holder = indoril_106 }
+}
+c_nf_llethan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3167.1.1 = { 
+		holder = llethan_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3230.1.1 = { holder = llethan_99 }
+	3335.1.1 = { holder = llethan_100 }
+	3399.1.1 = { holder = llethan_101 }
+	3482.1.1 = { holder = llethan_102 }
+	3554.1.1 = { holder = llethan_103 }
+	3633.1.1 = { holder = llethan_103b }
+}
+c_nf_vandas = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3106.1.1 = { 
+		holder = vandas_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3283.1.1 = { holder = vandas_99 }
+	3325.1.1 = { holder = vandas_100 }
+	3414.1.1 = { holder = vandas_101 }
+	3479.1.1 = { holder = vandas_102 }
+}
+
+c_nf_balver = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2290.1.1 = {
+		holder = balver_2
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3164.1.1 = { holder = balver_98 }
+	3244.1.1 = { holder = balver_99 }
+	3338.1.1 = { holder = balver_100 }
+	3440.1.1 = { holder = balver_101 }
+	3486.1.1 = { holder = 0 } #Balvers die from Knahaten
+}
+
+c_nf_salothran = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2819.1.1 = { 
+		holder = salothran_95
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2926.1.5 = { holder = salothran_96 }
+	3009.9.24 = { holder = salothran_97 }
+	3115.7.11 = { holder = salothran_98 }
+	3211.12.3 = { holder = salothran_99 }
+	3309.8.19 = { holder = salothran_100 }
+	3406.6.10 = { holder = salothran_101 }
+	3480.12.12 = { holder = salothran_102 }
+	3568.9.5 = { holder = salothran_103 }
+}
+
+c_nf_drora = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3060.12.20 = { 
+		holder = drora_97
+		liege = d_darvonis
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3195.11.5 = { holder = drora_98 }
+	3283.4.19 = { holder = drora_99 }
+	3333.3.22 = { holder = drora_100 }
+	3420.11.6 = { holder = drora_101 }
+	3484.10.18 = { holder = drora_102 }
+	3560.11.6 = { holder = drora_103 }
+}
+
+c_nf_sandil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	610.1.1 = { 
+		holder = sandil_triffith
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	802.1.1 = { holder = sandil_baynarah }
+	3200.1.1 = { holder = sandil_98 }
+	3269.10.14 = { holder = sandil_99 }
+	3348.3.16 = { holder = sandil_100 }
+	3368.7.8 = { holder = sandil_101b }
+	3391.6.15 = { holder = sandil_102 }
+	3481.8.20 = { holder = sandil1_103 }
+}
+
+c_nf_ieneth =  {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3094.1.1 = { 
+		holder = ieneth_97
+		liege = d_alavelis
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3193.1.1 = { holder = ieneth_98 }
+	3281.11.27 = { holder = ieneth_99 }
+	3351.5.29 = { holder = ieneth_100 }
+	3369.11.19 = { holder = ieneth_100b } #Ivulan defeated
+	3491.7.14 = { holder = ieneth_101 }
+}
+
+c_nf_sathil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3150.10.16 = { 
+		holder = sathil_98
+		liege = d_nanaav
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3214.8.27 = { holder = sathil_99 }
+	3276.4.29 = { holder = sathil_100 }
+	3400.6.18 = { holder = sathil_101 }
+	3469.9.9 = { holder = sathil_102 }
+}
+
+c_nf_salor = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3176.1.1 = {
+		holder = salor_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3281.11.10 = { holder = salor_99 }
+	3349.7.4 = { holder = salor_100 }
+	3407.5.4 = { holder = salor_101 }
+}
+
+c_nf_llaren = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3126.1.1 = {
+		holder = llaren_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3228.1.1 = { holder = llaren_99 }
+	3327.7.30 = { holder = llaren_100 }
+	3375.1.1 = { holder = llaren_101 }
+	3429.1.1 = { holder = llaren_102 }
+	3455.1.1 = { holder = llaren_103 }
+	3483.1.1 = { liege = d_taldeic }
+}
+
+c_nf_gindu = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3199.1.1 = {
+		holder = gindu_99
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3303.1.1 = { holder = gindu_100 }
+	3405.1.1 = { holder = gindu_101 }
+	3476.9.7 = { liege = d_nanaav }
+	3486.1.1 = { holder = gindu_102 }
+}
+
+c_nf_davor = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3155.1.1 = {
+		holder = davor_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3222.1.1 = { holder = davor_99 }
+	3314.1.1 = { holder = davor_100 }
+}
+
+c_nf_baren = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3175.1.1 = {
+		holder = baren_98
+		liege = k_indoril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3260.1.1 = { holder = baren_99 }
+	3326.1.1 = { holder = baren_100 }
+	3383.1.1 = { holder = baren_101 }
+	3469.1.1 = { holder = baren_102 }
+}
+
+c_nf_delvi = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3265.1.1 = {
+		holder = delvi_99
+		liege = d_taldeic
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3339.1.1 = { holder = delvi_100 }
+	3418.1.1 = { holder = delvi_101 }
+	3483.1.1 = { holder = 0 }
+}
+
+c_nf_arthalen = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3062.10.6 = {
+		holder = arthalen_97
+		liege = d_taldeic
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3184.1.30 = { holder = arthalen_98 }
+	3244.5.5 = { holder = arthalen_99 }
+	3335.10.27 = { holder = arthalen_100 }
+	3414.9.16 = { holder = arthalen_101 }
+	3475.8.12 = { holder = arthalen_102 }
+}
+
+#Hlaalu
+
+c_nf_hlaalu = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	240.9.29 = { holder = hlaalu_2 }
+	301.6.26 = { holder = hlaalu_3 }
+	510.10.1 = { 
+		holder = hlaalu_4
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	671.8.30 = { holder = hlaalu_5b }
+	749.12.15 = { holder = hlaalu_6 }
+	818.1.1 = { holder = hlaalu_6b }
+	829.3.5 = { holder = hlaalu_7 }
+	904.5.13 = { holder = hlaalu_9 }
+	1007.1.1 = { holder = hlaalu_10 }
+	1145.8.20 = { holder = hlaalu_11 }
+	1203.1.1 = { holder = hlaalu_15 }
+	1309.1.1 = { holder = hlaalu_16 }
+	1422.4.14 = { holder = hlaalu_17b }
+	1461.5.10 = { holder = hlaalu_18 }
+	1539.1.1 = { holder = hlaalu_19 }
+	1672.2.19 = { holder = hlaalu_20 }
+	1703.1.1 = { holder = hlaalu_20b }
+	1719.1.1 = { holder = hlaalu_20c }
+	1768.4.25 = { holder = hlaalu_21 }
+	1874.1.1 = { holder = hlaalu_22 }
+	1955.1.1 = { holder = hlaalu_23 }
+	2016.12.13 = { holder = hlaalu_87 }
+	2104.11.15 = { holder = hlaalu_88 }
+	2179.7.23 = { holder = hlaavur_1 }
+	2203.8.19 = { holder = hlaalu_89 }
+	2300.9.4 = { holder = hlaalu_90 }
+	2368.3.1 = { holder = hlaalu_90b }
+	2384.8.12 = { holder = hlaalu_91 }
+	2409.10.23 = { holder = hlaalu_91b }
+	2481.1.1 = { holder = hlaalu_92 }
+	2501.2.8 = { holder = hlaalu_93 }
+	2638.4.4 = { holder = hlaalu_94 }
+	2708.10.5 = { holder = hlaalu_95 }
+	2823.1.1 = { holder = hlaalu_96 }
+	3044.5.18 = { holder = hlaalu_97b }
+	3096.1.1 = { holder = hlaalu_98 }
+	3132.12.21 = { holder = hlaalu_99 }
+	3211.8.30 = { holder = hlaalu1_100 }
+	3343.8.30 = { holder = hlaalu_100 }
+	3436.7.9 = { holder = hlaalu_101b }
+	3481.1.1 = { holder = hlaalu2_102 }
+}
+
+c_nf_dren = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	798.1.1 = { 
+		holder = dren_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	909.1.1 = { holder = dren_2 }
+	1018.1.1 = { holder = dren_3 }
+	3087.1.1 = { holder = dren_98 }
+	3208.1.1 = { holder = dren_99 }
+	3287.1.1 = { holder = dren_100 }
+	3369.1.1 = { holder = dren_101 }
+	3419.1.1 = { holder = dren_102 }
+	3477.1.1 = { holder = dren_103 }
+}
+
+c_nf_hla_alu = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	1122.1.1 = {
+		holder = hlaarys_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	1257.1.3 = { holder = hlaarys_2 }
+	1349.1.1 = { holder = hlaarys_3 }
+	1409.1.1 = { holder = hlaarys_4 }
+	1500.1.1 = { holder = hlaarys_5 }
+	1616.1.1 = { holder = hlaarys_6 }
+	1745.11.8 = { holder = hlaarys_7 }
+	1803.10.6 = { holder = hlaarys_8 }
+	1899.1.1 = { holder = hlaarys_9 }
+	1979.6.29 = { holder = hlaarys_10 }
+	2037.1.1 = { holder = hlaarys_11 }
+	2148.1.1 = { holder = hlaarys_12 }
+	2229.1.1 = { holder = hlaarys_13 }
+	2304.1.1 = { holder = hlaarys_14 }
+	2467.2.18 = { holder = hlaarys_15 }
+	2538.3.19 = { holder = hlaarys_16 }
+	2608.1.1 = { holder = hlaarys_17 }
+	2718.1.1 = { holder = hlaarys_94 }
+	2786.2.24 = { holder = hlaarys_94b }
+	2856.1.1 = { holder = hlaarys_95 }
+	2927.11.8 = { holder = hlaarys_96 }
+	3018.1.1 = { holder = hlaarys_97 }
+	3126.1.1 = { holder = hlaarys_98 }
+	3199.1.1 = { holder = hlaarys_99 }
+	3270.1.12 = { holder = hlaarys_100 }
+	3365.10.16 = { holder = hlaarys_101 }
+	3453.7.22 = { holder = hlaarys_102 }
+	3554.6.21 = { holder = hlaarys_103 }
+	3608.2.8 = { holder = hlaarys_103b }
+}
+
+c_nf_hlaalo = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	368.1.1 = { 
+		holder = hlaano_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	483.1.1 = { holder = hlaano_2 }
+	601.1.1 = { holder = hlaano_3 }
+	685.1.1 = { holder = hlaano_4 }
+	775.1.1 = { holder = hlaano_4b }
+	842.1.1 = { holder = hlaano_5 }
+	922.2.7 = { holder = hlaano_6 }
+	1029.7.12 = { holder = hlaano_7 }
+	1036.6.19 = { holder = hlaano_9 }
+	1233.1.1 = { holder = hlaano_9b }
+	1309.1.1 = { holder = hlaano_10 }
+	1394.1.1 = { holder = hlaano_11 }
+	1462.1.1 = { holder = hlaano_12 }
+	1554.9.3 = { holder = hlaano_12b }
+	1578.1.1 = { holder = hlaano_13 }
+	1669.1.1 = { holder = hlaano_14 }
+	1737.1.1 = { holder = hlaano_15 }
+	1841.6.23 = { holder = hlaano_16 }
+	1924.1.1 = { holder = hlaano_17 }
+	2020.1.1 = { holder = hlaano_18 }
+	2096.1.11 = { holder = hlaano_18b }
+	2178.1.1 = { holder = hlaano_18c }
+	2289.1.1 = { holder = hlaano_19 }
+	2380.1.1 = { holder = hlaano_20 }
+	2484.1.1 = { holder = hlaano_21 }
+	2599.1.1 = { holder = hlaano_22 }
+	2644.1.1 = { holder = hlaano_92 }
+	2751.6.11 = { holder = hlaano_93 }
+	2829.4.22 = { holder = hlaano_94 }
+	2899.7.9 = { holder = hlaano_95 }
+	2903.1.1 = { holder = hlaano_96 }
+	3041.1.1 = { holder = hlaano_97 }
+	3122.1.1 = { holder = hlaano_98 }
+	3212.4.16 = { holder = hlaano_99 }
+	3264.5.23 = { holder = hlaano_100 }
+	3414.5.28 = { holder = hlaano_101 }
+	3484.1.1 = { holder = hlaano_102 }
+}
+
+c_nf_hlaavur = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2204.1.1 = { #Founded a year after Brevur dies
+		holder = hlaavur_2
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2317.4.9 = { holder = hlaavur_3 }
+	2422.1.23 = { holder = hlaavur_4 }
+	2509.1.1 = { holder = hlaavur_5 }
+	2569.1.1 = { holder = hlaavur_6 }
+	2702.10.23 = { holder = hlaavur_7 }
+	2754.1.1 = { holder = hlaavur_8 }
+	2882.1.1 = { holder = hlaavur_9 }
+	2991.1.1 = { holder = hlaavur_10 }
+	3071.1.1 = { holder = hlaavur_97 }
+	3127.1.1 = { holder = hlaavur_98 }
+	3176.7.20 = { holder = hlaavur_99 }
+	3239.9.22 = { holder = hlaavur_100b }
+	3273.12.1 = { holder = hlaavur_100 }
+	3365.2.14 = { holder = hlaavur_101 }
+	3393.2.4 = { holder = hlaavur_102 }
+}
+
+c_nf_cassian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3350.1.1 = {
+		holder = cassian_100
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3384.1.1 = { holder = cassian_101 }
+	3508.1.1 = { holder = cassian_102 }
+}
+
+c_nf_vedas = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	985.1.1 = {
+		holder = vedas_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3145.1.1 = { holder = vedas_98 }
+	3279.1.1 = { holder = vedas_99 }
+	3334.1.1 = { holder = vedas_100 }
+	3433.1.1 = { holder = vedas_101 }
+}
+
+c_nf_raran = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	1490.1.1 = {
+		holder = raran_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3178.1.1 = { holder = raran_98 }
+	3255.1.1 = { holder = raran_99 }
+	3316.1.1 = { holder = raran_100 }
+	3400.1.1 = { holder = raran_101 }
+}
+
+c_nf_narusa = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3114.1.1 = { 
+		holder = narusa_97
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3185.1.1 = { holder = narusa_98	}
+	3263.1.1 = { holder = narusa_99 }
+	3301.1.1 = { holder = narusa_100 }
+	3435.1.1 = { holder = narusa_101 }
+}
+
+c_nf_ules = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2946.1.1 = { #Become important family after Four Score War
+		holder = ules_95
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2985.1.1 = { holder = ules_96 }
+	3062.1.1 = { holder = ules_97 }
+	3133.1.1 = { holder = ules_98 }
+	3231.1.1 = { holder = ules_99 }
+	3300.1.1 = { holder = ules_100 }
+	3364.1.1 = { holder = ules_101 }
+	3458.1.1 = { holder = ules_103 }
+	3596.1.1 = { holder = ules_104 }
+}
+
+c_nf_bero = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3185.1.1 = { 
+		holder = bero_98
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3251.1.1 = { holder = bero_99 }
+	3321.1.1 = { holder = bero_100 }
+	3390.1.1 = { holder = bero_101 }
+	3451.1.1 = { holder = bero_102 }
+}
+
+c_nf_hlaavus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	430.1.1 = {
+		holder = hlaavus_1
+		liege = k_hlaalu
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	523.1.1 = { holder = hlaavus_2 }
+	618.1.1 = { holder = hlaavus_3 }
+	717.1.1 = { holder = hlaavus_4 }
+	819.9.17 = { holder = hlaavus_5 }
+	905.1.1 = { holder = hlaavus_6 }
+	982.1.1 = { holder = hlaavus_6b }
+	1086.1.1 = { holder = hlaavus_7 }
+	1107.1.1 = { holder = hlaavus_8 }
+	1189.1.1 = { holder = hlaavus_9 }
+	1314.9.21 = { holder = hlaavus_10 }
+	1403.1.1 = { holder = hlaavus_11 }
+	1495.1.1 = { holder = hlaavus_11b }
+	1544.1.1 = { holder = hlaavus_12 }
+	1605.1.1 = { holder = hlaavus_13 }
+	1721.1.1 = { holder = hlaavus_14 }
+	1813.1.1 = { holder = hlaavus_14b }
+	1874.1.1 = { holder = hlaavus_15 }
+	1926.7.7 = { holder = hlaavus_16 }
+	2006.1.1 = { holder = hlaavus_17 }
+	2062.1.1 = { holder = hlaavus_17b }
+	2133.1.1 = { holder = hlaavus_18 }
+	2214.1.1 = { holder = hlaavus_19 }
+	2304.1.1 = { holder = hlaavus_20 }
+	2406.10.8 = { holder = hlaavus_21 }
+	2469.1.1 = { holder = hlaavus_22 }
+	2541.1.1 = { holder = hlaavus_23 }
+	2651.1.1 = { holder = hlaavus_24 }
+	2770.12.14 = { holder = hlaavus_25 }
+	2839.1.1 = { holder = hlaavus_26 }
+	2980.1.1 = { holder = hlaavus_27 }
+	3053.1.1 = { holder = hlaavus_28 }
+	3128.1.1 = { holder = hlaavus_98 }
+	3233.6.18 = { holder = hlaavus_99 }
+	3309.8.2 = { holder = hlaavus_100 }
+	3454.2.16 = { holder = hlaavus_101b }
+	3565.11.17 = { holder = hlaavus_102 }
+}
+#Counts in 440 and 450
+
+
+
+#c_nf_vermethys = {
+#	3200.1.1 = { 
+#		holder = raviro_99
+#		liege = k_indoril
+#		government = administrative_government
+#		succession_laws = { noble_family_succession_law } 
+#	}
+#}
+
+# Summerset
+c_nf_korihoon = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	900.1.1 = { 
+		holder = korihoon_100
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3000.1.1 = { holder = korihoon_101 }
+}
+
+c_nf_yannalve = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3200.1.1 = { 
+		holder = yannalve_998
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3378.1.1 = { holder = yannalve_999 }
+	3488.1.1 = { holder = yannalve_1002 }
+}
+
+c_nf_helenil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2965.1.1 = { 
+		holder = helenil_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3122.11.13 = { holder = helenil_99 }
+	3197.6.2 = { holder = helenil_100 }
+	3372.1.1 = { holder = helenil_101 }
+}
+
+c_nf_corranto = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3080.1.1 = { 
+		holder = corranto_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3230.6.10 = { holder = corranto_99 }
+	3320.4.4 = { holder = corranto_100 }
+	3400.4.21 = { holder = corranto_101 }
+}
+
+c_nf_mernilon = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3125.1.1 = { 
+		holder = mernilon_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3310.6.13 = { holder = mernilon_99 }
+	3359.11.18 = { holder = mernilon_100 }
+	3501.12.21 = { holder = mernilon_101 }
+}
+
+c_nf_salnilde = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2950.1.1 = { 
+		holder = salnilde_97
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3286.1.16 = { holder = salnilde_99 }
+	3348.8.23 = { holder = salnilde_100 }
+	3408.11.6 = { holder = salnilde_101 }
+}
+
+c_nf_elsinor = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2850.1.1 = { 
+		holder = elsinor_995
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2980.1.1 = { holder = elsinor_996 }
+	3033.1.1 = { holder = elsinor_997 }
+	3191.2.12 = { holder = elsinor_997b }
+	3191.7.12 = { holder = elsinor_998 }
+	3191.7.13 = { holder = elsinor_998b }
+	3320.1.1 = { holder = elsinor_999b }
+	3424.1.1 = { holder = elsinor_1001 }
+}
+
+c_nf_estarmo = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2800.1.1 = { 
+		holder = estarmo_99
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3222.3.22 = { holder = estarmo_100b }
+	3566.7.12 = { holder = estarmo_103 }
+}
+
+c_nf_surnaluar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3102.1.1 = { 
+		holder = surnaluar_99
+		liege = k_firsthold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3302.1.1 = { holder = surnaluar_100 }
+	3416.1.1 = { holder = surnaluar_101 }
+	3556.1.1 = { holder = surnaluar_102 }
+	3692.1.1 = { holder = surnaluar_103 }
+}
+
+c_nf_ancuryil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2195.1.1 = { 
+		holder = ancuryil_94
+		liege = k_firsthold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2359.5.10 = { holder = ancuryil_95 }
+	2458.10.7 = { holder = ancuryil_97 }
+	2837.12.27 = { holder = ancuryil_98 }
+	3037.5.13 = { holder = ancuryil_99c }
+	3267.5.22 = { holder = ancuryil_100 }	# Utheilla
+	3368.4.5 = { holder = ancuryil_101 }
+}
+
+c_nf_auriel = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	-2000.1.1 = { #Al-Udhendra
+		holder = auriel_1
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	} 
+	-1499.1.1 = { holder = auriel_1b } #Uranya
+	-1086.8.8 = { holder = auriel_1c } #Erisare
+	-819.1.1 = { holder = auriel1_2 } #Laranrian
+	-672.11.22 = { holder = auriel1_2b } #Quaranil
+	-474.1.1 = { holder = auriel_3 } #Aldanya
+	-327.1.1 = { holder = auriel_1d } #Arantar
+	-186.1.1 = { holder = auriel2_2 } #Ayarynne
+	-37.1.1 = { holder = auriel1_3 } #Eteviniir
+	249.5.13 = { holder = auriel3_3 } #Novenaril
+	514.12.21 = { holder = auriel_6 } #Cimeneth
+	673.5.25 = { holder = auriel3_4 } #Astilme
+	756.3.2 = { holder = auriel2_3b } #Lernuvaril
+	892.1.1 = { holder = auriel2_7 } #Esteltin
+	1017.1.1 = { holder = auriel_8 } #Talisse
+	1245.7.9 = { holder = auriel3_7 }
+	1331.1.1 = { holder = auriel_91 }
+	1624.1.1 = { holder = auriel_92 }
+	1962.1.1 = { holder = auriel_93 }
+	2125.10.30 = { holder = auriel_94 }
+	2300.5.11 = { holder = auriel_95 }
+	2452.5.18 = { holder = auriel_96 }
+	2645.9.7 = { holder = auriel_97 }
+	2897.2.8 = { holder = auriel_98 }
+	3111.3.6 = { holder = auriel_99 }
+	3272.3.3 = { holder = auriel_100 }
+	3500.10.1 = { holder = auriel_101 }
+	3586.6.6 = { holder = auriel1_102 }
+	3707.1.1 = { holder = auriel2_103 }
+}
+
+c_nf_syrabanis = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2130.1.1 = { 
+		holder = syrabanis_1
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2376.8.4 = { holder = syrabanis_95 }
+	2396.2.2 = { holder = syrabanis_96 }
+	2760.2.22 = { holder = syrabanis_97 }
+	2760.7.1 = { holder = syrabanis_97c }
+	2907.8.4 = { holder = syrabanis_98 }
+	3220.9.1 = { holder = syrabanis_99 }
+	3340.7.1 = { holder = syrabanis_100 }
+}
+
+c_nf_rilis = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	154.1.1 = { 
+		holder = rilis_0
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	480.9.15 = { holder = rilis_1 } #Rilis II
+	692.5.31 = { holder = rilis_2 }
+	717.9.3 = { holder = rilis_3 }
+	890.10.24 = { holder = rilis_4 } #Rilis III
+	903.2.5 = { holder = rilis_5 }
+	1114.6.14 = { holder = rilis_6 }
+	1135.11.29 = { holder = rilis_7 }
+	1202.11.9 = { holder = rilis_8 } #Rilis IV
+	1264.3.20 = { holder = rilis_9 }
+	1444.1.16 = { holder = rilis_10b }
+	1450.4.19 = { holder = rilis_10 } #Rilis V
+	1490.7.11 = { holder = rilis_11 }
+	1522.5.2 = { holder = rilis_12 } #Rilis VI
+	1641.10.15 = { holder = rilis_13 }
+	1722.10.8 = { holder = rilis_14 }
+	1757.5.12 = { holder = rilis_15 }
+	1809.4.20 = { holder = rilis_16 } #Rilis VII
+	1930.11.15 = { holder = rilis_17 } #Rilis VIII
+	2046.1.7 = { holder = rilis_18 }
+	2232.2.16 = { holder = rilis_19 }
+	2315.4.7 = { holder = rilis_20 }
+	2361.8.2 = { holder = rilis_21 } #Rilis IX
+	2397.2.2 = { holder = rilis_22 }
+	2488.1.27 = { holder = rilis_23 } #Rilis X
+	2573.8.31 = { holder = rilis_24 }
+	2680.3.10 = { holder = rilis_96 } ##Rilis XI
+	2784.11.7 = { holder = rilis_97 }
+	2980.12.15 = { holder = rilis_98 }
+	3004.12.1 = { holder = rilis_98b }
+	3065.4.2 = { holder = rilis_99 }
+	3222.3.19 = { holder = rilis_100 } #Rilis XII
+	3392.7.6 = { holder = rilis_31 } #Rilis XIII
+	3569.1.1 = { holder = rilis_32 }
+	3637.1.1 = { holder = rilis_33 }
+	3690.1.1 = { holder = rilis_34 }
+	3860.1.1 = { holder = rilis_35 }
+}
+
+c_nf_isquer = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	-600.1.1 = { 
+		holder = isquer_ulorome
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	-300.1.1 = { holder = isquer_ummanor } #Ummanor
+	23.1.1 = { holder = isquer_001 } #Nurarion I
+	500.9.14 = { holder = isquer_002 } #Areldur
+	753.8.15 = { holder = isquer_88 } #Irosa
+	917.11.23 = { holder = isquer_89 }
+	1122.8.7 = { holder = isquer_90 }
+	1494.6.13 = { holder = isquer_91 }
+	1619.4.10 = { holder = isquer_92 } #Viarmo
+	1815.6.6 = { holder = isquer_93 } #Varulae I
+	2002.4.30 = { holder = isquer_94 } #Mollimo
+	2103.5.11 = { holder = isquer_95 } #Nurarion II
+	2563.10.31 = { holder = isquer_96 } #Nurarion III
+	2904.5.24 = { holder = isquer_97 } #Angalsama
+	3098.7.6 = { holder = isquer_98 } #Celria
+	3171.1.25 = { holder = isquer_99 } #Tilmo
+	3321.7.8 = { holder = isquer_100 } #Sorcalin
+	3420.1.12 = { holder = isquer_101 } #Maldarawo
+	3490.3.4 = { holder = isquer_102 } #Helenaere
+	3822.1.1 = { holder = isquer_103 }
+}
+
+c_nf_grevil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3080.1.1 = { 
+		holder = grevil_998
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3261.9.14 = { holder = grevil_999a }
+	3351.5.29 = { holder = grevil_1000 }
+	3458.7.1 = { holder = grevil_1001 }
+}
+
+c_nf_errinorne = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	-487.1.1 = { 
+		holder = errinorne_1
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	-154.1.1 = { holder = errinorne_2 }
+	96.1.1 = { holder = errinorne_3 }
+	316.1.1 = { holder = errinorne_4 }
+	418.1.1 = { holder = errinorne_5 }
+	499.1.1 = { holder = errinorne_6 }
+	602.1.1 = { holder = errinorne_7 }
+	896.1.1 = { holder = errinorne_8 }
+	1005.1.1 = { holder = errinorne_001 }
+	1200.2.19 = { holder = errinorne_002 }
+	1301.7.10 = { holder = errinorne_003 }
+	1480.10.17 = { holder = errinorne_004 }
+	1700.10.2 = { holder = errinorne_005 }
+	1860.6.1 = { holder = errinorne_006 } #Queen Erranil
+	2000.9.16 = { holder = errinorne_007 } #King Kyanka
+	2188.5.3 = { holder = errinorne_93 } #King Thargallith
+	2209.5.1 = { holder = errinorne_95b } #King Honditar I
+	2259.9.8 = { holder = errinorne_95b2 } #King Honditar II
+	2267.11.12 = { holder = errinorne_95b3 } #King Tyermaillin
+	2268.1.3 = { holder = errinorne_95c } #King Miramor
+	2537.6.11 = { holder = errinorne_96 } #Queen Peregrine-necromancer queen
+	2680.4.1 = { holder = errinorne_97 } #King Norionil-last king of historical Auridon
+	2905.3.18 = { holder = errinorne_98 } #Tandil
+	3181.11.27 = { holder = errinorne_99 } #Estre
+	3221.8.26 = { holder = errinorne_100 } #Arivanya
+	3349.3.30 = { holder = errinorne_100b } #King Merandil}
+	3422.3.15 = { holder = errinorne1_101 } #King Tusamircil
+	3625.7.23 = { holder = errinorne1_101b }
+	3643.1.1 = { holder = errinorne_102 }
+	3804.1.1 = { holder = errinorne_103 }
+	3954.1.1 = { holder = errinorne_104 }
+}
+
+c_nf_xarxesar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	-777.1.1 = {
+		holder = xarxes_1
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	-452.1.1 = { holder = xarxes_2 }
+	-396.1.1 = { holder = xarxes_2c }
+	-352.1.1 = { holder = oghma_2 }
+	-296.1.1 = { holder = xarxes_3b }
+	-242.1.1 = { holder = xarxes_3b1 }
+	122.1.1 =  { holder = xarxes1_6 }
+	220.1.1 = { holder = xarxes_7 }
+	332.1.1 = { holder = xarxes2_8 }
+	522.1.1 = { holder = xarxes2_9 }
+	577.1.1 = { holder = xarxes2_9b }
+	591.1.1 = { holder = xarxes_10 }
+	822.1.1 = { holder = xarxes_11 }
+	975.1.1 = { holder = xarxes_13 }
+	1101.1.1 = { holder = xarxes_13b }
+	1229.1.1 = { holder = xarxes_14 }
+	1341.1.1 = { holder = xarxes_15 }
+	1500.1.1 = { holder = xarxes_16b }
+	1976.1.1 = { holder = xarxes_17 }
+	2041.1.1 = { holder = xarxes_18 }
+	2198.1.1 = { holder = xarxes_19 }
+	2331.1.1 = { holder = xarxes_96 }
+	2494.1.1 = { holder = xarxes_96b }
+	2603.1.1 = { holder = xarxes_97 }
+	2795.1.1 = { holder = xarxes_98	}
+	2974.1.1 = { holder = xarxes_99 }
+	3211.1.23 = { holder = xarxes_100 }
+	3369.4.20 = { holder = xarxes_101 }
+	3544.2.10 = { holder = xarxes_102b }
+	3685.4.6 = { holder = xarxes1_103 }
+}
+
+c_nf_aunoroe = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	1360.1.1 = { 
+		holder = aunoroe_94
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	1956.11.19 = { holder = aunoroe_95 }
+	2200.6.20 = { holder = aunoroe_96 }
+	3050.1.31 = { holder = aunoroe_97 }
+	3140.10.23 = { holder = aunoroe_98 }
+	3240.5.6 = { holder = aunoroe_99 }
+	3369.12.13 = { holder = aunoroe_100	}
+	3375.8.8 = { holder = aunoroe_100b }
+	3466.1.1 = { holder = 0 } #Aunoroe exiled from Alinor after killing Hidellith's brother
+}
+
+c_nf_phynaster = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2337.1.1 = {
+		holder = phynaster_92
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2506.1.23 = { holder = phynaster_93 }
+	2669.6.28 = { holder = phynaster_94 }
+	2801.10.10 = { holder = phynaster_95 }
+	2926.1.12 = { holder = phynaster_96 }
+	3051.6.3 = { holder = phynaster_97 }
+	3193.9.21 = { holder = phynaster_98 }
+	3271.6.8 = { holder = phynaster_99 }
+	3364.6.12 = { holder = phynaster_100 }
+	3489.3.4 = { holder = phynaster_101 }
+}
+
+c_nf_ancmirar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	200.1.1 = { 
+		holder = ancmirar_001
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	1100.4.10 = { holder = ancmirar_002 }
+	1500.12.26 = { holder = ancmirar_004 }
+	1900.5.30 = { holder = ancmirar_005 }
+	2200.10.26 = { holder = ancmirar_006 }
+	2450.11.3 = { holder = ancmirar_007 }
+	2630.12.1 = { holder = ancmirar_008 }
+	2950.9.23 = { holder = ancmirar_97 }
+	3130.9.9 = { holder = ancmirar_98 }
+	3250.3.1 = { holder = ancmirar_99 }
+	3367.6.6 = { holder = ancmirar_100 }
+}
+
+c_nf_athlarean = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3370.1.1 = { 
+		holder = athlarean_37350
+		liege = k_shimmerene
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3490.1.1 = { holder = 0 }
+}
+
+c_nf_fisenon = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2270.1.1 = { 
+		holder = fisenon_93
+		liege = k_shimmerene
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	2436.4.16 = { holder = fisenon_94 }
+	2500.1.1 = { holder = fisenon_95 }
+	2660.1.1 = { holder = fisenon_96 }
+	2690.3.4 = { holder = fisenon_97 }
+	2822.8.15 = { holder = fisenon_98 }
+	2990.7.22 = { holder = fisenon_99c }
+	3030.1.3 = { holder = fisenon1_100 }
+	3150.7.3 = { holder = fisenon1_100b }
+	3190.6.30 = { holder = fisenon_100 }
+	3462.1.1 = { holder = fisenon_101 }
+	3506.12.7 = { holder = fisenon_101b }
+	3650.1.1 = { holder = fisenon_102 }
+	3721.1.1 = { holder = fisenon_103 }
+	3826.1.1 = { holder = fisenon_104 }
+}
+
+c_nf_gildera = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3049.1.1 = { 
+		holder = gildera_997
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3157.2.18 = { holder = gildera_998 }
+	3306.7.13 = { holder = gildera_999 }
+	3487.1.12 = { holder = gildera_1000 }
+}
+
+c_nf_tilata = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2869.1.1 = { 
+		holder = tilata_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3012.1.1 = { holder = tilata_99 }
+	3195.1.1 = { holder = tilata_100 }
+	3401.4.17 = { holder = tilata_101 }
+}
+
+c_nf_arkdan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2966.1.1 = { 
+		holder = arkdan_98
+		liege = k_lillandril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3100.2.18 = { holder = arkdan_99 }
+	3269.10.20 = { holder = arkdan_100 }
+	3408.5.2 = { holder = arkdan_101 }
+}
+
+c_nf_anccermo = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3120.1.1 = { 
+		holder = anccermo_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3240.3.30 = { holder = anccermo_99 }
+	3300.11.22 = { holder = anccermo_100 }
+	3400.2.7 = { holder = anccermo_101 }
+}
+
+c_nf_heslia = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3010.8.27 = { 
+		holder = heslia_997
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3176.4.13 = { holder = heslia_998 }
+	3184.5.22 = { holder = heslia_999 }
+	3360.6.7 = { holder = heslia_1000 }
+	3616.1.1 = { holder = heslia_1002 }
+}
+
+c_nf_firoruar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3210.1.1 = { 
+		holder = firoruar_99
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }  
+	}
+	3359.12.4 = { holder = firoruar_100 }
+}
+
+c_nf_vecerme = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3119.1.1 = { 
+		holder = vecerme_998
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }   
+	}
+	3298.11.13 = { holder = vecerme_999 }
+	3351.3.16 = { holder = vecerme_1000 }
+	3648.1.21 = { holder = vecerme_1001 }
+}
+
+c_nf_hesnaton = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2832.1.1 = { 
+		holder = hesnaton_97
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3203.3.19 = { holder = hesnaton_98 }
+	3240.5.4 = { holder = hesnaton_99 }
+	3281.1.9 = { holder = hesnaton_100 }
+	3497.11.9 = { holder = hesnaton_101 }
+}
+
+c_nf_cellian = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2902.1.1 = { 
+		holder = cellian_97
+		liege = k_lillandril
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2983.1.1 = { holder = cellian_98 }
+	3211.1.1 = { holder = cellian_99 }
+	3362.1.1 = { holder = cellian_100 }
+	3520.4.11 = { holder = cellian_101 }
+}
+
+c_nf_hinrorue = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3042.1.1 = {
+		holder = hinrorue_97
+		liege = k_cloudrest
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3147.1.1 = { holder = hinrorue_98 }
+	3265.1.1 = { holder = hinrorue_99 }
+	3346.1.1 = { holder = hinrorue_100 }
+	3480.10.29 = { holder = hinrorue_101 }
+}
+
+c_nf_mothril = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2711.10.12 = { 
+		holder = mothril_95
+		liege = k_cloudrest
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2799.5.6 = { holder = mothril_96 }
+	2980.10.27 = { holder = mothril_97 }
+	3130.6.5 = { holder = mothril_98 }
+	3280.5.14 = { holder = mothril_99 }
+	3359.11.18 = { holder = mothril_100 }
+	3485.1.28 = { holder = mothril_100c }
+	3485.7.17 = { holder = mothril_100b }
+}
+
+c_nf_celcerar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2900.1.1 = { 
+		holder = celcerar_95
+		liege = k_sunhold 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3011.1.24 = { holder = celcerar_96 }
+	3182.7.28 = { holder = celcerar_97 }
+	3256.11.27 = { holder = celcerar_98 }
+	3334.2.9 = { holder = celcerar_99b }
+	3453.7.12 = { holder = celcerar_100 }
+	3640.1.1 = { holder = celcerar_101 }
+}
+
+c_nf_valano = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2800.1.1 = {
+		holder = valano_995
+		liege = k_vulkhel 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2912.3.2 = { holder = valano_996 }
+	2980.7.18 = { holder = valano_997 }
+	3089.9.13 = { holder = valano_998 }
+	3138.5.4 = { holder = valano_999 }
+	3214.3.22 = { holder = valano_1000 }
+	3341.7.7 = { holder = valano_valano }
+	3502.5.9 = { holder = valano_elenwen }
+}
+
+c_nf_derinil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	800.1.1 = { 
+		holder = derinil_1
+		liege = k_skywatch 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	1011.12.18 = { holder = derinil_2b }
+	1065.5.6 = { holder = derinil_3b }
+	3000.1.1 = { holder = derinil_98 }
+	3198.4.10 = { holder = derinil_99 }
+	3331.4.2 = { holder = derinil_100 }
+	3403.10.19 = { holder = derinil_101 }
+	3511.5.4 = { holder = derinil_102 }
+}
+
+c_nf_oghma = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	-701.1.1 = { 
+		holder = oghma_1
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	-518.1.1 = { holder = oghma_2 }
+	-296.1.1 = { holder = oghma_3 }
+	-165.1.1 = { holder = oghma_4 }
+	-29.1.1 = { holder = oghma_5 }
+	227.1.1 = { holder = oghma_6 }
+	369.1.1 = {holder = oghma_7c }
+	601.1.1 = { holder = oghma_8 }
+	644.1.1 = { holder = oghma_9 }
+	2999.1.1 = { holder = oghma_98 }
+	3195.1.1 = { holder = oghma_99 }
+	3321.1.1 = { holder = oghma_100 }
+}
+
+c_nf_calicen = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3105.1.1 = { 
+		holder = calicen_98
+		liege = k_dusk
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3268.1.1 = { holder = calicen_99 }
+	3313.7.4 = { holder = calicen_100 }
+	3491.1.17 = { holder = calicen_101 }
+}
+
+c_nf_calianor = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2702.1.1 = {
+		holder = calianor_996
+		liege = k_dusk
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	2858.5.7 = { holder = calianor_997 }
+	3072.1.1 = { holder = calianor_998a }
+	3275.2.24 = { holder = calianor_999d }
+	3290.6.19 = { holder = calianor_1000 }
+	3576.2.16 = { holder = calianor_1001 }
+}
+
+c_nf_yanilia = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3203.3.19 = { 
+		holder = yanilia_999 
+		liege = k_shimmerene
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3341.12.29 = { holder = yanilia_1000 }
+	3571.5.29 = { holder = yanilia_1001 }
+}
+
+c_nf_lirmiron = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3267.3.23 = { #Tyermaillin
+		holder = lirmiron_99
+		liege = k_sunhold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3289.8.29 = { holder = lirmiron_100 } #Enrion
+	3361.11.3 = { holder = lirmiron_101 } #Sorcalin
+	3484.6.6 = { holder = lirmiron_102d } #Elenya
+	3665.1.1 = { holder = lirmiron_103 }
+	3755.1.1 = { holder = lirmiron_104 }
+}
+
+c_nf_fiora = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3000.1.1 = {
+		holder = fiora_999
+		liege = k_vulkhel
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3180.4.2 = { holder = fiora_1000 }
+	3321.7.10 = { holder = fiora_1001 }
+	3481.6.27 = { holder = fiora_1002 }	
+}
+
+c_nf_phaeris = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3020.1.1 = {
+		holder = phaer_998
+		liege = k_vulkhel
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3240.7.2 = { holder = phaer_999	}
+	3441.8.24 = { holder = phaer_1000 }	
+}
+
+c_nf_arelsenil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2717.1.1 = {
+		holder = arelsenil_96
+		liege = k_skywatch
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2831.6.14 = { holder = arelsenil_97 }
+	2895.1.10 = { holder = arelsenil_98 }
+	2988.3.22 = { holder = arelsenil_99 }
+	3086.10.19 = { holder = arelsenil_100 }
+	3261.9.20 = {  holder = arelsenil_102 }
+	3429.12.21 = { holder = arelsenil_103 }
+	3451.3.27 = { holder = arelsenil_103c }
+	3502.6.3 = { holder = arelsenil_104 }
+	3661.1.1 = { holder = arelsenil_105 }
+	3793.1.1 = { holder = arelsenil_106 }
+	4323.1.1 = { holder = arelsenil_106b }
+}
+
+c_nf_lirgonme = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3110.1.1 = { 
+		holder = lirgonme_98
+		liege = k_dusk
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3249.6.4 = { holder = lirgonme_99 }
+	3349.6.29 = { holder = lirgonme_100 }
+	3369.12.1 = { holder = lirgonme_101 }
+}
+
+c_nf_ilnisan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3165.1.1 = {
+		holder = ilnisan_98
+		liege = e_summerset
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3305.1.1 = { holder = ilnisan_99 }
+	3350.1.1 = { holder = ilnisan_100 }
+}
+
+c_nf_ukmiar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3330.2.16 = { 
+		holder = ukmiar_100
+		liege = k_shimmerene
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3449.7.3 = { holder = ukmiar_101 }
+	3454.7.16 = { holder = ukmiar_101b }
+}
+
+c_nf_jororil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3050.1.1 = {
+		holder = jaroril_998
+		liege = d_tanzelwil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3260.7.11 = { holder = jaroril_999 }
+	3330.10.14 = { holder = jaroril_1000 }
+	3474.4.5 = { holder = jororil_ciranya }
+}
+
+c_nf_vaelata = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2814.1.1 = { 
+		holder = vaelata_96
+		liege = d_mathiisen 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3003.1.1 = { holder = vaelata_97 }
+	3008.1.1 = { holder = vaelata_98 }
+	3219.10.2 = { holder = vaelata_99 }
+	3366.8.27 = { holder = vaelata_100 }
+	3501.4.6 = { holder = vaelata_101b }
+}
+
+c_nf_auralus = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2350.1.1 = { 
+		holder = auralus_002
+		liege = k_skywatch 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2362.5.2 = { holder = auralus_003 } 
+	2412.4.21 = { holder = auralus_004 } 
+	2589.1.27 = { holder = auralus_005 } 
+	2682.3.28 = { holder = auralus_006 } 
+	2733.12.19 = { holder = auralus_007 } 
+	2896.8.28 = { holder = auralus_97 } 
+	3103.9.4 = { holder = auralus_98 } 
+	3245.6.4 = { holder = auralus_99 } 
+	3357.1.14 = { holder = auralus_100 }
+	3511.3.4 = { holder = auralus_100b }
+	3524.5.12 = { holder = auralus_101 }
+}
+
+c_nf_mersamiren = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3159.11.6 = { 
+		holder = mersamiren_98
+		liege = k_firsthold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3276.3.3 = { holder = mersamiren_999 }
+	3358.12.19 = { holder = mersamiren_1000 }
+	3500.5.2 = { holder = mersamiren_1001 }
+}
+
+c_nf_urayel = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3260.1.1 = {
+		holder = urayel_1000
+		liege = d_vafe
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3366.3.10 = { holder = urayel_1003 }
+	3427.1.1 = { holder = urayel_1004 }
+}
+
+c_nf_adalil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3000.1.1 = { 
+		holder = adalil_998
+		liege = d_vafe
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3218.11.28 = { holder = adalil_999 }
+	3303.2.1 = { holder = adalil_1000 }
+	3431.3.14 = { holder = adalil_1001 }	
+}
+
+c_nf_caerinor = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3120.1.1 = {
+		holder = caerinor_998
+		liege = d_firsthold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3344.1.15 = { holder = caerinor_1000 }
+	3592.3.17 = { holder = caerinor_1001 }	
+}
+
+c_nf_tyegoni = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3321.1.1 = {
+		holder = tyegoni_998
+		liege = d_firsthold
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}	
+}
+
+c_nf_larion = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3100.1.1 = { 
+		holder = larion_998
+		liege = d_firsthold 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3323.3.29 = { holder = larion_999 }
+	3354.3.31 = { holder = larion_1000 }
+	3364.1.29 = { holder = larion_1001 }	
+}
+
+c_nf_tyrigel = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	3120.1.1 = { 
+		holder = direnni_tyrigel_100
+		liege = k_shimmerene
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3205.6.18 = { holder = direnni_tyrigel_101 }
+	3355.5.10 = { holder = direnni_tyrigel_102 }
+	3368.7.6 = { holder = direnni_tyrigel_103 }
+	3442.10.11 = { holder = 0 }
+}
+
+c_nf_hinyal = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3100.1.1 = { 
+		holder = hinyal_99
+		liege = k_cloudrest 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3300.12.16 = { holder = hinyal_100 }
+	3347.4.25 = { holder = hinyal_102 }
+}
+
+c_nf_ocyan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3211.1.1 = { 
+		holder = ocyan_98
+		liege = k_alinor
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3351.5.29 = { holder = ocyan_99d }
+	3497.1.1 = { holder = ocyan_100 }
+}
+
+c_nf_illiuar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	3220.1.1 = {
+		holder = illiuar_98
+		liege = k_alinor
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3333.8.10 = { holder = illiuar_99 }
+	3340.8.8 = { holder = illiuar_100 }
+}
+
+c_nf_herecalon = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3016.1.1 = { 
+		holder = herecalon_97 
+		liege = d_laurediil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3154.12.11 = { holder = herecalon_98 }
+	3310.9.9 = { holder = herecalon_99 }
+	3310.9.23 = { holder = herecalon_100 }
+	3406.4.26 = { holder = herecalon_99b }
+	3412.2.14 = { holder = herecalon_101 }	
+	3512.10.8 = { holder = herecalon_102 }	
+}
+
+c_nf_aundae = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3025.1.1 = { 
+		holder = aundae_97
+		liege = d_laurediil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3260.1.1 = { holder = aundae_98 }
+	3354.11.20 = { holder = aundae_99 }
+	3458.1.1 = { holder = aundae_100 }
+	3619.2.21 = { holder = aundae_100b }
+	3650.1.1 = { holder = aundae_102 }
+	3719.1.1 = { holder = aundae_104 }
+	3929.1.1 = { holder = aundae_105 }
+}
+
+c_nf_hesene = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	2856.1.1 = { 
+		holder = hesene_98
+		liege = k_sunhold 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3024.7.11 = { holder = hesene_99 }
+	3356.2.25 = { holder = hesene_100 }
+	3541.1.1 = { holder = hesene_101 }
+}
+
+c_nf_aangdil = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3140.1.1 = {
+		holder = aangdil_998 #Condalin
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	} 
+	3215.9.6 = { holder = aangdil_999 } #Elante
+	3217.8.9 = { holder = aangdil_1000 } #Earos
+	3360.1.1 = { liege = d_lillarnor }
+	3494.3.24 = { holder = aangdil_1001 }
+}
+
+c_nf_tyegar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3000.1.1 = { 
+		holder = tyegar_998
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3246.9.2 = { holder = tyegar_999 }
+	3347.4.17 = { holder = tyegar_1000 }
+	3360.1.1 = { liege = d_lillarnor }
+	3440.1.1 = { liege = d_nesteholt }
+	3499.2.2 = { holder = tyegar_1001 }
+	3580.4.5 = { holder = tyegar_1004 }
+}
+
+c_nf_levena = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3123.6.19 = { 
+		holder = levena_998
+		liege = d_celwil
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3323.2.27 = { holder = levena_999 }
+	3344.9.6 = { holder = levena_1000 }
+	3544.1.1 = { holder = levena_1001 }
+}
+
+c_nf_scintilla = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	2165.1.1 = { 
+		holder = scintilla_995
+		liege = d_dusk 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2923.2.6 = { holder = scintilla_997 }
+	3122.8.16 = { holder = scintilla_998 }
+	3243.10.19 = { holder = scintilla_999 }
+	3362.5.7 = { holder = scintilla_1000 }
+}
+
+c_nf_arknisar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	3100.1.1 = {
+		holder = arknisar_999
+		liege = k_dusk
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3324.4.22 = { holder = arknisar_1001 }
+	3430.1.1 = { holder = arknisar_1002 }
+	3540.1.1 = { holder = arknisar_1004 }
+}
+
+c_nf_ilmiril = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2166.11.11 = {
+		holder = ilmiril_100
+		liege = k_cloudrest
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}		
+}
+
+c_nf_nandorie = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	1756.1.1 = {
+		holder = nandorie_98
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2307.7.11 = { holder = nandorie_99 }
+	2384.1.1 = { holder = nandorie_100 }
+	3360.1.1 = { liege = d_lillarnor }
+}
+
+c_nf_ilanme = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3331.1.1 = { 
+		holder = ilanme_100
+		liege = d_varadan
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3431.12.1 = { holder = ilanme_101 }
+}
+
+#Hammerfell
+c_nf_lainlyn = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	2699.1.1 = { 
+		holder = lainlyn_1
+		#liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	2732.5.30 = { holder = lainlyn_2 }
+	3260.1.1 = { 
+		holder = lainlyn_96
+		liege = e_crown 
+	}
+	3294.7.18 = { holder = lainlyn_97 }
+	3329.12.27 = { holder = lainlyn_98 }
+	3340.1.8 = { holder = lainlyn_99 }
+	3357.11.28 = { holder = lainlyn_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3391.2.14 = { holder = lainlyn_101 }
+	3418.4.6 = { holder = lainlyn_102 } 
+	3441.10.23 = { holder = lainlyn_103 }
+	3472.10.14 = { holder = lainlyn_104 }
+	3509.1.1 = { holder = lainlyn_105 }
+}
+
+c_nf_phyllos = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3002.1.1 = {
+		liege = e_crown
+		holder = phyllos_89
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3031.1.1 = { holder = phyllos_90 }
+	3072.1.1 = { holder = phyllos_91 }
+	3101.1.1 = { holder = phyllos_92 }
+	3132.1.1 = { holder = phyllos_93 }
+	3155.1.1 = { holder = phyllos_94 }
+	3191.1.1 = { holder = phyllos_95 }
+	3205.1.1 = { holder = phyllos_96 }
+	3246.1.1 = { holder = phyllos_97 }
+	3278.3.28 = { holder = phyllos_98 }
+	3309.11.9 = { holder = phyllos_99 }
+	3330.4.14 = { holder = phyllos_100 }
+	3365.4.7 = { holder = phyllos_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3401.5.1 = { holder = phyllos_102 }
+	3442.3.9 = { holder = phyllos_103 }
+	3468.7.27 = { holder = phyllos_104 }
+	3484.5.25 = { holder = phyllos_105 }
+}
+
+c_nf_karr = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3234.5.29 = {
+		liege = e_crown
+		holder = karr_96
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3272.4.19 = { holder = karr_97 }
+	3298.6.6 = { holder = karr_98 }
+	3311.10.24 = { holder = karr_99 }
+	3327.10.10 = { holder = karr_100 }
+	3362.12.26 = { holder = karr_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3409.1.29 = { holder = karr_102 }
+	3421.4.23 = { holder = karr_103 }
+	3442.9.6 = { holder = karr_105 }
+	3499.1.1 = { holder = karr_106 }
+}
+
+c_nf_curetar = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3278.1.1 = {
+		liege = e_crown
+		holder = curetar_98
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3301.1.1 = { holder = curetar_99 }
+	3323.1.1 = { holder = curetar_100 }
+	3363.7.5 = { holder = curetar_102 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3385.12.7 = { holder = curetar_103 }
+	3431.7.8 = { holder = curetar_104 }
+	3472.9.16 = { holder = curetar_105 }
+	3508.8.10 = { holder = curetar_106d }
+	3518.3.2 = { holder = curetar_106c }
+	3525.9.17 = { holder = curetar_107 }
+}
+
+c_nf_tavan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	816.1.1 = {
+		liege = e_hammerfell
+		holder = tavan_3b
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3237.1.1 = { 
+		holder = tavan_96
+		liege = e_crown
+	}
+	3271.9.11 = { holder = tavan_97 }
+	3310.2.8 = { holder = tavan_98 }
+	3331.1.14 = { holder = tavan_99 }
+	3352.4.6 = { holder = tavan_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3399.2.7 = { holder = tavan_101 }
+	3417.8.28 = { holder = tavan_102 }
+	3426.1.1 = { holder = tavan_103 }
+	3475.1.1 = { holder = tavan_104 }
+}
+
+c_nf_bamenda = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3291.1.1 = {
+		liege = e_crown
+		holder = bamenda_97
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3317.6.10 = { holder = bamenda_98 }
+	3347.3.3 = { holder = bamenda_99 }
+	3368.7.19 = { holder = bamenda_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3411.9.25 = { holder = bamenda_101 }
+	3434.3.8 = { holder = bamenda_102 }
+	3438.2.18 = { holder = bamenda_103 }
+	3491.1.1 = { holder = bamenda_104 }
+}
+
+c_nf_pharos = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3268.1.1 = {
+		liege = e_crown
+		holder = pharos_97
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3300.1.1 = { holder = pharos_98 }
+	3327.1.1 = { holder = pharos_99 }
+	3333.1.1 = { holder = pharos_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3393.1.25 = { holder = pharos_101 }
+	3408.3.7 = { holder = pharos_102 }
+	3442.1.1 = { holder = pharos_103 }
+	3481.1.1 = { holder = pharos_104 }
+	3503.1.1 = { holder = pharos_105 }
+}
+
+c_nf_hilesan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3312.1.1 = {
+		liege = e_crown
+		holder = hisa_99
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3354.8.18 = { holder = hisa_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3378.1.1 = { holder = hisa_101 }
+	3385.1.1 = { holder = hisa_102 } #Previous retires
+	3417.10.21 = { holder = hisa_103 }
+	3450.1.1 = { holder = hisa_104 }
+	3485.3.13 = { holder = hisa_105 }
+}
+
+c_nf_kasa = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3177.1.1 = {
+		liege = e_crown
+		holder = kasa_94
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3191.8.2 = { holder = kasa_95 }
+	3234.1.1 = { holder = kasa_96 }
+	3274.1.1 = { holder = kasa_97 }
+	3298.1.1 = { holder = kasa_98 }
+	3333.1.1 = { holder = kasa_99 }
+	3344.1.1 = { holder = kasa_100 }
+	3361.1.1 = { holder = kasa_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3412.8.11 = { holder = kasa_102 }
+	3433.2.18 = { holder = kasa_103 }
+	3437.1.12 = { holder = kasa_104 }
+	3474.1.1 = { holder = kasa_105 }
+}
+
+c_nf_baut = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3191.1.1 = {
+		liege = e_crown
+		holder = baut_94
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3231.12.8 = { holder = baut_96 }
+	3272.1.1 = { holder = baut_98 }
+	3304.1.1 = { holder = baut_99 }
+	3335.1.1 = { holder = baut_100 }
+	3368.1.1 = { holder = baut1_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3394.1.1 = { holder = baut_102 }
+	3418.1.1 = { holder = baut_103 }
+	3421.4.23 = { liege = d_lainlyn }
+	3436.1.1 = { holder = baut_104b }
+	3445.3.26 = { holder = baut_104 }
+	3466.1.1 = { holder = baut_105 }
+	3490.1.1 = { holder = baut_106b }
+	3518.1.1 = { holder = 0 } #Dynasty ends
+}
+
+c_nf_sora = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3231.1.1 = {
+		liege = e_crown
+		holder = sora_96
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3258.5.2 = { holder = sora_97 }
+	3296.1.1 = { holder = sora_98 }
+	3339.6.5 = { holder = sora_99 }
+	3357.1.1 = { holder = sora_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3391.5.1 = { holder = sora_101 }
+	3426.10.24 = { holder = sora_102 }
+}
+
+c_nf_moni = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3298.1.1 = {
+		liege = e_crown
+		holder = moni_98
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3327.6.29 = { holder = moni_99 }
+	3356.5.24 = { holder = moni_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3427.12.12 = { holder = moni_101 }
+	3428.2.25 = { holder = moni_102 }
+	3456.1.1 = { holder = moni_103 }
+	3461.1.1 = { holder = 0 }
+}
+
+c_nf_tura = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3281.2.3 = {
+		liege = e_crown
+		holder = tura_98
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3328.3.25 = { holder = tura_99 }
+	3348.1.1 = { holder = tura_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3399.6.16 = { holder = tura_101 }
+	3427.4.29 = { holder = tura_102 }
+	3438.12.22 = { holder = tura_103 }
+	3462.1.1 = { holder = tura_104 }
+}
+
+c_nf_nizwa = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3236.1.1 = {
+		liege = e_crown
+		holder = nizwa_97
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3272.1.1 = { holder = nizwa_98 }
+	3298.1.1 = { holder = nizwa_99 }
+	3323.1.1 = { holder = nizwa_100 }
+	3362.12.7 = { holder = nizwa_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3385.2.24 = { holder = nizwa_102 }
+	3401.5.19 = { holder = nizwa_103 }
+	3444.12.5 = { holder = nizwa_104 }
+	3487.1.16 = { holder = nizwa_105 }
+	3489.1.1 = { holder = nizwa_106 }
+}
+
+c_nf_tam = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3252.1.1 = {
+		liege = e_crown
+		holder = tam_97
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3299.9.25 = { holder = tam_98 }
+	3324.3.17 = { holder = tam_99 }
+	3346.1.1 = { holder = tam_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3392.1.1 = { holder = tam_101 }
+	3416.1.1 = { holder = tam_102 }
+	3430.1.1 = { holder = tam_103 }
+}
+
+c_nf_skavyn = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3279.1.1 = {
+		liege = e_crown
+		holder = skavyn_98
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3320.1.1 = { holder = skavyn_99 }
+	3356.10.16 = { holder = skavyn_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3382.3.18 = { holder = skavyn_101 }
+}
+
+c_nf_yola = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3352.1.1 = {
+		liege = e_crown
+		holder = yola_100
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3397.1.1 = { holder = yola_101 }
+	3436.6.24 = { holder = yola_102 }
+}
+
+c_nf_rohon = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3215.1.1 = {
+		liege = e_crown
+		holder = rohon_95
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3240.1.1 = { holder = rohon_96 }
+	3281.2.3 = { holder = rohon_97 }
+	3301.1.1 = { holder = rohon_98 }
+	3309.1.1 = { holder = rohon1_98 }
+	3335.1.1 = { holder = rohon_99 }
+	3364.8.12 = { holder = rohon_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3392.9.30 = { holder = rohon_101 }
+	3414.10.25 = { holder = rohon_102 }
+	3440.1.1 = { holder = rohon_103 }
+	3472.1.1 = { holder = rohon_104 }
+	3506.1.1 = { holder = rohon_105 }
+}
+
+c_nf_baha = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3285.9.9 = { 
+		holder = baha_98
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3316.5.19 = { holder = baha_99 }
+	3347.3.8 = { holder = baha_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3392.10.27 = { holder = baha_101 }
+	3405.9.29 = { holder = baha_102 }
+	3430.1.1 = { holder = baha_103 }
+	3462.1.1 = { holder = baha_104 }
+}
+
+c_nf_lekaga = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3281.1.1 = {
+		holder = lekaga_98
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3311.1.1 = { holder = lekaga_99 }
+	3338.8.7 = { holder = lekaga_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3379.1.1 = { holder = lekaga_101 }
+	3398.1.1 = { holder = lekaga_102 } #Previous character retires before dying
+	3442.3.6 = { holder = lekaga_103 }
+}
+
+c_nf_talat = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3284.1.1 = {
+		holder = talat_98
+		liege = d_lainebon
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3305.1.1 = { holder = talat_99 }
+	3328.1.1 = { holder = talat_100 }
+	3365.3.10 = { holder = talat_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3401.2.12 = { holder = talat_102 }
+}
+
+c_nf_nisren = {
+	3447.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3382.4.14 = {
+		holder = nisren_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3389.11.20 = { holder = nisren_101 }
+	3414.7.15 = { holder = nisren_102 } #Previous ruler retires
+	3460.1.1 = { holder = nisren_103 }
+}
+
+c_nf_hnas = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3276.1.1 = {
+		holder = hnas_97
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3302.3.15 = { holder = hnas_98 }
+	3325.10.29 = { holder = hnas_99 }
+	3349.3.24 = { holder = hnas_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3382.1.1 = { holder = hnas_101 }
+	3408.1.1 = { holder = hnas_102 }
+	3431.1.1 = { holder = hnas_103 }
+	3471.4.6 = { holder = hnas_104 }
+	3487.8.4 = { holder = hnas_105b }
+}
+
+c_nf_addin = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3302.1.1 = {
+		holder = addin_98
+		liege = d_hnas
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3337.1.1 = { holder = addin_99 }
+	3359.11.9 = { holder = addin_100 }
+	3365.9.18 = { holder = 0 }
+}
+
+c_nf_talum = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3335.1.1 = {	
+		holder = talum_99
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3364.1.1 = { holder = talum_100 }
+	3389.1.1 = { holder = talum_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3430.6.16 = { holder = talum_102 }
+	3475.1.1 = { holder = talum_103 }
+	3491.4.9 = { holder = talum_104b }
+}
+
+c_nf_kufan = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3302.1.1 = {	
+		holder = kufan_98
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3341.1.1 = { holder = kufan_99 }
+	3367.1.1 = { holder = kufan_100 }
+	3408.1.1 = { holder = kufan_101 } #Previous ruler retires
+	3419.1.1 = { holder = kufan_102 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3468.11.4 = { holder = kufan_104 }
+}
+
+c_nf_korin = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3351.1.1 = {
+		holder = korin_100
+		liege = d_abibon
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3392.1.1 = { holder = korin_101 }
+	3419.1.1 = { holder = korin_103 }
+	3469.1.1 = { holder = korin_104 }
+	3484.1.1 = { holder = korin_105 }
+	3519.1.1 = { holder = korin_106 }
+	3548.6.13 = { holder = korin_107 }
+	3566.1.7 = { holder = korin_107b }
+}
+
+c_nf_shavir = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3252.1.1 = {
+		holder = shavir_97
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3271.1.1 = { holder = shavir_98 }
+	3314.1.1 = { holder = shavir_99 }
+	3327.1.1 = { holder = shavir_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3381.1.1 = { holder = shavir_101 }
+	3395.1.1 = { holder = shavir_102 }
+	3432.6.26 = { holder = shavir_104 }
+	3462.6.22 = { holder = shavir_105 }
+	3489.1.1 = { holder = shavir_105b }
+	3501.1.1 = { holder = 0 }
+}
+
+c_nf_berbera = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3272.1.1 = {
+		holder = berbera_97
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3305.1.1 = { holder = berbera_98 }
+	3332.1.1 = { holder = berbera_99 }
+	3355.11.2 = { holder = berbera_100 }
+	3362.5.13 = { holder = berbera_100b }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3392.6.12 = { holder = berbera_101 }
+	3414.1.1 = { holder = berbera_102 }
+	3446.1.1 = { holder = berbera_103 }
+}
+
+c_nf_iserra = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3348.1.1 = {
+		holder = iserra_100
+		liege = d_cespar
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+}
+
+c_nf_roukad = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3274.1.1 = {
+		holder = roukad_97
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3310.1.1 = { holder = roukad_98 }
+	3338.1.1 = { holder = roukad_99 }
+	3342.1.1 = { holder = roukad_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+}
+
+c_nf_telet = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}
+	3338.1.1 = {
+		holder = telet_100
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3376.1.1 = { holder = telet_101 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3397.1.1 = { holder = telet_102 }
+	3429.12.23 = { holder = telet_102b }
+	3444.7.5 = { holder = telet_103 }
+	3466.1.1 = { holder = telet_104 }
+	3479.1.1 = { holder = telet_105 }
+}
+
+c_nf_ateko = {
+	3360.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3360.1.1 }
+		}
+	}	
+	3322.1.14 = {
+		holder = ateko_99
+		liege = e_crown
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3357.4.2 = { holder = ateko_100 }
+	3377.7.17 = { liege = e_hammerfell } #High Kingdom formed
+	3382.1.1 = { holder = ateko_101 }
+	3404.1.1 = { holder = ateko_102 }
+	3436.1.1 = { holder = ateko_103 }
+	3461.9.9 = { holder = ateko_103b }
+	3479.1.1 = { holder = ateko_104 }
+	3485.1.1 = { holder = ateko_105 }
+}
+
+c_nf_timda = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3377.7.17 = { #Crowns conquer Sentinel
+		holder = timda_101
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3416.1.1 = { holder = timda_102 }
+	3431.1.1 = { holder = timda_103 }
+	3468.1.1 = { holder = timda_104 }
+	3477.1.1 = { holder = timda_104b }
+}
+
+c_nf_curyn = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3438.1.1 = {
+		holder = curyn_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3451.1.1 = { holder = curyn_101 }
+	3502.10.11 = { holder = curyn_102 }
+}
+
+c_nf_remran = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3445.1.1 = {
+		holder = remran_100
+		liege = d_lainlyn
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3486.1.1 = { holder = remran_101 }
+}
+
+c_nf_myrk = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3377.7.17 = { #Crowns conquer Sentinel
+		holder = myrk_101
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3402.4.24 = { holder = myrk_102 }
+	3418.11.10 = { holder = myrk_103 }
+	3442.7.9 = { holder = myrk_104 }
+	3463.1.1 = { holder = myrk_105 }
+	3504.1.1 = { holder = myrk_106 }
+}
+
+c_nf_teden = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3463.1.1 = { #Dragonstar joins Crowns
+		holder = teden_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3487.2.22 = { holder = teden_101 }
+}
+
+c_nf_trauti = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}
+	3463.1.1 = { #Dragonstar joins Crowns
+		holder = trauti_99
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+	3482.1.1 = { holder = trauti_100 }
+}
+
+c_nf_jatar = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3455.1.1 = {
+		holder = jatar_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3475.1.1 = { holder = jatar_101 }
+}
+
+c_nf_brenal = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3446.1.1 = {
+		holder = brenal_99
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	3470.1.1 = { holder = brenal_100 }
+}
+
+c_nf_coya = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3484.5.25 = { 
+		holder = coya_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+}
+
+c_nf_bodan = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3474.1.1 = { 
+		holder = bodan_100
+		liege = e_hammerfell
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}
+}
+
+c_nf_terouki = {
+	3492.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 3492.1.1 }
+		}
+	}	
+	3486.1.1 = { 
+		holder = terouki_100
+		liege = d_lainlyn
+		government = administrative_government
+		succession_laws = { noble_family_succession_law } 
+	}	
+}

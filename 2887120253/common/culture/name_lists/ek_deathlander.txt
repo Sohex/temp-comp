@@ -1,0 +1,368 @@
+﻿name_list_duraki = {
+
+	dynasty_names = { 
+		{ dynn_Abna }
+		{ dynnp_al_ dynn_Abna }
+		{ dynn_Aerno }
+		{ dynnp_al_ dynn_Aerno }
+		{ dynn_Aetio }
+		{ dynnp_al_ dynn_Aetio }
+		{ dynn_Albucel }
+		{ dynnp_al_ dynn_Albucel }
+		{ dynn_Aracus }
+		{ dynnp_al_ dynn_Aracus }
+		{ dynn_Arantia }
+		{ dynnp_al_ dynn_Arantia }
+		{ dynn_Arantio  }
+		{ dynnp_al_ dynn_Arantio  }
+		{ dynn_Ataegina }
+		{ dynnp_al_ dynn_Ataegina }
+		{ dynn_Bandua }
+		{ dynnp_al_ dynn_Bandua }
+		{ dynn_Berobreo }
+		{ dynnp_al_ dynn_Berobreo }
+		{ dynn_Borman }
+		{ dynnp_al_ dynn_Borman }
+		{ dynn_Bouati }
+		{ dynnp_al_ dynn_Bouati }
+		{ dynn_Bouia }
+		{ dynnp_al_ dynn_Bouia }
+		{ dynn_Bouiani }
+		{ dynnp_al_ dynn_Bouiani }
+		{ dynn_Buan }
+		{ dynnp_al_ dynn_Buan }
+		{ dynn_Buana }
+		{ dynnp_al_ dynn_Buana }
+		{ dynn_Cabuna }
+		{ dynnp_al_ dynn_Cabuna }
+		{ dynn_Cancil }
+		{ dynnp_al_ dynn_Cancil }
+		{ dynn_Candeber }
+		{ dynnp_al_ dynn_Candeber }
+		{ dynn_Caulec }
+		{ dynnp_al_ dynn_Caulec }
+		{ dynn_Coron }
+		{ dynnp_al_ dynn_Coron }
+		{ dynn_Coruae }
+		{ dynnp_al_ dynn_Coruae }
+		{ dynn_Cosa }
+		{ dynnp_al_ dynn_Cosa }
+		{ dynn_Coso }
+		{ dynnp_al_ dynn_Coso }
+		{ dynn_Cosso }
+		{ dynnp_al_ dynn_Cosso }
+		{ dynn_Covena }
+		{ dynnp_al_ dynn_Covena }
+		{ dynn_Cumel }
+		{ dynnp_al_ dynn_Cumel }
+		{ dynn_Cumela }
+		{ dynnp_al_ dynn_Cumela }
+		{ dynn_Cumelina }
+		{ dynnp_al_ dynn_Cumelina }
+		{ dynn_Cumelius }
+		{ dynnp_al_ dynn_Cumelius }
+		{ dynn_Dercet }
+		{ dynnp_al_ dynn_Dercet }
+		{ dynn_Duber }
+		{ dynnp_al_ dynn_Duber }
+		{ dynn_Duri }
+		{ dynnp_al_ dynn_Duri }
+		{ dynn_Durina }
+		{ dynnp_al_ dynn_Durina }
+		{ dynn_Edovio }
+		{ dynnp_al_ dynn_Edovio }
+		{ dynn_Enirag }
+		{ dynnp_al_ dynn_Enirag }
+		{ dynn_Erbina }
+		{ dynnp_al_ dynn_Erbina }
+		{ dynn_Frovida }
+		{ dynnp_al_ dynn_Frovida }
+		{ dynn_Iccona }
+		{ dynnp_al_ dynn_Iccona }
+		{ dynn_Iccona }
+		{ dynnp_al_ dynn_Iccona }
+		{ dynn_Igado }
+		{ dynnp_al_ dynn_Igado }
+		{ dynn_Igana }
+		{ dynnp_al_ dynn_Igana }
+		{ dynn_Ilurbeda }
+		{ dynnp_al_ dynn_Ilurbeda }
+		{ dynn_Laebo }
+		{ dynnp_al_ dynn_Laebo }
+		{ dynn_Laega }
+		{ dynnp_al_ dynn_Laega }
+		{ dynn_Lahana }
+		{ dynnp_al_ dynn_Lahana }
+		{ dynn_Leoni }
+		{ dynnp_al_ dynn_Leoni }
+		{ dynn_Loiminna }
+		{ dynnp_al_ dynn_Loiminna }
+		{ dynn_Lug }
+		{ dynnp_al_ dynn_Lug }
+		{ dynn_Matuc }
+		{ dynnp_al_ dynn_Matuc }
+		{ dynn_Matug }
+		{ dynnp_al_ dynn_Matug }
+		{ dynn_Mirara }
+		{ dynnp_al_ dynn_Mirara }
+		{ dynn_Neta }
+		{ dynnp_al_ dynn_Neta }
+		{ dynn_Occa }
+		{ dynnp_al_ dynn_Occa }
+		{ dynn_Oilam }
+		{ dynnp_al_ dynn_Oilam }
+		{ dynn_Reue }
+		{ dynnp_al_ dynn_Reue }
+		{ dynn_Tauril }
+		{ dynnp_al_ dynn_Tauril }
+		{ dynn_Taurila }
+		{ dynnp_al_ dynn_Taurila }
+		{ dynn_Tauroc }
+		{ dynnp_al_ dynn_Tauroc }
+		{ dynn_Taurom }
+		{ dynnp_al_ dynn_Taurom }
+		{ dynn_Tauroma }
+		{ dynnp_al_ dynn_Tauroma }
+		{ dynn_Tona }
+		{ dynnp_al_ dynn_Tona }
+		{ dynn_Tonga }
+		{ dynnp_al_ dynn_Tonga }
+		{ dynn_Treba }
+		{ dynnp_al_ dynn_Treba }
+		{ dynn_Trebaruna }
+		{ dynnp_al_ dynn_Trebaruna }
+		{ dynn_Trebopala }
+		{ dynnp_al_ dynn_Trebopala }
+		{ dynn_Verora }
+		{ dynnp_al_ dynn_Verora }
+	}
+	
+	cadet_dynasty_names = { 
+		{ dynn_Abna }
+		{ dynnp_al_ dynn_Abna }
+		{ dynn_Aerno }
+		{ dynnp_al_ dynn_Aerno }
+		{ dynn_Aetio }
+		{ dynnp_al_ dynn_Aetio }
+		{ dynn_Albucel }
+		{ dynnp_al_ dynn_Albucel }
+		{ dynn_Aracus }
+		{ dynnp_al_ dynn_Aracus }
+		{ dynn_Arantia }
+		{ dynnp_al_ dynn_Arantia }
+		{ dynn_Arantio  }
+		{ dynnp_al_ dynn_Arantio  }
+		{ dynn_Ataegina }
+		{ dynnp_al_ dynn_Ataegina }
+		{ dynn_Bandua }
+		{ dynnp_al_ dynn_Bandua }
+		{ dynn_Berobreo }
+		{ dynnp_al_ dynn_Berobreo }
+		{ dynn_Borman }
+		{ dynnp_al_ dynn_Borman }
+		{ dynn_Bouati }
+		{ dynnp_al_ dynn_Bouati }
+		{ dynn_Bouia }
+		{ dynnp_al_ dynn_Bouia }
+		{ dynn_Bouiani }
+		{ dynnp_al_ dynn_Bouiani }
+		{ dynn_Buan }
+		{ dynnp_al_ dynn_Buan }
+		{ dynn_Buana }
+		{ dynnp_al_ dynn_Buana }
+		{ dynn_Cabuna }
+		{ dynnp_al_ dynn_Cabuna }
+		{ dynn_Cancil }
+		{ dynnp_al_ dynn_Cancil }
+		{ dynn_Candeber }
+		{ dynnp_al_ dynn_Candeber }
+		{ dynn_Caulec }
+		{ dynnp_al_ dynn_Caulec }
+		{ dynn_Coron }
+		{ dynnp_al_ dynn_Coron }
+		{ dynn_Coruae }
+		{ dynnp_al_ dynn_Coruae }
+		{ dynn_Cosa }
+		{ dynnp_al_ dynn_Cosa }
+		{ dynn_Coso }
+		{ dynnp_al_ dynn_Coso }
+		{ dynn_Cosso }
+		{ dynnp_al_ dynn_Cosso }
+		{ dynn_Covena }
+		{ dynnp_al_ dynn_Covena }
+		{ dynn_Cumel }
+		{ dynnp_al_ dynn_Cumel }
+		{ dynn_Cumela }
+		{ dynnp_al_ dynn_Cumela }
+		{ dynn_Cumelina }
+		{ dynnp_al_ dynn_Cumelina }
+		{ dynn_Cumelius }
+		{ dynnp_al_ dynn_Cumelius }
+		{ dynn_Dercet }
+		{ dynnp_al_ dynn_Dercet }
+		{ dynn_Duber }
+		{ dynnp_al_ dynn_Duber }
+		{ dynn_Duri }
+		{ dynnp_al_ dynn_Duri }
+		{ dynn_Durina }
+		{ dynnp_al_ dynn_Durina }
+		{ dynn_Edovio }
+		{ dynnp_al_ dynn_Edovio }
+		{ dynn_Enirag }
+		{ dynnp_al_ dynn_Enirag }
+		{ dynn_Erbina }
+		{ dynnp_al_ dynn_Erbina }
+		{ dynn_Frovida }
+		{ dynnp_al_ dynn_Frovida }
+		{ dynn_Iccona }
+		{ dynnp_al_ dynn_Iccona }
+		{ dynn_Iccona }
+		{ dynnp_al_ dynn_Iccona }
+		{ dynn_Igado }
+		{ dynnp_al_ dynn_Igado }
+		{ dynn_Igana }
+		{ dynnp_al_ dynn_Igana }
+		{ dynn_Ilurbeda }
+		{ dynnp_al_ dynn_Ilurbeda }
+		{ dynn_Laebo }
+		{ dynnp_al_ dynn_Laebo }
+		{ dynn_Laega }
+		{ dynnp_al_ dynn_Laega }
+		{ dynn_Lahana }
+		{ dynnp_al_ dynn_Lahana }
+		{ dynn_Leoni }
+		{ dynnp_al_ dynn_Leoni }
+		{ dynn_Loiminna }
+		{ dynnp_al_ dynn_Loiminna }
+		{ dynn_Lug }
+		{ dynnp_al_ dynn_Lug }
+		{ dynn_Matuc }
+		{ dynnp_al_ dynn_Matuc }
+		{ dynn_Matug }
+		{ dynnp_al_ dynn_Matug }
+		{ dynn_Mirara }
+		{ dynnp_al_ dynn_Mirara }
+		{ dynn_Neta }
+		{ dynnp_al_ dynn_Neta }
+		{ dynn_Occa }
+		{ dynnp_al_ dynn_Occa }
+		{ dynn_Oilam }
+		{ dynnp_al_ dynn_Oilam }
+		{ dynn_Reue }
+		{ dynnp_al_ dynn_Reue }
+		{ dynn_Tauril }
+		{ dynnp_al_ dynn_Tauril }
+		{ dynn_Taurila }
+		{ dynnp_al_ dynn_Taurila }
+		{ dynn_Tauroc }
+		{ dynnp_al_ dynn_Tauroc }
+		{ dynn_Taurom }
+		{ dynnp_al_ dynn_Taurom }
+		{ dynn_Tauroma }
+		{ dynnp_al_ dynn_Tauroma }
+		{ dynn_Tona }
+		{ dynnp_al_ dynn_Tona }
+		{ dynn_Tonga }
+		{ dynnp_al_ dynn_Tonga }
+		{ dynn_Treba }
+		{ dynnp_al_ dynn_Treba }
+		{ dynn_Trebaruna }
+		{ dynnp_al_ dynn_Trebaruna }
+		{ dynn_Trebopala }
+		{ dynnp_al_ dynn_Trebopala }
+		{ dynn_Verora }
+		{ dynnp_al_ dynn_Verora }
+	}
+
+	male_names = {
+		Aerno
+		Aetio
+		Albucel
+		Aracus
+		Arantio 
+		Bandua
+		Berobreo
+		Borman
+		Bouati
+		Bouiani
+		Buan
+		Cancil
+		Candeber
+		Caulec
+		Coron
+		Coruae
+		Coso
+		Cosso
+		Cumel
+		Cumelius
+		Dercet
+		Duber
+		Durac
+		Duri
+		Edovio
+		Endovellico
+		Enirag
+		Igado
+		Laebo
+		Leoni
+		Lug
+		Matuc
+		Matug
+		Oilam
+		Reue
+		Tauril
+		Tauroc
+		Taurom
+	}
+
+	female_names = {
+		Abna
+		Arantia
+		Ataegina
+		Bandua
+		Bouia
+		Buana
+		Cabuna
+		Cosa
+		Covena
+		Cumela
+		Cumelina
+		Durina
+		Erbina
+		Frovida
+		Iccona
+		Igana
+		Ilurbeda
+		Laega
+		Lahana
+		Loiminna
+		Mirara
+		Neta
+		Occa
+		Taurila
+		Tauroma
+		Tona
+		Tonga
+		Treba
+		Trebaruna
+		Trebopala
+		Verora
+	}	
+	
+	dynasty_of_location_prefix = "dynnp_al_"
+	
+	mercenary_names = {
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" } 
+		{ name = "mercenary_knights_warband" }
+		{ name = "mercenary_knights_warband" }
+	}
+}

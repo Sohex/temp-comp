@@ -1,0 +1,1049 @@
+﻿#Yokudan
+dyn_saran = {
+	name = "dynn_Saran"
+	culture = raga
+	motto = dynn_saran_motto
+}
+dyn_sesnit = {
+	name = "dynn_Sesnit"
+	culture = raga
+	motto = dynn_sesnit_motto
+}
+dyn_torn = {
+	name = "dynn_Torn"
+	culture = raga
+	motto = dynn_torn_motto
+}
+# dyn_tagon = {
+# 	prefix = "dynnp_do_"
+# 	name = "dynn_Tagon"
+# 	culture = raga
+# }
+dyn_yath = {
+	prefix = "dynnp_do_"
+	name = "dynn_Yath"
+	culture = raga
+}
+dyn_kanesh = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kanesh"
+	culture = raga
+	motto = dynn_kanesh_motto
+}
+dyn_sutaf = {
+	name = "dynn_Sutaf"
+	culture = raga
+}
+
+dyn_naanu = {
+	name = "dynn_Na_anu"
+	culture = raga
+}
+
+dyn_nasur = {
+	name = "dynn_Nasur"
+	culture = raga
+}
+
+dyn_maran = {
+	name = "dynn_Maran"
+	culture = raga
+}
+
+dyn_asmar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Asmar"
+	culture = raga
+}
+
+dyn_ghanem = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ghanem"
+	culture = raga
+}
+
+dyn_delbu = {
+	name = "dynn_Delbu"
+	culture = raga
+}
+
+dyn_azad = {
+	prefix = "dynnp_do_"
+	name = "dynn_Azad"
+	culture = raga
+	motto = dynn_azad_motto
+}
+
+dyn_elamin = {
+	prefix = "dynnp_do_"
+	name = "dynn_Elamin"
+	culture = raga
+	motto = dynn_elamin_motto
+}
+
+dyn_kazemi = {
+	name = "dynn_Kazemi"
+	culture = raga
+}
+
+dyn_rahaim = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rahaim"
+	culture = raga
+}
+
+dyn_helgye = {
+	name = "dynn_Hel_Gye"
+	culture = raga
+}
+
+dyn_nomitana = {
+	name = "dynn_No_Mitana"
+	culture = raga
+	motto = dynn_no_mitana_motto
+}
+
+dyn_karim = {
+	prefix = "dynnp_do_"
+	name = "dynn_Karim"
+	culture = raga
+	motto = dynn_karim_motto
+}
+
+dyn_tahir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tahir"
+	culture = raga
+}
+
+dyn_qabi = {
+	prefix = "dynnp_do_"
+	name = "dynn_Qabi"
+	culture = raga
+}
+
+dyn_hattu = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hattu"
+	culture = raga
+}
+
+dyn_ashhadr = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ashhadr"
+	culture = raga
+}
+
+dyn_zenata = {
+	name = "dynn_Zen_ata"
+	culture = raga
+}
+
+dyn_ploutar = {
+	name = "dynn_Ploutar"
+	culture = raga
+}
+
+dyn_haba = {
+	name = "dynn_Haba"
+	culture = raga
+}
+
+#Forebear
+
+dyn_nisewan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Nisewan"
+	culture = forebear
+	motto = dynn_nisewan_motto
+}
+dyn_danobia = {
+	prefix = "dynnp_do_"
+	name = "dynn_Danobia" 
+	culture = forebear
+	motto = dynn_danobia_motto
+}
+dyn_turon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Turon"
+	culture = forebear
+}
+dyn_rafir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rafir"
+	culture = forebear
+}
+dyn_katrica = {
+	prefix = "dynnp_do_"
+	name = "dynn_Katrica"
+	culture = forebear
+}
+dyn_lainlyn = {
+	name = "dynn_Lainlyn"
+	culture = forebear
+	motto = dynn_lainlyn_motto
+}
+dyn_tigonus = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tigonus"
+	culture = forebear
+}
+dyn_ojwa = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ojwa"
+	culture = forebear
+	motto = dynn_ojwa_motto
+}
+dyn_sutar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Sutar"
+	culture = forebear
+	motto = dynn_taneth_motto
+}
+dyn_sedar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Sedar"
+	culture = forebear
+	motto = dynn_sedar_motto
+}
+dyn_oritar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Oritar"
+	culture = forebear
+	motto = dynn_oritar_motto
+}
+dyn_ragad = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ragad"
+	culture = forebear
+}
+dyn_hallin = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hallin"
+	culture = forebear
+}
+dyn_miset = {
+	prefix = "dynnp_do_"
+	name = "dynn_Miset"
+	culture = forebear
+	motto = dynn_miset_motto
+}
+dyn_rahal = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rahal"
+	culture = forebear
+}
+dyn_dihar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Dihar"
+	culture = forebear
+}
+dyn_leki = { #House of Makela Leki, ones of Hammerfell last known sword-singers
+	name = "dynn_Leki"
+	culture = forebear
+	motto = dynn_leki_motto
+}
+dyn_djen = { 
+	name = "dynn_Djen"
+	culture = forebear
+}
+dyn_rashem = { 
+	name = "dynn_Rashem"
+	culture = forebear
+}
+dyn_beraja = {
+	prefix = "dynnp_do_"
+	name = "dynn_Beraja"
+	culture = forebear
+	motto = dynn_beraja_motto
+}
+dyn_karda = {
+	prefix = "dynnp_do_"
+	name = "dynn_Karda"
+	culture = forebear
+}
+dyn_botaro = {
+	name = "dynn_Botaro"
+	culture = forebear
+}
+dyn_cort = {
+	prefix = "dynnp_do_"
+	name = "dynn_Cort"
+	culture = forebear
+	motto = dynn_rihad_motto
+}
+dyn_tarin = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tarin"
+	culture = forebear
+}
+dyn_cyrayn = {
+	name = "dynn_Cirayn"
+	culture = forebear
+}
+dyn_nekati = {
+	name = "dynn_Nekati"
+	culture = forebear
+}
+dyn_tataki = {
+	name = "dynn_Tataki"
+	culture = forebear
+}
+dyn_myrk = {
+	prefix = "dynnp_do_"
+	name = "dynn_Myrk"
+	culture = forebear
+}
+dyn_kudon = {
+	name = "dynn_Kudon"
+	culture = forebear
+}
+dyn_atal = {
+	prefix = "dynnp_do_"
+	name = "dynn_Atal"
+	culture = forebear
+}
+dyn_iselan = {
+	name = "dynn_Iselan"
+	culture = forebear
+}
+dyn_daran = {
+	name = "dynn_Daran"
+	culture = forebear
+}
+dyn_isaden = {
+	name = "dynn_Isaden"
+	culture = forebear
+}
+dyn_daramar = {
+	name = "dynn_Daramar"
+	culture = forebear
+}
+dyn_isazo = {
+	name = "dynn_Isazo"
+	culture = forebear
+}
+dyn_pesh = {
+	prefix = "dynnp_do_"
+	name = "dynn_Pesh"
+	culture = forebear
+}
+dyn_ceryl = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ceryl"
+	culture = forebear
+}
+dyn_turiti = {
+	name = "dynn_Turiti"
+	culture = forebear
+}
+dyn_nemin = {
+	name = "dynn_Nemin"
+	culture = forebear
+}
+dyn_sena = {
+	prefix = "dynnp_do_"
+	name = "dynn_Sena" #After founder
+	culture = forebear
+}
+dyn_aluson = {
+	name = "dynn_Aluson"
+	culture = forebear
+}
+dyn_tarak = {
+	name = "dynn_Tarak"
+	culture = forebear	
+}
+dyn_karai = {
+	name = "dynn_Karai"
+	culture = forebear	
+}
+dyn_hajar = {
+	name = "dynn_Hajar"
+	culture = forebear
+}
+dyn_dasan = {
+	name = "dynn_Dasan"
+	culture = forebear
+}
+dyn_rataki = {
+	name = "dynn_Rataki"
+	culture = forebear
+}
+dyn_javur = {
+	name = "dynn_Javur"
+	culture = forebear	
+}
+dyn_rahar = {
+	name = "dynn_Rahar"
+	culture = forebear
+}
+dyn_kamar = {
+	name = "dynn_Kamar"
+	culture = forebear
+}
+dyn_agrabah = {
+	prefix = "dynnp_do_"
+	name = "dynn_Agrabah"
+	culture = forebear
+}
+dyn_haran = {
+	prefix = "dynnp_do_"
+	name = "dynn_Haran"
+	culture = forebear
+	motto = dynn_haran_motto
+}
+dyn_datiki = {
+	prefix = "dynnp_do_"
+	name = "dynn_Datiki"
+	culture = forebear
+}
+dyn_ahvaz = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ahvaz"
+	culture = forebear
+}
+dyn_silaki = {
+	prefix = "dynnp_do_"
+	name = "dynn_Silaki"
+	culture = forebear
+}
+dyn_ragath = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ragath"
+	culture = forebear
+}
+dyn_okon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Okon"
+	culture = forebear
+}
+dyn_manaz = {
+	prefix = "dynnp_do_"
+	name = "dynn_Manaz"
+	culture = forebear
+}
+dyn_ruga = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ruga"
+	culture = forebear
+}
+dyn_rukom = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rukom"
+	culture = forebear
+}
+dyn_amat = {
+	name = "dynn_Amat"
+	culture = forebear
+}
+dyn_aran = {
+	name = "dynn_Aran"
+	culture = forebear
+}
+dyn_aqabi = {
+	name = "dynn_Aqabi"
+	culture = forebear
+}
+dyn_tawia = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tawia"
+	culture = forebear
+}
+dyn_traka = {
+	prefix = "dynnp_do_"
+	name = "dynn_Traka"
+	culture = forebear
+}
+dyn_hani = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hani"
+	culture = forebear
+}
+dyn_traga = {
+	prefix = "dynnp_do_"
+	name = "dynn_Traga"
+	culture = forebear
+}
+dyn_kanif = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kanif"
+	culture = forebear
+}
+dyn_kuden = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kuden"
+	culture = forebear
+}
+dyn_ranat = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ranat"
+	culture = forebear
+}
+dyn_kuden2 = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kuden"
+	culture = forebear
+}
+dyn_orinar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Orinar"
+	culture = forebear
+}
+dyn_dragan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Dragan"
+	culture = forebear
+}
+dyn_nisra = {
+	prefix = "dynnp_do_"
+	name = "dynn_Nisra"
+	culture = forebear
+}
+dyn_helkati = {
+	prefix = "dynnp_do_"
+	name = "dynn_Helkati"
+	culture = forebear	
+}
+dyn_kitaki = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kitaki"
+	culture = forebear
+}
+dyn_brena = {
+	prefix = "dynnp_do_"
+	name = "dynn_Brena"
+	culture = forebear
+}
+dyn_hunding = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hunding"
+	culture = forebear
+	motto = dynn_hunding_motto
+}
+dyn_shinji = { #House of Blademaster Gaiden Shinji, founder of the Imperial Arena
+	name = "dynn_Shinji"
+	culture = forebear
+}
+dyn_zita = {
+	prefix = "dynnp_do_"
+	name = "dynn_Zita"
+	culture = forebear
+}
+dyn_amihon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Amihon"
+	culture = forebear
+}
+dyn_ruzta = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ruzta"
+	culture = forebear
+}
+dyn_birkan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Birkan"
+	culture = forebear
+}
+dyn_raig = {
+	prefix = "dynnp_do_"
+	name = "dynn_Raig"
+	culture = forebear
+}
+dyn_hada = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hada"
+	culture = forebear
+}
+dyn_firir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Firir"
+	culture = forebear
+}
+dyn_nemshur = {
+	prefix = "dynnp_do_"
+	name = "dynn_Nemshur"
+	culture = forebear
+}
+
+#Crowns
+dyn_phyllos = {
+	prefix = "dynnp_do_"
+	name = "dynn_Phyllos" #Antiphyllos
+	culture = crown_culture
+}
+dyn_curetar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Curetar"
+	culture = crown_culture
+}
+dyn_tura = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tura"
+	culture = crown_culture
+	motto = dynn_tura_motto
+}
+dyn_bamenda = {
+	prefix = "dynnp_do_"
+	name = "dynn_Bamenda"
+	culture = crown_culture
+}
+dyn_nizwa = {
+	prefix = "dynnp_do_"
+	name = "dynn_Nizwa"
+	culture = crown_culture
+	motto = dynn_nizwa_motto
+}
+dyn_skavyn = {
+	prefix = "dynnp_do_"
+	name = "dynn_Skavyn"
+	culture = crown_culture
+}
+dyn_pharos = {
+	prefix = "dynnp_do_"
+	name = "dynn_Pharos"
+	culture = crown_culture
+}
+dyn_baha = {
+	name = "dynn_Baha"
+	culture = crown_culture
+}
+dyn_the_crown = { #Diagna's dynasty - of the Crowns
+	prefix = "dynnp_do_"
+	name = "dynn_Hega" #Crowns
+	culture = crown_culture
+}
+dyn_rasfa = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rasfa"
+	culture = crown_culture
+}
+dyn_ketaro = {
+	name = "dynn_Ketaro"
+	culture = crown_culture
+}
+dyn_pataro = {
+	name = "dynn_Pataro"
+	culture = crown_culture
+}
+dyn_karr = { #Called after founder Karrod
+	prefix = "dynnp_do_"
+	name = "dynn_Karr"
+	culture = crown_culture
+}
+dyn_moni = {
+	prefix = "dynnp_do_"
+	name = "dynn_Moni"
+	culture = crown_culture
+}
+dyn_rohon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rohon"
+	culture = crown_culture
+}
+dyn_soko = {
+	prefix = "dynnp_do_"
+	name = "dynn_Soko"
+	culture = crown_culture
+}
+dyn_bahia = {
+	prefix = "dynnp_do_"
+	name = "dynn_Bahia"
+	culture = crown_culture
+}
+dyn_kufan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kufan"
+	culture = crown_culture
+}
+dyn_kasa = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kasa"
+	culture = crown_culture
+}
+dyn_sora = {
+	prefix = "dynnp_do_"
+	name = "dynn_Sora"
+	culture = crown_culture
+}
+dyn_baut = {
+	prefix = "dynnp_do_"
+	name = "dynn_Baut"
+	culture = crown_culture
+}
+dyn_hisa = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hisa"
+	culture = crown_culture
+}
+dyn_kutu = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kutu"
+	culture = crown_culture
+}
+dyn_tam = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tam"
+	culture = crown_culture
+}
+dyn_yola = {
+	prefix = "dynnp_do_"
+	name = "dynn_Yola"
+	culture = crown_culture
+}
+dyn_lekaga = {
+	prefix = "dynnp_do_"
+	name = "dynn_Lekaga"
+	culture = crown_culture
+}
+dyn_nisren = {
+	name = "dynn_Nisren"
+	culture = crown_culture
+}
+dyn_talat = {
+	name = "dynn_Talat"
+	culture = crown_culture
+}
+dyn_shavir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Shavir"
+	culture = crown_culture
+}
+dyn_yul = {
+	prefix = "dynnp_do_"
+	name = "dynn_Yul"
+	culture = crown_culture
+}
+dyn_tava = {
+	prefix = "dynnp_do_"
+	name = "dynn_Tava"
+	culture = crown_culture
+}
+dyn_timda = {
+	prefix = "dynnp_do_"
+	name = "dynn_Timda"
+	culture = crown_culture
+}
+dyn_curyn = {
+	prefix = "dynnp_do_"
+	name = "dynn_Curyn"
+	culture = crown_culture
+}
+dyn_jatar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Jatar"
+	culture = crown_culture
+}
+dyn_brenal = {
+	prefix = "dynnp_do_"
+	name = "dynn_Brenal"
+	culture = crown_culture
+}
+dyn_teden = {
+	prefix = "dynnp_do_"
+	name = "dynn_Teden"
+	culture = crown_culture
+}
+dyn_trauti = {
+	prefix = "dynnp_do_"
+	name = "dynn_Trauti"
+	culture = crown_culture
+}
+dyn_bodan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Bodan"
+	culture = crown_culture
+}
+dyn_coya = {
+	prefix = "dynnp_do_"
+	name = "dynn_Coya"
+	culture = crown_culture
+}
+dyn_remran = {
+	prefix = "dynnp_do_"
+	name = "dynn_Remran"
+	culture = crown_culture
+}
+dyn_terouki = {
+	prefix = "dynnp_do_"
+	name = "dynn_Terouki"
+	culture = crown_culture
+}
+dyn_aflan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Aflan"
+	culture = crown_culture
+}
+
+#Alik'r
+
+dyn_kuro = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kuro"
+	culture = alikr
+}
+dyn_ashabah = {
+	name = "dynn_Ashabah"
+	culture = alikr
+	motto = dynn_ashabah_motto
+}
+dyn_zasek = {
+	prefix = "dynnp_do_"
+	name = "dynn_Zasek"
+	culture = alikr
+	motto = dynn_zasek_motto
+}
+dyn_nekor = {
+	prefix = "dynnp_do_"
+	name = "dynn_Nekor"
+	culture = alikr
+}
+dyn_kulan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kulan"
+	culture = alikr
+	motto = dynn_curylen_motto
+}
+dyn_darin = {
+	prefix = "dynnp_do_"
+	name = "dynn_Darin"
+	culture = alikr
+	motto = dynn_darin_motto
+}
+dyn_lohon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Lohon"
+	culture = alikr
+	motto = dynn_lohon_motto
+}
+dyn_hikan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hikan"
+	culture = alikr
+}
+dyn_kehar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kehar"
+	culture = alikr
+}
+dyn_rhali = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rhali"
+	culture = alikr
+}
+dyn_bredon = {
+	prefix = "dynnp_do_"
+	name = "dynn_Bredon"
+	culture = alikr
+}
+dyn_mekir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Mekir"
+	culture = alikr
+	motto = dynn_mekir_motto
+}
+dyn_shaelan = {
+	name = "dynn_Shaelan"
+	culture = alikr
+}
+dyn_rufiz = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rufiz"
+	culture = alikr
+	#motto = dynn_rufiz_motto
+}
+dyn_azvir = {
+	prefix = "dynnp_do_"
+	name = "dynn_Azvir"
+	culture = alikr
+}
+dyn_atet = {
+	prefix = "dynnp_do_"
+	name = "dynn_Atet"
+	culture = alikr
+}
+dyn_inatar = {
+	prefix = "dynnp_do_"
+	name = "dynn_Inatar"
+	culture = alikr
+}
+dyn_hunno = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hunno"
+	culture = alikr
+}
+dyn_leyanu = {
+	prefix = "dynnp_do_"
+	name = "dynn_Leyanu"
+	culture = alikr
+}
+#dyn_coye = {
+#	prefix = "dynnp_do_"
+#	name = "dynn_Coye"
+#	culture = alikr
+#}
+dyn_suren = {
+	prefix = "dynnp_do_"
+	name = "dynn_Suren"
+	culture = alikr
+}
+dyn_azrur = {
+	name = "dynn_Azrur"
+	culture = alikr
+}
+dyn_abekkeda = {
+	name = "dynn_Abekkeda"
+	culture = alikr
+}
+dyn_cheddab = {
+	name = "dynn_Cheddab"
+	culture = alikr
+}
+dyn_asmun = {
+	prefix = "dynnp_do_"
+	name = "dynn_Asmun"
+	culture = alikr
+}
+
+#Abecean
+dyn_addin = {
+	prefix = "dynnp_do_"
+	name = "dynn_Addin"
+	culture = abecean
+}
+
+dyn_hnas = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hnas"
+	culture = abecean
+}
+
+dyn_berbera = {
+	prefix = "dynnp_do_"
+	name = "dynn_Berbera"
+	culture = abecean
+}
+
+dyn_talum = {
+	prefix = "dynnp_do_"
+	name = "dynn_Talum"
+	culture = abecean
+}
+
+dyn_roukad = {
+	prefix = "dynnp_do_"
+	name = "dynn_Roukad"
+	culture = abecean
+}
+dyn_iserra = {
+	prefix = "dynnp_do_"
+	name = "dynn_Iserra"
+	culture = abecean
+}
+dyn_ameen = {
+	name = "dynn_Ameen"
+	culture = abecean
+}
+dyn_dogata = {
+	name = "dynn_Dogata"
+	culture = abecean
+}
+dyn_rahan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Rahan"
+	culture = abecean
+}
+dyn_telet = {
+	prefix = "dynnp_do_"
+	name = "dynn_Telet"
+	culture = abecean
+}
+dyn_ateko = {
+	name = "dynn_Ateko"
+	culture = abecean
+}
+
+#Horsemen
+
+dyn_silwer = {
+	prefix = "dynnp_do_"
+	name = "dynn_Silwer"
+	culture = horsefolk
+	motto = dynn_silwer_motto
+}
+
+dyn_hisan = {
+	prefix = "dynnp_do_"
+	name = "dynn_Hisan"
+	culture = horsefolk
+	motto = dynn_hisan_motto
+}
+
+dyn_kalam = {
+	prefix = "dynnp_do_"
+	name = "dynn_Kalam"
+	culture = horsefolk
+}
+
+dyn_saraj = {
+	prefix = "dynnp_do_"
+	name = "dynn_Saraj"
+	culture = horsefolk
+	motto = dynn_saraj_motto
+}
+
+#Duadri
+dyn_hunran = {
+	name = "dynn_Hunran"
+	culture = duadri
+}
+dyn_natar = {
+	name = "dynn_Natar"
+	culture = duadri
+}
+dyn_zetaf = {
+	name = "dynn_Ze_taf"
+	culture = duadri
+}
+dyn_ori = {
+	prefix = "dynnp_do_"
+	name = "dynn_Ori"
+	culture = duadri
+}
+
+dyn_thyra = {
+	prefix = "dynnp_do_"
+	name = "dynn_Thyra"
+	culture = forebear
+}
+
+#200013 = {
+#	name = "Jilani"
+#	culture = raga
+#}
+#
+#210021 = {
+#	prefix = "dynnp_do_"
+#	name = "Dwyr"
+#	culture = forebear
+#}
+#
+#210027 = {
+#	name = "Razul"
+#	culture = forebear
+#}
+#
+#210030 = {
+#	prefix = "dynnp_do_"
+#	name = "Amil"
+#	culture = forebear
+#}
+#210032 = {
+#	name = "Perah"
+#	culture = forebear
+#}
+#220013 = {
+#	name = "KElmar"
+#	culture = abecean
+#}
+#

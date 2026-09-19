@@ -1,0 +1,282 @@
+﻿ skull_numinex_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.05
+	monthly_prestige = 0.5
+	dread_baseline_add = 10
+	monthly_prestige_gain_per_dread_add = 0.05
+	powerful_vassal_opinion = 15
+}
+
+throne_ruby_modifier = {
+	court_grandeur_baseline_add = 10
+	monthly_dynasty_prestige = 0.1
+	monthly_prestige = 1
+	monthly_dynasty_prestige_mult = 0.1
+}
+
+flask_lillandril_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.05
+	monthly_prestige = 0.5
+}
+
+aok_modifier = {
+	monthly_lifestyle_xp_gain_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.05
+	imperial_religion_opinion = 10
+	monthly_legitimacy_add = 2
+}
+
+crown_verity_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.05
+	monthly_prestige = 0.5
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+mace_aevar_modifier = {
+	prowess_no_portrait = 10
+	development_growth = 0.25
+	monthly_prestige = 0.5
+}
+
+diadem_diagna_modifier = {
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_prestige = 0.5
+	yokudan_religion_opinion = 10
+	monthly_prestige_gain_per_happy_powerful_vassal_mult = 0.02
+	diplomacy_per_piety_level = 1
+	court_grandeur_baseline_add = 6
+}
+
+golden_skull_beela_kaar_modifier = {
+	monthly_prestige = 1
+	dread_baseline_add = 15
+}
+
+soul_sword_majah_modifier = {
+	prowess_no_portrait = 5 #Orichalc sword
+	monthly_prestige = 0.2 #Orichalc sword
+	defender_advantage = 5 #Defended diagna
+	monthly_martial_lifestyle_xp_gain_mult = 0.05 #The sword is teaching its owners how to kill people
+}
+
+soul_sword_raban_modifier = {
+	prowess_no_portrait = 5 #Orichalc sword
+	monthly_prestige = 0.2 #Orichalc sword
+	desert_advantage = 4
+	monthly_martial_lifestyle_xp_gain_mult = 0.05 #The sword is teaching its owners how to kill people
+	keptu_opinion = -10
+}
+
+soul_sword_halelah_modifier = {
+	prowess_no_portrait = 5 #Orichalc sword
+	monthly_prestige = 0.2 #Orichalc sword
+	tolerance_advantage_mod = 6
+	monthly_martial_lifestyle_xp_gain_mult = 0.05 #The sword is teaching its owners how to kill people
+	different_faith_opinion = -10
+}
+
+orichalc_scalpel_modifier = {
+	prowess_no_portrait = 5
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+	monthly_dynasty_prestige_mult = 0.05
+	knight_effectiveness_mult = 0.05
+}
+
+black_iron_modifier = {
+	prowess_no_portrait = 10
+	monthly_prestige = 0.5
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+kingmakers_trove_modifier = {
+	court_grandeur_baseline_add = 5
+	development_growth = 0.5
+	monthly_prestige = 0.5
+}
+
+veloths_judgement_modifier = {
+	same_faith_opinion = 15
+	prowess_no_portrait = 15
+	monthly_piety = 1.5
+	martial_per_piety_level = 1
+}
+
+throne_camoran_modifier = {
+	court_grandeur_baseline_add = 10
+	monthly_dynasty_prestige = 0.1
+	monthly_prestige = 1
+	monthly_dynasty_prestige_mult = 0.1
+}
+
+staff_rootmender_modifier = {
+	prowess_no_portrait = 15
+	monthly_piety = 1.5
+	learning_per_piety_level = 1
+}
+
+wuuthrad_modifier = {
+	prowess_no_portrait = 15
+	monthly_prestige = 1
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+crown_anton_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_prestige = 0.25
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+crown_shornhelm_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_prestige = 0.25
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+ring_mane_modifier = {
+	court_grandeur_baseline_add = 10
+	monthly_piety = 2
+	monthly_dynasty_prestige_mult = 0.05
+	same_faith_opinion = 10
+}
+
+bow_malgoth_modifier = {
+	prowess_no_portrait = 8
+	monthly_piety = 2
+	martial_per_piety_level = 1
+}
+
+throne_mane_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_prestige = 1
+	monthly_dynasty_prestige_mult = 0.025
+}
+
+ebony_blade_modifier = {
+	prowess_no_portrait = 15
+	dread_baseline_add = 15
+	monthly_prestige_gain_per_dread_add = 0.02
+	owned_hostile_scheme_success_chance_add = 5
+}
+
+harkons_sword_modifier = {
+	prowess_no_portrait = 10
+	dynasty_opinion = -10
+	monthly_prestige = 0.5
+}
+
+history_of_histories_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_prestige = 0.25
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_learning_lifestyle_xp_gain_mult = 0.1
+}
+
+dragonsword_of_lainlyn_modifier = {
+	prowess_no_portrait = 10
+	monthly_prestige = 0.5
+}
+
+breathtaker_modifier = {
+	prowess_no_portrait = 10
+	monthly_piety = 0.5
+}
+
+dagger_foal_modifier = {
+	prowess_no_portrait = 4
+	monthly_piety = 0.5
+	monthly_dynasty_prestige_mult = 0.1
+	horsefolk_opinion = 10
+}
+
+sentinel_crown_modifier = {
+	monthly_prestige = 1
+	monthly_dynasty_prestige_mult = 0.05
+	character_capital_county_monthly_development_growth_add = 0.02
+	courtly_opinion = 10
+	court_grandeur_baseline_add = 6
+}
+
+diagna_seal_modifier = {
+	crown_culture_opinion = 10
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_prestige = 1
+	diplomacy_per_prestige_level = 1
+}
+
+bow_ivory_modifier = {
+	prowess_no_portrait = 10
+	monthly_piety = 2
+	martial_per_piety_level = 1
+}
+
+book_delegation_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_dynasty_prestige_mult = 0.025
+}
+
+book_bretonnick_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_dynasty_prestige_mult = 0.025
+}
+
+book_daenia_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige = 0.15
+	monthly_dynasty_prestige_mult = 0.025
+}
+
+armor_joile_modifier = {
+	monthly_prestige = 0.3
+	knight_effectiveness_mult = 0.1
+	hard_casualty_modifier = -0.05
+}
+
+gutwrencher_modifier = {
+	prowess_no_portrait = 10
+	dread_baseline_add = 10
+	intrigue = 2
+}
+
+mammoth_horn_modifier = {
+	prowess_no_portrait = 10
+	dread_baseline_add = 10
+	intrigue = 2
+}
+
+# THIS ONE IS A CHARACTER MODIFIER MEANT TO BE GIVEN THROUGH THE DECISION
+verity_worthy = {
+	icon = magic_positive
+}
+
+verity_unworthy = {
+	icon = magic_negative
+}
+
+blade_cassimoran_modifier = {
+	prowess_per_prestige_level = 1
+	monthly_prestige = 0.3
+	prowess_no_portrait = 5
+}
+
+volwesi_flowers_modifier = {
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_piety = 0.1
+	akaviri_religion_opinion = 10
+	ilniviri_opinion = 10
+}
+
+red_dragon_crown_modifier = {
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_prestige = 0.25
+	monthly_prestige_gain_per_happy_powerful_vassal_mult = 0.02
+	courtier_and_guest_opinion = 10
+	diplomacy_per_piety_level = 1
+}

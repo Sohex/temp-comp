@@ -1,0 +1,5403 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+#################
+#Hammerfell Block
+#################
+
+e_hammerfell = {
+	color = { 204 35 14 }
+
+
+	capital = c_sentinel
+	can_be_named_after_dynasty = no
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_yokudan }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	cultural_names = {
+		#Galen
+		name_list_galen = cn_turkiye
+		#aldmeri
+		name_list_ayleid = cn_volenfell
+		name_list_altmer  = cn_volenfell
+		name_list_falmer = cn_volenfell
+		#dwemer
+		name_list_dwemer = cn_vtholftenzel
+		#Goblin
+		name_list_goblin = cn_hrammafel
+	}
+
+	#Titular Kingdoms
+
+	k_verkarth = {
+		color = { 70 50 0 }
+	
+
+		capital = c_verkarth
+		can_be_named_after_dynasty = no
+
+		can_create = {
+			completely_controls = title:k_verkarth.title_capital_county
+		}
+	}
+
+	k_hegathe = {
+		color = { 208 36 13 }
+	
+
+		capital = c_hegathe
+		can_be_named_after_dynasty = no
+
+		d_hegathe = {
+			color = { 238 36 13 }
+		
+
+			capital = c_hegathe
+
+			can_create = {
+				completely_controls = title:d_hegathe.title_capital_county
+			}
+
+			cultural_names = {
+				name_list_altmer = cn_calmenyorn
+				name_list_balfiera = cn_calmenyorn
+			}
+
+			c_hegathe = {
+				color = { 210 29 1 }
+
+				cultural_names = {
+					name_list_altmer = cn_calmenyorn
+					name_list_balfiera = cn_calmenyorn
+				}
+			
+
+				b_hegathe = {
+					province = 466
+
+					color = { 145 65 0 }
+				
+				}
+				b_calmena = {
+					province = 464
+
+					color = { 140 65 0 }
+				
+				}
+				b_chatan = {
+					province = 485
+
+					color = { 140 65 5 }
+
+					cultural_names = {
+						name_list_altmer = cn_calmenyorn
+						name_list_balfiera = cn_calmenyorn
+					}
+				}
+				b_assi = {
+					province = 465
+
+					color = { 140 60 0 }
+				
+				}
+				b_atriga = {
+					province = 5603
+
+					color = { 101 84 66 }
+				
+				}
+			}
+			c_pharos = {
+				color = { 210 49 1 }
+			
+
+				b_pharos = {
+					province = 488
+
+					color = { 210 49 1 }
+				
+				}
+				b_tamagoro = {
+					province = 5604
+
+					color = { 210 49 1 }
+				
+				}
+			}
+			c_tarhuk = {
+				color = { 210 49 21 }
+			
+
+				b_tarhuk = {
+					province = 486
+
+					color = { 210 49 21 }
+				
+				}
+				b_kutaro = {
+					province = 487
+
+					color = { 210 49 21 }
+				
+				}
+			}
+			c_pellame = {
+				color = { 210 29 21 }
+			
+
+				b_pellame = {
+					province = 463
+
+					color = { 210 29 21 }
+				
+				}
+				b_rahim = {
+					province = 461
+
+					color = { 210 29 21 }
+				
+				}
+				b_odzala = {
+					province = 462
+
+					color = { 210 29 21 }
+				
+				}
+			}
+			c_qayruk = {
+				color = { 210 9 21 }
+			
+
+				b_qayruk = {
+					province = 5605
+
+					color = { 210 9 21 }
+				
+				}
+				b_skhidiouna = {
+					province = 5606
+
+					color = { 210 9 21 }
+				
+				}
+				b_enuki = {
+					province = 5607
+
+					color = { 210 9 21 }
+				
+				}
+				b_khaziane = {
+					province = 5608
+
+					color = { 210 9 21 }
+				
+				}
+			}
+		}
+		d_pothago = {
+			color = { 239 120 21 }  
+		
+
+			capital = c_pothago
+
+			can_create = {
+				completely_controls = title:d_pothago.title_capital_county
+			}
+
+			c_pothago = {
+				color = { 239 100 21 }
+			
+
+				b_pothago = {
+					province = 442
+
+					color = { 239 100 21 }
+				
+				}
+				b_bamenda = {
+					province = 443
+
+					color = { 239 100 21 }
+				
+				}
+				b_deniar = {
+					province = 444
+
+					color = { 239 100 21 }
+				
+				}
+			}
+			c_sunkeep = {
+				color = { 239 80 21 }
+				
+
+				b_kairou = {
+					province = 5237
+
+					color = { 239 80 21 }
+					
+				}
+				b_sunkeep = {
+					province = 446
+
+					color = { 239 80 21 }
+				
+				}
+				b_kumasi = {
+					province = 447
+
+					color = { 239 80 21 }
+				
+				}
+			}		
+		}
+		d_abibon = {
+			color = { 227 83 15 }
+		
+
+			capital = c_abibon
+
+			can_create = {
+				completely_controls = title:d_abibon.title_capital_county
+			}
+
+			c_abibon = {
+				color = { 227 63 15 }
+			
+
+				b_abibon = {
+					province = 457
+
+					color = { 227 63 15 }
+				
+				}
+				b_gora = {
+					province = 455
+
+					color = { 227 63 15 }
+				
+				}
+				b_ayalah = {
+					province = 456
+
+					color = { 227 63 15 }
+				
+				}
+			}
+			c_bloodhorn = {
+				color = { 237 63 5 }
+		
+
+				b_bloodhorn = {
+					province = 459
+
+					color = { 237 63 5 }
+				
+				}
+				b_arguin = {
+					province = 458
+
+					color = { 237 63 5 }
+				
+				}
+				b_tura = {
+					province = 460
+
+					color = { 237 63 5 }
+				
+				}
+			}
+			c_dragonhorn = {
+				color = { 227 83 35 }
+			
+
+				b_dragonhorn = {
+					province = 482
+
+					color = { 227 83 35 }
+				
+				}
+				b_dragon_teeth = {
+					province = 481
+
+					color = { 227 83 35 }
+				
+				}
+				b_dakar = {
+					province = 3921
+
+					color = { 227 83 35 }
+				
+				}
+			}
+			c_mettula = {
+				color = { 227 63 35 }
+			
+
+				b_mettula = {
+					province = 5609
+
+					color = { 227 63 35 }
+				
+				}
+				b_brahuna = {
+					province = 5610
+
+					color = { 227 63 35 }
+				
+				}
+				b_chemey = {
+					province = 5611
+
+					color = { 227 63 35 }
+				
+				}
+			}
+			c_tihos = {
+				color = { 207 63 35 }
+			
+
+				b_tihos = {
+					province = 5612
+
+					color = { 207 63 35 }
+				
+				}
+				b_dolgo = {
+					province = 5613
+
+					color = { 207 63 35 }
+				
+				}
+			}
+		}
+	}
+	k_sentinel = {
+		color = { 255 125 0 }
+	
+
+		capital = c_sentinel
+		can_be_named_after_dynasty = no
+
+		d_sentinel = {
+			color = { 255 125 10 }
+		
+
+			capital = c_sentinel
+
+			can_create = {
+				completely_controls = title:d_sentinel.title_capital_county
+			}
+
+			c_sentinel = {
+				color = { 255 130 5 }
+			
+
+				b_sentinel = {
+					province = 434
+
+					color = { 125 5 255 }
+				
+				}
+				b_akosia = {
+					province = 435
+
+					color = { 125 10 255 }
+				
+				}
+				b_cerekat = {
+					province = 5477
+
+					color = { 125 10 250 }
+				}
+				b_elilabi = {
+					province = 5478
+
+					color = { 120 5 255 }
+				}
+				b_mogaka = {
+					province = 436
+
+					color = { 120 10 255 }
+				
+				}
+			}
+			c_cybiades = {
+				color = { 235 130 10 }
+			
+				cultural_names = {
+					name_list_glenumbran = cn_cauchy
+					name_list_iliac = cn_cauchy
+					name_list_witchman = cn_cauchy
+				}
+
+				b_cybiades = {
+					province = 437
+
+					color = { 125 10 255 }
+				
+				}
+			}
+			c_ancestor_landing = {
+				color = { 254 135 1 }
+			
+
+				b_ancestor_landing = {
+					province = 433
+
+					color = { 250 120 25 }
+				
+				}
+				b_totambu_quay = {
+					province = 432
+
+					color = { 250 120 25 }
+				
+				}
+			}
+			c_sedojer = {
+				color = { 213 165 10 }
+			
+
+				b_sedojer = {
+					province = 5625
+
+					color = { 213 165 10 }
+				
+				}
+				b_oselah = {
+					province = 5624
+
+					color = { 172 134 159 }
+				
+				}
+			}
+			c_misrn = {
+				color = { 198 180 78 }
+			
+
+				b_misrn = {
+					province = 5626
+
+					color = { 198 180 78 }
+				
+				}
+				b_makodishu = {
+					province = 5627
+
+					color = { 147 124 167 }
+				
+				}
+			}
+		}
+		d_tigonus = {
+			color = { 218 159 7 }
+		
+
+			capital = c_tigonus
+
+			can_create = {
+				completely_controls = title:d_tigonus.title_capital_county
+			}
+
+			c_tigonus = {
+				color = { 238 159 7 }
+			
+
+				b_kalaan = {
+					province = 5634
+
+					color = { 238 159 7 }
+				
+				}
+				b_saltwater = {
+					province = 406
+
+					color = { 238 159 7 }
+				
+				}
+				b_onda = {
+					province = 408
+
+					color = { 238 159 7 }
+				
+				}
+			}
+			c_ayafa = {
+				color = { 218 159 27 }
+			
+				cultural_names = {
+					name_list_glenumbran = cn_vendel
+					name_list_iliac = cn_vendel
+					name_list_witchman = cn_vendel
+				}
+
+				b_ayafa = {
+					province = 439
+
+					color = { 218 159 27 }
+				
+				}
+				b_katrica = {
+					province = 438
+
+					color = { 218 159 27 }
+				
+				}
+			}
+			c_naresa = {
+				color = { 218 179 7 }
+			
+
+				b_naresa = {
+					province = 5629
+
+					color = { 218 179 7 }
+				
+				}
+				b_akhahanu = {
+					province = 5628
+
+					color = { 218 179 7 }
+				
+				}
+				b_issaquthuda = {
+					province = 5630
+
+					color = { 218 179 7 }
+				
+				}
+			}
+		}
+		d_lainlyn = {
+			color = { 170 186 39 }
+		
+
+			capital = c_lainlyn
+
+			can_create = {
+				completely_controls = title:d_lainlyn.title_capital_county
+			}
+
+			cultural_names = {
+				name_list_altmer = cn_lamenennwil
+				name_list_balfiera = cn_lamenennwil
+			}
+
+			c_lainlyn = {
+				color = { 170 196 39 }
+
+				cultural_names = {
+					name_list_altmer = cn_lamenennwil
+					name_list_balfiera = cn_lamenennwil
+				}
+
+				b_lainlyn = {
+					province = 423
+
+					color = { 170 196 39 }
+
+					cultural_names = {
+						name_list_altmer = cn_lamenennwil
+						name_list_balfiera = cn_lamenennwil
+					}
+				}
+				b_sep_spine = {
+					province = 420
+
+					color = { 170 196 39 }
+				
+				}
+				b_rkulftzel = {
+					province = 421
+
+					color = { 170 196 39 }
+				
+				}
+				b_aswala = {
+					province = 422
+
+					color = { 170 196 39 }
+				
+				}
+				b_forsaken_hearts = {
+					province = 440
+
+					color = { 170 196 39 }
+				
+				}
+			}
+			c_satakalaam = {
+				color = { 170 186 59 }
+			
+
+				b_satakalaam = {
+					province = 412
+
+					color = { 170 186 59 }
+				
+				}
+				b_motalion = {
+					province = 411
+
+					color = { 170 186 59 }
+				
+				}
+				b_king_rest = {
+					province = 441
+
+					color = { 170 186 59 }
+				
+				}
+			}
+			c_tavas_belssing = {
+				color = { 150 186 39 }
+			
+
+				b_tavas_belssing = {
+					province = 5639
+
+					color = { 150 186 39 }
+				
+				}
+				b_syrius = {
+					province = 5637
+
+					color = { 150 186 39 }
+				
+				}
+				b_tsetasta_thar = {
+					province = 5638
+
+					color = { 150 186 39 }
+				
+				}
+			}
+			c_antyphyllos = {
+				color = { 150 166 39 }
+			
+
+				b_antyphyllos = {
+					province = 5631
+
+					color = { 150 166 39 }
+				
+				}
+				b_hathar = {
+					province = 5632
+
+					color = { 150 166 39 }
+				
+				}
+				b_jalallaara = {
+					province = 5633
+
+					color = { 150 166 39 }
+				
+				}
+			}
+			c_kozanset = {
+				color = { 170 166 39 }
+			
+
+				b_kozanset = {
+					province = 407
+
+					color = { 170 166 39 }
+				
+				}
+				b_borhtur = {
+					province = 5635
+
+					color = { 170 166 39 }
+				
+				}
+				b_sede_korom = {
+					province = 5636
+
+					color = { 170 166 39 }
+				
+				}
+			}
+		}
+		d_myrkwasa = {
+			color = { 228 182 32 }
+		
+
+			capital = c_myrkwasa
+
+			can_create = {
+				completely_controls = title:d_myrkwasa.title_capital_county
+			}
+
+			c_myrkwasa = {
+				color = { 228 162 32 }
+			
+
+				b_myrkwasa = {
+					province = 424
+
+					color = { 228 162 32 }
+				
+				}
+				b_tuwhacca_throne = {
+					province = 427
+
+					color = { 228 162 32 }
+				
+				}
+				b_hatiha = {
+					province = 425
+
+					color = { 228 162 32 }
+				
+				}
+				b_divad_mine = {
+					province = 426
+
+					color = { 228 162 32 }
+				
+				}
+			}
+			c_santaki = {
+				color = { 228 162 12 }
+			
+
+				b_santaki = {
+					province = 430
+
+					color = { 228 162 12 }
+				
+				}
+				b_salas_en = {
+					province = 428
+
+					color = { 228 162 12 }
+				
+				}
+				b_mibu_kom = {
+					province = 429
+
+					color = { 228 162 12 }
+				
+				}
+				b_alezer_kotu = {
+					province = 431
+
+					color = { 228 162 12 }
+				
+				}
+			}
+		}
+	}
+	k_dragonstar = {
+		color = { 140 0 13 }
+	
+
+		capital = c_dragonstar
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#keptu
+			name_list_duraki = cn_skyhold
+			#orsimer
+			name_list_mountain_orc = cn_upper_craglorn
+			name_list_iron_orc = cn_upper_craglorn
+			name_list_wood_orc = cn_upper_craglorn
+			name_list_goblin = cn_upper_craglorn
+			#Redguard
+			name_list_yokudan = cn_drangstor
+			name_list_crown = cn_drangstor
+			name_list_forebear = cn_drangstor
+		}
+
+		d_dragonstar = {
+			color = { 120 0 13 }
+		
+
+			capital = c_dragonstar
+
+			cultural_names = {
+				#keptu
+				name_list_duraki = cn_skyhold
+				#Redguard
+				name_list_yokudan = cn_drangstor
+				name_list_crown = cn_drangstor
+				name_list_forebear = cn_drangstor
+			}
+
+			can_create = {
+				completely_controls = title:d_dragonstar.title_capital_county
+			}
+
+			c_dragonstar = {
+
+				cultural_names = {
+					#keptu
+					name_list_duraki = cn_skyhold
+					#Redguard
+					name_list_yokudan = cn_drangstor
+					name_list_crown = cn_drangstor
+					name_list_forebear = cn_drangstor
+				}
+			
+				color = { 110 0 13 }
+		
+
+				b_dragonstar = {
+					province = 821
+
+					color = { 110 0 13 }
+
+					cultural_names = {
+						#keptu
+						name_list_duraki = cn_skyhold
+						#Redguard
+						name_list_yokudan = cn_drangstor
+						name_list_crown = cn_drangstor
+						name_list_forebear = cn_drangstor
+					}
+				}
+				b_dragonstar_east = {
+					province = 886
+
+					color = { 110 0 13 }
+				}
+				b_dragonwing = {
+					province = 820
+
+					color = { 110 0 13 }
+				
+				}
+				b_dragonfields = {
+					province = 823
+
+					color = { 110 0 13 }
+				
+				}
+				b_dragongate = {
+					province = 824
+
+					color = { 110 0 13 }
+				
+				}
+			}
+			c_dragonwall = {
+				color = { 120 20 13 }
+
+				b_dragonwall = {
+					province = 819
+
+					color = { 120 20 13 }
+				
+				}
+				b_snowline = {
+					province = 818
+
+					color = { 120 20 13 }
+				
+				}
+			}
+			c_fearfang = {
+				color = { 120 0 33 }
+			
+
+				b_fearfang = {
+					province = 825
+
+					color = { 120 0 33 }
+				
+				}
+				b_sunken_lair = {
+					province = 826
+
+					color = { 120 0 33 }
+				
+				}
+			}
+			c_karthmad = {
+				color = { 46 26 89 }
+			
+
+				b_karthmad = {
+					province = 5652
+
+					color = { 48 48 284 }
+				
+				}
+				b_mairager = {
+					province = 5653
+
+					color = { 48 48 284 }
+				
+				}
+				b_korsa = {
+					province = 5654
+
+					color = { 48 48 284 }
+				
+				}
+			}
+		}
+		d_skyreach = {
+			color = { 254 127 15 }
+		
+
+			capital = c_skyreach
+
+			can_create = {
+				completely_controls = title:d_skyreach.title_capital_county
+			}
+
+			c_skyreach = {
+				color = { 254 135 46 }
+		
+
+				b_skyreach_hold = {
+					province = 834
+
+					color = { 220 215 255 }
+				
+				}
+				b_darastra = {
+					province = 832
+
+					color = { 220 215 255 }
+				
+				}
+				b_twice_born_star = {
+					province = 833
+
+					color = { 220 215 255 }
+				
+				}
+			}
+			c_skypinnacle = {
+				color = { 254 136 23 }
+		
+
+				b_skypinnacle = {
+					province = 829
+
+					color = { 200 200 255 }
+				
+				}
+				b_lauma = {
+					province = 830
+
+					color = { 200 200 255 }
+				
+				}
+				b_skycrypt = {
+					province = 831
+
+					color = { 200 200 255 }
+				
+				}
+			}
+			c_lothna = {
+				color = { 254 137 66 }
+		
+
+				b_lothna = {
+					province = 828
+
+					color = { 180 215 250 }
+				
+				}
+				b_sanctum_ophidia = {
+					province = 827
+
+					color = { 180 215 250 }
+				
+				}
+				b_crossroads = {
+					province = 822
+
+					color = { 255 100 0 }
+				
+				}
+			}
+		}
+		d_abdir = {
+			color = { 254 96 1 }
+		
+
+			capital = c_abdir
+
+			cultural_names = {
+				name_list_mountain_orc = cn_valley_of_scars
+				name_list_iron_orc = cn_valley_of_scars
+				name_list_wood_orc = cn_valley_of_scars
+				name_list_goblin = cn_valley_of_scars
+			}
+
+			can_create = {
+				completely_controls = title:d_abdir.title_capital_county
+			}
+
+			c_abdir = {
+				color = { 254 106 44 }
+			
+
+				cultural_names = {
+					name_list_mountain_orc = cn_scar
+					name_list_iron_orc = cn_scar
+					name_list_wood_orc = cn_scar
+					name_list_goblin = cn_scar
+				}
+
+				b_exarch_stronghold = {
+					province = 857
+
+					color = { 198 99 118 }
+				
+				}
+				b_abdir = {
+					province = 858
+
+					color = { 198 99 118 }
+				
+				}
+				b_khara = {
+					province = 859
+
+					color = { 198 99 118 }
+				
+				}
+			}
+			c_elu_kom = {
+				color = { 162 88 109 }
+			
+
+				b_elu_kom = {
+					province = 5664
+
+					color = { 180 90 120 }
+				
+				}
+				b_ruari = {
+					province = 5665
+
+					color = { 180 90 120 }
+				
+				}
+				b_vorngyd = {
+					province = 5666
+
+					color = { 180 90 120 }
+				
+				}
+			}
+		}
+		d_lankara = {
+			color = { 140 42 53 }
+		
+
+			capital = c_lankara
+
+			can_create = {
+				completely_controls = title:d_lankara.title_capital_county
+			}
+
+			c_lankara = {
+				color = { 140 32 53 }
+			
+
+				b_lankara = {
+					province = 836
+
+					color = { 140 32 53 }
+				
+				}
+				b_earthtear = {
+					province = 835
+
+					color = { 140 32 53 }
+				
+				}
+				b_buried_sands = {
+					province = 837
+
+					color = { 140 32 53 }
+				
+				}
+			}
+			c_elu_gora = {
+				color = { 140 42 63 }
+			
+
+				b_elu_gora = {
+					province = 5655
+
+					color = { 140 42 63 }
+				
+				}
+				b_osabi = {
+					province = 5656
+
+					color = { 140 42 63 }
+				
+				}
+				b_merduibh = {
+					province = 5657
+
+					color = { 140 42 63 }
+				
+				}
+				b_tsetenis = {
+					province = 5658
+
+					color = { 140 42 63 }
+				
+				}
+			}
+			c_toa_korom = {
+				color = { 140 62 53 }
+
+				cultural_names = {
+					name_list_altmer = cn_scourg_barrow #For Manni
+				}
+
+				b_toa_korom = {
+					province = 5659
+
+					color = { 140 62 53 }
+
+					cultural_names = {
+						name_list_altmer = cn_scourg_barrow #For Manni
+					}
+				}
+				b_minai = {
+					province = 5660
+
+					color = { 140 62 53 }
+				
+				}
+			}
+		}
+		d_hel_ra = {
+			color = { 232 52 121 }
+		
+
+			capital = c_hel_ra
+
+			can_create = {
+				completely_controls = title:d_hel_ra.title_capital_county
+			}
+
+			c_hel_ra = {
+				color = { 232 42 121 }
+			
+
+				b_hel_ra = {
+					province = 843
+
+					color = { 232 42 121 }
+					
+				}
+				b_mtharnaz = {
+					province = 842
+
+					color = { 232 42 121 }
+					
+				}
+				b_taborra = {
+					province = 844
+
+					color = { 232 42 121 }
+				
+				}
+			}
+			c_kardala = {
+				color = { 232 52 101 }
+		
+
+				b_kardala = {
+					province = 839
+
+					color = { 232 52 101 }
+				
+				}
+				b_shada_tear = {
+					province = 838
+
+					color = { 232 52 101 }
+				
+				}
+				b_west_gate = {
+					province = 840
+
+					color = { 232 52 101 }
+				
+				}
+				b_ankara_crucible = {
+					province = 841
+
+					color = { 232 52 101 }
+				
+				}
+			}	
+			c_belkwasa = {
+				color = { 232 52 141 }
+			
+
+				b_belkwasa = {
+					province = 5661
+
+					color = { 232 52 141 }
+					
+				}
+				b_kholgra = {
+					province = 5662
+
+					color = { 232 52 141 }
+					
+				}
+				b_shanok = {
+					province = 5663
+
+					color = { 232 52 141 }
+				
+				}
+			}
+			c_thunder_falls = {
+				color = { 232 72 141 }
+		
+
+				b_thunder_falls = {
+					province = 845
+
+					color = { 232 72 141 }
+				
+				}
+				b_arhoi = {
+					province = 3932
+
+					color = { 232 72 141 }
+				
+				}
+				b_tacast = {
+					province = 3933
+
+					color = { 232 72 141 }
+				
+				}
+			}
+			c_sirhan = {
+				color = { 192 52 121 }
+			
+
+				b_seeker_archive = {
+					province = 847
+
+					color = { 192 52 121 }
+				
+				}
+				b_rkhardahrk = {
+					province = 846
+
+					color = { 192 52 121 }
+				
+				}
+				b_ankara_mettle = {
+					province = 848
+
+					color = { 192 52 121 }
+				
+				}
+			}
+		}
+	}
+	k_elinhir = {
+		color = { 83 100 116 }
+
+
+		capital = c_elinhir
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#orsimer
+			name_list_goblin = cn_lower_craglorn
+			name_list_mountain_orc = cn_lower_craglorn
+			name_list_iron_orc = cn_lower_craglorn
+			name_list_wood_orc = cn_lower_craglorn
+			#Ayleid
+			name_list_ayleid = cn_molavar
+		}
+
+		d_elinhir = {
+			color = { 83 120 116 }
+		
+			cultural_names = {
+				name_list_ayleid = cn_molavar
+			}
+
+			capital = c_elinhir
+
+			can_create = {
+				completely_controls = title:d_elinhir.title_capital_county
+			}
+
+			c_elinhir = {
+				color = { 83 120 106 }
+				
+				cultural_names = {
+					name_list_ayleid = cn_molavar
+				}
+
+				b_elinhir = {
+					province = 880
+
+					color = { 83 120 106 }
+				
+				}
+				b_ichidag = {
+					province = 882
+
+					color = { 83 120 106 }
+				
+				}
+				b_ouenbah = {
+					province = 5669
+
+					color = { 83 120 106 }
+				
+				}
+				b_senucaris = {
+					province = 881
+
+					color = { 83 120 106 }
+				
+				}
+			}
+			c_bienne = {
+				color = { 103 100 126 }
+			
+
+				b_domus_phrasticus = {
+					province = 879
+
+					color = { 103 100 126 }
+				
+				}
+				b_bienne = {
+					province = 878
+
+					color = { 103 100 126 }
+				
+				}
+			}
+			c_rimwatch = {
+				color = { 83 100 146 }
+		
+
+				cultural_names = {
+					name_list_cyro_nord = cn_cragwatch
+					name_list_eastmarcher = cn_cragwatch
+					name_list_westmarcher = cn_cragwatch
+				}
+
+				b_rimwatch = {
+					province = 883
+
+					cultural_names = {
+						name_list_cyro_nord = cn_cragwatch
+						name_list_eastmarcher = cn_cragwatch
+						name_list_westmarcher = cn_cragwatch
+					}
+
+					color = { 83 100 146 }
+				
+				}
+				b_tavawn = {
+					province = 884
+
+					color = { 83 100 146 }
+				
+				}
+			}
+			c_high_hall = {
+				color = { 103 100 116 }
+				
+				cultural_names = {
+					name_list_ayleid = cn_balamath
+					#falmer
+					name_list_falmer = cn_balamath
+				}
+
+				b_high_hall = {
+					province = 876
+
+					color = { 103 100 116 }
+				
+				}
+				b_aramir = {
+					province = 873
+
+					color = { 103 100 116 }
+				
+				}
+				b_ko_caele = {
+					province = 874
+
+					color = { 103 100 116 }
+				
+				}
+				b_balamath = {
+					province = 875
+
+					color = { 103 100 116 }
+				
+				}
+			}
+			c_molavar = {
+				color = { 113 120 116 }
+			
+
+				b_molavar = {
+					province = 877
+
+					color = { 113 120 116 }
+				
+				}
+				b_doubika = {
+					province = 5670
+
+					color = { 113 120 116 }
+				
+				}
+				b_birkrem = {
+					province = 5671
+
+					color = { 113 120 116 }
+				
+				}
+			}
+		}
+		d_belkarth = {
+			color = { 104 100 116 }
+		
+
+			capital = c_belkarth
+
+			can_create = {
+				completely_controls = title:d_belkarth.title_capital_county
+			}
+
+			c_belkarth = {
+				color = { 104 100 126 }
+
+				b_belkarth_guard = {
+
+					province = 854
+
+					color = { 104 100 126 }
+				
+				}
+				b_makawan = {
+					province = 3934
+
+					color = { 104 100 126 }
+				
+				}
+				b_ramoga = {
+					province = 853
+
+					color = { 104 100 126 }
+				
+				}
+			}
+			c_rahniza = {
+				color = { 124 100 116 }
+
+				b_zalgaz = {
+					province = 852
+
+					color = { 124 100 116 }
+				
+				}
+				b_rahniza = {
+					province = 851
+
+					color = { 124 100 116 }
+				
+				}
+				b_ankara_vigil = {
+					province = 849
+
+					color = { 124 100 116 }
+				
+				}
+				b_na_totambu = {
+					province = 850
+
+					color = { 124 100 116 }		
+				}
+			}
+			c_reinhold = {
+				color = { 104 110 116 }
+
+				b_reinhold_retreat = {
+					province = 856
+
+					color = { 104 110 116 }
+
+				}
+				b_wakinfall = {
+					province = 855
+
+					color = { 104 110 116 }
+				
+				}
+			}
+			c_meroe_pass = {
+				color = { 104 100 96 }
+
+
+				b_meroe = {
+					province = 797
+
+					color = { 104 100 96 }
+				
+				}
+				b_sharrukim = {
+					province = 796
+
+					color = { 104 100 96 }
+				
+				}
+			}
+		}
+		d_spellscar = {
+			color = { 227 115 57 }
+		
+
+			capital = c_spellscar
+
+			cultural_names = {
+				name_list_mountain_orc = cn_valley_of_teeth
+				name_list_iron_orc = cn_valley_of_teeth
+				name_list_wood_orc = cn_valley_of_teeth
+				name_list_goblin = cn_valley_of_teeth
+			}
+
+			can_create = {
+				completely_controls = title:d_spellscar.title_capital_county
+			}
+
+			c_spellscar = {
+				color = { 254 92 2 }
+		
+
+				b_spellscar = {
+					province = 865
+
+					color = { 200 140 160 }
+				
+				}
+				b_modai = {
+					province = 863
+
+					color = { 200 140 160 }
+				
+				}
+				b_hircine_haunt = {
+					province = 864
+
+					color = { 200 140 160 }
+				
+				}
+			}
+			c_chiselshriek = {
+				color = { 252 121 61 }
+		
+
+				cultural_names = {
+					name_list_mountain_orc = cn_teeth
+					name_list_iron_orc = cn_teeth
+					name_list_wood_orc = cn_teeth
+					name_list_goblin = cn_teeth
+				}
+
+				b_lake_of_teeth = {
+					province = 868
+
+					color = { 190 120 150 }
+				
+				}
+				b_proving_ground = {
+					province = 866
+
+					color = { 190 120 150 }
+				
+				}
+				b_chiselshriek = {
+					province = 867
+
+					color = { 190 120 150 }
+				
+				}
+				b_inazzur_hold = {
+					province = 869
+
+					color = { 190 120 150 }
+				
+				}
+			}
+			c_nimbel = {
+				color = { 254 138 1 }
+		
+
+				b_nimbel_moor = {
+					province = 870
+
+					color = { 250 225 200 }
+				
+				}
+				b_rkundzelft = {
+					province = 871
+
+					color = { 250 225 200 }
+				
+				}
+				b_haddock_market = {
+					province = 872
+
+					color = { 250 225 200 }
+				
+				}
+			}
+		}
+		d_illthag = {
+			color = { 233 96 12 }
+		
+
+			capital = c_illthag
+
+			can_create = {
+				completely_controls = title:d_illthag.title_capital_county
+			}
+
+			c_illthag = {
+				color = { 254 74 1 }
+			
+
+				b_illthag_undertower = {
+					province = 861
+
+					color = { 210 100 90 }
+				
+				}
+				b_howling_sepulcher = {
+					province = 860
+
+					color = { 210 100 90 }
+				
+				}
+				b_eastern_crag = {
+					province = 862
+
+					color = { 210 100 90 }
+				
+				}
+			}
+			c_zenelisia = {
+				color = { 254 74 1 }
+			
+
+				b_zenelisia = {
+					province = 5667
+
+					color = { 170 120 90 }
+				
+				}
+				b_bakhad = {
+					province = 5668
+
+					color = { 210 100 90 }
+				
+				}
+			}
+		}
+	}
+	k_skaven = {
+		color = { 190 64 64 }
+	
+
+		capital = c_skaven
+		can_be_named_after_dynasty = no
+
+
+		d_skaven = {
+			color = { 190 54 64 }
+		
+
+			capital = c_skaven
+
+			can_create = {
+				completely_controls = title:d_skaven.title_capital_county
+			}
+
+			c_skaven = {
+				color = { 190 44 64 }
+			
+
+				b_skaven = {
+					province = 703
+
+					color = { 190 44 64 }
+				
+				}
+				b_aleru = {
+					province = 702
+
+					color = { 190 44 64 }
+				
+				}
+				b_kulpak = {
+					province = 704
+
+					color = { 190 44 64 }
+				
+				}
+				b_rajapet = {
+					province = 705
+
+					color = { 190 44 64 }
+				
+				}
+			}
+			c_heldorn = {
+				color = { 210 54 64 }
+		
+
+				b_heldorn = {
+					province = 701
+
+					color = { 210 54 64 }
+				
+				}
+				b_helgate = {
+					province = 700
+
+					color = { 210 54 64 }
+				
+				}
+			}
+			c_drohm = {
+				color = { 190 54 84 }
+
+				b_drohm = {
+					province = 308
+
+					color = { 190 54 84 }
+				
+				}
+				b_klathzgar = {
+					province = 307
+
+					color = { 190 54 84 }
+				
+				}
+				b_thieve_oasis = {
+					province = 309
+
+					color = { 190 54 84 }
+				
+				}
+			}
+			c_baghjiwan = {
+				color = { 180 54 64 }
+			
+
+				b_baghjiwan = {
+					province = 5647
+
+					color = { 180 54 64 }
+				
+				}
+				b_daminzar = {
+					province = 5648
+
+					color = { 180 54 64 }
+				
+				}
+				b_nareranis = {
+					province = 5649
+
+					color = { 180 54 64 }
+				
+				}
+			}
+			c_cliff_keep = {
+				color = { 180 64 64 }			
+
+				b_cliff_keep = {
+					province = 706
+
+					color = { 180 64 64 }
+				
+				}
+				b_cilla_karak = {
+					province = 707
+
+					color = { 180 64 64 }
+				
+				}
+				b_ngiro = {
+					province = 708
+
+					color = { 180 64 64 }
+				
+				}
+			}
+		}
+		d_verkarth = {
+			color = { 139 5 30 }
+		
+
+			capital = c_verkarth
+
+			can_create = {
+				completely_controls = title:d_verkarth.title_capital_county
+			}
+
+			c_verkarth = {
+				color = { 139 15 30 }
+			
+
+				b_verkarth = {
+					province = 713
+
+					color = { 139 15 30 }
+				
+				}
+				b_bercast = {
+					province = 712
+
+					color = { 139 15 30 }
+				
+				}
+				b_ko_chad = {
+					province = 714
+
+					color = { 139 15 30 }
+				
+				}
+				b_diagnad = {
+					province = 715
+
+					color = { 139 15 30 }
+				
+				}
+			}
+			c_qayzam = {
+				color = { 139 5 40 }
+			
+
+				b_qayzam = {
+					province = 5690
+
+					color = { 139 5 40 }
+				
+				}
+				b_nouagadir = {
+					province = 5691
+
+					color = { 139 5 40 }
+				
+				}
+			}
+			c_sunyanga = {
+				color = { 159 5 30 }
+			
+
+				b_sunyanga = {
+					province = 5692
+
+					color = { 159 5 30 }
+				
+				}
+				b_cezora = {
+					province = 5693
+
+					color = { 159 5 30 }
+				
+				}
+			}
+		}
+		d_nenapesh = {
+			color = { 233 63 89 }
+		
+
+			capital = c_nenapesh
+
+			can_create = {
+				completely_controls = title:d_nenapesh.title_capital_county
+			}
+
+			c_nenapesh = {
+				color = { 223 63 89 }
+			
+
+				b_nenapesh = {
+					province = 5681
+
+					color = { 223 63 89 }
+				
+				}
+				b_ikokuta = {
+					province = 5682
+
+					color = { 223 63 89 }
+				
+				}
+				b_kpapong = {
+					province = 5683
+
+					color = { 223 63 89 }
+				
+				}
+				b_shahmayl = {
+					province = 5684
+
+					color = { 223 63 89 }
+				
+				}
+			}
+			c_sobatu = {
+				color = { 213 63 89 }
+			
+
+				b_sobatu = {
+					province = 721
+
+					color = { 213 63 89 }
+				
+				}
+				b_walata = {
+					province = 720
+
+					color = { 213 63 89 }
+				
+				}
+			}
+			c_wadathe = {
+				color = { 213 63 99 }
+			
+
+				b_wadathe = {
+					province = 723
+
+					color = { 213 63 99 }
+				
+				}
+				b_roukard = {
+					province = 722
+
+					color = { 213 63 99 }
+				
+				}
+				b_nagir = {
+					province = 2651
+
+					color = { 213 63 99 }
+				
+				}
+			}
+			c_orokoto = {
+				color = { 213 83 99 }
+			
+
+				b_orokoto = {
+					province = 5678
+
+					color = { 213 83 99 }
+				
+				}
+				b_malbahane = {
+					province = 5679
+
+					color = { 213 83 99 }
+				
+				}
+				b_narabou = {
+					province = 5680
+
+					color = { 213 83 99 }
+				
+				}
+			}
+		}
+		d_abasa = {
+			color = { 150 44 64 }
+		
+
+			capital = c_abasa
+
+			can_create = {
+				completely_controls = title:d_abasa.title_capital_county
+			}
+
+			c_abasa = {
+				color = { 160 44 64 }
+			
+
+				b_abasa = {
+					province = 5687
+
+					color = { 160 44 64 }
+				
+				}
+				b_bguiniaka = {
+					province = 5688
+
+					color = { 160 44 64 }
+				
+				}
+				b_ziras = {
+					province = 5689
+
+					color = { 160 44 64 }
+				
+				}
+			}
+			c_papo_kom = {
+				color = { 150 34 64 }
+			
+
+				b_papo_kom = {
+					province = 5685
+
+					color = { 150 34 64 }
+				
+				}
+				b_medioukech = {
+					province = 5686
+
+					color = { 150 34 64 }
+				
+				}
+			}
+			c_outamba = {
+				color = { 160 44 54 }
+			
+
+				b_outamba = {
+					province = 710
+
+					color = { 160 44 54 }
+				
+				}
+				b_ko_dharma = {
+					province = 709
+
+					color = { 160 44 54 }
+				
+				}
+				b_helkori = {
+					province = 711
+
+					color = { 160 44 54 }
+				
+				}
+			}
+		}
+	}
+	k_rihad = {
+		color = { 124 79 123 }
+	
+
+		capital = c_rihad
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#dwemer
+			name_list_dwemer = cn_mzahrvarn
+			#Keptu
+			name_list_duraki = cn_perena #Brena = Perena
+		}
+
+		d_rihad = {
+			color = { 114 79 123 }
+		
+
+			capital = c_rihad
+
+			can_create = {
+				completely_controls = title:d_rihad.title_capital_county
+			}
+
+			cultural_names = {
+				#dwemer
+				name_list_dwemer = cn_mzahrvarn
+			}
+
+			c_rihad = {
+				color = { 124 79 123 }
+			
+
+				b_rihad = {
+					province = 765
+
+					color = { 124 79 123 }
+				
+				}
+				b_assini = {
+					province = 767
+
+					color = { 124 79 123 }
+				
+				}
+				b_kampala = {
+					province = 766
+
+					color = { 124 79 123 }
+				
+				}
+				b_nwarhu = {
+					province = 763
+
+					color = { 124 79 123 }
+				
+				}
+				b_kilpawn = {
+					province = 764
+
+					color = { 124 79 123 }
+				
+				}	
+			}
+			c_matama = {
+				color = { 114 99 123 }
+			
+
+				b_matama = {
+					province = 760
+
+					color = { 114 99 123 }
+				
+				}
+				b_napata = {
+					province = 761
+
+					color = { 114 99 123 }
+				
+				}
+				b_dobaa = {
+					province = 762
+
+					color = { 114 99 123 }
+				
+				}
+			}
+			c_chaseguard = {
+				color = { 114 79 103 }
+
+
+				b_chaseguard = {
+					province = 771
+
+					color = { 114 79 103 }
+				
+				}
+				b_ko_jiga = {
+					province = 772
+
+					color = { 114 79 103 }
+				
+				}
+				b_dahlak = {
+					province = 773
+
+					color = { 114 79 103 }
+				
+				}
+				b_ji_jiga = {
+					province = 2644
+
+					color = { 114 79 103 }
+				
+				}
+			}
+			c_brena = {
+				color = { 114 59 123 }
+			
+
+				b_brena = {
+					province = 759
+
+					color = { 114 59 123 }
+				
+				}
+				b_hurdha = {
+					province = 757
+
+					color = { 114 59 123 }
+				
+				}
+				b_dorgola = {
+					province = 758
+
+					color = { 114 59 123 }
+				}
+				b_skriu = {
+					province = 756
+
+					color = { 114 59 123 }
+				
+				}
+			}
+			c_roulai = {
+				color = { 124 79 113 }
+			
+
+				b_roulai = {
+					province = 5714
+
+					color = { 124 79 113 }
+				
+				}
+				b_cerezhar = {
+					province = 5715
+
+					color = { 124 79 113 }
+				
+				}
+				b_soryada = {
+					province = 5716
+
+					color = { 124 79 113 }
+				
+				}
+			}
+			c_helkati = {
+				color = { 124 69 103 }
+			
+
+				b_helkati = {
+					province = 5712
+
+					color = { 124 69 103 }
+				
+				}
+				b_nioniaka = {
+					province = 5713
+
+					color = { 124 69 103 }
+				
+				}
+			}
+		}
+		d_aidhab = {
+			color = { 209 122 181 }
+		
+
+			capital = c_aidhab
+
+			can_create = {
+				completely_controls = title:d_aidhab.title_capital_county
+			}
+
+			c_aidhab = {
+				color = { 209 112 181 }
+			
+
+				b_aidhab = {
+					province = 754
+
+					color = { 209 112 181 }
+				}
+				b_dihar = {
+					province = 753
+
+					color = { 209 112 181 }
+				
+				}
+				b_sidah = {
+					province = 3925
+
+					color = { 209 112 181 }
+				
+				}
+			}
+			c_nagonus = {
+				color = { 209 122 191 }
+			
+
+				b_nagonus = {
+					province = 5710
+
+					color = { 209 122 191 }
+				
+				}
+				b_nokellos = {
+					province = 5711
+
+					color = { 209 122 191 }
+				
+				}
+			}
+			c_jandal = {
+				color = { 189 122 181 }
+			
+
+				b_jandal = {
+					province = 768
+
+					color = { 189 122 181 }
+				
+				}
+				b_hargeysa = {
+					province = 769
+
+					color = { 189 122 181 }
+				
+				}
+				b_al_dak = {
+					province = 770
+
+					color = { 189 122 181 }
+				
+				}
+			}
+		}
+		d_stonemoor = {
+			color = { 184 79 123 }
+		
+
+			capital = c_stonemoor
+
+			can_create = {
+				completely_controls = title:d_stonemoor.title_capital_county
+			}
+
+			c_stonemoor = {
+				color = { 194 79 123 }		
+
+				b_stonemoor = {
+					province = 745
+
+					color = { 194 79 123 }
+
+				}
+				b_nobleshead = {
+					province = 744
+
+					color = { 194 79 123 }
+				
+				}
+				b_ko_erigavo = {
+					province = 748
+
+					color = { 194 79 123 }
+				
+				}
+				b_darqaf = {
+					province = 5483
+
+					color = { 194 79 123 }
+				}
+			}
+			c_nemshur = {
+				color = { 184 79 113 }
+			
+
+				b_nemshur = {
+					province = 5717
+
+					color = { 184 79 113 }
+				
+				}
+				b_kharas = {
+					province = 5718
+
+					color = { 184 79 113 }
+				
+				}
+				b_senkon = {
+					province = 5719
+
+					color = { 184 79 113 }
+				
+				}
+			}
+			c_hafar = {
+				color = { 214 79 123 }
+			
+
+				b_hafar = {
+					province = 747
+
+					color = { 214 79 123 }
+				}
+				b_chiggre = {
+					province = 746
+
+					color = { 214 79 123 }
+				
+				}
+				b_ifat = {
+					province = 749
+
+					color = { 214 79 123 }
+				
+				}
+				b_qardho = {
+					province = 3924
+
+					color = { 214 79 123 }
+				
+				}
+			}
+		}
+		d_north_hall = {
+			color = { 124 99 123 }
+
+			capital = c_north_hall
+			
+			c_north_hall = {
+				color = { 134 99 123 }
+			
+
+				b_north_hall = {
+					province = 740
+
+					color = { 134 99 123 }
+				
+				}
+				b_opapa = {
+					province = 739
+
+					color = { 134 99 123 }
+				
+				}
+				b_assabu = {
+					province = 741
+
+					color = { 134 99 123 }
+				
+				}
+			}
+			c_gauntlet = {
+				color = { 124 109 123 }
+			
+
+				b_gaunlet = {
+					province = 743
+
+					color = { 124 109 123 }
+				
+				}
+				b_lemoor = {
+					province = 742
+
+					color = { 124 109 123 }
+				
+				}
+				b_damesh = {
+					province = 2646
+
+					color = { 124 109 123 }
+				
+				}
+			}
+			c_swordsong = {
+				color = { 124 99 103 }
+			
+
+				b_swordsong = {
+					province = 2645
+
+					color = { 124 99 103 }
+				
+				}
+				b_sidhu = {
+					province = 755
+
+					color = { 124 99 103 }
+				
+				}
+			}
+			c_corten_mont = {
+				color = { 114 99 123 }
+			
+
+				b_corten_mont = {
+					province = 750
+
+					color = { 114 99 123 }
+				
+				}
+				b_mayd = {
+					province = 751
+
+					color = { 114 99 123 }
+				
+				}
+				b_mashid = {
+					province = 752
+
+					color = { 114 99 123 }
+				
+				}
+			}
+		}
+	}
+	k_taneth = {
+		color = { 217 111 111 }
+	
+
+		capital = c_taneth
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#keptu
+			name_list_duraki = cn_reinhold
+		}
+
+		d_taneth = {
+			color = { 197 111 111 }
+		
+
+			capital = c_taneth
+
+			can_create = {
+				completely_controls = title:d_taneth.title_capital_county
+			}
+
+			c_taneth = {
+				color = { 207 111 111 }
+			
+
+				b_taneth = {
+					province = 732
+
+					color = { 207 111 111 }
+				
+				}
+				b_duafut = {
+					province = 730
+
+					color = { 207 111 111 }
+				
+				}
+				b_taria = {
+					province = 2641
+
+					color = { 207 111 111 }
+				
+				}
+				b_ruptaga = {
+					province = 3930
+
+					color = { 207 111 111 }
+				
+				}
+				b_angama = {
+					province = 3931
+
+					color = { 207 111 111 }
+				
+				}
+			}
+			c_tarkasus = {
+				color = { 187 101 111 }
+			
+
+				b_tarkasus = {
+					province = 5704
+
+					color = { 187 101 111 }
+				
+				}
+				b_aboikala = {
+					province = 5705
+
+					color = { 187 101 111 }
+				
+				}
+				b_nbema = {
+					province = 5706
+
+					color = { 187 101 111 }
+				
+				}
+			}
+			c_alain = {
+				color = { 197 131 111 }
+			
+
+				b_alain = {
+					province = 731
+
+					color = { 197 131 111 }
+				
+				}
+				b_reachmore = {
+					province = 729
+
+					color = { 197 131 111 }
+				
+				}
+				b_alked = {
+					province = 3929
+
+					color = { 197 131 111 }
+				
+				}
+			}
+			c_danobia = {
+				color = { 217 111 111 }
+			
+
+				b_danobia = {
+					province = 571
+
+					color = { 217 111 111 }
+				}
+				b_najkam = {
+					province = 3938
+
+					color = { 217 111 111 }
+				
+				}
+				b_bahah = {
+					province = 3939
+
+					color = { 217 111 111 }
+				
+				}
+				b_khalir = {
+					province = 5233
+
+					color = { 217 111 111 }
+				
+				}
+			}
+		}
+		d_devisar = {
+			color = { 227 91 111 }
+		
+
+			capital = c_devisar
+
+			can_create = {
+				completely_controls = title:d_devisar.title_capital_county
+			}
+
+			c_devisar = {
+				color = { 227 91 101 }
+			
+
+				b_devisar = {
+					province = 570
+
+					color = { 227 91 101 }
+				
+				}
+				b_adipur = {
+					province = 569
+
+					color = { 227 91 101 }
+				
+				}
+				b_najran = {
+					province = 3940
+
+					color = { 227 91 101 }
+				
+				}
+			}
+			c_irk_ra = {
+				color = { 227 91 141 }
+			
+
+				b_irk_ra = {
+					province = 5702
+
+					color = { 227 91 141 }
+				
+				}
+				b_karafir = {
+					province = 5703
+
+					color = { 227 91 141 }
+				
+				}
+			}
+			c_tawia = {
+				color = { 197 91 111 }
+			
+
+				b_tawia = {
+					province = 726
+
+					color = { 197 91 111 }
+				
+				}
+				b_tarsi = {
+					province = 5234
+
+					color = { 197 91 111 }
+				
+				}
+			}
+		}
+		d_roseguard = {
+			color = { 229 59 130 }
+		
+
+			capital = c_roseguard
+
+			c_roseguard = {
+				color = { 239 59 130 }
+				
+				b_roseguard = {
+					province = 738
+
+					color = { 239 59 130 }
+
+				}
+				b_dokan = {
+					province = 737
+
+					color = { 239 59 130 }
+				
+				}
+				b_zerila = {
+					province = 3928
+
+					color = { 239 59 130 }
+				
+				}
+			}
+			c_gasba = {
+				color = { 219 59 130 }
+			
+
+				b_gasba = {
+					province = 736
+
+					color = { 219 59 130 }
+				
+				}
+				b_kabara = {
+					province = 735
+
+					color = { 219 59 130 }
+				
+				}
+			}
+			c_gysonai = {
+				color = { 229 69 150 }
+			
+
+				b_gysonai = {
+					province = 5707
+
+					color = { 229 69 150 }
+				
+				}
+				b_akunugu = {
+					province = 5708
+
+					color = { 229 69 150 }
+				
+				}
+				b_tatala = {
+					province = 5709
+
+					color = { 229 69 150 }
+				
+				}
+			}
+
+		}
+		d_jamul = {
+			color = { 229 99 170 }
+		
+
+			capital = c_jamul
+
+
+			c_jamul = {
+				color = { 239 99 170 }
+			
+
+				b_jamul = {
+					province = 724
+
+					color = { 239 99 170 }
+				
+				}
+				b_tark = {
+					province = 725
+
+					color = { 239 99 170 }
+				
+				}
+			}
+			c_hasamir = {
+				color = { 229 109 170 }
+			
+
+				b_hasamir = {
+					province = 733
+
+					color = { 229 109 170 }
+				
+				}
+				b_valowe = {
+					province = 734
+
+					color = { 229 109 170 }
+				
+				}
+			}
+			c_masad = {
+				color = { 219 109 170 }
+			
+
+				b_masad = {
+					province = 727
+
+					color = { 219 109 170 }
+				
+				}
+				b_khesar = {
+					province = 728
+
+					color = { 219 109 170 }
+				
+				}
+			}
+		}
+	}
+	k_stonedale = {
+		color = { 90 109 66 }
+	
+
+		capital = c_stonedale
+		can_be_named_after_dynasty = no
+
+		d_stonedale = {
+			color = { 110 109 66 }
+
+			capital = c_stonedale
+
+			can_create = {
+				completely_controls = title:d_stonedale.title_capital_county
+			}
+
+
+			c_stonedale = {
+				color = { 100 109 66 }
+
+
+				b_stonedale = {
+					province = 813
+
+					color = { 100 109 66 }
+				
+				}
+				b_nippur = {
+					province = 811
+
+					color = { 100 109 66 }
+				
+				}
+				b_ko_gate = {
+					province = 812
+
+					color = { 100 109 66 }
+				
+				}
+				b_borsippa = {
+					province = 814
+
+					color = { 100 109 66 }
+				
+				}
+			}
+			c_ahvaz = {
+				color = { 110 99 66 }
+			
+
+				b_ahvaz = {
+					province = 815
+
+					color = { 110 99 66 }
+				
+				}
+				b_arasim = {
+					province = 816
+
+					color = { 110 99 66 }
+				
+				}
+				b_amud = {
+					province = 817
+
+					color = { 110 99 66 }
+				
+				}
+				b_oudem = {
+					province = 5484
+
+					color = { 110 99 66 }
+				}
+			}
+			c_lacryma = {
+				color = { 110 109 76 }
+
+				b_lacryma = {
+					province = 809
+
+					color = { 110 109 76 }
+				
+				}
+				b_buduq = {
+					province = 810
+
+					color = { 110 109 76 }
+				
+				}
+				b_sharikar = {
+					province = 3927
+
+					color = { 110 109 76 }
+				
+				}
+			}
+			c_derbah = {
+				color = { 110 119 76 }
+			
+
+				b_derbah = {
+					province = 5672
+
+					color = { 110 119 76 }
+				
+				}
+				b_djelouzis = {
+					province = 5673
+
+					color = { 110 119 76 }
+				
+				}
+				b_venicarus = {
+					province = 5674
+
+					color = { 110 119 76 }
+				
+				}
+			}
+		}
+		d_vulkneu = {
+			color = { 110 169 66 }
+		
+
+			capital = c_vulkneu
+
+			can_create = {
+				completely_controls = title:d_vulkneu.title_capital_county
+			}
+
+			c_vulkneu = {
+				color = { 120 169 66 }
+			
+
+				b_vulkneu = {
+					province = 799
+
+					color = { 120 169 66 }
+				
+				}
+				b_haran = {
+					province = 798
+
+					color = { 120 169 66 }
+				
+				}
+				b_mahoi = {
+					province = 800
+
+					color = { 120 169 66 }
+				
+				}
+			}
+			c_agadem = {
+				color = { 110 169 76 }
+			
+
+				b_agadem = {
+					province = 801
+
+					color = { 110 169 76 }
+				
+				}
+				b_giroken = {
+					province = 802
+
+					color = { 110 169 76 }
+				
+				}
+				b_sylon = {
+					province = 3926
+
+					color = { 110 169 76 }
+				
+				}
+			}
+			c_hadaf = {
+				color = { 110 159 76 }
+			
+
+				b_hadaf = {
+					province = 807
+
+					color = { 110 159 76 }
+				
+				}
+				b_sojenne = {
+					province = 808
+
+					color = { 110 159 76 }
+				
+				}
+			}
+			c_helland = {
+				color = { 110 189 76 }
+			
+
+				b_helland = {
+					province = 805
+
+					color = { 110 189 76 }
+				
+				}
+				b_daarqab = {
+					province = 806
+
+					color = { 110 189 76 }
+				
+				}
+			}
+		}
+		d_kororem = {
+			color = { 84 128 86 }
+		
+
+			capital = c_kororem
+
+			can_create = {
+				completely_controls = title:d_kororem.title_capital_county
+			}
+
+			c_kororem = {
+				color = { 84 128 96 }
+			
+
+				b_kororem = {
+					province = 5697
+
+					color = { 84 128 96 }
+				
+				}
+				b_akukuta = {
+					province = 5698
+
+					color = { 84 128 96 }
+				
+				}
+				b_dieboubba = {
+					province = 5699
+
+					color = { 84 128 96 }
+				
+				}
+			}
+			c_direm = {
+				color = { 94 128 86 }
+			
+
+				b_direm = {
+					province = 5675
+
+					color = { 94 128 86 }
+				
+				}
+				b_khemisrou = {
+					province = 5676
+
+					color = { 94 128 86 }
+				
+				}
+				b_ramji_ij = {
+					province = 5677
+
+					color = { 94 128 86 }
+				
+				}
+			}
+			c_djenne = {
+				color = { 84 138 86 }
+			
+
+				b_djenne = {
+					province = 804
+
+					color = { 84 138 86 }
+				
+				}
+				b_ko_gavo = {
+					province = 803
+
+					color = { 84 138 86 }
+				
+				}
+				b_gavo = {
+					province = 3923
+
+					color = { 84 138 86 }
+				
+				}
+			}
+		}
+	}
+	k_ojwambu = {
+		color = { 66 104 89 }
+	
+
+		capital = c_ojwambu
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#Ayleid
+			name_list_ayleid = cn_nilata
+		}
+
+		d_ojwambu = {
+			color = { 86 104 89 }
+		
+
+			capital = c_ojwambu
+
+			can_create = {
+				completely_controls = title:d_ojwambu.title_capital_county
+			}
+
+			c_ojwambu = {
+				color = { 76 104 89 }
+			
+
+				b_ojwambu = {
+					province = 387
+
+					color = { 76 104 89 }
+				
+				}
+				b_desertsun_works = {
+					province = 385
+
+					color = { 76 104 89 }
+				
+				}
+				b_hanaka = {
+					province = 386
+
+					color = { 76 104 89 }
+				
+				}
+				b_hallin = {
+					province = 388
+
+					color = { 76 104 89 }
+				}
+				b_snakeskin = {
+					province = 389
+
+					color = { 76 104 89 }
+				
+				}
+			}
+			c_ashabah = {
+				color = { 76 124 89 }
+				
+				b_ashabah = {
+					province = 382
+
+					color = { 76 124 89 }
+				
+				}
+				b_aguja = {
+					province = 383
+
+					color = { 76 124 89 }
+				
+				}
+				b_sacred_springs = {
+					province = 384
+
+					color = { 76 124 89 }
+				
+				}
+			}
+			c_onsi = {
+				color = { 86 94 99 }
+			
+
+				b_onsi_breath = {
+					province = 377
+
+					color = { 86 94 99 }
+				
+				}
+				b_razak_wheel = {
+					province = 376
+
+					color = { 86 94 99 }
+				
+				}
+			}
+			c_nilata = {
+				color = { 76 114 99 }
+			
+
+				b_nilata = {
+					province = 390
+
+					color = { 76 114 99 }
+				
+				}
+				b_rubble_butte = {
+					province = 391
+
+					color = { 76 114 99 }
+				
+				}
+			}
+			c_hall_of_heroes = {
+				color = { 106 114 99 }
+				
+				b_hall_of_heroes = {
+					province = 374
+
+					color = { 106 114 99 }
+				}
+				b_aruhir = {
+					province = 375
+
+					color = { 106 114 99 }
+				}
+			}
+		}
+		d_agakawan = {
+			color = { 136 124 119 }
+				
+			capital = c_agakawan
+
+			can_create = {
+				completely_controls = title:d_agakawan.title_capital_county
+			}
+
+			c_agakawan = {
+				color = { 136 124 109 }
+			
+				b_agakawan = {
+					province = 303
+
+					color = { 136 124 109 }
+				}
+				b_craggate = {
+					province = 304
+
+					color = { 136 124 109 }
+				}
+				b_basking_grounds = {
+					province = 305
+
+					color = { 136 124 109 }
+				}
+				b_atroni = {
+					province = 306
+
+					color = { 136 124 109 }
+				
+				}
+			}
+			c_qharroa = {
+				color = { 146 124 119 }
+			
+
+				b_qharroa = {
+					province = 378
+
+					color = { 146 124 119 }
+				
+				}
+				b_yanurah = {
+					province = 379
+
+					color = { 146 124 119 }
+				
+				}
+				b_firouz = {
+					province = 380
+
+					color = { 146 124 119 }
+				
+				}
+				b_telesubi = {
+					province = 381
+
+					color = { 146 124 119 }
+				
+				}
+			}
+			c_damar = {
+				color = { 146 104 119 }
+			
+
+				b_damar = {
+					province = 300
+
+					color = { 146 104 119 }
+				
+				}
+				b_wether_cleft = {
+					province = 299
+
+					color = { 146 104 119 }
+				
+				}
+				b_gifar = {
+					province = 301
+
+					color = { 146 104 119 }
+				
+				}
+				b_aland = {
+					province = 302
+
+					color = { 146 104 119 }
+				
+				}
+			}
+		}
+		d_thorstad = {
+			color = { 46 104 129 }
+		
+
+			capital = c_thorstad
+
+			can_create = {
+				completely_controls = title:d_thorstad.title_capital_county
+			}
+
+			cultural_names = {
+				#Crowns
+				name_list_crown = cn_totambu
+				#Ayleid
+				name_list_ayleid = cn_nilata
+			}
+
+			c_thorstad = {
+				color = { 56 104 129 }
+			
+
+				b_thorstad = {
+					province = 395
+
+					color = { 56 104 129 }
+				
+				}
+				b_gastad = {
+					province = 394
+
+					color = { 56 104 129 }
+				
+				}
+			}
+			c_isfakat = {
+				color = { 46 84 129 }
+			
+
+				b_isfakat = {
+					province = 5640
+
+					color = { 46 84 129 }
+				
+				}
+				b_cudabu = {
+					province = 5641
+
+					color = { 46 84 129 }
+				
+				}
+			}
+			c_sehastra = {
+				color = { 76 104 129 }
+			
+				cultural_names = {
+					name_list_crown = cn_totambu
+				}
+
+				b_sehastra = {
+					province = 409
+
+					cultural_names = {
+						name_list_crown = cn_totambu
+					}
+
+					color = { 76 104 129 }
+				
+				}
+				b_coldrock_diggings = {
+					province = 410
+
+					color = { 76 104 129 }
+				
+				}
+				b_kalhir = {
+					province = 396
+
+					color = { 76 104 129 }
+				
+				}
+			}
+		}
+	}
+	k_bangkorai = {
+		color = { 215 205 95 }
+
+		capital = c_viridian_woods
+		can_be_named_after_dynasty = no
+
+		d_viridia = {
+			color = { 124 145 100 }
+			
+
+			capital = c_viridian_woods
+
+			can_create = {
+				completely_controls = title:d_viridia.title_capital_county
+			}
+
+			c_viridian_woods = {
+				color = { 124 145 100 }
+				
+
+				b_viridian_keep = {
+					province = 229
+
+					color = { 124 145 100 }
+					
+				}
+				b_viridian_woods = {
+					province = 230
+
+					color = { 124 140 100 }
+					
+				}
+				b_aldun = {
+					province = 5506
+
+					color = { 124 145 105 }
+					
+				}
+				b_narusia = {
+					province = 5511
+
+					color = { 130 145 101 }
+					
+				}
+			}
+			c_viridian_hillside = {
+				color = { 120 140 120 }
+				
+
+				b_viridian_hideout = {
+					province = 227
+
+					color = { 120 140 120 }
+					
+				}
+				b_viridian_hillside = {
+					province = 228
+
+					color = { 120 140 120 }
+					
+				}
+			}
+			c_lakewatch = {
+				color = { 130 150 110 }
+				
+
+				b_lakewatch = {
+					province = 224
+
+					color = { 130 150 110 }
+					
+				}
+				b_viridian_watch = {
+					province = 225
+
+					color = { 130 150 110 }
+					
+				}
+				b_forsaken_stronghold = {
+					province = 226
+
+					color = { 130 150 110 }
+					
+				}
+			}
+			c_pelin = {
+				color = { 200 250 180 }
+				
+
+				b_pelin_yard = {
+					province = 215
+
+					color = { 200 250 180 }
+					
+				}
+				b_strastnoc_landing = {
+					province = 214
+
+					color = { 205 250 190 }
+					
+				}
+				b_crypt_of_exiles = {
+					province = 217
+
+					definite_form = yes
+
+					color = { 200 255 180 }
+					
+				}
+				b_raven_perch = {
+					province = 5505
+
+					color = { 205 250 185 }
+					
+				}
+			}
+			c_azra_crossing = {
+				color = { 240 255 190 }
+				
+
+				b_azra_crossing = {
+					province = 233
+
+					color = { 240 255 190 }
+					
+				}
+				b_sestam = {
+					province = 231
+
+					color = { 240 255 190 }
+					
+				}
+				b_brokenwing = {
+					province = 232
+
+					color = { 240 255 190 }
+					
+				}
+			}
+		}
+		d_bangkorai = {
+			color = { 215 205 95 }
+			
+
+			capital = c_bangkorai
+
+			can_create = {
+				completely_controls = title:d_bangkorai.title_capital_county
+			}
+
+			c_bangkorai = {
+				color = { 215 205 95 }
+				
+
+				b_bangkorai = {
+					province = 220
+
+					color = { 215 205 95 }
+					
+				}
+				b_verlai = {
+					province = 218
+
+					color = { 215 205 95 }
+					
+				}
+				b_craon = {
+					province = 219
+
+					color = { 215 205 95 }
+					
+				}
+			}
+			c_ephesus = {
+				color = { 160 90 90 }
+				
+
+				b_ephesus = {
+					province = 223
+
+					color = { 160 90 90 }
+					
+				}
+				b_saray = {
+					province = 221
+
+					color = { 160 90 90 }
+					
+				}
+				b_morillon = {
+					province = 222
+
+					color = { 160 90 90 }
+					
+				}
+			}
+			c_sunken_road = {
+				color = { 205 230 165 }
+				
+
+				b_sunken_road = {
+					province = 216
+
+					color = { 205 230 165 }
+					
+				}
+				b_fallen_grotto = {
+					province = 238
+
+					color = { 205 230 165 }
+					
+				}
+			}
+		}
+		d_mournoth = {
+			color = { 190 190 110 }
+			
+
+			capital = c_mournoth
+
+			can_create = {
+				completely_controls = title:d_mournoth.title_capital_county
+			}
+
+			c_mournoth = {
+				color = { 190 190 110 }
+				
+
+				b_mournoth = {
+					province = 5642
+
+					color = { 95 140 115 }
+					
+				}
+				b_sedajus = {
+					province = 5643
+
+					color = { 95 140 115 }
+					
+				}
+				b_curcagni = {
+					province = 5644
+
+					color = { 95 140 115 }
+					
+				}
+			}
+			c_ragad = {
+				color = { 184 124 1 }
+			
+
+				b_ragad = {
+					province = 393
+
+					color = { 200 120 100 }
+				
+				}
+				b_cilantar = {
+					province = 392
+
+					color = { 200 120 100 }
+				
+				}
+			}
+			c_jaladnia = {
+				color = { 118 105 78 }
+			
+
+				b_jaladnia = {
+					province = 5645
+
+					color = { 120 100 70 }
+				
+				}
+				b_kanikh = {
+					province = 5646
+
+					color = { 120 100 70 }
+				
+				}
+			}
+		}
+	}
+	k_hew_bane = {
+		color = { 94 39 72 }
+	
+
+		capital = c_abah_landing
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_yokudan = cn_khefrem_boot
+			name_list_crown = cn_khefrem_boot
+			name_list_forebear = cn_khefrem_boot
+		}
+
+		d_hnas = {
+			color = { 104 39 72 }
+		
+
+			capital = c_abah_landing
+
+			can_create = {
+				completely_controls = title:d_hnas.title_capital_county
+			}
+
+			c_abah_landing = {
+				color = { 104 49 72 }
+			
+
+				b_abah_landing = {
+					province = 509
+
+					color = { 104 49 72 }
+				
+				}
+				b_gisera = {
+					province = 508
+
+					color = { 104 49 72 }
+				}
+				b_sulima = {
+					province = 507
+
+					color = { 104 49 72 }
+				
+				}
+				b_lerawan = {
+					province = 510
+
+					color = { 104 49 72 }
+				
+				}
+				b_hubani = {
+					province = 511
+
+					color = { 104 49 72 }
+				
+				}
+			}
+			c_hnas = {
+				color = { 114 39 72 }
+			
+
+				b_hnas = {
+					province = 501
+
+					color = { 114 39 72 }
+				
+				}
+				b_khefrem_leg = {
+					province = 502
+
+					color = { 114 39 72 }
+				}
+			}
+			c_hnea_rax = {
+				color = { 94 39 72 }
+			
+
+				b_hnea_rax = {
+					province = 5585
+
+					color = { 94 39 72 }
+				}
+				b_djouhra = {
+					province = 5586
+
+					color = { 94 39 72 }
+				
+				}
+			}
+			c_hadara = {
+				color = { 144 39 72 }
+			
+
+				b_prince_gate = {
+					province = 503
+
+					color = { 144 39 72 }
+				
+				}
+				b_bahraha_gloom = {
+					province = 504
+
+					color = { 144 39 72 }
+				
+				}
+				b_karoga = {
+					province = 505
+
+					color = { 144 39 72 }
+				
+				}
+				b_narkhed = {
+					province = 506
+
+					color = { 144 39 72 }
+				
+				}
+			}
+			c_mikoga = {
+				color = { 104 79 72 }
+			
+
+				b_mikoga = {
+					province = 513
+
+					color = { 104 79 72 }
+				
+				}
+				b_zehtara = {
+					province = 514
+
+					color = { 104 79 72 }
+				
+				}
+			}
+		}
+		d_no_shira = {
+			color = { 186 93 149 }
+		
+
+			capital = c_no_shira
+
+			cultural_names = {
+				name_list_pellitinian = cn_shi_ra
+				name_list_anequinan = cn_shi_ra
+				name_list_baandari = cn_shi_ra
+			}
+
+			can_create = {
+				completely_controls = title:d_no_shira.title_capital_county
+			}
+
+			c_no_shira = {
+				color = { 176 93 149 }
+			
+
+				cultural_names = {
+					name_list_pellitinian = cn_shi_ra
+					name_list_anequinan = cn_shi_ra
+					name_list_baandari = cn_shi_ra
+				}
+
+				b_no_shira = {
+					province = 521
+
+					cultural_names = {
+						name_list_pellitinian = cn_shi_ra
+						name_list_anequinan = cn_shi_ra
+						name_list_baandari = cn_shi_ra
+					}
+
+					color = { 176 93 149 }
+				
+				}
+				b_rogaga = {
+					province = 520
+
+					color = { 176 93 149 }
+				
+				}
+				b_shira_works = {
+					province = 522
+
+					color = { 176 93 149 }
+				
+				}
+			}
+			c_iraleka = {
+				color = { 186 113 149 }
+			
+
+				b_iraleka = {
+					province = 5587
+
+					color = { 186 113 149 }
+				
+				}
+				b_khenimara = {
+					province = 5588
+
+					color = { 186 113 149 }
+				
+				}
+				b_hamtif = {
+					province = 5589
+					
+					color = { 186 113 149 }			
+				}
+			}
+			c_ko_estaran = {
+				color = { 186 93 129 }
+			
+
+				b_ko_estaran = {
+					province = 518
+
+					color = { 186 93 129 }
+				}
+				b_tava_beak = {
+					province = 519
+
+					color = { 186 93 129 }
+				}
+				b_shulgaro = {
+					province = 2157
+					color = { 186 93 129 }
+				}
+			}
+			c_shark_teeth = {
+				color = { 186 73 129 }
+			
+
+				b_shark_teeth = {
+					province = 516
+
+					color = { 186 73 129 }
+				}
+				b_hew_shutter = {
+					province = 515
+
+					color = { 186 73 129 }
+				
+				}
+				b_forebear_junction = {
+					province = 517
+
+					color = { 186 73 129 }
+				
+				}
+			}
+		}
+	}
+	k_gilane = {
+		color = { 173 52 33 }
+	
+
+		capital = c_gilane
+		can_be_named_after_dynasty = no
+
+		d_gilane = {
+			color = { 163 52 33 }
+		
+
+			capital = c_gilane
+
+			can_create = {
+				completely_controls = title:d_gilane.title_capital_county
+			}
+
+			c_gilane = {
+				color = { 183 52 33 }
+			
+
+				b_gilane = {
+					province = 499
+
+					color = { 183 52 33 }
+				
+				}
+				b_gilded_keep = {
+					province = 3941
+
+					color = { 183 52 33 }
+				
+				}
+				b_lusall = {
+					province = 496
+
+					color = { 183 52 33 }
+				
+				}
+				b_nizwa = {
+					province = 497
+
+					color = { 183 52 33 }
+				
+				}
+			}
+			c_khefrems_knee = {
+				color = { 163 42 33 }
+			
+
+				b_khefrems_knee = {
+					province = 5590
+
+					color = { 163 42 33 }
+				
+				}
+				b_ezzahmaou = {
+					province = 5591
+
+					color = { 163 42 33 }
+				
+				}
+			}
+			c_aloyun = {
+				color = { 163 52 23 }
+			
+
+				b_aloyun = {
+					province = 498
+
+					color = { 163 52 23 }
+				
+				}
+				b_firuza = {
+					province = 500
+
+					color = { 163 52 23 }
+				
+				}
+				b_suhar = {
+					province = 3942
+
+					color = { 163 52 23 }
+				
+				}
+			}
+			c_rex = {
+				color = { 143 52 33 }
+			
+
+				b_rex = {
+					province = 491
+
+					color = { 143 52 33 }
+				}
+				b_karachiya = {
+					province = 3922
+
+					color = { 143 52 33 }
+				
+				}
+				b_lagos = {
+					province = 453
+
+					color = { 143 52 33 }
+				
+				}
+			}
+		}
+		d_khefrem = {
+			color = { 173 82 73 }
+		
+
+			capital = c_naraharet
+
+			can_create = {
+				completely_controls = title:d_khefrem.title_capital_county
+			}
+			c_naraharet = {
+				color = { 173 92 73 }
+			
+
+				b_naraharet = {
+					province = 5601
+
+					color = { 173 92 73 }
+				
+				}
+				b_mokmel = {
+					province = 5600
+
+					color = { 173 92 73 }
+				
+				}
+				b_owoto = {
+					province = 5602
+
+					color = { 173 92 73 }
+				
+				}
+			}
+			c_lekho_yat = {
+				color = { 173 82 93 }
+			
+
+				b_lekho_yat = {
+					province = 5592
+
+					color = { 173 82 93 }
+				
+				}
+				b_mahzouar = {
+					province = 5593
+
+					color = { 173 82 93 }
+				
+				}
+			}
+			c_satanga = {
+				color = { 173 62 93 }
+			
+
+				b_satanga = {
+					province = 5594
+
+					color = { 173 62 93 }
+				
+				}
+				b_sorjura = {
+					province = 5595
+
+					color = { 173 62 93 }
+				
+				}
+				b_at_dan = {
+					province = 5596
+
+					color = { 173 62 93 }
+				
+				}
+				b_mprayaw = {
+					province = 5597
+
+					color = { 173 62 93 }
+				
+				}
+			}
+			c_sedocco = {
+				color = { 171 51 23 }
+			
+
+				b_sedocco = {
+					province = 5598
+
+					color = { 171 51 23 }
+				
+				}
+				b_daghazi = {
+					province = 5599
+
+					color = { 120 64 51 }
+				
+				}
+			}			
+		}
+		d_lainebon = {
+			color = { 195 39 24 }
+		
+
+			capital = c_lainebon
+
+			can_create = {
+				completely_controls = title:d_lainebon.title_capital_county
+			}
+
+			c_lainebon = {
+				color = { 195 39 14 }
+			
+
+				b_lainebon = {
+					province = 495
+					
+					color = { 195 39 14 }
+				
+				}
+				b_jobat = {
+					province = 494
+
+					color = { 195 39 14 }
+				
+				}
+				b_kunol = {
+					province = 3937
+
+					color = { 195 39 14 }
+				
+				}
+			}
+			c_oran = {
+				color = { 195 19 24 }
+			
+
+				b_oran = {
+					province = 568
+
+					color = { 195 19 24 }
+				
+				}
+				b_jabot = {
+					province = 566
+
+					color = { 195 19 24 }
+				
+				}
+				b_naktara = {
+					province = 567
+
+					color = { 195 19 24 }
+				
+				}
+			}
+			c_mundra = {
+				color = { 195 59 24 }
+			
+
+				b_mundra = {
+					province = 3936
+
+					color = { 195 59 24 }
+				
+				}
+				b_deogan = {
+					province = 3935
+
+					color = { 195 59 24 }
+				
+				}
+				b_bodeli = {
+					province = 493
+
+					color = { 195 59 24 }
+				
+				}
+			}
+		}
+	}
+	k_abecean = {
+		color = { 48 62 106 }
+	
+
+		capital = c_stros_mkai
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			name_list_yokudan = cn_mitana_mkai
+		}
+
+		d_stros_mkai = {
+			color = { 58 62 106 }
+		
+
+			capital = c_stros_mkai
+
+			cultural_names = {
+				name_list_yokudan = cn_sanloa_mkai
+			}
+
+			can_create = {
+				completely_controls = title:d_stros_mkai.title_capital_county
+			}
+
+			c_stros_mkai = {
+				color = { 68 62 106 }
+			
+
+				b_hunding_palace = {
+					province = 5473
+
+					color = { 68 62 106 }
+				}
+				b_port_hunding = {
+					province = 478
+
+					color = { 68 62 106 }
+				
+				}
+				b_devil_den = {
+					province = 1935
+
+					color = { 68 62 106 }
+				
+				}
+			}
+			c_saintsport = {
+				color = { 48 72 106 }
+			
+
+				b_saintsport = {
+					province = 480
+
+					color = { 48 72 106 }
+				
+				}
+				b_bthzark = {
+					province = 479
+
+					color = { 48 72 106 }
+				
+				}
+			}
+			c_ngasta = {
+				color = { 58 62 126 }
+			
+
+				b_ngasta = {
+					province = 476
+
+					color = { 58 62 126 }
+				}
+			}
+			c_knifepoint_isle = {
+				color = { 88 62 106 }
+			
+
+				b_knifepoint_hollow = {
+					province = 467
+
+					color = { 88 62 106 }
+				
+				}
+			}
+		}
+		d_cespar = {
+			color = { 56 114 172 }
+		
+
+			capital = c_cespar
+
+
+			can_create = {
+				completely_controls = title:d_cespar.title_capital_county
+			}
+
+			c_cespar = {
+				color = { 56 124 172 }
+			
+
+				b_cespar = {
+					province = 472
+
+					color = { 56 124 172 }
+				
+				}
+				b_berbera = {
+					province = 471
+
+					color = { 56 124 172 }
+				
+				}
+				b_chora = {
+					province = 5475
+
+					color = { 56 124 172 }
+				}
+			}
+			c_the_chain = {
+				color = { 56 124 192 }
+			
+
+				b_jaspet = {
+					province = 475
+
+					color = { 56 124 192 }
+				
+				}
+				b_kernite = {
+					province = 473
+
+					color = { 56 124 192 }
+				
+				}
+				b_veldspar = {
+					province = 474
+
+					color = { 56 124 192 }
+				
+				}
+			}			
+			c_kofondu = {
+				color = { 60 114 134 }
+			
+				b_kofondu = {
+					province = 5722
+
+					color = { 60 114 134 }
+				
+				}
+
+				b_to_siya = {
+					province = 5720
+
+					color = { 60 114 134 }
+				
+				}
+				b_shandeda = {
+					province = 5721
+
+					color = { 60 114 134 }
+				
+				}
+			}
+			c_kabu = {
+				color = { 56 98 151 }
+			
+
+				b_kabu = {
+					province = 5728
+
+					color = { 56 98 151 }
+				
+				}
+			}
+		}
+		d_herne = {
+			color = { 25 152 166 }
+		
+
+			capital = c_herne
+			
+			c_herne = {
+				color = { 25 122 166 }
+			
+
+				b_herne = {
+					province = 468
+
+					color = { 25 122 166 }
+				
+				}
+				b_daein = {
+					province = 469
+
+					color = { 25 122 166 }
+				
+				}
+				b_zakouma = {
+					province = 470
+
+					color = { 25 122 166 }
+				
+				}
+				b_eko = {
+					province = 5474
+
+					color = { 25 122 166 }
+				}
+			}
+			c_sorakro = {
+				color = { 25 152 146 }
+			
+
+				b_sorakro = {
+					province = 5723
+
+					color = { 25 152 146 }
+				
+				}
+				b_kamos = {
+					province = 5724
+
+					color = { 25 152 146 }
+				
+				}
+				b_sanana = {
+					province = 5725
+
+					color = { 25 152 146 }
+				
+				}
+			}
+			c_oshokot = {
+				color = { 55 152 166 }
+			
+
+				b_oshokot = {
+					province = 5726
+
+					color = { 55 152 166 }
+				
+				}
+				b_walaba = {
+					province = 5727
+
+					color = { 55 152 166 }
+				
+				}
+			}
+			c_jabbur = {
+				color = { 25 193 159 }
+			
+
+				b_jabbur = {
+					province = 5729
+
+					color = { 25 193 159 }
+				
+				}
+			}
+		}
+	}
+
+	k_systres = {
+		color = { 200 175 120 }
+
+
+		capital = c_systres
+		can_be_named_after_dynasty = no
+
+		d_systres = {
+			color = { 205 180 120 }
+	
+
+			capital = c_systres
+
+			can_create = {
+				completely_controls = title:d_systres.title_capital_county
+			}
+
+			c_systres = {
+				color = { 205 175 115 }
+		
+				
+				cultural_names = {
+					name_list_glenumbran = cn_high_isle
+					name_list_northmen = cn_high_isle
+					name_list_iliac = cn_high_isle
+					name_list_wrothgarian = cn_high_isle
+					name_list_bjoule = cn_high_isle
+				}
+
+				b_navire = {
+					province = 3160
+
+					color = { 200 175 120 }
+			
+				}
+				b_gonfalon = {
+					province = 3162
+
+					color = { 200 175 125 }
+			
+				}
+				b_garick_rest = {
+					province = 3161
+
+					color = { 200 175 115 }
+			
+				}
+				b_tor_draioch = {
+					province = 5392
+
+					color = { 200 170 120 }
+			
+				}
+			}
+			c_amenos = {
+				color = { 255 235 120 }
+		
+
+				b_amenos_station = {
+					province = 5393
+
+					color = { 255 235 120 }
+			
+				}
+				b_brokerock = {
+					province = 5394
+
+					color = { 255 235 120 }
+			
+				}
+				b_old_coin_fort = {
+					province = 5395
+
+					color = { 255 235 120 }
+			
+				}
+			}
+			c_yffelon = {
+				color = { 255 230 115 }
+
+				cultural_names = {
+					name_list_galen = cn_yffelon
+				}
+		
+
+				b_yffelon = {
+					province = 5396
+
+					color = { 255 230 115 }
+
+					cultural_names = {
+						name_list_galen = cn_yffelon
+					}
+				}
+			}
+			c_galen = {
+				color = { 205 225 120 }
+
+				cultural_names = {
+					name_list_galen = cn_galen
+				}
+		
+
+				b_vastyr = {
+					province = 5397
+
+					color = { 205 225 120 }
+				}
+				b_windwrack_fort = {
+					province = 5457
+
+					color = { 205 225 120 }
+				}
+				b_yffre_path = {
+					province = 5458
+
+					color = { 205 225 120 }
+					cultural_names = {
+						#breton
+						name_list_glenumbran = cn_jephre_path
+						name_list_witchman = cn_jephre_path
+						name_list_northmen = cn_jephre_path
+						name_list_iliac = cn_jephre_path
+						name_list_bjoule = cn_jephre_path
+					}
+				}
+			}
+		}
+
+		d_pankor = {
+			color = { 188 159 121 }
+	
+
+			capital = c_pankor
+
+			c_pankor = {
+				color = { 188 159 121 }
+		
+
+				b_pankor = {
+					province = 3164
+
+					color = { 12 200 199 }
+			
+				}
+				b_peridor = {
+					province = 5528
+
+					color = { 10 195 195 }
+				}
+			}
+			c_syskor = {
+				color = { 197 175 87 }
+		
+
+				b_syskor = {
+					province = 3163
+
+					color = { 12 210 105 }
+			
+				}
+			}
+		}
+	}
+	
+	
+	k_alikr = {
+		color = { 223 122 16 }
+
+
+		capital = c_kelps_yat
+		can_be_named_after_dynasty = no
+
+		d_kelps = {
+			color = { 205 170 44 }
+	
+
+			capital = c_kelps_yat
+
+			c_kelps_yat = {
+				color = { 135 34 14 }
+			
+
+				b_kelps_yat = {
+					province = 484
+
+					color = { 113 65 116  }
+				
+				}
+				b_kenema = {
+					province = 483
+
+					color = { 110 65 115  }
+				
+				}
+				b_louga = {
+					province = 3920
+
+					color = { 114 67 115  }
+				
+				}
+			}
+			c_mopti = {
+				color = { 146 62 24 }
+			
+
+				b_mopti = {
+					province = 450
+
+					color = { 140 75 12 }
+				
+				}
+				b_shady_sands = {
+					province = 451
+
+					color = { 140 70 12 }
+				
+				}
+				b_ghardia = {
+					province = 2647
+
+					color = { 145 75 12 }
+				
+				}
+			}
+			c_balhar = {
+				color = { 162 58 40 }
+			
+
+				b_balhar = {
+					province = 448
+
+					color = { 220 230 120 }
+				
+				}
+				b_dosso = {
+					province = 449
+
+					color = { 220 230 100 }
+				
+				}
+			}
+			c_ngubu = {
+				color = { 179 61 26 }
+			
+
+				b_ngubu = {
+					province = 5614
+
+					color = { 179 61 26 }
+				
+				}
+				b_qatwara = {
+					province = 5615
+
+					color = { 210 123 97 }
+				
+				}
+			}
+			c_sapossi = {
+				color = { 179 118 99 }
+			
+
+				b_sapossi = {
+					province = 5617
+
+					color = { 179 118 99 }
+				
+				}
+				b_dongobo = {
+					province = 5616
+
+					color = { 242 177 157 }
+				
+				}
+				b_mizdalin = {
+					province = 5618
+
+					color = { 160 91 69 }
+				
+				}
+			}
+		}
+		d_nohotogrha = {
+			color = { 100 35 5 }
+		
+
+			capital = c_nohotogrha
+
+			can_create = {
+				completely_controls = title:d_nohotogrha.title_capital_county
+			}
+			c_nohotogrha = {
+				color = { 169 62 30 }
+			
+
+				b_nohotogrha = {
+					province = 452
+
+					color = { 79 121 96 }
+				
+				}
+				b_mandal = {
+					province = 489
+
+					color = { 150 60 85 }
+				
+				}
+				b_batek = {
+					province = 5238
+
+					color = { 150 65 85 }
+				
+				}
+			}
+			c_vulnim_gate = {
+				color = { 136 53 14 }
+			
+
+				b_vulnim_gate = {
+					province = 559
+
+					color = { 215 255 150 }
+				
+				}
+				b_medaram = {
+					province = 560
+
+					color = { 215 255 120 }
+				
+				}
+				b_tadavi = {
+					province = 2650
+
+					color = { 215 230 150 }
+				
+				}
+			}
+			c_granitsta = {
+				color = { 122 37 1 }
+			
+
+				b_ebonarm_rose = {
+					province = 562
+
+					color = { 115 140 70 }
+				
+				}
+				b_granitsta = {
+					province = 561
+
+					color = { 115 145 70 }
+				
+				}
+			}
+			
+			c_shadymarch = {
+				color = { 198 39 1 }
+
+				b_shadymarch = {
+					province = 492
+
+					color = { 80 130 85 }
+				
+				}
+				b_karjan = {
+					province = 490
+
+					color = { 80 135 85 }
+				
+				}
+			}
+		}
+		d_bergama = {
+			color = { 228 124 1 }
+
+			capital = c_bergama
+
+			can_create = {
+				completely_controls = title:d_bergama.title_capital_county
+			}
+
+			cultural_names = {
+				name_list_galen = cn_bergama
+			}
+
+			c_bergama = {
+				color = { 253 148 47 }
+
+				cultural_names = {
+					name_list_galen = cn_bergama
+				}
+
+				b_bergama = {
+					province = 413
+
+					color = { 150 150 80 }
+					
+					cultural_names = {
+						name_list_galen = cn_bergama
+					}
+				}
+				b_aldunz = {
+					province = 414
+
+					color = { 150 150 80 }
+				
+				}
+				b_duneripper_downs = {
+					province = 415
+
+					color = { 150 150 80 }
+				
+				}
+				b_ogre_bluff = {
+					province = 416
+
+					color = { 150 150 80 }
+				
+				}
+			}
+			c_kulati = {
+				color = { 226 121 44 }
+			
+				
+				b_kulati_mines = {
+					province = 417
+
+					color = { 150 150 105 }
+				
+				}
+				b_leki_blade = {
+					province = 419
+
+					color = { 150 150 105 }
+				
+				}
+				b_artisan_oasis = {
+					province = 418
+
+					color = { 150 150 105 }
+				
+				}
+			}
+			c_volenfell = {
+				color = { 217 79 1 }
+			
+				
+				cultural_names = {
+					#dwemer
+					name_list_dwemer = cn_vtholftenzel
+				}
+
+				b_volenfell = {
+					province = 400
+					
+					cultural_names = {
+						#dwemer
+						name_list_dwemer = cn_vtholftenzel
+					}
+
+					color = { 255 130 30 }
+				
+				}
+				b_darius = {
+					province = 401
+
+					color = { 255 130 30 }
+				
+				}
+				b_yldzuun = {
+					province = 402
+
+					color = { 255 130 30 }
+				
+				}
+			}
+			c_hoonding_watch = {
+				color = { 226 84 1 }
+			
+
+				cultural_names = {
+					name_list_jaegi		= cn_windscour
+					name_list_rimmen	= cn_windscour
+					name_list_ilniviri	= cn_windscour
+					name_list_tsaesci	= cn_windscour
+				}
+
+				b_hoonding_watch = {
+					province = 404
+
+					cultural_names = {
+						name_list_jaegi		= cn_wind_scour
+						name_list_rimmen	= cn_wind_scour
+						name_list_ilniviri	= cn_wind_scour
+						name_list_tsaesci	= cn_wind_scour
+					}
+
+					color = { 200 80 180 }
+					
+				
+				}
+				b_sandblown_mine = {
+					province = 405
+
+					color = { 200 80 180 }
+				
+				}
+				b_ko_raga = {
+					province = 403
+
+					color = { 200 80 180 }
+				
+				}
+			}
+			c_zenunnga = {
+				color = { 202 135 36 }
+			
+
+				b_zenunnga = {
+					province = 5650
+
+					color = { 190 90 180 }
+				
+				}
+			}
+		}
+		d_alikra = {
+			color = { 199 124 35 }
+	
+
+			capital = c_chasetown
+
+			c_chasetown = {
+				color = { 175 77 18 }
+			
+
+				b_chasetown = {
+					province = 445
+
+					color = { 255 230 125 }
+				
+				}
+				b_talyt = {
+					province = 5235
+
+					color = { 255 230 135 }
+				
+				}
+				b_kal_alikr = {
+					province = 5236
+
+					color = { 255 230 120 }
+				
+				}
+			}
+			c_na_leki = {
+				color = { 139 84 40 }
+			
+
+				b_na_leki = {
+					province = 5619
+
+					color = { 139 84 40 }
+				
+				}
+				b_oyokoto = {
+					province = 5620
+
+					color = { 201 130 73 }
+				
+				}
+			}
+			c_jagadha = {
+				color = { 123 80 24 }
+			
+
+				b_jagadha = {
+					province = 5621
+
+					color = { 123 80 24 }
+				
+				}
+				b_akuyi = {
+					province = 5622
+
+					color = { 178 110 21 }
+				
+				}
+				b_qarqab = {
+					province = 5623
+
+					color = { 218 142 44 }
+				
+				}
+			}
+		}
+		d_anbar = {
+			color = { 187 130 20 }
+	
+
+			capital = c_anbar_pass
+			
+			c_anbar_pass = {
+				color = { 46 44 18 }
+			
+
+				b_anbar_gate = {
+					province = 717
+
+					color = { 100 150 0 }
+				
+				}
+				b_ret_aki = {
+					province = 716
+
+					color = { 100 150 0 }
+				
+				}
+			}
+			c_rhanano = {
+				color = { 45 43 1 }
+			
+
+				b_rhanano = {
+					province = 397
+
+					color = { 70 170 10 }
+				
+				}
+				b_tasiio = {
+					province = 398
+
+					color = { 70 170 10 }
+				
+				}
+				b_osedata = {
+					province = 2648
+
+					color = { 70 170 10 }
+				
+				}
+			}
+			c_java = {
+				color = { 60 40 15 }
+			
+
+				b_java = {
+					province = 399
+
+					color = { 70 130 10 }
+				
+				}
+				b_tat_uin = {
+					province = 2649
+
+					color = { 70 130 10 }
+				
+				}
+			}
+		}
+		d_riverpoint = {
+			color = { 95 85 40 }
+		
+
+			capital = c_riverpoint
+
+			can_create = {
+				completely_controls = title:d_riverpoint.title_capital_county
+			}
+
+			c_riverpoint = {
+				color = { 95 85 40 }
+			
+
+				b_riverpoint = {
+					province = 718
+
+					color = { 95 85 40 }
+				
+				}
+			}
+			c_karnver = {
+				color = { 172 112 1 }
+			
+
+				b_karnver = {
+					province = 719
+
+					color = { 45 36 230 }
+				
+				}
+				b_cerumbator = {
+					province = 5696
+
+					color = { 45 36 230 }
+				
+				}
+			}
+			
+			c_youkhal = {
+				color = { 214 141 112 }
+			
+
+				b_youkhal = {
+					province = 5694
+
+					color = { 200 140 110 }
+				
+				}
+				b_elmibiana = {
+					province = 5695
+
+					color = { 200 140 110 }
+				
+				}
+			}
+			c_riverview = {
+				color = { 163 77 59 }
+			
+
+				b_riverview = {
+					province = 565
+
+					color = { 190 50 50 }
+				
+				}
+				b_nvomu = {
+					province = 563
+
+					color = { 190 55 50 }
+				
+				}
+				b_garoowe = {
+					province = 564
+
+					color = { 190 50 55 }
+				
+				}
+			}
+			c_dakfron = {
+				color = { 110 53 14 }
+			
+
+				b_dakfron = {
+					province = 558
+
+					color = { 230 250 140 }
+				
+				}
+				b_bagodar = {
+					province = 557
+
+					color = { 230 255 140 }
+				
+				}
+			}
+		}
+	}
+
+	k_craglorn = {
+		color = { 250 80 0 }
+		
+		capital = c_elinhir
+		can_be_named_after_dynasty = no
+
+		cultural_names = {
+			#nordic
+			name_list_atmoran = cn_bendmarch
+			name_list_eastmarcher = cn_bendmarch
+			name_list_westmarcher = cn_bendmarch
+			name_list_skaal = cn_bendmarch
+			name_list_cyro_nord = cn_bendmarch
+			name_list_atmoran_giant = cn_bendmarch
+		}
+
+	}
+
+	#(Pirate) Confederacy of the Isles
+	k_the_isles = {
+		color = { 100 75 25 }
+		#definite_form = yes
+
+		capital = c_abah_landing
+		can_be_named_after_dynasty = no
+	}
+}
+
+
+e_deathlands = {
+	color = { 250 80 0 }
+	capital = c_skyreach
+	can_be_named_after_dynasty = no
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_deathlander }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+e_crown = { #Crown Republic
+	color = { 90 10 0 }
+	definite_form = yes
+	capital = c_hegathe
+	de_jure_drift_disabled = yes
+	no_automatic_claims = yes
+    ignore_titularity_for_title_weighting = yes
+	can_be_named_after_dynasty = no
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_yokudan }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+e_forebear = { #Forebear Union
+	color = { 250 120 10 }
+	definite_form = yes
+	capital = c_sentinel
+	de_jure_drift_disabled = yes
+	no_automatic_claims = yes
+    ignore_titularity_for_title_weighting = yes
+	can_be_named_after_dynasty = no
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_yokudan }
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}

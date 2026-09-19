@@ -1,0 +1,124 @@
+﻿# Ayleidoon Range
+	#Ayleid
+	#Barsaebic
+	#Mathmeldi
+	#Dynari
+
+#Ayleid
+
+dyn_ayleidoon = {
+	name = "dynn_Ayleidoon"
+	culture = ayleid
+	motto = dynn_ayleidoon_motto
+}
+
+#Barsaebic
+dyn_myfrandi = {
+	name = "dynn_Myfrandi"
+	culture = barsaebic
+	motto = dynn_myfrandi_motto
+}
+
+dyn_silyanorn = {
+	name = "dynn_Silyanorn"
+	culture = barsaebic
+	motto = dynn_silyanorn_motto
+}
+
+dyn_carandol = {
+	name = "dynn_Carandol"
+	culture = barsaebic
+	motto = dynn_carandol_motto
+}
+
+dyn_mirdan = {
+	name = "dynn_Mirdan"
+	culture = barsaebic
+}
+
+dyn_celeblas = {
+	name = "dynn_Celeblas"
+	culture = barsaebic
+}
+
+dyn_tinuben = {
+	name = "dynn_Tinuben"
+	culture = barsaebic
+}
+
+dyn_edlen = {
+	name = "dynn_Edlen"
+	culture = barsaebic
+}
+dyn_ceven = {
+	name = "dynn_Ceven"
+	culture = barsaebic
+}
+
+#Mathmeldi
+
+dyn_oiobala = {
+	name = "dynn_Oiobala" #From EK1
+	culture = mathmeldi
+}
+
+dyn_abasel = {
+	name = "dynn_Abasel" #From EK1
+	culture = mathmeldi
+	motto = dynn_abasel_motto
+}
+
+dyn_rulanyil = {
+	name = "dynn_Rulanyil" #Canonical clan of Vilverin, built the ruined city of Rulanyil's Fall in Valenwood
+	culture = mathmeldi
+	motto = dynn_rulanyil_motto
+}
+
+dyn_varondo = {
+	name = "dynn_Varondo" #Canonical clan of Varondo in Cyrodiil
+	culture = mathmeldi
+}
+
+dyn_wenayalae = {
+	name = "dynn_Wenayalae" #Clan of Hectaran (lit translation 'Green Throat', indicating their clan's adoption of the Green Pact after their escape from Cyrodiil)
+	culture = mathmeldi
+	motto = dynn_hectaran_motto
+}
+
+dyn_caeleben = { #Historical dynasty in Valenwood
+	name = "dynn_Caeleben"
+	culture = mathmeldi
+}
+
+dyn_galaspen = { #Historical dynasty in Valenwood
+	name = "dynn_Galaspen"
+	culture = mathmeldi
+}
+
+#Dynari: 1.540.000 - 1.549.999
+dyn_dynar = {
+	name = "dynn_Dynar" #Lore; Clan of the Laloriaran, the 'Last King of the Ayleids'
+	culture = dynari
+	motto = dynn_dynar_motto
+}
+dyn_dimaethor = {
+	name = "dynn_Dimaethor" #Clan of Calinden, Ayleid Knight from the Battle of Glenumbra Moors
+	culture = dynari
+	motto = dynn_dimaethor_motto
+}
+dyn_bondolesel = {
+	name = "dynn_Bondolesel" # Balfiera Courtiers from ek1
+	culture = dynari
+}
+dyn_fyrre = { #Dynasty of Tjurhane Fyrre
+	name = "dynn_Fyrre"
+	culture = ayleid
+}
+dynn_vorwen = { #Mixed with Falmer
+	name = "dynn_vorwen"
+	culture = ayleid
+}
+dynn_alasha = { #Mixed with Falmer
+	name = "dynn_alasha"
+	culture = ayleid
+}

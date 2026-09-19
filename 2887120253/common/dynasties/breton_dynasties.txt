@@ -1,0 +1,761 @@
+﻿# Bretonic Range
+
+	#Glenumbran
+	#Northmen
+	#Iliac
+	#Bjoule
+	#Witchmen
+
+#Glenumbran
+
+dyn_daguer ={ #Royal House of Daggerfall during the First Era
+	name = "dynn_Daguer"
+	culture = glenumbran
+}
+dyn_deleyn = { #Royal House of Daggerfall
+	name = "dynn_Deleyn"
+	culture = glenumbran
+	motto = dynn_deleyn_motto
+}
+dyn_noellaume = {
+	prefix = "dynnp_de"
+	name = "dynn_Noellaume"
+	culture = glenumbran
+}
+dyn_rielle = {  #Royal House of Camlorn
+	name = "dynn_Rielle"
+	culture = glenumbran
+	motto = dynn_rielle_motto
+}
+dyn_blanche = {
+	prefix = "dynnp_la"
+	name = "dynn_Blanche"
+	culture = glenumbran
+}
+dyn_bercourt = {
+	prefix = "dynnp_de"
+	name = "dynn_Bercourt"
+	culture = glenumbran
+	motto = dynn_ildene_motto
+}
+dyn_morkel = {
+	name = "dynn_Morkel"
+	culture = glenumbran
+}
+dyn_tetien = {
+	name = "dynn_Tetien"
+	culture = glenumbran
+}
+dyn_stroud = {
+	name = "dynn_Stroud"
+	culture = glenumbran
+}
+dyn_baelborne = {
+	name = "dynn_Baelborne"
+	culture = glenumbran
+}
+dyn_themond = {
+	name = "dynn_Themond"
+	culture = glenumbran
+}
+dyn_llugwych = {
+	name = "dynn_Llugwych"
+	culture = glenumbran
+}
+dyn_laurent = {
+	name = "dynn_Laurent"
+	culture = glenumbran
+}
+dyn_reviere = {
+	name = "dynn_Reviere"
+	culture = glenumbran
+}
+dyn_rhun = {
+	name = "dynn_Rhun"
+	culture = glenumbran
+	motto = dynn_yeomwing_motto
+}
+dyn_diel = {
+	name = "dynn_Diel"
+	culture = glenumbran
+	motto = dynn_diel_motto
+}
+dyn_croix = {
+	prefix = "dynnp_la"
+	name = "dynn_Croix"
+	culture = glenumbran
+	motto = dynn_croix_motto
+}
+dyn_arne = {
+	name = "dynn_Arne"
+	culture = glenumbran
+}
+dyn_baolduin = {
+	prefix = "dynnp_de_la"
+	name = "dynn_Baolduin"
+	culture = glenumbran
+}
+dyn_bertault ={
+	name = "dynn_Bertault"
+	culture = glenumbran
+	motto = dynn_garclay_motto
+}
+dyn_gulitte = {
+	name = "dynn_Gulitte"
+	culture = glenumbran
+	motto = dynn_gulitte_motto
+}
+dyn_beluelle = {
+	prefix = "dynnp_de"
+	name = "dynn_Beluelle"
+	culture = glenumbran
+	motto = dynn_copperfield_motto
+}
+dyn_merten = {
+	prefix = "dynnp_van"
+	name = "dynn_Merten"
+	culture = northmen
+}
+dyn_dufort = {
+	name = "dynn_Dufort"
+	culture = glenumbran
+	motto = dynn_dufort_motto
+}
+dyn_cassel = {  #Knightly House of Glenumbra
+	name = "dynn_Cassel"
+	culture = glenumbran
+}
+dyn_crecy = {
+	name = "dynn_Crecy"
+	culture = glenumbran
+}
+dyn_devet = {
+	name = "dynn_Devet"
+	culture = glenumbran
+}
+dyn_retene = {
+	name = "dynn_Retene"
+	culture = glenumbran
+}
+dyn_sugar = {
+	name = "dynn_Sugar"
+	culture = glenumbran
+}
+dyn_roland = {  #Knightly House of Glenumbra
+	name = "dynn_Roland"
+	culture = glenumbran
+}
+dyn_solais = {
+	name = "dynn_Solais"
+	culture = glenumbran
+}
+dyn_oges = {
+	name = "dynn_Oges"
+	culture = glenumbran
+}
+dyn_gemain = {
+	name = "dynn_Gemain"
+	culture = glenumbran	
+}
+dyn_benele = {
+	name = "dynn_Benele"
+	culture = glenumbran
+}
+dyn_quixoteleel = {
+	name = "dynn_Quixoteleel"
+	culture = glenumbran
+	motto = dynn_quixoteleel_motto
+}
+dyn_brinard = {
+	prefix = "dynnp_de"
+	name = "dynn_Brinard"
+	culture = glenumbran
+}
+dyn_carcette = {
+	prefix = "dynnp_du"
+	name = "dynn_Carcette"
+	culture = glenumbran
+}
+dyn_dalan = {
+	prefix = "dynnp_la"
+	name = "dynn_Dalan"
+	culture = glenumbran
+}
+dyn_rerys = {
+	name = "dynn_Rerys"
+	culture = glenumbran
+}
+dyn_casenne = {
+	prefix = "dynnp_la"
+	name = "dynn_Casenne"
+	culture = glenumbran
+}
+dyn_dresan = {
+	prefix = "dynnp_de"
+	name = "dynn_Dresan"
+	culture = glenumbran
+}
+dyn_louis = {
+	prefix = "dynnp_le"
+	name = "dynn_Louis"
+	culture = glenumbran
+}
+
+#Northmen
+dyn_elde = {
+	name = "dynn_Elde"
+	culture = northmen
+}
+dyn_gunter = {
+	name = "dynn_Gunter"
+	culture = northmen
+	motto = dynn_succoth_motto
+}
+dyn_edrald = {
+	name = "dynn_Edrald"
+	culture = northmen
+	motto = dynn_edrald_motto
+}
+dyn_lochner = {
+	prefix = "dynnp_van"
+	name = "dynn_Lochner"
+	culture = northmen
+} 
+dyn_branquette = { #Royal House of Shornhelm
+	name = "dynn_Branquette"
+	culture = northmen
+	motto = dynn_branquette_motto
+}
+dyn_tamrith = { #Important House of Shornhelm
+	name = "dynn_Tamrith"
+	culture = northmen
+	motto = dynn_tamrith_motto
+}
+dyn_flowdys = { #Important House of Shornhelm
+	name = "dynn_Flowdys"
+	culture = northmen
+	motto = dynn_dorell_motto
+}
+dyn_mostert = {  #Knightly House of Rivenspire
+	prefix = "dynnp_van_der"
+	name = "dynn_Mostert"
+	culture = northmen
+	motto = dynn_aurmine_motto
+}
+dyn_farr = {
+	name = "dynn_Farr"
+	culture = northmen
+}
+dyn_percy = {  #Knightly House of Rivenspire
+	name = "dynn_Percy"
+	culture = northmen
+}
+dyn_montclair = {
+	name = "dynn_Montclair"
+	culture = northmen
+	motto = dynn_montclair_motto
+}
+dyn_spenard = {
+	name = "dynn_Spenard"
+	culture = northmen
+}
+dyn_klopmann = {
+	name = "dynn_Klopmann"
+	culture = northmen
+	motto = dynn_klopmann_motto
+}
+dyn_merowald = {
+	name = "dynn_Merowald"
+	culture = northmen
+}
+dyn_vorster = {
+	name = "dynn_Vorster"
+	culture = northmen
+}
+dyn_moerat = {
+	name = "dynn_Moerat"
+	culture = northmen
+}
+dyn_vardengroet = { # Legendary mage Gyron Vardengroet
+	name = "dynn_Vardengroet"
+	culture = northmen
+}
+dyn_classen = {
+	prefix = "dynnp_van"
+	name = "dynn_Claassen"
+	culture = northmen
+}
+dyn_rolandt = {
+	prefix = "dynnp_de"
+	name = "dynn_Rolandt"
+	culture = northmen
+}
+dyn_osler = {
+	prefix = "dynnp_van_der"
+	name = "dynn_Osler"
+	culture = northmen
+}
+dyn_grandenveldt= {
+	prefix = "dynnp_du"
+	name = "dynn_Grandenveldt"
+	culture = northmen
+}
+dyn_gerhart = {
+	prefix = "dynnp_van"
+	name = "dynn_Gerhart"
+	culture = northmen
+}
+dyn_gerbrandij = {
+	prefix = "dynnp_van"
+	name = "dynn_Gerbrandij"
+	culture = northmen
+}
+dyn_logdur = {
+	prefix = "dynnp_van"
+	name = "dynn_Logdur"
+	culture = northmen
+}
+dyn_maurard = {
+	prefix = "dynnp_van"
+	name = "dynn_Maurard"
+	culture = northmen
+}
+dyn_natan = {
+	prefix = "dynnp_van"
+	name = "dynn_Natan"
+	culture = northmen
+}
+dyn_crestshade = {
+	prefix = "dynnp_van_der"
+	name = "dynn_Crestshade"
+	culture = northmen
+}
+
+#Iliac
+dyn_horley = {
+	name = "dynn_Horley"
+	culture = iliac
+}
+dyn_cumberland = {  #Royal House of Wayrest after the Knahaten Flu, Emeric's dynasty
+	name = "dynn_Cumberland"
+	culture = iliac
+	motto = dynn_cumberland_motto
+}
+dyn_dryston = {
+	name = "dynn_Dryston"
+	culture = iliac
+}
+dyn_ballard = {
+	name = "dynn_Ballard"
+	culture = iliac
+	motto = dynn_viralaine_motto
+}
+dyn_gardner1 = {  #First Gardner dynasty
+	name = "dynn_Gardner"
+	culture = iliac
+}
+dyn_gardner2 = {
+	name = "dynn_Gardner"
+	culture = iliac
+}
+dyn_gardner = {  #Royal House of Wayrest before the Knahaten Flu
+	name = "dynn_Gardner"
+	culture = iliac
+	motto = dynn_gardner_motto
+}
+dyn_garvey = {
+	name = "dynn_Garvey"
+	culture = iliac
+	motto = dynn_beanique_motto
+}
+dyn_davaux = {  #Knightly House of Stormhaven
+	name = "dynn_Davaux"
+	culture = iliac
+}
+dyn_maston = {
+	name = "dynn_Maston"
+	culture = iliac
+}
+dyn_vien = {
+	name = "dynn_Vien"
+	culture = iliac
+}
+dyn_gane = {
+	name = "dynn_Gane"
+	culture = iliac
+}
+dyn_lenac = { # Lore merchant-lords who claimed the throne of Wayrest in 1E 1270
+	name = "dynn_Lenac"
+	culture = iliac
+}
+dyn_menevia = {
+	prefix = "dynnp_of"
+	name = "dynn_Menevia"
+	culture = iliac
+}
+dyn_egun = {  
+	name = "dynn_Egun"
+	culture = iliac
+}
+dyn_lauzon = {
+	name = "dynn_Lauzon"
+	culture = iliac
+}
+dyn_cauchy = { #Pre-Ra Gada rulers of Cosh/Cauchy
+	prefix = "dynnp_of"
+	name = "dynn_Cauchy"
+	culture = iliac
+}
+dyn_vautrine = {
+	name = "dynn_Vautrine"
+	culture = iliac
+	motto = dynn_vautrine_motto
+}
+dyn_mannick = {
+	name = "dynn_Mannick"
+	culture = iliac
+}
+dyn_woodborne = {
+	name = "dynn_Woodborne"
+	culture = iliac
+	motto = dynn_woodborne_motto
+}
+dyn_aethelred = {
+	name = "dynn_Aethelred"
+	culture = iliac
+}
+dyn_dalton = {
+	name = "dynn_Dalton"
+	culture = iliac
+}
+dyn_admand = {
+	name = "dynn_Admand"
+	culture = iliac
+}
+dyn_cromtower = {
+	prefix = "dynnp_of"
+	name = "dynn_Cromtower"
+	culture = iliac
+}
+dyn_heathmoor = {
+	name = "dynn_Heathmoor"
+	culture = iliac
+}
+
+#Bjoule
+dyn_marde = { # Original house of Guimard
+	name = "dynn_Marde"
+	culture = bjoule
+}
+dyn_vitusca = {
+	name = "dynn_Vitusca"
+	culture = bjoule
+}
+dyn_katurix = {
+	name = "dynn_Katurix"
+	culture = bjoule
+}
+dyn_leucona = {
+	name = "dynn_Leucona"
+	culture = bjoule
+}
+dyn_mailgani = {
+	name = "dynn_Mailagni"
+	culture = bjoule
+}
+dyn_senovicix = {
+	name = "dynn_Senovicix"
+	culture = bjoule
+}
+dyn_cenno = {
+	name = "dynn_Cenno"
+	culture = bjoule
+	motto = dyn_cenno_motto
+}
+dyn_atagutis = {
+	name = "dynn_Atagutis"
+	culture = bjoule
+}
+dyn_suadurix = {
+	name = "dynn_Suadurix"
+	culture = bjoule
+}
+
+#Witchman
+dyn_arthe = {
+	name = "dynn_Arthe"
+	culture = witchman
+}
+dyn_jolvanne = {
+	name = "dynn_Jolvanne"
+	culture = witchman
+}
+dyn_dalomax = {
+	name = "dynn_Dalomax"
+	culture = witchman
+}
+dyn_tailas = {
+	name = "dynn_Tailas"
+	culture = witchman
+}
+dyn_phirrienele = {
+	name = "dynn_Phirrienele"
+	culture = witchman
+}
+dyn_ence = {
+	name = "dynn_Ence"
+	culture = witchman
+}
+dyn_charien = {
+	name = "dynn_Charien"
+	culture = witchman
+}
+dyn_madach = {
+	name = "dynn_Madach"
+	culture = witchman
+}
+dyn_riscel = {
+	name = "dynn_Riscel"
+	culture = witchman
+}
+dyn_rirne = {
+	name = "dynn_Rirne"
+	culture = witchman
+}
+dyn_lan = {
+	name = "dynn_Lan"
+	culture = witchman
+}
+dyn_amelion = {
+	name = "dynn_Amelion"
+	culture = witchman
+	motto = dynn_amelion_motto
+}
+dyn_mornard = { 
+	name = "dynn_Mornard"
+	culture = witchman
+	motto = dynn_mornard_motto
+}
+dyn_mantel = {
+	name = "dynn_Mantel"
+	culture = witchman
+}
+dyn_moile = {  #Royal House of Evermore 
+	name = "dynn_Moile"
+	culture = witchman
+	motto = dynn_moile_motto
+}
+dyn_mercano = {
+	name = "dynn_Mercano"
+	culture = witchman
+}
+dyn_vendel = { #Pre-Ra Gada rulers of Tigonus
+	prefix = "dynnp_of"
+	name = "dynn_Vendel"
+	culture = witchman
+}
+dyn_antrill = {
+	name = "dynn_Antrill"
+	culture = witchman
+}
+dyn_nytte = {
+	name = "dynn_Nytte"
+	culture = witchman
+}
+dyn_danneg = {
+	name = "dynn_Danneg"
+	culture = witchman
+}
+dyn_phiencel = {
+	name = "dynn_Phiencel"
+	culture = witchman
+}
+dyn_endell = {
+	name = "dynn_Endell"
+	culture = witchman
+}
+dyn_dammond = {
+	name = "dynn_Dammond"
+	culture = witchman
+}
+dyn_phane = {
+	name = "dynn_Phane"
+	culture = witchman
+}
+dyn_broles = {
+	name = "dynn_Broles"
+	culture = witchman
+}
+dyn_egred = {
+	name = "dynn_Egred"
+	culture = witchman
+}
+
+#Reachmen
+dyn_faolan = {
+	name = "dynn_Blood_of_the_Reach"
+	culture = reachfolk
+}
+dyn_duimnach = {
+	name = "dynn_Duimnach"
+	culture = reachfolk
+	motto = dynn_duimnach_motto
+}
+dyn_sanuarach = {
+	name = "dynn_Sanuarach"
+	culture = reachfolk
+	motto = dynn_sanuarach_motto
+}
+dyn_brigh = {
+	name = "dynn_Brigh"
+	culture = reachfolk
+	motto = dynn_bullblood_motto
+}
+dyn_uhlain = {
+	name = "dynn_Durcorach" #EK1 Vasenon
+	culture = reachfolk
+	motto = dynn_blackdrake_motto
+}
+dyn_mallaig = {
+	name = "dynn_Mallaig"
+	culture = reachfolk
+	motto = dynn_thornroot_motto
+}
+dyn_maddoc = {
+	name = "dynn_Maddoc"
+	culture = reachfolk
+	motto = dynn_cinder_heart_motto
+}
+dyn_seaghadain = {
+	name = "dynn_Seaghadain"
+	culture = reachfolk
+	motto = dynn_spiritblood_motto
+}
+dyn_tannagh = {
+	name = "dynn_Tannagh"
+	culture = reachfolk
+}
+dyn_udirgh = {
+	name = "dynn_Udirgh"
+	culture = reachfolk
+	motto = dynn_ghostsong_motto
+}
+dyn_meddich = {
+	name = "dynn_Meddich"
+	culture = reachfolk
+	motto = dynn_hillhunter_motto
+}
+dyn_radach = {
+	name = "dynn_Radach"
+	culture = reachfolk
+	motto = dynn_redcrow_motto
+}
+dyn_moir = {
+	name = "dynn_Moir"
+	culture = reachfolk
+}
+dyn_sarenain = {
+	name = "dynn_Sarenain"
+	culture = reachfolk
+	motto = dynn_blacknoon_motto
+}
+dyn_sarkarain = {
+	name = "dynn_Sarkarain"
+	culture = reachfolk
+	motto = dynn_sarkarain_motto
+}
+dyn_louan = {
+	name = "dynn_Louan"
+	culture = reachfolk
+}
+dyn_lothfryddoch = {
+	name = "dynn_Lothfryddoch"
+	culture = reachfolk
+	motto = dynn_Wolfblood_motto
+}
+dyn_ildene = {
+	name = "dynn_Ildene"
+	culture = reachfolk
+	motto = dynn_wildspear_motto
+}
+dyn_cailenadach = {
+	name = "dynn_Cailenadach"
+	culture = reachfolk
+}
+dyn_brennag = {
+	name = "dynn_Brennag"
+	culture = reachfolk
+}
+dyn_glehew = {
+	name = "dynn_Glehew"
+	culture = reachfolk
+}
+dyn_helvana = {
+	name = "dynn_Helvana"
+	culture = reachfolk
+}
+dyn_mhaighstir = {
+	name = "dynn_Mhaighstir"
+	culture = reachfolk
+}
+dyn_peucag = {
+	name = "dynn_Peucag"
+	culture = reachfolk
+}
+dyn_tarnerach = {
+	name = "dynn_Tarnerach"
+	culture = reachfolk
+}
+dyn_aingeal = {
+	name = "dynn_Aingeal"
+	culture = reachfolk
+}
+dyn_faorell = {
+	name = "dynn_Faorell"
+	culture = reachfolk
+}
+dyn_tyrhonth = {
+	name = "dynn_Tyrhonth"
+	culture = reachfolk
+}
+dyn_ciort = {
+	name = "dynn_Ciort"
+ 	culture = reachfolk
+ 	motto = dynn_ciort_motto
+}
+dyn_moric = {
+	name = "dynn_Moric"
+ 	culture = reachfolk
+}
+dyn_kairian = {
+	name = "dynn_Kairian"
+	culture = reachfolk
+}
+dyn_tarnach = {
+	name = "dynn_Tarnach"
+	culture = reachfolk
+}
+dyn_nicos = {
+	name = "dynn_Nicos"
+	culture = reachfolk
+}
+dyn_usbail = {
+	name = "dynn_Usbail"
+	culture = reachfolk
+}
+dyn_vasenon = {
+	name = "dynn_Vasenon"
+	culture = reachfolk
+}
+dyn_laedh = {
+	name = "dynn_Laedh"
+	culture = reachfolk
+}
+dyn_angad = {
+	name = "dynn_Angad"
+	culture = reachfolk
+}
+dyn_marcas = {
+	name = "dynn_Marcas"
+	culture = reachfolk
+}

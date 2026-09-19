@@ -1,0 +1,660 @@
+﻿#Colovian
+larich_turich = {
+	name = "dynn_Turich"
+	dynasty = dyn_larich
+	motto = dynn_turich_motto
+}
+# larich_hassildor = {
+# 	name = "dynn_Hassildor"
+# 	dynasty = dyn_larich
+# 	motto = dynn_hassildor_motto
+# }
+olo_jarol = {
+	name = "dynn_Jarol"
+	dynasty = dyn_olo1
+}
+dyn_helvor = {
+	name = "dynn_Helvor"
+	dynasty = dyn_hellebor
+}
+dyn_venucius = {
+	name = "dynn_Venucius"
+	dynasty = dyn_ven
+}
+dyn_berandich = {
+	name = "dynn_Berandich"
+	dynasty = dyn_fork_beard
+}
+dyn_roratius = {
+	name = "dynn_Roratius"
+	dynasty = dyn_bloodstone
+}
+dyn_arcidensus = {
+	name = "dynn_Arcidensus"
+	dynasty = dyn_vaneria
+}
+#Nibenese
+cuptor_derana = {
+	name = "dynn_Derana"
+	dynasty = dyn_cuptor
+}
+dyn_enucci = {
+	name = "dynn_Enucci"
+	dynasty = dyn_darak
+}
+ciero_vero = {
+	name = "dynn_Vero"
+	dynasty = dyn_ciero
+}
+dyn_fleccian = { #Branch of Tasus
+	name = "dynn_Fleccian"
+	dynasty = dyn_tasus
+	motto = dynn_fleccian_motto
+}
+dyn_linchal = {
+	name = "dynn_Linchal"
+	dynasty = dyn_kvinchal
+}
+dyn_ancotis = {
+	name = "dynn_Ancotis"
+	dynasty = dyn_darak
+}
+dyn_galsalis = {
+	name = "dynn_Galsalis"
+	dynasty = dyn_timberclaw
+}
+dyn_anerius = {
+	name = "dynn_Anerius"
+	dynasty = dyn_uhlain
+}
+
+#Heartlander
+house_felim ={
+	name = "dynn_Felim"
+	dynasty = dyn_felim
+}
+dyn_haraka = { #Heartlands Tharns
+	name = "dynn_Haraka"
+	dynasty = dyn_tharn
+}
+dyn_siralus = {
+	name = "dynn_Siralius"
+	dynasty = dyn_starsong
+}
+dyn_ulpius = {
+	name = "dynn_Ulpius"
+	dynasty = dyn_shatul
+}
+
+#Altmer
+direnni_tyrigel = {
+	name = "dynn_Direnni_Tyrigel"
+	dynasty = dyn_direnni #Direnni
+}
+
+dyn_rilis = { #Royal House of Firsthold
+	name = "dynn_Rilis"
+	dynasty = dyn_torinaan
+	motto = dynn_rilis_motto
+}
+
+dyn_oghma = { #Oghma dynasty - Cadet of the house of Xarxes
+	name = "dynn_Oghmiran"
+	dynasty = dyn_xarxesar
+	motto = dynn_aunsamiran_motto
+}
+dyn_vaelata = { #Offshoot of the Xarxes offshoot
+	name = "dynn_Vaelata"
+	dynasty = dyn_xarxesar
+	motto = dynn_vealata_motto
+}
+dyn_errinorne =  { #Royal House of Skywatch - cadet of the house of Auri-El
+	prefix = "dynnp_av"
+	name = "dynn_Errinorne"
+	dynasty = dyn_auriel
+}
+dyn_auralus = { #Cadet of Errinorne
+	prefix = "dynnp_av"
+	name = "dynn_Auralus"
+	dynasty = dyn_auriel
+}
+#EK TODO: reuse somewhere
+dyn_arelsamirmo = { # House of Vulkhal - cadet of the house of Phynaster
+	name = "dynn_Arelsamirmo"
+	dynasty = dyn_phynastris
+}	
+
+dyn_ukmiar = {
+	name = "dynn_Ukmiar"
+	dynasty = dyn_grevil
+}
+
+dyn_corranto = {
+	name = "dynn_Corranto"
+	dynasty = dyn_helenil
+}
+
+dyn_derinil = {
+	name = "dynn_Derinil"
+	dynasty = dyn_duure
+}
+
+#Breton
+dyn_guimard = { #Royal House of Evermore after the Moile
+	name = "dynn_Guimard"
+	motto = dynn_guimard_motto
+	dynasty = dyn_marde
+}
+dyn_vuitton = {
+	name = "dynn_Vuitton"
+	dynasty = dyn_moile #Moile
+}
+dorell_stenric = {
+	name = "dynn_Stenric"
+	dynasty = dyn_flowdys #Flowdys
+}
+dorell_flowdys = {
+	name = "dynn_Dorell"
+	dynasty = dyn_flowdys #Flowdys
+}
+dyn_dorell_themond = {
+	name = "dynn_Dorell_Themond"
+	dynasty = dyn_flowdys #Flowdys
+}
+
+branquette_montclair = {
+	name = "dynn_Branquette_Montclair"
+	dynasty = dyn_branquette #Branquette
+}
+dyn_montaine = { #Abah's Landing people
+	name = "dynn_Montaine"
+	dynasty = dyn_vien
+}
+dyn_sele = {
+	name = "dynn_Sele"
+	dynasty = dyn_suadurix
+}
+dyn_deleyn_pellus = {
+	name = "dynn_Deleyn_Pellus"
+	dynasty = dyn_deleyn
+}
+dyn_laurent_cryngaine = {
+	name = "dynn_Laurent_Cryngaine"
+	dynasty = dyn_laurent
+}
+dyn_amelion_morthom = {
+	name = "dynn_Amelion_Morthom"
+	dynasty = dyn_amelion
+}
+
+#Redguard
+phyllocid_hegathe = { #Royal House of Hegathe, Imperial House of Hammerfell
+	prefix = "dynnp_do_"
+	name = "dynn_Hegathe"
+	dynasty = dyn_phyllos
+	motto = dynn_hegathe_motto
+}
+
+dyn_korin = {
+	name = "dynn_Korin"
+	dynasty = dyn_tura
+}
+
+#Orsimer
+shatul_frostwall = {
+	name = "dynn_Frostwall"
+	dynasty = dyn_shatul
+	motto = dynn_frostwall_motto
+}
+
+#Reachfolk
+
+aoife_aelfgifu = {
+	name = "dynn_Aoife"
+	dynasty = dynn_aelfgifu
+}
+dyn_ard = {
+	name = "dynn_Ard"
+	dynasty = dyn_uhlain
+}
+
+#Nord
+dyn_cairn_breaker = {
+	name = "dynn_Cairn_Breaker"
+	dynasty = dyn_stuhn
+}
+dyn_staghorn = {
+	name = "dynn_Staghorn"
+	dynasty = dyn_stuhn
+	motto = dynn_staghorn_motto
+}
+
+dyn_fjalr = {
+	name = "dynn_Fjalr"
+	dynasty = dyn_flamehair
+}
+
+doomsayer_winterbeard = {
+	name = "dynn_Winter_Beard"
+	dynasty = dyn_doom_sayer
+}
+
+dyn_far_shield = {
+	name = "dynn_Wolf_Blood"
+	dynasty = dyn_cursebraid
+}
+
+dyn_finehair = {
+	name = "dynn_Fine_Hair"
+	dynasty = dyn_cruel_sea
+}
+
+dyn_snowcrest = {
+	name = "dynn_Snowcrest"
+	dynasty = dyn_amber_shield
+}
+
+dyn_snowbraid = {
+	name = "dynn_Snow_Braid"
+	dynasty = dyn_snow_whale
+}
+
+dyn_hodgrym = {
+	name = "dynn_Hodgrym"
+	dynasty = dyn_yngvlar
+}
+
+dyn_graymane_reference = {
+	name = "dynn_Gray_Mane_reference"
+	dynasty = dyn_yngvlar
+	motto = dynn_graymane_reference_motto
+}
+
+dyn_battleborn_reference = {
+	name = "dynn_Battle_Born_reference"
+	dynasty = dyn_yngvlar
+	motto = dynn_battleborn_reference_motto
+}
+
+dyn_stormstruck = {
+	name = "dynn_Stormstruck"
+	dynasty = dyn_oakensword
+}
+
+dyn_meadblood = {
+	name = "dynn_Meadblood"
+	dynasty = dyn_blackthorn
+}
+
+dyn_raveneye = {
+	name = "dynn_Raven_Eye"
+	dynasty = dyn_skjoralmor
+}
+
+dyn_grayfists = {
+	name = "dynn_Gray_Fists"
+	dynasty = dyn_frostbeard
+	motto = dynn_gray_fists_motto
+}
+
+dyn_neder = {
+	name = "dynn_Neder"
+	dynasty = dyn_vlinorman
+}
+
+dyn_vittr = {
+	name = "dynn_Vittr"
+	dynasty = dyn_volkihar
+}
+
+dyn_starkad = {
+	name = "dynn_Starkard"
+	dynasty = dyn_bjorga
+}
+
+dyn_blackdrake = {
+	name = "dynn_Black_Drake"
+	dynasty = dyn_uhlain
+}
+
+# Skaal
+
+dyn_wildblood = {
+	name = "dynn_Wild_Blood"
+	dynasty = dyn_bloodskal
+}
+
+#Bosmer
+camoran_graht = {
+	name = "dynn_Camoran_Grahtwood"
+	dynasty = dyn_camoran
+	motto = dynn_camoran_grahtwood_motto
+}
+
+camoran_woodhearth = {
+	name = "dynn_Camoran_Woodhearth"
+	dynasty = dyn_camoran
+	motto = dynn_woodhearth_motto
+}
+
+camoran_haven = {
+	name = "dynn_Camoran_Haven"
+	dynasty = dyn_camoran
+	motto = dynn_haven_motto
+}
+
+camoran_silvenar = {
+	name = "dynn_Camoran_Silvenar"
+	dynasty = dyn_camoran
+	motto = dynn_camoran_silvenar_motto
+}
+
+camoran_gorinir = {
+	name = "dynn_Camoran_Gorinir"
+	dynasty = dyn_camoran
+	motto = dynn_gorinir_motto
+}
+
+camoran_arenthia = {
+	name = "dynn_Camoran_Arenthia"
+	dynasty = dyn_camoran
+	motto = dynn_arenthia_motto
+}
+
+dyn_camoran_cormount = { #Kings of Cormount, dead by 440
+	name = "dynn_Camoran_Cormount"
+	dynasty = dyn_camoran
+}
+
+dyn_vanellion = {
+	name = "dynn_Vanellion" #Made-up dynasty for a real ESO character
+	dynasty = dyn_thynsa
+}
+
+dyn_oreyn = { #Branch of Bearclaw dynasty
+	name = "dynn_Oreyn"
+	dynasty = dyn_elyrimil
+}
+
+dyn_garnona = {
+	name = "dynn_Garnona"
+	dynasty = dyn_iyanden
+}
+
+#Khajiiti
+dyn_zatani_tasluz = {
+	name = "dynn_Tasluz"
+	dynasty = dyn_zatani
+}
+
+dyn_mojidar = { #Corinthe dynasty
+	name = "dynn_Mojidar"
+	dynasty = dyn_zatani
+	motto = dynn_shir_mojidar_motto
+	prefix = "dynnp_shir"
+}
+
+dyn_catalca = {
+	name = "dynn_Catalca"
+	dynasty = dyn_sihnai
+}
+
+# dyn_kejra_morto = {
+# 	name = "dynn_Morto"
+# 	dynasty = dyn_kejra
+# }
+
+dyn_ribasti_drobasti = {
+	name = "dynn_Drobasti"
+	dynasty = dyn_ribasti
+}
+
+dyn_brae_rassa = {
+	name = "dynn_Shirrassa"
+	dynasty = dyn_brae
+}
+
+dyn_dakhe = {
+	name = "dynn_Dakhe"
+	dynasty = dyn_aldiin
+}
+
+dyn_zivsho = {
+	name = "dynn_Zivsho"
+	dynasty = dyn_vethkal
+	motto = dynn_zivsho_motto
+}
+
+dyn_shabu_bago = { #Bastard branch of Shabu
+	name = "dynn_Bago"
+	dynasty = dyn_shabu
+}
+
+dyn_dobasti = {
+	name = "dynn_Dobasti"
+	dynasty = dyn_ribasti
+}
+
+dyn_zabasti = {
+	name = "dynn_Zabasti"
+	dynasty = dyn_ribasti
+}
+
+dyn_jagesh = {
+	name = "dynn_Jagesh"
+	dynasty = dyn_kejra
+}
+
+
+dyn_mahkar = { #Badlands dynasty 
+	name = "dynn_Mahkar"
+	dynasty = dyn_khabus
+	prefix = "dynnp_shir"
+}
+
+#Tsaesci
+akavir_aix = { #Spawned for Cazuras via event
+	name = "dynn_Aix"
+	dynasty = dyn_chorak
+	motto = dynn_aix_motto
+}
+
+#Dunmer
+dyn_oren = { #Part of Muthada council
+	name = "dynn_Oren" #ESO
+	dynasty = dyn_urenim
+}
+
+dyn_romoren = {
+	name = "dynn_Romoren"
+	dynasty = dyn_urenim
+}
+
+dyn_selyn = {
+	name = "dynn_Selyn"
+	dynasty = dyn_venali
+}
+
+dyn_randoro = {
+	name = "dynn_Randoro"
+	dynasty = dyn_venali
+}
+
+dyn_delyn = {
+	name = "dynn_Delyn"
+	dynasty = dyn_dorom
+}
+
+dyn_nerothan = {
+	name = "dynn_Nerothan"
+	dynasty = dyn_oth
+}
+
+dyn_drothan = { #Extinct Oth house
+	name = "dynn_Drothan"
+	dynasty = dyn_oth
+}
+
+dyn_dreloth = { #Extinct Oth house
+	name = "dynn_Dreloth"
+	dynasty = dyn_oth
+}
+
+dyn_omothan = {
+	name = "dynn_Omothan"
+	dynasty = dyn_oth
+}
+
+dyn_terano = {
+	name = "dynn_Terano"
+	dynasty = dyn_alandro
+}
+
+#House Indoril
+dyn_vandas = {
+	name = "dynn_Vandas"
+	dynasty = dyn_indoril
+}
+
+dyn_balver = {
+	name = "dynn_Balver"
+	dynasty = dyn_indoril
+}
+
+#House Hlaalu
+# First = direct line of Narsara Hla-Alu
+hlaalu_first = {
+	name = "dynn_Hlaarys"
+	dynasty = dyn_hlaalu
+}
+# Second = Dynasty
+#Third - married into Shinathi, Hlavaru = Hlaalu + Varusea (founder)
+hlaalu_third = {
+	name = "dynn_Hlaavaru"
+	dynasty = dyn_hlaalu
+}
+#Fourth
+hlaalu_fourth = {
+	name = "dynn_Hlaano"
+	dynasty = dyn_hlaalu
+}
+#Fifth - hold influence in Kragenmoor, Hlaarel = Hlaalu + Llurel (founder)
+hlaalu_fifth = {
+	name = "dynn_Hlaarel"
+	dynasty = dyn_hlaalu
+}
+#Sixth - traders outside Morrowind, Hlaavus = Hlaalu + Sevus (founder)
+hlaalu_sixth = {
+	name = "dynn_Hlaavus"
+	dynasty = dyn_hlaalu
+}
+#Seventh - split from second after disaster, Hlaavur = Hlaalu + Brevur (founder)
+hlaalu_seventh = {
+	name = "dynn_Hlaavur"
+	dynasty = dyn_hlaalu
+}
+
+#House Raathim
+mora_raathim = {
+	name = "dynn_mora_raathim"
+	motto = dynn_mora_raathim_motto
+	dynasty = dyn_mora
+}
+
+#Ashlander
+
+arobani_arobar = {
+	name = "dynn_Arobar"
+	dynasty = dyn_arobani
+	motto = dynn_arobar_motto
+}
+
+zainab_oubani = {
+	name = "dynn_Oubani"
+	dynasty = dyn_zainab
+	motto = dynn_zainab_oubani_motto
+}
+
+ahemmusa_sinnammu = {
+	name = "dynn_Sinnammu"
+	dynasty = dyn_ahemmusa
+}
+
+#Yespest
+akneinas_quarori = {
+	prefix = "dynnp_clan"
+	name = "dynn_Quarori"
+	dynasty = dyn_akneinas
+}
+
+dyn_hatkhe = {
+	prefix = "dynnp_clan"
+	name = "dynn_Hatkhe"
+	dynasty = dyn_atla
+}
+
+#Orma
+orma_ko = {
+	name = "dynn_Orma_Ko"
+	dynasty = orma_ka
+	motto = dynn_ormako_motto
+}
+
+#Naga
+dyn_nikassa = {
+	prefix = "dynnp_naga"
+	name = "dynn_Nikassa"
+	dynasty = dyn_juseius
+	motto = dynn_nikeius_motto
+}
+dyn_veestassa = {
+	prefix = "dynnp_naga"
+	name = "dynn_Veestassa"
+	dynasty = dyn_juseius
+}
+#EK TODO: unused
+# huja = {
+# 	prefix = "dynnp_naga"
+# 	name = "dynn_Huja"
+# 	dynasty = dyn_naga_shaie
+# }
+#Sarpa
+haj_masu = {
+	prefix = "dynnp_tseth"
+	name = "dynn_Wamasu"
+	dynasty = dyn_haj
+	motto = dynn_wamasu_motto
+}
+#Hleel
+thuxis_thuxleel = {
+	name = "dynn_Thuxleel"
+	dynasty = dyn_thuxis
+	motto = dynn_thuxleel_motto
+}
+#Agaceph
+neius_aneiuslan = {
+	name = "dynn_Aneiuslan"
+	dynasty = dyn_neius
+	motto = dynn_aneiuslan_motto
+}
+# Orcs
+fharun_lurkul = {
+	name = "dynn_Lurkul"
+	dynasty = dyn_fharun
+}
+
+dyn_rubedite = {
+	name = "dynn_Rubedite"
+	motto = dynn_rubedite_motto
+	dynasty = dyn_orichalc
+}
+# Dwemer
+rourken_irkngthand = {
+	name = "dynn_irkngrath"
+	dynasty = dynn_rourken
+}
+
+rourken_zthenganaz = {
+	name = "dynn_zthengruk"
+	dynasty = dynn_rourken
+}

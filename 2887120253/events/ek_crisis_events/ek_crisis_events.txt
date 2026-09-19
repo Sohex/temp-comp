@@ -1,0 +1,71 @@
+﻿namespace = ek_crisis_event
+
+# notifying players that a Betrayed Falmer faction has succeeded, bringing them back to the surface of Tamriel
+ek_crisis_event.0001 = {
+	type = character_event
+	content_source = dlc_ek
+	title = ek_crisis_event.0001.t
+	theme = battle
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					culture = { has_cultural_pillar = heritage_falmeri }
+				}	
+				desc =  ek_crisis_event.0001.desc.b
+			}	
+			desc =  ek_crisis_event.0001.desc.a
+		}
+	}
+
+	trigger = {
+		NOT = { has_global_variable = betrayed_have_returned } #let's only trigger this event once, just in case
+	}
+
+	immediate = {
+		set_global_variable = betrayed_have_returned
+	}
+
+	left_portrait = {
+		character = scope:peasant_leader
+		animation = wrestling_victory
+	}
+
+	# Nord response
+	option = {
+		trigger = {
+			culture = { has_cultural_pillar = heritage_atmoran }
+		}
+		name = ek_crisis_event.0001.option1
+		flavor = ek_crisis_event.0001.flavor
+	}
+	
+	# Falmer response
+	option = {
+		trigger = {
+			culture = { has_cultural_pillar = heritage_falmeri }
+		}
+		name = ek_crisis_event.0001.option2
+		flavor = ek_crisis_event.0001.flavor
+	}
+
+	# Other elves response
+	option = {
+		trigger = {
+			NOT = { culture = { has_cultural_pillar = heritage_falmeri }}
+			is_elvish_character = yes
+		}
+		name = ek_crisis_event.0001.option3
+		flavor = ek_crisis_event.0001.flavor
+	}
+	# Others
+	option = {
+		trigger = {
+			NOT = { culture = { has_cultural_pillar = heritage_atmoran }}
+			is_elvish_character = no
+		}
+		name = ek_crisis_event.0001.option4
+		flavor = ek_crisis_event.0001.flavor
+	}
+}

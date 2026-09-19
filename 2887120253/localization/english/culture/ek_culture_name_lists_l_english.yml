@@ -1,0 +1,89 @@
+﻿l_english:
+#ek_akaviri
+ name_list_rimmen: "Rimmen"
+ name_list_tsaesci: "Tsaesci"
+ name_list_ilniviri: "Ilniviri"
+ #ek_aldmeri
+ name_list_altmer: "Altmer"
+ name_list_balfiera: "Balfieri"
+ #ek_argonian
+ name_list_hleel: "Hleel"
+ name_list_naga: "Naga"
+ name_list_paatru: "Paatru"
+ name_list_agaceph: "Agaceph"
+ name_list_sarpa: "Sarpa"
+ name_list_ojel: "Ojel"
+ name_list_hapsleet: "Hapsleet"
+ #ek_atmoran
+ name_list_eastmarcher: "Oldholder"
+ name_list_westmarcher: "West Nord"
+ name_list_cyro_nord: "Cyro-Nord"
+ name_list_atmoran: "Atmoran"
+ name_list_skaal: "Skaal"
+ #ek_ayleid
+ name_list_ayleid: "Ayleid"
+ #ek_bosmeri
+ name_list_bosmer: "Bosmer"
+ #ek_breton
+ name_list_glenumbran: "Glenumbran"
+ name_list_witchman: "Witchman"
+ name_list_northmen: "Northmen"
+ name_list_iliac: "Iliac"
+ name_list_wrothgarian: "Wrothgarian"
+ #ek_chimeri
+ name_list_chimer: "Chimer"
+ name_list_cantemiric: "Cantemiric"
+ #ek_cyrodiilic
+ name_list_colovian: "Colovian"
+ name_list_strident: "Strident"
+ name_list_nibenese: "Nibenese"
+ name_list_rimmenese: "Rimmenese"
+ name_list_nibenu: "Nibenu"
+ #ek_dremora
+ name_list_dremora: "Dremora"
+ #ek_dunmeri
+ name_list_dunmer: "Dunmer"
+ name_list_ashlander: "Ashlander"
+ #ek_dwemeri
+ name_list_dwemer: "Dwemer"
+ #ek_falmeri
+ name_list_falmer: "Falmer"
+ name_list_falmer_betrayed: "Betrayed"
+ #ek_goblinken
+ name_list_goblin: "Goblin"
+ name_list_riekling: "Riekling"
+ name_list_riekr: "Riekr"
+ #ek_imgari
+ name_list_imga: "Imga"
+ #ek_khajiiti
+ name_list_pellitinian: "Pellitinian"
+ name_list_anequinan: "Anequinan"
+ name_list_baandari: "Baandari"
+ name_list_malapiit: "Malapiit"
+ #ek_lilmothiit
+ name_list_lilmothiit: "Lilmothiit"
+ #ek_misc
+ name_list_placeholder: "Placeholder?"
+ #ek_nedic_north
+ name_list_reachfolk: "Reachman"
+ name_list_galen: "Galen"
+ name_list_duraki: "Keptu"
+ #Kothri
+ name_list_yespest: "Yespest"
+ name_list_kothringi: "Kothringi"
+ name_list_horwalli: "Horwalli"
+ name_list_orma: "Orma"
+ #ek_old_breton
+ name_list_bjoule: "Bjoule"
+ #ek_orsimeri
+ name_list_mountain_orc: "Mountain Orcish"
+ name_list_iron_orc: "Iron Orcish"
+ name_list_wood_orc: "Wood Orcish"
+ #ek_yokudan
+ name_list_yokudan: "Yokudan"
+ name_list_forebear: "Forebear"
+ name_list_crown: "Crown"
+ #ek_maormer
+ name_list_maormer: "Maormer"
+ #ek_giantish
+ name_list_atmoran_giant: "Giantish"

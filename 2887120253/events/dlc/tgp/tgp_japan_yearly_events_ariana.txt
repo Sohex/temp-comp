@@ -1,0 +1,2451 @@
+﻿#EK NOTE: disabled irl stuff
+namespace = tgp_japan_yearly_events
+
+##########################################################
+# Japan Yearly Events
+# tgp_japan_yearly_events - 1000-1999
+# by Ariana Tranumn
+##########################################################
+
+##########################################################
+# 1000 - You see some Onibi, follow them or no?
+# 1010 - Two buddhist sects are fighting, and ask you to pick a side
+# 1020 - Your senses are playing tricks on you, and you encounter a new Yokai
+# 1030 - Praying at a shrine for future success
+# 1040 - You come across a red bridge
+# 1050 - You are accused of violating a dumb rule
+# 1060 - A prisoner requests to be mercy killed
+# 1070 - A temple in your realm has burned down
+# 1080 - Someone is fishing in the tsuri-dono
+# 1090 - Growing old with no heir
+# 1100 - You become guilty after killing some people
+# 1110 - An animal is seen near the shrine of a God
+# 1120 - You meet a warrior monk
+# 1130 - Your daughter expresses an interest in poetry
+# 1140 - You are stopped in Soryo lands as a Ritsuryo ruler
+# 1150 - The Emperor is passing through your realm, chance to gain favor or be mean
+# 1160 - You are offered a concubine from a rival house
+# 1170 - The prose that you're reading is of an unknown language
+# 1180 - You've been gifted a Bonsai tree for your garden
+# 1190 - You have a bad trait and you're making some decisions at night
+# 1220 - You've witnessed a miracle made by a Buddhist monk
+# 1230 - Fear of a low durability artifact coming to life (Yokai)
+# 1240 - A traveler poet visits court and can't read from right to left
+# 1250 - Being gifted a Kakejiku scroll (Wedding)
+##########################################################
+
+# You see some Onibi, follow them or no?
+
+# Your senses are playing tricks on you, and you encounter a new Yokai
+
+#EK NOTE: this doesn't seem to be very japan specific, enabled it for everyone
+# You pray at a shrine for future success
+tgp_japan_yearly_events.1030 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1030.t
+	desc = tgp_japan_yearly_events.1030.desc
+	theme = faith
+    cooldown = { years = 15 }
+
+	left_portrait = {
+		character = root
+		#EK EDIT
+		#triggered_animation = {
+		#	trigger = {
+		#		faith.religion ?= religion:christianity_religion
+		#	}
+		#	animation = prayer
+		#}
+		#triggered_animation = {
+		#	trigger = {
+		#		NOT = { faith.religion ?= religion:christianity_religion }
+		#	}
+			animation = personality_zealous
+		#}
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+	}
+
+	# Pray for your health
+	option = {
+		name = tgp_japan_yearly_events.1030.a
+
+		add_character_modifier = {
+			modifier = tgp_shrine_health_modifier
+			years = 5
+		}
+
+		if = {
+			limit = {
+				has_trait = wounded
+			}
+			random = {
+				chance = 25
+				if = {
+					limit = { has_trait = wounded_1 }
+					remove_trait = wounded_1
+				}
+				else_if = {
+					limit = { has_trait = wounded_2 }
+					remove_trait = wounded_2
+					add_trait = wounded_1
+				}
+				else_if = {
+					limit = { has_trait = wounded_3 }
+					remove_trait = wounded_3
+					add_trait = wounded_2
+				}
+			}
+		}
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 2
+				has_trait = wounded
+			}
+		}
+	}
+
+	# Pray for your heirs/dynasty
+	option = {
+		name = tgp_japan_yearly_events.1030.b
+
+		add_character_modifier = {
+			modifier = tgp_shrine_heir_modifier
+			years = 5
+		}
+
+		stress_impact = {
+			family_first = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 2
+				has_trait = family_first
+			}
+		}
+	}
+
+	# Pray for wealth
+	option = {
+		name = tgp_japan_yearly_events.1030.c
+
+		add_character_modifier = {
+			modifier = tgp_shrine_wealth_modifier
+			years = 5
+		}
+
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+			}
+			modifier = {
+				factor = 2
+				short_term_gold <= minor_gold_value
+			}
+		}
+	}
+
+	# Pray for X Gods favor
+	option = {
+		name = tgp_japan_yearly_events.1030.d
+
+		add_character_modifier = {
+			modifier = tgp_shrine_piety_modifier
+			years = 5
+		}
+		add_piety = minor_piety_gain
+
+
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 1
+			}
+		}
+	}
+
+	option = {
+		name = tgp_japan_yearly_events.1030.e
+		trigger = { has_trait = cynical }
+
+		stress_impact = {
+			cynical = medium_stress_impact_loss
+		}
+
+		add_prestige = minor_prestige_gain
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = -1
+			}
+		}
+	}
+}
+
+# You come across a red bridge
+
+# You are accused of violating a dumb rule
+
+# A prisoner requests to be mercy killed
+tgp_japan_yearly_events.1060 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1060.t
+	desc = {
+		desc = tgp_japan_yearly_events.1060.desc
+		random_valid = {
+			desc = tgp_japan_yearly_events.1060.desc_generic
+			triggered_desc = {
+				trigger = { scope:prisoner = { age >= 50 } }
+				desc = tgp_japan_yearly_events.1060.desc_old
+			}
+			triggered_desc = {
+				trigger = { scope:prisoner = { age <= 18 } }
+				desc = tgp_japan_yearly_events.1060.desc_young
+			}
+			triggered_desc = {
+				trigger = { scope:prisoner = { days_in_prison >= 400 } }
+				desc = tgp_japan_yearly_events.1060.desc_young
+			}
+			triggered_desc = {
+				trigger = {
+					scope:prisoner = {
+						OR = {
+							has_character_modifier = recently_tortured
+							has_trait = wounded
+						}
+					}
+				}
+				desc = tgp_japan_yearly_events.1060.desc_injured
+			}
+		}
+		desc = tgp_japan_yearly_events.1060.desc_outro
+	}
+	theme = prison
+    cooldown = { years = 30 }
+	override_background = {
+		trigger = { scope:prisoner = { is_in_prison_type = house_arrest } }
+		reference = sitting_room
+	}
+	override_background = {
+		trigger = { scope:prisoner = { is_in_prison_type = dungeon } }
+		reference = dungeon
+	}
+	left_portrait = {
+		character = scope:prisoner
+		triggered_animation = {
+			trigger = { scope:prisoner = { is_in_prison_type = house_arrest } }
+			animation = prisonhouse
+		}
+		triggered_outfit = {
+			trigger = { scope:prisoner = { is_in_prison_type = dungeon } }
+			outfit_tags = { beggar_rags }
+		}
+	}
+	right_portrait = {
+		character = root
+		animation = interested
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		#EK DISABLED
+		#location = { geographical_region = world_asia_japan }
+		any_prisoner = {
+			age >= 14
+			is_ruler = no
+		}
+	}
+
+	immediate = {
+		random_prisoner = {
+			limit = {
+				age >= 14
+				is_ruler = no
+			}
+			weight = {
+				base = 10
+				modifier = {
+					add = 15
+					age >= 50
+				}
+				modifier = {
+					add = 10
+					has_character_modifier = recently_tortured
+				}
+				modifier = {
+					add = 5
+					days_in_prison >= 400
+				}
+				modifier = {
+					add = -5
+					has_trait = patient
+				}
+				modifier = {
+					add = -15
+					has_trait = brave
+				}
+			}
+			save_scope_as = prisoner
+		}
+	}
+
+	# Just kill them
+	option = {
+		name = tgp_japan_yearly_events.1060.a
+
+		add_piety = minor_piety_gain
+
+		scope:prisoner = { death = { death_reason = death_execution killer = root } }
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+			callous = minor_stress_impact_gain
+			calm = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = 0.5
+				ai_zeal = 1
+			}
+		}
+	}
+
+	# Do something nice for them
+	option = {
+		name = tgp_japan_yearly_events.1060.b
+
+		if = {
+			limit = {
+				scope:prisoner = { is_in_prison_type = dungeon }
+			}
+			scope:prisoner = { change_prison_type = house_arrest }
+		}
+
+		add_prestige = minor_prestige_gain
+
+		scope:prisoner = {
+			add_character_modifier = {
+				modifier = tgp_attentive_care_modifier
+				years = 5
+			}
+		}
+
+		stress_impact = {
+			compassionate = minor_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = 1
+			}
+		}
+	}
+
+	# Do something mean to them
+	option = {
+		name = tgp_japan_yearly_events.1060.c
+
+		if = {
+			limit = {
+				scope:prisoner = { is_in_prison_type = house_arrest }
+			}
+			scope:prisoner = { change_prison_type = dungeon }
+		}
+
+		add_dread = minor_dread_gain
+
+		scope:prisoner = {
+			add_character_modifier = {
+				modifier = tgp_neglected_modifier
+				years = 5
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = -1
+			}
+		}
+	}
+
+	# Simply ignore their request
+	option = {
+		name = tgp_japan_yearly_events.1060.d
+
+		add_character_modifier = {
+			modifier = tgp_law_defender
+			years = 3
+		}
+
+		scope:prisoner = {
+			add_opinion = {
+				modifier = disappointed_opinion
+				target = root
+				opinion = -15
+			}
+		}
+
+		stress_impact = {
+			just = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+		}
+	}
+}
+
+# A temple in your realm has burned down
+tgp_japan_yearly_events.1070 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1070.t
+	desc = tgp_japan_yearly_events.1070.desc
+	theme = faith
+	override_background = { reference = burning_building }
+	cooldown = { years = 10 }
+
+	left_portrait = {
+		character = root
+	}
+	right_portrait = {
+		character = scope:messenger
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_valid_for_japan_events_trigger = yes
+		any_sub_realm_county = {
+			any_county_province = {
+				has_building_or_higher = temple_01
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				exists = cp:councillor_court_chaplain
+			}
+			cp:councillor_court_chaplain = { save_scope_as = messenger }
+		}
+		else_if = {
+			limit = {
+				exists = cp:councillor_chancellor
+			}
+			cp:councillor_chancellor = { save_scope_as = messenger }
+		}
+		else = {
+			random_courtier = { save_scope_as = messenger }
+		}
+
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = { has_building_or_higher = temple_01 }
+			}
+			random_county_province = {
+				limit = { has_building_or_higher = temple_01 }
+				save_scope_as = province
+			}
+		}
+	}
+
+	option = {
+		name = tgp_japan_yearly_events.1070.a
+
+		remove_short_term_gold = major_gold_value
+		scope:province = { add_next_temple_tier_effect = yes }
+		add_piety = minor_piety_gain
+		add_character_modifier = { modifier = tgp_temple_builder_modifier years = 3 }
+
+		stress_impact = {
+			just = minor_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 1
+			}
+		}
+	}
+
+	option = {
+		name = tgp_japan_yearly_events.1070.b
+
+		scope:messenger = {
+			add_opinion = {
+				modifier = disappointed_opinion
+				target = root
+				opinion = -15
+			}
+		}
+		add_character_modifier = { modifier = tgp_rebuilder_modifier years = 3 }
+
+		stress_impact = {
+			lazy = minor_stress_impact_loss
+			zealous = medium_stress_impact_gain
+			cynical = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = -1
+			}
+		}
+	}
+
+	#EK DISABLED
+	#option = {
+	#	name = tgp_japan_yearly_events.1070.c
+	#	trigger = {
+	#		OR = {
+	#			probably_superstitious = yes
+	#			has_trait = just
+	#			has_focus_intrigue = yes
+	#			intrigue >= high_skill_rating
+	#		}
+	#	}
+	#	custom_tooltip = tgp_japan_yearly_events.1070.c_tt
+
+	#	trigger_event = {
+	#		id = tgp_japan_yearly_events.1071
+	#		days = { 25 35 }
+	#	}
+
+	#	stress_impact = {
+	#		paranoid = minor_stress_impact_loss
+	#	}
+
+	#	ai_chance = {
+	#		base = 100
+	#		ai_value_modifier = {
+	#			ai_rationality = 1
+	#		}
+	#	}
+	#}
+}
+
+# Follow up event
+
+# Someone is fishing in the tsuri-dono
+
+# Growing old with no heir
+tgp_japan_yearly_events.1090 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1090.t
+	desc = {
+		desc = tgp_japan_yearly_events.1090.desc_intro
+		first_valid = {
+			triggered_desc = { # Children are dead
+				trigger = {
+					any_child = {
+						even_if_dead = yes
+						is_alive = no
+					}
+				}
+				desc = tgp_japan_yearly_events.1090.desc_intro_dead
+			}
+			triggered_desc = { # No children
+				trigger = {
+					NOT = {
+						any_child = { even_if_dead = yes }
+					}
+				}
+				desc = tgp_japan_yearly_events.1090.desc_intro_none
+			}
+		}
+		desc = tgp_japan_yearly_events.1090.desc
+	}
+	theme = court
+    cooldown = { years = 25 }
+
+	left_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	right_portrait = {
+		character = scope:informer
+		animation = stress
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		#EK DISABLED
+		#location = {
+		#	geographical_region = world_asia_japan
+		#}
+		is_ruler = yes
+		trigger_if = {
+			limit = { is_female = no }
+			age >= 55
+		}
+		trigger_else = { age >= 45 }
+		any_held_title = {
+			is_noble_family_title = yes
+			NOT = { # No heirs are close family, or there are no heirs at all
+				any_title_heir = { is_close_family_of = root }
+			}
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				is_noble_family_title = yes
+				NOT = { # No heirs are close family, or there are no heirs at all
+					any_title_heir = { is_close_family_of = root }
+				}
+			}
+			save_scope_as = target_title
+		}
+		if = {
+			limit = {
+				exists = primary_spouse
+			}
+			primary_spouse = { save_scope_as = informer }
+		}
+		else_if = {
+			limit = { exists = cp:councillor_chancellor }
+			cp:councillor_chancellor = { save_scope_as = informer }
+		}
+		else = {
+			random_courtier = { save_scope_as = informer }
+		}
+		if = {
+			limit = {
+				allowed_more_concubines = yes
+				is_male = yes
+			}
+			create_character = {
+				template = tgp_concubine_template
+				location = root.location
+				save_scope_as = new_concubine
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			add = 15
+			is_female = yes
+		}
+	}
+
+	# Try and make one?
+	option = {
+		name = tgp_japan_yearly_events.1090.a
+		trigger = {
+			is_male = yes
+		}
+
+		add_character_modifier = {
+			modifier = tgp_fertility_boost_modifier
+			years = 5
+		}
+
+		if = {
+			limit = {
+				allowed_more_concubines = yes
+			}
+			random = {
+				chance = 50
+				custom_tooltip = tgp_japan_yearly_events.1090.a_tt
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1090.a_tt
+					left_icon = root
+					right_icon = scope:new_concubine
+					hidden_effect = { make_concubine = scope:new_concubine }
+				}
+			}
+		}
+
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+			modifier = {
+				factor = 2
+				fertility <= low_fertility
+			}
+		}
+	}
+
+	# adopt an heir
+	option = {
+		name = tgp_japan_yearly_events.1090.b
+
+		custom_tooltip = tgp_japan_yearly_events.1090.b_tt
+		trigger = {
+			NOT = {
+				culture = {
+					has_cultural_parameter = allows_adoption
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_legitimacy = yes
+			}
+			add_legitimacy = medium_legitimacy_loss
+		}
+		else = {
+			add_prestige = medium_prestige_loss
+		}
+
+		set_variable = {
+			name = seeks_an_heir
+			value = yes
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	# Rule as long as possible
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							OR = {
+								has_trait = lazy
+								has_trait = arrogant
+								has_trait = cynical
+							}
+						}
+						desc = tgp_japan_yearly_events.1090.c_uncaring
+					}
+					desc = tgp_japan_yearly_events.1090.c
+				}
+			}
+		}
+
+		add_prestige = minor_prestige_loss
+
+		add_character_modifier = {
+			modifier = tgp_longer_life_modifier
+			years = 10
+		}
+
+		stress_impact = {
+			base = minor_stress_impact_loss
+			lazy = minor_stress_impact_loss
+			cynical = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+			modifier = {
+				factor = 1.5
+				has_trait = cynical
+			}
+			modifier = {
+				factor = 2
+				health <= poor_health
+			}
+		}
+	}
+
+	after = {
+		scope:new_concubine ?= {
+			silent_disappearance_ai_effect = yes
+		}
+	}
+}
+
+# You become guilty after killing some people
+tgp_japan_yearly_events.1100 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1100.t
+	desc = {
+		desc = tgp_japan_yearly_events.1100.desc
+		triggered_desc = {
+			trigger = {
+				exists = scope:victim_2
+			}
+			desc = tgp_japan_yearly_events.1100.desc_2
+		}
+		triggered_desc = {
+			trigger = {
+				exists = scope:victim_2
+			}
+			desc = tgp_japan_yearly_events.1100.desc_3
+		}
+		desc = tgp_japan_yearly_events.1100.desc_outro
+	}
+
+	theme = court
+    cooldown = { years = 25 }
+
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+
+	right_portrait = {
+		character = scope:victim
+	}
+
+	lower_center_portrait = {
+		trigger = {
+			exists = scope:victim_2
+			NOT = { exists = scope:victim_3 }
+		}
+		character = scope:victim_2
+	}
+
+	lower_left_portrait = {
+		trigger = {
+			exists = scope:victim_2
+			exists = scope:victim_3
+		}
+		character = scope:victim_2
+	}
+
+	lower_right_portrait = {
+		trigger = { exists = scope:victim_3 }
+		character = scope:victim_3
+	}
+
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			add = 25
+			any_secret = {
+				type = secret_murder
+				can_be_exposed_by = root
+				count > 1
+			}
+		}
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		#EK DISABLED
+		#location = {
+		#	geographical_region = world_asia_japan
+		#}
+		NOT = { has_trait = callous }
+		any_secret = {
+			type = secret_murder
+			can_be_exposed_by = root
+		}
+	}
+
+	immediate = {
+		random_secret = {
+			type = secret_murder
+			limit = { can_be_exposed_by = root }
+			secret_target = { save_scope_as = victim }
+		}
+		random_secret = {
+			type = secret_murder
+			limit = {
+				can_be_exposed_by = root
+				NOT = { secret_target = scope:victim }
+			}
+			secret_target = { save_scope_as = victim_2 }
+		}
+		random_secret = {
+			type = secret_murder
+			limit = {
+				can_be_exposed_by = root
+				NOR = {
+					secret_target = scope:victim
+					secret_target = scope:victim_2
+				}
+			}
+			secret_target = { save_scope_as = victim_3 }
+		}
+	}
+
+	# Confess your sins
+	option = {
+		name = tgp_japan_yearly_events.1100.a
+
+		custom_tooltip = {
+			text = tgp_japan_yearly_events.1100.a_tt
+			every_secret = {
+				type = secret_murder
+				expose_secret = root
+			}
+		}
+
+		stress_impact = {
+			base = major_stress_impact_loss
+			just = minor_stress_impact_loss
+			honest = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+			deceitful = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = 1
+			}
+			modifier = {
+				factor = 2
+				has_trait = honest
+			}
+		}
+	}
+
+	# I can't let anyone know this
+	option = {
+		name = tgp_japan_yearly_events.1100.b
+		custom_tooltip = tgp_japan_yearly_events.1100.b_tt
+		add_character_flag = {
+			flag = guilt_fever_murder_cd
+			years = 5
+		}
+
+		add_character_modifier = {
+			modifier = tgp_guilt_fever_modifier
+			years = 5
+		}
+
+		stress_impact = {
+			base = medium_stress_impact_gain
+			deceitful = minor_stress_impact_loss
+			paranoid = minor_stress_impact_loss
+			just = minor_stress_impact_gain
+			honest = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+			modifier = {
+				factor = 2
+				has_trait = paranoid
+			}
+		}
+	}
+}
+
+# An animal is seen near the shrine of a God
+tgp_japan_yearly_events.1110 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1110.t
+	desc = tgp_japan_yearly_events.1110.desc
+	theme = faith
+    cooldown = { years = 10 }
+
+	left_portrait = {
+		character = root
+		animation = admiration
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		#religion = religion:shintoism_religion
+		#location.religion = religion:shintoism_religion
+	}
+
+	immediate = {
+		create_artifact_animal_hide_effect = {
+			OWNER = root
+			HUNTER = root
+			LEGENDARY = no
+			ANIMAL = flag:stag
+		}
+	}
+
+	# This is a sign to reflect
+	option = {
+		name = tgp_japan_yearly_events.1110.a
+
+		add_character_modifier = {
+			modifier = tgp_reflection_modifier
+			years = 5
+		}
+
+		stress_impact = {
+			base = minor_stress_impact_gain
+			zealous = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 1
+			}
+			modifier = {
+				factor = 2
+				has_focus_learning = yes
+			}
+		}
+	}
+
+	# This is a sign of good fortune
+	option = {
+		name = tgp_japan_yearly_events.1110.b
+
+		stress_impact = {
+			base = miniscule_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			cynical = minor_stress_impact_gain
+		}
+
+		random = {
+			chance = 50
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = tgp_japan_yearly_events.1110.b.tt
+				left_icon = root
+                add_short_term_gold = medium_gold_value
+			}
+		}
+
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+			}
+		}
+	}
+
+	# Capture it as a trophy
+	option = {
+		name = tgp_japan_yearly_events.1110.c
+
+		duel = {
+			skill = prowess
+			value = decent_skill_rating
+			desc = tgp_japan_yearly_events.1110.c.tt
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				desc = tgp_japan_yearly_events.1110.tt.success
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1110.tt.success
+					left_icon = root
+					scope:newly_created_artifact = { set_owner = root }
+					add_piety = minor_piety_loss
+				}
+			}
+			59 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+				}
+				desc = tgp_japan_yearly_events.1110.tt.failure
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = tgp_japan_yearly_events.1110.tt.failure
+					left_icon = root
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+
+		stress_impact = {
+			craven = minor_stress_impact_gain
+			zealous = minor_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			cynical = minor_stress_impact_loss
+			greedy = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 1
+				ai_honor = -1
+			}
+		}
+	}
+}
+
+# You come across a warrior in your travels
+tgp_japan_yearly_events.1120 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1120.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					location.county = { is_riverside_county = yes }
+				}
+				desc = tgp_japan_yearly_events.1120.desc_intro_river
+			}
+			desc = tgp_japan_yearly_events.1120.desc_intro
+		}
+		desc = tgp_japan_yearly_events.1120.desc
+	}
+	theme = travel
+    cooldown = { years = 100 }
+
+	left_portrait = {
+		character = scope:strong_leader
+		animation = rage
+	}
+
+	right_portrait = {
+		character = scope:warrior_monk
+		animation = aggressive_sword
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_travelling_adult = yes
+		is_location_valid_for_travel_event_on_land = yes
+
+		location = {
+			OR = {
+				#anywhere with warrior monks, this is currently only Japan, but hopefully elsewhere going forward.
+				county.culture = {
+					has_cultural_tradition = tradition_tgp_warrior_monks
+				}
+				#EK DISABLED
+				#geographical_region = world_asia_japan
+			}
+		}
+		has_government = japan_feudal_government
+	}
+
+	immediate = {
+		save_scope_as = strong_leader
+		create_character = {
+			template = tgp_warrior_monk_template
+			location = root.location
+			save_scope_as = warrior_monk
+			after_creation = {
+				random = {
+					chance = 50
+					add_trait = giant
+				}
+			}
+		}
+	}
+
+	# Accept their challenge
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							martial >= decent_skill_rating
+						}
+						desc = tgp_japan_yearly_events.1120.a_warrior
+					}
+					desc = tgp_japan_yearly_events.1120.a
+				}
+			}
+		}
+
+		add_prestige = minor_prestige_gain
+		custom_tooltip = ep3_laamps.6001.b.two.tt
+
+		configure_start_single_combat_effect = {
+			SC_INITIATOR = scope:warrior_monk
+			SC_ATTACKER = scope:warrior_monk
+			SC_DEFENDER = root
+			FATALITY = no
+			FIXED = no
+			LOCALE = terrain_scope
+			OUTPUT_EVENT = tgp_japan_yearly_events.1121
+			INVALIDATION_EVENT = single_combat.1006
+		}
+
+		stress_impact = {
+			craven = medium_stress_impact_gain
+			arrogant = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_energy = 1
+			}
+			modifier = {
+				has_trait = craven
+				factor = 0
+			}
+		}
+	}
+
+	# Just join me, I'm super cool
+	option = {
+		name = tgp_japan_yearly_events.1120.b
+
+		duel = {
+			skill = diplomacy
+			value = decent_skill_rating
+			desc = tgp_japan_yearly_events.1120.b.tt
+			35 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				min = 2
+				desc = tgp_japan_yearly_events.1120.tt.success
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1120.tt.success
+					left_icon = root
+					add_courtier = scope:warrior_monk
+				}
+			}
+			65 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+				}
+				min = 2
+				desc = tgp_japan_yearly_events.1120.tt.failure
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = tgp_japan_yearly_events.1120.tt.failure
+					left_icon = root
+					add_prestige = minor_prestige_loss
+				}
+			}
+		}
+
+		stress_impact = {
+			calm = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 1
+			}
+		}
+	}
+
+	# Guards, deal with him!
+	option = {
+		name = tgp_japan_yearly_events.1120.c
+		trigger = {
+			current_travel_plan = {
+				has_travel_option = hire_experienced_mercenaries_option
+			}
+		}
+		custom_tooltip = tgp_japan_yearly_events.1120.c_tt
+		add_prestige = minor_prestige_loss
+		add_dread = minor_dread_gain
+
+		random = {
+			chance = 50
+			scope:warrior_monk = {
+				increase_wounds_no_death_effect = { REASON = fight }
+			}
+		}
+
+		stress_impact = {
+			impatient = minor_stress_impact_loss
+			irritable = minor_stress_impact_loss
+			callous = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+			compassionate = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = -1
+			}
+			modifier = {
+				has_trait = compassionate
+				factor = 0
+			}
+		}
+	}
+
+	# No thx
+	option = {
+		name = tgp_japan_yearly_events.1120.d
+
+		current_travel_plan = {
+			delay_travel_plan = { days = 60 }
+		}
+
+		stress_impact = {
+			brave = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 75
+			ai_value_modifier = {
+				ai_energy = -1
+			}
+		}
+	}
+
+	after = {
+		scope:warrior_monk ?= {
+			silent_disappearance_ai_effect = yes
+		}
+	}
+}
+
+# Outcome of the battle
+tgp_japan_yearly_events.1121 = {
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				scope:sc_victor = scope:strong_leader
+				scope:warrior_monk = { is_alive = yes }
+			}
+			scope:strong_leader = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1120.tt.success
+					left_icon = scope:strong_leader
+					right_icon = scope:warrior_monk
+					scope:warrior_monk = { add_trait = loyal }
+                    add_courtier = scope:warrior_monk
+				}
+			}
+		}
+	}
+}
+
+scripted_trigger valid_child_1130 = {
+	any_spouse = { count = 0 }
+	OR = {
+		diplomacy >= decent_skill_rating
+		learning >= decent_skill_rating
+		has_trait = education_diplomacy_3
+		has_trait = education_diplomacy_4
+		has_trait = education_diplomacy_5
+		has_trait = education_learning_3
+		has_trait = education_learning_4
+		has_trait = education_learning_5
+	}
+	is_female = yes
+	NOT = { has_trait = lifestyle_poet }
+	age >= 13
+	age <= 26
+	is_available = yes
+}
+
+# Your daughter expresses an interest in poetry
+tgp_japan_yearly_events.1130 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1130.t
+	desc = tgp_japan_yearly_events.1130.desc
+	theme = learning
+    cooldown = { years = 15 }
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	right_portrait = {
+		character = scope:poet_daughter
+		animation = storyteller
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		#EK EDIT
+		#location = {
+		#	geographical_region = world_asia_japan
+		#}
+		#has_government = japan_administrative_government
+		culture = { has_cultural_parameter = poet_trait_more_common }
+		any_child = { valid_child_1130 = yes }
+	}
+
+	immediate = {
+		random_child = {
+			limit = { valid_child_1130 = yes }
+			weight = {
+				base = 10
+				modifier = {
+					add = 15
+					intrigue >= decent_skill_rating
+				}
+				modifier = {
+					add = 5
+					OR = {
+						has_trait = shy
+						has_trait = chaste
+						has_trait = ambitious
+					}
+				}
+			}
+			save_scope_as = poet_daughter
+		}
+		scope:poet_daughter = {
+			add_trait = inappetetic
+		}
+	}
+
+
+	# Encourage her writing
+	option = {
+		name = tgp_japan_yearly_events.1130.a
+
+		add_prestige = minor_prestige_gain
+
+		scope:poet_daughter = {
+			add_stress = minor_stress_loss
+			add_opinion = {
+				modifier = grateful_opinion
+				target = root
+				opinion = 15
+			}
+			duel = {
+				skills = { diplomacy learning }
+				value = decent_skill_rating
+				desc = tgp_japan_yearly_events.1130.a.tt
+				10 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 2
+					}
+					desc = tgp_japan_yearly_events.1130.poet_critical
+					root = {
+						send_interface_toast = {
+							type = event_toast_effect_good
+							title = tgp_japan_yearly_events.1130.poet_critical
+							left_icon = root
+							right_icon = scope:poet_daughter
+							scope:poet_daughter = {
+								add_trait = lifestyle_poet
+								remove_trait = inappetetic
+							}
+						}
+					}
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+					}
+					desc = tgp_japan_yearly_events.1130.poet
+					root = {
+						send_interface_toast = {
+							type = event_toast_effect_good
+							title = tgp_japan_yearly_events.1130.poet
+							left_icon = root
+							right_icon = scope:poet_daughter
+							scope:poet_daughter = { add_trait = lifestyle_poet }
+						}
+					}
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+					}
+					desc = tgp_japan_yearly_events.1130.nice_try
+					send_interface_toast = {
+						type = event_toast_effect_neutral
+						title = tgp_japan_yearly_events.1130.nice_try
+						left_icon = root
+						right_icon = scope:poet_daughter
+						scope:poet_daughter = { add_learning_skill = 3 }
+					}
+				}
+			}
+			add_character_modifier = {
+				modifier = tgp_learning_poetry_modifier
+				years = 5
+			}
+		}
+
+		if = {
+			limit = {
+				has_trait = lifestyle_poet
+			}
+			add_trait_xp = {
+				trait = lifestyle_poet
+				value = 5
+			}
+		}
+
+		stress_impact = {
+			compassionate = minor_stress_impact_loss
+			lifestyle_poet = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_compassion = 1
+			}
+			opinion_modifier = {
+				opinion_target = scope:poet_daughter
+				multiplier = 2
+			}
+			modifier = {
+				has_trait = lifestyle_poet
+				factor = 2
+			}
+		}
+	}
+
+	# This is so dumb she needs to be doing court stuff instead
+	option = {
+		name = tgp_japan_yearly_events.1130.b
+
+		if = {
+			limit = {
+				has_royal_court = yes
+			}
+			change_current_court_grandeur = minor_court_grandeur_gain
+		}
+		else = {
+			add_prestige = minor_prestige_gain
+		}
+
+		every_vassal_or_below = {
+			vassal_stance = courtly
+			custom = every_courtly_vassal
+			add_opinion = {
+				modifier = approval_opinion
+				target = root
+				opinion = 15
+			}
+		}
+
+		scope:poet_daughter = {
+			add_stress = minor_stress_gain
+			add_opinion = {
+				modifier = disappointed_opinion
+				target = root
+				opinion = -15
+			}
+			remove_trait = inappetetic
+			add_diplomacy_skill = 1
+		}
+
+		stress_impact = {
+			diligent = minor_stress_impact_loss
+			callous = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			opinion_modifier = {
+				opinion_target = scope:poet_daughter
+				multiplier = -2
+			}
+		}
+	}
+}
+
+# You are stopped in Soryo lands as a Ritsuryo ruler
+
+#EK DISABLED: removed entire event and event following it
+# The ruler of Japan is passing in your lands
+#tgp_japan_yearly_events.1150
+
+# Response for the Emperor
+#tgp_japan_yearly_events.1151
+
+scripted_trigger is_suitable_spouse_or_concubine_tgp_japan_1160 = {
+	liege ?= house.house_head
+	liege = {
+		is_ai = yes # sanity check so as to not yeet a player's courtier
+	}
+	is_available_ai_adult = yes
+	is_ruler = no # this would be weirder otherwise
+	OR = {
+		can_marry_character_trigger = { CHARACTER = root }
+		can_become_concubine_of_character_trigger = { CHARACTER = root }
+	}
+	root = {
+		is_attracted_to_gender_of = prev
+	}
+}
+
+# You are offered a spouse/concubine to mend house relations
+tgp_japan_yearly_events.1160 = {
+	type = character_event
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_trait = cannibal
+						any_secret = { type = secret_cannibal }
+					}
+				}
+				desc = tgp_japan_yearly_events.cannibal.1160.t
+			}
+			desc = tgp_japan_yearly_events.1160.t
+		}
+	}
+
+	desc = tgp_japan_yearly_events.1160.desc
+	theme = court
+    cooldown = { years = 15 }
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+		camera = camera_event_center_pointing_forward
+	}
+
+	right_portrait = {
+		character = scope:new_concubine
+		animation = flirtation
+	}
+
+	lower_center_portrait = scope:feuding_house.house_head
+
+	trigger = {
+		is_at_war = no
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		exists = house
+		house.house_head = root
+		house = {
+			any_house_relation = {
+				OR = {
+					has_house_relation_level = feud
+					has_house_relation_level = rivalry
+					has_house_relation_level = quarrel
+				}
+				any_relation_house = {
+					this != root.house
+					house_head = {
+						is_available_ai_adult = yes
+						is_at_war = no
+						opinion = {
+							target = root
+							value >= 0 # there should be at least some reason they want to improve relations
+						}
+					}
+					any_house_member = {
+						is_suitable_spouse_or_concubine_tgp_japan_1160 = yes
+					}
+				}
+			}
+		}
+		OR = {
+			allowed_more_spouses = yes
+			allowed_more_concubines = yes
+		}
+	}
+
+	immediate = {
+		house = {
+			random_house_relation = {
+				limit = {
+					OR = {
+						has_house_relation_level = feud
+						has_house_relation_level = rivalry
+						has_house_relation_level = quarrel
+					}
+					any_relation_house = {
+						this != root.house
+						house_head = {
+							is_available_ai_adult = yes
+							is_at_war = no
+							opinion = {
+								target = root
+								value >= 0 # there should be at least some reason they want to improve relations
+							}
+						}
+						any_house_member = {
+							is_suitable_spouse_or_concubine_tgp_japan_1160 = yes
+						}
+					}
+				}
+				random_relation_house = {
+					limit = {
+						this != root.house
+						house_head = {
+							is_available_ai_adult = yes
+							is_at_war = no
+							opinion = {
+								target = root
+								value >= 0
+							}
+						}
+						any_house_member = {
+							is_suitable_spouse_or_concubine_tgp_japan_1160 = yes
+						}
+					}
+					save_scope_as = feuding_house
+				}
+			}
+		}
+		scope:feuding_house = {
+			random_house_member = {
+				limit = {
+					is_suitable_spouse_or_concubine_tgp_japan_1160 = yes
+				}
+				save_scope_as = new_concubine
+			}
+		}
+	}
+
+	# I'll take her
+	option = {
+		name = tgp_japan_yearly_events.1160.a
+
+		if = {
+			limit = {
+				allowed_more_spouses = yes
+			}
+			marry = scope:new_concubine
+		}
+		else_if = {
+			limit = {
+				allowed_more_concubines = yes
+			}
+			make_concubine = scope:new_concubine
+		}
+
+		scope:feuding_house = {
+			change_house_relation_effect = {
+				HOUSE = root.house
+				VALUE = house_relation_improve_medium_value
+				REASON = gift
+				CHAR = scope:feuding_house.house_head
+				TARGET_CHAR = root
+				TITLE = scope:dummy_gender
+			}
+		}
+
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			vengeful = minor_stress_impact_gain
+			calm = minor_stress_impact_loss
+			lustful = minor_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = 1
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_trait = forgiving
+					has_trait = lustful
+				}
+			}
+			modifier = {
+				factor = 0
+				has_trait = paranoid
+			}
+		}
+	}
+
+	# send her back
+	option = {
+		name = tgp_japan_yearly_events.1160.b
+
+		add_prestige = minor_prestige_gain
+
+		scope:feuding_house.house_head = {
+			add_opinion = {
+				modifier = insulted_opinion
+				target = root
+				opinion = -15
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# This is a spy, kill her!
+	option = {
+		name = tgp_japan_yearly_events.1160.c
+		trigger = {
+			has_trait_malicious_trigger = yes
+			NOR = {
+				has_trait = cannibal
+				any_secret = { type = secret_cannibal }
+			}
+		}
+		scope:new_concubine = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+
+		house ?= {
+			change_house_relation_effect = {
+				HOUSE = scope:feuding_house
+				VALUE = house_relation_damage_medium_value
+				REASON = killed
+				CHAR = root
+				TARGET_CHAR = scope:new_concubine
+				TITLE = scope:dummy_gender
+			}
+		}
+
+		scope:feuding_house.house_head = {
+			add_opinion = {
+				modifier = insulted_opinion
+				target = root
+				opinion = -30
+			}
+		}
+
+		stress_impact = {
+			paranoid = minor_stress_impact_loss
+			callous = medium_stress_impact_loss
+			vengeful = major_stress_impact_loss
+			just = minor_stress_impact_gain
+			calm = medium_stress_impact_gain
+			compassionate = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = -1
+				ai_compassion = -1
+			}
+		}
+	}
+
+	# This is a spy, eat her! (Cannibal option)
+	option = {
+		name = tgp_japan_yearly_events.1160.d
+		trigger = {
+			OR = {
+				has_trait = cannibal
+				any_secret = { type = secret_cannibal }
+			}
+		}
+
+		add_character_modifier = {
+			modifier = feast_good_food_modifier
+			years = 10
+		}
+
+		unknown_cannibal_murder_effect = {
+			VICTIM = scope:new_concubine
+			MURDERER = root
+		}
+
+		stress_impact = {
+			base = major_stress_impact_loss
+			paranoid = minor_stress_impact_loss
+			callous = medium_stress_impact_loss
+			vengeful = major_stress_impact_loss
+			just = minor_stress_impact_gain
+			calm = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_rationality = -1
+			}
+		}
+	}
+}
+
+#EK DISABLED: removed event
+# The poetry you're reading is in a language you're unfamiliar with
+#tgp_japan_yearly_events.1170
+
+# You've been gifted a Bonsai tree for your garden
+
+# You have a bad trait and you're making some decisions at night
+tgp_japan_yearly_events.1190 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1190.t
+	desc = {
+		random_valid = {
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_trait = irritable
+						has_trait = impatient
+					}
+				}
+				desc = tgp_japan_yearly_events.1190.desc_annoyed
+			}
+			triggered_desc = {
+				trigger = {
+					has_trait = drunkard
+				}
+				desc = tgp_japan_yearly_events.1020.desc_drunk
+			}
+			triggered_desc = {
+				trigger = {
+					learning <= low_skill_rating
+				}
+				desc = tgp_japan_yearly_events.1020.desc_dumb
+			}
+		}
+		desc = tgp_japan_yearly_events.1190.desc
+	}
+	theme = court
+    cooldown = { years = 15 }
+	override_background = {
+		reference = bedchamber
+	}
+
+	left_portrait = {
+		character = root
+		animation = wedding_drunk
+	}
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_landed = yes
+		is_available_adult = yes
+		OR = {
+			has_trait = irritable
+			has_trait = impatient
+			has_trait = drunkard
+			learning <= low_skill_rating
+		}
+		NOR = {
+			has_trait = temperate
+			has_trait = diligent
+			learning >= high_skill_rating
+		}
+		any_held_title = {
+			title_tier = county
+			this != root.capital_county
+		}
+	}
+
+	weight_multiplier = {
+		base = 10
+		modifier = {
+			add = 5
+			stress_level >= 1
+		}
+		modifier = {
+			add = 10
+			stress_level >= 2
+		}
+		modifier = {
+			add = 15
+			stress_level >= 3
+		}
+	}
+
+	# Ok i gotta stop this for real
+	option = {
+		name = tgp_japan_yearly_events.1190.a
+
+		stress_impact = {
+			base = major_stress_impact_gain
+			lazy = minor_stress_impact_gain
+		}
+
+		random = {
+			chance = 50
+			add_prestige = minor_prestige_gain
+			if = {
+				limit = { has_trait = irritable }
+				remove_trait = irritable
+			}
+			else_if = {
+				limit = { has_trait = impatient }
+				remove_trait = impatient
+			}
+			else_if = {
+				limit = { has_trait = drunkard }
+				remove_trait = drunkard
+			}
+			else_if = {
+				limit = { learning <= low_skill_rating }
+				add_learning_skill = 5
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = { ai_rationality = 1 }
+		}
+	}
+
+	# I should probably offload my responsibilities
+	option = {
+		name = tgp_japan_yearly_events.1190.b
+
+		stress_impact = {
+			base = medium_stress_impact_loss
+			arrogant = minor_stress_impact_gain
+			lazy = minor_stress_impact_loss
+		}
+
+		random_list = {
+			1 = {
+				trigger = { exists = cp:councillor_chancellor }
+				cp:councillor_chancellor = { add_diplomacy_skill = 2 }
+			}
+			1 = {
+				trigger = { exists = cp:councillor_court_chaplain }
+				cp:councillor_court_chaplain = { add_learning_skill = 2 }
+			}
+			1 = {
+				trigger = { exists = cp:councillor_marshal }
+				cp:councillor_marshal = { add_martial_skill = 2 }
+			}
+			1 = {
+				trigger = { exists = cp:councillor_steward }
+				cp:councillor_steward = { add_stewardship_skill = 2 }
+			}
+			1 = {
+				trigger = { exists = cp:councillor_spymaster }
+				cp:councillor_spymaster = { add_intrigue_skill = 2 }
+			}
+		}
+
+		add_prestige = minor_prestige_loss
+		add_dread = medium_dread_loss
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = { ai_boldness = 1 }
+		}
+	}
+
+	# I don't care about my vices
+	option = {
+		name = tgp_japan_yearly_events.1190.c
+
+		stress_impact = {
+			base = major_stress_impact_loss
+			lazy = minor_stress_impact_loss
+		}
+
+		random = {
+			chance = 50
+			custom_tooltip = tgp_japan_yearly_events.1190.c_tt
+			hidden_effect = {
+				random_held_title = {
+					title_tier = county
+					limit = { this != root.capital_county }
+					change_county_control = {
+						value = medium_county_control_loss
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = { ai_honor = 1 }
+		}
+	}
+}
+
+# A courtier has witnessed a miracle
+tgp_japan_yearly_events.1220 = {
+	type = character_event
+	title = tgp_japan_yearly_events.1220.t
+	desc = {
+		desc = tgp_japan_yearly_events.1220.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:miracle = flag:wealth
+				}
+				desc = tgp_japan_yearly_events.1220.desc_wealth
+			}
+			triggered_desc = {
+				trigger = {
+					scope:miracle = flag:health
+				}
+				desc = tgp_japan_yearly_events.1220.desc_health
+			}
+			triggered_desc = {
+				trigger = {
+					scope:miracle = flag:knowledge
+				}
+				desc = tgp_japan_yearly_events.1220.desc_knowledge
+			}
+		}
+	}
+	theme = faith
+    cooldown = { years = 10 }
+	override_background = {
+		trigger = { scope:miracle = flag:knowledge }
+		reference = study
+	}
+	override_background = {
+		trigger = { scope:miracle = flag:health }
+		reference = bedchamber
+	}
+
+	left_portrait = {
+		character = root
+		animation = interested
+	}
+
+	right_portrait = {
+		character = scope:miracle_recipient
+		animation = admiration
+	}
+
+	lower_center_portrait = scope:monk
+
+	trigger = {
+		has_tgp_dlc_trigger = yes
+		is_available_adult = yes
+		#faith = { religion = religion:buddhism_religion }
+		#location = {
+		#	faith = { religion = religion:buddhism_religion }
+		#}
+		learning_lifestyle_unlockable_perks >= 1
+		any_courtier_or_guest = {
+			is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+			is_available_adult = yes
+			NOT = {
+				has_trait = cynical
+			}
+		}
+	}
+
+	immediate = {
+		random_list = { # Fortified Health
+			10 = {
+				trigger = {
+					any_courtier_or_guest = {
+						has_any_illness = yes
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+					}
+				}
+				save_scope_value_as = { name = miracle value = flag:health }
+				random_courtier_or_guest = {
+					limit = {
+						has_any_illness = yes
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+					}
+					save_scope_as = miracle_recipient
+					random_character_trait = {
+						limit = {
+							has_trait_flag = illness
+						}
+						save_scope_as = target_trait
+					}
+					remove_trait = scope:target_trait
+				}
+			}
+			10 = { # Miracle of Wealth
+				trigger = {
+					any_courtier_or_guest = {
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+					}
+				}
+				save_scope_value_as = { name = miracle value = flag:wealth }
+				random_courtier_or_guest = {
+					limit = {
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+					}
+
+					weight = {
+						base = 10
+						modifier = {
+							add = 10
+							short_term_gold > minor_gold_value
+						}
+					}
+					save_scope_as = miracle_recipient
+					add_short_term_gold = massive_gold_value
+				}
+			}
+			10 = { # Miracle of Knowledge
+				trigger = {
+					any_courtier_or_guest = {
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+					}
+				}
+				save_scope_value_as = { name = miracle value = flag:knowledge }
+				random_courtier_or_guest = {
+					limit = {
+						is_of_major_or_minor_interest_trigger = { CHARACTER = root }
+						is_available_adult = yes
+						NOT = {
+							has_trait = cynical
+						}
+					}
+					weight = {
+						base = 10
+						modifier = {
+							add = 10
+							learning > low_skill_rating
+						}
+					}
+					save_scope_as = miracle_recipient
+					add_learning_skill = 8
+				}
+			}
+		}
+		create_character = {
+			template = monk_character_template
+			location = root.location
+			gender_female_chance = 0
+			save_scope_as = monk
+		}
+	}
+
+	# Option A) Seek out the monk
+	option = {
+		name = tgp_japan_yearly_events.1220.a
+
+		if = {
+			limit = {
+				scope:miracle = flag:wealth
+			}
+			custom_tooltip = tgp_japan_yearly_events.1220.tt_wealth
+		}
+
+
+		switch = {
+			trigger = scope:miracle
+			flag:wealth = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1220.tt
+					left_icon = root
+					add_short_term_gold = minor_gold_value
+				}
+			}
+			flag:knowledge = {
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1220.tt
+					left_icon = root
+					add_learning_skill = 1
+				}
+			}
+			flag:health = {
+				if = {
+					limit = {
+						has_any_illness = yes
+					}
+					random_character_trait = {
+						limit = {
+							has_trait_flag = illness
+						}
+						save_scope_as = target_trait
+					}
+					remove_trait = scope:target_trait
+				}
+				else = {
+					add_character_modifier = {
+						modifier = tgp_health_resistance_modifier
+						years = 3
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = { ai_zeal = 1 }
+		}
+	}
+
+	# Option B) You seek out a logical explanation
+	option = {
+		name = tgp_japan_yearly_events.1220.b
+
+		if = {
+			limit = {
+				has_trait = lifestyle_mystic
+			}
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = 5
+			}
+		}
+		else = {
+			random = {
+				chance = 50
+				add_trait = lifestyle_mystic
+			}
+		}
+
+		stress_impact = {
+			cynical = medium_stress_impact_loss
+			zealous = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = { ai_zeal = -1 }
+		}
+	}
+
+	# Option C) I must learn his ways
+	option = {
+		name = tgp_japan_yearly_events.1220.c
+
+		stress_impact = {
+			cynical = minor_stress_impact_loss
+			zealous = minor_stress_impact_gain
+		}
+
+		duel = {
+			skill = learning
+			value = decent_skill_rating
+			desc = tgp_japan_yearly_events.1220.c.tt
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				desc = tgp_japan_yearly_events.1220.tt_win
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tgp_japan_yearly_events.1220.tt_win
+					left_icon = root
+					right_icon = scope:monk
+					add_learning_lifestyle_perk_points = 1
+				}
+			}
+			59 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+				}
+				desc = tgp_japan_yearly_events.1220.tt_lose
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = tgp_japan_yearly_events.1220.tt_lose
+					left_icon = root
+					right_icon = scope:monk
+					add_learning_lifestyle_xp = 150
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_zeal = -1
+				ai_rationality = 1
+			}
+		}
+	}
+
+	after = {
+		scope:monk = {
+			silent_disappearance_ai_effect = yes
+		}
+	}
+}
+
+# Fear of a low durability artifact coming to life (Yokai)
+# Chance to repair artifact for low price
+
+scripted_trigger is_valid_ruler_1220 = {
+	NOT = { this = root }
+	culture = {
+		save_temporary_scope_as = culture_temp
+		#EK EDIT
+		#NOR = { # no languages that have vertical script
+			#has_cultural_pillar = language_japonic
+			#has_cultural_pillar = language_chinese
+			#has_cultural_pillar = language_korean
+			#has_cultural_pillar = language_mongolic
+			#has_cultural_pillar = language_vietnamese
+			#has_cultural_pillar = language_khitan
+			root = { knows_language_of_culture = scope:culture_temp }
+		#}
+	}
+	in_diplomatic_range = root
+}
+
+# 1240 - A traveler poet visits court and can't read from right to left
+
+# 1250 - Being gifted a Kakejiku scroll (Wedding)

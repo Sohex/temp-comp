@@ -1,0 +1,24 @@
+﻿l_english:
+
+ # Azura Faiths
+ azura_religion:1 "Azura"
+ azura_religion_adj:1 "Azurite"
+ azura_religion_adherent:1 "Azurite"
+ azura_religion_adherent_plural:1 "Azurites"
+ azura_religion_desc:0 "A loose collection of faiths all revering Azura, the Queen of Dusk and Dawn. She is revered throughout Tamriel, but the Khajiits of Elsweyr and the Dunmer of Morrowind hold her in high regard."
+ azura_religious_symbol:0 "star"
+ azura_religious_text:0 "prophecies"
+ azura_religious_head_title:0 "Prophet"
+ azura_religious_head_title_name:0 "Cult of Azura" 
+
+ azura_cult:1 "Cult of Azura"
+ azura_cult_adj:1 "Cult of Azura"
+ azura_cult_adherent:1 "Azura Cultist"
+ azura_cult_adherent_plural:1 "Azura Cultists"
+ azura_cult_desc:0 "The Cult of Azura dedicates itself to the Queen of Dawn and Dusk. Among their tenets is the constant search for meaning and purpose within the mortal plane, which can only be achieved by perpetual self-reflection and meditation."
+
+ hidden_moon:1 "Order of the Hidden Moon"
+ hidden_moon_adj:1 "Order of the Hidden Moon"
+ hidden_moon_adherent:1 "Hidden Moon Cultist"
+ hidden_moon_adherent_plural:1 "Hidden Moon Cultists"
+ hidden_moon_desc:0 "The Order of the Hidden Moon has its origin in the deserts of Elsweyr. The Khajiit following this faith believe that undeath can be used as a second chance to redeem oneself for sins that were commited in life. This kind of benevolent necromancy was supported by Azurah who guided the lost souls through the process of redemption."

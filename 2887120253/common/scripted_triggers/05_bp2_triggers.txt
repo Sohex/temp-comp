@@ -1,0 +1,50 @@
+﻿#Adult Education Activity
+is_higher_studies_location = {
+	OR = {
+		#EK EDIT: changed to our new setup
+		has_scholar_academy_building_trigger = yes
+		has_learning_special_building_trigger = yes
+		#EK EDIT END
+		#title:h_china.holder.capital_province ?= scope:temp_location # The capital of h_china is always a valid location
+	}
+}
+
+is_religious_studies_location = {
+	#EK TODO: maybe return. Some of our temple special sbs are place of learning too
+	# EK DISABLED: we use acadmeies instead of religious locations	
+	#has_building_with_flag = religious_studies_location
+	always = no
+}
+
+is_available_adult_education_teacher = {
+	is_available_healthy_ai_adult = yes
+	age > 35
+	any_character_trait = {
+		OR = {
+			has_trait_flag = level_4_education
+			has_trait_flag = level_5_education
+		}
+	}
+	OR = {
+		diplomacy >= 12
+		martial >= 12
+		stewardship >= 12
+		intrigue >= 12
+		learning >= 12
+	}
+	trigger_if = {
+		limit = {
+			scope:location.county.faith = { has_doctrine = doctrine_gender_female_dominated }
+		}
+		is_female = yes
+	}
+	trigger_else_if = {
+		limit = {
+			scope:location.county.faith = { has_doctrine = doctrine_gender_male_dominated }
+		}
+		is_female = no
+	}
+	trigger_else = {
+		always = yes
+	}
+}

@@ -1,0 +1,411 @@
+﻿crown_verity_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+	desc = crown_verity_decision_desc
+
+	selection_tooltip = crown_verity_decision_tooltip
+
+	cooldown = { years = 5 }
+
+	is_shown = {
+		any_character_artifact = { 
+			has_artifact_modifier = crown_verity_modifier
+		}
+        NOT = {
+            has_character_modifier = verity_worthy
+        }
+	}
+
+	is_valid_showing_failures_only = {
+		# requires being a Nord, but should be visible to others still
+		culture = { has_cultural_pillar = heritage_atmoran }
+	}
+
+	effect = {
+		custom_tooltip = crown_verity_judgement_tooltip
+		trigger_event = ek_historical_artifacts.0002
+	}
+	
+	ai_potential = {
+		NOT = {
+            has_character_modifier = verity_worthy
+        }
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+staff_sanguine_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/oblivion_gate.dds"
+	}
+	decision_group_type = major
+
+	desc = staff_sanguine_decision_desc
+
+	selection_tooltip = staff_sanguine_selection_tooltip
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = staff_sanguine_modifier
+		}
+        NOT = {
+            has_character_flag = rose_summoned
+        }
+	}
+
+	effect = {
+		custom_tooltip = staff_sanguine_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0001
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+			has_trait = gregarious
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+staff_everscamp_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/oblivion_gate.dds"
+	}
+	decision_group_type = major
+
+	desc = staff_everscamp_decision_desc
+
+	selection_tooltip = staff_everscamp_selection_tooltip
+
+	cooldown = { years = 5 }
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = staff_everscamp_modifier
+		}
+        NOT = {
+            has_character_flag = everscamp_decoded
+			has_character_modifier = everscamps_modifier
+        }
+	}
+
+	cost = {
+		prestige = medium_prestige_value
+	}
+
+	effect = {
+		custom_tooltip = staff_everscamp_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0043
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+			has_trait = gregarious
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+remove_everscamp_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/oblivion_gate.dds"
+	}
+	decision_group_type = major
+
+	desc = remove_everscamp_decision_desc
+
+	selection_tooltip = remove_everscamp_selection_tooltip
+
+	cooldown = { years = 5 }
+
+	is_shown = {
+		has_character_modifier = everscamps_modifier
+	}
+
+
+	effect = {
+		custom_tooltip = remove_everscamp_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0044
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+bittercup_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
+
+	desc = bittercup_decision_desc
+
+	selection_tooltip = bittercup_selection_tooltip
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = bittercup_modifier
+		}
+	}
+
+	effect = {
+		custom_tooltip = bittercup_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0017
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+black_book_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
+
+	desc = black_book_decision_desc
+
+	cost = {
+		piety = 100
+	}
+
+	cooldown = { years = 10 }
+
+	selection_tooltip = black_book_selection_tooltip
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = black_book_modifier
+		}
+	}
+
+	effect = {
+		custom_tooltip = blackbook_decision_tooltip
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_filament
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0020
+		}
+
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_twilight
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0021
+		}
+
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_sallow
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0022
+		}
+
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_change
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0023
+		}
+
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_untold
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0024
+		}
+
+		if = {
+			limit = {
+				any_equipped_character_artifact = {
+					has_variable = bb_waking
+				}
+			}
+			trigger_event = ek_daedric_artifacts.0025
+		}
+		
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+oghma_infinium_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
+
+	desc = oghma_infinium_decision_desc
+
+	selection_tooltip = oghma_infinium_selection_tooltip
+
+	cost = {
+		piety = 100
+	}
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = oghma_infinium_modifier
+		}
+		 NOT = {
+            has_trait = champion_hermaeus
+        }
+	}
+
+	is_valid = {
+		is_adult = yes
+	}
+
+	effect = {
+		custom_tooltip = oghma_infinium_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0026		
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+skeleton_key_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
+
+	desc = skeleton_key_decision_desc
+
+	selection_tooltip = skeleton_key_selection_tooltip
+
+	cost = {
+		piety = 100
+	}
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = skeleton_key_modifier
+		}
+	}
+
+	effect = {
+		custom_tooltip = skeleton_key_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0029		
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+shadow_key_decision = {
+	ai_check_interval = 120
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_misc.dds"
+	}
+	decision_group_type = major
+
+	desc = shadow_key_decision_desc
+
+	selection_tooltip = shadow_key_selection_tooltip
+
+	cost = {
+		piety = 100
+	}
+
+	is_shown = {
+		any_equipped_character_artifact = { 
+			has_artifact_modifier = shadow_key_modifier
+		}
+	}
+
+	effect = {
+		custom_tooltip = shadow_key_decision_tooltip
+		trigger_event = ek_daedric_artifacts.0040		
+	}
+	
+	ai_potential = {
+		OR = {
+			has_trait = brave
+			has_trait = ambitious
+			has_trait = arrogant
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

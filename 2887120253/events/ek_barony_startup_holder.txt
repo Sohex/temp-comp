@@ -1,0 +1,36 @@
+﻿namespace = ek_barony_startup_holder
+
+ek_barony_startup_holder.0001 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				character:winterhold_archmage_100 = { exists = this is_alive = yes is_landed = no }
+			}
+			character:winterhold_archmage_100 = {
+				get_title = title:b_winterhold_college
+			}
+		}
+
+		if = {
+			limit = {
+				character:battleborn_96 = { exists = this is_alive = yes is_landed = no }
+			}
+			character:battleborn_96 = {
+				get_title = title:b_battleborn
+			}
+		}
+		
+		if = {
+			limit = {
+				character:whiterun_companions_100 = { exists = this is_alive = yes is_landed = no }
+			}
+			character:whiterun_companions_100 = {
+				get_title = title:b_jorrvaskr
+				change_government = landed_order_government
+			}
+		}
+	}
+}

@@ -1,0 +1,2 @@
+﻿# EK DISABLED
+# EK TODO FP3 potentially adapt them to Tamriel (one certain region, or region agnostic)

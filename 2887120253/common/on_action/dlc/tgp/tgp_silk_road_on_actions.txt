@@ -1,0 +1,10 @@
+﻿###EK NOTE: Disabled this since the silk road is turned off
+#On actions relating to maintenance and effects of the Silk Road situation and related content
+
+#EK DISABLED
+#silk_road_market_visit_travel_planner_cancel_on_action = {
+#	effect = {
+#		add_short_term_gold = major_gold_value
+#		remove_decision_cooldown = visit_silk_road_market_decision
+#	}
+#}

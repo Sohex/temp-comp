@@ -1,0 +1,869 @@
+﻿####################
+# DIRENNI HEGEMONY #
+####################
+## Direnni Hegemony part 1: get the titular title
+direnni_hegemony_pt_1_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds" }
+
+	desc = direnni_hegemony_pt_1_decision_desc
+	selection_tooltip = direnni_hegemony_pt_1_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		capital_province ?= { geographical_region = mundus_tamriel_direnni_hegemony_core }
+		OR = {
+			dynasty = dynasty:dyn_direnni
+			culture = { has_cultural_tradition = tradition_direnni_sorcerer_kings } #Balfiera core tradition
+			culture = culture:dynari
+			faith = faith:mainland_auriel
+		}
+		
+		NOT = { exists = title:e_direnni_hegemony.holder }
+
+		NOT = { # If you lost if after having claimed it, too bad
+			has_character_flag = direnni_hegemony_pt_1 # Applied below
+		}
+	}
+
+	is_valid = {
+		completely_controls_region = mundus_tamriel_direnni_hegemony_core
+		prestige_level >= 3
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 500
+		prestige = 1000
+	}
+
+	effect = {
+		show_as_tooltip = { direnni_hegemony_pt_1_decision_effect = yes }
+		#Dynari revive their culture if they do this
+		if = {
+			limit = { root.culture = culture:dynari }
+			culture:dynari = {
+				culture_become_alive_effect = yes #Revive culture
+			}
+			title:c_balfiera = { set_county_culture = culture:dynari }
+		}
+		trigger_event = north_tamriel.1001
+		if = {
+			limit = { has_dlc_feature = legends }
+			create_legend_seed = {
+				type = legitimizing
+				quality = illustrious
+				chronicle = new_title
+				properties = {
+					title = title:e_direnni_hegemony
+					founder = root
+				}
+			}
+		}
+		hidden_effect = {
+			add_character_flag = {
+				flag = direnni_hegemony_pt_1
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#Integrate a certain terrtiory back into Direnni Hegemony
+integrate_hegemony_territory_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds" }
+    #desc = integrate_hegemony_territory_decision_desc
+    selection_tooltip = integrate_hegemony_territory_decision_tooltip
+    decision_group_type = major
+	
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 120
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		highest_held_title_tier >= tier_empire
+		has_title = title:e_direnni_hegemony
+		title:e_direnni_hegemony = {
+			NAND = {
+				is_de_jure_liege_or_above_target = title:k_markarth #Eastern reach
+				is_de_jure_liege_or_above_target = title:k_glenumbra #Glenumbra
+				is_de_jure_liege_or_above_target = title:k_rivenspire #Rivenspire
+				is_de_jure_liege_or_above_target = title:k_wrothgar #Wrothgar
+				is_de_jure_liege_or_above_target = title:k_craglorn #Craglorn
+				is_de_jure_liege_or_above_target = title:k_bangkorai #Bangkorai
+				is_de_jure_liege_or_above_target = title:k_lamenennwil #Southern iliac
+			}
+		}
+	}
+
+	is_valid = {
+		prestige_level >= high_prestige_level
+		has_primary_title = title:e_direnni_hegemony
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	widget = {
+		gui = "decision_view_widget_generic_multichoice_with_effects"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "integrate_hegemony_territory"
+		item = {	# Fallback - Displayed if no others available
+			value = integrate_territory_fallback
+			is_shown = { always = no }
+			is_valid = { always = no }
+			localization = integrate_territory_fallback_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Eastern Reach
+		item = {
+			value = integrate_eastern_reach
+			is_shown = {
+				title:e_direnni_hegemony = { NOT = { is_de_jure_liege_or_above_target = title:k_markarth } }
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_skyrim_karth
+			}
+			current_description = integrate_eastern_reach_desc
+			localization = integrate_eastern_reach_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Glenumbra
+		item = {
+			value = integrate_glenumbra
+			is_shown = {
+				title:e_direnni_hegemony = { 
+					NOR = {
+						is_de_jure_liege_or_above_target = title:k_daggerfall
+						is_de_jure_liege_or_above_target = title:k_camlorn
+						is_de_jure_liege_or_above_target = title:k_glenumbra
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_high_rock_glenumbra
+			}
+			current_description = integrate_glenumbra_desc
+			localization = integrate_glenumbra_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Rivenspire
+		item = {
+			value = integrate_rivenspire
+			is_shown = {
+				title:e_direnni_hegemony = { 
+					NOR = {
+						is_de_jure_liege_or_above_target = title:k_rivenspire
+						is_de_jure_liege_or_above_target = title:k_shornhelm
+						is_de_jure_liege_or_above_target = title:k_northpoint
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_high_rock_rivenspire
+			}
+			current_description = integrate_rivenspire_desc
+			localization = integrate_rivenspire_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Wrothgar
+		item = {
+			value = integrate_wrothgar
+			is_shown = {
+				title:e_direnni_hegemony = { 
+					NOR = {
+						is_de_jure_liege_or_above_target = title:k_wrothgar
+						is_de_jure_liege_or_above_target = title:k_fharun
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_high_rock_greater_wrothgar
+			}
+			current_description = integrate_wrothgar_desc
+			localization = integrate_wrothgar_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Craglorn
+		item = {
+			value = integrate_craglorn
+			is_shown = {
+				title:e_direnni_hegemony = { 
+					NOR = {
+						is_de_jure_liege_or_above_target = title:k_craglorn
+						is_de_jure_liege_or_above_target = title:k_dragonstar
+						is_de_jure_liege_or_above_target = title:k_elinhir
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_hammerfell_craglorn
+			}
+			current_description = integrate_craglorn_desc
+			localization = integrate_craglorn_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Bangkorai
+		item = {
+			value = integrate_bangkorai
+			is_shown = {
+				title:e_direnni_hegemony = { 
+					NOT = {
+						is_de_jure_liege_or_above_target = title:k_bangkorai
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_hammerfell_bangkorai
+			}
+			current_description = integrate_bangkorai_desc
+			localization = integrate_bangkorai_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		# Southern Iliac
+		item = {
+			value = integrate_southern_iliac
+			is_shown = {
+				title:k_lamenennwil = { 
+					NOT = {
+						is_de_jure_liege_or_above_target = title:d_sentinel
+					}
+				}
+			}
+			is_valid = {
+				completely_controls_region = mundus_tamriel_direnni_southern_iliac
+			}
+			current_description = integrate_southern_iliac_desc
+			localization = integrate_southern_iliac_name
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { scope:integrate_eastern_reach = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_skyrim_karth } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_glenumbra = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_high_rock_glenumbra } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_rivenspire = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_high_rock_rivenspire } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_wrothgar = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_high_rock_greater_wrothgar } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_craglorn = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_hammerfell_craglorn } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_bangkorai = yes }
+			every_kingdom = { 
+				limit = { title_capital_county.title_province ?= { geographical_region = mundus_tamriel_hammerfell_bangkorai } }
+				set_de_jure_liege_title = title:e_direnni_hegemony
+			}
+		}
+		else_if = {
+			limit = { scope:integrate_southern_iliac = yes }
+			every_duchy = { 
+				limit = { 
+					title_capital_county.title_province ?= { geographical_region = mundus_tamriel_direnni_southern_iliac }
+					 any_in_de_jure_hierarchy = { tier = tier_county }
+				}
+				set_de_jure_liege_title = title:k_lamenennwil
+			}
+			title:d_myrkwasa = { set_de_jure_liege_title = title:k_alikr }
+		}
+	}
+
+	cost = {
+		gold = 250
+		prestige = 500
+	}
+
+	ai_potential = { always = yes }
+
+	ai_will_do = { base = 100 }
+}
+
+## Direnni Hegemony part 2: Become a full blown de Jure empire
+direnni_hegemony_pt_2_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds" }
+	
+	desc = direnni_hegemony_pt_2_decision_desc
+	selection_tooltip = direnni_hegemony_pt_2_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 120
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		has_primary_title = title:e_direnni_hegemony
+
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_direnni_hegemony_pt_2
+			}
+		}
+	}
+
+	is_valid = {
+		completely_controls_region = mundus_tamriel_direnni_hegemony_full
+		
+		prestige_level >= 3
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 500
+		prestige = 1000
+	}
+
+	effect = {
+		show_as_tooltip = { direnni_hegemony_pt_2_decision_effect = yes }
+		trigger_event = north_tamriel.1011
+		
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_direnni_hegemony_pt_2
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+direnni_hegemony_pt3_decision = { #Form actual Hegemony title	
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds" }
+
+	desc = direnni_hegemony_pt3_decision_desc
+    selection_tooltip = direnni_hegemony_pt3_decision_tooltip
+    decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 0
+		empire = 120
+		hegemony = 0 #Not needed for people with hegemony already
+	}
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		has_primary_title = title:e_direnni_hegemony
+
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_direnni_hegemony_pt3
+			}
+		}
+	}
+
+	is_valid = {
+		completely_controls_region = mundus_tamriel_direnni_hegemony_full #Hegemony itself
+		completely_controls_region = mundus_tamriel_cyrodiil #Direnni died against Cyrodiils
+		completely_controls_region = mundus_tamriel_skyrim #Nords helped Cyrodiils kill Direnni
+		
+		prestige_level >= 4
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 500
+		prestige = 1000
+	}
+
+	effect = {
+		direnni_hegemony_pt3_decision_effect = yes
+		trigger_event = north_tamriel.1012
+		
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_direnni_hegemony_pt3
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+####################
+# HIGH ROCK #
+####################
+#Settle Wrothgar, form Wrothgarian culture
+settle_wrothgar_decision = {
+	picture = { reference ="gfx/interface/illustrations/decisions/decision_destiny_goal.dds" }
+
+	desc = settle_wrothgar_decision_desc
+    selection_tooltip = settle_wrothgar_decision_tooltip
+    decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
+
+    is_shown = {
+        #only visible to Breton rulers with land within Greater Wrothgar
+        is_landed = yes
+		is_ruler = yes
+        culture = { has_cultural_tradition = tradition_northmen_core }
+		any_realm_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }
+
+
+        NOT = { #can only do it once
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_settled_wrothgar
+			}
+        }
+    }
+    is_valid = {
+    	prestige_level >= 3
+		OR = {
+			completely_controls_region = mundus_tamriel_high_rock_wrothgar
+			completely_controls_region = mundus_tamriel_high_rock_fharun
+		}
+    	OR = {
+			AND = { #the decision is available to minimum duke tier rulers within Greater Wrothgar, also vassals
+				highest_held_title_tier >= tier_duchy
+				custom_tooltip = {
+					capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }
+					text = settle_wrothgar_decision_capital_1 #fixes borked loc regarding capital location
+				}			
+			}
+			AND = { #also available to outsiders, but they won't themselves convert culture and must be kings
+				highest_held_title_tier >= tier_kingdom
+				custom_tooltip = { 
+					NOT = { capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }}
+					text = settle_wrothgar_decision_capital_2 #fixes borked loc regarding capital location	
+				}	
+    		}
+		}
+	}		
+    is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_at_war = no
+    }
+    cost = {
+        gold = 1000
+		prestige = 1000
+    }
+    effect =  {
+    	#for loc purposes
+		save_scope_as = founder
+		culture = { save_scope_as = founder_culture }
+		culture:wrothgarian = { save_scope_as = wrothgarian_culture }
+    
+		custom_tooltip = settle_wrothgar_decision_effect.form_wrothgarian_1
+		custom_tooltip = settle_wrothgar_decision_effect.form_wrothgarian_2
+		custom_tooltip = settle_wrothgar_decision_effect.form_wrothgarian_3
+
+		# The culture is "revived!"
+		culture:wrothgarian = { culture_become_alive_effect = yes }
+		#borrow innovations from Northmen except nativity, presumably most settlers would be from there anyway
+		culture:wrothgarian = {
+			hidden_effect = { 
+				get_all_innovations_from = culture:northmen
+			}	
+		}	
+
+		if = { #For when you yourself live in Wrothgar. Copied and adapted from the revive local culture script
+			limit = { capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar } }
+			hidden_effect = {
+				every_courtier = {
+					limit = {
+						has_culture = root.culture
+						dynasty = root.dynasty
+					}
+					set_culture = culture:wrothgarian
+				}
+				capital_county = { set_county_culture = culture:wrothgarian }
+				set_culture = culture:wrothgarian	
+			}
+			add_character_flag = converted_culture_this_lifetime
+			#Also make your vassals convert culture and their capitals to kickstart the settlement
+			every_vassal_or_below = {
+				if = { 
+					limit = { 
+						capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }
+						culture = { has_cultural_pillar = heritage_breton }
+					}
+					hidden_effect = {
+						every_courtier = {
+							limit = {
+								has_culture = liege.culture
+								dynasty = liege.dynasty
+							}
+							set_culture = culture:wrothgarian
+						}
+						capital_county = { #let's not make it surefire to prevent potentially converting ALL of Wrothgar in one go
+							random = {
+								chance = 50
+								set_county_culture = culture:wrothgarian
+							}	
+						}
+						set_culture = culture:wrothgarian
+					}
+					add_character_flag = converted_culture_this_lifetime
+				}	
+			}	
+		}
+
+		if = { #For when you don't live in Wrothgar, to have your vassals become Wrothgarian instead. 
+			limit = { NOT = { capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }}}
+			every_vassal_or_below = {
+				if = { 
+					limit = { 
+						capital_province = { geographical_region = mundus_tamriel_high_rock_greater_wrothgar }
+						culture = { has_cultural_pillar = heritage_breton }
+					}
+					hidden_effect = {
+						every_courtier = {
+							limit = {
+								has_culture = liege.culture
+								dynasty = liege.dynasty
+							}
+							set_culture = culture:wrothgarian
+						}
+						capital_county = { #let's not make it surefire to prevent potentially converting ALL of Wrothgar in one go
+							random = {
+								chance = 50
+								set_county_culture = culture:wrothgarian
+							}	
+						}
+						set_culture = culture:wrothgarian
+					}
+					add_character_flag = converted_culture_this_lifetime
+				}	
+			}	
+		}	
+		#trigger the event
+		trigger_event = ek_wrothgar_event.0001
+	
+		#it can only happen once
+        add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_settled_wrothgar
+		}
+    }
+
+	ai_potential = { #prevent AI from taking the decision if it would affect a player
+		NOT = {
+			any_vassal_or_below = {
+				is_ai = no
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#For non-Orcs to destroy Orsinium
+sack_orsinium_decision = {
+	picture = { reference ="gfx/interface/illustrations/decisions/decision_invite_knights.dds" }
+
+	desc = sack_orsinium_decision_desc
+    selection_tooltip = sack_orsinium_decision_tooltip
+    decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 120
+		hegemony = 120
+	}
+
+    is_shown = {
+        is_landed = yes
+		is_ruler = yes
+		NOR = {
+			culture = { has_cultural_pillar = heritage_orcish }
+			culture = { has_cultural_tradition = tradition_denizens_lost_orsinium }
+		}
+		completely_controls = title:c_old_orsinium
+		title:c_old_orsinium.title_province = {
+			has_building_or_higher = city_of_orsinium_02
+		}
+    }
+    is_valid = {
+		NOR = {
+			culture = { has_cultural_pillar = heritage_orcish }
+			culture = { has_cultural_tradition = tradition_denizens_lost_orsinium }
+		}
+    	OR = {
+			has_title = title:c_old_orsinium
+			custom_tooltip = {
+				AND = {
+					any_vassal = {
+						has_title = title:c_old_orsinium
+					}
+					title:c_old_orsinium.holder = {
+						NOR = {
+							culture = { has_cultural_pillar = heritage_orcish }
+							culture = { has_cultural_tradition = tradition_denizens_lost_orsinium }
+						}
+					}
+				}
+				text = sack_orsinium_decision_orcish_vassal_tt
+			}
+		}
+	}		
+    is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+    }
+
+	cost = {
+		gold = 25
+	}
+    effect =  {
+		title:c_old_orsinium.title_province = {
+			if = {
+				limit = {
+					has_building = city_of_orsinium_03
+				}
+				remove_building = city_of_orsinium_03
+			}
+			else = {
+				remove_building = city_of_orsinium_02
+			}
+			add_building = city_of_orsinium_01
+			if = {
+				limit = {
+					NOT = {
+						has_province_modifier = recently_looted_modifier
+					}
+				}
+				add_province_modifier = {
+					modifier = recently_looted_modifier
+					years = 5
+				}
+			}
+		}
+		add_character_modifier = {
+			modifier = sacked_orsinium_modifier
+			years = 25
+		}
+		if = {
+			limit = {
+				exists = title:k_orsinium.holder
+			}
+			set_relation_rival = {
+				target = title:k_orsinium.holder
+				reason = rival_destroyed_orsinium
+			}
+		}
+		if = {
+			limit = {
+				exists = title:d_wrothgar.holder
+				title:d_wrothgar.holder = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_orcish }
+						culture = { has_cultural_tradition = tradition_denizens_lost_orsinium }
+					}
+				}
+			}
+			set_relation_rival = {
+				target = title:d_wrothgar.holder
+				reason = rival_destroyed_orsinium
+			}
+		}
+		add_prestige = 500
+    }
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+form_western_reach_decision = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds" }
+
+	desc = form_western_reach_decision_desc
+	selection_tooltip = form_western_reach_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_playable_character = yes
+		highest_held_title_tier <= tier_kingdom
+		capital_province ?= { geographical_region = mundus_tamriel_reach_west_reach }
+		culture = { has_cultural_tradition = tradition_witch_kings } #Witchman core
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:formed_western_reach
+			}
+		}
+	}
+
+	is_valid = {
+		completely_controls_region = mundus_tamriel_reach_west_reach
+		culture = { has_cultural_tradition = tradition_witch_kings } #To inform player
+		prestige_level >= 3
+		#If Greater Bangkorai was formed then it is required
+		trigger_if = {
+			limit = { 
+				title:k_greater_bangkorai = { any_in_de_jure_hierarchy = { tier = tier_county } }
+			}
+			completely_controls = title:k_greater_bangkorai
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 350
+		prestige = 500
+	}
+
+	effect = {
+		form_western_reach_scripted_effect = yes
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:formed_western_reach
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
