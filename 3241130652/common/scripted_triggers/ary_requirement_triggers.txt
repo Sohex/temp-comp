@@ -1,0 +1,232 @@
+﻿# Mammoth Training Ground
+building_ary_mtg_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_mtg_01_building }
+	}
+}
+# Wall of Adamant
+building_ary_woa_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_woa_01_building }
+}
+# Empire Walls
+building_ary_ew_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_ew_01_building }
+}
+# Empire Tax Offices
+building_ary_eto_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_eto_01_building }
+}
+# City Port
+building_ary_cp_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_cp_01_building }
+	OR = {
+		is_coastal = yes
+		is_riverside_province = yes
+	}
+}
+# Large Military Camp
+building_ary_lmc_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_lmc_01_building }
+}
+# Ruby Mines
+building_ary_dim_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_dim_01_building }
+	OR = {
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = hills
+		terrain = terraced_hills
+		is_mountainous_or_hilly_trigger = yes
+	}
+}
+# Sea Watchtower
+building_ary_swt_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_swt_01_building }
+	OR = {
+		is_coastal = yes
+		is_riverside_province = yes
+	}
+}
+# The Logistics
+building_ary_tml_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_tml_01_building }
+	OR = {
+		terrain = farmlands
+		terrain = plains
+	}
+}
+# The Goldlessfort
+building_ary_og_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_og_01_building }
+	OR = {
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = hills
+		terrain = terraced_hills
+		is_mountainous_or_hilly_trigger = yes
+	}
+}
+# Capital of the Empire
+building_ary_cote_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_cote_01_building }
+}
+# Deep Forest Arrow
+building_ary_dfa_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_dfa_01_building }
+	OR = {
+		terrain = jungle
+		terrain = forest
+		terrain = taiga
+		is_wooded_trigger = yes
+	}
+}
+# Wetlands Moat
+building_ary_wetm_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_wetm_01_building }
+	OR = {
+		terrain = wetlands
+		terrain = floodplains
+	}
+}
+# Cavalry Field
+building_ary_caryf_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_caryf_01_building }
+	OR = {
+		terrain = farmlands
+		terrain = plains
+		is_flatlands_trigger = yes
+	}
+}
+# Highland Arsenal
+building_ary_swordasa_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_swordasa_01_building }
+	OR = {
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = hills
+		terrain = terraced_hills
+		is_mountainous_or_hilly_trigger = yes
+	}
+}
+# Camel Training Grounds
+building_ary_cameltg_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_cameltg_01_building }
+	OR = {
+		terrain = desert
+		terrain = oasis
+		terrain = drylands
+		terrain = desert_mountains
+		is_desert_trigger = yes
+	}
+}
+# Horse Archer Training Grounds
+building_ary_hatg_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_ary_hatg_01_building }
+}
+# Knights Hall of Fame
+building_ary_knightshof_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_knightshof_01_building }
+	}
+}
+# Square of True Faith
+building_ary_squareotf_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_squareotf_01_building }
+	}
+}
+# Merchant Guilds
+building_ary_merchantg_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_merchantg_01_building }
+	}
+}
+# The Divine Citadel
+building_ary_highh_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_highh_01_building }
+	}
+}
+# Dome of Learning
+building_ary_domeol_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_domeol_01_building }
+	}
+}
+# Firearms Factories
+building_ary_firearmsf_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_ary_firearmsf_01_building }
+	}
+}
+# ARY Rule VS is mean Vanilla Styles
+# Most tradition in Vanilla Styles Rule will reduced a bonus of -15%, and to -50% in some tradition
+#        #         #          #          #
+# Wall of Adamant # Vanilla
+building_vv_ary_woa_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_vv_ary_woa_01_building }
+}
+# City Port # Vanilla
+building_vv_ary_cp_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_vv_ary_cp_01_building }
+	OR = {
+		is_coastal = yes
+		is_riverside_province = yes
+	}
+}
+# Ruby Mines # Vanilla
+building_vv_ary_dim_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_vv_ary_dim_01_building }
+	OR = {
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = hills
+		terrain = terraced_hills
+		is_mountainous_or_hilly_trigger = yes
+	}
+}
+# Capital of the Empire # Vanilla
+building_vv_ary_cote_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_vv_ary_cote_01_building }
+}
+# Knights Hall of Fame # Vanilla
+building_vv_ary_knightshof_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_vv_ary_knightshof_01_building }
+	}
+}
+# Square of True Faith # Vanilla
+building_vv_ary_squareotf_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_vv_ary_squareotf_01_building }
+	}
+}
+# Merchant Guilds # Vanilla
+building_vv_ary_merchantg_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_vv_ary_merchantg_01_building }
+	}
+}
+# The Divine Citadel # Vanilla
+building_vv_ary_highh_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_vv_ary_highh_01_building }
+	}
+}
+# Dome of Learning # Vanilla
+building_vv_ary_domeol_requirement_terrain = {
+	OR = {
+		culture = { has_cultural_parameter = unlock_vv_ary_domeol_01_building }
+	}
+}
+# The Goldlessfort # Vanilla
+building_vv_ary_og_requirement_terrain = {
+	culture = { has_cultural_parameter = unlock_vv_ary_og_01_building }
+	OR = {
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = hills
+		terrain = terraced_hills
+		is_mountainous_or_hilly_trigger = yes
+	}
+}

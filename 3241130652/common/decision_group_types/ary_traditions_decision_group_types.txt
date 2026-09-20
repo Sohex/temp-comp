@@ -1,0 +1,13 @@
+﻿############################################
+# Decisions roughly at the top
+# (201-300 )
+
+ary_traditions_group_type = {
+	sort_order = 250
+	gui_tags = { big_button }
+}
+
+any_new_traditions = {
+	sort_order = 249
+	gui_tags = { big_button }
+}

@@ -1,0 +1,2183 @@
+﻿# Wall of Iron
+vv_ary_woa_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_woa_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 1250
+	garrison_reinforcement_factor = 0.35
+	province_modifier = {
+		monthly_income = 5
+		fort_level = 10
+		defender_holding_advantage = 15
+		garrison_size = 1
+		travel_danger = -50
+		hostile_raid_time = 4
+	}
+	duchy_capital_county_modifier = {
+		additional_fort_level = 3
+		county_opinion_add = 10
+	}
+	county_modifier = {
+		building_slot_add = 2
+		development_growth = 0.2
+		development_growth_factor = 0.1
+		levy_size = 0.1
+		tax_mult = 0.1
+	}
+	
+	next_building = vv_ary_woa_02
+	
+	type_icon = "icon_structure_aurelian_walls.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_woa_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_woa_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 2500
+	garrison_reinforcement_factor = 0.7
+	province_modifier = {
+		monthly_income = 10
+		fort_level = 20
+		defender_holding_advantage = 25
+		garrison_size = 1.5
+		travel_danger = -75
+		hostile_raid_time = 5
+	}
+	duchy_capital_county_modifier = {
+		additional_fort_level = 6
+		county_opinion_add = 20
+	}
+	county_modifier = {
+		building_slot_add = 2
+		development_growth = 0.35
+		development_growth_factor = 0.15
+		levy_size = 0.2
+		tax_mult = 0.2
+	}
+	
+	next_building = vv_ary_woa_03
+	
+	type_icon = "icon_structure_aurelian_walls.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_woa_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_woa_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 4000
+	garrison_reinforcement_factor = 1
+	province_modifier = {
+		monthly_income = 15
+		fort_level = 30
+		defender_holding_advantage = 35
+		garrison_size = 2
+		travel_danger = -100
+		hostile_raid_time = 6
+	}
+	duchy_capital_county_modifier = {
+		additional_fort_level = 10
+		county_opinion_add = 50
+	}
+	county_modifier = {
+		building_slot_add = 2
+		development_growth = 0.45
+		development_growth_factor = 0.3
+		levy_size = 0.3
+		tax_mult = 0.3
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_aurelian_walls.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Port City
+vv_ary_cp_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_cp_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 500
+	garrison_reinforcement_factor = 0.2
+	province_modifier = {
+		monthly_income = 3.5
+		defender_holding_advantage = 8
+		tax_mult = 0.35
+		development_growth = 0.25
+		development_growth_factor = 0.5
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.1
+		tax_mult = 0.1
+		monthly_income = 1.5
+		diplomatic_range_mult = 0.15
+		naval_movement_speed_mult = 0.15
+		embarkation_cost_mult = -0.15
+	}
+
+	county_holder_character_modifier = {
+		monthly_income = 0.5
+		diplomatic_range_mult = 0.05
+		naval_movement_speed_mult = 0.05
+		embarkation_cost_mult = -0.05
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_cp_02
+	
+	type_icon = "icon_structure_maiden_tower.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_cp_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_cp_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 1000
+	garrison_reinforcement_factor = 0.4
+	province_modifier = {
+		monthly_income = 7
+		defender_holding_advantage = 12
+		tax_mult = 0.7
+		development_growth = 0.35
+		development_growth_factor = 0.75
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.15
+		tax_mult = 0.15
+		monthly_income = 3
+		diplomatic_range_mult = 0.3
+		naval_movement_speed_mult = 0.3
+		embarkation_cost_mult = -0.3
+	}
+
+	county_holder_character_modifier = {
+		monthly_income = 1
+		diplomatic_range_mult = 0.1
+		naval_movement_speed_mult = 0.1
+		embarkation_cost_mult = -0.1
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_cp_03
+	
+	type_icon = "icon_structure_maiden_tower.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_cp_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_cp_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 1500
+	garrison_reinforcement_factor = 0.6
+	province_modifier = {
+		monthly_income = 10
+		defender_holding_advantage = 18
+		tax_mult = 1
+		development_growth = 0.5
+		development_growth_factor = 1
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.3
+		tax_mult = 0.3
+		monthly_income = 5
+		diplomatic_range_mult = 0.45
+		naval_movement_speed_mult = 0.45
+		embarkation_cost_mult = -0.45
+	}
+
+	county_holder_character_modifier = {
+		monthly_income = 2
+		diplomatic_range_mult = 0.15
+		naval_movement_speed_mult = 0.15
+		embarkation_cost_mult = -0.15
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_maiden_tower.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# The Peaksfort
+vv_ary_og_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_og_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 1250
+	garrison_reinforcement_factor = 0.35
+	province_modifier = {
+		monthly_income = 2.5
+		fort_level = 30
+		defender_holding_advantage = 35
+		garrison_size = 1
+		hostile_raid_time = 2
+		supply_limit_mult = -0.25
+		levy_size = -0.40
+		levy_reinforcement_rate = -0.30
+	}
+
+	character_modifier = {
+		defender_advantage = 5
+		controlled_province_advantage = 10
+		scheme_discovery_chance_mult = 0.15
+	}
+
+	duchy_capital_county_modifier = {
+		additional_fort_level = 5
+		mountains_tax_mult = 0.15
+		desert_mountains_tax_mult = 0.15
+		hills_tax_mult = 0.15
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_og_02
+	
+	type_icon = "icon_structure_meteora.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_og_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_og_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 2500
+	garrison_reinforcement_factor = 0.7
+	province_modifier = {
+		monthly_income = 6
+		fort_level = 45
+		defender_holding_advantage = 50
+		garrison_size = 1.5
+		hostile_raid_time = 3
+		supply_limit_mult = -0.1
+		levy_size = -0.2
+		levy_reinforcement_rate = -0.15
+	}
+
+	character_modifier = {
+		defender_advantage = 7
+		controlled_province_advantage = 15
+		scheme_discovery_chance_mult = 0.35
+	}
+
+	duchy_capital_county_modifier = {
+		additional_fort_level = 10
+		mountains_tax_mult = 0.3
+		desert_mountains_tax_mult = 0.3
+		hills_tax_mult = 0.3
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_og_03
+	
+	type_icon = "icon_structure_meteora.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_og_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_og_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 4000
+	garrison_reinforcement_factor = 1
+	province_modifier = {
+		monthly_income = 10
+		fort_level = 60
+		defender_holding_advantage = 65
+		garrison_size = 2
+		hostile_raid_time = 4
+	}
+
+	character_modifier = {
+		defender_advantage = 10
+		controlled_province_advantage = 20
+		scheme_discovery_chance_mult = 0.5
+	}
+
+	duchy_capital_county_modifier = {
+		additional_fort_level = 15
+		mountains_tax_mult = 0.45
+		desert_mountains_tax_mult = 0.45
+		hills_tax_mult = 0.45
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_meteora.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Capital of the Empire
+vv_ary_cote_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_cote_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 1500
+	garrison_reinforcement_factor = 0.35
+	province_modifier = {
+		monthly_income = 5
+		tax_mult = 0.2
+		fort_level = 8
+		defender_holding_advantage = 12
+		garrison_size = 1
+		supply_limit_mult = 1
+		levy_size = 1
+		development_growth_factor = 0.2
+	}
+
+	character_modifier = {
+		dread_baseline_add = 10
+		vassal_limit = 10
+		vassal_tax_mult = 0.1
+		vassal_tax_contribution_mult = 0.1
+		vassal_levy_contribution_mult = 0.1
+		character_capital_county_monthly_development_growth_add = 0.15
+		vassal_opinion = 10
+		monthly_dynasty_prestige_mult = 0.1
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_cote_02
+	
+	type_icon = "icon_structure_alhambra.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_cote_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_cote_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 3200
+	garrison_reinforcement_factor = 0.7
+	province_modifier = {
+		monthly_income = 10
+		tax_mult = 0.35
+		fort_level = 17
+		defender_holding_advantage = 18
+		garrison_size = 1.5
+		supply_limit_mult = 2
+		levy_size = 2
+		development_growth_factor = 0.4
+	}
+
+	character_modifier = {
+		dread_baseline_add = 30
+		vassal_limit = 20
+		vassal_tax_mult = 0.2
+		vassal_tax_contribution_mult = 0.2
+		vassal_levy_contribution_mult = 0.2
+		character_capital_county_monthly_development_growth_add = 0.35
+		vassal_opinion = 20
+		monthly_dynasty_prestige_mult = 0.20
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	next_building = vv_ary_cote_03
+	
+	type_icon = "icon_structure_alhambra.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_cote_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_cote_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 6000
+	garrison_reinforcement_factor = 1
+	province_modifier = {
+		monthly_income = 15
+		tax_mult = 0.5
+		fort_level = 25
+		defender_holding_advantage = 25
+		garrison_size = 2
+		supply_limit_mult = 3
+		levy_size = 3
+		development_growth_factor = 0.6
+	}
+
+	character_modifier = {
+		dread_baseline_add = 30
+		vassal_limit = 30
+		vassal_tax_mult = 0.3
+		vassal_tax_contribution_mult = 0.3
+		vassal_levy_contribution_mult = 0.3
+		character_capital_county_monthly_development_growth_add = 0.45
+		vassal_opinion = 30
+		monthly_dynasty_prestige_mult = 0.3
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_alhambra.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Knights Hall of Fame
+vv_ary_knightshof_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_knightshof_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 350
+	garrison_reinforcement_factor = 0.15
+	province_modifier = {
+		fort_level = 2
+		defender_holding_advantage = 5
+		garrison_size = 0.15
+	}
+
+	character_modifier = {
+		monthly_prestige = 5
+		monthly_prestige_gain_mult = 0.1
+		knight_limit = 4
+		knight_effectiveness_mult = 1
+		prowess_per_prestige_level = 1
+		knight_effectiveness_per_prowess = 0.01
+		monthly_legitimacy_add = 1
+		owned_legend_spread_mult = 0.1
+		tourney_participant_xp_gain_mult = 0.15
+		accolade_glory_gain_mult = 0.1
+		no_prowess_loss_from_age = yes
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		county_opinion_add = 10
+	}
+	
+	next_building = vv_ary_knightshof_02
+	
+	type_icon = "icon_building_hall_of_heroes.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_knightshof_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_knightshof_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 700
+	garrison_reinforcement_factor = 0.3
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 10
+		garrison_size = 0.35
+	}
+
+	character_modifier = {
+		monthly_prestige = 10
+		monthly_prestige_gain_mult = 0.2
+		knight_limit = 7
+		knight_effectiveness_mult = 1.5
+		prowess_per_prestige_level = 1
+		martial_per_prestige_level = 1
+		knight_effectiveness_per_prowess = 0.01
+		knight_effectiveness_per_martial = 0.01
+		monthly_legitimacy_add = 2
+		owned_legend_spread_mult = 0.2
+		tourney_participant_xp_gain_mult = 0.35
+		accolade_glory_gain_mult = 0.2
+		no_prowess_loss_from_age = yes
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		county_opinion_add = 20
+	}
+	
+	next_building = vv_ary_knightshof_03
+	
+	type_icon = "icon_building_hall_of_heroes.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_knightshof_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_knightshof_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 1050
+	garrison_reinforcement_factor = 0.45
+	province_modifier = {
+		fort_level = 6
+		defender_holding_advantage = 15
+		garrison_size = 0.5
+	}
+
+	character_modifier = {
+		monthly_prestige = 15
+		monthly_prestige_gain_mult = 0.3
+		knight_limit = 10
+		knight_effectiveness_mult = 2
+		prowess_per_prestige_level = 2
+		martial_per_prestige_level = 2
+		knight_effectiveness_per_prowess = 0.02
+		knight_effectiveness_per_martial = 0.02
+		monthly_legitimacy_add = 3
+		owned_legend_spread_mult = 0.3
+		tourney_participant_xp_gain_mult = 0.5
+		accolade_glory_gain_mult = 0.3
+		no_prowess_loss_from_age = yes
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		county_opinion_add = 50
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_building_hall_of_heroes.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Square of True Faith
+vv_ary_squareotf_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_squareotf_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 350
+	garrison_reinforcement_factor = 0.15
+	province_modifier = {
+		monthly_income = 2
+		fort_level = 2
+		defender_holding_advantage = 4
+		garrison_size = 0.15
+	}
+
+	character_modifier = {
+		monthly_piety = 5
+		monthly_piety_gain_mult = 0.1
+		tolerance_advantage_mod = 5
+		learning_per_piety_level = 1
+		prowess_per_piety_level = 1
+		opinion_of_same_faith = 10
+		clergy_opinion = 10
+		religious_head_opinion = 10
+		pilgrim_xp_gain_mult = 0.2
+		domain_tax_same_faith_mult = 0.15
+		levy_reinforcement_rate_same_faith = 0.15
+		zealot_levy_contribution_mult = 0.15
+		zealot_tax_contribution_mult = 0.15
+	}
+
+	county_modifier = {
+		travel_danger = -10
+		monthly_county_control_growth_add = 1
+		building_slot_add = 2
+		county_opinion_add = 10
+	}
+	
+	next_building = vv_ary_squareotf_02
+	
+	type_icon = "icon_structure_iron_pillar_of_dhar.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_squareotf_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_squareotf_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 700
+	garrison_reinforcement_factor = 0.3
+	province_modifier = {
+		monthly_income = 5
+		fort_level = 3
+		defender_holding_advantage = 8
+		garrison_size = 0.35
+	}
+
+	character_modifier = {
+		monthly_piety = 10
+		monthly_piety_gain_mult = 0.2
+		tolerance_advantage_mod = 10
+		learning_per_piety_level = 1
+		prowess_per_piety_level = 2
+		martial_per_piety_level	= 1
+		opinion_of_same_faith = 15
+		clergy_opinion = 15
+		religious_head_opinion = 15
+		pilgrim_xp_gain_mult = 0.35
+		domain_tax_same_faith_mult = 0.3
+		levy_reinforcement_rate_same_faith = 0.3
+		zealot_levy_contribution_mult = 0.3
+		zealot_tax_contribution_mult = 0.3
+	}
+
+	county_modifier = {
+		travel_danger = -15
+		monthly_county_control_growth_add = 2
+		building_slot_add = 2
+		county_opinion_add = 20
+	}
+	
+	next_building = vv_ary_squareotf_03
+	
+	type_icon = "icon_structure_iron_pillar_of_dhar.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_squareotf_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_squareotf_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 1050
+	garrison_reinforcement_factor = 0.45
+	province_modifier = {
+		monthly_income = 8
+		fort_level = 5
+		defender_holding_advantage = 12
+		garrison_size = 0.5
+	}
+
+	character_modifier = {
+		monthly_piety = 15
+		monthly_piety_gain_mult = 0.3
+		tolerance_advantage_mod = 15
+		learning_per_piety_level = 3
+		prowess_per_piety_level = 4
+		martial_per_piety_level	= 3
+		opinion_of_same_faith = 20
+		clergy_opinion = 20
+		religious_head_opinion = 25
+		pilgrim_xp_gain_mult = 0.5
+		domain_tax_same_faith_mult = 0.5
+		levy_reinforcement_rate_same_faith = 0.5
+		zealot_levy_contribution_mult = 0.5
+		zealot_tax_contribution_mult = 0.5
+	}
+
+	county_modifier = {
+		travel_danger = -20
+		monthly_county_control_growth_add = 3
+		building_slot_add = 2
+		county_opinion_add = 30
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_iron_pillar_of_dhar.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# The Divine Citadel
+vv_ary_highh_01 = {
+	construction_time = 36525
+
+	can_construct_potential = {
+		building_vv_ary_highh_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 1500
+	garrison_reinforcement_factor = 0.3
+	province_modifier = {
+		fort_level = 30
+		defender_holding_advantage = 10
+		garrison_size = 1
+	}
+	character_modifier = {
+		diplomacy = 3
+		martial = 3
+		stewardship = 3
+		intrigue = 3
+		learning = 3
+		prowess = 3
+		monthly_lifestyle_xp_gain_mult = 0.1
+		monthly_piety_gain_mult = 0.1
+		monthly_prestige_gain_mult = 0.1
+		monthly_influence_mult = 0.1
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_dynasty_prestige = 2.5
+		health = 0.15
+		negate_health_penalty_add = 0.15
+	}
+	county_modifier = {
+		building_slot_add = 2
+		tax_mult = 0.1
+		hostile_raid_time = 1
+	}
+	
+	next_building = vv_ary_highh_02
+	
+	type_icon = "icon_structure_canterbury_cathedral.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_highh_02 = {
+	construction_time = 45625
+
+	can_construct_potential = {
+		building_vv_ary_highh_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 3000
+	garrison_reinforcement_factor = 0.6
+	province_modifier = {
+		fort_level = 45
+		defender_holding_advantage = 20
+		garrison_size = 1.5
+	}
+	character_modifier = {
+		diplomacy = 7
+		martial = 7
+		stewardship = 7
+		intrigue = 7
+		learning = 7
+		prowess = 7
+		monthly_lifestyle_xp_gain_mult = 0.2
+		monthly_piety_gain_mult = 0.2
+		monthly_prestige_gain_mult = 0.2
+		monthly_influence_mult = 0.2
+		monthly_dynasty_prestige_mult = 0.2
+		monthly_dynasty_prestige = 5
+		health = 0.35
+		negate_health_penalty_add = 0.35
+	}
+	county_modifier = {
+		building_slot_add = 2
+		tax_mult = 0.2
+		hostile_raid_time = 2
+	}
+	
+	next_building = vv_ary_highh_03
+	
+	type_icon = "icon_structure_canterbury_cathedral.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_highh_03 = {
+	construction_time = 54750
+
+	can_construct_potential = {
+		building_vv_ary_highh_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 5000
+	garrison_reinforcement_factor = 1
+	province_modifier = {
+		fort_level = 60
+		defender_holding_advantage = 30
+		garrison_size = 2
+	}
+	character_modifier = {
+		diplomacy = 12
+		martial = 12
+		stewardship = 12
+		intrigue = 12
+		learning = 12
+		prowess = 12
+		monthly_lifestyle_xp_gain_mult = 0.3
+		monthly_piety_gain_mult = 0.3
+		monthly_prestige_gain_mult = 0.3
+		monthly_influence_mult = 0.3
+		monthly_dynasty_prestige_mult = 0.3
+		monthly_dynasty_prestige = 7.5
+		health = 0.5
+		negate_health_penalty_add = 0.5
+	}
+	county_modifier = {
+		building_slot_add = 2
+		tax_mult = 0.3
+		hostile_raid_time = 3
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_canterbury_cathedral.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Dome of Learning
+vv_ary_domeol_01 = {
+	construction_time = 11322
+
+	can_construct_potential = {
+		building_vv_ary_domeol_requirement_terrain = yes
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+
+	show_disabled = yes
+	
+	cost_gold = 3500
+
+	max_garrison = 350
+	garrison_reinforcement_factor = 0.15
+	province_modifier = {
+		monthly_income = 2.5
+		tax_mult = 0.2
+		defender_holding_advantage = 3
+		garrison_size = 0.15
+		development_growth_factor = 0.15
+		travel_danger = -10
+	}
+
+	character_modifier = {
+		learning = 5
+		cultural_head_fascination_mult = 0.2
+		cultural_head_fascination_add = 15
+		negate_health_penalty_add = 0.35
+		realm_priest_opinion = 10
+		monthly_lifestyle_xp_gain_mult = 0.2
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		development_growth_factor = 0.1
+		epidemic_resistance = 15
+	}
+	
+	next_building = vv_ary_domeol_02
+	
+	type_icon = "icon_structure_jvari_monastery.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_domeol_02 = {
+	construction_time = 12784
+
+	can_construct_potential = {
+		building_vv_ary_domeol_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 4000
+
+	max_garrison = 700
+	garrison_reinforcement_factor = 0.3
+	province_modifier = {
+		monthly_income = 6
+		tax_mult = 0.35
+		defender_holding_advantage = 6
+		garrison_size = 0.35
+		development_growth_factor = 0.35
+		travel_danger = -20
+	}
+
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+		learning = 10
+		cultural_head_fascination_mult = 0.4
+		cultural_head_fascination_add = 35
+		negate_health_penalty_add = 0.7
+		realm_priest_opinion = 20
+		monthly_lifestyle_xp_gain_mult = 0.4
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		development_growth_factor = 0.3
+		epidemic_resistance = 30
+	}
+	
+	next_building = vv_ary_domeol_03
+	
+	type_icon = "icon_structure_jvari_monastery.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+
+vv_ary_domeol_03 = {
+	construction_time = 14610
+
+	can_construct_potential = {
+		building_vv_ary_domeol_requirement_terrain = yes
+	}
+	
+	can_construct = {
+	}
+	
+	is_enabled = {
+		county.holder = { has_title = prev.duchy }
+	}
+	show_disabled = yes
+	
+	cost_gold = 5000
+
+	max_garrison = 1050
+	garrison_reinforcement_factor = 0.45
+	province_modifier = {
+		monthly_income = 10
+		tax_mult = 0.5
+		defender_holding_advantage = 10
+		garrison_size = 0.5
+		development_growth_factor = 0.5
+		travel_danger = -30
+	}
+
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+		stewardship_per_prestige_level = 1
+		learning = 15
+		cultural_head_fascination_mult = 0.6
+		cultural_head_fascination_add = 50
+		negate_health_penalty_add = 1.2
+		realm_priest_opinion = 30
+		monthly_lifestyle_xp_gain_mult = 0.6
+	}
+
+	county_modifier = {
+		building_slot_add = 2
+		development_growth_factor = 0.45
+		epidemic_resistance = 45
+	}
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	type_icon = "icon_structure_jvari_monastery.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 0 # Ai Never Build This
+	}
+}
+# Merchant Guilds
+vv_ary_merchantg_01 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 200
+	
+	province_modifier = {
+		monthly_income = 1.1
+		tax_mult = 0.03
+		supply_limit = 500
+		travel_danger = -3
+	}
+	
+	character_modifier = {
+		stress_gain_mult = 0.02
+		tax_mult = 0.01
+		mercenary_hire_cost_mult = -0.04
+	}
+	
+	county_modifier = {
+		development_growth = 0.03
+		development_growth_factor = 0.03
+	}
+	
+	next_building = vv_ary_merchantg_02
+
+	type_icon = "icon_structure_university_of_siena.dds"
+	
+	ai_value = {
+		base = 20
+		ai_tier_1_building_modifier = yes
+		ai_tier_1_economical_building_preference_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+	}
+}
+
+vv_ary_merchantg_02 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 350
+	
+	province_modifier = {
+		monthly_income = 2.2
+		tax_mult = 0.06
+		supply_limit = 1000
+		travel_danger = -6
+	}
+	
+	character_modifier = {
+		stress_gain_mult = 0.04
+		tax_mult = 0.02
+		mercenary_hire_cost_mult = -0.04
+	}
+	
+	county_modifier = {
+		development_growth = 0.06
+		development_growth_factor = 0.06
+	}
+	
+	next_building = vv_ary_merchantg_03
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_03 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 485
+	
+	province_modifier = {
+		monthly_income = 3.3
+		tax_mult = 0.09
+		supply_limit = 1500
+		travel_danger = -9
+	}
+	
+	character_modifier = {
+		stress_gain_mult = 0.06
+		tax_mult = 0.03
+		mercenary_hire_cost_mult = -0.06
+	}
+	
+	county_modifier = {
+		development_growth = 0.09
+		development_growth_factor = 0.09
+	}
+	
+	next_building = vv_ary_merchantg_04
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_04 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 725
+	
+	province_modifier = {
+		monthly_income = 4.4
+		tax_mult = 0.12
+		supply_limit = 2000
+		travel_danger = -12
+	}
+	
+	character_modifier = {
+		stress_gain_mult = 0.08
+		tax_mult = 0.04
+		mercenary_hire_cost_mult = -0.08
+	}
+	
+	county_modifier = {
+		development_growth = 0.12
+		development_growth_factor = 0.12
+	}
+	
+	next_building = vv_ary_merchantg_05
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_05 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 1110
+	
+	province_modifier = {
+		monthly_income = 5.5
+		tax_mult = 0.15
+		supply_limit = 2500
+		travel_danger = -15
+	}
+	
+	character_modifier = {
+		stress_gain_mult = 0.1
+		tax_mult = 0.05
+		mercenary_hire_cost_mult = -0.1
+	}
+	
+	county_modifier = {
+		development_growth = 0.15
+		development_growth_factor = 0.15
+	}
+	
+	next_building = vv_ary_merchantg_06
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_06 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 1640
+	
+	province_modifier = {
+		monthly_income = 6.6
+		tax_mult = 0.18
+		supply_limit = 3000
+		travel_danger = -18
+	}
+	
+	character_modifier = {
+		stewardship = 1
+		stress_gain_mult = 0.12
+		tax_mult = 0.06
+		mercenary_hire_cost_mult = -0.12
+		monthly_income_per_stress_level_mult = 0.01
+		monthly_war_income_mult = -0.01
+	}
+	
+	county_modifier = {
+		development_growth = 0.18
+		development_growth_factor = 0.18
+	}
+	
+	next_building = vv_ary_merchantg_07
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_07 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 2375
+	
+	province_modifier = {
+		monthly_income = 7.7
+		tax_mult = 0.21
+		supply_limit = 3500
+		travel_danger = -21
+	}
+	
+	character_modifier = {
+		stewardship = 2
+		stress_gain_mult = 0.14
+		tax_mult = 0.07
+		mercenary_hire_cost_mult = -0.14
+		monthly_income_per_stress_level_mult = 0.03
+		monthly_war_income_mult = -0.03
+	}
+	
+	county_modifier = {
+		development_growth = 0.21
+		development_growth_factor = 0.21
+	}
+	
+	next_building = vv_ary_merchantg_08
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_merchantg_08 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_merchantg_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+
+	show_disabled = yes
+
+	cost_gold = 3335
+	
+	province_modifier = {
+		monthly_income = 8.8
+		tax_mult = 0.24
+		supply_limit = 4000
+		travel_danger = -24
+	}
+	
+	character_modifier = {
+		stewardship = 3
+		stress_gain_mult = 0.16
+		tax_mult = 0.08
+		mercenary_hire_cost_mult = -0.16
+		monthly_income_per_stress_level_mult = 0.05
+		monthly_war_income_mult = -0.05
+	}
+	
+	county_modifier = {
+		development_growth = 0.24
+		development_growth_factor = 0.24
+	}
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+# Ruby Mines
+vv_ary_dim_01 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 500
+	
+	province_modifier = {
+		fort_level = 1
+		defender_holding_advantage = 1
+		monthly_income = 1.3
+		supply_limit_mult = -0.07
+		levy_size = -0.04
+		tax_mult = 0.02
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.03
+	}
+	
+	next_building = vv_ary_dim_02
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 20
+		ai_tier_1_building_modifier = yes
+		ai_tier_1_economical_building_preference_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+	}
+}
+
+vv_ary_dim_02 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 1000
+	
+	province_modifier = {
+		fort_level = 2
+		defender_holding_advantage = 2
+		monthly_income = 2.6
+		supply_limit_mult = -0.14
+		levy_size = -0.08
+		tax_mult = 0.04
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.06
+	}
+	
+	next_building = vv_ary_dim_03
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_03 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 1500
+	
+	province_modifier = {
+		fort_level = 3
+		defender_holding_advantage = 3
+		monthly_income = 3.9
+		supply_limit_mult = -0.21
+		levy_size = -0.12
+		tax_mult = 0.06
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.09
+	}
+	
+	next_building = vv_ary_dim_04
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_04 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 2000
+	
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 4
+		monthly_income = 5.2
+		supply_limit_mult = -0.28
+		levy_size = -0.16
+		tax_mult = 0.08
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.12
+	}
+	
+	next_building = vv_ary_dim_05
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_05 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 2500
+	
+	province_modifier = {
+		fort_level = 5
+		defender_holding_advantage = 5
+		monthly_income = 6.5
+		supply_limit_mult = -0.35
+		levy_size = -0.20
+		tax_mult = 0.1
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.15
+	}
+	
+	next_building = vv_ary_dim_06
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_06 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 3000
+	
+	province_modifier = {
+		fort_level = 6
+		defender_holding_advantage = 6
+		monthly_income = 7.8
+		supply_limit_mult = -0.42
+		levy_size = -0.24
+		tax_mult = 0.12
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.18
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.01
+	}
+	
+	next_building = vv_ary_dim_07
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_07 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 3500
+	
+	province_modifier = {
+		fort_level = 7
+		defender_holding_advantage = 7
+		monthly_income = 9.1
+		supply_limit_mult = -0.49
+		levy_size = -0.28
+		tax_mult = 0.14
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.21
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.03
+	}
+	
+	next_building = vv_ary_dim_08
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+vv_ary_dim_08 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_vv_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 4500
+	
+	province_modifier = {
+		fort_level = 8
+		defender_holding_advantage = 8
+		monthly_income = 10.5
+		supply_limit_mult = -0.60
+		levy_size = -0.40
+		tax_mult = 0.16
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.25
+	}
+	
+	character_modifier = {
+		monthly_income_mult = 0.05
+	}
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}

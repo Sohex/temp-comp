@@ -1,0 +1,3242 @@
+﻿### Mammoth Training Grounds
+
+ary_mtg_01 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 150
+	
+	province_modifier = {
+		monthly_income = 0.35
+		build_speed = -0.025
+		stationed_elephant_cavalry_damage_mult = 0.20
+		stationed_elephant_cavalry_toughness_mult = 0.20
+		stationed_elephant_cavalry_pursuit_mult = 0.20
+		stationed_elephant_cavalry_screen_mult = 0.20
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.02
+		elephant_cavalry_maintenance_mult = -0.01
+	}
+	
+	next_building = ary_mtg_02
+
+	type_icon = "icon_building_elephant_pens.dds"
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+
+		modifier = {
+			factor = 0
+			has_holding_type = city_holding
+		}
+		modifier = {
+			factor = 0
+			has_holding_type = church_holding
+		}
+	}
+}
+
+ary_mtg_02 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		scope:holder.culture = {
+			has_innovation = innovation_barracks
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 250
+	
+	province_modifier = {
+		monthly_income = 0.55
+		build_speed = -0.05
+		stationed_elephant_cavalry_damage_mult = 0.40
+		stationed_elephant_cavalry_toughness_mult = 0.40
+		stationed_elephant_cavalry_pursuit_mult = 0.40
+		stationed_elephant_cavalry_screen_mult = 0.40
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.04
+		elephant_cavalry_maintenance_mult = -0.02
+	}
+	
+	next_building = ary_mtg_03
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+		modifier = { # Fill all building slots before going for upgrades
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+ary_mtg_03 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 340
+	
+	province_modifier = {
+		monthly_income = 0.75
+		build_speed = -0.075
+		stationed_elephant_cavalry_damage_mult = 0.60
+		stationed_elephant_cavalry_toughness_mult = 0.60
+		stationed_elephant_cavalry_pursuit_mult = 0.60
+		stationed_elephant_cavalry_screen_mult = 0.60
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.06
+		elephant_cavalry_maintenance_mult = -0.03
+	}
+	
+	next_building = ary_mtg_04
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_mtg_04 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 500
+	
+	province_modifier = {
+		monthly_income = 0.95
+		build_speed = -0.10
+		stationed_elephant_cavalry_damage_mult = 0.80
+		stationed_elephant_cavalry_toughness_mult = 0.80
+		stationed_elephant_cavalry_pursuit_mult = 0.80
+		stationed_elephant_cavalry_screen_mult = 0.80
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.08
+		elephant_cavalry_maintenance_mult = -0.04
+	}
+	
+	next_building = ary_mtg_05
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_mtg_05 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 750
+	
+	province_modifier = {
+		monthly_income = 1.15
+		build_speed = -0.13
+		stationed_elephant_cavalry_damage_mult = 1
+		stationed_elephant_cavalry_toughness_mult = 1
+		stationed_elephant_cavalry_pursuit_mult = 1
+		stationed_elephant_cavalry_screen_mult = 1
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.10
+		elephant_cavalry_maintenance_mult = -0.05
+	}
+	
+	next_building = ary_mtg_06
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_mtg_06 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1100
+	
+	province_modifier = {
+		monthly_income = 1.35
+		build_speed = -0.16
+		stationed_elephant_cavalry_damage_mult = 1.2
+		stationed_elephant_cavalry_toughness_mult = 1.2
+		stationed_elephant_cavalry_pursuit_mult = 1.2
+		stationed_elephant_cavalry_screen_mult = 1.2
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.12
+		elephant_cavalry_maintenance_mult = -0.06
+		elephant_cavalry_max_size_add = 1
+	}
+	
+	next_building = ary_mtg_07
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_mtg_07 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = 1600
+	
+	province_modifier = {
+		monthly_income = 1.55
+		build_speed = -0.19
+		stationed_elephant_cavalry_damage_mult = 1.4
+		stationed_elephant_cavalry_toughness_mult = 1.4
+		stationed_elephant_cavalry_pursuit_mult = 1.4
+		stationed_elephant_cavalry_screen_mult = 1.4
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.14
+		elephant_cavalry_maintenance_mult = -0.07
+		elephant_cavalry_max_size_add = 2
+	}
+	
+	next_building = ary_mtg_08
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_mtg_08 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_mtg_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 2240
+	
+	province_modifier = {
+		monthly_income = 1.8
+		build_speed = -0.22
+		stationed_elephant_cavalry_damage_mult = 1.6
+		stationed_elephant_cavalry_toughness_mult = 1.6
+		stationed_elephant_cavalry_pursuit_mult = 1.6
+		stationed_elephant_cavalry_screen_mult = 1.6
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.16
+		elephant_cavalry_maintenance_mult = -0.08
+		elephant_cavalry_max_size_add = 3
+	}
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+# Empire Walls
+ary_ew_01 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 100
+	
+	levy = 100
+	max_garrison = 150
+	province_modifier = {
+		monthly_income = 0.2
+		fort_level = 3
+		defender_holding_advantage = 2
+		stationed_maa_damage_mult = 0.05
+		stationed_maa_toughness_mult = 0.05
+		travel_danger = -2
+		county_opinion_add = 2
+		monthly_county_control_growth_factor = 0.02
+	}
+
+	next_building = ary_ew_02
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 10
+		ai_tier_1_building_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
+		modifier = {
+			factor = 5
+			free_building_slots <= 2
+		}
+		modifier = {
+			factor = 5
+			free_building_slots <= 1
+		}
+		culture_likely_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_02 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+		trigger_else = {
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 150
+	
+	levy = 175
+	max_garrison = 300
+	province_modifier = {
+		monthly_income = 0.4
+		fort_level = 6
+		defender_holding_advantage = 4
+		stationed_maa_damage_mult = 0.10
+		stationed_maa_toughness_mult = 0.10
+		travel_danger = -4
+		county_opinion_add = 4
+		monthly_county_control_growth_factor = 0.04
+	}
+	
+	next_building = ary_ew_03
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 9
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for upgrades
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+ary_ew_03 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 250
+	
+	levy = 250
+	max_garrison = 450
+	province_modifier = {
+		monthly_income = 0.6
+		fort_level = 9
+		defender_holding_advantage = 6
+		stationed_maa_damage_mult = 0.15
+		stationed_maa_toughness_mult = 0.15
+		travel_danger = -6
+		county_opinion_add = 6
+		monthly_county_control_growth_factor = 0.06
+	}
+	
+	next_building = ary_ew_04
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 8
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_04 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 350
+	
+	levy = 325
+	max_garrison = 600
+	province_modifier = {
+		monthly_income = 0.8
+		fort_level = 12
+		defender_holding_advantage = 8
+		stationed_maa_damage_mult = 0.20
+		stationed_maa_toughness_mult = 0.20
+		travel_danger = -8
+		county_opinion_add = 8
+		monthly_county_control_growth_factor = 0.08
+	}
+	
+	next_building = ary_ew_05
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 7
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_05 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 500
+	
+	levy = 400
+	max_garrison = 750
+	province_modifier = {
+		monthly_income = 1
+		fort_level = 15
+		defender_holding_advantage = 11
+		stationed_maa_damage_mult = 0.25
+		stationed_maa_toughness_mult = 0.25
+		travel_danger = -10
+		county_opinion_add = 12
+		monthly_county_control_growth_factor = 0.12
+	}
+	
+	next_building = ary_ew_06
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 6
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_06 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 700
+	
+	levy = 475
+	max_garrison = 900
+	province_modifier = {
+		monthly_income = 1.2
+		fort_level = 18
+		defender_holding_advantage = 14
+		stationed_maa_damage_mult = 0.30
+		stationed_maa_toughness_mult = 0.30
+		travel_danger = -12
+		county_opinion_add = 14
+		monthly_county_control_growth_factor = 0.14
+	}
+	
+	next_building = ary_ew_07
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 5
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_07 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 04 }
+			scope:holder.culture = {
+				has_innovation = innovation_machicolations
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 950
+	
+	levy = 550
+	max_garrison = 1050
+	province_modifier = {
+		monthly_income = 1.4
+		fort_level = 21
+		defender_holding_advantage = 17
+		stationed_maa_damage_mult = 0.35
+		stationed_maa_toughness_mult = 0.35
+		travel_danger = -14
+		county_opinion_add = 17
+		monthly_county_control_growth_factor = 0.17
+	}
+	
+	next_building = ary_ew_08
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 4
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_ew_08 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_ew_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 04 }
+			scope:holder.culture = {
+				has_innovation = innovation_machicolations
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1250
+	
+	levy = 625
+	max_garrison = 1200
+	province_modifier = {
+		monthly_income = 1.6
+		fort_level = 24
+		defender_holding_advantage = 20
+		stationed_maa_damage_mult = 0.40
+		stationed_maa_toughness_mult = 0.40
+		travel_danger = -16
+		county_opinion_add = 20
+		monthly_county_control_growth_factor = 0.20
+	}
+
+	type_icon = "aljaferia.dds"
+	
+	ai_value = {
+		base = 3
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+# Empire Tax Offices
+ary_eto_01 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 200
+	
+	province_modifier = {
+		monthly_income = 0.75
+		tax_mult = 0.06
+		county_opinion_add = -3
+		monthly_county_control_growth_factor = -0.03
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.01
+		men_at_arms_maintenance = -0.01
+		mercenary_hire_cost_mult = -0.01
+	}
+	
+	county_modifier = {
+		development_growth = 0.03
+		development_growth_factor = 0.03
+		build_gold_cost = -0.05
+		build_speed = -0.05
+	}
+	
+	next_building = ary_eto_02
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 20
+		ai_tier_1_building_modifier = yes
+		ai_tier_1_economical_building_preference_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+	}
+}
+
+ary_eto_02 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 350
+	
+	province_modifier = {
+		monthly_income = 1.5
+		tax_mult = 0.13
+		county_opinion_add = -6
+		monthly_county_control_growth_factor = -0.06
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.02
+		men_at_arms_maintenance = -0.02
+		mercenary_hire_cost_mult = -0.02
+	}
+	
+	county_modifier = {
+		development_growth = 0.06
+		development_growth_factor = 0.06
+		build_gold_cost = -0.10
+		build_speed = -0.10
+	}
+	
+	next_building = ary_eto_03
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_03 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 485
+	
+	province_modifier = {
+		monthly_income = 2.25
+		tax_mult = 0.2
+		county_opinion_add = -9
+		monthly_county_control_growth_factor = -0.09
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.03
+		men_at_arms_maintenance = -0.03
+		mercenary_hire_cost_mult = -0.03
+	}
+	
+	county_modifier = {
+		development_growth = 0.09
+		development_growth_factor = 0.09
+		build_gold_cost = -0.15
+		build_speed = -0.15
+	}
+	
+	next_building = ary_eto_04
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_04 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 725
+	
+	province_modifier = {
+		monthly_income = 3
+		tax_mult = 0.26
+		county_opinion_add = -12
+		monthly_county_control_growth_factor = -0.12
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.04
+		men_at_arms_maintenance = -0.04
+		mercenary_hire_cost_mult = -0.04
+	}
+	
+	county_modifier = {
+		development_growth = 0.12
+		development_growth_factor = 0.12
+		build_gold_cost = -0.20
+		build_speed = -0.20
+	}
+	
+	next_building = ary_eto_05
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_05 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 1110
+	
+	province_modifier = {
+		monthly_income = 3.75
+		tax_mult = 0.32
+		county_opinion_add = -15
+		monthly_county_control_growth_factor = -0.15
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.05
+		men_at_arms_maintenance = -0.05
+		mercenary_hire_cost_mult = -0.05
+	}
+	
+	county_modifier = {
+		development_growth = 0.15
+		development_growth_factor = 0.15
+		build_gold_cost = -0.25
+		build_speed = -0.25
+	}
+	
+	next_building = ary_eto_06
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_06 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 1640
+	
+	province_modifier = {
+		monthly_income = 4.5
+		tax_mult = 0.39
+		county_opinion_add = -18
+		monthly_county_control_growth_factor = -0.18
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.06
+		men_at_arms_maintenance = -0.06
+		mercenary_hire_cost_mult = -0.06
+	}
+	
+	county_modifier = {
+		development_growth = 0.18
+		development_growth_factor = 0.18
+		build_gold_cost = -0.30
+		build_speed = -0.30
+	}
+	
+	next_building = ary_eto_07
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_07 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 2375
+	
+	province_modifier = {
+		monthly_income = 5.25
+		tax_mult = 0.45
+		county_opinion_add = -21
+		monthly_county_control_growth_factor = -0.21
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.07
+		men_at_arms_maintenance = -0.07
+		mercenary_hire_cost_mult = -0.07
+	}
+	
+	county_modifier = {
+		development_growth = 0.21
+		development_growth_factor = 0.21
+		build_gold_cost = -0.35
+		build_speed = -0.35
+	}
+	
+	next_building = ary_eto_08
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_eto_08 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_eto_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 3335
+	
+	province_modifier = {
+		monthly_income = 6
+		tax_mult = 0.52
+		county_opinion_add = -24
+		monthly_county_control_growth_factor = -0.24
+	}
+	
+	character_modifier = {
+		domain_tax_mult = 0.08
+		men_at_arms_maintenance = -0.08
+		mercenary_hire_cost_mult = -0.08
+		domain_limit = 1
+	}
+	
+	county_modifier = {
+		development_growth = 0.24
+		development_growth_factor = 0.24
+		build_gold_cost = -0.40
+		build_speed = -0.40
+	}
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+# Large Military Camp
+ary_lmc_01 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 150
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.30
+		stationed_maa_toughness_mult = 0.30
+		stationed_maa_pursuit_mult = 0.30
+		stationed_maa_screen_mult = 0.30
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.02
+		men_at_arms_recruitment_cost = -0.01
+		men_at_arms_maintenance = -0.01
+	}
+	
+	next_building = ary_lmc_02
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+
+		modifier = {
+			factor = 0
+			has_holding_type = city_holding
+		}
+		modifier = {
+			factor = 0
+			has_holding_type = church_holding
+		}
+	}
+}
+
+ary_lmc_02 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		scope:holder.culture = {
+			has_innovation = innovation_barracks
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 250
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.40
+		stationed_maa_toughness_mult = 0.40
+		stationed_maa_pursuit_mult = 0.40
+		stationed_maa_screen_mult = 0.40
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.04
+		men_at_arms_recruitment_cost = -0.02
+		men_at_arms_maintenance = -0.02
+	}
+	
+	next_building = ary_lmc_03
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+		modifier = { # Fill all building slots before going for upgrades
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+ary_lmc_03 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 340
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.50
+		stationed_maa_toughness_mult = 0.50
+		stationed_maa_pursuit_mult = 0.50
+		stationed_maa_screen_mult = 0.50
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.06
+		men_at_arms_recruitment_cost = -0.03
+		men_at_arms_maintenance = -0.03
+	}
+	
+	next_building = ary_lmc_04
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_lmc_04 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 500
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.60
+		stationed_maa_toughness_mult = 0.60
+		stationed_maa_pursuit_mult = 0.60
+		stationed_maa_screen_mult = 0.60
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.08
+		men_at_arms_recruitment_cost = -0.04
+		men_at_arms_maintenance = -0.04
+	}
+	
+	next_building = ary_lmc_05
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_lmc_05 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 750
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.70
+		stationed_maa_toughness_mult = 0.70
+		stationed_maa_pursuit_mult = 0.70
+		stationed_maa_screen_mult = 0.70
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.10
+		men_at_arms_recruitment_cost = -0.05
+		men_at_arms_maintenance = -0.05
+	}
+	
+	next_building = ary_lmc_06
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_lmc_06 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1110
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.80
+		stationed_maa_toughness_mult = 0.80
+		stationed_maa_pursuit_mult = 0.80
+		stationed_maa_screen_mult = 0.80
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.12
+		men_at_arms_recruitment_cost = -0.06
+		men_at_arms_maintenance = -0.06
+		men_at_arms_limit = 1
+	}
+	
+	next_building = ary_lmc_07
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_lmc_07 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = 1600
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 0.90
+		stationed_maa_toughness_mult = 0.90
+		stationed_maa_pursuit_mult = 0.90
+		stationed_maa_screen_mult = 0.90
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.14
+		men_at_arms_recruitment_cost = -0.07
+		men_at_arms_maintenance = -0.07
+		men_at_arms_limit = 2
+	}
+	
+	next_building = ary_lmc_08
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+
+ary_lmc_08 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_lmc_requirement_terrain = yes
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 2240
+	
+	province_modifier = {
+		stationed_maa_damage_mult = 1
+		stationed_maa_toughness_mult = 1
+		stationed_maa_pursuit_mult = 1
+		stationed_maa_screen_mult = 1
+	}
+	character_modifier = {
+		knight_effectiveness_mult = 0.16
+		men_at_arms_recruitment_cost = -0.08
+		men_at_arms_maintenance = -0.08
+		men_at_arms_limit = 3
+		men_at_arms_cap = 1
+	}
+
+	type_icon = "icon_building_legendary_statue.dds"
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_military_modifier = yes
+	}
+}
+# Ruby Mines
+ary_dim_01 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 500
+	
+	province_modifier = {
+		fort_level = 1
+		defender_holding_advantage = 1
+		monthly_income = 1.9
+		supply_limit_mult = -0.07
+		levy_size = -0.04
+		tax_mult = 0.02
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.03
+	}
+	
+	next_building = ary_dim_02
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 20
+		ai_tier_1_building_modifier = yes
+		ai_tier_1_economical_building_preference_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+	}
+}
+
+ary_dim_02 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 1000
+	
+	province_modifier = {
+		fort_level = 2
+		defender_holding_advantage = 2
+		monthly_income = 3.8
+		supply_limit_mult = -0.14
+		levy_size = -0.08
+		tax_mult = 0.04
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.06
+	}
+	
+	next_building = ary_dim_03
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_03 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 1500
+	
+	province_modifier = {
+		fort_level = 3
+		defender_holding_advantage = 3
+		monthly_income = 5.7
+		supply_limit_mult = -0.21
+		levy_size = -0.12
+		tax_mult = 0.06
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.09
+	}
+	
+	next_building = ary_dim_04
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_04 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 2000
+	
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 4
+		monthly_income = 7.6
+		supply_limit_mult = -0.28
+		levy_size = -0.16
+		tax_mult = 0.08
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.12
+	}
+	
+	next_building = ary_dim_05
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_05 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 2500
+	
+	province_modifier = {
+		fort_level = 5
+		defender_holding_advantage = 5
+		monthly_income = 9.5
+		supply_limit_mult = -0.35
+		levy_size = -0.20
+		tax_mult = 0.1
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.15
+	}
+	
+	next_building = ary_dim_06
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_06 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 3000
+	
+	province_modifier = {
+		fort_level = 6
+		defender_holding_advantage = 6
+		monthly_income = 11.4
+		supply_limit_mult = -0.42
+		levy_size = -0.24
+		tax_mult = 0.12
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.18
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.01
+	}
+	
+	next_building = ary_dim_07
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_07 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 3500
+	
+	province_modifier = {
+		fort_level = 7
+		defender_holding_advantage = 7
+		monthly_income = 13.5
+		supply_limit_mult = -0.49
+		levy_size = -0.28
+		tax_mult = 0.14
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.21
+	}
+
+	character_modifier = {
+		monthly_income_mult = 0.03
+	}
+	
+	next_building = ary_dim_08
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_dim_08 = {
+	construction_time = 1825
+
+	effect_desc = windfurnaces_effects_desc
+
+	can_construct_potential = {
+		building_ary_dim_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 4500
+	
+	province_modifier = {
+		fort_level = 8
+		defender_holding_advantage = 8
+		monthly_income = 16
+		supply_limit_mult = -0.60
+		levy_size = -0.40
+		tax_mult = 0.16
+	}
+	
+	county_modifier = {
+		build_gold_cost = -0.25
+	}
+	
+	character_modifier = {
+		monthly_income_mult = 0.05
+	}
+
+	type_icon = "icon_structure_mines.dds"
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+# Sea Watchtower
+ary_swt_01 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 100
+	
+	max_garrison = 100
+	province_modifier = {
+		monthly_income = 0.3
+	}
+
+	character_modifier = {
+		movement_speed = 0.04
+		coastal_sea_travel_danger = -4
+		sea_travel_danger = -4
+		lifestyle_traveler_xp_gain_mult = 0.04
+	}
+
+	county_modifier = {
+		fort_level = 1
+		development_growth = 0.15
+		development_growth_factor = 0.10
+		hostile_raid_time = 0.25
+		defender_holding_advantage = 2
+	}
+
+	next_building = ary_swt_02
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 10
+		ai_tier_1_building_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+		modifier = {
+			factor = 5
+			free_building_slots <= 3
+			scope:holder.capital_province = this
+		}
+		modifier = {
+			factor = 5
+			free_building_slots <= 2
+		}
+		modifier = {
+			factor = 5
+			free_building_slots <= 1
+		}
+		culture_likely_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_02 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+		trigger_else = {
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 150
+	
+	max_garrison = 200
+	province_modifier = {
+		monthly_income = 0.6
+	}
+
+	character_modifier = {
+		movement_speed = 0.06
+		coastal_sea_travel_danger = -6
+		sea_travel_danger = -6
+		lifestyle_traveler_xp_gain_mult = 0.06
+	}
+
+	county_modifier = {
+		fort_level = 2
+		development_growth = 0.21
+		development_growth_factor = 0.12
+		hostile_raid_time = 0.30
+		defender_holding_advantage = 4
+	}
+	
+	next_building = ary_swt_03
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 9
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for upgrades
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+}
+
+ary_swt_03 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 250
+	
+	max_garrison = 250
+	province_modifier = {
+		monthly_income = 0.9
+	}
+
+	character_modifier = {
+		movement_speed = 0.08
+		coastal_sea_travel_danger = -8
+		sea_travel_danger = -8
+		lifestyle_traveler_xp_gain_mult = 0.08
+	}
+
+	county_modifier = {
+		fort_level = 3
+		development_growth = 0.28
+		development_growth_factor = 0.15
+		hostile_raid_time = 0.35
+		defender_holding_advantage = 6
+	}
+	
+	next_building = ary_swt_04
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 8
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_04 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 01 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_motte
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 350
+	
+	max_garrison = 350
+	province_modifier = {
+		monthly_income = 1.2
+	}
+
+	character_modifier = {
+		movement_speed = 0.10
+		coastal_sea_travel_danger = -10
+		sea_travel_danger = -10
+		lifestyle_traveler_xp_gain_mult = 0.10
+	}
+
+	county_modifier = {
+		fort_level = 4
+		development_growth = 0.35
+		development_growth_factor = 0.18
+		hostile_raid_time = 0.45
+		defender_holding_advantage = 8
+	}
+	
+	next_building = ary_swt_05
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 7
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_05 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 500
+	
+	max_garrison = 450
+	province_modifier = {
+		monthly_income = 1.5
+	}
+
+	character_modifier = {
+		movement_speed = 0.12
+		coastal_sea_travel_danger = -12
+		sea_travel_danger = -12
+		lifestyle_traveler_xp_gain_mult = 0.12
+	}
+
+	county_modifier = {
+		fort_level = 5
+		development_growth = 0.41
+		development_growth_factor = 0.23
+		hostile_raid_time = 0.51
+		defender_holding_advantage = 10
+	}
+	
+	next_building = ary_swt_06
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 6
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_06 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 02 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_battlements
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 700
+	
+	max_garrison = 550
+	province_modifier = {
+		monthly_income = 1.8
+	}
+
+	character_modifier = {
+		stewardship = 1
+		movement_speed = 0.14
+		coastal_sea_travel_danger = -14
+		sea_travel_danger = -14
+		lifestyle_traveler_xp_gain_mult = 0.14
+	}
+
+	county_modifier = {
+		fort_level = 6
+		development_growth = 0.51
+		development_growth_factor = 0.28
+		hostile_raid_time = 0.61
+		defender_holding_advantage = 12
+	}
+	
+	next_building = ary_swt_07
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 5
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_07 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 04 }
+			scope:holder.culture = {
+				has_innovation = innovation_machicolations
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 950
+	
+	max_garrison = 650
+	province_modifier = {
+		monthly_income = 2.1
+	}
+
+	character_modifier = {
+		stewardship = 2
+		movement_speed = 0.17
+		coastal_sea_travel_danger = -17
+		sea_travel_danger = -17
+		lifestyle_traveler_xp_gain_mult = 0.17
+	}
+
+	county_modifier = {
+		fort_level = 7
+		development_growth = 0.60
+		development_growth_factor = 0.30
+		hostile_raid_time = 0.70
+		defender_holding_advantage = 14
+	}
+	
+	next_building = ary_swt_08
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 4
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+
+ary_swt_08 = {
+	construction_time = 1095
+
+	can_construct_potential = {
+		building_ary_swt_requirement_terrain = yes
+	}
+
+	can_construct = {
+		trigger_if = {
+			limit = {
+				NOT = {
+					culture = {
+						has_cultural_parameter = next_level_fortification
+					}
+				}
+			}
+			building_requirement_castle_city_church = { LEVEL = 04 }
+			scope:holder.culture = {
+				has_innovation = innovation_machicolations
+			}
+		}
+		trigger_else = {
+			building_requirement_castle_city_church = { LEVEL = 03 }
+			culture = {
+				has_cultural_parameter = next_level_fortification
+			}
+			scope:holder.culture = {
+				has_innovation = innovation_hoardings
+			}
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	
+	cost_gold = 1250
+	
+	max_garrison = 750
+	province_modifier = {
+		monthly_income = 2.5
+	}
+
+	character_modifier = {
+		stewardship = 3
+		movement_speed = 0.20
+		coastal_sea_travel_danger = -20
+		sea_travel_danger = -20
+		lifestyle_traveler_xp_gain_mult = 0.20
+	}
+
+	county_modifier = {
+		fort_level = 8
+		development_growth = 0.7
+		development_growth_factor = 0.35
+		hostile_raid_time = 0.80
+		defender_holding_advantage = 16
+	}
+
+	type_icon = "hercules.dds"
+	
+	ai_value = {
+		base = 3
+		modifier = {
+			add = 1
+			scope:holder = {
+				culture = {
+					has_cultural_parameter = ai_more_likely_to_fortify
+				}
+			}
+		}
+		ai_general_building_modifier = yes
+		directive_to_fortify_modifier = yes
+	}
+}
+# The Logistics
+ary_tml_01 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 200
+	
+	levy = 150
+	province_modifier = {
+		monthly_income = 0.45
+		supply_limit_mult = 0.19
+		supply_limit = 1000
+	}
+	
+	character_modifier = {
+		supply_duration = 0.02
+		men_at_arms_recruitment_cost = -0.03
+		levy_maintenance = -0.03
+	}
+	
+	county_modifier = {
+		tax_mult = 0.02
+		levy_size = 0.06
+		levy_reinforcement_rate = 0.12
+	}
+	
+	next_building = ary_tml_02
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 20
+		ai_tier_1_building_modifier = yes
+		ai_tier_1_economical_building_preference_modifier = yes
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+	}
+}
+
+ary_tml_02 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 350
+	
+	levy = 300
+	province_modifier = {
+		monthly_income = 0.9
+		supply_limit_mult = 0.38
+		supply_limit = 1500
+	}
+	
+	character_modifier = {
+		supply_duration = 0.06
+		men_at_arms_recruitment_cost = -0.06
+		levy_maintenance = -0.06
+	}
+	
+	county_modifier = {
+		tax_mult = 0.04
+		levy_size = 0.12
+		levy_reinforcement_rate = 0.24
+	}
+	
+	next_building = ary_tml_03
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 9
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_03 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 485
+	
+	levy = 450
+	province_modifier = {
+		monthly_income = 1.35
+		supply_limit_mult = 0.57
+		supply_limit = 2000
+	}
+	
+	character_modifier = {
+		supply_duration = 0.09
+		men_at_arms_recruitment_cost = -0.09
+		levy_maintenance = -0.09
+	}
+	
+	county_modifier = {
+		tax_mult = 0.06
+		levy_size = 0.18
+		levy_reinforcement_rate = 0.36
+	}
+	
+	next_building = ary_tml_04
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 8
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_04 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+	}
+
+	cost_gold = 725
+	
+	levy = 600
+	province_modifier = {
+		monthly_income = 1.8
+		supply_limit_mult = 0.76
+		supply_limit = 2500
+	}
+	
+	character_modifier = {
+		supply_duration = 0.12
+		men_at_arms_recruitment_cost = -0.12
+		levy_maintenance = -0.12
+	}
+	
+	county_modifier = {
+		tax_mult = 0.08
+		levy_size = 0.24
+		levy_reinforcement_rate = 0.48
+	}
+	
+	next_building = ary_tml_05
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 7
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_05 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 1110
+	
+	levy = 750
+	province_modifier = {
+		monthly_income = 2.25
+		supply_limit_mult = 0.95
+		supply_limit = 3500
+	}
+	
+	character_modifier = {
+		supply_duration = 0.15
+		men_at_arms_recruitment_cost = -0.15
+		levy_maintenance = -0.15
+	}
+	
+	county_modifier = {
+		tax_mult = 0.11
+		levy_size = 0.30
+		levy_reinforcement_rate = 0.60
+	}
+	
+	next_building = ary_tml_06
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 6
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_06 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+
+	cost_gold = 1640
+	
+	levy = 900
+	province_modifier = {
+		monthly_income = 2.7
+		supply_limit_mult = 1.14
+		supply_limit = 4000
+	}
+	
+	character_modifier = {
+		levy_attack = 1
+		levy_toughness = 1
+		supply_duration = 0.18
+		men_at_arms_recruitment_cost = -0.18
+		levy_maintenance = -0.18
+	}
+	
+	county_modifier = {
+		tax_mult = 0.13
+		levy_size = 0.36
+		levy_reinforcement_rate = 0.72
+	}
+	
+	next_building = ary_tml_07
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 5
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_07 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 2375
+	
+	levy = 1050
+	province_modifier = {
+		monthly_income = 3.15
+		supply_limit_mult = 1.33
+		supply_limit = 4500
+	}
+	
+	character_modifier = {
+		levy_attack = 2
+		levy_toughness = 2
+		supply_duration = 0.21
+		men_at_arms_recruitment_cost = -0.21
+		levy_maintenance = -0.21
+	}
+	
+	county_modifier = {
+		tax_mult = 0.15
+		levy_size = 0.42
+		levy_reinforcement_rate = 0.84
+	}
+	
+	next_building = ary_tml_08
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 4
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+ary_tml_08 = {
+	construction_time = 1825
+
+	can_construct_potential = {
+		building_ary_tml_requirement_terrain = yes
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	is_enabled = {
+		trigger_if = {
+			is_county_capital = yes
+		}
+	}
+	show_disabled = yes
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = 3335
+	
+	levy = 1200
+	province_modifier = {
+		monthly_income = 3.15
+		supply_limit_mult = 1.5
+		supply_limit = 5000
+	}
+	
+	character_modifier = {
+		levy_attack = 3
+		levy_toughness = 3
+		levy_siege = 0.02
+		supply_duration = 0.24
+		men_at_arms_recruitment_cost = -0.24
+		levy_maintenance = -0.24
+	}
+	
+	county_modifier = {
+		tax_mult = 0.18
+		levy_size = 0.50
+		levy_reinforcement_rate = 1
+	}
+
+	type_icon = "icon_building_march.dds"
+	
+	ai_value = {
+		base = 3
+		ai_general_building_modifier = yes
+		directive_to_build_economy_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
