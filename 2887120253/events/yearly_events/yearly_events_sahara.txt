@@ -1,4 +1,0 @@
-﻿### EK NOTE: Emptied the file
-### EK TODO: Maybe adapt it to some other region (yokuda, alikr)? Can just copy paste the vanilla file content and change who can get it
-
-namespace = yearly_saharan

@@ -1,3 +1,0 @@
-﻿### EK NOTE: Emptied file
-# These are only used when diverging cultures, in order to add an aesthetic that isn't used at game start (diverging Norse, Asturleawhatever, Sicilian, that kind of stuff)
-

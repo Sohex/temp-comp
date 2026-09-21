@@ -1,9 +1,0 @@
-﻿offer_cyrodiilic_subject_interaction_cost = {
-	value = scope:recipient.massive_gold_value
-	if = {
-		limit = { scope:financial_support = yes }
-		multiply = 2
-	}
-	min = 100
-	max = 1000
-}

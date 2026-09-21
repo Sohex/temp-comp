@@ -1,6 +1,0 @@
-﻿# NOT birthsign character
-
-non_birthsign = {
-	base = living_character
-	conditions = { NOT = { has_trait = birthsign } }
-}

@@ -1,3 +1,0 @@
-﻿catalyst_situation_high_king_ended_isolation = {} #Aran(a)-El ended isolation through decision
-catalyst_situation_high_king_closed_alinor = {} #Aran(a)-El closed Alinor through decision
-catalyst_situation_alinor_destroyed = {} #Alinor title was destroyed

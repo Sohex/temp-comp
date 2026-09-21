@@ -1,8 +1,0 @@
-﻿######################
-### SCHEME
-######################
-
-house_war_change = {
-	display = feed
-	group = scheme
-}

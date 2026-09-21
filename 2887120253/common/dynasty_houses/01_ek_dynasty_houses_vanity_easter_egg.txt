@@ -1,5 +1,0 @@
-﻿house_dyn_fullerton_riccarton = {
-	name = "dynn_Riccarton"
-	dynasty = dyn_fullerton
-	motto = house_dyn_fullerton_riccarton_motto
-}
